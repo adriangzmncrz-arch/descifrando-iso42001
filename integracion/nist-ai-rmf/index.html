@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Qué es el NIST AI RMF, en qué estado está, cómo se estructura (Govern, Map, Measure, Manage), qué aportan el Playbook y el perfil de IA generativa NIST AI 600-1, y cómo combinarlo con ISO/IEC 42001 mediante un mapeo función por función.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -2277,6 +2277,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NIST AI RMF
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2293,6 +2311,291 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-nist-ai-rmf-y-que-no-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es el NIST AI RMF (y qué no es)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué es el NIST AI RMF (y qué no es)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estado-al-9-de-octubre-de-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estado al 9 de octubre de 2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencia-de-naturaleza-marco-voluntario-frente-a-norma-certificable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diferencia de naturaleza: marco voluntario frente a norma certificable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-esta-construido-el-marco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo está construido el marco
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo está construido el marco">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-fundamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1: fundamentos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#las-siete-caracteristicas-de-una-ia-confiable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las siete características de una IA confiable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-el-nucleo-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2: el núcleo (Core)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perfiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-playbook-sugerencias-no-una-lista-de-verificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El Playbook: sugerencias, no una lista de verificación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-perfil-de-ia-generativa-nist-ai-600-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El perfil de IA generativa: NIST AI 600-1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-perfiles-y-recursos-del-nist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otros perfiles y recursos del NIST
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros perfiles y recursos del NIST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-crosswalk-con-isoiec-42001-quien-lo-hizo-y-que-mapea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El crosswalk con ISO/IEC 42001: quién lo hizo y qué mapea
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapeo-de-las-funciones-del-ai-rmf-a-isoiec-42001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapeo: de las funciones del AI RMF a ISO/IEC 42001
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapeo: de las funciones del AI RMF a ISO/IEC 42001">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-vista-de-conjunto-funciones-y-ciclo-phva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La vista de conjunto: funciones y ciclo PHVA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#govern-gobernar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GOVERN: gobernar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-mapear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAP: mapear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measure-medir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MEASURE: medir
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manage-gestionar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MANAGE: gestionar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-ambos-juntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar ambos juntos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-le-conviene-a-una-empresa-latinoamericana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo le conviene a una empresa latinoamericana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-seguir-leyendo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para seguir leyendo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3010,9 +3313,568 @@
 
 
 <h1 id="nist-ai-rmf"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr><a class="headerlink" href="#nist-ai-rmf" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg></span> Integración</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 20 min de lectura</span></p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>El AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> (<em>AI Risk Management Framework</em>), el marco del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> para gestionar riesgos de la IA, es una guía voluntaria y gratuita del gobierno de Estados Unidos, organizada en cuatro funciones (Govern, Map, Measure, Manage); no se certifica, pero es una excelente <strong>caja de herramientas</strong> de prácticas para llenar de contenido el <strong>sistema</strong> que exige ISO/IEC 42001.</p>
+</div>
+<h2 id="que-es-el-nist-ai-rmf-y-que-no-es">Qué es el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> (y qué no es)<a class="headerlink" href="#que-es-el-nist-ai-rmf-y-que-no-es" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> (Instituto Nacional de Estándares y Tecnología de Estados Unidos) publicó la versión 1.0 de su marco de gestión de riesgos de IA, identificada como <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 100-1, el <strong>26 de enero de 2023</strong><sup id="fnref:rmf"><a class="footnote-ref" href="#fn:rmf">1</a></sup>. Es un documento de libre descarga, escrito para cualquier organización que diseñe, desarrolle, despliegue o use sistemas de IA, en cualquier sector y de cualquier tamaño, sin importar el país.</p>
+<p>Tres ideas para ubicarlo bien desde el principio:</p>
+<ul>
+<li><strong>Es voluntario.</strong> Ninguna ley mexicana o latinoamericana obliga a seguirlo. Su fuerza viene de la reputación del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> y de que muchas empresas estadounidenses lo usan como referencia con sus proveedores.</li>
+<li><strong>No es certificable.</strong> No contiene requisitos con "debe" contra los cuales un organismo pueda auditar y emitir un certificado. Es un catálogo de resultados deseables y de prácticas sugeridas.</li>
+<li><strong>Habla el mismo idioma que ISO/IEC 42001.</strong> La propia ISO/IEC 42001 lo menciona en una nota de <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> como referencia para entender qué tipos de actores de IA existen y en qué etapas intervienen. No son rivales: se complementan.</li>
+</ul>
+<h3 id="estado-al-9-de-octubre-de-2026">Estado al 9 de octubre de 2026<a class="headerlink" href="#estado-al-9-de-octubre-de-2026" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La versión vigente sigue siendo la <strong>AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> 1.0</strong>. La página oficial del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> indica que el marco <strong>se está revisando</strong> como parte del Plan de Acción de IA de la Casa Blanca; a la fecha de consulta, el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> no había publicado una versión 1.1 o 2.0 ni un borrador público de la revisión, y su página solo ofrece descargar la 1.0<sup id="fnref2:rmf"><a class="footnote-ref" href="#fn:rmf">1</a></sup>.</p>
+<p>Ese plan, publicado por la Casa Blanca en julio de 2025, encarga al Departamento de Comercio, a través del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr>, revisar el marco para eliminar las referencias a desinformación, a diversidad, equidad e inclusión, y a cambio climático<sup id="fnref:plan"><a class="footnote-ref" href="#fn:plan">2</a></sup>. En nuestra lectura, eso podría tocar partes concretas del marco (por ejemplo, la categoría sobre diversidad de los equipos o algunas menciones a impactos ambientales), pero no sabemos cómo quedará la nueva versión. Por eso, en esta página describimos la 1.0 y te recomendamos revisar la página del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> antes de citar una categoría o subcategoría en un documento formal.</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía: el recetario y la licencia sanitaria</p>
+<p>ISO/IEC 42001 es como la licencia sanitaria de un restaurante: define qué procesos debes tener, alguien externo viene a verificarlos y, si cumples, te dan un documento que puedes mostrar. El AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> es como un buen recetario profesional: te dice cómo preparar cada platillo, qué ingredientes medir y qué errores evitar, pero nadie te da un certificado por tenerlo en la cocina. Los mejores restaurantes tienen ambos.</p>
+</div>
+<h2 id="diferencia-de-naturaleza-marco-voluntario-frente-a-norma-certificable">Diferencia de naturaleza: marco voluntario frente a norma certificable<a class="headerlink" href="#diferencia-de-naturaleza-marco-voluntario-frente-a-norma-certificable" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> 1.0</th>
+<th>ISO/IEC 42001:2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quién lo emite</td>
+<td>Agencia del gobierno de Estados Unidos (<abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr>)</td>
+<td>ISO e IEC, por consenso internacional de organismos nacionales</td>
+</tr>
+<tr>
+<td>Naturaleza</td>
+<td>Marco voluntario de buenas prácticas</td>
+<td>Norma de requisitos para un sistema de gestión</td>
+</tr>
+<tr>
+<td>¿Se certifica?</td>
+<td>No</td>
+<td>Sí, por organismos de certificación acreditados</td>
+</tr>
+<tr>
+<td>Lenguaje</td>
+<td>Resultados deseables y sugerencias</td>
+<td>Requisitos ("debe") y controles de referencia</td>
+</tr>
+<tr>
+<td>Estructura</td>
+<td>4 funciones, 19 categorías, 72 subcategorías</td>
+<td>Cláusulas 4 a 10 y 38 controles del Anexo A</td>
+</tr>
+<tr>
+<td>Costo</td>
+<td>Gratuito</td>
+<td>Se compra a ISO, IEC o a un organismo nacional</td>
+</tr>
+<tr>
+<td>Fortaleza</td>
+<td>Detalle técnico: medición, pruebas, características de confiabilidad, IA generativa</td>
+<td>Disciplina de gestión: alcance, roles, auditoría interna, revisión por la dirección, mejora continua, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr></td>
+</tr>
+<tr>
+<td>Debilidad</td>
+<td>Sin mecanismo de verificación independiente; puede quedarse en buenas intenciones</td>
+<td>Menos detalle sobre cómo medir el comportamiento de un modelo</td>
+</tr>
+</tbody>
+</table>
+<p>Dicho en corto: si un cliente te pide <strong>demostrar</strong> que gestionas la IA, ISO/IEC 42001 te da la evidencia certificable. Si te pide <strong>explicar cómo</strong> mides sesgo, robustez o confabulaciones, el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> y sus perfiles te dan el vocabulario y las prácticas. La comparación con otros tipos de referencias está en <a href="../../fundamentos/que-es-un-sgia/">¿Qué es un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>?</a>.</p>
+<h2 id="como-esta-construido-el-marco">Cómo está construido el marco<a class="headerlink" href="#como-esta-construido-el-marco" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El documento tiene dos partes y varios apéndices.</p>
+<h3 id="parte-1-fundamentos">Parte 1: fundamentos<a class="headerlink" href="#parte-1-fundamentos" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La primera parte explica cómo pensar el riesgo de IA: cómo se relacionan riesgos, impactos y daños; por qué es difícil medir el riesgo de IA (datos de terceros, comportamiento emergente, diferencias entre laboratorio y producción); qué significa tolerancia al riesgo y cómo priorizar. Un apéndice compara los riesgos de la IA con los del software tradicional, lectura muy recomendable si vienes de seguridad de la información.</p>
+<p>También describe a los <strong>actores de IA</strong> según la etapa del ciclo de vida en la que participan (diseño, datos, construcción del modelo, verificación, despliegue, operación) e incluye expresamente a quienes usan el sistema o reciben sus efectos. Es una clasificación parecida, aunque no idéntica, a los roles de ISO/IEC 22989 que pide determinar ISO/IEC 42001; los comparamos en <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>.</p>
+<h3 id="las-siete-caracteristicas-de-una-ia-confiable">Las siete características de una IA confiable<a class="headerlink" href="#las-siete-caracteristicas-de-una-ia-confiable" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El corazón conceptual del marco es la idea de <strong>IA confiable</strong> (<em>trustworthy AI</em>), descrita con siete características. Las presentamos con nuestras palabras y con el objetivo del Anexo C de ISO/IEC 42001 que más se le parece:</p>
+<table>
+<thead>
+<tr>
+<th>Característica (AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>)</th>
+<th>Qué significa, en corto</th>
+<th>Objetivo afín en el Anexo C de ISO/IEC 42001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Válida y confiable</td>
+<td>Hace lo que se espera, con exactitud, y lo sostiene en el tiempo; es la base de las demás</td>
+<td>Robustez; disponibilidad y calidad de los datos</td>
+</tr>
+<tr>
+<td>Segura</td>
+<td>No pone en peligro la vida, la salud, los bienes ni el entorno</td>
+<td>Seguridad física (<em>safety</em>)</td>
+</tr>
+<tr>
+<td>Protegida y resiliente</td>
+<td>Resiste ataques y se recupera de eventos adversos</td>
+<td>Seguridad (<em>security</em>); robustez</td>
+</tr>
+<tr>
+<td>Responsable y transparente</td>
+<td>Hay quién responda por ella y se puede saber qué hace y cómo se decidió</td>
+<td>Rendición de cuentas; transparencia</td>
+</tr>
+<tr>
+<td>Explicable e interpretable</td>
+<td>Se entiende cómo llega a un resultado y qué significa ese resultado</td>
+<td>Transparencia y explicabilidad</td>
+</tr>
+<tr>
+<td>Con privacidad reforzada</td>
+<td>Protege la autonomía y los datos de las personas</td>
+<td>Privacidad</td>
+</tr>
+<tr>
+<td>Justa, con sesgos dañinos gestionados</td>
+<td>Identifica y reduce resultados discriminatorios</td>
+<td>Equidad</td>
+</tr>
+</tbody>
+</table>
+<p>El marco insiste en que estas características se equilibran entre sí: más explicabilidad puede costar exactitud, más privacidad puede reducir la capacidad de detectar sesgos. Decidir esos equilibrios es justo lo que ISO/IEC 42001 pide documentar en los objetivos de desarrollo y uso responsable (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a> y <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>). Los nombres de controles de ISO/IEC 42001 que usamos en esta guía son traducción libre de referencia.</p>
+<h3 id="parte-2-el-nucleo-core">Parte 2: el núcleo (<em>Core</em>)<a class="headerlink" href="#parte-2-el-nucleo-core" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El núcleo organiza las prácticas en <strong>cuatro funciones</strong>, divididas en <strong>19 categorías y 72 subcategorías</strong><sup id="fnref:rmfpdf"><a class="footnote-ref" href="#fn:rmfpdf">3</a></sup>:</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Para qué sirve</th>
+<th>Categorías</th>
+<th>Subcategorías</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GOVERN</strong> (gobernar)</td>
+<td>Crear la cultura, las políticas, los roles y la rendición de cuentas; atraviesa a las otras tres</td>
+<td>6</td>
+<td>19</td>
+</tr>
+<tr>
+<td><strong>MAP</strong> (mapear)</td>
+<td>Entender el contexto de cada sistema: para qué sirve, quién lo usa, a quién afecta, qué puede salir mal</td>
+<td>5</td>
+<td>18</td>
+</tr>
+<tr>
+<td><strong>MEASURE</strong> (medir)</td>
+<td>Analizar, evaluar y dar seguimiento a los riesgos con métodos y métricas</td>
+<td>4</td>
+<td>22</td>
+</tr>
+<tr>
+<td><strong>MANAGE</strong> (gestionar)</td>
+<td>Priorizar y tratar los riesgos, responder a incidentes y comunicar</td>
+<td>4</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<p>Fíjate en el peso de MEASURE: es la función con más subcategorías. Ahí está el valor diferencial del marco frente a ISO/IEC 42001.</p>
+<h3 id="perfiles">Perfiles<a class="headerlink" href="#perfiles" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El marco propone adaptar el núcleo a situaciones concretas mediante <strong>perfiles</strong>: por caso de uso (por ejemplo, contratación de personal), por sector o tecnología, y en versión "actual" frente a "objetivo", para hacer análisis de brechas. El <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> ha publicado o está preparando perfiles específicos, que vemos más abajo.</p>
+<h2 id="el-playbook-sugerencias-no-una-lista-de-verificacion">El Playbook: sugerencias, no una lista de verificación<a class="headerlink" href="#el-playbook-sugerencias-no-una-lista-de-verificacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El <strong>Playbook</strong> del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> es un recurso en línea que ofrece, para cada subcategoría de las cuatro funciones, acciones sugeridas, documentación recomendada y referencias. El <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> es claro sobre su naturaleza: las sugerencias son voluntarias, no es una lista de verificación ni una secuencia de pasos que deba seguirse completa, y se irá actualizando (el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> menciona actualizaciones aproximadamente dos veces al año). También advierte que el Playbook se actualizará cuando termine la revisión del marco. La página no muestra número de versión ni fecha<sup id="fnref:playbook"><a class="footnote-ref" href="#fn:playbook">4</a></sup>.</p>
+<p><strong>Cómo usarlo con ISO/IEC 42001:</strong> cuando tu evaluación de riesgos te diga que necesitas un control y el Anexo A solo te da la idea general, el Playbook es una buena fuente de prácticas concretas para diseñarlo. Por ejemplo, para definir cómo verificas la equidad de un modelo antes de liberarlo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>), las sugerencias de MEASURE te dan ideas de métricas, de documentación y de quién debe revisar. Recuerda que ISO/IEC 42001 permite y espera controles adicionales a los del Anexo A cuando el riesgo lo pide (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>).</p>
+<h2 id="el-perfil-de-ia-generativa-nist-ai-600-1">El perfil de IA generativa: <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1<a class="headerlink" href="#el-perfil-de-ia-generativa-nist-ai-600-1" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El <strong>26 de julio de 2024</strong> el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> publicó el documento <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1, un perfil del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> dedicado a la IA generativa<sup id="fnref:ai600"><a class="footnote-ref" href="#fn:ai600">5</a></sup>. Es probablemente el recurso más útil del ecosistema <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> para empresas que usan o integran modelos de lenguaje.</p>
+<p>El perfil identifica <strong>12 riesgos</strong> propios de la IA generativa o agravados por ella. Con nuestras palabras:</p>
+<ol>
+<li><strong>Información química, biológica, radiológica o nuclear (QBRN):</strong> facilitar el acceso a conocimiento peligroso.</li>
+<li><strong>Confabulación:</strong> contenido falso presentado con seguridad (lo que coloquialmente llamamos "alucinaciones").</li>
+<li><strong>Contenido peligroso, violento o de odio.</strong></li>
+<li><strong>Privacidad de datos:</strong> filtración o inferencia de datos personales.</li>
+<li><strong>Impactos ambientales:</strong> consumo de energía y recursos del entrenamiento y la operación.</li>
+<li><strong>Sesgo dañino u homogeneización:</strong> resultados discriminatorios o pérdida de diversidad de perspectivas.</li>
+<li><strong>Configuración humano-IA:</strong> exceso de confianza, antropomorfismo, dependencia.</li>
+<li><strong>Integridad de la información:</strong> facilitar contenido engañoso a gran escala.</li>
+<li><strong>Seguridad de la información:</strong> nuevas superficies de ataque, como la inyección de instrucciones.</li>
+<li><strong>Propiedad intelectual:</strong> uso o reproducción de obras protegidas.</li>
+<li><strong>Contenido obsceno, degradante o abusivo.</strong></li>
+<li><strong>Cadena de valor e integración de componentes:</strong> riesgos de modelos, datos y servicios de terceros.</li>
+</ol>
+<p>Para cada riesgo el perfil propone acciones sugeridas organizadas por las cuatro funciones; el conteo propio que hicimos sobre el documento oficial da unas 212<sup id="fnref2:ai600"><a class="footnote-ref" href="#fn:ai600">5</a></sup>.</p>
+<p><strong>Cómo usarlo con ISO/IEC 42001:</strong> esta lista es un excelente catálogo de <strong>fuentes de riesgo</strong> para tu evaluación de riesgos (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>) y de temas para la evaluación de impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>). Varios riesgos se conectan directo con controles: confabulación con la verificación y validación (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) y la información a usuarios (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>); configuración humano-IA con la supervisión humana (<a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>); cadena de valor con proveedores (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>); privacidad con datos (<a href="../../anexo-a/a7-datos/">A.7</a>).</p>
+<h2 id="otros-perfiles-y-recursos-del-nist">Otros perfiles y recursos del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr><a class="headerlink" href="#otros-perfiles-y-recursos-del-nist" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Perfil de ciberseguridad para IA (<abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> IR 8596).</strong> Es un perfil comunitario del Marco de Ciberseguridad (CSF 2.0) aplicado a la IA. Al 9 de octubre de 2026 existía solo como <strong>borrador preliminar inicial</strong>, publicado el 16 de diciembre de 2025, con periodo de comentarios cerrado el 30 de enero de 2026; no había borrador posterior ni versión final. Según resúmenes de terceros, aborda tres focos: proteger los sistemas de IA, usar la IA en la ciberdefensa y frustrar ataques que usan IA<sup id="fnref:ir8596"><a class="footnote-ref" href="#fn:ir8596">7</a></sup>. Si tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ya usa el CSF, vale la pena seguirlo.</li>
+<li><strong>Perfil para infraestructura crítica (en preparación).</strong> El 7 de abril de 2026 el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> publicó una nota conceptual para un perfil del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> sobre IA confiable en infraestructura crítica. Es un concepto, no un perfil terminado<sup id="fnref3:rmf"><a class="footnote-ref" href="#fn:rmf">1</a></sup>.</li>
+<li><strong>Hoja de ruta (<em>Roadmap</em>)</strong> del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> y página de <strong>tablas de correspondencia</strong> (<em>crosswalks</em>) con otros marcos, ambas enlazadas desde la página oficial<sup id="fnref4:rmf"><a class="footnote-ref" href="#fn:rmf">1</a></sup>.</li>
+</ul>
+<h3 id="el-crosswalk-con-isoiec-42001-quien-lo-hizo-y-que-mapea">El <em>crosswalk</em> con ISO/IEC 42001: quién lo hizo y qué mapea<a class="headerlink" href="#el-crosswalk-con-isoiec-42001-quien-lo-hizo-y-que-mapea" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En la página de tablas de correspondencia del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> hay un documento que relaciona el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> con ISO/IEC 42001. Antes de usarlo, conviene saber tres cosas<sup id="fnref:crosswalk"><a class="footnote-ref" href="#fn:crosswalk">6</a></sup>:</p>
+<ol>
+<li><strong>No lo elaboró el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr>.</strong> El propio sitio lo atribuye a Microsoft como proveedor, y el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> aclara que incluir una tabla de correspondencia en esa página no implica su respaldo.</li>
+<li><strong>Mapea un borrador.</strong> Su título se refiere al proyecto final (FDIS) de ISO/IEC 42001, no a la norma publicada. Los metadatos del archivo indican que se creó el 23 de mayo de 2023, antes de la publicación de la norma.</li>
+<li><strong>Hay otras tablas más recientes</strong> en la misma página, elaboradas por el comité INCITS/AI: una entre ISO/IEC 42005 y el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>, y otra revisada entre ISO/IEC 23894 y el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>, ambas del 14 de agosto de 2025; además de una entre <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1 y el marco AI Verify de Singapur, del 28 de mayo de 2025.</li>
+</ol>
+<p>Puedes usar esas tablas como insumo, pero no como fuente de verdad sobre lo que exige ISO/IEC 42001.</p>
+<h2 id="mapeo-de-las-funciones-del-ai-rmf-a-isoiec-42001">Mapeo: de las funciones del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> a ISO/IEC 42001<a class="headerlink" href="#mapeo-de-las-funciones-del-ai-rmf-a-isoiec-42001" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Este es un mapeo propio del autor</p>
+<p>Las tablas siguientes son una interpretación de esta guía, hecha sobre la versión 1.0 del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> y la norma publicada ISO/IEC 42001:2023. No son una correspondencia oficial del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> ni de ISO. Describimos cada categoría con nuestras palabras y apuntamos a las cláusulas y controles donde, en nuestra lectura, encaja mejor. Un mismo resultado del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> puede atenderse en varios lugares de la norma.</p>
+</div>
+<h3 id="la-vista-de-conjunto-funciones-y-ciclo-phva">La vista de conjunto: funciones y ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr><a class="headerlink" href="#la-vista-de-conjunto-funciones-y-ciclo-phva" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>ISO/IEC 42001, como toda norma de sistema de gestión, sigue el ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr> (Planificar, Hacer, Verificar, Actuar). Las funciones del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> no son fases secuenciales, pero encajan de forma natural en ese ciclo, con GOVERN como eje que lo atraviesa todo.</p>
+<pre class="mermaid"><code>flowchart TB
+  GOV["GOVERN · cultura, políticas, roles · cláusulas 5 y 7"]
+  subgraph P["Planificar · cláusulas 4 y 6"]
+    MAP["MAP · contexto, usos e impactos"]
+  end
+  subgraph H["Hacer · cláusula 8"]
+    MAN1["MANAGE · tratar los riesgos"]
+  end
+  subgraph V["Verificar · cláusula 9"]
+    MEA["MEASURE · métricas, pruebas y seguimiento"]
+  end
+  subgraph AC["Actuar · cláusula 10"]
+    MAN2["MANAGE · responder, comunicar y mejorar"]
+  end
+  MAP --&gt; MAN1
+  MAN1 --&gt; MEA
+  MEA --&gt; MAN2
+  MAN2 --&gt; MAP
+  GOV -.-&gt; MAP
+  GOV -.-&gt; MAN1
+  GOV -.-&gt; MEA
+  GOV -.-&gt; MAN2</code></pre>
+<table>
+<thead>
+<tr>
+<th>Función AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></th>
+<th>Fase <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr></th>
+<th>Cláusulas de ISO/IEC 42001 más relacionadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOVERN</td>
+<td>Eje transversal</td>
+<td><a href="../../clausulas/c5-liderazgo/">5</a> Liderazgo, <a href="../../clausulas/c7-apoyo/">7</a> Apoyo, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a> Revisión por la dirección</td>
+</tr>
+<tr>
+<td>MAP</td>
+<td>Planificar</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a></td>
+</tr>
+<tr>
+<td>MEASURE</td>
+<td>Verificar (y el análisis de riesgos al planificar)</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a></td>
+</tr>
+<tr>
+<td>MANAGE</td>
+<td>Hacer y Actuar</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>, <a href="../../clausulas/c8-operacion/#c-8-3">8.3</a>, <a href="../../clausulas/c10-mejora/#c-10-2">10.2</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="govern-gobernar">GOVERN: gobernar<a class="headerlink" href="#govern-gobernar" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué busca (con nuestras palabras)</th>
+<th>Cláusulas</th>
+<th>Controles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOVERN 1</td>
+<td>Políticas, procesos y prácticas para gestionar el riesgo de IA: requisitos legales, nivel de esfuerzo según la tolerancia al riesgo, revisión periódica, inventario de sistemas y retiro ordenado</td>
+<td>4.1, 5.2, 6.1.1, 9.3</td>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>, <a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>, <a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a></td>
+</tr>
+<tr>
+<td>GOVERN 2</td>
+<td>Rendición de cuentas: responsabilidades claras, personas capacitadas y una dirección que responde por las decisiones</td>
+<td>5.1, 5.3, 7.2, 7.3</td>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a></td>
+</tr>
+<tr>
+<td>GOVERN 3</td>
+<td>Equipos diversos e interdisciplinarios, y roles definidos para la interacción y la supervisión humana</td>
+<td>7.2</td>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a>, <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a></td>
+</tr>
+<tr>
+<td>GOVERN 4</td>
+<td>Cultura que pondera y comunica el riesgo: pensamiento crítico, documentación de impactos, intercambio de información sobre incidentes</td>
+<td>5.1, 7.3, 7.4</td>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a></td>
+</tr>
+<tr>
+<td>GOVERN 5</td>
+<td>Diálogo con actores externos y con personas afectadas, e incorporación de su retroalimentación</td>
+<td>4.2, 7.4</td>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a></td>
+</tr>
+<tr>
+<td>GOVERN 6</td>
+<td>Riesgos de terceros: software, datos, modelos y cadena de suministro, con planes de contingencia</td>
+<td>8.1</td>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a>, <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lo que GOVERN añade a ISO/IEC 42001:</strong> énfasis en la cultura y en equipos interdisciplinarios. <strong>Lo que ISO/IEC 42001 añade a GOVERN:</strong> la obligación de auditar internamente, revisar por la dirección y corregir no conformidades, con evidencia verificable.</p>
+<h3 id="map-mapear">MAP: mapear<a class="headerlink" href="#map-mapear" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué busca (con nuestras palabras)</th>
+<th>Cláusulas</th>
+<th>Controles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAP 1</td>
+<td>Establecer el contexto: propósito previsto, entorno de uso, leyes y expectativas, misión de la organización, tolerancia al riesgo y requisitos del sistema</td>
+<td>4.1, 4.2, 6.1.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>, <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a></td>
+</tr>
+<tr>
+<td>MAP 2</td>
+<td>Categorizar el sistema: qué tarea hace y con qué método, qué límites tiene su conocimiento y cómo se usarán y supervisarán sus resultados</td>
+<td>4.1</td>
+<td><a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a>, <a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a></td>
+</tr>
+<tr>
+<td>MAP 3</td>
+<td>Entender capacidades, usos objetivo, beneficios y costos esperados (incluido el costo de equivocarse), competencias de quienes lo operan y procesos de supervisión humana</td>
+<td>6.2</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>, <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a></td>
+</tr>
+<tr>
+<td>MAP 4</td>
+<td>Mapear riesgos y beneficios de cada componente, incluidos software, datos de terceros y propiedad intelectual</td>
+<td>6.1.2</td>
+<td><a href="../../anexo-a/a4-recursos/#a-4-3">A.4.3</a>, <a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a>, <a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a></td>
+</tr>
+<tr>
+<td>MAP 5</td>
+<td>Caracterizar los impactos en personas, grupos, comunidades, organizaciones y sociedad, con su probabilidad, magnitud y vías de retroalimentación</td>
+<td>6.1.4, 8.4</td>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a></td>
+</tr>
+</tbody>
+</table>
+<p>MAP es la función que mejor se alinea con ISO/IEC 42001: casi todo lo que pide encaja en la cláusula 4, en los criterios de riesgo y en la evaluación de impacto. Si ya cumples bien <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> y <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, tienes MAP prácticamente cubierto.</p>
+<h3 id="measure-medir">MEASURE: medir<a class="headerlink" href="#measure-medir" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué busca (con nuestras palabras)</th>
+<th>Cláusulas</th>
+<th>Controles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MEASURE 1</td>
+<td>Elegir métodos y métricas para los riesgos más importantes, documentar lo que no se puede medir y someter las métricas a revisión independiente</td>
+<td>6.1.2, 9.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a></td>
+</tr>
+<tr>
+<td>MEASURE 2</td>
+<td>Evaluar el sistema contra cada característica de confiabilidad (validez, seguridad, protección, transparencia, explicabilidad, privacidad, equidad, impacto ambiental) con pruebas documentadas y representativas del uso real</td>
+<td>9.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>, <a href="../../anexo-a/a4-recursos/#a-4-5">A.4.5</a></td>
+</tr>
+<tr>
+<td>MEASURE 3</td>
+<td>Dar seguimiento en el tiempo a riesgos conocidos y emergentes, con canales para que usuarios y personas afectadas reporten problemas</td>
+<td>8.2, 9.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a></td>
+</tr>
+<tr>
+<td>MEASURE 4</td>
+<td>Comprobar que las mediciones sirven: contrastarlas con el contexto de uso, con expertos del dominio y con la experiencia de los usuarios</td>
+<td>9.1, 9.3, 10.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a></td>
+</tr>
+</tbody>
+</table>
+<p>Aquí está la mayor aportación del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>. ISO/IEC 42001 te pide definir qué medir y con qué métodos para obtener resultados válidos (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>) y que tu evaluación de riesgos dé resultados consistentes y comparables (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>), pero no te dice cómo medir el sesgo de un modelo de crédito o la tasa de confabulación de un asistente. MEASURE, el Playbook y el perfil de IA generativa sí lo abordan con mucho más detalle, incluida la disciplina de prueba, evaluación, verificación y validación (<em>TEVV</em>).</p>
+<h3 id="manage-gestionar">MANAGE: gestionar<a class="headerlink" href="#manage-gestionar" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué busca (con nuestras palabras)</th>
+<th>Cláusulas</th>
+<th>Controles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MANAGE 1</td>
+<td>Decidir si el sistema cumple su propósito y si debe seguir adelante; priorizar y responder a los riesgos; documentar los riesgos residuales</td>
+<td>6.1.3, 8.3</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a></td>
+</tr>
+<tr>
+<td>MANAGE 2</td>
+<td>Planear cómo maximizar beneficios y reducir impactos: recursos, alternativas sin IA, respuesta a riesgos imprevistos y mecanismos para desactivar o retirar un sistema</td>
+<td>6.1.3, 8.1</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a></td>
+</tr>
+<tr>
+<td>MANAGE 3</td>
+<td>Gestionar riesgos y beneficios de terceros, incluidos modelos preentrenados, con monitoreo continuo</td>
+<td>8.1</td>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>, <a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a></td>
+</tr>
+<tr>
+<td>MANAGE 4</td>
+<td>Monitorear después del despliegue, responder y recuperarse de incidentes, comunicarlos y mejorar</td>
+<td>9.1, 10.1, 10.2</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a></td>
+</tr>
+</tbody>
+</table>
+<p>Una idea de MANAGE que conviene llevarse a tu <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>: tener previsto <strong>cómo apagar o retirar</strong> un sistema que se comporta mal, y quién tiene la autoridad para hacerlo. ISO/IEC 42001 lo cubre de forma general en la operación y el monitoreo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>); el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> lo hace explícito.</p>
+<h2 id="como-usar-ambos-juntos">Cómo usar ambos juntos<a class="headerlink" href="#como-usar-ambos-juntos" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La recomendación de esta guía es simple: <strong>ISO/IEC 42001 como sistema, AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> como caja de herramientas.</strong></p>
+<ul>
+<li><strong>El sistema</strong> (ISO/IEC 42001) te da la estructura que no se cae: alcance, roles, política, criterios de riesgo, Declaración de Aplicabilidad, auditoría interna, revisión por la dirección, acciones correctivas. Es lo que el auditor verifica y lo que da continuidad cuando cambian las personas.</li>
+<li><strong>La caja de herramientas</strong> (AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>, Playbook, <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1) te da el contenido técnico para que esos procesos no sean cascarones: qué riesgos buscar en un modelo generativo, qué métricas usar, cómo documentar las pruebas, qué preguntar a un proveedor.</li>
+</ul>
+<p>En la práctica, así se conectan:</p>
+<ol>
+<li><strong>Al determinar el contexto</strong> (<a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>), usa las preguntas de MAP 1 a MAP 3 como guía de entrevista con los dueños de cada sistema.</li>
+<li><strong>Al evaluar riesgos</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>), usa los 12 riesgos del perfil <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1 como catálogo de fuentes de riesgo si trabajas con IA generativa.</li>
+<li><strong>Al evaluar impactos</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>), usa MAP 5 y las características de confiabilidad como lista de dimensiones a revisar.</li>
+<li><strong>Al diseñar controles adicionales</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>), consulta las acciones sugeridas del Playbook.</li>
+<li><strong>Al definir indicadores</strong> (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>) y criterios de verificación (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>), apóyate en MEASURE.</li>
+<li><strong>Al hacer un diagnóstico inicial</strong>, arma un perfil "actual" y uno "objetivo" con las 19 categorías: es una forma rápida de mostrarle a la dirección dónde estás.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Caso: Conversa Labs y Monarca Crédito</p>
+<p><strong>Conversa Labs</strong>, la empresa de Guadalajara que vende asistentes virtuales con IA generativa, usa los 12 riesgos de <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1 como columnas de su catálogo de fuentes de riesgo. La confabulación (respuestas inventadas sobre pólizas o trámites escolares), la configuración humano-IA (usuarios que confían de más), la seguridad de la información (inyección de instrucciones) y la cadena de valor (cambios del proveedor del modelo fundacional) resultan los de mayor nivel. En la Declaración de Aplicabilidad, cada uno apunta a sus controles de ISO/IEC 42001, y en la documentación para clientes la empresa explica cómo los mide.</p>
+<p><strong>Monarca Crédito</strong>, la fintech de la Ciudad de México con el modelo Score Monarca v3, usa MEASURE 2 para estructurar su plan de validación: exactitud por segmento, estabilidad en el tiempo, métricas de equidad por sexo, edad y entidad federativa, y pruebas con variables sustitutas como el código postal. El Comité de Modelos aprueba el plan, y la evidencia alimenta <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> y la revisión por la dirección. Cuando un banco aliado estadounidense le pregunta por el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>, Monarca responde con su tabla de correspondencia y con la evidencia de su <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<p>Los casos completos están en <a href="../../casos-practicos/empresa-desarrolla-chatbot/">Empresa que desarrolla un chatbot</a> y <a href="../../casos-practicos/fintech-scoring/">Fintech con scoring crediticio</a>.</p>
+</div>
+<h2 id="cuando-le-conviene-a-una-empresa-latinoamericana">Cuándo le conviene a una empresa latinoamericana<a class="headerlink" href="#cuando-le-conviene-a-una-empresa-latinoamericana" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> no es obligatorio en ningún país de la región, pero hay situaciones en las que adoptarlo, o al menos poder hablar su idioma, te da ventaja:</p>
+<table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>¿Te conviene el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>?</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vendes software o servicios con IA a clientes en Estados Unidos</td>
+<td>Sí, mucho</td>
+<td>Sus cuestionarios de proveedores suelen usar el vocabulario del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>; tener tu mapeo listo acelera las ventas</td>
+</tr>
+<tr>
+<td>Eres proveedor de una empresa con matriz estadounidense (cadena de suministro)</td>
+<td>Sí</td>
+<td>La matriz puede exigir a su cadena prácticas alineadas con su propio programa de riesgos de IA</td>
+</tr>
+<tr>
+<td>Buscas inversión o alianzas con bancos internacionales</td>
+<td>Sí, como complemento</td>
+<td>Los inversionistas valoran el certificado ISO/IEC 42001; el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> ayuda a explicar tu práctica técnica</td>
+</tr>
+<tr>
+<td>Necesitas un certificado para una licitación</td>
+<td>No basta</td>
+<td>Solo ISO/IEC 42001 da un certificado acreditado</td>
+</tr>
+<tr>
+<td>Eres una <abbr title="Pequeña y mediana empresa.">PyME</abbr> que solo usa IA de terceros y quieres empezar sin certificar</td>
+<td>Puede ser un buen arranque</td>
+<td>Gratuito y flexible; después puedes escalar a un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> formal</td>
+</tr>
+<tr>
+<td>Desarrollas IA generativa</td>
+<td>Sí, por el perfil <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1</td>
+<td>Es de las fuentes más completas sobre riesgos específicos de IA generativa</td>
+</tr>
+<tr>
+<td>Ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> con el Marco de Ciberseguridad del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr></td>
+<td>Sí</td>
+<td>La familia <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> se integra bien; sigue de cerca el perfil de ciberseguridad para IA</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>Con el <em>nearshoring</em>, muchas empresas mexicanas de servicios de TI, centros de atención a clientes y desarrolladoras de software atienden a clientes estadounidenses que preguntan cómo gestionan la IA. En esos casos, una respuesta sólida suele combinar tres piezas: el certificado (o el proyecto) de ISO/IEC 42001, una tabla de correspondencia con el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> y evidencia de cumplimiento de la normativa local de datos personales. Para el panorama regulatorio de la región, consulta <a href="../contexto-mexico-latam/">México y Latinoamérica</a>; si también tienes clientes en Europa, revisa el <a href="../reglamento-ia-ue/">Reglamento de IA de la UE</a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes</p>
+<ul>
+<li><strong>Ofrecer o comprar una "certificación <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>".</strong> El <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> no plantea el marco como certificable; cualquier "sello" es un servicio privado de evaluación, no una certificación acreditada.</li>
+<li><strong>Usar el <em>crosswalk</em> alojado por el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> como si fuera oficial.</strong> Lo elaboró un tercero y mapea un borrador de ISO/IEC 42001.</li>
+<li><strong>Copiar las 72 subcategorías como controles en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>.</strong> El AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> no se diseñó como catálogo de controles; úsalo para enriquecer los tuyos.</li>
+<li><strong>Citar una categoría sin revisar la versión vigente.</strong> El marco está en revisión; verifica la página del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> antes de publicar documentos formales.</li>
+<li><strong>Quedarse en GOVERN y MAP.</strong> Muchas organizaciones documentan políticas y contexto, pero nunca miden. El valor diferencial está en MEASURE.</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Algún cliente o socio nos ha preguntado por el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> o por prácticas de gestión de riesgos de IA?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tenemos una tabla de correspondencia propia entre nuestro <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y las funciones del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Si usamos IA generativa, ¿revisamos los 12 riesgos de <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1 en nuestra evaluación de riesgos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tenemos métricas definidas para validez, equidad, robustez y privacidad de nuestros sistemas de IA?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Sabemos cómo apagar o retirar un sistema de IA que se comporta mal, y quién decide hacerlo?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Alguien da seguimiento a la revisión del AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> y a los nuevos perfiles del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr>?</li>
+</ul>
+<h2 id="para-seguir-leyendo">Para seguir leyendo<a class="headerlink" href="#para-seguir-leyendo" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../con-iso27001/">Integración con ISO 27001</a>: cómo sumar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> a un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> existente.</li>
+<li><a href="../../clausulas/c6-planificacion/">Cláusula 6 · Planificación</a> y <a href="../../clausulas/c9-evaluacion-del-desempeno/">cláusula 9 · Evaluación del desempeño</a>: donde más se aprovecha el AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr>.</li>
+<li><a href="../../anexo-a/a6-ciclo-de-vida/">A.6 · Ciclo de vida</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5 · Evaluación de impactos</a>.</li>
+<li><a href="../../fundamentos/principios-ia-responsable/">Principios de IA responsable</a> y <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>.</li>
+<li>Plantillas: <a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a> y <a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>.</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:rmf">
+<p>Página oficial del <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI Risk Management Framework (versión vigente AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> 1.0, publicada el 26 de enero de 2023; aviso de revisión en el marco del Plan de Acción de IA de la Casa Blanca; nota conceptual del 7 de abril de 2026 sobre un perfil para infraestructura crítica; enlaces a la hoja de ruta y a las tablas de correspondencia): <a href="https://www.nist.gov/itl/ai-risk-management-framework">https://www.nist.gov/itl/ai-risk-management-framework</a>, consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:rmf" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:rmf" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:rmf" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:rmf" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:plan">
+<p>Casa Blanca, <em>America's AI Action Plan</em> (julio de 2025), p. 7: <a href="https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf">https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf</a>, consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:plan" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:rmfpdf">
+<p><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 100-1, <em>Artificial Intelligence Risk Management Framework (AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> 1.0)</em>: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</a>, consultado el 9 de octubre de 2026. El número de categorías y subcategorías por función es un conteo hecho sobre el PDF oficial.&#160;<a class="footnote-backref" href="#fnref:rmfpdf" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:playbook">
+<p><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AIRC, <em>AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> Playbook</em>: <a href="https://airc.nist.gov/airmf-resources/playbook/">https://airc.nist.gov/airmf-resources/playbook/</a>, consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:playbook" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ai600">
+<p><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI 600-1, <em>Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile</em> (26 de julio de 2024), ficha: <a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence">https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence</a>; documento: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf</a>. Consultados el 9 de octubre de 2026. El número aproximado de acciones sugeridas (unas 212) es un conteo propio de los identificadores del documento, no una cifra publicada por el <abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr>.&#160;<a class="footnote-backref" href="#fnref:ai600" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:ai600" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:crosswalk">
+<p><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AIRC, página de tablas de correspondencia: <a href="https://airc.nist.gov/airmf-resources/crosswalks/">https://airc.nist.gov/airmf-resources/crosswalks/</a>; documento <em><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr> to ISO/IEC FDIS 42001 AI Management system Crosswalk</em>: <a href="https://airc.nist.gov/docs/NIST_AI_RMF_to_ISO_IEC_42001_Crosswalk.pdf">https://airc.nist.gov/docs/NIST_AI_RMF_to_ISO_IEC_42001_Crosswalk.pdf</a>. Consultados el 9 de octubre de 2026. La fecha de creación procede de los metadatos del PDF.&#160;<a class="footnote-backref" href="#fnref:crosswalk" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ir8596">
+<p><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> IR 8596 (borrador preliminar inicial), <em>Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)</em>: <a href="https://csrc.nist.gov/pubs/ir/8596/iprd">https://csrc.nist.gov/pubs/ir/8596/iprd</a>, consultado el 9 de octubre de 2026. Fechas y estado verificados en esa página; la descripción de los tres focos procede de resúmenes de terceros (fuente secundaria).&#160;<a class="footnote-backref" href="#fnref:ir8596" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -3020,6 +3882,9 @@
 
 
 
+
+  
+  
 
 
 

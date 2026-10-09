@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Guía para quien ya tiene un SGSI con ISO/IEC 27001:2022 y quiere integrar ISO/IEC 42001 (SGIA). Qué se comparte, qué se adapta, qué es nuevo, comparación cláusula por cláusula, los 38 controles frente al Anexo A de ISO 27001, SoA combinada y sistema de gestión integrado.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -2249,6 +2249,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Con ISO 27001
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2265,6 +2283,423 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#para-quien-es-esta-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para quién es esta página
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-mapa-en-tres-zonas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El mapa en tres zonas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zona-1-lo-compartido-el-motor-del-sistema-de-gestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zona 1 · Lo compartido: el motor del sistema de gestión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zona-2-lo-que-se-adapta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zona 2 · Lo que se adapta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zona 2 · Lo que se adapta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexto-con-roles-de-ia-41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto con roles de IA (4.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riesgo-consecuencias-para-personas-y-sociedades-no-solo-cid-61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riesgo: consecuencias para personas y sociedades, no solo CID (6.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-de-aplicabilidad-con-otros-38-controles-613" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Declaración de Aplicabilidad con otros 38 controles (6.1.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politica-de-seguridad-a-ia-52-y-a2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Política: de seguridad a IA (5.2 y A.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proveedores-de-ia-a10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proveedores de IA (A.10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registros-de-eventos-a628" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registros de eventos (A.6.2.8)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incidentes-a84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incidentes (A.8.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zona-3-lo-totalmente-nuevo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zona 3 · Lo totalmente nuevo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zona 3 · Lo totalmente nuevo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evaluacion-de-impacto-del-sistema-de-ia-614-84-y-a5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación de impacto del sistema de IA (6.1.4, 8.4 y A.5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-de-desarrollo-y-uso-responsable-a612-y-a93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de desarrollo y uso responsable (A.6.1.2 y A.9.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-para-ia-a7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datos para IA (A.7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparencia-hacia-usuarios-a82-y-a83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transparencia hacia usuarios (A.8.2 y A.8.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-previsto-a94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso previsto (A.9.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supervision-humana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervisión humana
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iso-270012022-vs-isoiec-42001-que-cambia-clausula-por-clausula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO 27001:2022 vs ISO/IEC 42001: qué cambia, cláusula por cláusula
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-38-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los 38 controles frente al Anexo A de ISO 27001:2022
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-controles-de-iso-27001-ya-cubren-riesgos-de-ia-y-cuales-no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué controles de ISO 27001 ya cubren riesgos de IA (y cuáles no)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-construir-una-soa-combinada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo construir una SoA combinada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo construir una SoA combinada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-filas-conversa-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo de filas (Conversa Labs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-armar-un-sistema-de-gestion-integrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo armar un sistema de gestión integrado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo armar un sistema de gestión integrado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documento-maestro-y-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documento maestro y alcance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Políticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procesos comunes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-riesgos-con-dimensiones-adicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de riesgos con dimensiones adicionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auditorias-combinadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auditorías combinadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isoiec-27701-y-isoiec-27090-las-otras-piezas-del-rompecabezas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/IEC 27701 y ISO/IEC 27090: las otras piezas del rompecabezas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-conversa-labs-integra-su-sgia-en-su-sgsi-certificado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo: Conversa Labs integra su SGIA en su SGSI certificado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-de-iso-27001-que-puedes-reutilizar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas de ISO 27001 que puedes reutilizar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-seguir-leyendo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para seguir leyendo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3010,9 +3445,1103 @@
 
 
 <h1 id="integracion-con-iso-27001">Integración con ISO 27001<a class="headerlink" href="#integracion-con-iso-27001" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg></span> Integración</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 25 min de lectura</span></p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> con ISO/IEC 27001:2022, conservas el esqueleto completo del sistema de gestión (documentos, auditoría, revisión por la dirección, acciones correctivas), adaptas varias piezas clave (contexto, riesgo, Declaración de Aplicabilidad, proveedores, registros e incidentes) y construyes desde cero lo propio de la IA: evaluación de impacto, objetivos de uso responsable, gestión de datos, transparencia, uso previsto y supervisión humana.</p>
+</div>
+<h2 id="para-quien-es-esta-pagina">Para quién es esta página<a class="headerlink" href="#para-quien-es-esta-pagina" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Para ti, que coordinas un sistema de gestión de seguridad de la información (<abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>) con ISO/IEC 27001:2022 y te acaban de pedir "lo mismo, pero para IA": un banco cliente mandó un cuestionario sobre gobierno de IA, el consejo quiere un sello para un producto con IA generativa o descubriste que medio equipo usa chatbots gratuitos con datos de clientes.</p>
+<p>La buena noticia: no empiezas en cero. Las dos normas comparten la <strong>estructura armonizada</strong> (<em>harmonized structure</em>) de ISO, así que la mayor parte del "motor" del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> sirve para el sistema de gestión de IA (<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>). La advertencia: lo que cambia no es cosmético. En ISO/IEC 42001 el riesgo ya no gira solo en torno a la información; también importa <strong>qué les pasa a las personas y a la sociedad</strong> cuando un sistema de IA se equivoca, discrimina o se usa para algo que no debía.</p>
+<p>Para ubicarte en el tiempo: ISO/IEC 27001:2022 se publicó el 25 de octubre de 2022 y recibió una enmienda sobre acción climática el 23 de febrero de 2024<sup id="fnref:iso27001"><a class="footnote-ref" href="#fn:iso27001">1</a></sup>; ISO/IEC 42001:2023 se publicó el 18 de diciembre de 2023 y, al 9 de octubre de 2026, no tiene enmiendas ni revisión en curso<sup id="fnref:iso42001"><a class="footnote-ref" href="#fn:iso42001">2</a></sup>.</p>
+<div class="admonition tip">
+<p class="admonition-title">¿Aún no tienes <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>?</p>
+<p>Esta página da por hecho que ya conoces ISO 27001. Si todavía no tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y quieres construir ambos sistemas a la vez, te servirá el proyecto hermano de esta guía, el <a href="https://github.com/adriangzmncrz-arch/iso27001-toolkit-es">ISO 27001 Toolkit en español</a>, con plantillas y explicaciones del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>. Te recomendamos diseñar desde el inicio un sistema integrado en lugar de dos sistemas paralelos.</p>
+</div>
+<p>A lo largo de la página nombramos controles de ambas normas. Para no confundirlos (el número A.5.2, por ejemplo, existe en las dos), los de ISO 27001 siempre llevan "27001" al lado; en las tablas aparecen en una columna propia y sin la "A.". Los nombres de los controles de ISO/IEC 42001 que usamos son traducción libre de referencia, no el texto oficial.</p>
+<h2 id="el-mapa-en-tres-zonas">El mapa en tres zonas<a class="headerlink" href="#el-mapa-en-tres-zonas" title="Enlace permanente a esta sección">&para;</a></h2>
+<figure class="dx-infografia">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 904" role="img" aria-labelledby="ig-iso27001-vs-iso42001-t ig-iso27001-vs-iso42001-d">
+<title id="ig-iso27001-vs-iso42001-t">Del SGSI con ISO 27001:2022 al SGIA con ISO/IEC 42001: lo compartido, lo que se adapta y lo nuevo</title>
+<desc id="ig-iso27001-vs-iso42001-d">Tres columnas. Compartido, reutilizas tu SGSI: estructura armonizada de las cláusulas 4 a 10; información documentada, 7.5; competencia y toma de conciencia, 7.2 y 7.3; comunicación, 7.4; planificación de cambios, 6.3; auditoría interna, 9.2; revisión por la dirección, 9.3; mejora y acción correctiva, 10.1 y 10.2. Ejemplo: un solo programa de auditoría interna con criterios de ambas normas. Se adapta, amplías lo que existe: contexto con propósito previsto y roles, 4.1 y 4.2; riesgo más allá de confidencialidad, integridad y disponibilidad, 6.1.1, 6.1.2 y 8.2; Declaración de Aplicabilidad con otros 38 controles, 6.1.3; política de IA, 5.2 y A.2; proveedores de IA, A.10.2 y A.10.3; registros de eventos, A.6.2.8; incidentes de IA, A.8.4; inventario y recursos, A.4. Ejemplo: la matriz de riesgos agrega consecuencias para personas y sociedad. Nuevo, construyes desde cero: evaluación de impacto, 6.1.4, 8.4 y A.5; desarrollo y uso responsable, A.6.1.2 y A.9.3; datos para IA, A.7.2 a A.7.6; transparencia a usuarios, A.8.2 y A.8.3; uso previsto, A.9.4; supervisión humana, A.9.3, A.6.1.3 y A.4.6; documentación técnica, A.6.2.7; información a clientes, A.10.4. Ejemplo: aviso en el chatbot de que la persona conversa con un asistente de IA. Abajo, una barra con los 38 controles del Anexo A de ISO/IEC 42001 según la clasificación del autor frente al Anexo A de ISO 27001:2022: 2 equivalentes, 19 similares y 17 nuevos.</desc>
+<text x="450" y="32" text-anchor="middle" font-size="21" font-weight="700">Del SGSI al SGIA: tres zonas de trabajo</text>
+<text x="450" y="58" text-anchor="middle" font-size="15" class="ig-muted">ISO/IEC 27001:2022 → ISO/IEC 42001:2023</text>
+<rect x="16" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 16 152 L 16 92 Q 16 78 30 78 L 278 78 Q 292 78 292 92 L 292 152 Z" class="ig-brand"/>
+<circle cx="50" cy="115.0" r="18" class="ig-on-color"/>
+<rect x="41" y="109.0" width="18" height="4" rx="1.5" class="ig-brand"/>
+<rect x="41" y="117.0" width="18" height="4" rx="1.5" class="ig-brand"/>
+<text x="78" y="111" font-size="21" font-weight="700" class="ig-on-color">Compartido</text>
+<text x="78" y="135" font-size="15" class="ig-on-color">Reutilizas tu SGSI</text>
+<a href="../../clausulas/">
+<rect x="26" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="164" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="185" font-size="16" font-weight="600">Estructura armonizada</text>
+<text x="42" y="205" font-size="15" class="ig-muted">Cláusulas 4 a 10</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-5">
+<rect x="26" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="220" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="241" font-size="16" font-weight="600">Información documentada</text>
+<text x="42" y="261" font-size="15" class="ig-muted">7.5</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-2">
+<rect x="26" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="276" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="297" font-size="16" font-weight="600">Competencia y conciencia</text>
+<text x="42" y="317" font-size="15" class="ig-muted">7.2 · 7.3</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-4">
+<rect x="26" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="332" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="353" font-size="16" font-weight="600">Comunicación</text>
+<text x="42" y="373" font-size="15" class="ig-muted">7.4</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-3">
+<rect x="26" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="388" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="409" font-size="16" font-weight="600">Planificación de cambios</text>
+<text x="42" y="429" font-size="15" class="ig-muted">6.3</text>
+</a>
+<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">
+<rect x="26" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="444" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="465" font-size="16" font-weight="600">Auditoría interna</text>
+<text x="42" y="485" font-size="15" class="ig-muted">9.2</text>
+</a>
+<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">
+<rect x="26" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="500" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="521" font-size="16" font-weight="600">Revisión por la dirección</text>
+<text x="42" y="541" font-size="15" class="ig-muted">9.3</text>
+</a>
+<a href="../../clausulas/c10-mejora/#c-10-2">
+<rect x="26" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="556" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="577" font-size="16" font-weight="600">Mejora y acción correctiva</text>
+<text x="42" y="597" font-size="15" class="ig-muted">10.1 · 10.2</text>
+</a>
+<rect x="26" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="40" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="40" y="666" font-size="15">Un solo programa de auditoría</text>
+<text x="40" y="687" font-size="15">interna con criterios de</text>
+<text x="40" y="708" font-size="15">ambas normas</text>
+<g class="obj-a4">
+<rect x="312" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 312 152 L 312 92 Q 312 78 326 78 L 574 78 Q 588 78 588 92 L 588 152 Z" class="ig-accent"/>
+<circle cx="346" cy="115.0" r="18" class="ig-on-color"/>
+<path d="M 336 112.0 Q 341 106.0 346 111.0 T 356 110.0" class="ig-s-accent" stroke-width="3" stroke-linecap="round"/>
+<path d="M 336 120.0 Q 341 114.0 346 119.0 T 356 118.0" class="ig-s-accent" stroke-width="3" stroke-linecap="round"/>
+<text x="374" y="111" font-size="21" font-weight="700" class="ig-on-color">Se adapta</text>
+<text x="374" y="135" font-size="15" class="ig-on-color">Amplías lo que existe</text>
+<a href="../../clausulas/c4-contexto/#c-4-1">
+<rect x="322" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="164" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="185" font-size="16" font-weight="600">Contexto: propósito y roles</text>
+<text x="338" y="205" font-size="15" class="ig-muted">4.1 · 4.2</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-1-2">
+<rect x="322" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="220" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="241" font-size="16" font-weight="600">Riesgo más allá de la CID</text>
+<text x="338" y="261" font-size="15" class="ig-muted">6.1.1 · 6.1.2 · 8.2</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-1-3">
+<rect x="322" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="276" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="297" font-size="16" font-weight="600">SoA con otros 38 controles</text>
+<text x="338" y="317" font-size="15" class="ig-muted">6.1.3</text>
+</a>
+<a href="../../anexo-a/a2-politicas/#a-2-2">
+<rect x="322" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="332" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="353" font-size="16" font-weight="600">Política de IA</text>
+<text x="338" y="373" font-size="15" class="ig-muted">5.2 · A.2</text>
+</a>
+<a href="../../anexo-a/a10-terceros/#a-10-3">
+<rect x="322" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="388" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="409" font-size="16" font-weight="600">Proveedores de IA</text>
+<text x="338" y="429" font-size="15" class="ig-muted">A.10.2 · A.10.3</text>
+</a>
+<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">
+<rect x="322" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="444" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="465" font-size="16" font-weight="600">Registros de eventos</text>
+<text x="338" y="485" font-size="15" class="ig-muted">A.6.2.8</text>
+</a>
+<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">
+<rect x="322" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="500" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="521" font-size="16" font-weight="600">Incidentes de IA</text>
+<text x="338" y="541" font-size="15" class="ig-muted">A.8.4</text>
+</a>
+<a href="../../anexo-a/a4-recursos/">
+<rect x="322" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="556" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="577" font-size="16" font-weight="600">Inventario y recursos</text>
+<text x="338" y="597" font-size="15" class="ig-muted">A.4</text>
+</a>
+<rect x="322" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="336" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="336" y="666" font-size="15">La matriz de riesgos agrega</text>
+<text x="336" y="687" font-size="15">consecuencias para personas</text>
+<text x="336" y="708" font-size="15">y para la sociedad</text>
+</g>
+<g class="obj-a5">
+<rect x="608" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<rect x="608" y="78" width="276" height="658" rx="14" class="ig-s-obj" stroke-width="2"/>
+<path d="M 608 152 L 608 92 Q 608 78 622 78 L 870 78 Q 884 78 884 92 L 884 152 Z" class="ig-obj"/>
+<circle cx="642" cy="115.0" r="18" class="ig-on-color"/>
+<polygon points="642.0,104.0 645.4,111.6 653.0,115.0 645.4,118.4 642.0,126.0 638.6,118.4 631.0,115.0 638.6,111.6" class="ig-obj"/>
+<text x="670" y="111" font-size="21" font-weight="700" class="ig-on-color">Nuevo</text>
+<text x="670" y="135" font-size="15" class="ig-on-color">Construyes desde cero</text>
+<a href="../../anexo-a/a5-evaluacion-de-impacto/">
+<rect x="618" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="164" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="185" font-size="16" font-weight="600">Evaluación de impacto</text>
+<text x="634" y="205" font-size="15" class="ig-muted">6.1.4 · 8.4 · A.5</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-3">
+<rect x="618" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="220" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="241" font-size="16" font-weight="600">Desarrollo y uso responsable</text>
+<text x="634" y="261" font-size="15" class="ig-muted">A.6.1.2 · A.9.3</text>
+</a>
+<a href="../../anexo-a/a7-datos/">
+<rect x="618" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="276" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="297" font-size="16" font-weight="600">Datos para IA</text>
+<text x="634" y="317" font-size="15" class="ig-muted">A.7.2 a A.7.6</text>
+</a>
+<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">
+<rect x="618" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="332" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="353" font-size="16" font-weight="600">Transparencia a usuarios</text>
+<text x="634" y="373" font-size="15" class="ig-muted">A.8.2 · A.8.3</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-4">
+<rect x="618" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="388" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="409" font-size="16" font-weight="600">Uso previsto</text>
+<text x="634" y="429" font-size="15" class="ig-muted">A.9.4</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-3">
+<rect x="618" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="444" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="465" font-size="16" font-weight="600">Supervisión humana</text>
+<text x="634" y="485" font-size="15" class="ig-muted">A.9.3 · A.6.1.3 · A.4.6</text>
+</a>
+<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">
+<rect x="618" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="500" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="521" font-size="16" font-weight="600">Documentación técnica</text>
+<text x="634" y="541" font-size="15" class="ig-muted">A.6.2.7</text>
+</a>
+<a href="../../anexo-a/a10-terceros/#a-10-4">
+<rect x="618" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="556" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="577" font-size="16" font-weight="600">Información a clientes</text>
+<text x="634" y="597" font-size="15" class="ig-muted">A.10.4</text>
+</a>
+<rect x="618" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="632" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="632" y="666" font-size="15">Aviso en el chatbot: «estás</text>
+<text x="632" y="687" font-size="15">conversando con un asistente</text>
+<text x="632" y="708" font-size="15">de IA»</text>
+</g>
+<a href="#tabla-38-controles">
+<text x="16" y="776" font-size="17" font-weight="700">Los 38 controles frente al Anexo A de ISO 27001:2022</text>
+</a>
+<clipPath id="ig-iso27001-vs-iso42001-barra"><rect x="16" y="790" width="868" height="40" rx="10"/></clipPath>
+<g clip-path="url(#ig-iso27001-vs-iso42001-barra)">
+<rect x="16.0" y="790" width="45.7" height="40" class="ig-brand"/>
+<rect x="61.7" y="790" width="434.0" height="40" class="ig-accent"/>
+<g class="obj-a5">
+<rect x="495.7" y="790" width="388.3" height="40" class="ig-obj"/>
+</g>
+</g>
+<text x="38.8" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">2</text>
+<text x="278.7" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">19 similares</text>
+<text x="689.8" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">17 nuevos</text>
+<line x1="61.7" y1="790" x2="61.7" y2="830" class="ig-card" stroke-width="2"/>
+<line x1="495.7" y1="790" x2="495.7" y2="830" class="ig-card" stroke-width="2"/>
+<rect x="16" y="847" width="14" height="14" rx="3" class="ig-brand"/>
+<text x="38" y="860" font-size="15">2 equivalentes: adaptas el texto</text>
+<rect x="308" y="847" width="14" height="14" rx="3" class="ig-accent"/>
+<text x="330" y="860" font-size="15">19 similares: amplías un control</text>
+<g class="obj-a5">
+<rect x="600" y="847" width="14" height="14" rx="3" class="ig-obj"/>
+</g>
+<text x="622" y="860" font-size="15">17 nuevos: construyes desde cero</text>
+<text x="450" y="890" text-anchor="middle" font-size="15" class="ig-muted">Clasificación del autor. Detalle control por control en la tabla de esta página.</text>
+</svg>
+
+<figcaption>Lo que compartes, lo que adaptas y lo que construyes nuevo al pasar de un SGSI con ISO 27001:2022 a un SGIA con ISO/IEC 42001. La barra inferior resume nuestra clasificación de los 38 controles.</figcaption>
+</figure>
+
+<details class="note">
+<summary>Descripción textual de la infografía</summary>
+<p>Tres columnas. <strong>Compartido (reutilizas tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>):</strong> estructura armonizada de las cláusulas 4 a 10; información documentada (7.5); competencia y toma de conciencia (7.2 y 7.3); comunicación (7.4); planificación de cambios (6.3); auditoría interna (9.2); revisión por la dirección (9.3); mejora y acción correctiva (10.1 y 10.2). Ejemplo: un solo programa de auditoría con criterios de ambas normas.</p>
+<p><strong>Se adapta (amplías lo que existe):</strong> contexto con propósito previsto y roles (4.1 y 4.2); riesgo que mira personas y sociedad, no solo confidencialidad, integridad y disponibilidad (6.1.1, 6.1.2 y 8.2); Declaración de Aplicabilidad con otros 38 controles (6.1.3); política de IA (5.2 y A.2); proveedores de IA (A.10.2 y A.10.3); registros de eventos (A.6.2.8); incidentes de IA (A.8.4); inventario y recursos (A.4). Ejemplo: la matriz de riesgos agrega consecuencias para personas y sociedad.</p>
+<p><strong>Nuevo (construyes desde cero):</strong> evaluación de impacto (6.1.4, 8.4 y A.5); desarrollo y uso responsable (A.6.1.2 y A.9.3); datos para IA (A.7.2 a A.7.6); transparencia a usuarios (A.8.2 y A.8.3); uso previsto (A.9.4); supervisión humana (A.9.3, A.6.1.3 y A.4.6); documentación técnica (A.6.2.7); información a clientes (A.10.4). Ejemplo: aviso en el chatbot de que la persona conversa con una IA.</p>
+<p>Abajo, una barra con los 38 controles según nuestra clasificación frente al Anexo A de ISO 27001:2022: 2 equivalentes, 19 similares y 17 nuevos.</p>
+</details>
+<p>Las zonas no son compartimentos estancos: la auditoría interna es "compartida" como proceso, pero el auditor necesita criterios nuevos para revisar una validación de modelo. Úsalas como brújula, no como clasificación rígida.</p>
+<h2 id="zona-1-lo-compartido-el-motor-del-sistema-de-gestion">Zona 1 · Lo compartido: el motor del sistema de gestión<a class="headerlink" href="#zona-1-lo-compartido-el-motor-del-sistema-de-gestion" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>ISO/IEC 42001 está escrita sobre la misma plantilla que ISO/IEC 27001:2022, ISO 9001 o ISO 22301: mismas cláusulas, mismo orden y buena parte del texto base. Las cláusulas 4 a 10 son casi paralelas; cambia el objeto ("seguridad de la información" por "IA") y se añaden piezas específicas. El propio Anexo D de ISO/IEC 42001 sugiere integrar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> en lugar de operarlos por separado.</p>
+<p>En la práctica reutilizas casi tal cual el control de documentos (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>), la gestión de competencias y la concientización (<a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a> y <a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a>), la matriz de comunicación (<a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a>), la planificación de cambios (<a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a>), la auditoría interna (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a>), la revisión por la dirección (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a>) y el registro de no conformidades y acciones correctivas (<a href="../../clausulas/c10-mejora/#c-10-2">10.2</a>). Lo que cambia es el contenido que pasa por esos procesos: artefactos nuevos en el control documental, perfiles de ciencia de datos en la matriz de competencias, indicadores de comportamiento de los sistemas en el seguimiento (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>). El detalle está en <a href="#procesos-comunes">procesos comunes</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía: ampliar la casa, no construir otra</p>
+<p>Tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> es una casa con buena cimentación e instalaciones. Para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> no compras otro terreno: agregas un piso. Aprovechas cimientos (estructura armonizada), instalaciones (procesos comunes) y escalera (comités), pero el piso nuevo tiene cuartos que antes no existían. Si los metes a la fuerza en la planta baja, la casa se vuelve inhabitable; si construyes una casa aparte, pagas dos veces la cimentación.</p>
+</div>
+<h2 id="zona-2-lo-que-se-adapta">Zona 2 · Lo que se adapta<a class="headerlink" href="#zona-2-lo-que-se-adapta" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Aquí está la mayor parte del trabajo "invisible": procesos que ya tienes, pero que no alcanzan si los dejas como están.</p>
+<h3 id="contexto-con-roles-de-ia-41">Contexto con roles de IA (4.1)<a class="headerlink" href="#contexto-con-roles-de-ia-41" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ya analizas cuestiones externas e internas y, desde la enmienda de 2024, si el cambio climático es pertinente. ISO/IEC 42001 conserva esa base y añade dos preguntas nuevas: <strong>para qué sirve cada sistema de IA</strong> (su propósito previsto) y <strong>qué papel juegas frente a él</strong>: lo desarrollas, lo provees a clientes, lo usas como cliente de un tercero o varias cosas a la vez. Tus roles determinan qué controles te aplican y con qué profundidad. Lo explicamos en <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> y en <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>.</p>
+<p><strong>Qué haces:</strong> agregas al contexto un inventario de sistemas de IA (incluida la IA "incrustada" en el software que ya pagas) con propósito y rol, y amplías el registro de partes interesadas (<a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>) con quienes reciben los efectos sin ser tus clientes: solicitantes rechazados, usuarios finales de tus clientes, trabajadores evaluados con IA.</p>
+<h3 id="riesgo-consecuencias-para-personas-y-sociedades-no-solo-cid-61">Riesgo: consecuencias para personas y sociedades, no solo CID (6.1)<a class="headerlink" href="#riesgo-consecuencias-para-personas-y-sociedades-no-solo-cid-61" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Este es el cambio más importante. En ISO 27001 la evaluación de riesgos gira alrededor de la pérdida de confidencialidad, integridad o disponibilidad (CID) de la información. En ISO/IEC 42001 analiza consecuencias <strong>para la organización, para los individuos y para las sociedades</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>), con <strong>criterios de riesgo de IA</strong> fijados en <a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a> que sirven también para valorar impactos, riesgos determinados según el dominio y el uso previsto de cada sistema, probabilidad estimada "cuando aplique" y la evaluación de impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>) como insumo.</p>
+<p>Un riesgo como "el chatbot inventa una fecha límite de declaración" no compromete ningún activo de información: la base de datos está intacta y el servidor disponible. Pero un contribuyente puede pagar recargos. Si tu matriz solo tiene columnas C, I y D, ese riesgo no tiene dónde vivir.</p>
+<p><strong>Qué haces:</strong> no tires tu metodología. Amplíala con escalas de consecuencias para personas y para la sociedad, y con fuentes de riesgo propias de la IA (sesgo, deriva, alucinaciones, falta de explicabilidad, uso indebido). Más adelante proponemos una <a href="#matriz-de-riesgos-con-dimensiones-adicionales">matriz con dimensiones adicionales</a>.</p>
+<h3 id="declaracion-de-aplicabilidad-con-otros-38-controles-613">Declaración de Aplicabilidad con otros 38 controles (6.1.3)<a class="headerlink" href="#declaracion-de-aplicabilidad-con-otros-38-controles-613" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> existe en ambas normas y funciona igual en esencia: comparas tus controles necesarios contra un anexo de referencia para no omitir ninguno y justificas inclusiones y exclusiones. Diferencias a tener presentes (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>):</p>
+<ul>
+<li>El anexo de ISO/IEC 42001 tiene <strong>38 controles</strong> en 9 temas (A.2 a A.10), frente a los 93 de ISO 27001:2022, y se considera además la guía del Anexo B.</li>
+<li>ISO 27001 pide indicar si cada control está implementado; ISO/IEC 42001 no lo menciona expresamente. Inclúyelo de todas formas: el auditor lo preguntará.</li>
+<li>En ISO 27001 aprueban el plan y los riesgos residuales los dueños de riesgo; en ISO/IEC 42001, la dirección designada. En nuestra lectura, conservar dueños de riesgo sigue siendo buena práctica.</li>
+</ul>
+<p>Más abajo explicamos <a href="#como-construir-una-soa-combinada">cómo armar una <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> combinada</a>.</p>
+<h3 id="politica-de-seguridad-a-ia-52-y-a2">Política: de seguridad a IA (5.2 y A.2)<a class="headerlink" href="#politica-de-seguridad-a-ia-52-y-a2" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La política de IA (<a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a> y controles <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> a <a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>) se parece en forma a la política de seguridad, pero su sustancia es otra: principios de uso y desarrollo responsable, usos prohibidos, criterios para aprobar casos de uso. ISO/IEC 42001 pide además referenciar las otras políticas que se cruzan con la IA (seguridad, privacidad, compras, ética, recursos humanos).</p>
+<h3 id="proveedores-de-ia-a10">Proveedores de IA (A.10)<a class="headerlink" href="#proveedores-de-ia-a10" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Tu proceso de proveedores ya cubre relaciones con proveedores, cláusulas contractuales, cadena de suministro de TIC, monitoreo de servicios y nube (ISO 27001 A.5.19 a A.5.23). Para la IA no basta con saber si el proveedor del modelo cifra los datos. También necesitas saber si usa tus datos (o los de tus clientes) para entrenar sus modelos, con cuánta anticipación avisa de cambios de versión o retiros, qué documentación entrega sobre limitaciones y uso previsto, cómo se reparten las responsabilidades del ciclo de vida (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>) y si lo que entrega es coherente con tu enfoque de IA responsable (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>). Si provees IA, además debes mirar hacia tus clientes (<a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>), algo que el Anexo A de ISO 27001 no trata.</p>
+<p><strong>Qué haces:</strong> agregas una sección de IA a tu cuestionario de evaluación de proveedores y a tus plantillas contractuales; no creas un proceso nuevo.</p>
+<h3 id="registros-de-eventos-a628">Registros de eventos (A.6.2.8)<a class="headerlink" href="#registros-de-eventos-a628" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Las bitácoras del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> (ISO 27001 A.8.15) registran sobre todo eventos de seguridad. Para un sistema de IA, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a> pide decidir en qué etapas se registran eventos, como mínimo durante el uso: versión del modelo y de las instrucciones, fuentes recuperadas, anulaciones humanas, salidas bloqueadas por filtros. El dilema: registrar entradas y salidas completas ayuda a investigar, pero acumula datos personales; la retención y el enmascaramiento (ISO 27001 A.8.11) cobran importancia.</p>
+<h3 id="incidentes-a84">Incidentes (A.8.4)<a class="headerlink" href="#incidentes-a84" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Tu proceso de incidentes (ISO 27001 A.5.24 a A.5.28) está pensado para brechas de seguridad. En IA aparecen incidentes <strong>sin brecha</strong>: un modelo de crédito que rechaza sistemáticamente a un grupo o una alucinación que causa un daño económico. <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a> exige tener previsto cómo y cuándo se avisa de un incidente a quienes usan el sistema y, si aplica, a las autoridades; la guía del Anexo B admite integrarlo con tu gestión de incidentes. <strong>Qué haces:</strong> amplías la taxonomía con categorías de IA, defines severidad por daño a personas y decides quién avisa a los afectados.</p>
+<h2 id="zona-3-lo-totalmente-nuevo">Zona 3 · Lo totalmente nuevo<a class="headerlink" href="#zona-3-lo-totalmente-nuevo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Estas piezas no tienen equivalente en el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>. No intentes "estirarlas" desde un control de ISO 27001: diseña desde cero, aprovechando tus formatos y tu disciplina documental.</p>
+<h3 id="evaluacion-de-impacto-del-sistema-de-ia-614-84-y-a5">Evaluación de impacto del sistema de IA (6.1.4, 8.4 y A.5)<a class="headerlink" href="#evaluacion-de-impacto-del-sistema-de-ia-614-84-y-a5" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El corazón de la diferencia: un proceso para valorar cómo un sistema puede afectar derechos, oportunidades, seguridad y bienestar de personas, grupos y la sociedad, considerando uso previsto, despliegue y uso indebido previsible en su contexto técnico, social y jurídico (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a>).</p>
+<p>Tu evaluación de impacto en la protección de datos (<abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>) es un buen punto de partida, pero no alcanza: mira el tratamiento de datos personales, no la equidad, la posibilidad de impugnar una decisión ni los efectos colectivos. Más en <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>.</p>
+<h3 id="objetivos-de-desarrollo-y-uso-responsable-a612-y-a93">Objetivos de desarrollo y uso responsable (A.6.1.2 y A.9.3)<a class="headerlink" href="#objetivos-de-desarrollo-y-uso-responsable-a612-y-a93" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Además de los objetivos del sistema de gestión (<a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>), necesitas objetivos de <strong>desarrollo responsable</strong> (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>) y de <strong>uso responsable</strong> (<a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>) —equidad, transparencia, privacidad, robustez— traducidos en requisitos concretos, por ejemplo "la tasa de aprobación entre mujeres y hombres con perfil de riesgo equivalente no difiere más de X puntos" o "el asistente cita la fuente en 100 % de las respuestas sobre pólizas".</p>
+<h3 id="datos-para-ia-a7">Datos para IA (A.7)<a class="headerlink" href="#datos-para-ia-a7" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>ISO 27001 protege los datos (clasificación, acceso, cifrado, fuga). ISO/IEC 42001 se pregunta si los datos <strong>sirven</strong>: de dónde vienen, con qué derechos se obtuvieron, si son representativos, cómo se limpiaron y etiquetaron y qué transformaciones sufrieron (<a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a> a <a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a>). Un conjunto de datos perfectamente cifrado puede estar sesgado o desactualizado y producir un modelo dañino.</p>
+<h3 id="transparencia-hacia-usuarios-a82-y-a83">Transparencia hacia usuarios (A.8.2 y A.8.3)<a class="headerlink" href="#transparencia-hacia-usuarios-a82-y-a83" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> comunica hacia adentro; el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> también hacia afuera. Las personas tienen que saber que interactúan con una IA, para qué sirve el sistema, cuáles son sus límites y cómo escalar con un humano (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>). Y necesitan un canal para reportar impactos adversos (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>), distinto del canal interno de eventos de seguridad.</p>
+<h3 id="uso-previsto-a94">Uso previsto (A.9.4)<a class="headerlink" href="#uso-previsto-a94" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El sistema se usa <strong>solo</strong> para aquello para lo que fue diseñado y documentado; si alguien lo empuja fuera de ese uso, se detecta y se escala (<a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a>). En seguridad no hay nada parecido: a un servidor de correo no le importa para qué lo uses.</p>
+<h3 id="supervision-humana">Supervisión humana<a class="headerlink" href="#supervision-humana" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>No es un control aislado sino un hilo que atraviesa varios: decidir dónde se necesita intervención humana (<a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>), incorporarla en el proceso de desarrollo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a>), contar con personas competentes para ejercerla (<a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a>) y asignar responsables (<a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>). La "banda gris" de revisión humana en un modelo de crédito o el traspaso a un agente humano en un chatbot son ejemplos típicos.</p>
+<h2 id="iso-270012022-vs-isoiec-42001-que-cambia-clausula-por-clausula">ISO 27001:2022 vs ISO/IEC 42001: qué cambia, cláusula por cláusula<a class="headerlink" href="#iso-270012022-vs-isoiec-42001-que-cambia-clausula-por-clausula" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Resumen comparativo, con nuestras palabras. La columna de la derecha te dice qué hacer si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> funcionando.</p>
+<table>
+<thead>
+<tr>
+<th>Cláusula</th>
+<th>En ISO 27001:2022</th>
+<th>En ISO/IEC 42001</th>
+<th>Si ya tienes <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> Contexto</td>
+<td>Cuestiones externas e internas; desde 2024, cambio climático</td>
+<td>Lo mismo, más propósito previsto y roles frente a cada sistema de IA</td>
+<td>Inventario de sistemas de IA con propósito y rol</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-2">4.2</a> Partes interesadas</td>
+<td>Partes, requisitos y cuáles se atienden</td>
+<td>Igual; entran sujetos de IA y autoridades</td>
+<td>Registro ampliado con personas afectadas</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-3">4.3</a> Alcance</td>
+<td>Contexto, requisitos, interfaces y dependencias</td>
+<td>Contexto y requisitos; no nombra interfaces</td>
+<td>Alcance propio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y traslape documentado</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-4">4.4</a> Sistema de gestión</td>
+<td>Establecer, implementar, mantener, mejorar</td>
+<td>Igual, y explícitamente documentado</td>
+<td>Documento maestro común</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-1">5.1</a> Liderazgo</td>
+<td>Compromiso de la alta dirección</td>
+<td>Igual, con notas sobre cultura responsable</td>
+<td>Mismo comité, con agenda de IA</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a> Política</td>
+<td>Política de seguridad</td>
+<td>Política de IA que referencia otras políticas</td>
+<td>Política propia o capítulo de una integrada</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a> Roles</td>
+<td>Responsable de conformidad y reporte</td>
+<td>Igual</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> (puede ser el mismo)</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a> Riesgos y oportunidades</td>
+<td>Riesgos y oportunidades del sistema</td>
+<td>Además, criterios de riesgo de IA y riesgos por sistema y uso previsto</td>
+<td>Escalas para personas y sociedad</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a> Evaluación de riesgos</td>
+<td>Pérdida de CID; dueños de riesgo</td>
+<td>Consecuencias para organización, individuos y sociedades</td>
+<td>Matriz con dimensiones adicionales</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a> Tratamiento</td>
+<td>93 controles; <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> con estado; aprueban dueños de riesgo</td>
+<td>38 controles y guía del Anexo B; aprueba la dirección designada</td>
+<td><abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> combinada</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> Evaluación de impacto</td>
+<td>No existe</td>
+<td>Proceso para valorar consecuencias en personas y sociedades</td>
+<td>Desde cero; apóyate en tu <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr></td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a> Objetivos</td>
+<td>Objetivos de seguridad</td>
+<td>Objetivos de IA; remite a A.6.1, A.9.3 y Anexo C</td>
+<td>Objetivos de IA en tu tablero</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a> Cambios</td>
+<td>Cambios planificados</td>
+<td>Igual</td>
+<td>Mismo procedimiento</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a> Recursos</td>
+<td>Recursos</td>
+<td>Igual; enlaza con A.4</td>
+<td>Partida de IA en el presupuesto</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a> Competencia</td>
+<td>Competencia demostrada</td>
+<td>Igual</td>
+<td>Perfiles de IA en la matriz de competencias</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a> Toma de conciencia</td>
+<td>Política, contribución, consecuencias</td>
+<td>Igual</td>
+<td>Módulo de uso aceptable de IA generativa</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a> Comunicación</td>
+<td>Qué, cuándo, con quién, cómo</td>
+<td>Igual</td>
+<td>Mensajes externos sobre IA en la misma matriz</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a> Información documentada</td>
+<td>Creación, actualización y control</td>
+<td>Igual</td>
+<td>Mismo control documental, más artefactos de ingeniería</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> Operación</td>
+<td>Criterios, cambios, procesos externos</td>
+<td>Además, monitorear la eficacia de los controles operativos</td>
+<td>Indicadores de eficacia</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-2">8.2</a> Evaluación de riesgos</td>
+<td>A intervalos y ante cambios significativos</td>
+<td>Igual, con riesgos de IA</td>
+<td>Disparadores nuevos: versión de modelo, proveedor, uso</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-3">8.3</a> Tratamiento</td>
+<td>Implementar el plan</td>
+<td>Además, verificar eficacia y revisar opciones fallidas</td>
+<td>Seguimiento formal del plan</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-4">8.4</a> Evaluación de impacto</td>
+<td>No existe</td>
+<td>Evaluaciones a intervalos y ante cambios significativos</td>
+<td>Calendario y disparadores de impacto</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> Seguimiento</td>
+<td>Qué, cómo, cuándo y quién mide y analiza</td>
+<td>Sin el "quién" explícito</td>
+<td>Conserva el "quién" de todos modos</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a> Auditoría interna</td>
+<td>Programa, criterios, alcance, imparcialidad</td>
+<td>Prácticamente igual</td>
+<td>Programa combinado</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a> Revisión por la dirección</td>
+<td>Entradas más amplias (ver nota abajo)</td>
+<td>Lista de entradas más corta</td>
+<td>Una revisión con entradas de ambas</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c10-mejora/#c-10-1">10.1</a> Mejora continua</td>
+<td>Idoneidad, adecuación y eficacia</td>
+<td>Igual</td>
+<td>Mismo proceso</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c10-mejora/#c-10-2">10.2</a> No conformidad</td>
+<td>Reacción, causa raíz, eficacia</td>
+<td>Igual</td>
+<td>Registro único con campo de norma</td>
+</tr>
+</tbody>
+</table>
+<p>Las diferencias se concentran en 4.1, 6.1 y 8; el resto se reutiliza. Sobre la revisión por la dirección: en nuestra lectura, ISO/IEC 42001 no menciona expresamente algunas entradas que ISO 27001 sí pide (cumplimiento de objetivos, retroalimentación de partes interesadas, resultados de riesgos y estado del plan de tratamiento); inclúyelas igual, porque 8.2 y 8.3 las generan y cualquier auditor las espera.</p>
+<h2 id="tabla-38-controles">Los 38 controles frente al Anexo A de ISO 27001:2022<a class="headerlink" href="#tabla-38-controles" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Esta tabla relaciona cada control de ISO/IEC 42001 con los controles del Anexo A de ISO 27001:2022 que más se le parecen. Sale de los datos de la guía (<code>data/controles.yml</code>) y es <strong>interpretación del autor</strong>: otros mapeos son posibles. Así se leen las categorías:</p>
+<ul>
+<li><strong>Nuevo:</strong> no hay equivalente en ISO 27001, o lo que existe solo sirve como punto de apoyo lejano.</li>
+<li><strong>Similar:</strong> hay un control parecido que puedes ampliar, pero no basta tal cual.</li>
+<li><strong>Equivalente:</strong> el control de ISO 27001 cubre prácticamente lo mismo; adaptas el texto y listo.</li>
+</ul>
+<p>En nuestra clasificación: <strong>17 nuevos, 19 similares y 2 equivalentes</strong>. La columna "ISO 27001" usa la numeración del Anexo A de ISO 27001:2022 sin la "A.".</p>
+<table>
+<thead>
+<tr>
+<th>Control ISO/IEC 42001</th>
+<th>ISO 27001</th>
+<th>Relación</th>
+<th>Qué reutilizas o qué falta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> Política de IA</td>
+<td>5.1</td>
+<td>Similar</td>
+<td>La política de seguridad sirve de molde; la de IA fija principios de desarrollo y uso</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a> Alineación con otras políticas de la organización</td>
+<td>5.1</td>
+<td>Similar</td>
+<td>Cruza la política de IA con seguridad, privacidad, compras y ética</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a> Revisión de la política de IA</td>
+<td>5.1</td>
+<td>Equivalente</td>
+<td>Mismo ciclo de revisión que tus políticas del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a> Roles y responsabilidades de IA</td>
+<td>5.2, 5.3</td>
+<td>Similar</td>
+<td>Extiende tu matriz de roles con supervisión humana, impacto y datos</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a> Reporte de inquietudes</td>
+<td>6.8</td>
+<td>Similar</td>
+<td>El canal de eventos crece para recibir inquietudes éticas, con protección contra represalias</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a> Documentación de recursos</td>
+<td>5.9</td>
+<td>Similar</td>
+<td>El inventario de activos gana una ficha por sistema de IA</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-3">A.4.3</a> Recursos de datos</td>
+<td>5.9, 5.12</td>
+<td>Nuevo</td>
+<td>Inventariar y clasificar no basta: origen, etiquetado, sesgos conocidos, retención</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a> Recursos de herramientas</td>
+<td>5.9</td>
+<td>Similar</td>
+<td>Modelos, bibliotecas y plataformas entran al inventario con versión</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-5">A.4.5</a> Recursos de sistema y cómputo</td>
+<td>5.9, 8.6</td>
+<td>Equivalente</td>
+<td>Inventario de infraestructura y capacidad; suma consumo energético si lo tienes</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a> Recursos humanos</td>
+<td>6.3</td>
+<td>Similar</td>
+<td>Del programa de concientización a una matriz de competencias de IA</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> Proceso de evaluación de impacto</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Sin antecedente en el Anexo A de ISO 27001</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> Documentación de las evaluaciones de impacto</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Conservar y versionar cada evaluación</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> Evaluación del impacto en individuos o grupos</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Tu <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> ayuda, pero no cubre equidad ni oportunidades de vida</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a> Evaluación de impactos sociales</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Efectos colectivos, económicos y ambientales</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a> Objetivos para el desarrollo responsable</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Objetivos de equidad, robustez o transparencia convertidos en requisitos</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a> Procesos para el diseño y desarrollo responsable</td>
+<td>8.25, 8.27</td>
+<td>Similar</td>
+<td>Tu ciclo de desarrollo seguro es la base; añade puertas de equidad, robustez y supervisión</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a> Requisitos y especificación</td>
+<td>8.26</td>
+<td>Similar</td>
+<td>Los requisitos de seguridad de aplicaciones se amplían con desempeño, datos y supervisión</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a> Documentación del diseño y desarrollo</td>
+<td>8.27, 8.28</td>
+<td>Similar</td>
+<td>Diseño y modelo de amenazas, ahora con amenazas propias de la IA</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> Verificación y validación</td>
+<td>8.29</td>
+<td>Similar</td>
+<td>A las pruebas de seguridad se suman pruebas de desempeño, sesgo y robustez</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a> Despliegue</td>
+<td>8.31, 8.32</td>
+<td>Similar</td>
+<td>Separación de entornos y gestión de cambios, más criterios de liberación del modelo</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> Operación y monitoreo</td>
+<td>8.16, 8.6, 8.8</td>
+<td>Similar</td>
+<td>Al monitoreo de seguridad se suma el de desempeño y deriva</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a> Documentación técnica</td>
+<td>5.37</td>
+<td>Nuevo</td>
+<td>Los procedimientos operativos no equivalen a fichas del sistema para usuarios y autoridades</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a> Registro de eventos</td>
+<td>8.15, 8.17</td>
+<td>Similar</td>
+<td>Bitácoras que además guarden versión del modelo y eventos de uso relevantes</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a> Datos para desarrollo y mejora</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Gestión de datos para entrenar, evaluar y mejorar</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a> Adquisición de datos</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Fuentes, licencias y base legal de los datos</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a> Calidad de los datos</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Requisitos de calidad, completitud y sesgo</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a> Procedencia de los datos</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Linaje y versiones de los conjuntos</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a> Preparación de los datos</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Limpieza, etiquetado y transformaciones documentadas</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> Documentación del sistema e información para usuarios</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Aviso de interacción con IA, límites e instrucciones</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a> Reporte externo</td>
+<td>6.8</td>
+<td>Nuevo</td>
+<td>El reporte de eventos de ISO 27001 es para el personal; aquí reportan usuarios y terceros</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a> Comunicación de incidentes</td>
+<td>5.24, 5.26, 5.5</td>
+<td>Similar</td>
+<td>Tu plan de incidentes, con categorías de IA y aviso a usuarios</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a> Información para las partes interesadas</td>
+<td>5.31, 5.5</td>
+<td>Similar</td>
+<td>Registro de obligaciones legales y contactos con autoridades, ampliado a la IA</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a> Procesos para el uso responsable</td>
+<td>5.10</td>
+<td>Similar</td>
+<td>El uso aceptable de activos se vuelve un proceso de alta de casos de uso</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a> Objetivos para el uso responsable</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Objetivos de uso y puntos de supervisión humana</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a> Uso previsto del sistema de IA</td>
+<td>—</td>
+<td>Nuevo</td>
+<td>Usar el sistema solo para lo que fue diseñado y escalar desviaciones</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> Asignación de responsabilidades</td>
+<td>5.19, 5.20, 5.23</td>
+<td>Similar</td>
+<td>Una matriz de responsabilidad compartida, como la de nube, para todo el ciclo de vida</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> Proveedores</td>
+<td>5.19, 5.20, 5.21, 5.22</td>
+<td>Similar</td>
+<td>Evaluación de proveedores con criterios de IA responsable</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a> Clientes</td>
+<td>5.20</td>
+<td>Nuevo</td>
+<td>Mirar hacia tus clientes: límites y responsabilidades del sistema que les entregas</td>
+</tr>
+</tbody>
+</table>
+<p>El patrón: A.5, A.7 y buena parte de A.9 son territorio virgen para un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>; A.6 y A.10 se apoyan en desarrollo seguro y proveedores; A.2 a A.4 son los más fáciles de adaptar. Para filtrar por rol o descargar la lista, usa la <a href="../../anexo-a/#matriz">matriz filtrable del Anexo A</a>.</p>
+<h2 id="que-controles-de-iso-27001-ya-cubren-riesgos-de-ia-y-cuales-no">Qué controles de ISO 27001 ya cubren riesgos de IA (y cuáles no)<a class="headerlink" href="#que-controles-de-iso-27001-ya-cubren-riesgos-de-ia-y-cuales-no" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Como la IA "es software", es tentador pensar que el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ya la cubre. Cubre la seguridad del sistema y de sus datos, no su <strong>comportamiento</strong> ni sus <strong>efectos</strong> en las personas.</p>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>ISO 27001</th>
+<th>Qué riesgos de IA ya atiende</th>
+<th>Qué deja fuera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desarrollo seguro</td>
+<td>8.25 a 8.29</td>
+<td>Requisitos, arquitectura, código y pruebas de seguridad de la aplicación y del flujo de entrenamiento</td>
+<td>Validar exactitud, sesgo y robustez; liberar según desempeño</td>
+</tr>
+<tr>
+<td>Entornos y cambios</td>
+<td>8.31, 8.32</td>
+<td>Nadie cambia el modelo en producción sin control</td>
+<td>Saber si la nueva versión trata peor a cierto grupo</td>
+</tr>
+<tr>
+<td>Proveedores y nube</td>
+<td>5.19 a 5.23</td>
+<td>Seguridad y confidencialidad del proveedor del modelo</td>
+<td>Entrenamiento con tus datos, cambios silenciosos de versión, limitaciones, procedencia de datos</td>
+</tr>
+<tr>
+<td>Registros y monitoreo</td>
+<td>8.15, 8.16</td>
+<td>Accesos indebidos, abuso de la API, actividad anómala</td>
+<td>Deriva, respuestas erróneas, quejas por trato injusto</td>
+</tr>
+<tr>
+<td>Clasificación, privacidad y fuga</td>
+<td>5.12, 5.34, 8.11, 8.12</td>
+<td>Datos sensibles pegados en chatbots externos ("IA en la sombra")</td>
+<td>Calidad, representatividad y derechos de uso de los datos</td>
+</tr>
+<tr>
+<td>Uso aceptable y concientización</td>
+<td>5.10, 6.3</td>
+<td>Reglas de uso de IA generativa</td>
+<td>Uso responsable, uso previsto, supervisión humana</td>
+</tr>
+<tr>
+<td>Amenazas y vulnerabilidades</td>
+<td>5.7, 8.8</td>
+<td>Vulnerabilidades en bibliotecas de aprendizaje automático</td>
+<td>Amenazas propias de la IA, si no amplías el catálogo</td>
+</tr>
+<tr>
+<td>Requisitos legales y propiedad intelectual</td>
+<td>5.31, 5.32</td>
+<td>Registro de leyes y licencias</td>
+<td>Obligaciones de transparencia o evaluación de las leyes de IA</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Las amenazas propias de la IA sí son asunto del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></p>
+<p>La inyección de instrucciones (<em>prompt injection</em>), el envenenamiento de datos (<em>data poisoning</em>) o la extracción del modelo son amenazas de seguridad. En nuestra lectura, conviene que vivan en el análisis de amenazas del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> las referencie, sin duplicarlas. Catálogos públicos como MITRE ATLAS o el OWASP Top 10 para aplicaciones con <abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr> ayudan a ampliar tu lista. Más contexto en <a href="../../fundamentos/ia-para-profesionales-grc/">IA para profesionales de GRC</a>.</p>
+</div>
+<h2 id="como-construir-una-soa-combinada">Cómo construir una <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> combinada<a class="headerlink" href="#como-construir-una-soa-combinada" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Tres opciones razonables; la mejor depende de tu tamaño y de cuánto se traslapan los alcances.</p>
+<ol>
+<li><strong>Dos <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> separadas con referencias cruzadas.</strong> Cada norma con su documento, y una columna que apunta al control relacionado de la otra. Es la opción más conservadora y la que menos confunde a un auditor de una sola norma.</li>
+<li><strong>Una hoja con dos secciones.</strong> Un mismo archivo, primero los 93 controles de ISO 27001 y luego los 38 de ISO/IEC 42001, con las mismas columnas. Facilita el mantenimiento y la revisión por la dirección.</li>
+<li><strong>Una matriz unificada por tema.</strong> Las filas se agrupan por tema (proveedores, desarrollo, incidentes) y cada fila indica a qué norma pertenece el control. Es la más útil para operar, pero la más difícil de auditar si no está bien hecha.</li>
+</ol>
+<p>Te recomendamos la opción 2 para la mayoría de las organizaciones medianas: una sola hoja, dos secciones, columnas idénticas y una columna de relación cruzada.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Ventajas de combinar</p>
+<ul>
+<li>Una sola fuente de verdad para la revisión por la dirección y las auditorías.</li>
+<li>Evidencias compartidas: una evaluación de proveedores sirve para ISO 27001 A.5.19 y para A.10.3.</li>
+<li>Huecos visibles: un control de 42001 sin relación con el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> anuncia trabajo nuevo.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Riesgos de combinar</p>
+<ul>
+<li><strong>Colisión de numeración:</strong> A.5.2 de ISO/IEC 42001 (proceso de evaluación de impacto) no tiene nada que ver con el control 5.2 de ISO 27001 (roles de seguridad). Usa prefijos como "27001-5.2" y "42001-A.5.2".</li>
+<li><strong>Alcances distintos:</strong> si el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> cubre solo una línea de negocio, deja claro qué aplica a qué alcance.</li>
+<li><strong>Versiones:</strong> un cambio en la parte de IA versiona todo el documento; define quién aprueba cada sección.</li>
+<li><strong>Justificaciones copiadas:</strong> "no aplica por no tener desarrollo" puede ser cierto para el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y falso para la IA (si ajustas instrucciones o armas un <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>).</li>
+</ul>
+</div>
+</div>
+<p><strong>Columnas mínimas:</strong> identificador con prefijo de norma, control, ¿aplica?, justificación, estado de implementación, evidencia, responsable y relación cruzada. La justificación debería apuntar al riesgo, al impacto o al requisito externo que la motiva; en ISO/IEC 42001, una exclusión puede apoyarse en que la evaluación de riesgos no la requiere y ningún requisito externo aplicable la exige.</p>
+<h3 id="ejemplo-de-filas-conversa-labs">Ejemplo de filas (Conversa Labs)<a class="headerlink" href="#ejemplo-de-filas-conversa-labs" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Control</th>
+<th>¿Aplica?</th>
+<th>Justificación</th>
+<th>Estado</th>
+<th>Evidencia</th>
+<th>Relación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>27001-5.23</td>
+<td>Seguridad en servicios en la nube</td>
+<td>Sí</td>
+<td>La plataforma opera en nube pública y consume la API del modelo fundacional</td>
+<td>Implementado</td>
+<td>Evaluación anual del proveedor de nube y del proveedor del modelo</td>
+<td>42001-A.10.3</td>
+</tr>
+<tr>
+<td>27001-8.12</td>
+<td>Prevención de fuga de datos</td>
+<td>Sí</td>
+<td>Riesgo R-07: el asistente de un cliente revela información de la base de conocimiento de otro</td>
+<td>Implementado</td>
+<td>Pruebas de aislamiento por inquilino; reglas de filtrado de salida</td>
+<td>42001-A.6.2.4</td>
+</tr>
+<tr>
+<td>27001-8.30</td>
+<td>Desarrollo subcontratado</td>
+<td>No</td>
+<td>Todo el desarrollo se hace con personal propio; sin riesgo asociado</td>
+<td>—</td>
+<td>Declaración del CTO; revisión anual</td>
+<td>—</td>
+</tr>
+<tr>
+<td>42001-A.5.4</td>
+<td>Evaluación del impacto en individuos o grupos</td>
+<td>Sí</td>
+<td>Los asistentes conversan con asegurados y estudiantes; riesgo de respuestas dañinas o engañosas</td>
+<td>Implementado</td>
+<td>Evaluación de impacto por plantilla de caso de uso</td>
+<td>27001: sin relación</td>
+</tr>
+<tr>
+<td>42001-A.7.4</td>
+<td>Calidad de los datos</td>
+<td>Sí</td>
+<td>La calidad de la base de conocimiento de cada cliente determina la exactitud de las respuestas (<abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>)</td>
+<td>En curso</td>
+<td>Procedimiento de validación de contenidos al dar de alta a un cliente</td>
+<td>27001: sin relación</td>
+</tr>
+<tr>
+<td>42001-A.10.4</td>
+<td>Clientes</td>
+<td>Sí</td>
+<td>Conversa provee IA a clientes que la despliegan ante sus propios usuarios</td>
+<td>Implementado</td>
+<td>Anexo contractual de responsabilidad compartida; guía de despliegue</td>
+<td>27001-5.20</td>
+</tr>
+</tbody>
+</table>
+<p>¿Un ejemplo de exclusión del lado de la IA? En <a href="../../casos-practicos/pyme-usa-ia-generativa/">Contadores Alameda</a>, que solo usa IA de terceros y no prepara datos para entrenar, <a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a> podría excluirse con una justificación basada en su rol y en su evaluación de riesgos. En Conversa Labs, en cambio, no: aunque no entrena modelos, prepara y estructura las bases de conocimiento que alimentan las respuestas.</p>
+<p>La plantilla de <a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a> de esta guía trae los 38 controles con la columna de relación con ISO 27001 ya llenada; puedes pegarla como segunda sección de tu <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> actual.</p>
+<h2 id="como-armar-un-sistema-de-gestion-integrado">Cómo armar un sistema de gestión integrado<a class="headerlink" href="#como-armar-un-sistema-de-gestion-integrado" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Integrar no significa fusionar todo en un solo documento gigante. Significa que un mismo proceso atiende ambas normas y que la duplicación se reduce al mínimo.</p>
+<pre class="mermaid"><code>flowchart TD
+  A["1 · Inventario de sistemas de IA y roles"] --&gt; B["2 · Alcance del SGIA y traslape con el SGSI"]
+  B --&gt; C["3 · Criterios de riesgo e impacto ampliados"]
+  C --&gt; D["4 · Evaluaciones de riesgo e impacto"]
+  D --&gt; E["5 · SoA combinada y plan de tratamiento"]
+  E --&gt; F["6 · Procesos comunes ampliados"]
+  F --&gt; G["7 · Auditoría interna y revisión por la dirección conjuntas"]
+  G -.-&gt;|"mejora"| C</code></pre>
+<h3 id="documento-maestro-y-alcance">Documento maestro y alcance<a class="headerlink" href="#documento-maestro-y-alcance" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Ninguna de las dos normas exige un "manual", pero un <strong>documento maestro del sistema integrado</strong> de pocas páginas ayuda: alcances, procesos comunes, dueños y ubicación de cada documento. Los alcances no tienen que coincidir (el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> puede cubrir toda la empresa y el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> solo los productos con IA); documenta el traslape.</p>
+<h3 id="politicas">Políticas<a class="headerlink" href="#politicas" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Dos caminos válidos: una política de IA independiente que referencia la de seguridad, o un capítulo de IA dentro de una política integrada. En nuestra lectura, el segundo camino es aceptable siempre que el capítulo cumpla por sí solo lo que pide <a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a> y el control <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>; algunos organismos de certificación prefieren ver un documento identificable como "política de IA". Pregunta al tuyo antes de decidir.</p>
+<h3 id="procesos-comunes">Procesos comunes<a class="headerlink" href="#procesos-comunes" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Proceso</th>
+<th>Un solo proceso para ambos</th>
+<th>Lo que agregas por la IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gestión documental</td>
+<td>Sí</td>
+<td>Artefactos de ingeniería (fichas de modelo, conjuntos de datos) enlazados desde el repositorio</td>
+</tr>
+<tr>
+<td>Gestión de riesgos</td>
+<td>Sí, con matriz ampliada</td>
+<td>Dimensiones de personas y sociedad; vínculo con la evaluación de impacto</td>
+</tr>
+<tr>
+<td>Proveedores</td>
+<td>Sí</td>
+<td>Sección de IA en el cuestionario y en los contratos</td>
+</tr>
+<tr>
+<td>Gestión de cambios</td>
+<td>Sí</td>
+<td>Cambios de modelo, de instrucciones o de base de conocimiento como cambios controlados</td>
+</tr>
+<tr>
+<td>Incidentes</td>
+<td>Sí</td>
+<td>Categorías de incidente de IA sin brecha; aviso a usuarios afectados</td>
+</tr>
+<tr>
+<td>Capacitación</td>
+<td>Sí</td>
+<td>Módulos de IA responsable y de supervisión humana</td>
+</tr>
+<tr>
+<td>Auditoría interna</td>
+<td>Sí, programa combinado</td>
+<td>Criterios de ISO/IEC 42001; auditores con nociones de IA</td>
+</tr>
+<tr>
+<td>Revisión por la dirección</td>
+<td>Sí, una sesión</td>
+<td>Bloque de IA: objetivos de uso responsable, impactos, desempeño de los sistemas</td>
+</tr>
+<tr>
+<td>No conformidades</td>
+<td>Sí, un registro</td>
+<td>Campo de norma; causas propias de la IA (datos, deriva)</td>
+</tr>
+<tr>
+<td>Evaluación de impacto</td>
+<td>No: proceso propio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Puede reutilizar el formato y el flujo de aprobación de tu <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr></td>
+</tr>
+</tbody>
+</table>
+<h3 id="matriz-de-riesgos-con-dimensiones-adicionales">Matriz de riesgos con dimensiones adicionales<a class="headerlink" href="#matriz-de-riesgos-con-dimensiones-adicionales" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La forma más práctica de integrar el riesgo es ampliar la matriz del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, no crear otra. Una estructura que funciona:</p>
+<table>
+<thead>
+<tr>
+<th>Columna</th>
+<th><abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> actual</th>
+<th>Se agrega para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Activo o sistema</td>
+<td>Activo de información</td>
+<td>Sistema de IA del inventario y su rol (proveedor, productor, cliente)</td>
+</tr>
+<tr>
+<td>Fuente de riesgo</td>
+<td>Amenaza y vulnerabilidad</td>
+<td>Fuentes de IA: sesgo, deriva, alucinación, opacidad, uso indebido, dependencia del proveedor</td>
+</tr>
+<tr>
+<td>Consecuencias</td>
+<td>Confidencialidad, integridad, disponibilidad</td>
+<td>Organización (dinero, reputación, legal), <strong>personas</strong> (derechos, oportunidades, bienestar) y <strong>sociedad</strong></td>
+</tr>
+<tr>
+<td>Probabilidad</td>
+<td>Escala habitual</td>
+<td>Escala habitual, con la opción de "no estimable" justificada</td>
+</tr>
+<tr>
+<td>Nivel de riesgo</td>
+<td>Fórmula actual</td>
+<td>Regla de agregación: por ejemplo, el nivel lo fija la peor de las dimensiones</td>
+</tr>
+<tr>
+<td>Tratamiento</td>
+<td>Controles del Anexo A de ISO 27001</td>
+<td>Controles de ISO/IEC 42001 y controles propios</td>
+</tr>
+<tr>
+<td>Vínculo</td>
+<td>—</td>
+<td>Identificador de la evaluación de impacto que alimenta el riesgo</td>
+</tr>
+</tbody>
+</table>
+<p>Una regla clave: el nivel de riesgo no debe "promediar" las dimensiones. Un riesgo con consecuencia baja para la organización y muy alta para las personas sigue siendo un riesgo alto. La plantilla de <a href="../../plantillas/#evaluacion-de-riesgos">metodología y matriz de riesgos de IA</a> trae estas columnas.</p>
+<h3 id="auditorias-combinadas">Auditorías combinadas<a class="headerlink" href="#auditorias-combinadas" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En lo interno, un solo programa puede cubrir ambas normas con listas de verificación diferenciadas, idealmente con un auditor formado en IA o un experto técnico. En lo externo, muchos organismos de certificación ofrecen auditorías combinadas cuando el sistema está realmente integrado. Para la certificación del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, los organismos se rigen además por ISO/IEC 42006:2025, publicada el 7 de julio de 2025, que añade requisitos de competencia y de cálculo del tiempo de auditoría para quienes certifican ISO/IEC 42001<sup id="fnref:iso42006"><a class="footnote-ref" href="#fn:iso42006">3</a></sup>. No supongas que la auditoría combinada reduce días automáticamente: pide a tu organismo una propuesta por escrito.</p>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>Si tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> está certificado por un organismo acreditado por la ema, revisa si ese mismo organismo tiene acreditación para ISO/IEC 42001: facilita la auditoría combinada. Al 9 de octubre de 2026, el buscador público de la ema mostraba dos organismos de certificación de sistemas acreditados en el programa ISO/IEC 42001:2023: Normalización y Certificación NYCE (vigente desde el 8 de diciembre de 2024) e International Quality Solution Register, QSR (vigente desde el 30 de julio de 2025)<sup id="fnref:ema"><a class="footnote-ref" href="#fn:ema">6</a></sup>. Consulta el buscador antes de decidir, porque la lista cambia. Más contexto en <a href="../contexto-mexico-latam/">México y Latinoamérica</a> y en <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>.</p>
+</div>
+<div class="admonition auditor">
+<p class="admonition-title">Lo que mira el auditor en un sistema integrado</p>
+<ul>
+<li>Procesos comunes que funcionan para ambas normas: actas de revisión con temas de IA, no solo de seguridad.</li>
+<li>Riesgos de IA con consecuencias para personas, no riesgos de seguridad con la palabra "IA".</li>
+<li>Una <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> que distingue los controles de cada norma, con justificaciones coherentes con el rol.</li>
+<li>Evaluaciones de impacto vigentes que alimentan la evaluación de riesgos.</li>
+</ul>
+</div>
+<h2 id="isoiec-27701-y-isoiec-27090-las-otras-piezas-del-rompecabezas">ISO/IEC 27701 y ISO/IEC 27090: las otras piezas del rompecabezas<a class="headerlink" href="#isoiec-27701-y-isoiec-27090-las-otras-piezas-del-rompecabezas" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>ISO/IEC 27701 (privacidad).</strong> Muchos sistemas de IA tratan datos personales, y el Anexo D de ISO/IEC 42001 sugiere integrar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con la gestión de privacidad. Ojo si conocías la versión anterior: la edición 2 de ISO/IEC 27701 se publicó el 14 de octubre de 2025 y, según la propia ISO, es una norma de sistema de gestión <strong>independiente</strong>, que puede usarse sola; la edición de 2019, que extendía ISO 27001 e ISO 27002, quedó retirada ese mismo día<sup id="fnref:iso27701"><a class="footnote-ref" href="#fn:iso27701">4</a></sup>. En nuestra lectura, ya no necesitas el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> como base para un sistema de privacidad, aunque integrarlos sigue siendo lo más eficiente. Para la IA, la sinergia está en la evaluación de impacto (<a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>), la base legal de los datos (<a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a>) y los roles de responsable y encargado.</p>
+<p><strong>ISO/IEC 27090 (seguridad de sistemas de IA).</strong> Es el documento del comité de ciberseguridad de ISO e IEC sobre amenazas y compromisos que afectan a sistemas de IA. Al 9 de octubre de 2026 estaba <strong>en etapa de publicación</strong> (60.00) desde el 19 de agosto de 2026, con publicación anunciada por ISO para octubre de 2026, pero todavía no figuraba como publicada<sup id="fnref:iso27090"><a class="footnote-ref" href="#fn:iso27090">5</a></sup>. Cuando salga, será una referencia natural para ampliar tu análisis de amenazas hacia la IA; antes de citarla, verifica su estado en el catálogo de ISO.</p>
+<p>Si quieres ver el resto de la familia (ISO/IEC 23894, 42005, 22989), consulta <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>.</p>
+<h2 id="ejemplo-conversa-labs-integra-su-sgia-en-su-sgsi-certificado">Ejemplo: Conversa Labs integra su <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> en su <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> certificado<a class="headerlink" href="#ejemplo-conversa-labs-integra-su-sgia-en-su-sgsi-certificado" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Caso: Conversa Labs — del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> certificado al sistema integrado</p>
+<p>En el universo de esta guía, <strong>Conversa Labs</strong> (Guadalajara, 95 personas) ya tiene un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> certificado en ISO/IEC 27001:2022 para su plataforma SaaS de asistentes virtuales, porque sus clientes (aseguradoras, universidades y comercios en México, Colombia, Chile y uno en España) lo pedían en cada licitación. Ahora preguntan por gobierno de IA, y la Responsable de Confianza y Seguridad (<em>Trust &amp; Safety</em>), dueña del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, recibe el encargo de integrar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<p><strong>1 · Inventario y roles.</strong> Al inventario de activos le agrega una ficha por sistema de IA (orquestación, recuperación o <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>, filtros de seguridad, analítica) y define sus roles: <strong>proveedor</strong> de IA ante sus clientes, <strong>productor</strong> de la orquestación y las evaluaciones, y <strong>cliente</strong> del proveedor del modelo fundacional.</p>
+<p><strong>2 · Alcance.</strong> El <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> cubre "la plataforma Conversa y las operaciones de Guadalajara"; el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, "diseño, desarrollo, provisión y operación de los asistentes con IA generativa de la plataforma Conversa". El documento maestro muestra qué procesos son comunes.</p>
+<p><strong>3 · Riesgo ampliado.</strong> La inyección de instrucciones ya estaba en la matriz como amenaza de confidencialidad; ahora también se analiza su efecto en personas (un asegurado recibe una respuesta engañosa sobre su póliza). Se suman riesgos que el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> nunca tuvo: alucinaciones sobre coberturas, respuestas inadecuadas a estudiantes en crisis, usuarios que no saben que hablan con una IA, cambios del modelo fundacional que degradan la calidad.</p>
+<p><strong>4 · Lo nuevo.</strong> Evaluación de impacto por tipo de caso de uso (seguros, educación, comercio), objetivos de uso responsable, aviso de interacción con IA como componente configurable para los clientes y un canal público para reportar respuestas problemáticas.</p>
+<p><strong>5 · <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y procesos comunes.</strong> Una hoja, dos secciones; no excluyen ninguno de los 38 controles, porque sus tres roles los alcanzan. La evaluación de proveedores se reutiliza para A.10.3 con preguntas nuevas sobre entrenamiento con datos y aviso de cambios de modelo. La revisión por la dirección suma un bloque de IA (respuestas sin sustento, traspasos a agente humano, reportes externos) y la auditoría interna incorpora a un experto técnico externo.</p>
+<p><strong>Resultado.</strong> En nuestra estimación, la mitad del trabajo fue adaptar y la otra mitad construir. Lo que más tiempo tomó fue acordar con los clientes quién avisa a los usuarios finales cuando hay un incidente de IA (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> y <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>).</p>
+<p>El caso completo está en <a href="../../casos-practicos/empresa-desarrolla-chatbot/">Empresa que desarrolla un chatbot</a>.</p>
+</div>
+<h2 id="plantillas-de-iso-27001-que-puedes-reutilizar">Plantillas de ISO 27001 que puedes reutilizar<a class="headerlink" href="#plantillas-de-iso-27001-que-puedes-reutilizar" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Muchas plantillas de tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> se reutilizan con ajustes: control de documentos, programa y lista de verificación de auditoría interna, acta de revisión por la dirección, registro de no conformidades, matriz de comunicación, cuestionario de proveedores y plan de capacitación. Si te faltan, el <a href="https://github.com/adriangzmncrz-arch/iso27001-toolkit-es">ISO 27001 Toolkit en español</a>, proyecto hermano de esta guía, ofrece plantillas del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> que puedes extender con las secciones de IA que describimos aquí.</p>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes al integrar</p>
+<ul>
+<li><strong>Copiar la matriz de riesgos del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y agregarle "IA" en el nombre.</strong> Si no hay consecuencias para personas y sociedad, no cumple <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>.</li>
+<li><strong>Creer que la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> es la evaluación de impacto de IA.</strong> Ayuda, pero no cubre equidad, autonomía ni efectos sociales.</li>
+<li><strong>Excluir controles de datos "porque no entrenamos modelos".</strong> Si curas una base de conocimiento para un <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr> o ajustas instrucciones, los datos siguen moldeando el comportamiento del sistema.</li>
+<li><strong>Confundir numeraciones</strong> en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> (A.5.2 de una norma con 5.2 de la otra).</li>
+<li><strong>Dejar la revisión por la dirección solo con temas de seguridad.</strong> El auditor de ISO/IEC 42001 buscará decisiones sobre IA.</li>
+<li><strong>Encargar todo al equipo de seguridad.</strong> El <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> necesita a negocio, ciencia de datos, legal, privacidad y atención a clientes.</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tenemos un inventario de sistemas de IA con propósito previsto y rol, conectado al inventario de activos del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Nuestra matriz de riesgos puede registrar consecuencias para personas y sociedad, no solo para la información?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Existe un proceso de evaluación de impacto de IA, distinto de la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>, y alimenta la evaluación de riesgos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> distingue sin ambigüedad los controles de cada norma y su estado de implementación?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿El cuestionario de proveedores pregunta por uso de datos para entrenamiento y por aviso de cambios de modelo?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La taxonomía de incidentes incluye incidentes de IA sin brecha de seguridad?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La revisión por la dirección y la auditoría interna tienen un bloque de IA y personas competentes para revisarlo?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Sabemos si nuestro organismo de certificación actual puede certificar ISO/IEC 42001?</li>
+</ul>
+<h2 id="para-seguir-leyendo">Para seguir leyendo<a class="headerlink" href="#para-seguir-leyendo" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li>Cláusulas: <a href="../../clausulas/c4-contexto/">4 Contexto</a>, <a href="../../clausulas/c6-planificacion/">6 Planificación</a>, <a href="../../clausulas/c8-operacion/">8 Operación</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/">9 Evaluación del desempeño</a>.</li>
+<li>Anexo A: <a href="../../anexo-a/#tabla-completa">tabla completa de los 38 controles</a>.</li>
+<li>Fundamentos: <a href="../../fundamentos/que-es-un-sgia/">¿Qué es un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>?</a>, <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>, <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>.</li>
+<li>Otros marcos: <a href="../nist-ai-rmf/"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></a> y <a href="../reglamento-ia-ue/">Reglamento de IA de la UE</a>.</li>
+<li>Plantillas: <a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a>, <a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a>, <a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto</a>, <a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>.</li>
+<li>Ruta sugerida: <a href="../../empieza-aqui/rutas-de-lectura/#ruta-grc">Soy de GRC</a>.</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:iso27001">
+<p>Ficha de ISO/IEC 27001:2022 (edición 3, publicada el 25 de octubre de 2022): <a href="https://www.iso.org/standard/82875.html">https://www.iso.org/standard/82875.html</a>; ficha de ISO/IEC 27001:2022/Amd 1:2024, <em>Climate action changes</em> (publicada el 23 de febrero de 2024): <a href="https://www.iso.org/standard/88435.html">https://www.iso.org/standard/88435.html</a>. Datos leídos en el espejo oficial committee.iso.org, con los mismos identificadores; consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:iso27001" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:iso42001">
+<p>Ficha de ISO/IEC 42001:2023 (edición 1, publicada el 18 de diciembre de 2023; sin enmiendas ni revisión en curso): <a href="https://www.iso.org/standard/81230.html">https://www.iso.org/standard/81230.html</a>, leída en el espejo oficial committee.iso.org; consultado el 9 de octubre de 2026. ISO/IEC 42001 no figura entre las normas enmendadas por el comunicado conjunto ISO-IAF sobre cambio climático del 22 de febrero de 2024 (<a href="https://iaf.nu/iaf_system/uploads/documents/Joint_ISO-IAF_Communique_re_Climate_Change_Amds_to_ISO_MSS_Feb_2024_Final.pdf">https://iaf.nu/iaf_system/uploads/documents/Joint_ISO-IAF_Communique_re_Climate_Change_Amds_to_ISO_MSS_Feb_2024_Final.pdf</a>, consultado el 9 de octubre de 2026); el autor verificó en el texto publicado de la norma que su edición 2023 ya incluye la consideración climática en 4.1 y una nota en 4.2, por lo que no necesitó enmienda.&#160;<a class="footnote-backref" href="#fnref:iso42001" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:iso42006">
+<p>Ficha de ISO/IEC 42006:2025 (publicada el 7 de julio de 2025): <a href="https://www.iso.org/standard/44546.html">https://www.iso.org/standard/44546.html</a>, leída en el espejo oficial committee.iso.org, y vista previa oficial de IEC con su índice (competencias en 7.1 y 7.2, tiempo de auditoría en 9.1.4 y Anexo A): <a href="https://webstore.iec.ch/en/publication/108460">https://webstore.iec.ch/en/publication/108460</a>. Consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:iso42006" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:iso27701">
+<p>Ficha de ISO/IEC 27701:2025 (edición 2, publicada el 14 de octubre de 2025; su sección de preguntas frecuentes la describe como norma de sistema de gestión independiente): <a href="https://www.iso.org/standard/85819.html">https://www.iso.org/standard/85819.html</a>; ficha de ISO/IEC 27701:2019, retirada el 14 de octubre de 2025: <a href="https://www.iso.org/standard/71670.html">https://www.iso.org/standard/71670.html</a>. Leídas en el espejo oficial committee.iso.org; consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:iso27701" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:iso27090">
+<p>Ficha de ISO/IEC 27090, <em>Cybersecurity — Artificial intelligence (AI) — Addressing security threats and compromises to AI systems</em> (etapa 60.00 desde el 19 de agosto de 2026; fecha de publicación anunciada: octubre de 2026): <a href="https://www.iso.org/standard/56581.html">https://www.iso.org/standard/56581.html</a>, leída en el espejo oficial committee.iso.org; consultado el 9 de octubre de 2026. Puede haber cambiado de estado después de esa fecha.&#160;<a class="footnote-backref" href="#fnref:iso27090" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ema">
+<p>Buscador público SAEMA de la ema, organismos de certificación de sistemas, programa ISO/IEC 42001:2023: <a href="https://ema.mx/saema/ConsultaPublica/Acreditados/Busqueda/OCS">https://ema.mx/saema/ConsultaPublica/Acreditados/Busqueda/OCS</a>; fichas de NYCE (<a href="https://ema.mx/saema/ConsultaPublica/Acreditados/SeleccionarOrganismo/77">https://ema.mx/saema/ConsultaPublica/Acreditados/SeleccionarOrganismo/77</a>) y QSR (<a href="https://ema.mx/saema/ConsultaPublica/Acreditados/SeleccionarOrganismo/74">https://ema.mx/saema/ConsultaPublica/Acreditados/SeleccionarOrganismo/74</a>). Consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:ema" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -3020,6 +4549,9 @@
 
 
 
+
+  
+  
 
 
 

@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 904" role="img" aria-labelledby="ig-iso27001-vs-iso42001-t ig-iso27001-vs-iso42001-d">
+<title id="ig-iso27001-vs-iso42001-t">Del SGSI con ISO 27001:2022 al SGIA con ISO/IEC 42001: lo compartido, lo que se adapta y lo nuevo</title>
+<desc id="ig-iso27001-vs-iso42001-d">Tres columnas. Compartido, reutilizas tu SGSI: estructura armonizada de las cláusulas 4 a 10; información documentada, 7.5; competencia y toma de conciencia, 7.2 y 7.3; comunicación, 7.4; planificación de cambios, 6.3; auditoría interna, 9.2; revisión por la dirección, 9.3; mejora y acción correctiva, 10.1 y 10.2. Ejemplo: un solo programa de auditoría interna con criterios de ambas normas. Se adapta, amplías lo que existe: contexto con propósito previsto y roles, 4.1 y 4.2; riesgo más allá de confidencialidad, integridad y disponibilidad, 6.1.1, 6.1.2 y 8.2; Declaración de Aplicabilidad con otros 38 controles, 6.1.3; política de IA, 5.2 y A.2; proveedores de IA, A.10.2 y A.10.3; registros de eventos, A.6.2.8; incidentes de IA, A.8.4; inventario y recursos, A.4. Ejemplo: la matriz de riesgos agrega consecuencias para personas y sociedad. Nuevo, construyes desde cero: evaluación de impacto, 6.1.4, 8.4 y A.5; desarrollo y uso responsable, A.6.1.2 y A.9.3; datos para IA, A.7.2 a A.7.6; transparencia a usuarios, A.8.2 y A.8.3; uso previsto, A.9.4; supervisión humana, A.9.3, A.6.1.3 y A.4.6; documentación técnica, A.6.2.7; información a clientes, A.10.4. Ejemplo: aviso en el chatbot de que la persona conversa con un asistente de IA. Abajo, una barra con los 38 controles del Anexo A de ISO/IEC 42001 según la clasificación del autor frente al Anexo A de ISO 27001:2022: 2 equivalentes, 19 similares y 17 nuevos.</desc>
+<text x="450" y="32" text-anchor="middle" font-size="21" font-weight="700">Del SGSI al SGIA: tres zonas de trabajo</text>
+<text x="450" y="58" text-anchor="middle" font-size="15" class="ig-muted">ISO/IEC 27001:2022 → ISO/IEC 42001:2023</text>
+<rect x="16" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 16 152 L 16 92 Q 16 78 30 78 L 278 78 Q 292 78 292 92 L 292 152 Z" class="ig-brand"/>
+<circle cx="50" cy="115.0" r="18" class="ig-on-color"/>
+<rect x="41" y="109.0" width="18" height="4" rx="1.5" class="ig-brand"/>
+<rect x="41" y="117.0" width="18" height="4" rx="1.5" class="ig-brand"/>
+<text x="78" y="111" font-size="21" font-weight="700" class="ig-on-color">Compartido</text>
+<text x="78" y="135" font-size="15" class="ig-on-color">Reutilizas tu SGSI</text>
+<a href="../../clausulas/">
+<rect x="26" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="164" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="185" font-size="16" font-weight="600">Estructura armonizada</text>
+<text x="42" y="205" font-size="15" class="ig-muted">Cláusulas 4 a 10</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-5">
+<rect x="26" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="220" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="241" font-size="16" font-weight="600">Información documentada</text>
+<text x="42" y="261" font-size="15" class="ig-muted">7.5</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-2">
+<rect x="26" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="276" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="297" font-size="16" font-weight="600">Competencia y conciencia</text>
+<text x="42" y="317" font-size="15" class="ig-muted">7.2 · 7.3</text>
+</a>
+<a href="../../clausulas/c7-apoyo/#c-7-4">
+<rect x="26" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="332" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="353" font-size="16" font-weight="600">Comunicación</text>
+<text x="42" y="373" font-size="15" class="ig-muted">7.4</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-3">
+<rect x="26" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="388" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="409" font-size="16" font-weight="600">Planificación de cambios</text>
+<text x="42" y="429" font-size="15" class="ig-muted">6.3</text>
+</a>
+<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">
+<rect x="26" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="444" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="465" font-size="16" font-weight="600">Auditoría interna</text>
+<text x="42" y="485" font-size="15" class="ig-muted">9.2</text>
+</a>
+<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">
+<rect x="26" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="500" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="521" font-size="16" font-weight="600">Revisión por la dirección</text>
+<text x="42" y="541" font-size="15" class="ig-muted">9.3</text>
+</a>
+<a href="../../clausulas/c10-mejora/#c-10-2">
+<rect x="26" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="26" y="556" width="5" height="50" rx="2" class="ig-brand"/>
+<text x="42" y="577" font-size="16" font-weight="600">Mejora y acción correctiva</text>
+<text x="42" y="597" font-size="15" class="ig-muted">10.1 · 10.2</text>
+</a>
+<rect x="26" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="40" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="40" y="666" font-size="15">Un solo programa de auditoría</text>
+<text x="40" y="687" font-size="15">interna con criterios de</text>
+<text x="40" y="708" font-size="15">ambas normas</text>
+<g class="obj-a4">
+<rect x="312" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 312 152 L 312 92 Q 312 78 326 78 L 574 78 Q 588 78 588 92 L 588 152 Z" class="ig-accent"/>
+<circle cx="346" cy="115.0" r="18" class="ig-on-color"/>
+<path d="M 336 112.0 Q 341 106.0 346 111.0 T 356 110.0" class="ig-s-accent" stroke-width="3" stroke-linecap="round"/>
+<path d="M 336 120.0 Q 341 114.0 346 119.0 T 356 118.0" class="ig-s-accent" stroke-width="3" stroke-linecap="round"/>
+<text x="374" y="111" font-size="21" font-weight="700" class="ig-on-color">Se adapta</text>
+<text x="374" y="135" font-size="15" class="ig-on-color">Amplías lo que existe</text>
+<a href="../../clausulas/c4-contexto/#c-4-1">
+<rect x="322" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="164" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="185" font-size="16" font-weight="600">Contexto: propósito y roles</text>
+<text x="338" y="205" font-size="15" class="ig-muted">4.1 · 4.2</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-1-2">
+<rect x="322" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="220" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="241" font-size="16" font-weight="600">Riesgo más allá de la CID</text>
+<text x="338" y="261" font-size="15" class="ig-muted">6.1.1 · 6.1.2 · 8.2</text>
+</a>
+<a href="../../clausulas/c6-planificacion/#c-6-1-3">
+<rect x="322" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="276" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="297" font-size="16" font-weight="600">SoA con otros 38 controles</text>
+<text x="338" y="317" font-size="15" class="ig-muted">6.1.3</text>
+</a>
+<a href="../../anexo-a/a2-politicas/#a-2-2">
+<rect x="322" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="332" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="353" font-size="16" font-weight="600">Política de IA</text>
+<text x="338" y="373" font-size="15" class="ig-muted">5.2 · A.2</text>
+</a>
+<a href="../../anexo-a/a10-terceros/#a-10-3">
+<rect x="322" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="388" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="409" font-size="16" font-weight="600">Proveedores de IA</text>
+<text x="338" y="429" font-size="15" class="ig-muted">A.10.2 · A.10.3</text>
+</a>
+<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">
+<rect x="322" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="444" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="465" font-size="16" font-weight="600">Registros de eventos</text>
+<text x="338" y="485" font-size="15" class="ig-muted">A.6.2.8</text>
+</a>
+<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">
+<rect x="322" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="500" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="521" font-size="16" font-weight="600">Incidentes de IA</text>
+<text x="338" y="541" font-size="15" class="ig-muted">A.8.4</text>
+</a>
+<a href="../../anexo-a/a4-recursos/">
+<rect x="322" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="322" y="556" width="5" height="50" rx="2" class="ig-accent"/>
+<text x="338" y="577" font-size="16" font-weight="600">Inventario y recursos</text>
+<text x="338" y="597" font-size="15" class="ig-muted">A.4</text>
+</a>
+<rect x="322" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="336" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="336" y="666" font-size="15">La matriz de riesgos agrega</text>
+<text x="336" y="687" font-size="15">consecuencias para personas</text>
+<text x="336" y="708" font-size="15">y para la sociedad</text>
+</g>
+<g class="obj-a5">
+<rect x="608" y="78" width="276" height="658" rx="14" class="ig-card" stroke-width="1.5"/>
+<rect x="608" y="78" width="276" height="658" rx="14" class="ig-s-obj" stroke-width="2"/>
+<path d="M 608 152 L 608 92 Q 608 78 622 78 L 870 78 Q 884 78 884 92 L 884 152 Z" class="ig-obj"/>
+<circle cx="642" cy="115.0" r="18" class="ig-on-color"/>
+<polygon points="642.0,104.0 645.4,111.6 653.0,115.0 645.4,118.4 642.0,126.0 638.6,118.4 631.0,115.0 638.6,111.6" class="ig-obj"/>
+<text x="670" y="111" font-size="21" font-weight="700" class="ig-on-color">Nuevo</text>
+<text x="670" y="135" font-size="15" class="ig-on-color">Construyes desde cero</text>
+<a href="../../anexo-a/a5-evaluacion-de-impacto/">
+<rect x="618" y="164" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="164" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="185" font-size="16" font-weight="600">Evaluación de impacto</text>
+<text x="634" y="205" font-size="15" class="ig-muted">6.1.4 · 8.4 · A.5</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-3">
+<rect x="618" y="220" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="220" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="241" font-size="16" font-weight="600">Desarrollo y uso responsable</text>
+<text x="634" y="261" font-size="15" class="ig-muted">A.6.1.2 · A.9.3</text>
+</a>
+<a href="../../anexo-a/a7-datos/">
+<rect x="618" y="276" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="276" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="297" font-size="16" font-weight="600">Datos para IA</text>
+<text x="634" y="317" font-size="15" class="ig-muted">A.7.2 a A.7.6</text>
+</a>
+<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">
+<rect x="618" y="332" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="332" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="353" font-size="16" font-weight="600">Transparencia a usuarios</text>
+<text x="634" y="373" font-size="15" class="ig-muted">A.8.2 · A.8.3</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-4">
+<rect x="618" y="388" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="388" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="409" font-size="16" font-weight="600">Uso previsto</text>
+<text x="634" y="429" font-size="15" class="ig-muted">A.9.4</text>
+</a>
+<a href="../../anexo-a/a9-uso/#a-9-3">
+<rect x="618" y="444" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="444" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="465" font-size="16" font-weight="600">Supervisión humana</text>
+<text x="634" y="485" font-size="15" class="ig-muted">A.9.3 · A.6.1.3 · A.4.6</text>
+</a>
+<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">
+<rect x="618" y="500" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="500" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="521" font-size="16" font-weight="600">Documentación técnica</text>
+<text x="634" y="541" font-size="15" class="ig-muted">A.6.2.7</text>
+</a>
+<a href="../../anexo-a/a10-terceros/#a-10-4">
+<rect x="618" y="556" width="256" height="50" rx="8" class="ig-tint"/>
+<rect x="618" y="556" width="5" height="50" rx="2" class="ig-obj"/>
+<text x="634" y="577" font-size="16" font-weight="600">Información a clientes</text>
+<text x="634" y="597" font-size="15" class="ig-muted">A.10.4</text>
+</a>
+<rect x="618" y="618" width="256" height="104" rx="8" class="ig-line" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="632" y="642" font-size="15" font-weight="700" class="ig-muted">Ejemplo</text>
+<text x="632" y="666" font-size="15">Aviso en el chatbot: «estás</text>
+<text x="632" y="687" font-size="15">conversando con un asistente</text>
+<text x="632" y="708" font-size="15">de IA»</text>
+</g>
+<a href="#tabla-38-controles">
+<text x="16" y="776" font-size="17" font-weight="700">Los 38 controles frente al Anexo A de ISO 27001:2022</text>
+</a>
+<clipPath id="ig-iso27001-vs-iso42001-barra"><rect x="16" y="790" width="868" height="40" rx="10"/></clipPath>
+<g clip-path="url(#ig-iso27001-vs-iso42001-barra)">
+<rect x="16.0" y="790" width="45.7" height="40" class="ig-brand"/>
+<rect x="61.7" y="790" width="434.0" height="40" class="ig-accent"/>
+<g class="obj-a5">
+<rect x="495.7" y="790" width="388.3" height="40" class="ig-obj"/>
+</g>
+</g>
+<text x="38.8" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">2</text>
+<text x="278.7" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">19 similares</text>
+<text x="689.8" y="816" text-anchor="middle" font-size="16" font-weight="700" class="ig-on-color">17 nuevos</text>
+<line x1="61.7" y1="790" x2="61.7" y2="830" class="ig-card" stroke-width="2"/>
+<line x1="495.7" y1="790" x2="495.7" y2="830" class="ig-card" stroke-width="2"/>
+<rect x="16" y="847" width="14" height="14" rx="3" class="ig-brand"/>
+<text x="38" y="860" font-size="15">2 equivalentes: adaptas el texto</text>
+<rect x="308" y="847" width="14" height="14" rx="3" class="ig-accent"/>
+<text x="330" y="860" font-size="15">19 similares: amplías un control</text>
+<g class="obj-a5">
+<rect x="600" y="847" width="14" height="14" rx="3" class="ig-obj"/>
+</g>
+<text x="622" y="860" font-size="15">17 nuevos: construyes desde cero</text>
+<text x="450" y="890" text-anchor="middle" font-size="15" class="ig-muted">Clasificación del autor. Detalle control por control en la tabla de esta página.</text>
+</svg>
