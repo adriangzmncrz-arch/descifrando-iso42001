@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Caso práctico completo de ISO/IEC 42001 en una PyME mexicana que usa IA de terceros. Un despacho contable de 58 personas con asistente de ofimática, chatbot de WhatsApp y captura de CFDI arma un SGIA proporcionado, con inventario, riesgos, evaluación de impacto, Declaración de Aplicabilidad, objetivos y hoja de ruta.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#caso-1-pyme-que-usa-ia-generativa" class="md-skip">
+        <a href="#caso-1-contadores-alameda-una-pyme-que-usa-ia-generativa" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -1764,6 +1764,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyME que usa IA generativa
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1780,6 +1798,368 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto-y-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto y alcance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contexto y alcance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La organización
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-detonantes-en-el-mismo-trimestre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dos detonantes en el mismo trimestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-decision-alinearse-primero-decidir-la-certificacion-despues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La decisión: alinearse primero, decidir la certificación después
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-alcance-del-sgia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El alcance del SGIA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#un-sgia-a-la-medida-de-58-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Un SGIA a la medida de 58 personas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles-frente-a-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles frente a la IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventario-de-sistemas-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventario de sistemas de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riesgos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riesgos principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Riesgos principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ca-01-el-control-que-mas-trabaja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CA-01: el control que más trabaja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-de-impacto-completa-alma-eia-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación de impacto completa: Alma (EIA-02)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluación de impacto completa: Alma (EIA-02)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-identificacion-y-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Identificación y versiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-uso-previsto-y-uso-indebido-previsible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Uso previsto y uso indebido previsible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-contexto-tecnico-social-y-jurisdicciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Contexto técnico, social y jurisdicciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-personas-y-grupos-afectados-y-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Personas y grupos afectados, y consulta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-impactos-en-individuos-y-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Impactos en individuos y grupos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-impactos-sociales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Impactos sociales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-medidas-y-supervision-humana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Medidas y supervisión humana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-efectos-en-el-personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Efectos en el personal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-impactos-residuales-y-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Impactos residuales y decisión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-comunicacion-retencion-y-proxima-revision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Comunicación, retención y próxima revisión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracto-de-la-declaracion-de-aplicabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracto de la Declaración de Aplicabilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-e-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos e indicadores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-ruta-del-caso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de ruta del caso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hoja de ruta del caso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-paso-en-la-operacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que pasó en la operación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-decision-del-primer-ano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La decisión del primer año
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-le-diria-el-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué le diría el auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecciones-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecciones para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-usadas-en-este-caso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas usadas en este caso
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3009,10 +3389,1145 @@
   
 
 
-<h1 id="caso-1-pyme-que-usa-ia-generativa">Caso 1 · <abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa<a class="headerlink" href="#caso-1-pyme-que-usa-ia-generativa" title="Enlace permanente a esta sección">&para;</a></h1>
+<h1 id="caso-1-contadores-alameda-una-pyme-que-usa-ia-generativa">Caso 1 · Contadores Alameda: una <abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa<a class="headerlink" href="#caso-1-contadores-alameda-una-pyme-que-usa-ia-generativa" title="Enlace permanente a esta sección">&para;</a></h1>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6c.58 0 1.05.2 1.42.59.38.41.58.86.58 1.41v11c0 .55-.2 1-.58 1.41-.37.39-.84.59-1.42.59H4c-.58 0-1.05-.2-1.42-.59C2.2 20 2 19.55 2 19V8c0-.55.2-1 .58-1.41C2.95 6.2 3.42 6 4 6h4V4c0-.58.2-1.05.58-1.42C8.95 2.2 9.42 2 10 2h4c.58 0 1.05.2 1.42.58.38.37.58.84.58 1.42v2zM4 8v11h16V8zm10-2V4h-4v2z"/></svg></span> Caso práctico</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 30 min de lectura</span></p>
+</div>
 <div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<p class="admonition-title">Empresa ficticia</p>
+<p>Contadores Alameda, BotNorte y las personas, cifras, folios y documentos de este caso son inventados con fines didácticos; cualquier parecido con organizaciones reales es coincidencia. Las decisiones del despacho son una forma razonable de aplicar ISO/IEC 42001, no la única: cuando una interpretación es discutible, lo señalamos. Los nombres de los controles del Anexo A son traducción libre de referencia del autor.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">El caso en una frase</p>
+<p>Un despacho contable de Querétaro que nunca ha entrenado un modelo descubre que la IA ya vive en su correo, en su software contable, en su WhatsApp y en las cuentas personales de su gente, y en unos diez meses arma un sistema de gestión de IA (<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>) del tamaño de sus 58 personas: una veintena de documentos breves, roles acumulados con contrapesos, hojas de cálculo y el esfuerzo concentrado donde está el riesgo, su chatbot Alma.</p>
+</div>
+<h2 id="contexto-y-alcance">Contexto y alcance<a class="headerlink" href="#contexto-y-alcance" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="la-organizacion">La organización<a class="headerlink" href="#la-organizacion" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Contadores Alameda, S.C. lleva la contabilidad, la nómina y el cumplimiento fiscal de unas 400 <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> de Querétaro y del Bajío: talleres, consultorios, restaurantes y distribuidoras, muchas de ellas personas físicas con actividad empresarial. Tiene 58 colaboradores: 7 en dirección y gerencias, 33 contadores y especialistas de nómina, 8 en atención a clientes, 3 en TI y 7 en áreas de apoyo. Usa una suite de ofimática en la nube con licencia empresarial, un software contable de un proveedor nacional, WhatsApp como canal principal con los clientes y Alma, un chatbot que acababa de contratar como software como servicio (<em>software as a service</em>, SaaS) a BotNorte, una empresa de Monterrey, y que todavía no abría a sus clientes. Nadie ahí se describiría como "una empresa de IA".</p>
+<h3 id="dos-detonantes-en-el-mismo-trimestre">Dos detonantes en el mismo trimestre<a class="headerlink" href="#dos-detonantes-en-el-mismo-trimestre" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Detonante</th>
+<th>Qué pasó</th>
+<th>Qué dejó al descubierto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>El cuestionario del banco</td>
+<td>Un banco al que el despacho presta servicios de nómina añadió a su cuestionario anual de proveedores una sección sobre gobierno de IA: qué sistemas usan, quién los aprueba, cómo evalúan proveedores, cómo capacitan y cómo avisan a quien conversa con una IA.</td>
+<td>El despacho no podía demostrar nada. Tenía buenas intenciones y ningún registro.</td>
+</tr>
+<tr>
+<td>La nómina en un chatbot gratuito</td>
+<td>Un colaborador pegó una nómina completa (nombres, RFC, CURP, salarios) en un chatbot gratuito para "darle formato". Su supervisora lo detectó días después.</td>
+<td>IA en la sombra (<em>shadow AI</em>): herramientas no autorizadas con datos de clientes, sin contrato ni aviso de privacidad que lo cubriera.</td>
+</tr>
+</tbody>
+</table>
+<p>La nómina quedó registrada como el primer incidente del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> (INC-2025-01). Como el despacho trata esos datos por cuenta de la <abbr title="Pequeña y mediana empresa.">PyME</abbr> cliente, la coordinadora de cumplimiento y datos personales documentó qué se compartió, le avisó sin demora y evaluó con ella si hubo una vulneración significativa en los términos de la nueva <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr><sup id="fnref:lfpdppp"><a class="footnote-ref" href="#fn:lfpdppp">1</a></sup> (ver <a href="../../integracion/contexto-mexico-latam/#ejemplo-alameda">México y Latinoamérica</a>). La lección de fondo la desarrolla la <a href="../../clausulas/c10-mejora/#c-10-2">cláusula 10.2</a>: "recordar la política" no es una acción correctiva.</p>
+<h3 id="la-decision-alinearse-primero-decidir-la-certificacion-despues">La decisión: alinearse primero, decidir la certificación después<a class="headerlink" href="#la-decision-alinearse-primero-decidir-la-certificacion-despues" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En noviembre de 2025 la socia directora firmó una minuta de una página con tres decisiones:</p>
+<ol>
+<li>Implementar un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> conforme a ISO/IEC 42001 con alcance acotado y designar al gerente de TI como responsable.</li>
+<li><strong>No contratar todavía la auditoría de certificación.</strong> El despacho no tiene un sistema de gestión de seguridad de la información (<abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>) ISO 27001 en el cual apoyarse, sus recursos son limitados y el banco pedía evidencia, no un certificado. Es la ruta de <a href="../../empieza-aqui/necesito-iso42001/#alinearte">alinearse sin certificar, por ahora</a>.</li>
+<li>Decidir sobre la certificación en la revisión por la dirección que cierre el primer ciclo, con criterios fijados de antemano (ver <a href="#la-decision-del-primer-ano">La decisión del primer año</a>).</li>
+</ol>
+<p>Alinearse no significó hacer la mitad: el despacho implementó las cláusulas 4 a 10 y una Declaración de Aplicabilidad (<em>Statement of Applicability</em>, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>); solo pospuso la auditoría externa. Por eso dice "operamos un sistema de gestión de IA alineado con ISO/IEC 42001" y nunca "estamos certificados" (ver <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>).</p>
+<h3 id="el-alcance-del-sgia">El alcance del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr><a class="headerlink" href="#el-alcance-del-sgia" title="Enlace permanente a esta sección">&para;</a></h3>
+<blockquote>
+<p><em>Uso de sistemas de IA de terceros en la prestación de servicios contables, de nómina y de atención a clientes desde la oficina de Querétaro.</em></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Dentro del alcance</th>
+<th>Fuera del alcance, y por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IA-01, IA-02 (Alma) e IA-03, descritos en el <a href="#inventario-de-sistemas-de-ia">inventario</a></td>
+<td>Un módulo de conciliación bancaria con IA en cotización: entrará como cambio planificado (<a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a>) cuando se contrate</td>
+</tr>
+<tr>
+<td>Los procesos de contabilidad, nómina y atención, y las 58 personas que los operan o apoyan</td>
+<td>El desarrollo de modelos, que el despacho no hace; si un día ajusta uno propio, tendrá que ampliar el alcance (<a href="../../clausulas/c10-mejora/#c-10-1">10.1</a>)</td>
+</tr>
+<tr>
+<td>Las interfaces con BotNorte, el fabricante de la suite y el proveedor del software contable</td>
+<td>Nada más. Los chatbots gratuitos no quedan "fuera": quedan prohibidos y vigilados dentro del alcance</td>
+</tr>
+</tbody>
+</table>
+<p>El documento de alcance (<a href="../../clausulas/c4-contexto/#c-4-3">4.3</a>) anexa el inventario, una nota sobre la curaduría de la base de conocimiento de Alma y el análisis de contexto (<a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>), que el <a href="../../clausulas/c4-contexto/#ejemplo-resuelto">ejemplo resuelto de la cláusula 4</a> desarrolla paso a paso.</p>
+<h3 id="un-sgia-a-la-medida-de-58-personas">Un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> a la medida de 58 personas<a class="headerlink" href="#un-sgia-a-la-medida-de-58-personas" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La norma no fija un tamaño mínimo de equipo ni de documentación; pide coherencia entre lo que planeas y lo que haces.</p>
+<p><strong>Roles acumulados, con contrapesos.</strong> No hay un "oficial de IA" de tiempo completo:</p>
+<table>
+<thead>
+<tr>
+<th>Persona</th>
+<th>Sombreros en el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></th>
+<th>Contrapeso</th>
+<th>Dedicación aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Socia directora</td>
+<td>Alta dirección: aprueba política y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, acepta riesgos residuales, preside comité y revisión por la dirección</td>
+<td>Sus decisiones quedan en minuta ante la asamblea de socios</td>
+<td>2 a 3 horas al mes</td>
+</tr>
+<tr>
+<td>Gerente de TI</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, de la seguridad y de las compras de TI; dueño de IA-01</td>
+<td>Sus excepciones las autoriza la socia directora; no audita el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> que diseñó</td>
+<td>2 días por semana en el proyecto; cerca de 1 en operación</td>
+</tr>
+<tr>
+<td>Coordinadora de cumplimiento y datos personales</td>
+<td>Privacidad; conduce las evaluaciones de impacto; recibe el canal de inquietudes; aprueba los cambios a la base de conocimiento de Alma</td>
+<td>Un par externo revisó su primera evaluación; el canal tiene ruta alterna a la socia directora</td>
+<td>3 a 4 horas por semana</td>
+</tr>
+<tr>
+<td>Líder de atención a clientes</td>
+<td>Dueña de Alma; supervisa escalamientos; coordina el muestreo semanal</td>
+<td>La exactitud de Alma la califica un contador, no ella</td>
+<td>4 a 5 horas por semana</td>
+</tr>
+</tbody>
+</table>
+<p>Completan el cuadro el gerente del área contable (dueño de IA-03), tres contadores senior que curan la base de conocimiento de Alma, un consultor que acompañó la implementación y un auditor externo distinto para la auditoría interna. Un <strong>comité de IA</strong> de 45 minutos se reúne cada mes; cada tercera sesión revisa a fondo indicadores, riesgos y requisitos legales. La revisión por la dirección formal es semestral, dentro de la junta de socios (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a>).</p>
+<p><strong>Pocos documentos, pero que se usan.</strong> Una veintena de piezas; ninguna pasa de seis páginas:</p>
+<table>
+<thead>
+<tr>
+<th>Documento o registro</th>
+<th>Extensión</th>
+<th>Qué cubre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alcance y contexto; política de IA; política de uso aceptable con semáforo; matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr></td>
+<td>3 y 4 páginas; 1 y 1 hoja</td>
+<td>Cláusulas <a href="../../clausulas/c4-contexto/">4</a> y <a href="../../clausulas/c5-liderazgo/">5</a>, <a href="../../anexo-a/a2-politicas/">A.2</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>, <a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a></td>
+</tr>
+<tr>
+<td>Metodología de riesgos e impacto: criterios, matriz y cribado</td>
+<td>6 páginas</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a></td>
+</tr>
+<tr>
+<td>Inventario, registro de riesgos con plan de tratamiento, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y registro de incidentes</td>
+<td>Hojas de cálculo</td>
+<td>4.1, 6.1.2, 6.1.3, 8.2, 8.3, 10.2</td>
+</tr>
+<tr>
+<td>Evaluaciones de impacto <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01, <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02 y <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-03</td>
+<td>2, 6 y 2 páginas</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a></td>
+</tr>
+<tr>
+<td>Procedimiento de operación de Alma (PR-ALMA-01), formulario de alta de nuevos usos y plan de incidentes</td>
+<td>5, 1 y 2 páginas</td>
+<td><a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a></td>
+</tr>
+<tr>
+<td>Matriz de responsabilidades y adenda con BotNorte; cuestionario de proveedores</td>
+<td>1, 3 y 2 páginas</td>
+<td><a href="../../anexo-a/a10-terceros/">A.10</a></td>
+</tr>
+<tr>
+<td>Competencias y toma de conciencia; fichas de objetivos; auditoría interna y minutas</td>
+<td>Variable</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/">9</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Herramientas sencillas.</strong> Las plantillas de esta guía en hoja de cálculo; el repositorio de la propia suite, con historial de versiones y permisos; sus formularios para el canal de inquietudes y el alta de nuevos usos; las funciones de prevención de fuga de datos (<em>data loss prevention</em>, DLP) y la bitácora de auditoría que ya venían en la licencia; el panel de BotNorte con exportación mensual de conversaciones. Sin herramienta GRC y sin consultor de planta.</p>
+<h2 id="roles-frente-a-la-ia">Roles frente a la IA<a class="headerlink" href="#roles-frente-a-la-ia" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El despacho no desarrolla ni provee IA en el sentido de ISO/IEC 22989: la contrata y la usa. Pero "usar" tiene matices según el sistema, y la cláusula <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> pide dejarlos escritos (conceptos en <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>).</p>
+<table>
+<thead>
+<tr>
+<th>Sistema</th>
+<th>Rol de Contadores Alameda (ISO/IEC 22989)</th>
+<th>Otros actores y su rol</th>
+<th>Rol en datos personales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IA-01 · Asistente de ofimática</td>
+<td>Cliente; sus 58 colaboradores son usuarios</td>
+<td>Fabricante de la suite: proveedor y productor</td>
+<td>Responsable de los datos de sus clientes y de su personal; encargado de los datos de nómina de los trabajadores de sus clientes</td>
+</tr>
+<tr>
+<td>IA-02 · Alma</td>
+<td>Cliente de BotNorte que despliega a Alma frente a sus clientes y cura su base de conocimiento</td>
+<td>BotNorte: proveedor del servicio · Proveedor del modelo: proveedor de plataforma frente a BotNorte · Integrador de la agenda: socio · <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> que escriben: usuarias y sujetos de IA</td>
+<td>Responsable de los datos de las conversaciones; BotNorte es encargado y el proveedor del modelo interviene como su subcontratista</td>
+</tr>
+<tr>
+<td>IA-03 · Captura de CFDI</td>
+<td>Cliente y usuario</td>
+<td>Proveedor del software contable: proveedor · Personas en las facturas: titulares de datos · SAT: autoridad</td>
+<td>Encargado de los datos de los CFDI de sus clientes</td>
+</tr>
+<tr>
+<td>Chatbots gratuitos</td>
+<td>Ninguno reconocido: uso sin contrato</td>
+<td>Proveedores sin relación con el despacho</td>
+<td>En nuestra lectura, el despacho, como encargado, compartió datos fuera de las instrucciones de su cliente</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">¿Curar la base de conocimiento hace al despacho algo más que cliente?</p>
+<p>El equipo concluyó que su rol principal frente a Alma es el de cliente, pero que la curaduría lo acerca al de proveedor de datos, una variante del socio de IA. Lo documentó y asumió las consecuencias: controles de calidad y procedencia (<a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>, <a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a>), un control propio de curaduría (CA-01) y transparencia hacia sus clientes (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>). En nuestra lectura es razonable; otro equipo podría clasificarlo distinto. Lo importante es que la decisión esté escrita y tenga dueño.</p>
+</div>
+<p>La matriz de responsabilidades de Alma (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>) cabe en una página. BotNorte responde por la plataforma y su disponibilidad, por la relación con el proveedor del modelo (con aviso de 15 días antes de cualquier cambio de versión), por exportar cada mes las conversaciones con datos enmascarados y por notificar incidentes en 24 horas; como encargado, no entrena modelos con los datos del despacho. El despacho responde por la base de conocimiento, los avisos de IA y de privacidad, la atención humana, la revisión de muestras y la comunicación con sus clientes. Recuerda la advertencia de <a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>: repartir tareas traslada costos, no la rendición de cuentas. Si Alma se equivoca, el cliente le reclama al despacho, no a BotNorte.</p>
+<h2 id="inventario-de-sistemas-de-ia">Inventario de sistemas de IA<a class="headerlink" href="#inventario-de-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El inventario se armó en unas cuatro semanas con una encuesta anónima de cinco preguntas, la revisión de licencias y gastos con tarjeta corporativa y las notas de versión de los proveedores. La sorpresa fue IA-03: nadie lo veía como IA hasta que el gerente de TI leyó las notas de versión del software contable (<a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a>). La encuesta confirmó que varias personas usaban chatbots gratuitos para resumir documentos de clientes. Las filas siguen las columnas de la <a href="../../plantillas/#inventario-sistemas-ia">plantilla de inventario</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>IA-01 · Asistente de ofimática</th>
+<th>IA-02 · Alma, chatbot de WhatsApp</th>
+<th>IA-03 · Captura de CFDI</th>
+<th>Chatbots gratuitos con cuentas personales</th>
+<th>Transcripción de videollamadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Propósito y uso previsto</td>
+<td>Redactar correos, resumir juntas, analizar hojas de cálculo</td>
+<td>Responder preguntas frecuentes sobre fechas generales de obligaciones fiscales, informar estatus de trámites y agendar citas; sin asesoría personalizada</td>
+<td>Extraer datos de facturas para la contabilidad</td>
+<td>Ninguno autorizado</td>
+<td>Por definir</td>
+</tr>
+<tr>
+<td>Rol</td>
+<td>Cliente y usuario</td>
+<td>Cliente que despliega y cura</td>
+<td>Cliente y usuario</td>
+<td>Ninguno reconocido</td>
+<td>Cliente</td>
+</tr>
+<tr>
+<td>Origen</td>
+<td>Proveedor externo (SaaS)</td>
+<td>Proveedor externo (SaaS)</td>
+<td>Módulo dentro de otro producto</td>
+<td>IA no autorizada detectada</td>
+<td>Función de un producto contratado</td>
+</tr>
+<tr>
+<td>Proveedor</td>
+<td>Fabricante de la suite</td>
+<td>BotNorte, con un modelo de un tercero</td>
+<td>Proveedor nacional del software contable</td>
+<td>Varios</td>
+<td>Fabricante de la plataforma</td>
+</tr>
+<tr>
+<td>Tipo de IA</td>
+<td>IA generativa (<abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr>)</td>
+<td>IA generativa (<abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr>) con base de conocimiento</td>
+<td>Visión por computadora y extracción de texto</td>
+<td>IA generativa (<abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr>)</td>
+<td>Voz a texto e IA generativa</td>
+</tr>
+<tr>
+<td>Datos</td>
+<td>Correos, documentos, hojas de cálculo</td>
+<td>Base de conocimiento; mensajes y teléfono de clientes; hoja de estatus; agenda</td>
+<td>Facturas en XML y PDF</td>
+<td>Lo que se pegó, incluida una nómina</td>
+<td>Audio de juntas</td>
+</tr>
+<tr>
+<td>¿Datos personales?</td>
+<td>Sí</td>
+<td>Sí</td>
+<td>Sí</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>¿Influye en decisiones sobre personas?</td>
+<td>No</td>
+<td>Sí: el cliente decide cuándo declarar con lo que Alma le dice</td>
+<td>No</td>
+<td>No aplica</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Nivel de riesgo</td>
+<td>Medio</td>
+<td>Alto</td>
+<td>Medio</td>
+<td>No aplica: uso prohibido</td>
+<td>Sin evaluar</td>
+</tr>
+<tr>
+<td>¿Evaluación de impacto?</td>
+<td>Breve (<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01)</td>
+<td>Completa (<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02)</td>
+<td>Breve (<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-03)</td>
+<td>No aplica</td>
+<td>Antes de reactivarla</td>
+</tr>
+<tr>
+<td>Dueño</td>
+<td>Gerente de TI</td>
+<td>Líder de atención a clientes</td>
+<td>Gerente del área contable</td>
+<td>Gerente de TI</td>
+<td>Gerente de TI</td>
+</tr>
+<tr>
+<td>Estado</td>
+<td>En producción</td>
+<td>En producción desde mayo de 2026</td>
+<td>En producción</td>
+<td>Bloqueado y vigilado con DLP</td>
+<td>Suspendido</td>
+</tr>
+</tbody>
+</table>
+<p>El "nivel de riesgo" del inventario clasifica al sistema por su exposición, para fijar la profundidad y frecuencia de sus evaluaciones; no es la calificación de un riesgo concreto del registro. La transcripción se desactivó al descubrirla y sigue pendiente de evaluar: cuando la auditoría interna preguntó por ella, el registro mostraba exactamente eso.</p>
+<h2 id="riesgos-principales">Riesgos principales<a class="headerlink" href="#riesgos-principales" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El despacho adoptó los criterios que propone la <a href="../../clausulas/c6-planificacion/#c-6-1-1">cláusula 6.1.1</a>: consecuencia de 1 a 5 para la organización (O), los individuos (I) y la sociedad (S), tomando la peor; probabilidad (P) de 1 a 5, y una matriz asimétrica que pesa más la consecuencia. Escribió ejemplos ancla propios: un "4" para individuos es que un cliente pague recargos por una fecha equivocada; un "4" para la organización, perder a un cliente corporativo o recibir una reclamación formal del banco. Evaluó juntos IA-01 e IA-03, herramientas internas con revisión humana, y a Alma por separado, porque cambian el canal y las personas afectadas (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>).</p>
+<table>
+<thead>
+<tr>
+<th>ID · Sistema</th>
+<th>Riesgo: causa → evento → consecuencia</th>
+<th>O</th>
+<th>I</th>
+<th>S</th>
+<th>P</th>
+<th>Nivel inherente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-01 · IA-01 y uso general</td>
+<td>Hábito de "resolverlo rápido" y chatbots gratuitos a un clic → alguien pega nóminas o datos fiscales en una herramienta no autorizada → exposición de datos de trabajadores de los clientes e incumplimiento de confidencialidad</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+<td>🟥 Crítico</td>
+</tr>
+<tr>
+<td>R-02 · Alma</td>
+<td>Base de conocimiento desfasada del calendario fiscal, o un modelo que completa con una fecha plausible → Alma da una fecha límite equivocada → el cliente paga recargos y reclama al despacho</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>🟥 Crítico</td>
+</tr>
+<tr>
+<td>R-03 · Alma</td>
+<td>Aviso de IA que pasa inadvertido → clientes, sobre todo mayores, creen hablar con su contador → toman una respuesta general como asesoría personal</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td>R-04 · Alma</td>
+<td>Costumbre de mandar todo por WhatsApp → clientes envían su contraseña del SAT (CIEC), archivos de su e.firma o identificaciones → esos datos quedan en registros de terceros, con riesgo de suplantación fiscal</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td>R-05 · Alma</td>
+<td>BotNorte depende de un modelo de un tercero → cambio de versión sin aviso o caída en temporada alta → respuestas distintas a las probadas o clientes sin atención</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td>R-06 · IA-03</td>
+<td>Facturas escaneadas con mala calidad o catálogos desactualizados → extracción errónea de RFC, montos o uso del CFDI → contabilidad y declaraciones del cliente con datos incorrectos</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td>R-07 · IA-01</td>
+<td>Confianza excesiva en el asistente → un resumen con montos equivocados llega al cliente sin revisión → el cliente decide con datos falsos</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td>R-08 · IA-01</td>
+<td>Métricas de uso disponibles por persona → se usan para evaluar productividad → trato injusto y vigilancia excesiva del personal</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>🟨 Medio</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Opción</th>
+<th>Controles del Anexo A</th>
+<th>Controles propios y medidas</th>
+<th>Residual</th>
+<th>Acepta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-01</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>, <a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a></td>
+<td>Uso aceptable con semáforo; IA-01 como alternativa autorizada; CA-02 (bloqueo y alertas DLP por RFC, CURP y nóminas); periodo para declarar sin sanción lo que ya se usaba</td>
+<td>C4 · P2 → 🟧 Alto</td>
+<td>Socia directora, temporal por seis meses con revisión trimestral</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>, <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a></td>
+<td>CA-01 (curaduría y prueba de 60 preguntas); CA-03 (abstención y traspaso); fecha de actualización visible; el despacho absorbe recargos causados por Alma</td>
+<td>C3 · P2 → 🟨 Medio</td>
+<td>Gerente de TI, informando a la socia directora</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a></td>
+<td>Saludo que se presenta como IA y ofrece una persona; recordatorio en respuestas sobre plazos; aviso de privacidad actualizado</td>
+<td>C3 · P2 → 🟨 Medio</td>
+<td>Gerente de TI</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a></td>
+<td>Advertencia de no enviar contraseñas; enmascaramiento de RFC, CURP y contraseñas en registros; conservación corta; adenda de encargado</td>
+<td>C4 · P1 → 🟨 Medio</td>
+<td>Gerente de TI, con visto bueno de la coordinadora</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>Reducir y compartir</td>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a></td>
+<td>Aviso previo ante cambio de modelo, acuerdo de nivel de servicio (<em>service level agreement</em>, SLA) y reportes de disponibilidad; prueba de aceptación ante cualquier cambio; mensaje de contingencia</td>
+<td>C3 · P2 → 🟨 Medio</td>
+<td>Gerente de TI</td>
+</tr>
+<tr>
+<td>R-06</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>, <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a></td>
+<td>XML preferido sobre PDF; revisión humana de capturas de baja confianza; muestreo mensual de 2 % contra el XML</td>
+<td>C3 · P2 → 🟨 Medio</td>
+<td>Gerente de TI, a propuesta del gerente del área contable</td>
+</tr>
+<tr>
+<td>R-07</td>
+<td>Reducir</td>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a></td>
+<td>Revisión obligatoria antes de enviar; etiqueta "borrador elaborado con apoyo de IA y revisado por…"</td>
+<td>C2 · P2 → 🟩 Bajo</td>
+<td>Gerente de TI, dueño de IA-01</td>
+</tr>
+<tr>
+<td>R-08</td>
+<td>Evitar</td>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a></td>
+<td>La política prohíbe usar esas métricas para evaluar desempeño</td>
+<td>C3 · P1 → 🟩 Bajo</td>
+<td>Gerente de TI, dueño de IA-01</td>
+</tr>
+</tbody>
+</table>
+<p>Dos calificaciones marcaron el proyecto. <strong>R-01 salió Crítico</strong>, y para los criterios del despacho eso exige respuesta inmediata: el bloqueo de chatbots gratuitos se activó antes de terminar el inventario. <strong>R-02 también salió Crítico</strong>, con evidencia propia (Alma falló 4 de 60 preguntas sobre fechas en la primera prueba de aceptación), así que no se abrió a todos los clientes hasta recalificar el residual con los resultados del piloto.</p>
+<p>El residual de R-01 sigue en Alto porque el vector que queda (fotografiar una nómina con un celular personal) no se bloquea desde la red. La socia directora lo aceptó de forma temporal y condicionada, como permiten los criterios de <a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>. El registro incluye además una oportunidad, <strong>O-01</strong>: Alma atiende fuera de horario y libera al equipo de atención de lo repetitivo; se sigue con el porcentaje de consultas resueltas sin traspaso y el tiempo de primera respuesta.</p>
+<h3 id="ca-01-el-control-que-mas-trabaja">CA-01: el control que más trabaja<a class="headerlink" href="#ca-01-el-control-que-mas-trabaja" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Ningún control del Anexo A describe lo necesario para que la base de conocimiento de Alma no envejezca, así que el despacho diseñó uno propio. Cada respuesta lleva responsable, fuente (calendario fiscal oficial o criterio interno) y fecha de revisión; la coordinadora la valida cada mes, y cada semana en temporada de declaraciones anuales:</p>
+<pre class="mermaid"><code>flowchart LR
+  A["Cambio en el calendario o tema nuevo"] --&gt; B["Curador redacta con fuente y fecha"]
+  B --&gt; C["Visto bueno de cumplimiento"]
+  C --&gt; D["Prueba de 60 preguntas"]
+  D --&gt; E{"¿Cero errores en fechas fiscales?"}
+  E --&gt;|"No"| B
+  E --&gt;|"Sí"| F["Publicación en máximo 48 horas"]
+  F --&gt; G["Muestreo semanal de 30 conversaciones"]
+  G --&gt;|"Error detectado"| H["Incidente, corrección y aviso"]
+  H --&gt; B</code></pre>
+<h2 id="evaluacion-de-impacto-completa-alma-eia-02">Evaluación de impacto completa: Alma (<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02)<a class="headerlink" href="#evaluacion-de-impacto-completa-alma-eia-02" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Antes de cada evaluación de impacto del sistema de IA (<em>AI system impact assessment</em>), el despacho aplicó a sus tres sistemas el cribado de su procedimiento (<a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>). <strong>IA-01</strong> recibió una evaluación breve, centrada en lo que se escribe en las instrucciones (<em>prompts</em>) y en los trabajadores: de ahí salió la decisión de R-08. <strong>IA-03</strong> también quedó en evaluación breve, con severidad media por el efecto de un error de extracción en la contabilidad del cliente. <strong>Alma</strong> conversa con el público, da información con consecuencias fiscales y muchos usuarios no saben que hablan con una IA. El cribado pedía al menos una evaluación intermedia; el despacho la hizo completa porque entre sus usuarios hay adultos mayores y porque recibe datos que nadie les pidió enviar.</p>
+<p>Lo que sigue resume el documento de seis páginas, en su versión vigente. La severidad usa la <a href="../../anexo-a/a5-evaluacion-de-impacto/#una-escala-de-severidad-para-dejar-de-discutir-en-abstracto">escala que propone esta guía</a>: gravedad (G), alcance (A) y reversibilidad (R) de 1 a 4; la suma da baja (3–4), media (5–7), alta (8–9) o crítica (10–12), y la gravedad sube un nivel si el grupo expuesto necesita protección especial.</p>
+<h3 id="1-identificacion-y-versiones">1. Identificación y versiones<a class="headerlink" href="#1-identificacion-y-versiones" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Folio y sistema</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02 · IA-02 Alma, con el modelo que BotNorte declaró en julio de 2026</td>
+</tr>
+<tr>
+<td>Conduce y participan</td>
+<td>Coordinadora de cumplimiento; líder de atención (dueña), gerente de TI y un contador curador; un par externo revisó la versión 1.0</td>
+</tr>
+<tr>
+<td>Aprueba</td>
+<td>Socia directora, porque la versión 1.0 tuvo un impacto de severidad alta</td>
+</tr>
+<tr>
+<td>Vínculos</td>
+<td>Riesgos R-02 a R-05; evaluación de impacto en la protección de datos (<abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>) de Alma; <a href="../../plantillas/#ficha-del-sistema">ficha del sistema</a>; PR-ALMA-01</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Fecha</th>
+<th>Disparador</th>
+<th>Qué cambió</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Febrero de 2026</td>
+<td>Sistema nuevo, antes del piloto</td>
+<td>Primera evaluación; el impacto I-03, de severidad alta, obligó a pactar el enmascaramiento con BotNorte antes del piloto</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Marzo de 2026</td>
+<td>Piloto: 7 de 20 clientes, 5 de ellos mayores de 60 años, no notaron que hablaban con un asistente virtual</td>
+<td>Saludo reforzado, recordatorio en respuestas sobre plazos y palabra clave para pedir una persona; I-02 revalorada con el piso por vulnerabilidad</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Julio de 2026</td>
+<td>BotNorte avisó un cambio de modelo que además habilitaba notas de voz</td>
+<td>Prueba de aceptación repetida; nuevo impacto positivo I-P3; el audio, como dato nuevo, se analizó en la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-uso-previsto-y-uso-indebido-previsible">2. Uso previsto y uso indebido previsible<a class="headerlink" href="#2-uso-previsto-y-uso-indebido-previsible" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Uso previsto.</strong> Alma responde por WhatsApp preguntas frecuentes sobre fechas generales de obligaciones fiscales, informa el estatus de trámites (constancia de situación fiscal, opinión de cumplimiento, altas ante el IMSS) y agenda citas, con base en la información que cura el despacho. No da asesoría personalizada ni calcula impuestos: lo que excede ese alcance lo pasa a un contador (<a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a>).</p>
+<p><strong>Uso indebido previsible</strong>, según la experiencia del equipo de atención:</p>
+<ul>
+<li>Clientes que piden asesoría ("¿me conviene cambiar de régimen?") o envían su CIEC, su e.firma o su identificación "para que el despacho ya los tenga".</li>
+<li>Trabajadores de las <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> cliente que escriben por su recibo de nómina, o alguien con el teléfono de un cliente que pregunta por un trámite ajeno.</li>
+<li>Personal del despacho que remite a Alma consultas que debería atender, para ahorrarse trabajo en temporada.</li>
+<li>La tentación futura de pedirle que recomiende un régimen fiscal: sería un caso de uso nuevo, no un ajuste (<a href="../../anexo-a/a9-uso/">A.9</a>).</li>
+</ul>
+<h3 id="3-contexto-tecnico-social-y-jurisdicciones">3. Contexto técnico, social y jurisdicciones<a class="headerlink" href="#3-contexto-tecnico-social-y-jurisdicciones" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Técnico.</strong> SaaS sobre un modelo de lenguaje de un tercero; BotNorte indexa la base de conocimiento, un integrador conecta la agenda y el estatus sale de una hoja que atención actualiza a diario. El despacho no ve el modelo por dentro: lo que necesita saber lo pide con el cuestionario de proveedores (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>). Unas 1 800 conversaciones al mes.</p>
+<p><strong>Social.</strong> Usuarios con poca formación fiscal que confían en "lo que dijo el despacho" sin distinguir si respondió una persona o un sistema; muchos adultos mayores prefieren mandar notas de voz. Los picos coinciden con la temporada de declaraciones anuales (marzo y abril), cuando un error cuesta más.</p>
+<p><strong>Jurisdicciones.</strong> Solo México. Aplica la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>: el despacho es responsable de los datos de las conversaciones, BotNorte es encargado y, por ser un medio electrónico, el aviso de privacidad simplificado va en el primer mensaje con enlace al integral. En nuestra lectura, el derecho de oposición frente a tratamientos automatizados no se activa, porque Alma no evalúa aspectos personales ni decide sobre nadie. No se identificó una ley de IA aplicable (ver <a href="../../integracion/contexto-mexico-latam/#mexico">México y Latinoamérica</a>). El contrato con el banco no es una jurisdicción, pero quedó registrado como requisito externo (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>).</p>
+<h3 id="4-personas-y-grupos-afectados-y-consulta">4. Personas y grupos afectados, y consulta<a class="headerlink" href="#4-personas-y-grupos-afectados-y-consulta" title="Enlace permanente a esta sección">&para;</a></h3>
+<ul>
+<li><strong>Dueños y administradores de las <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> cliente</strong>, usuarios directos que necesitan información exacta para no pagar recargos.</li>
+<li><strong>Adultos mayores al frente de micronegocios</strong>, con menos familiaridad con asistentes virtuales: grupo con necesidad especial de protección.</li>
+<li><strong>Personas con baja alfabetización digital o discapacidad visual</strong>, que escriben con dificultad o usan lector de pantalla.</li>
+<li><strong>Trabajadores de las <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> cliente</strong>: no son usuarios previstos, pero algunos escriben y sus datos de nómina viajan en mensajes de sus patrones.</li>
+<li><strong>Contadores y equipo de atención del despacho</strong>, cuyo trabajo cambia (sección 8).</li>
+</ul>
+<p>La consulta incluyó un piloto de tres semanas con 20 clientes, 8 de ellos mayores de 60 años, y entrevista telefónica a 8; un taller con atención y los curadores, que aportó la lista de usos indebidos; la revisión de las conversaciones del trimestre anterior, de donde salieron las 30 preguntas que la base debía cubrir; el cuestionario de IA a BotNorte, y la revisión de un par externo. De ahí salieron el aviso reforzado, la fecha de actualización visible y la petición de aceptar notas de voz.</p>
+<h3 id="5-impactos-en-individuos-y-grupos">5. Impactos en individuos y grupos<a class="headerlink" href="#5-impactos-en-individuos-y-grupos" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Signo</th>
+<th>G</th>
+<th>A</th>
+<th>R</th>
+<th>Puntaje y severidad</th>
+<th>Riesgo vinculado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I-01</td>
+<td>Fecha o plazo fiscal equivocado: recargos o declaración fuera de tiempo</td>
+<td>−</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6 · Media</td>
+<td>R-02</td>
+</tr>
+<tr>
+<td>I-02</td>
+<td>No darse cuenta de que es una IA y tomar la respuesta como asesoría del contador</td>
+<td>−</td>
+<td>3 (2 + piso)</td>
+<td>2</td>
+<td>2</td>
+<td>7 · Media</td>
+<td>R-03</td>
+</tr>
+<tr>
+<td>I-03</td>
+<td>Exposición de contraseñas del SAT, e.firma o identificaciones enviadas por mensaje</td>
+<td>−</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>8 · Alta</td>
+<td>R-04</td>
+</tr>
+<tr>
+<td>I-04</td>
+<td>Estatus de un trámite revelado a quien no está autorizado</td>
+<td>−</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>5 · Media</td>
+<td>R-04</td>
+</tr>
+<tr>
+<td>I-05</td>
+<td>Atención inaccesible para quien no escribe con soltura</td>
+<td>−</td>
+<td>3 (2 + piso)</td>
+<td>2</td>
+<td>1</td>
+<td>6 · Media</td>
+<td>Ninguno: se trató como requisito de diseño</td>
+</tr>
+<tr>
+<td>I-06</td>
+<td>Respuesta fuera del uso previsto que suena a asesoría</td>
+<td>−</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6 · Media</td>
+<td>R-03</td>
+</tr>
+<tr>
+<td>I-P1</td>
+<td>Respuesta inmediata sobre fechas, estatus y citas, también fuera de horario</td>
+<td>+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Magnitud media</td>
+<td>O-01</td>
+</tr>
+<tr>
+<td>I-P2</td>
+<td>Menos espera para hablar con una persona, porque atención deja lo repetitivo</td>
+<td>+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Magnitud media</td>
+<td>O-01</td>
+</tr>
+<tr>
+<td>I-P3</td>
+<td>Notas de voz para quien prefiere hablar (versión 1.2)</td>
+<td>+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Magnitud media para adultos mayores</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Cada impacto negativo relevante pasó al registro de riesgos con referencia cruzada ("<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02 § 5, I-01 → R-02") y su severidad alimentó la columna de individuos.</p>
+<h3 id="6-impactos-sociales">6. Impactos sociales<a class="headerlink" href="#6-impactos-sociales" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Signo</th>
+<th>Valoración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S-01</td>
+<td>Error multiplicado: una respuesta equivocada sobre un vencimiento general puede llegar a decenas de clientes en un día de temporada</td>
+<td>−</td>
+<td>Media (2 · 2 · 2); se trata junto con I-01</td>
+</tr>
+<tr>
+<td>S-02</td>
+<td>Micronegocios con acceso fácil a fechas generales cumplen a tiempo</td>
+<td>+</td>
+<td>Positivo moderado; se seguirá con las quejas por recargos</td>
+</tr>
+<tr>
+<td>S-03</td>
+<td>La automatización podría usarse para recortar al equipo de atención</td>
+<td>−</td>
+<td>No significativo, por decisión de la socia directora (sección 8)</td>
+</tr>
+<tr>
+<td>S-04</td>
+<td>Cómputo del modelo por cada conversación</td>
+<td>−</td>
+<td>No significativo al volumen del despacho; BotNorte no publica datos de consumo; se le pidieron por escrito</td>
+</tr>
+</tbody>
+</table>
+<p>Conclusión firmada: impacto social bajo, con medidas asignadas a S-01 y S-04, como propone la redacción sugerida en <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>.</p>
+<h3 id="7-medidas-y-supervision-humana">7. Medidas y supervisión humana<a class="headerlink" href="#7-medidas-y-supervision-humana" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Medida</th>
+<th>Atiende</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saludo que se presenta como asistente virtual con IA, aclara qué no hace y ofrece una persona con la palabra ASESOR; recordatorio "confirma con tu contador" en respuestas sobre plazos (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>)</td>
+<td>I-02, I-06</td>
+</tr>
+<tr>
+<td>Fechas solo desde la base de conocimiento, con la leyenda "actualizado al…"; si el dato no está, Alma transfiere (CA-03); el vencimiento propio de cada cliente siempre lo responde una persona</td>
+<td>I-01, I-06, S-01</td>
+</tr>
+<tr>
+<td>Curaduría con visto bueno y prueba de 60 preguntas; cambios del calendario publicados en 48 horas (CA-01)</td>
+<td>I-01, S-01</td>
+</tr>
+<tr>
+<td>Estatus solo al número registrado como contacto autorizado y con número de cliente</td>
+<td>I-04</td>
+</tr>
+<tr>
+<td>Advertencia de no enviar contraseñas; enmascaramiento en registros; si llega una, se elimina y se pide al cliente cambiarla</td>
+<td>I-03</td>
+</tr>
+<tr>
+<td>Notas de voz y teléfono del despacho visible en cada traspaso</td>
+<td>I-05</td>
+</tr>
+<tr>
+<td>Muestreo semanal de 30 conversaciones calificadas por un contador, revisión de toda conversación con queja y palabra REPORTE (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>)</td>
+<td>Todos</td>
+</tr>
+<tr>
+<td>Si un error de Alma causa recargos, el despacho los absorbe</td>
+<td>I-01</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Supervisión humana.</strong> Alma no decide nada por el cliente. Una persona interviene en el traspaso, en la revisión de escalamientos, en el muestreo semanal y con un interruptor: si la exactitud mensual baja de 95 % o hay un incidente sobre plazos, la líder de atención apaga ese tema en el panel de BotNorte y Alma transfiere esas preguntas. Si Alma se cae, un mensaje automático da horario y teléfono; si un error se repite, se avisa a quienes lo consultaron, como prevé el plan de <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>.</p>
+<h3 id="8-efectos-en-el-personal">8. Efectos en el personal<a class="headerlink" href="#8-efectos-en-el-personal" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Las 8 personas de atención pasaron de contestar lo repetitivo a supervisar a Alma y atender lo que escala. La socia directora decidió que nadie perdería su empleo por Alma: el tiempo liberado se reasignó al seguimiento de trámites. Hubo taller con BotNorte, una sesión sobre alucinaciones y una guía de curaduría para los tres contadores (ver el <a href="../../clausulas/c7-apoyo/#ejemplo-resuelto">ejemplo de la cláusula 7</a>).</p>
+<h3 id="9-impactos-residuales-y-decision">9. Impactos residuales y decisión<a class="headerlink" href="#9-impactos-residuales-y-decision" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Con las medidas, los residuales quedaron así: I-01, I-04 e I-06 en severidad baja (4 puntos); I-02 e I-05 en media (5 puntos), porque el piso por vulnerabilidad se mantiene mientras haya adultos mayores entre los usuarios; I-03 en media (6 puntos).</p>
+<p><strong>Decisión:</strong> aprobada para operar, con condiciones. Alma no amplía temas sin nueva evaluación; la exactitud se mide cada mes, con el interruptor en 95 %; cada trimestre se encuesta si los clientes saben que hablan con una IA. La evaluación se repite antes de ampliar Alma a los trabajadores de los clientes, darle temas de asesoría, aceptar un nuevo cambio de modelo o un tipo de dato nuevo, y después de cualquier incidente grave (<a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>). Firmaron la socia directora, la dueña del sistema y el responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<h3 id="10-comunicacion-retencion-y-proxima-revision">10. Comunicación, retención y próxima revisión<a class="headerlink" href="#10-comunicacion-retencion-y-proxima-revision" title="Enlace permanente a esta sección">&para;</a></h3>
+<ul>
+<li><strong>Comunicación:</strong> resumen de dos páginas para el banco cliente; página "Cómo funciona Alma" en el sitio del despacho, en lenguaje claro; aviso de privacidad que menciona a Alma y a BotNorte; ficha interna para atención con los temas que Alma no toca.</li>
+<li><strong>Retención:</strong> cada versión se conserva mientras Alma opere y cinco años después de su retiro, el plazo que el despacho ya usa para expedientes de clientes (<a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a>). Las personas consultadas aparecen por su rol.</li>
+<li><strong>Próxima revisión:</strong> julio de 2027, o antes si ocurre un disparador.</li>
+</ul>
+<h2 id="extracto-de-la-declaracion-de-aplicabilidad">Extracto de la Declaración de Aplicabilidad<a class="headerlink" href="#extracto-de-la-declaracion-de-aplicabilidad" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La versión 1.1 de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> declara <strong>27 controles del Anexo A incluidos</strong> (4 con alcance acotado), <strong>11 excluidos</strong> con justificación y <strong>3 controles propios</strong>. Usar IA de terceros no equivale a excluir en automático los controles de ciclo de vida y datos: la base de conocimiento de Alma mantiene varios de ellos vivos (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>).</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Se incluye?</th>
+<th>Justificación</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> Política de IA</td>
+<td>Sí</td>
+<td>Base del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>; trata R-01 y R-08; el banco la pidió</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-3">A.4.3</a> Recursos de datos</td>
+<td>Sí, ligero</td>
+<td>La base de conocimiento de Alma es un recurso que aporta el despacho: ficha de media página con dueña, fuentes y fecha</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a> y <a href="../../anexo-a/a4-recursos/#a-4-5">A.4.5</a> Herramientas; sistema y cómputo</td>
+<td>No</td>
+<td>No construye, entrena ni hospeda modelos; herramientas e infraestructura son de los proveedores (A.10.3). El tipo de servicio, la región de alojamiento y el modelo que declara BotNorte se registran en el inventario (A.4.2). Ninguna ley ni contrato lo exige</td>
+<td>Excluido</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> a <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a> Evaluación de impacto</td>
+<td>Sí</td>
+<td>Las cláusulas 6.1.4 y 8.4 ya lo exigen; cribado de dos niveles</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a> y <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a> Desarrollo responsable</td>
+<td>No</td>
+<td>No diseña ni desarrolla IA; los objetivos de uso responsable viven en A.9.3 y la curaduría, en CA-01</td>
+<td>Excluido</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a> y <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> Requisitos, diseño, verificación y validación</td>
+<td>No</td>
+<td>No especifica, diseña ni prueba modelos. Lo que sí le toca (configurar a Alma y comprobar que funciona en su contexto) se cubre con la ficha del sistema y la prueba de aceptación dentro de A.6.2.5; lo que exige al proveedor, con A.10.3. Se reevaluará si construye flujos propios o ajusta un modelo</td>
+<td>Excluido</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a> Despliegue</td>
+<td>Sí</td>
+<td>Lista de salida de Alma (base revisada, aviso de IA, aviso de privacidad, traspaso probado, piloto, aprobación de la socia directora) y configuración de IA-01; trata R-02 y R-03</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> Operación y monitoreo</td>
+<td>Sí</td>
+<td>Muestreo de Alma y de CFDI, alertas DLP; trata R-01, R-02 y R-06</td>
+<td>Implementado; ver <abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-01</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a> Documentación técnica</td>
+<td>No</td>
+<td>No la produce: la recibe de sus proveedores (A.10.3) y la resguarda como información de origen externo (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>); la información para clientes va por A.8.2</td>
+<td>Excluido</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a> Registro de eventos</td>
+<td>Sí, acotado</td>
+<td>Los registros viven en los proveedores: exportación mensual de BotNorte con datos enmascarados y bitácora de la suite</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a>, <a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a> y <a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a> Datos para desarrollo, adquisición y preparación</td>
+<td>No</td>
+<td>No entrena ni ajusta modelos, no adquiere conjuntos de datos y no prepara datos (BotNorte indexa la base). La procedencia del contenido propio se cubre en A.7.5</td>
+<td>Excluido</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a> Calidad de los datos</td>
+<td>Sí</td>
+<td>Requisitos para la base de conocimiento (fuente, fecha, revisión mensual y semanal en temporada) y para los CFDI; trata R-02 y R-06</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a> Procedencia de los datos</td>
+<td>Sí, acotado</td>
+<td>Solo la base de conocimiento: versión, responsable y fuente de cada respuesta</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> Información para usuarios</td>
+<td>Sí</td>
+<td>Saludo de Alma, recordatorio en plazos, etiqueta de contenidos de IA-01; trata R-03 y R-07</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a> Uso responsable</td>
+<td>Sí</td>
+<td>Ningún uso se activa sin el formulario de alta y su registro en el inventario; trata R-01 y R-07</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> Proveedores</td>
+<td>Sí</td>
+<td>Su control más importante: cuestionario de IA a sus tres proveedores y adenda con BotNorte; trata R-04 a R-06</td>
+<td>En implementación; ver <abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-02</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a> Clientes</td>
+<td>Sí, acotado, desde la versión 1.1</td>
+<td>Ofrece a sus clientes un canal donde interviene una IA y al menos un cliente plantea por escrito expectativas sobre su uso de IA. Se acota a Alma y a los requisitos de IA de los contratos</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td>CA-01 · CA-02 · CA-03 (propios)</td>
+<td>Sí</td>
+<td>Curaduría de la base de conocimiento; bloqueo de IA no autorizada con alertas DLP; abstención de Alma cuando el dato no está en la base</td>
+<td>Implementados</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">¿Por qué A.10.4 pasó de excluido a incluido?</p>
+<p>En la versión 1.0, el gerente de TI lo excluyó con el argumento que verás en ese control: el despacho no suministra sistemas de IA, usa los de terceros para prestar servicios contables. Al contestar el cuestionario del banco cambió de opinión. Una exclusión se sostiene solo si la evaluación de riesgos no pide el control <strong>y</strong> ningún requisito externo lo exige, y el banco acababa de poner por escrito lo que espera del uso de IA en los servicios que contrata. Además, aunque Alma sea de BotNorte, ante sus clientes quien ofrece ese canal es el despacho. En nuestra lectura ambas posiciones son defendibles, pero la segunda resiste mejor la pregunta de un auditor. El cambio costó poco: registrar las expectativas de IA que los clientes han planteado, la cláusula de uso de IA del contrato de servicios y la comunicación de los límites de Alma que ya existía.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Otra lectura de A.6.2.2</p>
+<p>Incluir <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a> acotado a la configuración de Alma (temas permitidos, tono, escalamiento) es igual de válido, porque el despacho sí especificó requisitos al contratarla. Lo que un auditor no aceptaría es que esos requisitos no existieran o no se verificaran: aquí viven en la ficha del sistema y se comprueban en la prueba de aceptación.</p>
+</div>
+<h2 id="objetivos-e-indicadores">Objetivos e indicadores<a class="headerlink" href="#objetivos-e-indicadores" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Los objetivos conectan la política ("informamos con exactitud y transparencia") con algo medible (<a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>):</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Objetivo</th>
+<th>Indicador y fórmula</th>
+<th>Meta</th>
+<th>Frecuencia</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OBJ-01</td>
+<td>Exactitud de Alma sobre fechas y obligaciones fiscales en 2026 y 2027</td>
+<td>Respuestas con plazo correcto ÷ respuestas sobre plazos revisadas, en 30 conversaciones al azar por semana (unas 120 al mes) más todas las que terminaron en queja</td>
+<td>≥ 98 %; bajo 95 %, interruptor</td>
+<td>Semanal; consolidado mensual</td>
+<td>Líder de atención mide; gerente de TI analiza</td>
+</tr>
+<tr>
+<td>OBJ-02</td>
+<td>Ningún dato de clientes en herramientas de IA no autorizadas</td>
+<td>Casos confirmados (alertas DLP verificadas y reportes del canal)</td>
+<td>0 por trimestre</td>
+<td>Trimestral</td>
+<td>Gerente de TI</td>
+</tr>
+<tr>
+<td>OBJ-03</td>
+<td>Que los clientes sepan que Alma es una IA</td>
+<td>(a) Conversaciones nuevas con aviso ÷ conversaciones nuevas; (b) encuestados que identifican a Alma como asistente virtual ÷ encuestados (30 por trimestre, al menos 10 mayores de 60)</td>
+<td>(a) 100 %; (b) ≥ 90 %</td>
+<td>Mensual y trimestral</td>
+<td>Líder de atención</td>
+</tr>
+<tr>
+<td>OBJ-04</td>
+<td>Reflejar a tiempo cada cambio del calendario fiscal</td>
+<td>Cambios publicados en 48 horas o menos ÷ cambios identificados</td>
+<td>100 %</td>
+<td>Mensual</td>
+<td>Coordinadora de cumplimiento</td>
+</tr>
+<tr>
+<td>OBJ-05</td>
+<td>Captura de CFDI confiable</td>
+<td>Campos correctos ÷ campos revisados en el muestreo de 2 % contra el XML; capturas de baja confianza revisadas ÷ capturas de baja confianza</td>
+<td>≥ 97 % y 100 %</td>
+<td>Mensual</td>
+<td>Gerente del área contable</td>
+</tr>
+<tr>
+<td>OBJ-06</td>
+<td>Personal que conoce y aplica la política</td>
+<td>Personas con política firmada y capacitación anual ÷ plantilla; porcentaje que reporta en el simulacro</td>
+<td>100 % y ≥ 85 %</td>
+<td>Semestral</td>
+<td>Gerente de TI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Primeros resultados.</strong> OBJ-01: 98.6 % en junio, 97.9 % en julio (con una muestra incompleta; ver <abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-01) y 99.1 % en agosto. OBJ-03 (b): 83 % en la primera encuesta y 93 % en la segunda, tras reforzar el aviso. OBJ-06: las 58 personas firmaron la política; en el simulacro reportó el 71 % en la primera ronda y el 89 % en la segunda. La ficha completa de OBJ-01 está en <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>.</p>
+<h2 id="hoja-de-ruta-del-caso">Hoja de ruta del caso<a class="headerlink" href="#hoja-de-ruta-del-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La ruta sigue las fases de la <a href="../../implementacion/hoja-de-ruta/#variantes">hoja de ruta de implementación</a>. Del arranque a la primera revisión por la dirección pasaron unos diez meses, algo más que la estimación para una <abbr title="Pequeña y mediana empresa.">PyME</abbr>, porque el despacho decidió no lanzar a Alma en plena temporada de declaraciones anuales.</p>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Cuándo</th>
+<th>Entregables clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 · Decisión y patrocinio</td>
+<td>Noviembre de 2025</td>
+<td>Minuta de la socia directora; responsable designado</td>
+</tr>
+<tr>
+<td>1 · Diagnóstico e inventario</td>
+<td>Noviembre y diciembre de 2025</td>
+<td>Encuesta e inventario; medida urgente: uso aceptable y bloqueo de chatbots gratuitos</td>
+</tr>
+<tr>
+<td>2 · Contexto, roles y alcance</td>
+<td>Diciembre de 2025</td>
+<td>Matriz de contexto, partes interesadas, roles y alcance</td>
+</tr>
+<tr>
+<td>3 · Liderazgo, política y roles</td>
+<td>Diciembre de 2025 y enero de 2026</td>
+<td>Política de IA, <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>, comité mensual, canal de inquietudes, arranque de la toma de conciencia</td>
+</tr>
+<tr>
+<td>4 · Riesgo, impacto y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr></td>
+<td>Enero a marzo de 2026</td>
+<td>Criterios, riesgos, <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01 a <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-03, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> 1.0 y 1.1, plan aprobado, respuesta al banco</td>
+</tr>
+<tr>
+<td>5 · Controles operativos</td>
+<td>Febrero a mayo de 2026</td>
+<td>Adenda con BotNorte, cuestionarios a proveedores, aviso de privacidad, PR-ALMA-01, piloto, DLP</td>
+</tr>
+<tr>
+<td>6 · Operación y evidencia</td>
+<td>Mayo a agosto de 2026</td>
+<td>Alma en producción; muestreos, indicadores e incidentes</td>
+</tr>
+<tr>
+<td>7 · Auditoría interna y revisión por la dirección</td>
+<td>Agosto y septiembre de 2026</td>
+<td>Informe de auditoría y minuta de revisión</td>
+</tr>
+<tr>
+<td>8 · Acciones correctivas y decisión</td>
+<td>Septiembre a diciembre de 2026</td>
+<td>Cierre de hallazgos; decisión sobre la certificación</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>gantt
+  title Contadores Alameda · primer ciclo del SGIA
+  dateFormat YYYY-MM-DD
+  axisFormat %m/%y
+  section Planificar
+  Decisión y patrocinio :f0, 2025-11-03, 14d
+  Diagnóstico e inventario :f1, 2025-11-10, 28d
+  Contexto y alcance :f2, 2025-12-01, 21d
+  Política y roles :f3, 2025-12-08, 35d
+  Evaluación de riesgos e impacto :f4, 2026-01-12, 56d
+  section Hacer
+  Controles operativos :f5, 2026-02-09, 98d
+  Piloto de Alma :p1, 2026-02-16, 28d
+  Temporada de declaraciones anuales :crit, t1, 2026-03-01, 61d
+  Lanzamiento de Alma :milestone, m1, 2026-05-11, 0d
+  Operación y evidencia :f6, 2026-05-11, 98d
+  section Verificar y actuar
+  Auditoría interna :f7, 2026-08-17, 14d
+  Revisión por la dirección :milestone, m2, 2026-09-14, 0d
+  Acciones correctivas :f8, 2026-09-14, 90d</code></pre>
+<h3 id="lo-que-paso-en-la-operacion">Lo que pasó en la operación<a class="headerlink" href="#lo-que-paso-en-la-operacion" title="Enlace permanente a esta sección">&para;</a></h3>
+<ul>
+<li><strong>El piloto cambió el diseño.</strong> Tras fallar 4 de 60 preguntas en la primera prueba de aceptación nació CA-03; la segunda prueba salió limpia y el piloto produjo la versión 1.1 de <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02.</li>
+<li><strong>Una respuesta al banco con evidencia.</strong> En marzo de 2026 el despacho entregó política, inventario, evaluación de proveedores, registros de capacitación, un extracto de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y el resumen de <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-02. Al prepararla descubrió que su política no hablaba de avisar a los clientes cuando conversan con una IA (<a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>) y que A.10.4 merecía otra mirada. En junio el banco revisó evidencia en la oficina: una auditoría de segunda parte.</li>
+<li><strong>El aviso previo funcionó.</strong> BotNorte anunció el cambio de modelo con 15 días de anticipación; la prueba repetida encontró un cambio de tono y un error en la agenda, corregidos a tiempo.</li>
+<li><strong>El muestreo atrapó un error sin daño.</strong> En julio detectó que Alma daba la fecha general de un pago mensual sin advertir que ese mes el vencimiento se recorría al siguiente día hábil. La fecha dada era anterior a la real, así que nadie pagó recargos; se corrigió en 24 horas y CA-01 ahora revisa los días inhábiles.</li>
+<li><strong>La IA en la sombra se volvió visible.</strong> En seis meses hubo 11 alertas de DLP, 2 de ellas intentos reales de personal de nuevo ingreso (desde entonces el semáforo está en la inducción), y el canal recibió 7 reportes, 3 de ellos sobre respuestas incorrectas de Alma.</li>
+</ul>
+<h3 id="la-decision-del-primer-ano">La decisión del primer año<a class="headerlink" href="#la-decision-del-primer-ano" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En la revisión por la dirección de septiembre de 2026 la socia directora analizó indicadores, resultados de la auditoría interna, estado del plan de tratamiento, incidentes y la retroalimentación del banco; la lista de entradas de 9.3 no menciona expresamente estas dos últimas, pero incluirlas es buena práctica. Decidió mantener la alineación sin certificar durante el primer semestre de 2027, aprobar la contratación de una persona de medio tiempo para revisar conversaciones de Alma en temporada y volver a decidir en marzo de 2027 con cuatro criterios escritos: si el banco u otro cliente exige el certificado por contrato; si los hallazgos están cerrados y hay un segundo ciclo de indicadores; cuánto cotizan dos organismos de certificación sobre el mismo alcance, y si el despacho implementará también un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ISO 27001, que otros bancos empiezan a pedir, en cuyo caso convendría un sistema integrado (<a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>).</p>
+<h2 id="que-le-diria-el-auditor">Qué le diría el auditor<a class="headerlink" href="#que-le-diria-el-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition auditor">
+<p class="admonition-title">La primera auditoría interna, en agosto de 2026</p>
+<p>La hizo en dos días un auditor externo distinto del consultor que acompañó la implementación (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a>). Además de entrevistas y muestreo de registros, hizo una prueba de recorrido: conversó con Alma como cliente, pidió asesoría, mandó una contraseña inventada y preguntó por el trámite de otra empresa.</p>
+<p><strong>Fortalezas:</strong> un inventario que encontró lo que no se veía (la IA dentro del software contable y los chatbots no autorizados); una evaluación de impacto con consulta real que cambió el diseño y se repitió ante un cambio del proveedor; una prueba de aceptación que funciona como criterio de liberación y que ya detuvo una publicación; una <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> con exclusiones argumentadas y revisadas.</p>
+<table>
+<thead>
+<tr>
+<th>Folio y tipo</th>
+<th>Requisito</th>
+<th>Evidencia</th>
+<th>Brecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-01 · No conformidad menor</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> y <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>; PR-ALMA-01, sección 5 (muestreo semanal de 30 conversaciones)</td>
+<td>En los registros de las semanas 23 a 34 de 2026 faltan las semanas 28, 29 y 32, que coinciden con las vacaciones de la líder de atención; el procedimiento no designa suplente</td>
+<td>El monitoreo planificado no se hizo en 3 de 12 semanas; el indicador de julio se calculó con unas 90 conversaciones en vez de 120</td>
+</tr>
+<tr>
+<td><abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-02 · No conformidad menor</td>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> y <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> (control de servicios externos)</td>
+<td>El cuestionario del proveedor del software contable, recibido en febrero, deja sin respuesta la pregunta sobre subcontratistas que intervienen en la extracción; hay una solicitud de aclaración de marzo y ningún seguimiento ni riesgo registrado</td>
+<td>La evaluación del proveedor quedó incompleta y no se escaló</td>
+</tr>
+<tr>
+<td>OBS-01 · Observación</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a> y criterios de aceptación</td>
+<td>El registro de riesgos marca la aceptación del residual Alto de R-01 como temporal por seis meses, pero la minuta que la aprueba solo dice "de forma temporal", sin fecha de vencimiento ni condiciones</td>
+<td>Una aceptación temporal puede volverse permanente sin revisión</td>
+</tr>
+<tr>
+<td>OBS-02 · Observación</td>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> y decisión de <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01</td>
+<td>El reporte mensual de TI muestra las métricas de uso de IA-01 con el nombre de cada persona, aunque la política prohíbe usarlas para evaluar desempeño</td>
+<td>El control depende solo de la buena voluntad</td>
+</tr>
+</tbody>
+</table>
+<p>Son no conformidades menores porque son fallas puntuales de ejecución que no comprometen la capacidad del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> para lograr sus resultados (ver <a href="../../auditoria/hallazgos-ejemplo/#no-conformidades-menores">Hallazgos de ejemplo</a>).</p>
+<p><strong>Recomendaciones:</strong> suplente para cada actividad periódica; un tablero de pendientes con proveedores revisado en el comité mensual; fecha de vencimiento y condiciones en toda aceptación temporal; seudonimizar las métricas de uso; fijar fecha para evaluar o retirar la transcripción de videollamadas.</p>
+</div>
+<p>Si el despacho decide certificarse, un auditor del organismo de certificación preguntaría además por la competencia e independencia documentadas del auditor interno, por la revisión de la aceptación temporal de R-01 al cumplirse los seis meses y por si las exclusiones de A.6 siguen siendo ciertas: por ejemplo, si el despacho empezó a construir flujos propios en el panel de BotNorte. Más preguntas típicas en <a href="../../auditoria/preguntas-del-auditor/">Preguntas del auditor</a>.</p>
+<h2 id="lecciones-para-tu-organizacion">Lecciones para tu organización<a class="headerlink" href="#lecciones-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Usar IA de terceros no te deja fuera.</strong> El riesgo de Alma no estaba en el modelo de BotNorte, sino en lo que el despacho le daba y en cómo la presentaba a sus clientes.</li>
+<li><strong>Empieza por la IA en la sombra, y ofrece una alternativa.</strong> Prohibir sin una herramienta autorizada solo mueve el problema a los celulares personales.</li>
+<li><strong>Un piloto pequeño es la mejor consulta.</strong> Veinte clientes revelaron lo que ningún taller interno habría visto.</li>
+<li><strong>El contrato con el proveedor es un control.</strong> El aviso previo ante cambios de modelo convirtió una sorpresa en un cambio planificado.</li>
+<li><strong>Proporcional no es superficial.</strong> Una veintena de documentos breves, roles acumulados con contrapesos y hojas de cálculo bastan, si se usan y dejan evidencia.</li>
+<li><strong>Las exclusiones se argumentan y se revisan.</strong> La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> es un documento vivo: A.10.4 cambió cuando cambió la información.</li>
+<li><strong>Mide lo que sí controlas:</strong> la exactitud de lo que reciben tus clientes, el uso que hace tu gente y el desempeño de tus proveedores.</li>
+<li><strong>Alinearse no es hacer la mitad.</strong> El despacho operó el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> completo y solo pospuso la auditoría externa, con criterios claros para decidirla.</li>
+</ul>
+<h2 id="plantillas-usadas-en-este-caso">Plantillas usadas en este caso<a class="headerlink" href="#plantillas-usadas-en-este-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#politica-de-ia">Política de IA</a> y <a href="../../plantillas/#uso-aceptable-ia-generativa">Política de uso aceptable de IA generativa</a>, la primera pieza implementada.</li>
+<li><a href="../../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a>, con notas para <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> que acumulan roles.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA (Excel)</a>, que trae como ejemplo los sistemas de este caso.</li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a> y <a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>.</li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a> y <a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>, donde viven los requisitos de Alma.</li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a> y <a href="../../plantillas/#checklist-auditoria-interna">Checklist de auditoría interna</a>.</li>
+</ul>
+<p>No usó el procedimiento del ciclo de vida, pensado para quien desarrolla o provee IA: su lista de salida y su prueba de aceptación caben en PR-ALMA-01.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:lfpdppp">
+<p>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, publicada en el Diario Oficial de la Federación el 20 de marzo de 2025 y en vigor desde el 21 de marzo de 2025; su art. 19 se refiere al aviso de vulneraciones que afecten de forma significativa. Texto vigente en el sitio de la Cámara de Diputados: <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf</a>, consultado el 9 de octubre de 2026.&#160;<a class="footnote-backref" href="#fnref:lfpdppp" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -3020,6 +4535,9 @@
 
 
 
+
+  
+  
 
 
 

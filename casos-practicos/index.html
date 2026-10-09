@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Tres casos prácticos ficticios de ISO/IEC 42001 en México, uno por cada rol frente a la IA. Una PyME que usa IA de terceros, una fintech que desarrolla su modelo de crédito y una empresa SaaS que provee asistentes virtuales, comparadas lado a lado.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -3000,16 +3000,202 @@
 
 
 <h1 id="casos-practicos">Casos prácticos<a class="headerlink" href="#casos-practicos" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6c.58 0 1.05.2 1.42.59.38.41.58.86.58 1.41v11c0 .55-.2 1-.58 1.41-.37.39-.84.59-1.42.59H4c-.58 0-1.05-.2-1.42-.59C2.2 20 2 19.55 2 19V8c0-.55.2-1 .58-1.41C2.95 6.2 3.42 6 4 6h4V4c0-.58.2-1.05.58-1.42C8.95 2.2 9.42 2 10 2h4c.58 0 1.05.2 1.42.58.38.37.58.84.58 1.42v2zM4 8v11h16V8zm10-2V4h-4v2z"/></svg></span> 3 casos completos</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 6 min de lectura</span></p>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>Tres empresas ficticias, una por cada rol frente a la IA, recorren ISO/IEC 42001 de punta a punta, del primer inventario a la auditoría, para que veas cómo cambian las mismas cláusulas y controles según quién eres y qué haces con la IA.</p>
+</div>
+<h2 id="por-que-casos-ficticios">Por qué casos ficticios<a class="headerlink" href="#por-que-casos-ficticios" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>A lo largo de la guía te habrás encontrado con Contadores Alameda, Monarca Crédito y Conversa Labs en los ejemplos de cada cláusula y de cada control. Aquí está la versión completa de cada una: su contexto, sus sistemas, sus riesgos, una evaluación de impacto entera, su Declaración de Aplicabilidad, sus objetivos y lo que encontraría un auditor.</p>
+<p>Las tres son <strong>inventadas</strong>, y eso es una ventaja:</p>
+<ul>
+<li><strong>Podemos mostrar los errores.</strong> Un caso real rara vez enseña la no conformidad, el piloto que salió mal o la exclusión que hubo que corregir. Estas empresas se equivocan a propósito, porque ahí está buena parte del aprendizaje.</li>
+<li><strong>No exponemos a nadie.</strong> No hay datos confidenciales de clientes ni organizaciones reales a las que se pueda atribuir una práctica o un hallazgo.</li>
+<li><strong>Son realistas en su naturaleza.</strong> Combinan situaciones frecuentes en México y Latinoamérica: el cuestionario de gobierno de IA de un banco, la nómina pegada en un chatbot gratuito, el buró de crédito, los motivos de rechazo, el chatbot de WhatsApp que se equivoca de fecha, el cliente en España que trae obligaciones europeas.</li>
+<li><strong>Cubren los tres roles.</strong> Usar, desarrollar y proveer IA cambian la intensidad de casi todo, en especial de los controles de ciclo de vida, datos, información a terceros y proveedores (<a href="../fundamentos/roles-en-la-ia/">Roles en la IA</a>).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Cualquier parecido es coincidencia</p>
+<p>Nombres, cifras, folios y documentos son ficticios. Las decisiones de cada empresa son una forma razonable de aplicar la norma, no la única, y no constituyen asesoría legal (ver el <a href="../acerca-de/#aviso-legal">aviso legal</a>).</p>
+</div>
+<h2 id="las-tres-empresas-lado-a-lado">Las tres empresas lado a lado<a class="headerlink" href="#las-tres-empresas-lado-a-lado" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Contadores Alameda</th>
+<th>Monarca Crédito</th>
+<th>Conversa Labs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sector</strong></td>
+<td>Despacho de contabilidad, nómina y cumplimiento fiscal</td>
+<td>Fintech de microcréditos personales y para micronegocios, constituida como SOFOM E.N.R.</td>
+<td>Software: plataforma SaaS de asistentes virtuales con IA generativa</td>
+</tr>
+<tr>
+<td><strong>Ubicación y tamaño</strong></td>
+<td>Querétaro · 58 colaboradores · unas 400 <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> cliente</td>
+<td>Ciudad de México · 210 empleados · unos 350 000 clientes</td>
+<td>Guadalajara · 95 empleados · clientes en México, Colombia, Chile y España</td>
+</tr>
+<tr>
+<td><strong>Rol principal</strong></td>
+<td>Usa IA de terceros y la despliega frente a sus clientes</td>
+<td>Desarrolla IA y la usa para decidir; también es cliente de un servicio de terceros</td>
+<td>Provee IA a clientes, desarrolla la orquestación y es cliente del proveedor del modelo fundacional</td>
+</tr>
+<tr>
+<td><strong>Sistemas de IA</strong></td>
+<td>Asistente de la suite de ofimática; Alma, chatbot de WhatsApp de BotNorte; captura de CFDI; más la IA en la sombra que detectó</td>
+<td>Score Monarca v3, modelo de probabilidad de incumplimiento; modelo de asignación de línea; API de detección de fraude de un proveedor</td>
+<td>Plataforma Conversa: modelo de lenguaje vía API, generación aumentada por recuperación (<abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>), filtros de seguridad y traspaso a un agente humano</td>
+</tr>
+<tr>
+<td><strong>Quién recibe las consecuencias</strong></td>
+<td>Clientes <abbr title="Pequeña y mediana empresa.">PyME</abbr>, sus trabajadores y el propio personal</td>
+<td>Solicitantes de crédito</td>
+<td>Los usuarios finales de sus clientes: asegurados, estudiantes, compradores</td>
+</tr>
+<tr>
+<td><strong>Detonante</strong></td>
+<td>Cuestionario de gobierno de IA de un banco cliente y una nómina pegada en un chatbot gratuito</td>
+<td>Ronda de inversión y alianzas con bancos</td>
+<td>Cuestionarios de IA en cada venta y un cliente en la Unión Europea</td>
+</tr>
+<tr>
+<td><strong>¿Certificarse?</strong></td>
+<td>Se alinea el primer año sin certificar y decide después, con criterios escritos; no tiene <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></td>
+<td>Sí: el certificado respalda la ronda de inversión y las alianzas</td>
+<td>Sí, apoyándose en su <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ISO 27001 ya certificado</td>
+</tr>
+<tr>
+<td><strong>Controles que más pesan</strong></td>
+<td><a href="../anexo-a/a9-uso/">A.9</a> (uso responsable e IA en la sombra), <a href="../anexo-a/a10-terceros/#a-10-3">A.10.3</a> (proveedores), <a href="../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> (aviso de IA) y <a href="../anexo-a/a7-datos/#a-7-4">A.7.4</a> (calidad de la base de conocimiento)</td>
+<td><a href="../anexo-a/a5-evaluacion-de-impacto/">A.5</a> (impacto en solicitantes), <a href="../anexo-a/a6-ciclo-de-vida/">A.6</a> (ciclo de vida del modelo), <a href="../anexo-a/a7-datos/">A.7</a> (datos y sesgo) y <a href="../anexo-a/a9-uso/">A.9</a> (supervisión humana)</td>
+<td><a href="../anexo-a/a8-informacion-partes-interesadas/">A.8</a> (información e incidentes para clientes), <a href="../anexo-a/a10-terceros/">A.10</a> (responsabilidad compartida), <a href="../anexo-a/a6-ciclo-de-vida/">A.6</a> (pruebas adversarias) y <a href="../anexo-a/a7-datos/">A.7</a> (datos de clientes en <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>)</td>
+</tr>
+<tr>
+<td><strong>Evaluación de impacto completa</strong></td>
+<td>Alma, el chatbot de WhatsApp</td>
+<td>Score Monarca v3</td>
+<td>La plataforma, con perfiles por sector de cliente</td>
+</tr>
+<tr>
+<td><strong>Duración estimada</strong></td>
+<td>6 a 9 meses</td>
+<td>9 a 14 meses</td>
+<td>8 a 12 meses</td>
+</tr>
+</tbody>
+</table>
+<p>Las duraciones son estimaciones de la <a href="../implementacion/hoja-de-ruta/#variantes">hoja de ruta</a>; cada caso explica por qué la suya se alargó o se acortó.</p>
+<h2 id="elige-tu-caso">Elige tu caso<a class="headerlink" href="#elige-tu-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM6.2 7.7h5v1.5h-5zm6.8 8.1h5v1.5h-5zm0-2.6h5v1.5h-5zM8 18h1.5v-2h2v-1.5h-2v-2H8v2H6V16h2zm6.1-7.1 1.4-1.4 1.4 1.4 1.1-1-1.4-1.4L18 7.1 16.9 6l-1.4 1.4L14.1 6 13 7.1l1.4 1.4L13 9.9z"/></svg></span> <strong>Caso 1 · Contadores Alameda</strong></p>
+<hr />
+<p>Una <abbr title="Pequeña y mediana empresa.">PyME</abbr> de 58 personas que usa IA generativa de terceros y arma un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> proporcionado: pocos documentos, roles acumulados con contrapesos, la IA en la sombra bajo control y una evaluación de impacto completa de su chatbot de WhatsApp.</p>
+<p><a href="pyme-usa-ia-generativa/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> <abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 10h-2v7h2zm6 0h-2v7h2zm8.5 9H2v2h19zm-2.5-9h-2v7h2zm-7-6.74L16.71 6H6.29zm0-2.26L2 6v2h19V6z"/></svg></span> <strong>Caso 2 · Monarca Crédito</strong></p>
+<hr />
+<p>Una fintech que desarrolla su propio modelo de <em>scoring</em> y decide créditos con él: sesgo y variables sustitutas, motivos de rechazo comprensibles, revisión humana en la banda gris, deriva y un Comité de Modelos rumbo a la certificación.</p>
+<p><a href="fintech-scoring/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Fintech con scoring crediticio</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.5 15.5c0 1.11-.89 2-2 2s-2-.89-2-2 .9-2 2-2 2 .9 2 2m-9-2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.89 2-2-.89-2-2-2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2z"/></svg></span> <strong>Caso 3 · Conversa Labs</strong></p>
+<hr />
+<p>Una empresa de software que vende asistentes virtuales a otras empresas: responsabilidad compartida con clientes y con el proveedor del modelo, pruebas de inyección de instrucciones, transparencia y un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> que se integra a su <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</p>
+<p><a href="empresa-desarrolla-chatbot/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Empresa que desarrolla un chatbot</a></p>
+</li>
+</ul>
+</div>
+<p>¿No sabes cuál se parece más a ti? El <a href="../herramientas/selector-de-rol/">selector de rol</a> te orienta en un par de minutos. Si tu organización combina roles, lee primero el caso de tu rol principal y luego las secciones de riesgos y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> de los otros.</p>
+<h2 id="como-leer-un-caso">Cómo leer un caso<a class="headerlink" href="#como-leer-un-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Los tres casos tienen la misma estructura, para que puedas compararlos sección por sección:</p>
+<ol>
+<li><strong>Contexto y alcance:</strong> quién es la empresa, qué la empujó a actuar, si decidió certificarse y cómo redactó su alcance (<a href="../clausulas/c4-contexto/">cláusula 4</a>).</li>
+<li><strong>Roles frente a la IA:</strong> su papel ante cada sistema según ISO/IEC 22989 y su papel en datos personales.</li>
+<li><strong>Inventario de sistemas de IA:</strong> con las columnas de la plantilla de inventario.</li>
+<li><strong>Riesgos principales:</strong> un registro con la matriz asimétrica de la <a href="../clausulas/c6-planificacion/#c-6-1-1">cláusula 6</a>, tratamiento y riesgo residual.</li>
+<li><strong>Evaluación de impacto completa</strong> de un sistema, sección por sección (<a href="../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> y <a href="../anexo-a/a5-evaluacion-de-impacto/">A.5</a>).</li>
+<li><strong>Extracto de la Declaración de Aplicabilidad,</strong> con inclusiones, exclusiones y sus justificaciones.</li>
+<li><strong>Objetivos e indicadores, y hoja de ruta.</strong></li>
+<li><strong>Qué le diría el auditor:</strong> fortalezas y hallazgos redactados como en una auditoría real.</li>
+<li><strong>Lecciones</strong> y <strong>plantillas usadas</strong>.</li>
+</ol>
+<p>Tres consejos para aprovecharlos:</p>
+<ul>
+<li><strong>Lee con tu propio inventario al lado.</strong> Para cada decisión de la empresa, pregúntate qué harías tú con tus sistemas y por qué.</li>
+<li><strong>Fíjate en las exclusiones más que en las inclusiones.</strong> La justificación de lo que se excluye es lo primero que lee un auditor, y donde más se aprende.</li>
+<li><strong>Sigue los enlaces.</strong> Cada caso es la versión completa de los ejemplos que aparecen en las páginas de cláusulas y controles; ahí está la explicación de fondo.</li>
+</ul>
+<p>Los identificadores se repiten en toda la guía: <strong>IA-01</strong> para sistemas del inventario, <strong>R-01</strong> para riesgos, <strong><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01</strong> para evaluaciones de impacto, <strong>OBJ-01</strong> para objetivos, <strong>INC</strong> para incidentes, <strong><abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr></strong> y <strong>OBS</strong> para no conformidades y observaciones, y un prefijo propio de cada empresa para sus controles adicionales (por ejemplo, <strong>CA-01</strong> en Contadores Alameda).</p>
+<h2 id="plantillas-que-veras-en-accion">Plantillas que verás en acción<a class="headerlink" href="#plantillas-que-veras-en-accion" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Todos los casos usan las <a href="../plantillas/">plantillas descargables</a> de esta guía, con distinta profundidad según el rol:</p>
+<table>
+<thead>
+<tr>
+<th>Plantilla</th>
+<th>Cómo aparece en los casos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../plantillas/#politica-de-ia">Política de IA</a> y <a href="../plantillas/#uso-aceptable-ia-generativa">uso aceptable de IA generativa</a></td>
+<td>La política paraguas en los tres; el semáforo de uso aceptable es la primera pieza de Contadores Alameda</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a></td>
+<td>De una hoja con roles acumulados en una <abbr title="Pequeña y mediana empresa.">PyME</abbr> a comités formales en Monarca</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a></td>
+<td>La sección de inventario de cada caso sigue sus columnas</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos</a></td>
+<td>La matriz asimétrica 5 × 5 y el registro de riesgos con su tratamiento</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#evaluacion-de-impacto">Evaluación de impacto</a></td>
+<td>La evaluación completa de cada caso</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a></td>
+<td>Los extractos con inclusiones, exclusiones y controles propios</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#ficha-del-sistema">Ficha del sistema</a> y <a href="../plantillas/#procedimiento-ciclo-de-vida">procedimiento del ciclo de vida</a></td>
+<td>Pesan en Monarca y Conversa, que desarrollan; la <abbr title="Pequeña y mediana empresa.">PyME</abbr> usa solo la ficha</td>
+</tr>
+<tr>
+<td><a href="../plantillas/#registro-de-incidentes">Registro de incidentes</a> y <a href="../plantillas/#checklist-auditoria-interna">checklist de auditoría interna</a></td>
+<td>Los incidentes que alimentan la mejora y la preparación de la primera auditoría interna</td>
+</tr>
+</tbody>
+</table>
+<p>Cuando termines un caso, el siguiente paso natural es la <a href="../implementacion/hoja-de-ruta/">hoja de ruta de implementación</a> y, si te preparas para una auditoría, los <a href="../auditoria/hallazgos-ejemplo/">hallazgos de ejemplo</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
