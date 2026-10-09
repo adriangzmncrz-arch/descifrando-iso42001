@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 806" role="img" aria-labelledby="ig-familia-normas-t ig-familia-normas-d">
+<title id="ig-familia-normas-t">Mapa de la familia de normas de IA alrededor de ISO/IEC 42001</title>
+<desc id="ig-familia-normas-d">ISO/IEC 42001 al centro, como la única norma certificable de la familia de IA, rodeada por siete grupos de normas relacionadas. Fundamentos: ISO/IEC 22989 (conceptos, terminología y roles; referencia normativa) e ISO/IEC 23053 (marco para sistemas con aprendizaje automático). Gobernanza: ISO/IEC 38507. Riesgo e impacto: ISO/IEC 23894, ISO/IEC 42005 e ISO 31000. Sesgo y ética: ISO/IEC TR 24027, ISO/IEC TS 12791 e ISO/IEC TR 24368. Certificación: ISO/IEC 42006 e ISO/IEC 17021-1, requisitos para organismos de certificación. Ciclo de vida y calidad: ISO/IEC 5338, ISO/IEC 25059, la serie ISO/IEC 5259, ISO/IEC TR 24029-1 e ISO/IEC TS 4213. Sistemas hermanos: ISO/IEC 27001, ISO/IEC 27701 e ISO 9001, también certificables en sus propios temas. Una leyenda distingue cuatro tipos: requisitos certificables para organizaciones (relleno índigo), requisitos para organismos de certificación (relleno cian), normas de orientación o marco (contorno continuo) e informes y especificaciones técnicas (contorno punteado).</desc>
+<text x="450" y="32" text-anchor="middle" font-size="19" font-weight="700">La familia de normas alrededor de ISO/IEC 42001</text>
+<text x="450" y="54" text-anchor="middle" font-size="13" class="ig-muted">Agrupadas por tema. El estilo de cada etiqueta indica su tipo (ver la leyenda).</text>
+<line x1="146" y1="224" x2="345" y2="260" class="ig-line" stroke-width="2"/>
+<line x1="450" y1="224" x2="450" y2="260" class="ig-line" stroke-width="2"/>
+<line x1="754" y1="224" x2="555" y2="260" class="ig-line" stroke-width="2"/>
+<line x1="296" y1="333" x2="330" y2="333" class="ig-line" stroke-width="2"/>
+<line x1="570" y1="333" x2="604" y2="333" class="ig-line" stroke-width="2"/>
+<line x1="228" y1="442" x2="345" y2="406" class="ig-line" stroke-width="2"/>
+<line x1="672" y1="442" x2="555" y2="406" class="ig-line" stroke-width="2"/>
+<a href="../../clausulas/">
+<rect x="330" y="260" width="240" height="146" rx="16" class="ig-brand"/>
+<text x="450" y="300" text-anchor="middle" font-size="23" font-weight="700" class="ig-on-color">ISO/IEC 42001</text>
+<text x="450" y="324" text-anchor="middle" font-size="14" class="ig-on-color">Sistema de gestión de IA</text>
+<text x="450" y="352" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">única certificable</text>
+<text x="450" y="370" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">de la familia de IA</text>
+</a>
+<rect x="12" y="76" width="284" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 12 112 L 12 88 Q 12 76 24 76 L 284 76 Q 296 76 296 88 L 296 112 Z" class="ig-soft"/>
+<text x="26" y="100" font-size="15" font-weight="700">Fundamentos</text>
+<a href="#n-22989">
+<rect x="25" y="125" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="78.0" y="141" text-anchor="middle" font-size="13" font-weight="700">22989</text>
+<text x="142" y="141" font-size="13" class="ig-muted">conceptos y roles</text>
+</a>
+<a href="#n-23053">
+<rect x="25" y="157" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="78.0" y="173" text-anchor="middle" font-size="13" font-weight="700">23053</text>
+<text x="142" y="173" font-size="13" class="ig-muted">marco para ML</text>
+</a>
+<rect x="308" y="76" width="284" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 308 112 L 308 88 Q 308 76 320 76 L 580 76 Q 592 76 592 88 L 592 112 Z" class="ig-soft"/>
+<text x="322" y="100" font-size="15" font-weight="700">Gobernanza</text>
+<a href="#n-38507">
+<rect x="321" y="125" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="374.0" y="141" text-anchor="middle" font-size="13" font-weight="700">38507</text>
+<text x="438" y="141" font-size="13" class="ig-muted">órgano de gobierno</text>
+</a>
+<text x="24" y="206" font-size="13" class="ig-muted">22989 es referencia normativa de 42001</text>
+<text x="320" y="184" font-size="13" class="ig-muted">orienta al consejo y a la alta</text>
+<text x="320" y="202" font-size="13" class="ig-muted">dirección (cláusulas 5 y 6.1.1)</text>
+<rect x="604" y="76" width="284" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 604 112 L 604 88 Q 604 76 616 76 L 876 76 Q 888 76 888 88 L 888 112 Z" class="ig-soft"/>
+<text x="618" y="100" font-size="15" font-weight="700">Riesgo e impacto</text>
+<a href="#n-23894">
+<rect x="617" y="125" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="670.0" y="141" text-anchor="middle" font-size="13" font-weight="700">23894</text>
+<text x="734" y="141" font-size="13" class="ig-muted">riesgo de IA</text>
+</a>
+<a href="#n-42005">
+<rect x="617" y="157" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="670.0" y="173" text-anchor="middle" font-size="13" font-weight="700">42005</text>
+<text x="734" y="173" font-size="13" class="ig-muted">evaluación de impacto</text>
+</a>
+<a href="#n-31000">
+<rect x="617" y="189" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="670.0" y="205" text-anchor="middle" font-size="13" font-weight="700">31000</text>
+<text x="734" y="205" font-size="13" class="ig-muted">riesgo en general</text>
+</a>
+<rect x="12" y="260" width="284" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 12 296 L 12 272 Q 12 260 24 260 L 284 260 Q 296 260 296 272 L 296 296 Z" class="ig-soft"/>
+<text x="26" y="284" font-size="15" font-weight="700">Sesgo y ética</text>
+<a href="#n-24027">
+<rect x="25" y="309" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="78.0" y="325" text-anchor="middle" font-size="13" font-weight="700">TR 24027</text>
+<text x="142" y="325" font-size="13" class="ig-muted">sesgo en la IA</text>
+</a>
+<a href="#n-12791">
+<rect x="25" y="341" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="78.0" y="357" text-anchor="middle" font-size="13" font-weight="700">TS 12791</text>
+<text x="142" y="357" font-size="13" class="ig-muted">tratar el sesgo</text>
+</a>
+<a href="#n-24368">
+<rect x="25" y="373" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="78.0" y="389" text-anchor="middle" font-size="13" font-weight="700">TR 24368</text>
+<text x="142" y="389" font-size="13" class="ig-muted">ética y sociedad</text>
+</a>
+<rect x="604" y="260" width="284" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 604 296 L 604 272 Q 604 260 616 260 L 876 260 Q 888 260 888 272 L 888 296 Z" class="ig-soft"/>
+<text x="618" y="284" font-size="15" font-weight="700">Certificación</text>
+<a href="#n-42006">
+<rect x="616" y="308" width="108" height="24" rx="12" class="ig-accent"/>
+<text x="670.0" y="325" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">42006</text>
+<text x="734" y="325" font-size="13" class="ig-muted">certificar un SGIA</text>
+</a>
+<a href="#n-17021">
+<rect x="616" y="340" width="108" height="24" rx="12" class="ig-accent"/>
+<text x="670.0" y="357" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">17021-1</text>
+<text x="734" y="357" font-size="13" class="ig-muted">certificar cualquier SG</text>
+</a>
+<rect x="12" y="442" width="432" height="212" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 12 478 L 12 454 Q 12 442 24 442 L 432 442 Q 444 442 444 454 L 444 478 Z" class="ig-soft"/>
+<text x="26" y="466" font-size="15" font-weight="700">Ciclo de vida y calidad</text>
+<a href="#n-5338">
+<rect x="25" y="491" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="78.0" y="507" text-anchor="middle" font-size="13" font-weight="700">5338</text>
+<text x="142" y="507" font-size="13" class="ig-muted">procesos del ciclo de vida</text>
+</a>
+<a href="#n-25059">
+<rect x="25" y="523" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="78.0" y="539" text-anchor="middle" font-size="13" font-weight="700">25059</text>
+<text x="142" y="539" font-size="13" class="ig-muted">modelo de calidad para IA</text>
+</a>
+<a href="#n-5259">
+<rect x="25" y="555" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="78.0" y="571" text-anchor="middle" font-size="13" font-weight="700">5259 (serie)</text>
+<text x="142" y="571" font-size="13" class="ig-muted">calidad de datos para ML</text>
+</a>
+<a href="#n-24029">
+<rect x="25" y="587" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="78.0" y="603" text-anchor="middle" font-size="13" font-weight="700">TR 24029-1</text>
+<text x="142" y="603" font-size="13" class="ig-muted">robustez de redes neuronales</text>
+</a>
+<a href="#n-4213">
+<rect x="25" y="619" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="78.0" y="635" text-anchor="middle" font-size="13" font-weight="700">TS 4213</text>
+<text x="142" y="635" font-size="13" class="ig-muted">desempeño de clasificadores</text>
+</a>
+<rect x="456" y="442" width="432" height="148" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 456 478 L 456 454 Q 456 442 468 442 L 876 442 Q 888 442 888 454 L 888 478 Z" class="ig-soft"/>
+<text x="470" y="466" font-size="15" font-weight="700">Sistemas hermanos</text>
+<a href="#n-27001">
+<rect x="468" y="490" width="108" height="24" rx="12" class="ig-brand"/>
+<text x="522.0" y="507" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">27001</text>
+<text x="586" y="507" font-size="13" class="ig-muted">seguridad de la información</text>
+</a>
+<a href="#n-27701">
+<rect x="468" y="522" width="108" height="24" rx="12" class="ig-brand"/>
+<text x="522.0" y="539" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">27701</text>
+<text x="586" y="539" font-size="13" class="ig-muted">privacidad (independiente en 2025)</text>
+</a>
+<a href="#n-9001">
+<rect x="468" y="554" width="108" height="24" rx="12" class="ig-brand"/>
+<text x="522.0" y="571" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">9001</text>
+<text x="586" y="571" font-size="13" class="ig-muted">gestión de la calidad</text>
+</a>
+<text x="672" y="616" text-anchor="middle" font-size="13" class="ig-muted">Misma estructura armonizada:</text>
+<text x="672" y="634" text-anchor="middle" font-size="13" class="ig-muted">se integran con el SGIA.</text>
+<line x1="12" y1="676" x2="888" y2="676" class="ig-line" stroke-width="1"/>
+<text x="12" y="700" font-size="14" font-weight="700">Tipos de documento</text>
+<rect x="12" y="714" width="108" height="24" rx="12" class="ig-brand"/>
+<text x="66.0" y="731" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">ISO</text>
+<text x="130" y="731" font-size="13">Requisitos certificables para organizaciones</text>
+<rect x="456" y="714" width="108" height="24" rx="12" class="ig-accent"/>
+<text x="510.0" y="731" text-anchor="middle" font-size="13" font-weight="700" class="ig-on-color">ISO</text>
+<text x="574" y="731" font-size="13">Requisitos para organismos de certificación</text>
+<rect x="13" y="749" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2"/>
+<text x="66.0" y="765" text-anchor="middle" font-size="13" font-weight="700">ISO</text>
+<text x="130" y="765" font-size="13">Norma de orientación, marco o conceptos</text>
+<rect x="457" y="749" width="106" height="22" rx="11" class="ig-s-brand" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="510.0" y="765" text-anchor="middle" font-size="13" font-weight="700">ISO</text>
+<text x="574" y="765" font-size="13">Informe técnico (TR) o especificación técnica (TS)</text>
+<text x="450" y="796" text-anchor="middle" font-size="13" class="ig-muted">Toca una norma para leer su ficha en esta página. El centro lleva a las cláusulas de ISO/IEC 42001.</text>
+</svg>
