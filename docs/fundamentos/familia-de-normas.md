@@ -252,9 +252,10 @@ Para cada norma: tipo, estado según su ficha oficial al 9 de octubre de 2026, u
 
 <div class="dx-control-meta" markdown>
 <span class="dx-badge dx-badge--tipo">:material-file-document-check-outline: Requisitos certificables</span>
+<span class="dx-badge dx-badge--tiempo">:material-calendar-check-outline: Publicada: 2026-09-16</span>
 </div>
 
-- **Qué es y cuándo leerla:** el sistema de gestión de la calidad; su sexta edición (ISO 9001:2026) salió en septiembre de 2026[^r9001]. Si ya lo tienes, reutiliza control documental, auditoría interna y acciones correctivas; el Anexo D de 42001 la menciona.
+- **Qué es y cuándo leerla:** el sistema de gestión de la calidad; su sexta edición (ISO 9001:2026) se publicó el 16 de septiembre de 2026 y sustituye a la de 2015 y a su enmienda de 2024. Los certificados con la edición 2015 tienen hasta el 30 de septiembre de 2029 para hacer la transición[^r9001]. Si ya lo tienes, reutiliza control documental, auditoría interna y acciones correctivas; el Anexo D de 42001 la menciona.
 - **Se conecta con:** [7.5](../clausulas/c7-apoyo.md#c-7-5), [9.2](../clausulas/c9-evaluacion-del-desempeno.md#c-9-2) y [10.2](../clausulas/c10-mejora.md#c-10-2), comunes a la estructura armonizada.
 
 ## Tabla resumen
@@ -280,7 +281,7 @@ Para cada norma: tipo, estado según su ficha oficial al 9 de octubre de 2026, u
 | ISO/IEC 17021-1:2015 | Requisitos para quien certifica sistemas de gestión | Requirements for bodies providing audit and certification of management systems | Requisitos para organismos | En revisión sistemática | Certificación |
 | ISO/IEC 27001:2022 | Seguridad de la información | Information security management systems — Requirements | Requisitos certificables | Publicada (2022-10-25); Amd 1 de 2024 | Anexo D, A.8.4 |
 | ISO/IEC 27701:2025 | Gestión de la privacidad | Privacy information management systems — Requirements and guidance | Requisitos certificables | Publicada (2025-10-14) | A.10.2, A.7 |
-| ISO 9001:2026 | Gestión de la calidad | Quality management systems — Requirements | Requisitos certificables | Sexta edición, publicada el 16 de septiembre de 2026; sustituye a la de 2015 (fuente secundaria)[^r9001] | Anexo D |
+| ISO 9001:2026 | Gestión de la calidad | Quality management systems — Requirements | Requisitos certificables | Sexta edición, publicada el 16 de septiembre de 2026; sustituye a la de 2015 y a su Amd 1:2024[^r9001] | Anexo D |
 
 
 ## Lo que viene: normas en desarrollo
@@ -389,7 +390,7 @@ Algunos organismos nacionales publican ISO/IEC 42001 con su propia designación,
 
 [^n23894]: Ficha de ISO/IEC 23894:2023, <https://www.iso.org/standard/77304.html>, consultada el 9 de octubre de 2026.
 
-[^n42005]: Ficha de ISO/IEC 42005:2025, <https://www.iso.org/standard/44545.html>, consultada el 9 de octubre de 2026.
+[^n42005]: Ficha de ISO/IEC 42005:2025 (primera edición, publicada el 28 de mayo de 2025; su alcance la presenta como orientación), <https://www.iso.org/standard/44545.html>, consultada el 9 de octubre de 2026 en el espejo <https://committee.iso.org/standard/44545.html>. Que no sea certificable es inferencia nuestra: es un documento de orientación y la certificación de sistemas de gestión de IA que regula ISO/IEC 42006 se hace contra ISO/IEC 42001.
 
 [^n38507]: Ficha de ISO/IEC 38507:2022, <https://www.iso.org/standard/56641.html>, consultada el 9 de octubre de 2026.
 
@@ -435,4 +436,4 @@ Algunos organismos nacionales publican ISO/IEC 42001 con su propia designación,
 
 [^r4213]: Ficha de ISO/IEC TS 4213:2022 en el sitio de comités de ISO (publicada el 13 de octubre de 2022; etapa 90.92, en revisión). <https://committee.iso.org/standard/79799.html>, consultada el 9 de octubre de 2026.
 
-[^r9001]: NSF, "ISO 9001:2026 published on September 16, 2026: what quality leaders need to know" (fuente secundaria; la ficha de ISO no permitió acceso automatizado). <https://www.nsf.org/knowledge-library/iso-90012026-published-on-september-16-2026-what-quality-leaders-need-to-know>, consultado el 9 de octubre de 2026.
+[^r9001]: Ficha de ISO 9001:2026 en el sitio de comités de ISO (sexta edición, publicada el 16 de septiembre de 2026; ISO 9001:2015 y su Amd 1:2024 figuran como sustituidas), <https://committee.iso.org/standard/88464.html>, y requisitos de transición de Global ACI (periodo de tres años, hasta el 30 de septiembre de 2029), <https://global-aci.org/en/news/global-aci-publishes-transition-requirements-for-iso-90012026/>. Fuente primaria; consultadas el 9 de octubre de 2026.

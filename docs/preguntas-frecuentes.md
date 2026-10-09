@@ -49,7 +49,7 @@ Abre cada pregunta para leer la respuesta: la primera frase, en negritas, es la 
     **Sí hay versiones oficiales en español, como la UNE-ISO/IEC 42001:2025 de España, y sí: el texto de la norma se compra.**[^2]
 
     - **España.** UNE anunció en abril de 2025 la versión en español UNE-ISO/IEC 42001:2025. Revisa en su catálogo cuál es la edición vigente antes de comprar.
-    - **Perú.** El reglamento peruano de IA menciona una Norma Técnica Peruana designada NTP-ISO/IEC 42001:2025.[^3] No consultamos su ficha en el catálogo peruano.
+    - **Perú.** El reglamento peruano de IA menciona una Norma Técnica Peruana designada NTP-ISO/IEC 42001:2025.[^3] INACAL la aprobó con la R.D. N.° 000013-2025-INACAL/DN, publicada el 30 de junio de 2025.[^45]
     - **México.** No encontramos una NMX que la adopte; los organismos acreditados certifican directamente contra la norma internacional.[^4]
 
     Puedes comprarla en ISO, en IEC o en el organismo de normalización de tu país. Esta guía no la reproduce: la explica con otras palabras. Si dudas de una traducción, contrasta con el original en inglés.
@@ -224,7 +224,7 @@ Abre cada pregunta para leer la respuesta: la primera frase, en negritas, es la 
 
     Ambos están acreditados con base en ISO/IEC 17021-1:2015. Hay también certificadoras internacionales con acreditaciones para 42001 de entidades como ANAB (Estados Unidos) o UKAS (Reino Unido), según sus propios comunicados;[^14] si contratas una, pregunta quién la acreditó y si tus clientes aceptan esa acreditación.
 
-    Ojo con el reconocimiento internacional: desde el 1 de enero de 2026, IAF e ILAC operan como una sola organización, Global ACI; el alcance del antiguo acuerdo de la IAF (fines de 2024) no incluía ISO/IEC 42001, y no encontramos confirmación de que el nuevo ya la cubra.[^15] Más en [En México: la ema](auditoria/como-se-certifica.md#en-mexico-la-ema).
+    Ojo con el reconocimiento internacional: desde el 1 de enero de 2026, IAF e ILAC operan como una sola organización, Global ACI; ni el alcance del antiguo acuerdo de la IAF (fines de 2024) ni el del acuerdo vigente de Global ACI (versión del 5 de agosto de 2026) incluyen ISO/IEC 42001, así que una acreditación para 42001 no tiene, por ahora, reconocimiento multilateral.[^15] Más en [En México: la ema](auditoria/como-se-certifica.md#en-mexico-la-ema).
 
 ??? question "¿Qué es ISO/IEC 42006?"
     **Es la norma con los requisitos para los organismos que auditan y certifican sistemas de gestión de IA: no está dirigida a ti, sino a tu certificador.** Se publicó el 7 de julio de 2025 y complementa a ISO/IEC 17021-1 sin reemplazarla.[^16]
@@ -347,7 +347,7 @@ Abre cada pregunta para leer la respuesta: la primera frase, en negritas, es la 
     | País | Situación |
     |---|---|
     | Brasil | El PL 2338/2023 pasó el Senado en diciembre de 2024 y espera dictamen en una comisión especial de la Cámara de Diputados.[^40] |
-    | Chile | Proyecto de ley de IA en segundo trámite en el Senado; en mayo de 2026 el gobierno propuso una ley marco.[^41] Su nueva ley de datos, con derecho a oponerse a decisiones automatizadas, entra en plena vigencia el 1 de diciembre de 2026 (fuente secundaria).[^42] |
+    | Chile | Proyecto de ley de IA en segundo trámite en el Senado; en mayo de 2026 el gobierno propuso una ley marco.[^41] Su nueva ley de datos (Ley 21.719), que agrega el derecho a oponerse a decisiones basadas en tratamiento automatizado, entra en plena vigencia el 1 de diciembre de 2026.[^42] |
     | Colombia | Política pública CONPES 4144 (febrero de 2025) y un proyecto de ley radicado en julio de 2026.[^43] |
     | Argentina y Uruguay | Sin ley nacional de IA (fuentes secundarias); Uruguay fue el primer país latinoamericano en firmar el Convenio Marco del Consejo de Europa sobre IA (septiembre de 2025).[^44] |
 
@@ -395,7 +395,7 @@ Si tu duda no está aquí, o crees que una respuesta necesita otro matiz, propon
 [^12]: ISO, ficha de ISO/IEC 17021-1:2015, <https://www.iso.org/standard/61651.html> (espejo oficial committee.iso.org). Fuente primaria; consultado el 9 de octubre de 2026.
 [^13]: ema, buscador de organismos de certificación de sistemas (programa ISO/IEC 42001:2023), <https://ema.mx/saema/ConsultaPublica/Acreditados/Busqueda/OCS>, y fichas de NYCE (/SeleccionarOrganismo/77) y QSR (/SeleccionarOrganismo/74). Fuente primaria; consultado el 9 de octubre de 2026.
 [^14]: Comunicados de SGS, <https://www.sgs.com/en/news/2025/04/sgs-achieves-ansi-anab-accreditation-for-isoiec-42001>, DQS, <https://www.dqsglobal.com/en/about/newsroom/dqs-receives-anab-accreditation-for-iso-iec-42001>, y BSI, <https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2026/march/bsi-secures-anab-accreditation-to-certify-isoiec-42001/> (ANAB) y <https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2025/november/bsi-becomes-the-first-certification-body-accredited-by-ukas-and-rva-to-deliver-certification-for-isoiec-42001/> (UKAS). Fuente secundaria (comunicados de las empresas); consultado el 9 de octubre de 2026.
-[^15]: ILAC, comunicado sobre Global ACI, <https://ilac.org/wp-content/uploads/Press-Release-Global.pdf>, e IAF, Anexo 1 del IAF MLA (archivado), <https://iaf.nu/en/annex-1-scope-of-the-mla-2025/>. Fuente primaria; consultado el 9 de octubre de 2026.
+[^15]: ILAC, comunicado sobre Global ACI, <https://ilac.org/wp-content/uploads/Press-Release-Global.pdf>; IAF, Anexo 1 del IAF MLA (archivado), <https://iaf.nu/en/annex-1-scope-of-the-mla-2025/>, y Global ACI, FMRA-001 versión 3.3, <https://sys.global-aci.org/uploads/documents/FMRA-001_Global_Accreditation_Cooperation_MRA_Status_v3_3_2026-09-28.pdf>. Fuente primaria; consultado el 9 de octubre de 2026.
 [^16]: ISO, ficha y preguntas frecuentes de ISO/IEC 42006:2025, <https://www.iso.org/standard/44546.html> (espejo oficial committee.iso.org). Fuente primaria; consultado el 9 de octubre de 2026.
 [^17]: ISO, ficha de ISO/IEC 17024:2026, <https://www.iso.org/standard/86291.html> (espejo oficial committee.iso.org). Fuente primaria; consultado el 9 de octubre de 2026.
 [^18]: ISO, página de la ISO Survey, <https://committee.iso.org/the-iso-survey.html>, y soporte de IAF CertSearch, <https://support.iafcertsearch.org/certification-bodies/overview/market-intelligence/iso-survey> (fuente primaria); la ausencia de 42001 en los datos de 2024, según <https://30elevate.com/en/blog/iso-42001/> (fuente secundaria). Consultado el 9 de octubre de 2026.
@@ -422,6 +422,7 @@ Si tu duda no está aquí, o crees que una respuesta necesita otro matiz, propon
 [^39]: EY Perú, alerta sobre el reglamento de la Ley 31814, <https://www.ey.com/es_pe/technical/tax-alert/reglamento-ley-promueve-uso-inteligencia-artificial>. Fuente secundaria; consultado el 9 de octubre de 2026.
 [^40]: Cámara de Diputados de Brasil, ficha del PL 2338/2023, <https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262>, y Senado Federal, nota del 10 de diciembre de 2024, <https://www12.senado.leg.br/noticias/materias/2024/12/10/senado-aprova-regulamentacao-da-inteligencia-artificial-texto-vai-a-camara>. Fuente primaria; consultado el 9 de octubre de 2026.
 [^41]: Senado de Chile, notas del 24 de octubre de 2025, <https://www.senado.cl/comunicaciones/noticias/proyecto-que-regula-sistemas-de-inteligencia-artificial-sera-estudiado-por>, y del 26 de mayo de 2026, <https://www.senado.cl/comunicaciones/noticias/senadores-conocen-propuesta-del-ejecutivo-para-ley-marco-de-ia>. Fuente primaria; consultado el 9 de octubre de 2026.
-[^42]: Diario Constitucional, columna sobre la Ley 21.719, <https://www.diarioconstitucional.cl/2025/07/22/legalidad-y-revision-humana-estandar-constitucional-ante-decisiones-automatizadas-por-rodrigo-alvarez-seguel/>. Fuente secundaria; consultado el 9 de octubre de 2026.
+[^42]: Ley 21.719 (Diario Oficial de Chile, 13 de diciembre de 2024), Biblioteca del Congreso Nacional, <https://www.bcn.cl/leychile/navegar?idNorma=1209272>: artículo primero transitorio (vigencia) y art. 8° bis que incorpora a la Ley 19.628. Fuente primaria; consultado el 9 de octubre de 2026.
 [^43]: DNP, CONPES 4144, <https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/4144.pdf>, y Cámara de Representantes, PL 025 de 2026, <https://www.camara.gov.co/wp-content/uploads/2026/07/proyectos-ley/documentos/proyecto-36127/P.L.025-2026SC-INTELIGENCIA-ARTIFICIAL.pdf>. Fuente primaria; consultado el 9 de octubre de 2026.
 [^44]: DPL News, <https://dplnews.com/?p=311680> (Argentina) y <https://dplnews.com/?p=288384> (Uruguay). Fuente secundaria; consultado el 9 de octubre de 2026.
+[^45]: INACAL, Resolución Directoral N.° 000013-2025-INACAL/DN (El Peruano, 30 de junio de 2025), <https://www.gob.pe/institucion/inacal/normas-legales/6916171-000013-2025-inacal-dn>. Fuente primaria; consultado el 9 de octubre de 2026.

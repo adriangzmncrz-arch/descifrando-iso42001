@@ -16,6 +16,14 @@ Para una guía de contenido, la versión *mayor* cambia con reestructuras del si
 
 - El README y la página de plantillas enlazan al ZIP de plantillas de la última versión publicada.
 
+### Corregido
+
+- **Perú:** la NTP-ISO/IEC 42001:2025 sí existe; INACAL la aprobó con la R.D. N.° 000013-2025-INACAL/DN (30 de junio de 2025). Se agregan los plazos del reglamento para las entidades públicas.
+- **Chile:** la Ley 21.719 se verifica en fuente primaria (publicada el 13 de diciembre de 2024, plena vigencia el 1 de diciembre de 2026). Se precisa que el art. 8° bis lo incorpora a la Ley 19.628 y que su texto no dice "únicamente".
+- **ISO 9001:2026:** la fecha de publicación (16 de septiembre de 2026) se respalda ahora con la ficha de ISO y los requisitos de transición de Global ACI (hasta el 30 de septiembre de 2029), en lugar de una fuente secundaria.
+- **Global ACI:** el alcance vigente de su acuerdo multilateral (FMRA-001 v3.3) no incluye ISO/IEC 42001 ni ISO/IEC 42006; la guía ya no lo presenta como dato desconocido.
+- **ISO/IEC 42005 y AI-BOM:** se citan la ficha de ISO/IEC 42005 y las especificaciones de CycloneDX 1.5 y SPDX 3.0 que respaldan las afirmaciones del texto.
+
 ## [1.0.0] - 2026-10-09
 
 Primera versión completa de la guía. Los datos regulatorios y de estado de normas se consultaron el 9 de octubre de 2026.
