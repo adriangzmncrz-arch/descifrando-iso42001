@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Los controles A.6 de ISO/IEC 42001 explicados con ejemplos, desde los objetivos y el proceso de desarrollo responsable hasta las pruebas, el despliegue, la operación, la documentación técnica y el registro de eventos del sistema de IA.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1567,6 +1567,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-6-1-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1659,6 +1681,28 @@
     <span class="md-ellipsis">
       
         A.6.2.8 Registro de eventos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2812,34 +2856,1123 @@
 
 
 <h1 id="a6-ciclo-de-vida-del-sistema-de-ia">A.6 · Ciclo de vida del sistema de IA<a class="headerlink" href="#a6-ciclo-de-vida-del-sistema-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a6">A.6 · Ciclo de vida</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 9 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 55 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a6">
+<p><strong>El objetivo, en palabras simples:</strong> que la organización sepa qué quiere lograr cuando construye IA de forma responsable, que tenga un proceso para lograrlo y que cada etapa de cada sistema, desde la idea hasta el retiro, tenga criterios claros, documentados y comprobables para avanzar.</p>
+<p><strong>Lo que está en juego:</strong> modelos que llegan a producción sin que nadie haya decidido qué significaba "suficientemente bueno", pruebas que nunca miraron a los grupos afectados, cambios hechos en caliente, sistemas que se degradan en silencio y, cuando algo sale mal, ninguna bitácora para reconstruir qué pasó.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.6 convierte el desarrollo de IA en un proceso con reglas y puertas de aprobación: objetivos responsables que bajan a requisitos y pruebas, criterios para pasar de una etapa a la siguiente, y documentación y registros que permiten demostrar (y reconstruir) lo que se hizo.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Piensa en una obra de construcción en cualquier ciudad de México. Existe un reglamento de construcción que vale para todas las obras: fija qué se espera en seguridad estructural, instalaciones y protección civil, y quién debe firmar qué. Y luego está cada obra concreta, con sus planos, su bitácora, sus pruebas de resistencia del concreto, la revisión antes de que alguien la habite y el mantenimiento de los años siguientes. Nadie aceptaría que se levantaran muros sin saber qué carga deben soportar, ni que se entregara un edificio sin probar las instalaciones de gas. Con la IA pasa lo mismo, solo que los "muros" son datos, modelos y umbrales de decisión, y los inquilinos son las personas a las que el sistema califica, atiende o recomienda.</p>
+<p>Este objetivo está partido en <strong>dos subobjetivos</strong>, y entender por qué ayuda a implementarlo bien:</p>
+<ul>
+<li><strong>A.6.1, orientación de la dirección para el desarrollo</strong>, es el "reglamento de construcción" de tu organización. La dirección decide hacia dónde se desarrolla la IA (objetivos de desarrollo responsable, <a href="#a-6-1-2">A.6.1.2</a>) y cómo se trabaja (un proceso con etapas, responsables y aprobaciones, <a href="#a-6-1-3">A.6.1.3</a>). Se define una vez para toda la organización y se revisa cuando cambia el contexto.</li>
+<li><strong>A.6.2, ciclo de vida del sistema de IA</strong>, es la "obra concreta". Fija los criterios y requisitos de cada etapa y se aplica a cada sistema y a cada versión: requisitos, diseño, verificación y validación, despliegue, operación, documentación técnica y registros (<a href="#a-6-2-2">A.6.2.2</a> a <a href="#a-6-2-8">A.6.2.8</a>).</li>
+</ul>
+<p>Separarlos evita dos fallas muy comunes. La primera es tener un procedimiento impecable que ningún proyecto sigue (A.6.1 sin A.6.2). La segunda es tener equipos que documentan cada proyecto a su manera, sin objetivos ni estándar común, de modo que comparar dos modelos o auditar uno se vuelve imposible (A.6.2 sin A.6.1). Un detalle de numeración que suele desconcertar: los controles de A.6.1 empiezan en A.6.1.2 y los de A.6.2 en A.6.2.2, porque en la guía del Anexo B el número terminado en ".1" se reserva para el enunciado de cada objetivo. Por eso en todo el Anexo A el primer control de cada tema termina en ".2".</p>
+<p><strong>Qué riesgos aborda.</strong> La lista de fuentes de riesgo del <a href="../../anexos-b-c-d/">Anexo C</a> menciona explícitamente los problemas del ciclo de vida, la falta de transparencia y las fuentes de riesgo propias del aprendizaje automático. A.6 es la respuesta operativa a ellas: un modelo entrenado con datos que no representan a la población, una métrica de evaluación que esconde errores graves en un grupo, un despliegue que no se puede revertir, una deriva que nadie vigila o un incidente imposible de investigar porque no hay registros.</p>
+<p><strong>Cómo se conecta con las cláusulas.</strong> La <a href="../../clausulas/c8-operacion/#c-8-1">cláusula 8.1</a> pide planificar y controlar los procesos operativos e implementar los controles seleccionados, y menciona precisamente el ciclo de vida de desarrollo y uso como ejemplo; A.6 es, en la práctica, el contenido de ese control operacional para quien construye IA. Los objetivos de <a href="#a-6-1-2">A.6.1.2</a> son la versión "de desarrollo" de los objetivos de IA de la <a href="../../clausulas/c6-planificacion/#c-6-2">cláusula 6.2</a>, igual que <a href="../a9-uso/#a-9-3">A.9.3</a> lo es para el uso. Las puertas del proceso son el lugar natural para ejecutar las evaluaciones de riesgo e impacto que exigen <a href="../../clausulas/c8-operacion/#c-8-2">8.2</a> y <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>, y los cambios materiales a un modelo son justo el tipo de cambio planificado que 8.1 pide controlar. Todo lo que A.6 produce es información documentada sujeta a <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, y el monitoreo de <a href="#a-6-2-6">A.6.2.6</a> alimenta la medición de la <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">cláusula 9.1</a>.</p>
+<p><strong>Cómo cambia según tu rol.</strong> Si desarrollas o provees IA, A.6 es probablemente el objetivo más pesado de tu Declaración de Aplicabilidad: los nueve controles te aplican. Si solo usas IA de terceros, la mayor parte del ciclo de desarrollo lo ejecuta tu proveedor, pero el despliegue, la operación y los registros siguen siendo tuyos.</p>
+<div class="admonition info">
+<p class="admonition-title">Si solo usas IA de terceros: qué te toca de A.6</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Suele aplicar?</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-6-2-5">A.6.2.5 Despliegue</a></td>
+<td>Sí</td>
+<td>Tú decides cuándo, cómo y con qué configuración se pone en marcha el sistema frente a tu personal o tus clientes.</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-6">A.6.2.6 Operación y monitoreo</a></td>
+<td>Sí</td>
+<td>Aunque no puedas reentrenar el modelo, sí puedes (y debes) vigilar sus resultados, dar soporte a tus usuarios y escalar fallas al proveedor.</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-8">A.6.2.8 Registro de eventos</a></td>
+<td>Sí</td>
+<td>Necesitas poder reconstruir qué hizo el sistema mientras lo usaste; si los registros los guarda el proveedor, asegura por contrato el acceso y la retención.</td>
+</tr>
+<tr>
+<td><a href="#a-6-1-2">A.6.1.2</a>, <a href="#a-6-1-3">A.6.1.3</a>, <a href="#a-6-2-2">A.6.2.2</a>, <a href="#a-6-2-3">A.6.2.3</a>, <a href="#a-6-2-4">A.6.2.4</a>, <a href="#a-6-2-7">A.6.2.7</a></td>
+<td>Normalmente se excluyen</td>
+<td>Cubren el diseño y la construcción del sistema, que no haces tú. La justificación remite a <a href="../a10-terceros/#a-10-3">A.10.3</a> (lo que exiges al proveedor) y a <a href="../a9-uso/">A.9</a> (uso responsable).</td>
+</tr>
+</tbody>
+</table>
+<p>Un matiz importante, en nuestra lectura: si configuras el sistema de forma sustancial (curas la base de conocimiento de un asistente, escribes sus instrucciones de sistema, ajustas un modelo con tus datos o encadenas varios servicios), parte de lo que haces ya es desarrollo. En ese caso conviene conservar al menos una versión ligera de <a href="#a-6-2-2">A.6.2.2</a> y <a href="#a-6-2-4">A.6.2.4</a> para esa capa propia, o cubrir sus pruebas dentro de los criterios de liberación de <a href="#a-6-2-5">A.6.2.5</a>. Algunos organismos de certificación lo preguntarán.</p>
+</div>
+<div class="admonition auditor">
+<p class="admonition-title">Lo que mira el auditor en A.6</p>
+<p>La prueba más reveladora es seguir <strong>un sistema de punta a punta</strong>: el auditor elige un modelo en producción y pide ver su requisito original, las decisiones de diseño, el reporte de pruebas con los criterios que se fijaron antes de probar, la aprobación de salida, el tablero de monitoreo y una muestra de sus registros. Si la cadena se rompe en algún eslabón, el hallazgo suele ser contra el proceso (<a href="#a-6-1-3">A.6.1.3</a>) y no solo contra el eslabón.</p>
+</div>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-6-1-2">A.6.1.2 Objetivos para el desarrollo responsable</a></td>
+<td>Definir objetivos como equidad o transparencia y convertirlos en requisitos, criterios y pruebas en cada etapa.</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-6-1-3">A.6.1.3 Procesos para el diseño y desarrollo responsable</a></td>
+<td>Tener un proceso documentado de desarrollo de IA con etapas, puertas de aprobación, pruebas y supervisión humana.</td>
+<td>Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Similar (8.25, 8.27)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-2">A.6.2.2 Requisitos y especificación</a></td>
+<td>Documentar por qué y para qué se construye o se mejora un sistema y qué debe cumplir.</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (8.26)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-3">A.6.2.3 Documentación del diseño y desarrollo</a></td>
+<td>Registrar las decisiones de diseño, sus razones y la arquitectura final.</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (8.27, 8.28)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-4">A.6.2.4 Verificación y validación</a></td>
+<td>Fijar antes de probar cómo, con qué datos y con qué criterios se aprueba el sistema.</td>
+<td>Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Similar (8.29)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-5">A.6.2.5 Despliegue</a></td>
+<td>Planear la puesta en producción y comprobar que se cumplen los requisitos antes de hacerla.</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (8.31, 8.32)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-6">A.6.2.6 Operación y monitoreo</a></td>
+<td>Vigilar, reparar, actualizar y dar soporte al sistema mientras esté en uso.</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Similar (8.16, 8.6, 8.8)</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-7">A.6.2.7 Documentación técnica</a></td>
+<td>Dar a cada parte interesada la documentación técnica que necesita, en la forma adecuada.</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-6-2-8">A.6.2.8 Registro de eventos</a></td>
+<td>Decidir en qué etapas se registran eventos (como mínimo, en uso) y cuánto se conservan.</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (8.15, 8.17)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<p>La siguiente rueda ubica cada control en la etapa del ciclo de vida donde más pesa. Las etapas se inspiran en el modelo genérico de ciclo de vida de ISO/IEC 22989, que la norma permite adaptar. Incluye los controles de datos de <a href="../a7-datos/">A.7</a>, porque en la práctica se ejecutan en las mismas etapas.</p>
+<figure class="dx-infografia">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 980" role="img" aria-labelledby="ig-ciclo-de-vida-t ig-ciclo-de-vida-d">
+<title id="ig-ciclo-de-vida-t">Rueda del ciclo de vida del sistema de IA con los controles de A.6 y A.7</title>
+<desc id="ig-ciclo-de-vida-d">Rueda del ciclo de vida de un sistema de IA con siete etapas en el sentido de las agujas del reloj: 1 Concepción (A.6.2.2 requisitos y A.7.2 gestión de datos); 2 Diseño y desarrollo (A.6.2.3 decisiones de diseño y arquitectura, A.7.3 adquisición, A.7.6 preparación y A.7.5 procedencia de datos); 3 Verificar y validar (A.6.2.4 pruebas y criterios, A.7.4 calidad de datos); 4 Despliegue (A.6.2.5 plan de despliegue); 5 Operación y monitoreo (A.6.2.6 monitoreo y soporte, A.7.4 datos de producción); 6 Revalidar y mejorar (A.6.2.6 reentrenamiento, A.6.2.4 revalidación, A.6.2.2 mejora material); 7 Retiro (A.6.1.3 plan de retiro, A.6.2.8 conservar registros); del retiro, una línea punteada regresa a la concepción. Al centro, el gobierno del desarrollo (A.6.1): A.6.1.2 objetivos y A.6.1.3 proceso con puertas de aprobación. Abajo, como transversales a todo el ciclo: A.6.2.7 documentación técnica por tipo de parte interesada y A.6.2.8 registro de eventos, obligatorio al menos durante la operación. Cada control es un enlace a su explicación.</desc>
+<text x="24" y="36" font-size="19" font-weight="700">La rueda del ciclo de vida</text>
+<text class="ig-muted" x="24" y="60" font-size="14">Cada chip lleva a la explicación de su control</text>
+<g class="obj-a6"><rect class="ig-obj" x="664" y="22" width="16" height="16" rx="3"/></g>
+<text x="688" y="35" font-size="14">A.6 · Ciclo de vida</text>
+<g class="obj-a7"><rect class="ig-obj" x="664" y="48" width="16" height="16" rx="3"/></g>
+<text x="688" y="61" font-size="14">A.7 · Datos</text>
+<path class="ig-s-brand" stroke-width="3" d="M430 155 A300 345 0 1 1 195.5 284.9"/>
+<path class="ig-s-brand" stroke-width="3" stroke-dasharray="7 6" d="M195.5 284.9 A300 345 0 0 1 430 155"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(560.2 189.2) rotate(29)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(722.5 423.2) rotate(78.8)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(664.5 715.1) rotate(124.7)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(430 845) rotate(180)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(195.5 715.1) rotate(-124.7)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(137.5 423.2) rotate(-78.8)"/>
+<polygon class="ig-brand" points="-9,-8 9,0 -9,8" transform="translate(299.8 189.2) rotate(-29)"/>
+<circle class="ig-card" cx="430" cy="500" r="132" stroke-width="1.5"/>
+<g class="obj-a6"><circle class="ig-s-obj" cx="430" cy="500" r="126" stroke-width="2" stroke-dasharray="4 4"/></g>
+<text x="430" y="432" font-size="16" font-weight="700" text-anchor="middle">Gobierno del desarrollo</text>
+<text class="ig-muted" x="430" y="455" font-size="14" text-anchor="middle">A.6.1 · rige todas las etapas</text>
+<g class="obj-a6"><a href="#a-6-1-2"><rect class="ig-tint" x="327" y="474" width="206" height="30" rx="6"/><rect class="ig-obj" x="327" y="474" width="5" height="30" rx="2"/><text x="341" y="494" font-size="14"><tspan font-weight="700">A.6.1.2</tspan> Objetivos</text></a></g>
+<g class="obj-a6"><a href="#a-6-1-3"><rect class="ig-tint" x="327" y="512" width="206" height="30" rx="6"/><rect class="ig-obj" x="327" y="512" width="5" height="30" rx="2"/><text x="341" y="532" font-size="14"><tspan font-weight="700">A.6.1.3</tspan> Proceso y puertas</text></a></g>
+<text class="ig-muted" x="430" y="574" font-size="14" text-anchor="middle">de objetivos a pruebas</text>
+<rect class="ig-card" x="317" y="98" width="226" height="114" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="339" cy="119" r="12"/>
+<text class="ig-on-color" x="339" y="124" font-size="14" font-weight="700" text-anchor="middle">1</text>
+<text x="359" y="124" font-size="15" font-weight="700">Concepción</text>
+<g class="obj-a6"><a href="#a-6-2-2"><rect class="ig-tint" x="327" y="138" width="206" height="28" rx="6"/><rect class="ig-obj" x="327" y="138" width="5" height="28" rx="2"/><text x="341" y="157" font-size="14"><tspan font-weight="700">A.6.2.2</tspan> Requisitos</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-2"><rect class="ig-tint" x="327" y="172" width="206" height="28" rx="6"/><rect class="ig-obj" x="327" y="172" width="5" height="28" rx="2"/><text x="341" y="191" font-size="14"><tspan font-weight="700">A.7.2</tspan> Gestión de datos</text></a></g>
+<rect class="ig-card" x="573.5" y="199.9" width="226" height="182" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="595.5" cy="220.9" r="12"/>
+<text class="ig-on-color" x="595.5" y="225.9" font-size="14" font-weight="700" text-anchor="middle">2</text>
+<text x="615.5" y="225.9" font-size="15" font-weight="700">Diseño y desarrollo</text>
+<g class="obj-a6"><a href="#a-6-2-3"><rect class="ig-tint" x="583.5" y="239.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="583.5" y="239.9" width="5" height="28" rx="2"/><text x="597.5" y="258.9" font-size="14"><tspan font-weight="700">A.6.2.3</tspan> Arquitectura</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-3"><rect class="ig-tint" x="583.5" y="273.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="583.5" y="273.9" width="5" height="28" rx="2"/><text x="597.5" y="292.9" font-size="14"><tspan font-weight="700">A.7.3</tspan> Adquisición</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-6"><rect class="ig-tint" x="583.5" y="307.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="583.5" y="307.9" width="5" height="28" rx="2"/><text x="597.5" y="326.9" font-size="14"><tspan font-weight="700">A.7.6</tspan> Preparación</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-5"><rect class="ig-tint" x="583.5" y="341.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="583.5" y="341.9" width="5" height="28" rx="2"/><text x="597.5" y="360.9" font-size="14"><tspan font-weight="700">A.7.5</tspan> Procedencia</text></a></g>
+<rect class="ig-card" x="609.5" y="519.8" width="226" height="114" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="631.5" cy="540.8" r="12"/>
+<text class="ig-on-color" x="631.5" y="545.8" font-size="14" font-weight="700" text-anchor="middle">3</text>
+<text x="651.5" y="545.8" font-size="15" font-weight="700">Verificar y validar</text>
+<g class="obj-a6"><a href="#a-6-2-4"><rect class="ig-tint" x="619.5" y="559.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="619.5" y="559.8" width="5" height="28" rx="2"/><text x="633.5" y="578.8" font-size="14"><tspan font-weight="700">A.6.2.4</tspan> Pruebas y criterios</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-4"><rect class="ig-tint" x="619.5" y="593.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="619.5" y="593.8" width="5" height="28" rx="2"/><text x="633.5" y="612.8" font-size="14"><tspan font-weight="700">A.7.4</tspan> Calidad de datos</text></a></g>
+<rect class="ig-card" x="447.2" y="770.8" width="226" height="80" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="469.2" cy="791.8" r="12"/>
+<text class="ig-on-color" x="469.2" y="796.8" font-size="14" font-weight="700" text-anchor="middle">4</text>
+<text x="489.2" y="796.8" font-size="15" font-weight="700">Despliegue</text>
+<g class="obj-a6"><a href="#a-6-2-5"><rect class="ig-tint" x="457.2" y="810.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="457.2" y="810.8" width="5" height="28" rx="2"/><text x="471.2" y="829.8" font-size="14"><tspan font-weight="700">A.6.2.5</tspan> Plan de despliegue</text></a></g>
+<rect class="ig-card" x="186.8" y="753.8" width="226" height="114" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="208.8" cy="774.8" r="12"/>
+<text class="ig-on-color" x="208.8" y="779.8" font-size="14" font-weight="700" text-anchor="middle">5</text>
+<text x="228.8" y="779.8" font-size="15" font-weight="700">Operación y monitoreo</text>
+<g class="obj-a6"><a href="#a-6-2-6"><rect class="ig-tint" x="196.8" y="793.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="196.8" y="793.8" width="5" height="28" rx="2"/><text x="210.8" y="812.8" font-size="14"><tspan font-weight="700">A.6.2.6</tspan> Monitoreo y soporte</text></a></g>
+<g class="obj-a7"><a href="../a7-datos/#a-7-4"><rect class="ig-tint" x="196.8" y="827.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="196.8" y="827.8" width="5" height="28" rx="2"/><text x="210.8" y="846.8" font-size="14"><tspan font-weight="700">A.7.4</tspan> Datos de producción</text></a></g>
+<rect class="ig-card" x="24.5" y="502.8" width="226" height="148" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="46.5" cy="523.8" r="12"/>
+<text class="ig-on-color" x="46.5" y="528.8" font-size="14" font-weight="700" text-anchor="middle">6</text>
+<text x="66.5" y="528.8" font-size="15" font-weight="700">Revalidar y mejorar</text>
+<g class="obj-a6"><a href="#a-6-2-6"><rect class="ig-tint" x="34.5" y="542.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="34.5" y="542.8" width="5" height="28" rx="2"/><text x="48.5" y="561.8" font-size="14"><tspan font-weight="700">A.6.2.6</tspan> Reentrenamiento</text></a></g>
+<g class="obj-a6"><a href="#a-6-2-4"><rect class="ig-tint" x="34.5" y="576.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="34.5" y="576.8" width="5" height="28" rx="2"/><text x="48.5" y="595.8" font-size="14"><tspan font-weight="700">A.6.2.4</tspan> Revalidación</text></a></g>
+<g class="obj-a6"><a href="#a-6-2-2"><rect class="ig-tint" x="34.5" y="610.8" width="206" height="28" rx="6"/><rect class="ig-obj" x="34.5" y="610.8" width="5" height="28" rx="2"/><text x="48.5" y="629.8" font-size="14"><tspan font-weight="700">A.6.2.2</tspan> Mejora material</text></a></g>
+<rect class="ig-card" x="82.5" y="227.9" width="226" height="114" rx="10" stroke-width="1.5"/>
+<circle class="ig-brand" cx="104.5" cy="248.9" r="12"/>
+<text class="ig-on-color" x="104.5" y="253.9" font-size="14" font-weight="700" text-anchor="middle">7</text>
+<text x="124.5" y="253.9" font-size="15" font-weight="700">Retiro</text>
+<g class="obj-a6"><a href="#a-6-1-3"><rect class="ig-tint" x="92.5" y="267.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="92.5" y="267.9" width="5" height="28" rx="2"/><text x="106.5" y="286.9" font-size="14"><tspan font-weight="700">A.6.1.3</tspan> Plan de retiro</text></a></g>
+<g class="obj-a6"><a href="#a-6-2-8"><rect class="ig-tint" x="92.5" y="301.9" width="206" height="28" rx="6"/><rect class="ig-obj" x="92.5" y="301.9" width="5" height="28" rx="2"/><text x="106.5" y="320.9" font-size="14"><tspan font-weight="700">A.6.2.8</tspan> Conservar registros</text></a></g>
+<rect class="ig-card" x="20" y="893" width="820" height="74" rx="12" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="40" y="924" font-size="15" font-weight="700">Transversales</text>
+<text class="ig-muted" x="40" y="946" font-size="14">a todo el ciclo</text>
+<g class="obj-a6"><a href="#a-6-2-7"><rect class="ig-tint" x="218" y="903" width="290" height="30" rx="6"/><rect class="ig-obj" x="218" y="903" width="5" height="30" rx="2"/><text x="232" y="923" font-size="14"><tspan font-weight="700">A.6.2.7</tspan> Documentación técnica</text></a></g>
+<text class="ig-muted" x="363" y="955" font-size="14" text-anchor="middle">según cada parte interesada</text>
+<g class="obj-a6"><a href="#a-6-2-8"><rect class="ig-tint" x="532" y="903" width="290" height="30" rx="6"/><rect class="ig-obj" x="532" y="903" width="5" height="30" rx="2"/><text x="546" y="923" font-size="14"><tspan font-weight="700">A.6.2.8</tspan> Registro de eventos</text></a></g>
+<text class="ig-muted" x="677" y="955" font-size="14" text-anchor="middle">obligatorio al menos en operación</text>
+</svg>
+
+<figcaption>Los controles de A.6 y A.7 en cada etapa del ciclo de vida. Al centro, el gobierno del desarrollo; abajo, los controles que acompañan todo el ciclo.</figcaption>
+</figure>
+
+<details class="note">
+<summary>Descripción textual de la infografía</summary>
+<p>La infografía es una rueda con siete etapas que se recorren en el sentido de las agujas del reloj. Cada etapa es una tarjeta con los controles que más pesan en ella; los controles de A.6 aparecen en naranja y los de A.7 en verde, y cada uno enlaza a su explicación.</p>
+<ol>
+<li><strong>Concepción:</strong> A.6.2.2 (requisitos) y A.7.2 (gestión de datos para desarrollo y mejora).</li>
+<li><strong>Diseño y desarrollo:</strong> A.6.2.3 (decisiones de diseño y arquitectura), A.7.3 (adquisición de datos), A.7.6 (preparación de datos) y A.7.5 (procedencia de datos).</li>
+<li><strong>Verificar y validar:</strong> A.6.2.4 (pruebas y criterios de aceptación) y A.7.4 (calidad de los datos).</li>
+<li><strong>Despliegue:</strong> A.6.2.5 (plan de despliegue y criterios de liberación).</li>
+<li><strong>Operación y monitoreo:</strong> A.6.2.6 (monitoreo, reparaciones, actualizaciones y soporte) y A.7.4 (calidad de los datos de producción).</li>
+<li><strong>Revalidar y mejorar:</strong> A.6.2.6 (deriva y reentrenamiento), A.6.2.4 (volver a validar tras un cambio) y A.6.2.2 (requisitos de una mejora material).</li>
+<li><strong>Retiro:</strong> A.6.1.3 (el proceso debe prever cómo se retira un sistema) y A.6.2.8 (conservar los registros el tiempo necesario).</li>
+</ol>
+<p>Del retiro sale una línea punteada que regresa a la concepción: las lecciones de un sistema que se retira alimentan el siguiente.</p>
+<p>Al centro de la rueda está el <strong>gobierno del desarrollo</strong> (subobjetivo A.6.1), que rige todas las etapas: A.6.1.2 (objetivos de desarrollo responsable) y A.6.1.3 (proceso con puertas de aprobación).</p>
+<p>En una banda inferior aparecen los controles <strong>transversales</strong> a todo el ciclo: A.6.2.7 (documentación técnica según cada parte interesada) y A.6.2.8 (registro de eventos, obligatorio al menos durante la operación).</p>
+</details>
 <h2 class="dx-control obj-a6" id="a-6-1-2">A.6.1.2 Objetivos para el desarrollo responsable<a class="headerlink" href="#a-6-1-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que "desarrollar IA de forma responsable" deje de ser un eslogan y se convierta en metas concretas que el equipo técnico pueda diseñar, medir y probar. Sin objetivos explícitos, cada científico de datos interpreta "justo", "seguro" o "transparente" a su manera, y nadie puede demostrar que el sistema los cumple.</p>
+<p><strong>En la práctica.</strong> El control tiene dos mitades que muchas organizaciones separan sin darse cuenta. La primera es identificar y documentar qué objetivos guiarán el desarrollo; la segunda, mucho más exigente, es integrarlos en el ciclo de vida con medidas concretas. La primera mitad se resuelve con una lista; la segunda distingue a una organización madura, porque cada objetivo debe "bajar" a requisitos, criterios de aceptación y pruebas en las etapas donde importa. Las fuentes naturales de esos objetivos son los objetivos de IA de la <a href="../../clausulas/c6-planificacion/#c-6-2">cláusula 6.2</a>, la <a href="../a2-politicas/#a-2-2">política de IA</a>, los resultados de las <a href="../a5-evaluacion-de-impacto/#a-5-2">evaluaciones de impacto</a> y el catálogo de objetivos potenciales del <a href="../../anexos-b-c-d/">Anexo C</a> (equidad, privacidad, robustez, transparencia y explicabilidad, seguridad, entre otros).</p>
+<p>Veamos cómo baja un objetivo de <strong>equidad</strong> en Monarca Crédito para su modelo de originación, Score Monarca v3:</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Cómo se materializa "equidad"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requisitos</td>
+<td>El modelo no usará sexo, edad ni estado civil como variables; se medirá si otras variables (como el código postal) funcionan como sustitutas.</td>
+</tr>
+<tr>
+<td>Datos</td>
+<td>La muestra de entrenamiento debe cubrir las 32 entidades federativas y a solicitantes sin historial en buró, con un mínimo de casos por grupo.</td>
+</tr>
+<tr>
+<td>Desarrollo</td>
+<td>Prueba de sensibilidad: el resultado no puede cambiar de banda si solo se modifica una variable sustituta sospechosa.</td>
+</tr>
+<tr>
+<td>Verificación y validación</td>
+<td>Criterio de aceptación: la diferencia en tasa de aprobación entre grupos comparables no supera el umbral aprobado por el Comité de Modelos.</td>
+</tr>
+<tr>
+<td>Operación</td>
+<td>Tablero mensual de aprobaciones y rechazos por segmento, con alerta si la brecha se abre.</td>
+</tr>
+</tbody>
+</table>
+<p>Otros objetivos se traducen igual. <strong>Transparencia</strong>: cada rechazo genera hasta cuatro motivos comprensibles para el solicitante. <strong>Robustez</strong>: el desempeño no cae más de cierto margen si faltan datos de uso de la app. <strong>Privacidad</strong>: no se usan contactos ni ubicación precisa del teléfono. <strong>Seguridad</strong>: en un asistente de IA generativa, la tasa de ataques exitosos de inyección de instrucciones (<em>prompt injection</em>) en la batería de pruebas se mantiene por debajo de un umbral. Lo importante es que cada objetivo tenga una definición operativa (qué significa <em>aquí</em>, para <em>este</em> tipo de sistema) y al menos una forma de comprobarlo.</p>
+<p>Si <strong>provees</strong> IA a clientes, como Conversa Labs, tus objetivos también deben recoger lo que tus clientes esperan (<a href="../a10-terceros/#a-10-4">A.10.4</a>) y conviene comunicarlos en tu documentación. Si solo <strong>usas</strong> IA de terceros, este control no te aplica; su espejo es <a href="../a9-uso/#a-9-3">A.9.3</a>, objetivos para el uso responsable.</p>
+<p>Lo que <strong>no</strong> exige: un número mínimo de objetivos, métricas de equidad específicas ni que todos los objetivos apliquen a todos los sistemas. Un modelo que clasifica facturas por tipo de gasto quizá no necesite un objetivo de equidad, pero sí uno de exactitud y otro de privacidad. Tampoco exige que los objetivos se cumplan siempre al 100 %: exige que existan, que estén documentados y que orienten el trabajo de cada etapa.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Documento breve con 3 a 6 objetivos de desarrollo responsable, aprobado por la dirección y vinculado a la política de IA y a la cláusula 6.2.</li>
+<li>Definición operativa de cada objetivo y al menos una métrica o prueba asociada.</li>
+<li>Plantilla de requisitos con una sección obligatoria de "requisitos derivados de objetivos responsables".</li>
+<li>Criterios de aceptación en el plan de pruebas que remiten a cada objetivo aplicable.</li>
+<li>Revisión anual de los objetivos o cuando cambie la política o una evaluación de impacto lo sugiera.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Matriz de trazabilidad objetivo → requisito → prueba → resultado, generada desde tu herramienta de gestión de trabajo.</li>
+<li>Bibliotecas de pruebas estándar por objetivo (por ejemplo, métricas de equidad con bibliotecas abiertas) integradas en el flujo de integración continua.</li>
+<li>Umbrales diferenciados según el nivel de riesgo del sistema.</li>
+<li>Indicadores de cumplimiento de objetivos presentados en la revisión por la dirección.</li>
+<li>Objetivos actualizados con insumos de evaluaciones de impacto, reportes externos (<a href="../a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>) e incidentes.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Documento de objetivos de desarrollo responsable aprobado, con definiciones operativas.</li>
+<li>Historias de usuario o requisitos con criterios de aceptación ligados a un objetivo.</li>
+<li>Matriz de trazabilidad objetivo-requisito-prueba de al menos un sistema.</li>
+<li>Reportes de pruebas con el resultado contra cada objetivo.</li>
+<li>Minuta o registro de aprobación de los objetivos y de sus umbrales.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué objetivos de desarrollo responsable definieron y cómo decidieron cuáles eran pertinentes?</li>
+<li>Tomemos el objetivo de equidad: ¿me muestra dónde aparece en los requisitos, en las pruebas y en el monitoreo de este sistema?</li>
+<li>¿Cómo se relacionan estos objetivos con los objetivos de IA de la cláusula 6.2 y con la política de IA?</li>
+<li>¿Quién aprobó los umbrales y con qué fundamento?</li>
+<li>¿Qué ocurrió la última vez que un modelo no alcanzó el criterio asociado a un objetivo?</li>
+<li>¿Cómo se enteran los desarrolladores nuevos de estos objetivos?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Objetivos como valores abstractos ("somos éticos") sin definición operativa ni métrica.</li>
+<li>Objetivos bien redactados que no aparecen en ningún requisito ni prueba: el auditor sigue la traza y se rompe.</li>
+<li>Copiar completo el catálogo del Anexo C sin priorizar ni adaptar al tipo de sistema.</li>
+<li>Umbrales fijados solo por el equipo técnico, sin participación de negocio, riesgos o legal.</li>
+<li>No revisar los objetivos después de una evaluación de impacto que reveló un riesgo nuevo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no diseña, desarrolla ni modifica sustancialmente sistemas de IA y solo usa sistemas de terceros. Ejemplo de redacción en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>: <em>"No aplica: la organización no desarrolla ni adapta sistemas de IA. Los objetivos de uso responsable se gestionan mediante A.9.3 y los requisitos exigibles a los proveedores mediante A.10.3."</em></p>
+<p><strong>No se justifica si…</strong> desarrollas o provees IA, aunque solo sea ajustando un modelo de terceros, construyendo la orquestación de un asistente con recuperación de documentos o entrenando un modelo interno pequeño. Tampoco si tu evaluación de riesgos identificó sesgo, opacidad o fallas de seguridad en un sistema propio: los objetivos son la forma de responder a esos riesgos.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a> · Controles: <a href="../a2-politicas/#a-2-2">A.2.2</a>, <a href="#a-6-1-3">A.6.1.3</a>, <a href="#a-6-2-4">A.6.2.4</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a9-uso/#a-9-3">A.9.3</a> · ISO 27001: sin equivalente en su Anexo A; lo más cercano son los objetivos de seguridad de su cláusula 6.2 · Normas: ISO/IEC 23894 (gestión de riesgos de IA) e ISO/IEC TR 24027 (sesgo), ver <a href="../../fundamentos/familia-de-normas/">familia de normas</a> · <strong>Anexo B:</strong> la guía ilustra, con un objetivo de equidad, cómo un mismo objetivo debe reflejarse en varias etapas del desarrollo, y sugiere dar a los equipos pautas concretas (por ejemplo, herramientas de prueba obligatorias); también remite al Anexo C como fuente de ideas.</p>
 <h2 class="dx-control obj-a6" id="a-6-1-3">A.6.1.3 Procesos para el diseño y desarrollo responsable<a class="headerlink" href="#a-6-1-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Tener un "así construimos IA aquí" escrito: qué etapas recorre un sistema, quién decide en cada una, qué se prueba y qué hace falta para pasar a la siguiente. Así la calidad y la responsabilidad no dependen de qué equipo o qué persona lleve el proyecto.</p>
+<p><strong>En la práctica.</strong> Este control es el proceso que hace realidad los objetivos de <a href="#a-6-1-2">A.6.1.2</a>. Casi siempre se materializa en un procedimiento del ciclo de vida con <strong>puertas de aprobación</strong> (<em>stage gates</em>): puntos de control donde un responsable o un comité revisa la evidencia de la etapa y decide avanzar, regresar o detener el proyecto. Las etapas pueden inspirarse en el modelo genérico de ISO/IEC 22989, en el ciclo de desarrollo de software que ya usas o en tu flujo de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr>; la norma te deja elegirlas, siempre que estén definidas y se sigan.</p>
+<p>Un buen proceso responde a cuatro bloques de preguntas (el orden y la agrupación son nuestros):</p>
+<ul>
+<li><strong>El mapa.</strong> ¿Qué etapas y qué puertas hay? ¿En cuáles se hace o se actualiza la <a href="../a5-evaluacion-de-impacto/#a-5-2">evaluación de impacto</a> y la evaluación de riesgos? ¿Qué cambios obligan a regresar a una etapa anterior (control de cambios)? ¿Cómo se retira un sistema?</li>
+<li><strong>Las reglas del material.</strong> ¿Qué datos se pueden usar para entrenar y cuáles están prohibidos? ¿De qué proveedores de datos aprobados? ¿Con qué reglas de etiquetado, consentimiento y licencia? (Aquí el proceso se apoya en <a href="../a7-datos/">A.7</a>.)</li>
+<li><strong>Las reglas de calidad.</strong> ¿Qué pruebas son obligatorias y con qué herramientas o entornos se ejecutan? ¿Cuáles son los criterios de liberación? ¿Cómo se comprueba la usabilidad y la controlabilidad, es decir, que quien opera el sistema pueda entenderlo, corregirlo o detenerlo?</li>
+<li><strong>Las personas.</strong> ¿Qué competencias técnicas y de dominio necesita el equipo (en un modelo de crédito, alguien que entienda de riesgo de crédito y no solo de modelos)? ¿Quién aprueba cada puerta? ¿Qué supervisión humana se diseña, con qué procesos y herramientas, sobre todo si el sistema afecta a personas? ¿Cuándo y cómo se consulta a las partes interesadas, como usuarios internos, áreas afectadas o representantes de clientes?</li>
+</ul>
+<p>Así se ven las puertas de aprobación del Score Monarca v3 en Monarca Crédito, donde el Comité de Modelos decide en las puertas 1 y 2, y el Director de Riesgos, como dueño del modelo, firma la salida a producción:</p>
+<pre class="mermaid"><code>flowchart TD
+  A["Idea: Score Monarca v3"] --&gt; G0{{"Puerta 0 · Caso de negocio"}}
+  G0 --&gt;|"aprobado"| B["Requisitos, evaluación de impacto inicial y plan de datos"]
+  B --&gt; G1{{"Puerta 1 · Diseño y datos"}}
+  G1 --&gt;|"observaciones"| B
+  G1 --&gt;|"aprobado"| C["Desarrollo y entrenamiento"]
+  C --&gt; D["Verificación y validación independiente"]
+  D --&gt; G2{{"Puerta 2 · Criterios de liberación"}}
+  G2 --&gt;|"no cumple"| C
+  G2 --&gt;|"cumple"| E["Despliegue en sombra y gradual"]
+  E --&gt; G3{{"Puerta 3 · Salida a producción"}}
+  G3 --&gt; F["Operación y monitoreo"]
+  F --&gt; G4{{"Puerta 4 · Revisión a 90 días"}}
+  F --&gt;|"deriva o cambio material"| B</code></pre>
+<p>Conviene describir cada puerta con la misma ficha: evidencia de entrada (qué se debe presentar), quién decide, posibles resultados (aprobar, aprobar con condiciones, regresar, cancelar) y dónde queda registrada la decisión. Una puerta sin registro, para un auditor, no existió.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a los controles de desarrollo seguro (ISO 27001 A.8.25, ciclo de vida de desarrollo seguro, y A.8.27, arquitectura e ingeniería seguras). Si ya tienes un ciclo de desarrollo con revisiones de código, pruebas de seguridad y gestión de cambios, <strong>extiéndelo</strong>: agrega las etapas de datos y de evaluación de modelos, la evaluación de impacto en las puertas, los criterios de equidad y explicabilidad, la supervisión humana y la participación de partes interesadas. No construyas un proceso paralelo que los equipos tengan que seguir además del otro.</p>
+<p>Lo que <strong>no</strong> exige: una metodología concreta (ágil, cascada o híbrida valen), herramientas de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr> sofisticadas ni comités numerosos. Sí conviene que el proceso sea <strong>proporcional</strong>: un modelo de bajo riesgo para clasificar correos internos puede tener un carril rápido con dos puertas, mientras que un modelo que decide créditos recorre todas.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Procedimiento del ciclo de vida aprobado, con etapas, puertas y responsables de cada aprobación.</li>
+<li>Lista de evidencia mínima por puerta y formato de registro de la decisión.</li>
+<li>Reglas escritas sobre datos de entrenamiento permitidos y prohibidos.</li>
+<li>Criterio de cuándo un cambio obliga a regresar a una puerta anterior.</li>
+<li>Matriz de competencias del equipo de desarrollo, incluida la experiencia de dominio.</li>
+<li>Al menos un sistema que haya recorrido el proceso con todas sus aprobaciones registradas.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Puertas integradas en la plataforma de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr>: un modelo no puede promoverse a producción sin las aprobaciones registradas.</li>
+<li>Carriles diferenciados según el nivel de riesgo del sistema.</li>
+<li>Validación independiente (segunda línea) para los sistemas de mayor impacto.</li>
+<li>Catálogo de proveedores de datos aprobados con revisión periódica.</li>
+<li>Participación estructurada de partes interesadas (paneles de usuarios, pruebas con operadores).</li>
+<li>Métricas del proceso: tiempo por etapa, proyectos detenidos en puertas, excepciones aprobadas.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a> vigente, con etapas y puertas.</li>
+<li>Registros de aprobación de puertas (minutas del comité, aprobaciones en la herramienta de trabajo).</li>
+<li>Reglas sobre datos de entrenamiento y lista de proveedores de datos aprobados.</li>
+<li>Matriz de competencias y evidencia de capacitación del equipo.</li>
+<li>Registros de control de cambios de modelos.</li>
+<li>Evidencia de consulta a partes interesadas en algún proyecto.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Me muestra el procedimiento con el que desarrollan sistemas de IA? ¿Cuándo se aprobó por última vez?</li>
+<li>Elija un modelo en producción: ¿dónde están las aprobaciones de cada puerta?</li>
+<li>¿En qué etapa se hace la evaluación de impacto y cuándo se actualiza?</li>
+<li>¿Qué datos tienen prohibido usar para entrenar y cómo lo controlan?</li>
+<li>¿Qué pasa si un proyecto llega a la puerta de liberación sin cumplir los criterios?</li>
+<li>¿Cómo decidieron qué supervisión humana tendría este sistema?</li>
+<li>¿Hubo excepciones al proceso en el último año? ¿Quién las aprobó?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Un procedimiento genérico de software con la palabra "IA" agregada, sin etapas de datos ni de evaluación de modelos.</li>
+<li>Puertas que existen en el papel, pero cuyas decisiones no quedan registradas.</li>
+<li>La evaluación de impacto se hace una sola vez, al final, cuando ya no puede cambiar el diseño.</li>
+<li>Mismo proceso pesado para todos los sistemas, lo que empuja a los equipos a saltárselo.</li>
+<li>Ninguna regla para el retiro de sistemas o para los cambios de modelo después de la liberación.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no diseña ni desarrolla sistemas de IA. Ejemplo de redacción: <em>"No aplica: la organización adquiere sistemas de IA de terceros y no realiza actividades de diseño o desarrollo. El ciclo de desarrollo es responsabilidad de los proveedores, cuyas prácticas se evalúan conforme a A.10.3."</em></p>
+<p><strong>No se justifica si…</strong> desarrollas o provees IA, aunque sea en un solo producto. Para un productor, la ausencia de un proceso documentado de desarrollo es una de las no conformidades más previsibles de una auditoría.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a> · Controles: <a href="#a-6-1-2">A.6.1.2</a>, <a href="../a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="../a4-recursos/#a-4-6">A.4.6</a>, <a href="../a7-datos/#a-7-2">A.7.2</a>, <a href="../a9-uso/#a-9-2">A.9.2</a> · ISO 27001: A.8.25, A.8.27, A.8.32 · Normas: ISO/IEC 22989 (modelo de ciclo de vida) e ISO/IEC 5338 (procesos del ciclo de vida de sistemas de IA) · <strong>Anexo B:</strong> la guía enumera los temas que un proceso de desarrollo responsable debería considerar (etapas, pruebas, supervisión humana, datos, competencias, aprobaciones, cambios y participación de partes interesadas, entre otros) y aclara que los procesos concretos dependen de la tecnología que se use.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-2">A.6.2.2 Requisitos y especificación<a class="headerlink" href="#a-6-2-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Dejar por escrito, antes de construir, para qué existe el sistema y qué debe cumplir. Sin requisitos no hay contra qué probar, y tampoco hay base para decidir a tiempo que un proyecto no conviene.</p>
+<p><strong>En la práctica.</strong> El control aplica a dos situaciones: sistemas nuevos y <strong>mejoras materiales</strong> a sistemas existentes. Qué es "material" lo defines tú en el procedimiento; criterios razonables son un uso previsto nuevo, una población distinta (por ejemplo, usar para micronegocios un modelo entrenado con créditos personales), variables nuevas, un cambio de modelo fundacional o un ajuste de umbrales que modifica decisiones sobre personas.</p>
+<p>Un documento de requisitos útil responde, como mínimo, a tres preguntas. <strong>¿Por qué lo construimos?</strong> Puede ser un caso de negocio, la petición de un cliente o una obligación regulatoria; el motivo condiciona todo lo demás. <strong>¿Cómo se entrenará y de dónde saldrán los datos?</strong> Aquí aparecen las primeras sorpresas: si los datos existen, si tienes derecho a usarlos, si el aviso de privacidad cubre esa finalidad. <strong>¿Qué debe cumplir?</strong> Desempeño, equidad, explicabilidad, supervisión humana, seguridad, privacidad, requisitos legales y de operación (latencia, disponibilidad, volumen), y también lo que hará falta durante todo el ciclo de vida, como el monitoreo y el retiro.</p>
+<p>Un ejemplo de requisito bien escrito para el Score Monarca v3: <em>"Reducir la tasa de incumplimiento a 90 días de la cartera nueva sin que la tasa de aprobación caiga más de 2 puntos; no usar sexo, edad ni estado civil; entregar hasta cuatro motivos de rechazo comprensibles; mantener la banda gris de revisión humana por debajo del 15 % de las solicitudes para que el equipo de analistas las atienda en menos de 24 horas."</em> Cada frase puede probarse más adelante en <a href="#a-6-2-4">A.6.2.4</a>.</p>
+<p>Los requisitos son <strong>vivos</strong>. Deben revisarse cuando el sistema no funciona como se esperaba, cuando aparece información nueva o cuando el proyecto resulta inviable. Imagina una aseguradora en Colombia que quiere detectar fraude en reclamos de autos. Al especificar los requisitos de datos descubre que apenas unos cuantos cientos de reclamos están etiquetados como fraude confirmado, muy pocos para entrenar algo confiable. La decisión documentada es replantear el proyecto: primero un sistema de reglas y un año de etiquetado disciplinado, después el modelo. Esa decisión, con su razonamiento, también es evidencia de este control.</p>
+<p>Si <strong>provees</strong> IA, buena parte de tus requisitos vienen de tus clientes (<a href="../a10-terceros/#a-10-4">A.10.4</a>). En Conversa Labs, por ejemplo, el compromiso contractual de no entrenar modelos con datos de clientes, la operación en español de México, Colombia y Chile, y el traspaso a un agente humano son requisitos de primer nivel, no detalles de implementación.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.26 (requisitos de seguridad de las aplicaciones). Puedes reutilizar tu plantilla de requisitos y su flujo de aprobación, pero hay que agregar las secciones propias de la IA: uso previsto y usos fuera de alcance, requisitos de datos, métricas de desempeño y equidad, explicabilidad y supervisión humana.</p>
+<p>Lo que <strong>no</strong> exige: un documento de 80 páginas ni requisitos completos desde el día uno. En desarrollo iterativo los requisitos se refinan, y una ficha de una o dos páginas versionada en el repositorio puede bastar, siempre que esté documentada, aprobada y actualizada.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Plantilla de requisitos con secciones de propósito, uso previsto, datos, desempeño, equidad, supervisión humana, seguridad y privacidad.</li>
+<li>Criterio escrito de qué es una mejora material.</li>
+<li>Requisitos aprobados en una puerta del proceso antes de iniciar el desarrollo.</li>
+<li>Control de versiones de los requisitos y registro de cambios.</li>
+<li>Decisiones de replantear o cancelar documentadas con su razón.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Requisitos en la herramienta de gestión de trabajo, enlazados a pruebas y resultados.</li>
+<li>Análisis de viabilidad de datos y de costo antes de aprobar el desarrollo.</li>
+<li>Participación de expertos de dominio, Legal y Privacidad en la revisión de requisitos.</li>
+<li>Requisitos no funcionales de IA reutilizables por tipo de sistema (clasificador, asistente generativo, recomendador).</li>
+<li>Revisión formal de requisitos tras cada incidente o hallazgo de monitoreo relevante.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Documento de requisitos o caso de negocio aprobado, con versión y fecha.</li>
+<li>Sección de requisitos de datos con fuentes previstas y base legal.</li>
+<li>Requisitos medibles de desempeño, equidad y supervisión humana.</li>
+<li>Historial de cambios de requisitos y su justificación.</li>
+<li>Registro de un proyecto replanteado o cancelado por inviable, si lo hubo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Por qué decidieron construir este sistema? ¿Dónde está documentado?</li>
+<li>¿Cómo determinaron que tenían los datos necesarios y el derecho a usarlos?</li>
+<li>¿Qué requisitos de desempeño y equidad fijaron y quién los aprobó?</li>
+<li>¿Qué consideran una mejora material? ¿Me muestra un ejemplo reciente?</li>
+<li>¿Han cambiado los requisitos durante el desarrollo? ¿Cómo quedó registrado?</li>
+<li>¿Algún proyecto se detuvo porque resultó inviable?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Requisitos que solo hablan de exactitud global, sin equidad, explicabilidad ni supervisión humana.</li>
+<li>Requisitos escritos después de construir el modelo, para que "cuadren".</li>
+<li>Tratar el reentrenamiento con variables nuevas como mantenimiento rutinario, sin requisitos.</li>
+<li>Requisitos de datos que ignoran el aviso de privacidad y la base legal del tratamiento.</li>
+<li>No documentar los proyectos que se detuvieron, perdiendo el aprendizaje.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no desarrolla ni modifica sistemas de IA. Ejemplo de redacción: <em>"No aplica: la organización no especifica ni desarrolla sistemas de IA. Los requisitos que deben cumplir los sistemas adquiridos se definen en el proceso de compras y evaluación de proveedores (A.10.3)."</em></p>
+<p><strong>No se justifica si…</strong> desarrollas, provees o mejoras de forma material algún sistema de IA, o si configuras uno de terceros de manera tan profunda que en la práctica defines su comportamiento.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="#a-6-1-2">A.6.1.2</a>, <a href="#a-6-2-4">A.6.2.4</a>, <a href="../a7-datos/#a-7-2">A.7.2</a>, <a href="../a9-uso/#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001: A.8.26 · Normas: ISO/IEC 5338 (procesos del ciclo de vida) e ISO 9241-210 (diseño centrado en las personas) · <strong>Anexo B:</strong> la guía pide documentar los motivos y metas del sistema, considerar desde el inicio cómo se entrenará y cómo se cubrirán las necesidades de datos, y revisar los requisitos cuando el sistema no rinde lo esperado o cuando aparece información nueva, incluida la inviabilidad económica.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-3">A.6.2.3 Documentación del diseño y desarrollo<a class="headerlink" href="#a-6-2-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Dejar constancia de las decisiones de diseño y de por qué se tomaron, y tener disponible la arquitectura final. Quien llegue después (un auditor, un integrante nuevo del equipo, una autoridad) debe poder entender por qué el sistema es como es.</p>
+<p><strong>En la práctica.</strong> Un sistema de IA acumula decisiones que no son obvias desde el código. Conviene documentarlas agrupadas en cuatro frentes:</p>
+<ul>
+<li><strong>El aprendizaje.</strong> Tipo de enfoque (supervisado, no supervisado, por refuerzo o uso de un modelo fundacional con generación aumentada por recuperación), algoritmo y tipo de modelo, cómo se entrenará y qué calidad de datos requiere (en relación con <a href="../a7-datos/#a-7-4">A.7.4</a>), y cómo se evaluará y afinará.</li>
+<li><strong>La plataforma.</strong> Componentes de hardware y software, y consideraciones de interoperabilidad y portabilidad: ¿podríamos cambiar de proveedor de modelo sin rehacer todo?</li>
+<li><strong>Las personas.</strong> Interfaz y forma de presentar los resultados, y cómo interactúan los humanos con el sistema: quién ve el resultado, quién puede corregirlo o anularlo y con qué información.</li>
+<li><strong>Las amenazas.</strong> Un modelo de amenazas que incluya las propias de la IA a lo largo de todo el ciclo: <strong>envenenamiento de datos</strong> (<em>data poisoning</em>, alguien contamina los datos de entrenamiento para torcer el comportamiento), <strong>robo o extracción del modelo</strong> (<em>model stealing</em>, consultas masivas para replicarlo), <strong>inversión del modelo</strong> (<em>model inversion</em>, reconstruir datos de entrenamiento a partir de sus respuestas) y, en sistemas generativos, la inyección de instrucciones. Catálogos públicos como MITRE ATLAS o el OWASP Top 10 para aplicaciones con <abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr> ayudan a no partir de cero.</li>
+</ul>
+<p>Diseño y desarrollo rara vez son lineales: hay idas y vueltas. Por eso conviene documentar <strong>durante</strong> cada iteración, no reconstruir todo al final, y asegurarte de que al cerrar exista una descripción de la <strong>arquitectura final</strong>. Una técnica ligera y muy eficaz son los <strong>registros de decisiones de arquitectura</strong> (<em>architecture decision records</em>, ADR): notas breves con el contexto, la decisión, las alternativas descartadas y sus consecuencias. Por ejemplo, en Monarca Crédito: <em>"ADR-007: usamos árboles con gradient boosting en lugar de una red neuronal porque el desempeño es comparable y permite explicar cada decisión con valores de contribución por variable, lo que exige el requisito R-12 de motivos de rechazo."</em> En Conversa Labs: <em>"ADR-014: adoptamos recuperación híbrida (palabras clave más vectores) porque la búsqueda solo vectorial fallaba con números de póliza y claves de producto."</em></p>
+<p>Fíjate en que ambos ADR <strong>remiten a un requisito o a un objetivo</strong>. El control pide documentar el diseño tomando como punto de partida lo que la organización se propuso, lo que quedó especificado y los requisitos aprobados; la traza "elegimos X porque el requisito R pide Y" es exactamente lo que demuestra eso.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.27 (arquitectura e ingeniería seguras) y A.8.28 (codificación segura). Reutiliza tus plantillas de diseño, tus diagramas de arquitectura y tus revisiones de código; agrega la justificación de la elección de modelo, la información de los datos y el modelo de amenazas específico de IA.</p>
+<p>Lo que <strong>no</strong> exige: documentar a mano cada experimento (las herramientas de seguimiento de experimentos ya lo registran y sirven como evidencia) ni un formato específico. Un repositorio con ADR, un diagrama vigente y el modelo de amenazas puede ser suficiente.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Documento de diseño por sistema con enfoque de aprendizaje, modelo, datos, interfaz e interacción humana.</li>
+<li>Diagrama de arquitectura final vigente.</li>
+<li>Modelo de amenazas que incluya amenazas propias de la IA.</li>
+<li>ADR para las decisiones relevantes, con referencia al requisito u objetivo que las motiva.</li>
+<li>Documentación versionada junto con el código o el modelo.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Seguimiento de experimentos automatizado, enlazado al registro de modelos.</li>
+<li>Plantilla de ADR obligatoria en el repositorio y revisada en cada solicitud de integración.</li>
+<li>Modelo de amenazas basado en un catálogo público y actualizado en cada versión mayor.</li>
+<li>Lista de componentes del sistema de IA (<abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr>) generada automáticamente.</li>
+<li>Revisiones de diseño con participación de seguridad, privacidad y expertos de dominio.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_4_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_4_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Documento de diseño aprobado y diagrama de arquitectura final.</li>
+<li>Repositorio de ADR con fechas y autores.</li>
+<li>Modelo de amenazas de IA con medidas asociadas.</li>
+<li>Registro de experimentos y del modelo elegido.</li>
+<li>Minutas de revisiones de diseño.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Por qué eligieron este tipo de modelo y no otro? ¿Dónde quedó documentado?</li>
+<li>¿Me muestra la arquitectura final del sistema y su fecha de actualización?</li>
+<li>¿Qué amenazas propias de la IA consideraron y qué medidas tomaron?</li>
+<li>¿Cómo diseñaron la interacción de las personas con el resultado del sistema?</li>
+<li>¿Cómo se relacionan sus decisiones de diseño con los requisitos aprobados?</li>
+<li>Si cambiaran de proveedor de modelo, ¿qué partes del diseño se verían afectadas?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Documentación de diseño escrita una sola vez y nunca actualizada tras las iteraciones.</li>
+<li>Modelo de amenazas copiado del de una aplicación web, sin amenazas propias de la IA.</li>
+<li>Diagramas que no coinciden con lo que realmente está en producción.</li>
+<li>Decisiones clave que viven solo en conversaciones de chat o en la memoria del equipo.</li>
+<li>Ninguna referencia a la interacción humana ni a cómo se presentan los resultados.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no diseña ni desarrolla sistemas de IA. Ejemplo de redacción: <em>"No aplica: la organización no realiza diseño ni desarrollo de sistemas de IA. La documentación de diseño de los sistemas adquiridos se solicita al proveedor cuando es necesaria (A.10.3)."</em></p>
+<p><strong>No se justifica si…</strong> construyes cualquier componente de un sistema de IA, incluida la orquestación, la recuperación de documentos o los filtros de seguridad alrededor de un modelo de terceros.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="#a-6-2-2">A.6.2.2</a>, <a href="#a-6-2-7">A.6.2.7</a>, <a href="../a4-recursos/#a-4-4">A.4.4</a>, <a href="../a7-datos/#a-7-4">A.7.4</a>, <a href="../a9-uso/#a-9-4">A.9.4</a> · ISO 27001: A.8.27, A.8.28 · Normas: ISO 9241-210 (diseño centrado en las personas), ver <a href="../../fundamentos/familia-de-normas/">familia de normas</a> · <strong>Anexo B:</strong> la guía repasa las decisiones de diseño típicas de un sistema de IA, menciona amenazas de seguridad propias de la IA y pide que, aunque haya varias iteraciones, la documentación se mantenga y exista una descripción final de la arquitectura.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-4">A.6.2.4 Verificación y validación<a class="headerlink" href="#a-6-2-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Decidir de antemano cómo se comprobará que el sistema está bien construido (<strong>verificación</strong>: ¿cumple su especificación?) y que sirve para su uso previsto con las personas reales a las que afecta (<strong>validación</strong>: ¿construimos lo correcto?), y con qué criterios se aprueba o se rechaza.</p>
+<p><strong>En la práctica.</strong> El control pide definir y documentar las medidas de verificación y validación y los criterios para usarlas. En la práctica, eso se traduce en un <strong>plan de evaluación escrito antes de ver los resultados</strong> con tres piezas: los métodos y herramientas de prueba; los datos de prueba, que deben representar el ámbito de uso previsto (si el modelo se usará en todo México, el conjunto de prueba no puede venir solo de la Ciudad de México y Monterrey; además debe estar separado del entrenamiento e idealmente incluir un periodo posterior, <em>out-of-time</em>); y los <strong>criterios de liberación</strong>, es decir, qué resultados hay que alcanzar para aprobar.</p>
+<p>Para fijar esos criterios, el plan debería contestar estas preguntas:</p>
+<ul>
+<li>¿Qué tasas de error son aceptables y por qué? ¿Hay usos que exigen umbrales más estrictos?</li>
+<li>¿Cómo se evaluarán el sistema completo y sus componentes frente a los riesgos para personas, grupos y la sociedad identificados en la <a href="../a5-evaluacion-de-impacto/#a-5-4">evaluación de impacto</a>?</li>
+<li>¿Cómo se comprobarán los objetivos de desarrollo y uso responsable (<a href="#a-6-1-2">A.6.1.2</a>, <a href="../a9-uso/#a-9-3">A.9.3</a>)?</li>
+<li>¿En qué rangos de condiciones de operación (calidad de los datos de entrada, tipo de usuario, canal) se garantiza el desempeño?</li>
+<li>¿Cómo sabremos que quienes deciden con el resultado, o quienes lo reciben, pueden interpretarlo correctamente? ¿Cada cuánto se repetirá esa evaluación?</li>
+<li>¿Qué factores pueden explicar un desempeño bajo y qué haremos cuando aparezcan?</li>
+</ul>
+<p><strong>Elegir la métrica es una decisión de riesgo, no solo técnica.</strong> En el Score Monarca v3, llamemos "positivo" a un solicitante que incumplirá. Un <strong>falso negativo</strong> es aprobar a quien no pagará: pérdida para Monarca y sobreendeudamiento para la persona. Un <strong>falso positivo</strong> es rechazar a quien sí habría pagado: un cliente perdido y, sobre todo, una persona excluida del crédito sin razón. La métrica F1 combina la <strong>precisión</strong> (<em>precision</em>: de los marcados como positivos, cuántos lo eran) y la <strong>exhaustividad</strong> (<em>recall</em>: de los positivos reales, cuántos detectó) en una media armónica, y es útil cuando ambos errores importan y las clases están desbalanceadas, como en crédito, donde pocos incumplen. Pero F1 trata ambos errores casi por igual.</p>
+<details class="example">
+<summary>Ejemplo numérico: cuando el F1 más alto no es la mejor opción</summary>
+<p>Supón 1 000 solicitudes, de las cuales 100 incumplirán. El modelo A tiene precisión 0.40 y exhaustividad 0.70 (F1 ≈ 0.51); el modelo B, precisión 0.55 y exhaustividad 0.50 (F1 ≈ 0.52). Por F1, B gana.</p>
+<p>Ahora pon costos ilustrativos: cada falso negativo cuesta 8 000 pesos y cada falso positivo, 2 000. El modelo A comete 30 falsos negativos y unos 105 falsos positivos: 450 000 pesos. El modelo B comete 50 falsos negativos y unos 41 falsos positivos: 482 000 pesos. Con estos costos conviene A, aunque su F1 sea menor; y si además pesa el daño de excluir a buenos pagadores, el análisis cambia otra vez. Por eso la métrica se elige <strong>después</strong> de valorar el impacto de cada tipo de error, y la decisión se documenta. Si los costos son asimétricos, una variante ponderada (F-beta) o una matriz de costos refleja mejor la realidad. En riesgo de crédito también son habituales el índice de Gini, la estadística KS y las pruebas de calibración.</p>
+</details>
+<p>ISO/IEC TS 4213 es la referencia para evaluar el desempeño de clasificación en aprendizaje automático, y conviene citarla en tu plan si la sigues.</p>
+<p><strong>Evalúa por segmentos.</strong> Un promedio global puede esconder que el modelo falla mucho más en un grupo. Desglosa las métricas por sexo, grupos de edad, entidad federativa y tipo de solicitante (por ejemplo, quienes no tienen historial en buró), aunque esas variables no entren al modelo. Y <strong>documenta los factores que explican un desempeño bajo</strong>, junto con lo que se hace frente a ellos: en el módulo de captura de CFDI de Contadores Alameda, los escaneos de baja resolución; en el asistente de Conversa Labs, los modismos chilenos o los mensajes de voz mal transcritos; en Monarca, los solicitantes sin historial crediticio. La respuesta puede ser pedir otra imagen, mandar el caso a revisión humana o acotar el uso previsto.</p>
+<p><strong>Robustez y pruebas adversarias.</strong> Incluye pruebas con datos ruidosos, incompletos o deliberadamente erróneos para ver cómo se degrada el sistema; ISO/IEC TR 24029-1 ofrece un panorama de la evaluación de robustez de redes neuronales. En sistemas generativos, esto incluye <strong>pruebas adversarias de inyección de instrucciones</strong>, tanto directas (el usuario intenta que el asistente ignore sus reglas) como indirectas (instrucciones maliciosas escondidas en un documento de la base de conocimiento).</p>
+<p><strong>Si no se cumplen los criterios</strong>, sobre todo los ligados a objetivos responsables, el sistema no se libera tal cual. Las opciones legítimas son reconsiderar o acotar el uso previsto (por ejemplo, que el modelo solo recomiende y una persona decida), ajustar los requisitos de desempeño con una aprobación documentada y razonada, reforzar la supervisión humana o regresar a datos y desarrollo. Lo que nunca debe pasar es que el umbral se baje en silencio para que el modelo "pase". Cuida también la <strong>integridad de la evaluación</strong>: datos de prueba custodiados, que no se filtren al entrenamiento, y, para los sistemas de mayor impacto, una validación hecha por alguien distinto de quien construyó el modelo.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.29 (pruebas de seguridad en desarrollo y aceptación). Reutilizas la disciplina de planes de prueba, entornos y aceptación formal; lo nuevo son las métricas de desempeño estadístico, la evaluación por segmentos, las pruebas de equidad y de robustez, y la validación con usuarios.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Plan de evaluación aprobado antes de las pruebas, con métricas, umbrales y datos de prueba definidos.</li>
+<li>Conjunto de prueba separado y representativo del uso previsto.</li>
+<li>Métricas desglosadas por los segmentos relevantes.</li>
+<li>Reporte de resultados frente a cada criterio, firmado por quien aprueba la liberación.</li>
+<li>Registro de qué se decidió cuando algún criterio no se cumplió.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Batería de pruebas automatizada (desempeño, equidad, robustez, seguridad) que corre en cada versión.</li>
+<li>Validación independiente para sistemas de alto impacto.</li>
+<li>Conjuntos dorados (<em>golden sets</em>) curados por expertos de dominio y versionados.</li>
+<li>Ejercicios de equipo rojo (<em>red team</em>) antes de cada versión mayor.</li>
+<li>Pruebas de interpretabilidad con los usuarios que toman decisiones.</li>
+<li>Frecuencia de reevaluación ligada al nivel de impacto del sistema.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_5_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_5_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_5_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Plan de evaluación con fecha anterior a los resultados.</li>
+<li>Descripción de los datos de prueba y de su representatividad.</li>
+<li>Reportes de evaluación por segmento, de robustez y de pruebas adversarias.</li>
+<li>Justificación documentada de la elección de métricas.</li>
+<li>Criterios de liberación firmados y registro de excepciones.</li>
+<li>Evidencia de pruebas con usuarios que interpretan los resultados.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cuándo definieron los criterios de aceptación, antes o después de ver los resultados?</li>
+<li>¿Por qué eligieron esta métrica? ¿Qué error les preocupa más y por qué?</li>
+<li>¿Cómo comprobaron que los datos de prueba representan a la población real?</li>
+<li>¿Me muestra los resultados por segmento? ¿Qué hicieron con la brecha más grande?</li>
+<li>¿Qué pasó la última vez que un modelo no cumplió un criterio?</li>
+<li>¿Cómo verificaron que los analistas entienden el resultado que reciben?</li>
+<li>¿Quién valida los modelos de mayor impacto y qué independencia tiene?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Fijar o mover los umbrales después de ver los resultados.</li>
+<li>Reportar solo exactitud global, sin desglose por segmentos.</li>
+<li>Datos de prueba que comparten periodo o registros con el entrenamiento.</li>
+<li>No probar nunca con entradas degradadas o adversarias.</li>
+<li>Evaluar el modelo aislado y no el sistema completo con su interfaz y sus reglas de negocio.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no desarrolla sistemas de IA. Ejemplo de redacción: <em>"No aplica: la organización no desarrolla sistemas de IA. Las pruebas de aceptación de los sistemas adquiridos se realizan como criterios de liberación en A.6.2.5."</em></p>
+<p><strong>No se justifica si…</strong> desarrollas o provees IA. Tampoco, en nuestra lectura, si adaptas un sistema de terceros con tus propios datos o instrucciones y esa capa propia puede producir resultados dañinos sin una prueba previa.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> · Controles: <a href="#a-6-1-2">A.6.1.2</a>, <a href="#a-6-2-2">A.6.2.2</a>, <a href="#a-6-2-5">A.6.2.5</a>, <a href="../a7-datos/#a-7-4">A.7.4</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a9-uso/#a-9-3">A.9.3</a> · ISO 27001: A.8.29 · Normas: ISO/IEC TS 4213 (desempeño de clasificación), ISO/IEC TR 24029-1 (robustez de redes neuronales) e ISO/IEC 25059 (modelo de calidad de sistemas de IA) · <strong>Anexo B:</strong> la guía describe qué incluir en las medidas de verificación y validación y en los criterios de evaluación, insiste en evaluar contra los criterios documentados y explica qué reconsiderar cuando el sistema no los alcanza.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-5">A.6.2.5 Despliegue<a class="headerlink" href="#a-6-2-5" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que la puesta en producción sea un paso planeado y verificado, no un "ya súbelo", y que ocurra solo cuando el sistema cumple los requisitos acordados.</p>
+<p><strong>En la práctica.</strong> El control pide un <strong>plan de despliegue documentado</strong> y comprobar, antes de desplegar, que se cumplen los requisitos que correspondan. Un plan útil responde qué se despliega, dónde, cuándo, quién aprueba, cómo se sabrá que salió bien y cómo se revierte si sale mal.</p>
+<p>Dos particularidades de la IA merecen espacio en ese plan. La primera son los <strong>entornos distintos</strong>: es común entrenar en un entorno (cuadernos en servidores propios o cómputo con GPU en la nube) y servir el modelo en otro (una API en otra nube o un servidor en sitio). Las diferencias de bibliotecas, de hardware o de cómo llegan los datos de entrada pueden hacer que el modelo se comporte distinto en producción que en pruebas. La segunda son los <strong>componentes que se despliegan por separado</strong>: el modelo y el software que lo rodea (API, reglas de negocio, interfaz) pueden publicarse de forma independiente. Conviene versionarlos por separado y saber qué versión del modelo es compatible con qué versión del software.</p>
+<p>Los <strong>criterios de liberación</strong> son el corazón del control: verificación y validación aprobadas (<a href="#a-6-2-4">A.6.2.4</a>), métricas de desempeño alcanzadas, pruebas con usuarios completadas y aprobaciones de la dirección obtenidas. El plan también debe considerar a las partes interesadas: capacitar a quienes operarán el sistema, actualizar el aviso de privacidad si cambian las finalidades, avisar a los clientes y preparar al área de atención para las preguntas que vendrán.</p>
+<p>Las estrategias graduales reducen el riesgo. En Monarca Crédito, el Score Monarca v3 corrió cuatro semanas en <strong>sombra</strong> (<em>shadow deployment</em>): calificaba cada solicitud en paralelo a la versión anterior, sin decidir nada, para comparar resultados. Después pasó a un despliegue <strong>canario</strong> (<em>canary release</em>) con el 10 % de las solicitudes y un interruptor para regresar a la versión 2 en minutos. La Puerta 3 de su proceso exigía la comparación en sombra, la prueba del interruptor y la firma del Director de Riesgos.</p>
+<p>Si <strong>usas IA de terceros</strong>, el despliegue es tuyo aunque el sistema no lo sea. Contadores Alameda, antes de abrir a sus clientes el chatbot "Alma" de BotNorte, definió una lista de salida: preguntas frecuentes revisadas por un contador, aviso de que se conversa con una IA desde el primer mensaje, enlace al aviso de privacidad, traspaso a una persona probado, piloto con 20 clientes y aprobación de la Socia directora. Para el asistente de IA integrado en su suite de ofimática, el "despliegue" fue la configuración: quién lo tiene habilitado, qué etiquetas de sensibilidad respeta y cómo se trata la información según el contrato del proveedor.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.31 (separación de entornos) y A.8.32 (gestión de cambios). Reutilizas los entornos separados, las ventanas de cambio y las aprobaciones; agregas los criterios de liberación propios del modelo, las estrategias graduales y la perspectiva de las personas afectadas.</p>
+<p>Lo que <strong>no</strong> exige: integración y despliegue continuos sofisticados. Una lista de verificación firmada y un plan de reversión probado son defendibles.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Plan de despliegue por sistema o por versión, con responsables y fecha.</li>
+<li>Lista de verificación de salida a producción con los criterios de liberación.</li>
+<li>Aprobación registrada de la dirección o del dueño del sistema.</li>
+<li>Plan de reversión documentado.</li>
+<li>Comunicación y capacitación a usuarios y áreas afectadas.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Despliegues en sombra y canarios estandarizados, con comparación automática de resultados.</li>
+<li>Registro de modelos que impide promover una versión sin aprobaciones.</li>
+<li>Interruptor de apagado probado periódicamente.</li>
+<li>Verificación automática de compatibilidad entre versión de modelo y versión de software.</li>
+<li>Revisión posterior al despliegue a fecha fija (por ejemplo, a 30 o 90 días).</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:4"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><input id="__tabbed_6_4" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_6_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_6_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_6_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Plan de despliegue aprobado.</li>
+<li>Lista de verificación de salida firmada.</li>
+<li>Resultados del despliegue en sombra o piloto.</li>
+<li>Registro de aprobación de la dirección.</li>
+<li>Evidencia de prueba del plan de reversión.</li>
+<li>Comunicaciones enviadas a usuarios o clientes.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Me muestra el plan de despliegue de la última versión que pusieron en producción?</li>
+<li>¿Qué criterios verificaron antes de liberar y quién los firmó?</li>
+<li>¿En qué se diferencia el entorno de pruebas del de producción y cómo lo controlaron?</li>
+<li>¿Cómo revierten a la versión anterior? ¿Lo han probado?</li>
+<li>¿Despliegan el modelo y el software por separado? ¿Cómo controlan la compatibilidad?</li>
+<li>¿Cómo prepararon a los usuarios y a las personas afectadas?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Despliegues "urgentes" sin lista de verificación ni aprobación.</li>
+<li>Plan de reversión que nunca se ha probado.</li>
+<li>Ignorar las diferencias entre el entorno de entrenamiento y el de producción.</li>
+<li>Activar funciones de IA de un proveedor sin revisar su configuración.</li>
+<li>No avisar a los usuarios de cambios que alteran el comportamiento del sistema.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no pone en marcha ningún sistema de IA: por ejemplo, solo usa funciones de IA incluidas por defecto en software comercial, sin configuración propia, y su evaluación de riesgos no lo requiere. Es un caso raro. Ejemplo de redacción: <em>"No aplica: la organización no despliega sistemas de IA; las funciones de IA incluidas en el software comercial se habilitan con la configuración del fabricante y su uso se rige por A.9."</em></p>
+<p><strong>No se justifica si…</strong> pones en producción cualquier sistema de IA, propio o de terceros, frente a tu personal, tus clientes o el público.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../clausulas/c8-operacion/#c-8-2">8.2</a> · Controles: <a href="#a-6-2-4">A.6.2.4</a>, <a href="#a-6-2-6">A.6.2.6</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a9-uso/#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: A.8.31, A.8.32 · <strong>Anexo B:</strong> la guía pide considerar las diferencias entre el entorno de desarrollo y el de despliegue, si los componentes se despliegan por separado, los requisitos que deben cumplirse antes de liberar y la perspectiva de las partes interesadas.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-6">A.6.2.6 Operación y monitoreo<a class="headerlink" href="#a-6-2-6" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Un sistema de IA puede degradarse sin "romperse": sigue respondiendo, pero cada vez peor, o empieza a usarse para cosas para las que no se diseñó. Este control asegura que alguien lo vigila, lo repara, lo actualiza y da soporte a sus usuarios mientras esté en uso.</p>
+<p><strong>En la práctica.</strong> El control fija un piso de cuatro elementos que debes definir y documentar para la operación continua: <strong>monitoreo, reparaciones, actualizaciones y soporte</strong>, tanto del sistema como de su desempeño.</p>
+<p><strong>Monitoreo.</strong> Abarca dos capas. La técnica: errores, caídas, latencia, tiempos de espera. Y la de desempeño con datos de producción: ¿el sistema sigue haciendo bien su trabajo con los datos reales? En un asistente, eso se mide con la tasa de consultas resueltas, la tasa de traspaso a humano, las quejas y la calificación de los usuarios; en un modelo de clasificación, con tasas de error y niveles de confianza. También se vigilan los compromisos con clientes y las obligaciones legales aplicables.</p>
+<p><strong>Deriva y reentrenamiento.</strong> El desempeño cambia aunque nadie toque el modelo. La <strong>deriva de datos</strong> (<em>data drift</em>) ocurre cuando cambia la distribución de las entradas: Monarca lanza una campaña con creadores de contenido y de pronto llegan solicitantes mucho más jóvenes de lo que vio el modelo. La <strong>deriva de concepto</strong> (<em>concept drift</em>) ocurre cuando cambia la relación entre las entradas y el resultado: con el mismo ingreso, el riesgo de incumplir sube porque aumentaron las tasas de interés o la inflación. Indicadores como el índice de estabilidad poblacional (PSI) ayudan a detectarla, y conviene fijar umbrales que disparen una revisión, un reentrenamiento o una revalidación según <a href="#a-6-2-4">A.6.2.4</a>. Si el sistema usa <strong>aprendizaje continuo</strong> (<em>continuous learning</em>) y se reentrena con sus propios datos de producción, el monitoreo debe comprobar que sigue cumpliendo sus objetivos de diseño; ojo con los bucles de retroalimentación: Monarca solo observa si pagan las personas a las que aprobó, nunca las que rechazó.</p>
+<p><strong>Reparaciones y actualizaciones.</strong> Necesitas un proceso para responder a errores y fallas, y otro para actualizar el sistema, ya sea porque evoluciona, porque apareció un problema crítico o por causas externas como la queja de un cliente o un cambio legal. Ese proceso debe decir qué componentes cambian, con qué calendario y qué se comunica a los usuarios (notas de versión claras). Los cambios de uso previsto o de funcionalidad necesitan su propio procedimiento, con comunicación a los usuarios. Un caso típico para quien provee IA: cuando el proveedor del modelo fundacional anuncia que retirará una versión, Conversa Labs vuelve a correr su batería de evaluación con la versión nueva antes de migrar a sus clientes.</p>
+<p><strong>Soporte.</strong> Puede ser interno, externo o mixto. Define cómo contactan los usuarios a quien puede ayudarles, cómo se reportan problemas e incidentes (en relación con <a href="../a8-informacion-partes-interesadas/#a-8-3">A.8.3</a> y <a href="../a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>), los <strong>acuerdos de nivel de servicio</strong> (<em>service level agreements</em>, SLA) y las métricas de soporte.</p>
+<p><strong>Usos no previstos y amenazas propias de la IA.</strong> Cuando el sistema se empieza a usar para algo distinto de su propósito, hay que evaluar si ese uso es adecuado. En Monarca, el área de cobranza comenzó a usar el score de originación para priorizar llamadas: un uso no previsto que se detuvo hasta evaluarlo (<a href="../a9-uso/#a-9-4">A.9.4</a>). Además, la operación debe vigilar las amenazas de seguridad propias de la IA: envenenamiento de datos, extracción del modelo (limitar la tasa de consultas y detectar patrones anómalos en la API), inversión del modelo e inyección de instrucciones. Lo ideal es que esas alertas lleguen al mismo centro de monitoreo de seguridad que ya tienes.</p>
+<p>Si <strong>usas IA de terceros</strong>, no puedes reentrenar el modelo, pero sí vigilar sus resultados. Contadores Alameda revisa cada semana una muestra de 30 conversaciones de Alma con un contador, lleva un indicador de respuestas incorrectas sobre plazos fiscales y actualiza las preguntas frecuentes antes de la temporada de declaraciones anuales. El soporte técnico lo da BotNorte conforme a un SLA contratado; el soporte a los clientes del despacho lo da su Líder de atención.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.16 (monitoreo), A.8.6 (capacidad) y A.8.8 (vulnerabilidades técnicas). Reutilizas la infraestructura de monitoreo, la mesa de ayuda y la gestión de cambios; agregas el monitoreo de desempeño estadístico, la deriva, los usos no previstos y las amenazas propias de la IA.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Manual de operación por sistema con monitoreo, reparaciones, actualizaciones y soporte.</li>
+<li>Indicadores de desempeño en producción con umbrales y responsable de revisarlos.</li>
+<li>Revisión periódica de deriva (mensual o trimestral según el riesgo).</li>
+<li>Proceso de actualización con notas de versión para los usuarios.</li>
+<li>Canal de soporte publicado y SLA definidos (internos o con el proveedor).</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Tableros en tiempo real de desempeño, deriva y equidad por segmento, con alertas automáticas.</li>
+<li>Reentrenamiento disparado por umbrales y siempre seguido de revalidación.</li>
+<li>Detección de usos no previstos mediante análisis de patrones de uso.</li>
+<li>Alertas de amenazas propias de la IA integradas al centro de operaciones de seguridad.</li>
+<li>Revisión trimestral del desempeño operativo con el dueño del sistema y su presentación en la revisión por la dirección.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><input id="__tabbed_7_4" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_7_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_7_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_7_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Tableros de monitoreo con umbrales y su historial de alertas.</li>
+<li>Reportes de deriva y decisiones tomadas (reentrenar, revalidar, no actuar).</li>
+<li>Registros de reparaciones y actualizaciones con notas de versión.</li>
+<li>Tickets de soporte y cumplimiento de SLA.</li>
+<li>Registro de usos no previstos detectados y su evaluación.</li>
+<li>Reglas de detección de amenazas propias de la IA.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cómo saben hoy que el sistema sigue funcionando como se esperaba con datos reales?</li>
+<li>¿Qué umbral de deriva dispara una acción y cuándo se activó por última vez?</li>
+<li>¿Me muestra la última actualización del sistema y lo que se comunicó a los usuarios?</li>
+<li>¿Cómo reporta un usuario un problema y en cuánto tiempo se atiende?</li>
+<li>¿Han detectado usos no previstos del sistema? ¿Qué hicieron?</li>
+<li>¿Qué amenazas propias de la IA monitorean y cómo?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Monitorear solo la disponibilidad del servicio y no la calidad de sus resultados.</li>
+<li>Reentrenar automáticamente sin volver a validar.</li>
+<li>Cambiar de versión de modelo fundacional sin repetir la evaluación.</li>
+<li>Tableros que nadie revisa ni tienen dueño.</li>
+<li>No tener forma de saber si el sistema se está usando para otra cosa.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> prácticamente nunca, mientras haya un sistema de IA en uso dentro del alcance. Una excepción defendible sería un sistema retirado que aún aparece en el inventario. Ejemplo de redacción: <em>"No aplica temporalmente: no hay sistemas de IA en operación dentro del alcance; el control se reactivará al aprobarse el primer despliegue."</em></p>
+<p><strong>No se justifica si…</strong> tienes algún sistema de IA en operación, sea propio o de terceros. Que el proveedor monitoree su servicio no sustituye que tú vigiles los resultados en tu contexto.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>, <a href="../../clausulas/c10-mejora/#c-10-2">10.2</a> · Controles: <a href="#a-6-2-4">A.6.2.4</a>, <a href="#a-6-2-8">A.6.2.8</a>, <a href="../a7-datos/#a-7-4">A.7.4</a>, <a href="../a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../a9-uso/#a-9-4">A.9.4</a> · ISO 27001: A.8.16, A.8.6, A.8.8 · Normas: ISO/IEC 23053 (marco para sistemas de IA basados en aprendizaje automático) · <strong>Anexo B:</strong> la guía detalla qué considerar en cada uno de los elementos mínimos de operación (monitoreo con datos de producción, aprendizaje continuo y deriva, reparaciones, actualizaciones y su comunicación, soporte, usos no previstos y amenazas de seguridad propias de la IA) y da orientación sobre cómo elegir criterios y métricas de desempeño.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-7">A.6.2.7 Documentación técnica<a class="headerlink" href="#a-6-2-7" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que cada parte interesada reciba la documentación técnica que necesita para usar, integrar, operar o supervisar el sistema, ni más ni menos, y en una forma que pueda aprovechar.</p>
+<p><strong>En la práctica.</strong> El primer paso no es escribir, sino <strong>decidir quién necesita qué</strong>. Una matriz sencilla de audiencias por documentos ordena el trabajo:</p>
+<table>
+<thead>
+<tr>
+<th>Audiencia</th>
+<th>Qué suele necesitar</th>
+<th>Ejemplo en Conversa Labs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usuarios y operadores</td>
+<td>Propósito, instrucciones de uso, limitaciones, cómo influir en el resultado o anularlo</td>
+<td>Manual del panel para los agentes humanos que reciben traspasos</td>
+</tr>
+<tr>
+<td>Socios e integradores</td>
+<td>Supuestos técnicos (entorno, datos esperados, capacidades de hardware y software), API, límites</td>
+<td>Guía de integración con el CRM de una aseguradora</td>
+</tr>
+<tr>
+<td>Clientes</td>
+<td>Configuración segura, tasas de error conocidas, responsabilidades compartidas</td>
+<td>Ficha del asistente y guía de buenas prácticas para la base de conocimiento</td>
+</tr>
+<tr>
+<td>Autoridades supervisoras</td>
+<td>Diseño, datos, gestión de riesgos, verificación y validación, cambios, evaluación de impacto</td>
+<td>Expediente técnico preparado a solicitud, bajo confidencialidad</td>
+</tr>
+<tr>
+<td>Equipo de operación</td>
+<td>Procedimientos operativos, observabilidad, plan de manejo de fallas, roles</td>
+<td>Manual de guardia (<em>runbook</em>) del servicio</td>
+</tr>
+</tbody>
+</table>
+<p>Más allá de la descripción del sistema, la documentación técnica debería cubrir su <strong>funcionamiento responsable</strong>, y aquí está lo que más se olvida:</p>
+<ul>
+<li><strong>Plan de manejo de fallas:</strong> cómo revertir a una versión anterior, qué funciones se pueden desactivar sin apagar todo, cómo se actualiza y cómo y cuándo se avisa a clientes y usuarios.</li>
+<li><strong>Observabilidad</strong> (<em>observability</em>): cómo se sabe que el sistema opera dentro de sus márgenes normales y qué se hace cuando sale de ellos.</li>
+<li><strong>Procedimientos operativos:</strong> qué eventos se vigilan, cómo se priorizan y revisan los registros (<a href="#a-6-2-8">A.6.2.8</a>) y cómo se investiga y previene una falla.</li>
+<li><strong>Roles:</strong> quién opera el sistema y quién rinde cuentas por su uso, sobre todo ante fallas y actualizaciones.</li>
+<li><strong>Historial de cambios:</strong> qué cambió en operación, incluidos usos previstos nuevos o modificados.</li>
+</ul>
+<p>La pieza central suele ser una <strong><a href="../../plantillas/#ficha-del-sistema">ficha del sistema</a></strong> o <strong>ficha del modelo</strong> (<em>model card</em>): un documento de pocas páginas con propósito, uso previsto y fuera de alcance, datos, métricas por segmento, limitaciones conocidas, supervisión humana y contacto. De ella se derivan las vistas para cada audiencia. La documentación debe mantenerse <strong>actualizada y exacta</strong>, y la aprueba la dirección que corresponda; un documento con la versión del modelo anterior es peor que no tener ninguno, porque genera confianza falsa.</p>
+<p><strong>No confundas este control con <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>.</strong> A.8.2 se enfoca en la información para los usuarios, en lenguaje comprensible; A.6.2.7 es la documentación técnica para quien necesita profundidad. Se traslapan y conviene que salgan de una misma fuente, pero no son lo mismo. Si alguno de tus sistemas cae en la categoría de alto riesgo del <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>, su artículo 11 exige documentación técnica con contenido específico, y una buena implementación de este control te deja bien posicionado.</p>
+<p><strong>Frente a ISO 27001.</strong> Lo clasificamos como <em>nuevo</em>: aunque ISO 27001 A.5.37 (procedimientos operativos documentados) cubre una parte (los procedimientos para el equipo de operación), no pide determinar la documentación por tipo de parte interesada ni describir limitaciones técnicas, tasas de error o supuestos de un modelo.</p>
+<p>Lo que <strong>no</strong> exige: publicar los detalles internos del sistema ni revelar secretos industriales. Tú decides qué recibe cada audiencia y en qué forma; a una autoridad puedes entregarla bajo reserva.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Matriz de audiencias y documentos técnicos por sistema.</li>
+<li>Ficha del sistema o del modelo vigente y aprobada.</li>
+<li>Plan de manejo de fallas con procedimiento de reversión.</li>
+<li>Procedimientos operativos con eventos a vigilar y roles.</li>
+<li>Control de versiones que liga cada documento a la versión del modelo.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Fichas generadas en parte automáticamente desde el registro de modelos y los reportes de evaluación.</li>
+<li>Portal de documentación para clientes con historial de versiones y notas de cambio.</li>
+<li>Expediente técnico listo para entregar a una autoridad en días, no en semanas.</li>
+<li>Revisión de la documentación como criterio obligatorio de liberación.</li>
+<li>Retroalimentación de usuarios sobre la utilidad de la documentación.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:4"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><input id="__tabbed_8_4" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_8_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_8_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_8_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Matriz de audiencias y documentación técnica.</li>
+<li>Ficha del sistema o del modelo con fecha y aprobación.</li>
+<li>Manual de operación y plan de manejo de fallas.</li>
+<li>Documentación entregada a clientes o socios, con acuse.</li>
+<li>Historial de versiones de la documentación ligado a las versiones del sistema.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cómo decidieron qué documentación técnica necesita cada tipo de parte interesada?</li>
+<li>¿Me muestra la ficha de este modelo? ¿Corresponde a la versión en producción?</li>
+<li>¿Qué harían si el modelo empieza a fallar mañana? ¿Dónde está escrito?</li>
+<li>¿Qué documentación entregan a sus clientes y cómo les avisan de cambios?</li>
+<li>¿Quién aprueba la documentación técnica?</li>
+<li>Si una autoridad la pidiera, ¿qué entregarían y en cuánto tiempo?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Un solo documento para todos los públicos, demasiado técnico para unos y superficial para otros.</li>
+<li>Fichas de modelo que no se actualizan tras el reentrenamiento.</li>
+<li>Ningún plan de reversión ni de desactivación parcial.</li>
+<li>Limitaciones técnicas omitidas por miedo a que "se vean mal" ante los clientes.</li>
+<li>Documentación sin aprobación ni control de versiones.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no desarrolla ni provee sistemas de IA; la documentación técnica de los sistemas que usa la produce el proveedor. Ejemplo de redacción: <em>"No aplica: la organización no desarrolla ni provee sistemas de IA. La documentación técnica de los sistemas adquiridos se obtiene de los proveedores conforme a A.10.3 y se pone a disposición del personal que los opera."</em></p>
+<p><strong>No se justifica si…</strong> desarrollas o provees IA, aunque tus clientes nunca te hayan pedido documentación: el control pide que tú determines qué necesitan.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a> · Controles: <a href="#a-6-2-3">A.6.2.3</a>, <a href="#a-6-2-8">A.6.2.8</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001: A.5.37 · Normas: ISO/IEC 22989 (etapas del ciclo de vida a las que se asocia la documentación) · <strong>Anexo B:</strong> la guía sugiere contenidos para la documentación técnica general, para la de cada etapa del ciclo de vida y para la del funcionamiento responsable del sistema, y pide que esté al día, sea exacta y cuente con aprobación.</p>
 <h2 class="dx-control obj-a6" id="a-6-2-8">A.6.2.8 Registro de eventos<a class="headerlink" href="#a-6-2-8" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Poder reconstruir qué hizo el sistema, cuándo, con qué versión y con qué datos, para detectar comportamientos fuera de lo previsto, investigar quejas e incidentes y demostrar trazabilidad.</p>
+<p><strong>En la práctica.</strong> El control deja que la organización decida en qué etapas del ciclo de vida registra eventos, pero fija un <strong>piso: como mínimo mientras el sistema está en uso</strong>. En desarrollo también conviene registrar (experimentos, entrenamientos, aprobaciones), pero lo no negociable es la operación. Los registros sirven para dos cosas: dar trazabilidad de que el sistema funciona como se pretendía y detectar cuando opera fuera de sus condiciones previstas, antes de que eso produzca resultados indeseados o afecte a alguien. Lo típico es registrar la fecha y hora de cada uso, los datos de entrada (o una referencia a ellos), la salida, la versión del modelo y las salidas fuera de rango.</p>
+<p><strong>Qué registrar en un asistente basado en un <abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr></strong>, como el de Conversa Labs, sin convertir la bitácora en un riesgo de privacidad:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Para qué sirve</th>
+<th>Cuidado de privacidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marca de tiempo, ID de conversación y de cliente</td>
+<td>Trazabilidad</td>
+<td>Identificadores seudónimos, no nombres ni teléfonos</td>
+</tr>
+<tr>
+<td>Instrucción del usuario (<em>prompt</em>) y respuesta</td>
+<td>Reconstruir qué dijo el asistente</td>
+<td>Enmascarar datos personales (CURP, teléfonos, números de póliza) antes de guardar; acceso restringido</td>
+</tr>
+<tr>
+<td>Versión del modelo, de la instrucción de sistema y de la configuración</td>
+<td>Saber qué versión respondió</td>
+<td>Sin datos personales</td>
+</tr>
+<tr>
+<td>Documentos recuperados de la base de conocimiento</td>
+<td>Explicar de dónde salió la respuesta</td>
+<td>Guardar referencias, no copias del contenido</td>
+</tr>
+<tr>
+<td>Activaciones de filtros y detecciones de inyección de instrucciones</td>
+<td>Seguridad y mejora de filtros</td>
+<td>Sin datos personales adicionales</td>
+</tr>
+<tr>
+<td>Traspaso a humano y su motivo</td>
+<td>Supervisión humana</td>
+<td>Igual que la conversación</td>
+</tr>
+<tr>
+<td>Latencia, consumo y errores</td>
+<td>Operación</td>
+<td>Sin datos personales</td>
+</tr>
+</tbody>
+</table>
+<p>En un modelo de decisión como el Score Monarca v3, el registro de cada solicitud incluye la versión del modelo, una instantánea de las variables de entrada, el score, la banda, los motivos generados, la decisión final y, en la banda gris, si el analista cambió el resultado y por qué. Ese registro es lo que permite atender una solicitud de reconsideración o responder a una queja ante la Condusef con hechos y no con suposiciones.</p>
+<p><strong>Retención.</strong> Los registros se conservan el tiempo que exija el uso previsto del sistema, dentro de tu política de retención de datos y de los requisitos legales aplicables. Hay una tensión real: más retención significa más capacidad de investigar, pero también más riesgo de privacidad. Conviene definir plazos por tipo de registro (por ejemplo, conversaciones completas enmascaradas por pocos meses y registros de decisiones crediticias durante el plazo que determine tu área legal) y aplicar la supresión de forma automática.</p>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>Si tus registros contienen datos personales, son un tratamiento más: deben estar cubiertos por el aviso de privacidad, limitarse a lo necesario para su finalidad y protegerse con medidas de seguridad, y los titulares pueden ejercer sus derechos <abbr title="Derechos de Acceso, Rectificación, Cancelación y Oposición sobre datos personales.">ARCO</abbr> sobre ellos. En México aplica la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>; en otros países de la región, sus propias leyes de protección de datos. Revisa la página de <a href="../../integracion/contexto-mexico-latam/">contexto de México y Latinoamérica</a>.</p>
+</div>
+<p><strong>Requisitos adicionales en algunas jurisdicciones.</strong> Ciertos países exigen más en materia de bitácoras para algunos tipos de sistema, en especial los que identifican personas por sus rasgos biométricos. El <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>, por ejemplo, dedica su artículo 12 a los registros de los sistemas de alto riesgo y fija contenidos mínimos específicos para ciertos sistemas de identificación biométrica. Si operas o vendes en otras jurisdicciones, inclúyelas en tu análisis de requisitos legales.</p>
+<p><strong>Si usas IA de terceros</strong>, los registros suelen estar del lado del proveedor. Lo que te toca es asegurarte de que existen, de que puedes acceder a ellos y de que se conservan el tiempo que necesitas. Contadores Alameda pactó con BotNorte la exportación mensual de las conversaciones de Alma con datos enmascarados y activó la bitácora de auditoría de su suite de ofimática para saber quién usa el asistente integrado.</p>
+<p><strong>Frente a ISO 27001.</strong> Es <em>similar</em> a ISO 27001 A.8.15 (registro de eventos) y A.8.17 (sincronización de relojes). Reutilizas tu infraestructura de registros (por ejemplo, tu sistema de gestión de eventos de seguridad), la protección contra alteración y la sincronización horaria; agregas los campos propios de la IA (versión del modelo, entradas y salidas, intervenciones humanas, salidas fuera de rango) y las reglas de privacidad sobre el contenido.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Decisión documentada de qué etapas registran eventos, con la operación como mínimo.</li>
+<li>Lista de campos que se registran por sistema, incluida la versión del modelo.</li>
+<li>Reglas de enmascaramiento o minimización de datos personales en los registros.</li>
+<li>Plazos de retención por tipo de registro, alineados con la política de retención.</li>
+<li>Acceso restringido y protección contra alteración.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Registros estructurados y centralizados, consultables por ID de decisión o de conversación.</li>
+<li>Alertas automáticas sobre salidas fuera de rango y patrones anómalos.</li>
+<li>Enmascaramiento automático de datos personales antes de almacenar.</li>
+<li>Supresión automática al vencer el plazo de retención.</li>
+<li>Pruebas periódicas de que es posible reconstruir una decisión concreta de punta a punta.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><input id="__tabbed_9_4" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_9_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_9_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_9_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Configuración de registros del sistema y lista de campos.</li>
+<li>Muestra de registros reales (con datos enmascarados).</li>
+<li>Política de retención aplicada a los registros de IA.</li>
+<li>Controles de acceso y de integridad sobre los registros.</li>
+<li>Cláusulas contractuales de acceso a registros con proveedores.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿En qué etapas del ciclo de vida registran eventos y por qué decidieron así?</li>
+<li>Tome esta decisión de hace tres meses: ¿puede reconstruir qué versión del modelo la tomó y con qué datos?</li>
+<li>¿Qué datos personales quedan en los registros y cómo los protegen?</li>
+<li>¿Cuánto tiempo conservan cada tipo de registro y en qué se basa ese plazo?</li>
+<li>Si el proveedor guarda los registros, ¿cómo acceden a ellos?</li>
+<li>¿Quién revisa los registros y con qué frecuencia?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Registrar solo eventos técnicos (errores, caídas) y no las decisiones del sistema.</li>
+<li>Guardar instrucciones y respuestas completas con datos personales sin enmascarar y sin plazo de retención.</li>
+<li>No registrar la versión del modelo, lo que impide saber cuál tomó una decisión.</li>
+<li>Depender de los registros del proveedor sin haber verificado que existen o que se pueden exportar.</li>
+<li>Registros que nadie revisa hasta que llega una queja.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no hay sistemas de IA en uso dentro del alcance, lo cual es muy raro en una organización que busca certificarse. Ejemplo de redacción: <em>"No aplica temporalmente: no hay sistemas de IA en operación dentro del alcance del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>."</em></p>
+<p><strong>No se justifica si…</strong> algún sistema de IA está en uso: el control fija el registro durante el uso como mínimo. Que los registros los guarde el proveedor no te exime; cambia cómo cumples, no si cumples.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> · Controles: <a href="#a-6-2-6">A.6.2.6</a>, <a href="#a-6-2-7">A.6.2.7</a>, <a href="../a7-datos/#a-7-5">A.7.5</a>, <a href="../a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: A.8.15, A.8.17 · <strong>Anexo B:</strong> la guía explica para qué sirve el registro automático de eventos durante la operación, da ejemplos del tipo de información que puede registrarse, liga la retención al uso previsto y a la política de la organización, y advierte que ciertos sistemas, como los biométricos, pueden tener requisitos adicionales según la jurisdicción.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Contadores Alameda</label><label for="__tabbed_10_2">Monarca Crédito</label><label for="__tabbed_10_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Como despacho que <strong>solo usa IA de terceros</strong>, Contadores Alameda incluyó en su Declaración de Aplicabilidad tres controles de A.6: <a href="#a-6-2-5">A.6.2.5</a>, <a href="#a-6-2-6">A.6.2.6</a> y <a href="#a-6-2-8">A.6.2.8</a>. Excluyó los otros seis con una justificación común: no diseña ni desarrolla sistemas de IA, y lo que exige a sus proveedores se gestiona con <a href="../a10-terceros/#a-10-3">A.10.3</a>.</p>
+<p>Su matiz está en "Alma", el chatbot de WhatsApp: el despacho cura la base de preguntas frecuentes que alimenta las respuestas, y eso es una capa propia que puede equivocarse. En lugar de adoptar todo <a href="#a-6-2-4">A.6.2.4</a>, metió una <strong>prueba de aceptación</strong> en sus criterios de liberación: antes de publicar cada cambio a las preguntas frecuentes, un contador hace 60 preguntas de prueba sobre plazos, trámites y citas, y la versión solo se publica si no hay respuestas incorrectas sobre fechas fiscales. En operación, revisa una muestra semanal de conversaciones y pactó con BotNorte la exportación mensual de registros con datos enmascarados.</p>
+<p><a href="../../casos-practicos/pyme-usa-ia-generativa/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+<div class="tabbed-block">
+<p>Como fintech que <strong>desarrolla</strong> su propio modelo de originación, Monarca Crédito aplica los nueve controles. El Score Monarca v3 recorrió cinco puertas de aprobación: el Comité de Modelos aprobó el diseño y los datos, y después la liberación, con validación independiente; el Director de Riesgos firmó la salida a producción tras cuatro semanas en sombra y un canario del 10 %.</p>
+<p>Los criterios de liberación incluyeron métricas de discriminación y calibración, y brechas máximas de aprobación entre segmentos (sexo, edad y entidad federativa, medidos aunque no entren al modelo). En operación, un tablero mensual vigila la deriva con PSI y la equidad por segmento; un umbral superado obliga a revalidar. Cada decisión queda registrada con versión del modelo, variables, score, banda, motivos y, si la hubo, la intervención del analista, lo que sostiene las reconsideraciones que solicitan los clientes.</p>
+<p><a href="../../casos-practicos/fintech-scoring/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+<div class="tabbed-block">
+<p>Como empresa que <strong>provee</strong> una plataforma de asistentes y <strong>desarrolla</strong> su orquestación, Conversa Labs también aplica los nueve controles, con énfasis en la evaluación. Mantiene un <strong>conjunto dorado</strong> de preguntas por vertical (seguros, universidades, comercio) con respuestas validadas, y mide en cada versión la tasa de respuestas fundamentadas en la base de conocimiento, las respuestas inventadas y los traspasos a humano.</p>
+<p>Antes de cada liberación corre una batería de <strong>pruebas adversarias de inyección de instrucciones</strong>, directas e indirectas (instrucciones escondidas en documentos cargados a la base de conocimiento), en español con variantes de México, Colombia y Chile; el criterio de liberación exige que ningún ataque consiga revelar la instrucción de sistema ni datos de otro cliente. Cuando su proveedor de modelo fundacional anuncia una versión nueva, repite toda la evaluación antes de migrar. Entrega a cada cliente una ficha del asistente y una guía de configuración segura, y registra instrucciones y respuestas con datos personales enmascarados.</p>
+<p><a href="../../casos-practicos/empresa-desarrolla-chatbot/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a>: etapas, puertas de aprobación y evidencia mínima por puerta (<a href="#a-6-1-3">A.6.1.3</a>).</li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: base de la documentación técnica (<a href="#a-6-2-7">A.6.2.7</a>) y de la información para usuarios.</li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>: para ejecutarla en las puertas del proceso.</li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a>: para las reparaciones y fallas de <a href="#a-6-2-6">A.6.2.6</a>.</li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a>: con ejemplos de justificación de exclusión para quien solo usa IA de terceros.</li>
+<li>Páginas relacionadas: <a href="../a7-datos/">A.7 · Datos para sistemas de IA</a>, <a href="../a5-evaluacion-de-impacto/">A.5 · Evaluación de impactos</a>, <a href="../../clausulas/c8-operacion/">cláusula 8 · Operación</a>, <a href="../../integracion/con-iso27001/">integración con ISO 27001</a> y <a href="../../fundamentos/familia-de-normas/">familia de normas de IA</a>.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

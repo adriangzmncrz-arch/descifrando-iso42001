@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Cómo evaluar el impacto de un sistema de IA en personas, grupos y sociedades según ISO/IEC 42001 (A.5.2 a A.5.5) con disparadores, consulta, escala de severidad, documentación, retención y relación con la EIPD.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1539,6 +1539,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-flujo-de-una-evaluacion-de-impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo de una evaluación de impacto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#una-escala-de-severidad-para-dejar-de-discutir-en-abstracto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una escala de severidad para dejar de discutir en abstracto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-de-impacto-eipd-e-isoiec-42005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación de impacto, EIPD e ISO/IEC 42005
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-5-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1576,6 +1631,28 @@
     <span class="md-ellipsis">
       
         A.5.5 Evaluación de impactos sociales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2757,24 +2834,715 @@
 
 
 <h1 id="a5-evaluacion-de-impactos-de-los-sistemas-de-ia">A.5 · Evaluación de impactos de los sistemas de IA<a class="headerlink" href="#a5-evaluacion-de-impactos-de-los-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a5">A.5 · Impacto</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 4 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 32 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a5">
+<p><strong>El objetivo, en palabras simples:</strong> antes de lanzar un sistema de IA, y mientras siga operando, voltear a ver a quienes no están en la sala de juntas: las personas que serán evaluadas, atendidas o excluidas por él, y la sociedad en la que vive. Valorar qué les puede pasar, para bien y para mal, y dejarlo por escrito.</p>
+<p><strong>Lo que está en juego:</strong> sin este ejercicio, la organización solo mide lo que le duele a ella (multas, reputación, pérdidas) y pasa por alto los daños que sufren otros: un crédito negado sin motivo, un paciente mal priorizado, un trabajador vigilado de más, una comunidad entera que queda fuera de un servicio. Esos daños tarde o temprano regresan como quejas, demandas, sanciones o pérdida de confianza.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.5 convierte la evaluación de impacto que exige la cláusula 6.1.4 en un proceso concreto: cuándo se hace, quién participa, qué se revisa en las personas y en la sociedad, cómo se valora la severidad y cómo se documenta y conserva el resultado.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>En México, muchas obras (una carretera, una planta industrial, un desarrollo turístico en la costa) requieren antes una manifestación de impacto ambiental. Ese estudio no pregunta si la constructora va a ganar dinero; pregunta qué le pasará al río, a la fauna y a las comunidades vecinas. La evaluación de impacto del sistema de IA (<em>AI system impact assessment</em>) es el equivalente para los algoritmos: un análisis que se hace <strong>desde afuera hacia adentro</strong>, poniendo en el centro a quienes reciben las consecuencias del sistema.</p>
+<p>Esto es lo que más distingue a ISO/IEC 42001 de ISO/IEC 27001. En un sistema de gestión de seguridad de la información, el riesgo se mide casi siempre contra la organización: pérdida de confidencialidad, integridad o disponibilidad de <em>sus</em> activos. En un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, además de la evaluación de riesgos (6.1.2), existe una evaluación separada que se pregunta qué les puede pasar a <strong>personas, grupos y sociedades</strong>. Ambas se tocan, pero no son lo mismo: un sesgo que nadie ha detectado puede no representar un riesgo financiero inmediato para la empresa y, al mismo tiempo, cerrar puertas a miles de personas. La diferencia está explicada con calma en <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>.</p>
+<p><strong>¿Cómo se reparten el trabajo las cláusulas y los controles?</strong> En nuestra lectura, la relación es la siguiente:</p>
+<ul>
+<li>La cláusula <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> obliga a <strong>definir el proceso</strong>: valorar las consecuencias del despliegue, del uso previsto y del uso indebido previsible; considerar el contexto técnico y social y las jurisdicciones aplicables; documentar el resultado; poder compartirlo con partes interesadas cuando corresponda, y usarlo como insumo de la evaluación de riesgos.</li>
+<li>La cláusula <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a> obliga a <strong>ejecutarlo</strong>: a intervalos planificados y cuando se propongan cambios significativos, conservando los resultados.</li>
+<li>Los controles de A.5 <strong>detallan el contenido</strong>: A.5.2 pide que el proceso cubra todo el ciclo de vida; A.5.3 añade que la documentación se conserve durante un plazo definido; A.5.4 y A.5.5 piden analizar y documentar, por separado, el impacto en personas y grupos y el impacto en la sociedad.</li>
+</ul>
+<p>Dicho de otro modo: las cláusulas dicen <em>que</em> hay que evaluar impactos; los controles de A.5 dicen <em>qué contiene</em> una evaluación bien hecha. Por eso, aunque en teoría podrías excluir algún control de A.5 en la Declaración de Aplicabilidad, la obligación de evaluar impactos seguiría viva por 6.1.4 y 8.4.</p>
+<p><strong>Cómo cambia según tu rol:</strong></p>
+<ul>
+<li><strong>Si usas IA de terceros</strong>, evalúas el impacto del uso que <em>tú</em> le das, en <em>tu</em> contexto. El proveedor no conoce a tus clientes ni a tus empleados; tú sí. Lo que necesites saber del sistema (limitaciones, datos de entrenamiento, pruebas de sesgo) lo pides al proveedor mediante <a href="../a10-terceros/#a-10-3">A.10.3</a>.</li>
+<li><strong>Si desarrollas IA</strong>, la evaluación empieza en el diseño y sus resultados se convierten en requisitos (<a href="../a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>), en criterios de prueba (<a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) y en necesidades de supervisión humana.</li>
+<li><strong>Si provees IA a clientes</strong>, no conoces todos los contextos de uso, pero sí puedes anticipar los usos previsibles (y los indebidos) y entregar a tus clientes la información que necesitan para hacer su propia evaluación (<a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a>).</li>
+</ul>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-5-2">A.5.2 Proceso de evaluación de impacto</a></td>
+<td>Tener un método repetible para valorar consecuencias en personas, grupos y sociedades durante todo el ciclo de vida</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-5-3">A.5.3 Documentación de las evaluaciones de impacto</a></td>
+<td>Dejar por escrito cada resultado y conservarlo durante un plazo definido</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-5-4">A.5.4 Evaluación del impacto en individuos o grupos</a></td>
+<td>Analizar efectos en derechos, oportunidades, seguridad y bienestar de personas concretas</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-5-5">A.5.5 Evaluación de impactos sociales</a></td>
+<td>Analizar efectos amplios: ambientales, económicos, democráticos, de salud y culturales</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<h2 id="el-flujo-de-una-evaluacion-de-impacto">El flujo de una evaluación de impacto<a class="headerlink" href="#el-flujo-de-una-evaluacion-de-impacto" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La norma no impone un método, pero cualquier evaluación defendible sigue más o menos este recorrido. Fíjate en dos cosas: el ciclo se cierra (la evaluación se repite cuando algo cambia) y el resultado sale hacia dos destinos, la evaluación de riesgos y las decisiones de diseño y uso.</p>
+<pre class="mermaid"><code>flowchart TD
+  A["Disparador: sistema nuevo, cambio significativo o revisión programada"] --&gt; B["Cribado: ¿requiere evaluación completa o breve?"]
+  B --&gt; C["Describir el sistema: propósito, uso previsto, contexto y jurisdicciones"]
+  C --&gt; D["Identificar personas, grupos y sociedades que pueden verse afectados"]
+  D --&gt; E["Consultar a expertos, usuarios y representantes de grupos afectados"]
+  E --&gt; F["Analizar impactos positivos y negativos, incluido el uso indebido previsible"]
+  F --&gt; G["Valorar severidad: gravedad, alcance y reversibilidad"]
+  G --&gt; H{"¿Impacto aceptable según los criterios?"}
+  H --&gt;|No| I["Mitigar, rediseñar o limitar el uso"]
+  I --&gt; G
+  H --&gt;|Sí| J["Documentar, aprobar y fijar fecha de revisión"]
+  J --&gt; K["Alimentar la evaluación de riesgos 6.1.2"]
+  J --&gt; L["Informar diseño, supervisión humana y comunicación"]
+  J --&gt; M["Revisión periódica o ante cambios: 8.4"]
+  M --&gt; A</code></pre>
+<h2 id="una-escala-de-severidad-para-dejar-de-discutir-en-abstracto">Una escala de severidad para dejar de discutir en abstracto<a class="headerlink" href="#una-escala-de-severidad-para-dejar-de-discutir-en-abstracto" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Sin una escala, las reuniones de evaluación de impacto se vuelven debates de opinión ("a mí no me parece grave"). La cláusula 6.1.1 pide que la organización establezca criterios que sirvan, entre otras cosas, para evaluar impactos; la norma no dice cuáles. Te proponemos una escala de tres dimensiones que funciona bien en la práctica. <strong>Es una propuesta del autor, no un requisito de la norma</strong>: ajústala a tu sector y a tus criterios de riesgo.</p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Gravedad: ¿qué tan profundo es el daño?</th>
+<th>Alcance: ¿a cuántas personas toca?</th>
+<th>Reversibilidad: ¿se puede deshacer?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Bajo</strong></td>
+<td>Molestia o pérdida de tiempo menor; la persona sigue su camino sin consecuencias</td>
+<td>Casos aislados o una sola persona</td>
+<td>Se corrige en el momento y sin costo para la persona</td>
+</tr>
+<tr>
+<td><strong>2 · Moderado</strong></td>
+<td>Pérdida económica pequeña y recuperable, trato desigual que no cierra puertas, estrés pasajero</td>
+<td>Un grupo acotado (decenas o cientos de personas)</td>
+<td>Se corrige en días, pero la persona tiene que reclamar</td>
+</tr>
+<tr>
+<td><strong>3 · Alto</strong></td>
+<td>Se niega un servicio importante (crédito, empleo, salud, educación), daño económico relevante o afectación a un derecho</td>
+<td>Miles de personas, o todo un grupo en situación de vulnerabilidad</td>
+<td>Revertirlo exige un proceso formal y largo; parte del daño permanece</td>
+</tr>
+<tr>
+<td><strong>4 · Crítico</strong></td>
+<td>Daño a la vida, a la integridad física o a la libertad, o pérdida del patrimonio básico de una familia</td>
+<td>Una población, una región o la sociedad en su conjunto</td>
+<td>Irreversible: no hay forma de devolver a la persona a su situación previa</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cómo combinarlas.</strong> Suma los tres niveles (resultado entre 3 y 12) y aplica dos reglas de piso:</p>
+<table>
+<thead>
+<tr>
+<th>Puntaje</th>
+<th>Severidad</th>
+<th>Qué conviene hacer</th>
+<th>Quién aprueba</th>
+<th>Revisión sugerida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3–4</td>
+<td>Baja</td>
+<td>Documentar y monitorear</td>
+<td>Dueño del sistema</td>
+<td>Anual o ante cambios</td>
+</tr>
+<tr>
+<td>5–7</td>
+<td>Media</td>
+<td>Medidas de mitigación con responsable y fecha</td>
+<td>Dueño del sistema y responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Semestral</td>
+</tr>
+<tr>
+<td>8–9</td>
+<td>Alta</td>
+<td>Mitigar antes de liberar; reforzar la supervisión humana; consulta externa</td>
+<td>Comité de IA o alta dirección</td>
+<td>Trimestral y ante cualquier cambio</td>
+</tr>
+<tr>
+<td>10–12</td>
+<td>Crítica</td>
+<td>No liberar hasta reducirla; replantear el diseño o el uso</td>
+<td>Alta dirección, por escrito</td>
+<td>Continua</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Piso por gravedad:</strong> si la gravedad es 4, el resultado nunca baja de <em>Alta</em>, aunque el alcance sea mínimo. Una sola lesión grave basta.</li>
+<li><strong>Piso por vulnerabilidad:</strong> si el grupo expuesto tiene necesidades especiales de protección (niñas y niños, personas mayores, personas con discapacidad, trabajadores en relación de subordinación), sube un nivel la gravedad.</li>
+</ul>
+<p>Ejemplo rápido: si Score Monarca v3 rechazara de forma injustificada a solicitantes de ciertas entidades federativas, la gravedad sería 3 (se niega crédito), el alcance 3 (miles de solicitudes) y la reversibilidad 2 (existe reconsideración, pero la persona debe pedirla): 8 puntos, severidad <strong>Alta</strong>.</p>
+<h2 id="evaluacion-de-impacto-eipd-e-isoiec-42005">Evaluación de impacto, <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> e ISO/IEC 42005<a class="headerlink" href="#evaluacion-de-impacto-eipd-e-isoiec-42005" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Una duda frecuente es si la evaluación de impacto de IA es lo mismo que la evaluación de impacto en la protección de datos personales (<abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>; <em>data protection impact assessment</em>, <abbr title="Data protection impact assessment: evaluación de impacto en la protección de datos personales.">DPIA</abbr>). <strong>No lo es, aunque se parecen y conviene que se hablen.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th><abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr></th>
+<th>Evaluación de impacto del sistema de IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pregunta central</td>
+<td>¿Qué riesgos genera este tratamiento de datos personales para sus titulares?</td>
+<td>¿Qué consecuencias puede tener este sistema de IA para personas, grupos y sociedades?</td>
+</tr>
+<tr>
+<td>Quién está en el centro</td>
+<td>Titulares de los datos</td>
+<td>Cualquier persona afectada, tenga o no datos en el sistema, y la sociedad</td>
+</tr>
+<tr>
+<td>Tipos de daño</td>
+<td>Pérdida de control sobre los datos, vulneraciones, usos incompatibles</td>
+<td>Además de lo anterior: discriminación, exclusión, daño físico, pérdida económica, efectos ambientales, democráticos o culturales</td>
+</tr>
+<tr>
+<td>Qué la detona</td>
+<td>Tratamientos de alto riesgo según la ley de datos aplicable</td>
+<td>Los criterios de tu proceso (6.1.4, A.5.2)</td>
+</tr>
+<tr>
+<td>Marco de referencia</td>
+<td>Legislación de datos personales</td>
+<td>ISO/IEC 42001 y, como guía, ISO/IEC 42005</td>
+</tr>
+</tbody>
+</table>
+<p>Hay casos en que la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> no ve nada y la evaluación de IA sí: un sistema de visión que guía un montacargas no trata datos personales, pero puede lesionar a alguien. Y al revés: la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> entra a detalles (base de licitud, transferencias, plazos de conservación) que la evaluación de IA solo toca de pasada.</p>
+<p><strong>¿Se pueden integrar?</strong> Sí, y te lo recomendamos cuando el sistema trata datos personales. La guía del Anexo B sugiere revisar si las evaluaciones por disciplina que ya haces (privacidad, seguridad física, seguridad de la información) incorporan suficientemente las consideraciones de IA, y el Anexo D menciona que los aspectos de privacidad del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> pueden integrarse con un sistema de gestión de privacidad basado en ISO/IEC 27701. Dos formas prácticas de hacerlo:</p>
+<ol>
+<li><strong>Un solo formato con módulos:</strong> una sección común (descripción del sistema, flujos de datos, partes interesadas) y módulos específicos (privacidad, impacto en personas, impacto social).</li>
+<li><strong>Dos documentos con referencias cruzadas:</strong> la evaluación de IA remite a la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> para los temas de datos personales y viceversa, con el mismo identificador de sistema.</li>
+</ol>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>La <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> aparece en leyes de datos personales de varios países de la región o en las aplicables al sector público, con alcances distintos. Revisa en <a href="../../integracion/contexto-mexico-latam/">Contexto México y Latinoamérica</a> qué aplica a tu caso. Si ya tienes un formato de <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>, no lo tires: es el mejor punto de partida para tu evaluación de impacto de IA. Si además operas en la Unión Europea, el Reglamento de IA prevé, para ciertos responsables del despliegue de sistemas de alto riesgo, una evaluación de impacto en los derechos fundamentales; consulta <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</p>
+</div>
+<p><strong>¿Y ISO/IEC 42005?</strong> Es la norma de la familia dedicada específicamente a la evaluación de impacto de sistemas de IA. Da orientación sobre cómo planear, realizar y documentar estas evaluaciones. ISO/IEC 42001 no te obliga a usarla y la 42005 no es una norma certificable por sí sola, pero es la referencia natural si quieres un método más detallado que el de esta página. Para el análisis de riesgos e impactos sobre la propia organización, la referencia es ISO/IEC 23894. Ambas se describen en <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>.</p>
 <h2 class="dx-control obj-a5" id="a-5-2">A.5.2 Proceso de evaluación de impacto<a class="headerlink" href="#a-5-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Evitar que la evaluación de impacto dependa de quién esté de turno o de que alguien se acuerde de hacerla. Un proceso definido garantiza que los sistemas relevantes se evalúen con el mismo rigor, en los momentos correctos y a lo largo de todo su ciclo de vida, y que el resultado sirva para decidir algo.</p>
+<p><strong>En la práctica.</strong> Un proceso no es un formulario. Es un conjunto de reglas que responde cinco preguntas: <strong>cuándo</strong> se evalúa, <strong>quién</strong> participa, <strong>con qué método y criterios</strong>, <strong>a quiénes</strong> se considera afectados y <strong>qué se hace con el resultado</strong>. El método puede seguir la misma lógica que ya conoces de la gestión de riesgos al estilo ISO 31000 (identificar, analizar, valorar, tratar y comunicar), solo que mirando a las personas y a la sociedad en lugar de a los activos de la organización. Conviene que la evaluación considere los datos con los que se construyó el sistema, la tecnología que usa y su funcionalidad completa, no solo la pantalla que ve el usuario.</p>
+<p><strong>Cuándo hacerla: los disparadores.</strong> Te recomendamos un cribado (<em>screening</em>) breve para todos los sistemas del inventario y una evaluación completa solo cuando el cribado lo indique. Las preguntas del cribado pueden agruparse en cuatro familias:</p>
+<ul>
+<li><strong>Criticidad del propósito y del contexto.</strong> ¿El sistema decide o recomienda sobre crédito, empleo, salud, educación, vivienda, seguros, acceso a programas públicos o seguridad de las personas? ¿Se usa en un contexto donde un error es difícil de detectar?</li>
+<li><strong>Complejidad y nivel de automatización.</strong> ¿Es un modelo opaco? ¿Toma decisiones sin una persona en el circuito? ¿Puede ejecutar acciones por sí mismo (por ejemplo, un agente que envía correos o modifica registros)?</li>
+<li><strong>Sensibilidad de los datos.</strong> ¿Procesa datos sensibles, biométricos, de salud, financieros o de menores de edad? ¿Combina fuentes que juntas revelan más de lo que revela cada una?</li>
+<li><strong>Cambios significativos en cualquiera de los anteriores.</strong> Un nuevo uso, una nueva población de usuarios, un nuevo país, el cambio del modelo de base por parte del proveedor, un reentrenamiento con fuentes nuevas, un incidente grave o una reforma legal.</li>
+</ul>
+<p>Si alguna respuesta es "sí", corresponde evaluación completa; si todas son "no", basta una evaluación breve que documente esa conclusión. Además, la cláusula 8.4 pide repetirla a intervalos planificados, así que conviene que cada evaluación salga con fecha de próxima revisión.</p>
+<p><strong>Quién la hace y con quién consulta.</strong> Te sugerimos que el <strong>dueño del sistema</strong> sea responsable de la evaluación, que el área de riesgos o cumplimiento la <strong>facilite</strong> (aporta el método y cuida la consistencia) y que participe un equipo multidisciplinario: negocio, ciencia de datos o TI, privacidad, legal y, cuando haya trabajadores afectados, recursos humanos. Para sistemas de impacto medio o alto, la evaluación mejora mucho al consultar a tres tipos de voces: <strong>expertos</strong> (del dominio, de ética, de accesibilidad), <strong>usuarios</strong> que operan el sistema y <strong>representantes de los grupos afectados</strong> (una asociación de usuarios, una organización de personas con discapacidad, la representación de los trabajadores, un comité de pacientes). Un principio útil: quien evalúa no debería ser solo quien gana con el lanzamiento.</p>
+<p>Por ejemplo, una aseguradora en Colombia que quiere ordenar automáticamente la fila de reclamaciones de gastos médicos activa tres disparadores a la vez (salud, dinero y diagnósticos como datos sensibles). Hace evaluación completa y consulta a médicos dictaminadores, a ajustadores y a asegurados a quienes se les rechazó una reclamación el año anterior.</p>
+<p><strong>Uso indebido previsible.</strong> La evaluación no se limita al uso que imaginó el equipo de producto. Pregúntate qué haría alguien razonablemente previsible: un empleado que usa el chatbot de preguntas frecuentes para dar asesoría fiscal personalizada, un área de cobranza que reutiliza el <em>score</em> de originación para decidir a quién presionar más, un cliente que intenta engañar al sistema para obtener datos de otra persona. No se trata de imaginar cualquier catástrofe, sino lo que la experiencia y el sentido común dicen que va a pasar.</p>
+<p><strong>Matices por rol y qué NO exige.</strong> Si usas IA de terceros, el proceso puede ser más ligero, pero no desaparece: el contexto de uso es tuyo. Si provees IA, incluye los usos previsibles de tus clientes. La norma <strong>no</strong> exige un formato específico, consultas públicas ni publicar los resultados; exige un proceso definido, proporcional y que realmente se aplique.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Procedimiento breve aprobado con disparadores, roles, método, criterios de severidad y frecuencia de revisión.</li>
+<li>Cuestionario de cribado aplicado a todos los sistemas del inventario.</li>
+<li>Un formato único de evaluación (puedes partir de nuestra <a href="../../plantillas/#evaluacion-de-impacto">plantilla</a>).</li>
+<li>Escala de severidad con criterios de aceptación ligados a los criterios de riesgo de 6.1.1.</li>
+<li>Regla explícita de que los resultados alimentan el registro de riesgos.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Cribado integrado al flujo de nuevos proyectos y de compras: no hay orden de compra de una herramienta con IA sin cribado.</li>
+<li>Panel consultivo con representantes de usuarios o grupos afectados para sistemas de impacto alto.</li>
+<li><abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>, evaluación de seguridad y evaluación de impacto de IA en un solo flujo.</li>
+<li>Reevaluaciones disparadas desde el monitoreo (deriva, quejas, incidentes) de <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>.</li>
+<li>Revisión de calidad de las evaluaciones por una segunda línea o por auditoría interna.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Procedimiento de evaluación de impacto aprobado y versionado.</li>
+<li>Cuestionarios de cribado de todos los sistemas del inventario.</li>
+<li>Evaluaciones completas de los sistemas que lo ameritaron.</li>
+<li>Minutas o notas de las consultas con expertos, usuarios o representantes.</li>
+<li>Registro de riesgos con referencias cruzadas a la evaluación de impacto.</li>
+<li>Evidencia de una reevaluación tras un cambio significativo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cómo deciden si un sistema necesita evaluación de impacto completa? Muéstreme el cribado de los sistemas del inventario.</li>
+<li>¿Qué cambios disparan una reevaluación? Deme un ejemplo de los últimos doce meses.</li>
+<li>¿Quién participó en la evaluación de este sistema? ¿A quién consultaron fuera del equipo técnico?</li>
+<li>¿Cómo consideraron el uso indebido previsible?</li>
+<li>Muéstreme cómo un resultado de la evaluación de impacto se reflejó en la evaluación de riesgos o en el diseño.</li>
+<li>¿Con qué criterios deciden si un impacto es aceptable y quién lo aprueba?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Confundir la evaluación de impacto con la de riesgos y llenar una sola matriz que solo mira a la organización.</li>
+<li>Evaluar una vez, antes del lanzamiento, y nunca más.</li>
+<li>Dejar la evaluación solo al equipo técnico (o solo a cumplimiento), sin escuchar a nadie que viva las consecuencias.</li>
+<li>Considerar únicamente el uso previsto y olvidar el uso indebido previsible.</li>
+<li>Concluir algo en la evaluación y que nada cambie: ni el diseño, ni los riesgos, ni la supervisión.</li>
+<li>Diseñar un procedimiento tan pesado que todos buscan cómo evitarlo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> en nuestra lectura, prácticamente nunca. Las cláusulas 6.1.4 y 8.4 son requisitos obligatorios y ya exigen tener y aplicar el proceso; excluir A.5.2 no te libera de ellos. Lo que sí puedes hacer es aplicarlo de forma proporcional. Redacción sugerida en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>: <em>"Aplicable. Se implementa mediante el procedimiento de evaluación de impacto, con cribado de dos niveles: evaluación breve para sistemas sin disparadores y completa para el resto."</em></p>
+<p><strong>No se justifica si…</strong> el argumento es "solo usamos IA de terceros" o "nuestros sistemas son de bajo riesgo". Que un sistema tenga bajo impacto es el <em>resultado</em> de la evaluación, no una razón para no hacerla.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a> · Controles: <a href="#a-5-3">A.5.3</a>, <a href="#a-5-4">A.5.4</a>, <a href="#a-5-5">A.5.5</a>, <a href="../a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../a9-uso/#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: sin control equivalente; puedes reutilizar la mecánica del proceso de riesgos de la cláusula 6.1.2 de 27001 · Normas: ISO/IEC 42005, ISO/IEC 23894, ISO 31000 · <strong>Anexo B:</strong> la guía B.5.2 orienta sobre las circunstancias que deberían detonar una evaluación, las etapas que puede tener el proceso, quién la realiza, cómo se aprovechan sus resultados en el diseño y el uso, y a quiénes considerar afectados; también advierte que el proceso puede variar según el rol de la organización y el dominio de aplicación.</p>
 <h2 class="dx-control obj-a5" id="a-5-3">A.5.3 Documentación de las evaluaciones de impacto<a class="headerlink" href="#a-5-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que lo que se analizó no se pierda: que se pueda demostrar, comparar en el tiempo, reutilizar y comunicar. Y que se conserve lo suficiente para responder preguntas futuras de auditores, clientes, autoridades o personas afectadas, incluso años después de una decisión.</p>
+<p><strong>En la práctica.</strong> El control pide dos cosas: documentar los <strong>resultados</strong> (no solo que "se hizo la evaluación") y conservarlos durante un <strong>periodo definido</strong>. La documentación tiene además un uso práctico que muchas organizaciones pasan por alto: es la fuente natural para decidir qué información se comunica a usuarios y otras partes interesadas (<a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>).</p>
+<p><strong>Qué registrar.</strong> Te proponemos que cada evaluación tenga, como mínimo, estas secciones:</p>
+<table>
+<thead>
+<tr>
+<th>Sección</th>
+<th>Qué contiene</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación</td>
+<td>Sistema, versión del sistema evaluada, fecha, personas que evaluaron, quién aprobó y fecha de próxima revisión</td>
+</tr>
+<tr>
+<td>Descripción y contexto</td>
+<td>Propósito, uso previsto, quiénes lo operan, en qué países, qué tan complejo es técnicamente y cómo se integra con otros procesos</td>
+</tr>
+<tr>
+<td>Usos indebidos</td>
+<td>Los usos inadecuados que razonablemente pueden ocurrir y cómo se previenen o detectan</td>
+</tr>
+<tr>
+<td>Personas y grupos</td>
+<td>Quiénes reciben las consecuencias, sus características demográficas pertinentes y los grupos con necesidades especiales de protección</td>
+</tr>
+<tr>
+<td>Impactos</td>
+<td>Positivos y negativos, en personas y en la sociedad, cada uno con su valoración de severidad</td>
+</tr>
+<tr>
+<td>Fallas previsibles</td>
+<td>Qué puede fallar, qué le pasaría a la gente si falla y qué se hizo para mitigarlo</td>
+</tr>
+<tr>
+<td>Papel de las personas</td>
+<td>Quién supervisa, con qué herramientas puede intervenir y cómo se pide una revisión humana</td>
+</tr>
+<tr>
+<td>Efectos en el personal</td>
+<td>Cómo cambian los puestos de trabajo y qué capacitación necesitan quienes operan el sistema</td>
+</tr>
+<tr>
+<td>Decisiones</td>
+<td>Medidas acordadas, responsables, fechas e impacto residual aceptado (con firma)</td>
+</tr>
+<tr>
+<td>Consultas y vínculos</td>
+<td>A quién se consultó y qué se recogió; referencias al registro de riesgos, a la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> y a la <a href="../../plantillas/#ficha-del-sistema">ficha del sistema</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cuánto tiempo conservarla.</strong> La norma deja el plazo a tu criterio, pero pide que esté definido. Te recomendamos esta regla: <strong>conserva cada versión durante toda la vida del sistema y, después de su retiro, al menos durante el plazo más largo en que alguien podría cuestionar una decisión que el sistema tomó o en que una autoridad podría pedirte cuentas.</strong> La razón es práctica: si una persona reclama hoy un rechazo de hace dos años, necesitas la evaluación que estaba vigente <em>en ese momento</em>, no la de hoy. Alinea el plazo con tu tabla de retención y con las obligaciones de conservación que ya tienes (fiscales, de datos personales, sectoriales). Y no conserves más datos personales de los necesarios: si la evaluación incluye nombres de personas consultadas, basta con su rol.</p>
+<p><strong>Versiones y disponibilidad.</strong> La evaluación es un documento vivo: cada reevaluación genera una versión nueva, sin sobrescribir la anterior. Aplica el control de información documentada que ya tienes para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>): quién puede editar, quién aprueba, dónde se guarda. La cláusula 6.1.4 permite que pongas los resultados a disposición de partes interesadas cuando corresponda, según lo que tú definas; en la práctica conviene tener dos niveles: la evaluación completa (interna) y un <strong>resumen</strong> para clientes, autoridades o el público.</p>
+<p>Por ejemplo, Contadores Alameda documentó la evaluación de Alma, su chatbot de WhatsApp, en seis páginas con estas secciones. La versión vigente (1.2) conserva el historial de las anteriores, y cada cambio tiene una nota breve: la 1.1 se emitió al descubrir que muchos dueños de micronegocios de mayor edad no notaban que hablaban con un asistente virtual. El despacho la conserva mientras Alma opere y cinco años después de su retiro, el plazo que fijó en su política interna para expedientes de clientes, y entregó un resumen de dos páginas al banco cliente que le envió el cuestionario sobre gobierno de IA.</p>
+<p><strong>Qué NO exige.</strong> No exige un documento único (puede ser un registro en una herramienta GRC), ni guardar las evaluaciones para siempre, ni publicarlas. Para quien usa IA de terceros, la documentación puede ser breve; para quien provee IA, conviene preparar desde el inicio una versión resumida que los clientes puedan usar en sus propias evaluaciones.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Plantilla única con las secciones mínimas de la tabla anterior.</li>
+<li>Cada evaluación con versión, fecha, autores y aprobación registrada.</li>
+<li>Repositorio controlado con historial de versiones, no correos ni carpetas personales.</li>
+<li>Plazo de conservación definido en la tabla de retención de la organización.</li>
+<li>Resumen para partes interesadas cuando el sistema las afecta directamente.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Evaluaciones como registros en una herramienta GRC, vinculadas a riesgos, controles e incidentes.</li>
+<li>Flujo de aprobación con firma electrónica y trazabilidad.</li>
+<li>Fichas de impacto públicas o para clientes, actualizadas con cada versión.</li>
+<li>Alertas automáticas de vencimiento de la fecha de revisión.</li>
+<li>Conservación inmutable (por ejemplo, almacenamiento de solo escritura) para sistemas de impacto alto.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Evaluaciones firmadas y versionadas, con historial completo.</li>
+<li>Tabla de retención que incluye la categoría "evaluaciones de impacto de IA" con su plazo y su fundamento.</li>
+<li>Permisos de acceso al repositorio de evaluaciones.</li>
+<li>Resúmenes entregados a clientes o publicados.</li>
+<li>Evidencia de eliminación segura al vencer el plazo, si ya ocurrió.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Muéstreme la evaluación vigente de este sistema y la versión anterior. ¿Qué cambió y por qué?</li>
+<li>¿Cuánto tiempo conservan estas evaluaciones y en qué se basa ese plazo?</li>
+<li>¿Dónde se guardan y quién puede modificarlas?</li>
+<li>Si una persona reclama hoy una decisión de hace dos años, ¿pueden recuperar la evaluación vigente en aquel momento?</li>
+<li>¿Qué parte de la evaluación comparten con usuarios, clientes o autoridades?</li>
+<li>¿Quién aprueba una evaluación y cómo queda constancia?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Sobrescribir la evaluación en cada actualización y perder el historial.</li>
+<li>Documentar el procedimiento, pero no los resultados concretos de cada sistema.</li>
+<li>Definir el plazo en abstracto ("el tiempo necesario") o no definirlo.</li>
+<li>Guardar evaluaciones en la computadora de quien las hizo o en un hilo de correo.</li>
+<li>Incluir datos personales innecesarios de las personas consultadas.</li>
+<li>Documentar solo impactos negativos y omitir los positivos que justifican el sistema.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> en nuestra lectura, no hay un escenario razonable. La cláusula 8.4 ya obliga a guardar evidencia de lo que arrojó cada evaluación; A.5.3 solo añade que el plazo de conservación esté definido. Excluirlo dejaría una no conformidad contra la cláusula de todos modos.</p>
+<p><strong>No se justifica si…</strong> el argumento es "la evaluación fue verbal en el comité" o "la información está en la cabeza del dueño del sistema". Lo que no está documentado no se puede demostrar ni reutilizar.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a> · Controles: <a href="#a-5-2">A.5.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a8-informacion-partes-interesadas/#a-8-5">A.8.5</a> · ISO 27001 A.5.33 (protección de registros) y la cláusula 7.5 de 27001: reutiliza tu control documental y tu tabla de retención, y agrega la categoría nueva · Normas: ISO/IEC 42005 · <strong>Anexo B:</strong> la guía B.5.3 explica que la documentación ayuda a decidir qué comunicar a usuarios y partes interesadas, que los plazos de conservación pueden seguir el calendario de retención de la organización o requisitos legales, y sugiere varios temas que conviene registrar en cada evaluación.</p>
 <h2 class="dx-control obj-a5" id="a-5-4">A.5.4 Evaluación del impacto en individuos o grupos<a class="headerlink" href="#a-5-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Mirar con lupa a las personas: qué le puede pasar a quien es evaluado, atendido, vigilado o excluido por el sistema, durante todo su ciclo de vida, con atención especial a quienes tienen menos capacidad de defenderse.</p>
+<p><strong>En la práctica.</strong> El punto de partida son tus propios compromisos: la política de IA (<a href="../a2-politicas/#a-2-2">A.2.2</a>), tus principios y tus objetivos. Si tu política dice que tratas a todos los solicitantes con equidad, la evaluación tiene que poner a prueba esa promesa. Luego identifica a <strong>todas</strong> las personas involucradas, no solo al usuario que opera el sistema: quien recibe la decisión (el solicitante de crédito), quien interactúa con el sistema sin saberlo (el cliente que escribe por WhatsApp), terceros que nunca lo usan pero sufren sus efectos (el aval de un crédito, la familia de un paciente). Estas personas tienen expectativas legítimas sobre el sistema (que funcione, que sea justo, que alguien responda) y conviene que la evaluación las identifique y decida cómo atenderlas.</p>
+<p><strong>Áreas de impacto.</strong> Usa las siguientes como lista de verificación; no todas aplican a todos los sistemas, pero conviene descartarlas de forma razonada y no por omisión:</p>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Pregunta guía</th>
+<th>Ejemplo latinoamericano</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Derechos humanos</td>
+<td>¿Puede limitar la intimidad, la libertad de expresión o de circulación, o la no discriminación?</td>
+<td>Un gobierno estatal que usa reconocimiento facial en el acceso a un estadio</td>
+</tr>
+<tr>
+<td>Equidad (<em>fairness</em>)</td>
+<td>¿Trata peor a un grupo sin una razón legítima?</td>
+<td>Un modelo de crédito con tasas de rechazo mucho mayores para mujeres</td>
+</tr>
+<tr>
+<td>Consecuencias económicas</td>
+<td>¿Puede hacer perder dinero, empleo, acceso a crédito o a beneficios?</td>
+<td>Un chatbot que da una fecha equivocada y el cliente paga recargos</td>
+</tr>
+<tr>
+<td>Salud y seguridad física</td>
+<td>¿Puede causar una lesión, retrasar una atención o generar daño psicológico?</td>
+<td>Un hospital en Chile que prioriza la fila de urgencias con un modelo</td>
+</tr>
+<tr>
+<td>Privacidad y seguridad</td>
+<td>¿Expone datos, permite inferir aspectos íntimos o abre la puerta a fraudes?</td>
+<td>Un asistente que revela el estatus del trámite de otra persona</td>
+</tr>
+<tr>
+<td>Transparencia y explicabilidad</td>
+<td>¿La persona sabe que interviene una IA y puede entender por qué obtuvo ese resultado?</td>
+<td>Un rechazo de crédito sin un motivo comprensible</td>
+</tr>
+<tr>
+<td>Rendición de cuentas (<em>accountability</em>)</td>
+<td>¿Hay alguien a quien reclamar y que pueda corregir el resultado?</td>
+<td>Un solicitante rechazado que no tiene a quién pedir una revisión</td>
+</tr>
+<tr>
+<td>Accesibilidad</td>
+<td>¿Pueden usarlo personas con discapacidad, personas mayores, personas con baja conectividad o hablantes de lenguas indígenas?</td>
+<td>Una app que exige verificación de identidad por video con buena señal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grupos con necesidades de protección.</strong> La guía de la norma menciona expresamente a niñas y niños, personas mayores, personas con discapacidad y trabajadores (estos últimos por la relación de subordinación: es difícil negarse a un sistema que impone el empleador). En nuestra lectura, la lista no es cerrada; en Latinoamérica conviene añadir, según el caso, a pueblos indígenas, personas migrantes, población no bancarizada y personas con baja alfabetización digital. Para estos grupos, la escala de severidad sube un nivel.</p>
+<p><strong>Cómo consultar.</strong> Para sistemas de impacto medio o alto, recoge evidencia de personas reales: entrevistas con operadores, pruebas con usuarios (incluidas personas mayores o con discapacidad), grupos focales y revisión de quejas históricas; para Monarca Crédito, las quejas recibidas por su unidad de atención a usuarios y por la Condusef son una fuente valiosa.</p>
+<p><strong>Ejemplo: Score Monarca v3.</strong> La evaluación de los solicitantes de crédito identificó: posible inequidad por sexo, edad y entidad federativa aunque esas variables no se usen, porque el código postal puede funcionar como variable sustituta (<em>proxy</em>); consecuencias económicas serias si un rechazo injusto empuja a la persona hacia prestamistas informales; la necesidad de motivos de rechazo en lenguaje claro y de un canal real de reconsideración; riesgos de privacidad por los datos de uso de la app, y barreras de accesibilidad para personas mayores con poca huella digital. También documentó un <strong>impacto positivo</strong>: la inclusión de personas sin historial en el buró de crédito que la banca tradicional no atiende.</p>
+<p><strong>Matices por rol y qué NO exige.</strong> Si usas IA de terceros, piensa también en tus propios trabajadores: el asistente de ofimática de Contadores Alameda no decide sobre clientes, pero si sus métricas de uso se emplearan para evaluar la productividad del personal, el impacto en los trabajadores cambiaría por completo. La norma <strong>no</strong> exige eliminar todo impacto negativo (exige identificarlo, valorarlo y decidir de forma consciente), ni métricas de equidad concretas, ni consultas públicas.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Sección de impactos en personas dentro de la plantilla, con las áreas de impacto como lista de verificación.</li>
+<li>Identificación explícita de quiénes son los afectados, además de los usuarios.</li>
+<li>Revisión de grupos con necesidades especiales de protección.</li>
+<li>Al menos una consulta documentada con usuarios u operadores para sistemas de impacto medio o alto.</li>
+<li>Valoración de severidad por impacto y una medida asociada a cada impacto relevante.</li>
+<li>Vínculo con la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> cuando hay datos personales.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Métricas de equidad por segmento integradas a la validación (<a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) y al monitoreo.</li>
+<li>Panel consultivo con representantes de grupos afectados.</li>
+<li>Pruebas de usabilidad y accesibilidad con personas mayores y con discapacidad.</li>
+<li>Análisis continuo de quejas y reclamaciones como fuente de nuevos impactos.</li>
+<li>Debida diligencia en derechos humanos alineada con los Principios Rectores de la ONU sobre las empresas y los derechos humanos.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Sección de impactos en personas y grupos, con valoración de severidad.</li>
+<li>Minutas o notas de consultas con expertos, usuarios o representantes.</li>
+<li>Resultados de pruebas de sesgo por segmento.</li>
+<li>Plan de mitigación con responsables y fechas.</li>
+<li>Evidencia de un canal de reconsideración o de quejas en funcionamiento.</li>
+<li>Resultados de pruebas de accesibilidad.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Quiénes son las personas afectadas por este sistema, además de los usuarios directos?</li>
+<li>¿Qué grupos con necesidades especiales de protección identificaron y qué hicieron al respecto?</li>
+<li>¿A quién consultaron y qué cambió gracias a esa consulta?</li>
+<li>¿Cómo evaluaron la equidad? Muéstreme resultados por segmento.</li>
+<li>Si una persona no está de acuerdo con el resultado, ¿qué puede hacer? Muéstreme un caso real.</li>
+<li>¿Qué impactos positivos identificaron y cómo saben si se materializan?</li>
+<li>¿Cómo se relaciona esta evaluación con la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Pensar solo en quien opera el sistema y olvidar a quien recibe la decisión.</li>
+<li>Concluir que no hay sesgo porque "no usamos la variable sexo", sin revisar variables sustitutas.</li>
+<li>Tratar la accesibilidad como un tema de diseño gráfico.</li>
+<li>Ignorar a los propios trabajadores como grupo afectado.</li>
+<li>Marcar "no aplica" en todas las áreas de impacto sin ningún análisis.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> en nuestra lectura, solo en casos muy acotados donde ningún sistema del alcance interactúa con personas ni produce resultados que lleguen a ellas. Aun así, conviene aplicarlo con una conclusión breve. Ejemplo de redacción, si se decide excluir: <em>"Excluido. El único sistema en alcance optimiza la temperatura del centro de datos; no procesa datos personales ni genera decisiones o contenidos dirigidos a personas. La evaluación de impacto de 6.1.4 lo confirma."</em></p>
+<p><strong>No se justifica si…</strong> el sistema decide, recomienda, clasifica o conversa con personas, aunque sea un producto de terceros y aunque una persona revise el resultado al final.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> · Controles: <a href="../a2-politicas/#a-2-2">A.2.2</a>, <a href="#a-5-2">A.5.2</a>, <a href="#a-5-5">A.5.5</a>, <a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../a7-datos/#a-7-4">A.7.4</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a9-uso/#a-9-2">A.9.2</a> · ISO 27001 A.5.34 (privacidad y protección de datos personales): cubre una de las áreas, no todas · Normas: ISO/IEC 42005, ISO/IEC TR 24027 (sesgo), ISO/IEC 27701 · <strong>Anexo B:</strong> la guía B.5.4 pide partir de los principios, políticas y objetivos de IA de la organización, tener en cuenta las expectativas de las personas y las necesidades de protección de ciertos grupos, ofrece una lista no exhaustiva de áreas de impacto y recomienda consultar a expertos y usuarios cuando haga falta.</p>
 <h2 class="dx-control obj-a5" id="a-5-5">A.5.5 Evaluación de impactos sociales<a class="headerlink" href="#a-5-5" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Levantar la vista más allá de las personas concretas: cómo el sistema, multiplicado por miles o millones de interacciones, puede cambiar el ambiente, la economía, la vida democrática, la salud pública o la cultura, para bien o para mal.</p>
+<p><strong>En la práctica.</strong> La diferencia con <a href="#a-5-4">A.5.4</a> es la <strong>escala y la agregación</strong>. Hay daños que ninguna persona en lo individual podría reclamar, pero que existen: el deterioro de la confianza en la información pública, el consumo de agua de los centros de datos en una región con estrés hídrico, la desaparición gradual de empleos en un sector. Y hay beneficios del mismo tipo. Los impactos sociales varían mucho según la organización y el tipo de sistema, así que conviene que la evaluación sea específica, no un ensayo genérico sobre la IA y la humanidad.</p>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Impacto negativo posible</th>
+<th>Impacto positivo posible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Económica (acceso a servicios financieros, empleo, mercados, recaudación)</td>
+<td>Exclusión crediticia de regiones enteras; desplazamiento de empleos en centros de contacto</td>
+<td>Inclusión financiera de micronegocios; formalización; trámites más rápidos</td>
+</tr>
+<tr>
+<td>Ambiental (energía, agua, emisiones, recursos naturales)</td>
+<td>Huella del cómputo para entrenar y consultar modelos grandes</td>
+<td>Rutas de reparto optimizadas; menos desperdicio de alimentos en el comercio minorista</td>
+</tr>
+<tr>
+<td>Salud pública (acceso, diagnóstico, daño físico o psicológico)</td>
+<td>Un asistente que da consejos de salud peligrosos a miles de personas</td>
+<td>Detección temprana en zonas rurales con pocos especialistas</td>
+</tr>
+<tr>
+<td>Vida democrática, gobierno y justicia</td>
+<td>Videos falsos (<em>deepfakes</em>) de candidatos; información electoral falsa repetida por asistentes; sesgos en sistemas de justicia o seguridad</td>
+<td>Trámites públicos explicados en lenguaje claro; acceso a la información</td>
+</tr>
+<tr>
+<td>Cultura, valores y cohesión social</td>
+<td>Modelos que refuerzan estereotipos o invisibilizan lenguas indígenas y variantes regionales del español</td>
+<td>Traducción y preservación de lenguas originarias; contenidos accesibles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uso indebido y daños históricos.</strong> Pregúntate cómo podrían usar tu sistema actores con malas intenciones para causar un daño colectivo (campañas de desinformación, fraude masivo, acoso coordinado) y si el sistema podría <strong>reforzar desigualdades históricas</strong>: por ejemplo, un modelo de crédito que reproduce la exclusión que ya sufrían ciertas colonias o municipios porque aprendió de decisiones del pasado. La pregunta tiene también un lado positivo: ¿puede el sistema ayudar a corregir esos daños, abriendo el acceso a quien antes no lo tenía? La guía de la norma pide poner en la balanza beneficios y perjuicios, no solo estos últimos.</p>
+<p><strong>El impacto ambiental, sin excusas.</strong> Muchas organizaciones lo omiten porque "no tenemos datos exactos". No hace falta un análisis de ciclo de vida completo para un chatbot de preguntas frecuentes; basta con preguntar al proveedor por la información de consumo energético que publique, elegir modelos de tamaño proporcional a la tarea y dejar constancia del razonamiento. Conecta este análisis con tu estrategia de sostenibilidad y, si es pertinente, con la consideración de cambio climático que pide la cláusula <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>. El Anexo C, por cierto, menciona el impacto ambiental como posible objetivo de IA.</p>
+<p><strong>Ejemplo: Conversa Labs.</strong> Como proveedor de una plataforma usada por aseguradoras, universidades y comercios en cuatro países, Conversa tiene impactos sociales que ninguno de sus clientes ve por separado. Su evaluación identificó: efecto en el empleo de centros de contacto (negativo si los clientes sustituyen agentes; positivo si los liberan de tareas repetitivas y Conversa ofrece traspaso a agente humano); riesgo de información errónea a escala (una universidad que responde mal sobre becas a miles de aspirantes); riesgo de uso para campañas políticas o mensajes engañosos, que se atendió con una política de uso aceptable en los contratos; sesgo hacia un español "neutro" que entiende mal a usuarios de ciertas regiones, y un consumo de cómputo que se reduce eligiendo modelos más pequeños para tareas simples.</p>
+<p><strong>Matices por rol y qué NO exige.</strong> Si usas IA de terceros con pocos usuarios, esta sección puede ser breve y concluir que el impacto social no es significativo, siempre con razones. Si provees IA o desarrollas sistemas de gran alcance, la escala hace que este análisis importe más. La norma <strong>no</strong> exige cuantificar con precisión la huella de carbono ni resolver problemas sociales; exige evaluarlos y documentarlos a lo largo del ciclo de vida.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Sección de impactos sociales en la plantilla, con las cinco dimensiones como guía.</li>
+<li>Análisis explícito de usos indebidos con efecto colectivo.</li>
+<li>Una pregunta documentada al proveedor sobre huella ambiental, o una estimación propia razonada.</li>
+<li>Registro de los impactos positivos esperados y de cómo se comprobará que ocurren.</li>
+<li>Conclusión proporcional y firmada, aunque sea "impacto social bajo, por estas razones".</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Integración con la estrategia de sostenibilidad y con el informe ESG de la organización.</li>
+<li>Métricas de cómputo, energía y, cuando sea posible, agua por sistema.</li>
+<li>Política de uso aceptable para clientes que prohíba usos con daño social.</li>
+<li>Vigilancia de tendencias regulatorias y sociales que cambien la valoración.</li>
+<li>Consulta con academia u organizaciones de la sociedad civil para sistemas de gran alcance.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_4_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_4_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Sección de impactos sociales de la evaluación, con valoración.</li>
+<li>Análisis de usos indebidos con efecto colectivo.</li>
+<li>Datos o declaraciones del proveedor sobre consumo de cómputo o energía.</li>
+<li>Referencia cruzada con la estrategia de sostenibilidad.</li>
+<li>Cláusulas de uso aceptable en contratos con clientes.</li>
+<li>Minuta del comité que aprobó la conclusión.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué efectos podría tener este sistema más allá de las personas que lo usan?</li>
+<li>¿Cómo podría usarse para causar daño colectivo y qué hicieron para prevenirlo?</li>
+<li>¿Consideraron el impacto ambiental? ¿Con qué datos o supuestos?</li>
+<li>¿Qué impactos positivos esperan y cómo sabrán si se materializan?</li>
+<li>¿Revisaron si el sistema podría reforzar desigualdades históricas?</li>
+<li>¿Cómo se conecta este análisis con su estrategia de sostenibilidad?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Escribir párrafos genéricos sobre "la IA y la sociedad" sin relación con el sistema concreto.</li>
+<li>Omitir el impacto ambiental por falta de datos exactos.</li>
+<li>Ver solo lo negativo y no documentar los beneficios que justifican el sistema.</li>
+<li>Suponer que una organización pequeña no puede tener impacto social.</li>
+<li>No reevaluar cuando el sistema escala de cientos a cientos de miles de usuarios.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> rara vez. La cláusula 6.1.4 ya pide considerar a las sociedades, así que excluir A.5.5 deja un hueco difícil de defender. Concluir que el impacto social no es significativo es válido, y eso es <em>aplicar</em> el control, no excluirlo. Redacción sugerida en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>: <em>"Aplicable. Para IA-01 e IA-03 el impacto social se valoró como no significativo; para IA-02 se identificaron dos impactos sociales con medidas asignadas (ver evaluaciones de impacto vigentes)."</em></p>
+<p><strong>No se justifica si…</strong> el sistema tiene muchos usuarios, interviene en servicios esenciales, genera contenidos que circulan públicamente o consume cómputo intensivo.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a> · Controles: <a href="#a-5-2">A.5.2</a>, <a href="#a-5-4">A.5.4</a>, <a href="../a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>, <a href="../a9-uso/#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001: sin control equivalente · Normas: ISO/IEC 42005, ISO/IEC TR 24368 (aspectos éticos y sociales de la IA) · <strong>Anexo B:</strong> la guía B.5.5 da ejemplos de dimensiones sociales que pueden verse afectadas, recuerda que los efectos pueden ser beneficiosos o perjudiciales y pide considerar la sostenibilidad ambiental en el marco de la estrategia de la organización, el mal uso de los sistemas y el riesgo de reforzar sesgos históricos.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Contadores Alameda</label><label for="__tabbed_5_2">Monarca Crédito</label><label for="__tabbed_5_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>El despacho aplicó el cribado a sus tres sistemas. <strong>IA-01</strong> (asistente de ofimática) recibió una evaluación breve centrada en privacidad (datos de nómina en las instrucciones) y en los trabajadores (se acordó que las métricas de uso no se usarán para evaluar desempeño). <strong>IA-02, Alma</strong>, recibió evaluación completa: atiende a clientes, da información con consecuencias fiscales y muchos usuarios no saben que hablan con una IA. <strong>IA-03</strong> (captura de CFDI) quedó con severidad media por el efecto de un error de extracción en la contabilidad del cliente.</p>
+<p>Para Alma, el impacto "fecha de declaración equivocada" se valoró con gravedad 2, alcance 2 y reversibilidad 2: 6 puntos, severidad media. Medidas: revisión mensual de la FAQ por un contador, fecha de última actualización visible en cada respuesta sobre plazos, traspaso a una persona para cualquier consulta de vencimientos y un aviso claro de que se conversa con un asistente virtual. Disparador definido: si BotNorte cambia el modelo de lenguaje que usa, Alma se reevalúa. Más detalle en el <a href="../../casos-practicos/pyme-usa-ia-generativa/">caso completo</a>.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Score Monarca v3</strong> tiene evaluación completa aprobada por el Comité de Modelos, integrada con la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> que coordina el Oficial de Privacidad. Se consultó a los analistas de la banda gris, a un grupo de clientes con micronegocio y a una especialista externa en equidad algorítmica. Los impactos descritos en <a href="#a-5-4">A.5.4</a> se valoraron como severidad alta y se tradujeron en requisitos: monitoreo de tasas de aprobación por segmento, motivos de rechazo en lenguaje claro y un procedimiento de revisión humana de rechazos automáticos.</p>
+<p>Disparadores definidos: cada reentrenamiento, cualquier cambio en los umbrales de las tres bandas y cambios económicos que alteren el perfil de los solicitantes. Aunque <strong>IA-03</strong> (detección de fraude) es de un proveedor, también se evaluó: un falso positivo bloquea a un solicitante legítimo sin explicación. Ver el <a href="../../casos-practicos/fintech-scoring/">caso completo</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>Como proveedor, Conversa evalúa la plataforma y los <strong>usos previsibles</strong> de sus clientes por sector (aseguradoras, universidades, comercios), incluidos los indebidos: suplantar a una persona, generar mensajes engañosos, usar el asistente para decisiones que deberían tomar personas. El resultado se refleja en la política de uso aceptable de los contratos y en una <strong>ficha de impacto</strong> que entrega a cada cliente para que haga su propia evaluación como responsable del despliegue.</p>
+<p>La evaluación se repite cada vez que el proveedor del modelo fundacional publica una versión nueva que Conversa decide adoptar. Para el cliente en España se añadió la revisión de las obligaciones de transparencia del Reglamento de IA de la UE. Ver el <a href="../../casos-practicos/empresa-desarrolla-chatbot/">caso completo</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>: plantilla con cribado, escala de severidad y secciones para A.5.3, A.5.4 y A.5.5.</li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a>: para llevar los resultados de la evaluación de impacto a la evaluación de riesgos.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>: punto de partida del cribado.</li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: descripción técnica a la que remite la evaluación.</li>
+<li><a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>: la diferencia conceptual, explicada paso a paso.</li>
+<li><a href="../../clausulas/c6-planificacion/#c-6-1-4">Cláusula 6.1.4</a> y <a href="../../clausulas/c8-operacion/#c-8-4">cláusula 8.4</a>: los requisitos que este objetivo desarrolla.</li>
+<li><a href="../a7-datos/">A.7 Datos para sistemas de IA</a>: los datos son una de las fuentes principales de impacto.</li>
+<li><a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>: ISO/IEC 42005 e ISO/IEC 23894.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

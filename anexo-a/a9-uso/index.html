@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Qué pide el objetivo A.9 de ISO/IEC 42001 sobre el uso de sistemas de IA - procesos para aprobar usos, objetivos de uso responsable con supervisión humana significativa y apego al uso previsto - con ejemplos de México y Latinoamérica.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1651,6 +1651,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-9-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1677,6 +1699,28 @@
     <span class="md-ellipsis">
       
         A.9.4 Uso previsto del sistema de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2746,22 +2790,380 @@
 
 
 <h1 id="a9-uso-de-sistemas-de-ia">A.9 · Uso de sistemas de IA<a class="headerlink" href="#a9-uso-de-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a9">A.9 · Uso</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 3 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 20 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a9">
+<p><strong>El objetivo, en palabras simples:</strong> que la organización use la IA a propósito y no por accidente: con un proceso para decidir qué usos se permiten, objetivos claros de uso responsable, personas que supervisan donde hace falta y apego a lo que cada sistema fue diseñado para hacer, todo conforme a sus propias políticas.</p>
+<p><strong>Lo que está en juego:</strong> la IA en la sombra que filtra datos de clientes, la supervisión humana de adorno que firma todo lo que propone el modelo y sistemas que terminan usándose para tareas para las que nunca se probaron.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.9 es el reglamento interno de la IA: quién autoriza cada uso, qué significa usarla bien, dónde vigila una persona y hasta dónde llega cada sistema.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Piensa en la flotilla de vehículos de una empresa. Antes de que alguien maneje un auto de la compañía hay un trámite: quién lo autoriza, qué licencia necesita, quién paga gasolina y mantenimiento. Hay reglas de manejo y alguien revisa que se cumplan. Y cada vehículo se usa para lo que fue hecho: nadie engancha una lancha a la camioneta de reparto solo porque "aguanta". Si cualquiera toma cualquier auto, para lo que sea y sin reglas, tarde o temprano habrá un choque y nadie sabrá quién respondía por él.</p>
+<p>A.9 traslada esa lógica a la IA con tres controles: <strong>A.9.2</strong> es el trámite (cómo se decide y aprueba un uso), <strong>A.9.3</strong> son las reglas de manejo y el copiloto (objetivos de uso responsable y supervisión humana) y <strong>A.9.4</strong> es usar cada vehículo para lo que fue diseñado (el uso previsto).</p>
+<p>Con la IA hay una peculiaridad: la flotilla llega sola. Herramientas gratuitas a un clic, funciones de IA que aparecen dentro del software que ya pagas, extensiones del navegador. Por eso los riesgos de este objetivo son muy cotidianos:</p>
+<ul>
+<li><strong>IA en la sombra</strong> (<em>shadow AI</em>): personas que usan herramientas no autorizadas con datos de la organización. Es el detonante de Contadores Alameda: un colaborador pegó una nómina con datos personales en un chatbot gratuito.</li>
+<li><strong>Sesgo de automatización</strong> (<em>automation bias</em>): la tendencia humana a aceptar lo que dice la máquina, sobre todo con prisa. Una revisión humana que nunca contradice al modelo no es supervisión: es un sello de goma.</li>
+<li><strong>Desvío de propósito</strong> (<em>function creep</em>): un sistema validado para una cosa empieza a usarse para otra sin que nadie lo vuelva a evaluar.</li>
+<li><strong>Costos ocultos</strong>: licencias que escalan con el uso, horas de las personas que supervisan, mantenimiento y reentrenamiento.</li>
+</ul>
+<p><strong>Relación con las cláusulas.</strong> A.9 lleva a la operación la política de IA (<a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>) y los objetivos de IA (<a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, cuya nota remite expresamente a A.9.3). Se ejecuta dentro de la planificación y control operacional (<a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>), se apoya en la toma de conciencia (<a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a>) para que el personal conozca las reglas, y se nutre de la evaluación de impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>), que indica dónde hace falta supervisión humana.</p>
+<p><strong>Cómo cambia según tu rol.</strong> Los tres controles aplican a quien <strong>usa</strong> IA de terceros y a quien <strong>desarrolla</strong> IA, porque quien desarrolla casi siempre usa también lo que construye (Monarca Crédito decide créditos con su propio modelo). No llevan la insignia de proveedor porque, cuando provees, el uso lo hace tu cliente y a ti te toca informarle bien (<a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a>). Pero casi todo proveedor también es usuario: Conversa Labs usa asistentes de programación y el modelo de su proveedor fundacional, y para esos usos A.9 le aplica de lleno.</p>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<p>La pieza reutilizable es el uso aceptable de la información y otros activos (ISO 27001 A.5.10): muchas organizaciones ya tienen una política de uso aceptable y un proceso de alta de software que puedes extender. A.9 agrega lo que el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> no pide: objetivos de uso responsable que van más allá de la seguridad (equidad, explicabilidad, accesibilidad), supervisión humana significativa y apego al uso previsto documentado de cada sistema.</p>
+</div>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-9-2">A.9.2 Procesos para el uso responsable</a></td>
+<td>Un proceso documentado para decidir y aprobar cada uso de IA, con costos, compras y requisitos legales a la vista</td>
+<td>Usa · Desarrolla</td>
+<td>Medio</td>
+<td>Similar (5.10)</td>
+</tr>
+<tr>
+<td><a href="#a-9-3">A.9.3 Objetivos para el uso responsable</a></td>
+<td>Objetivos medibles de uso responsable y puntos definidos de supervisión humana</td>
+<td>Usa · Desarrolla</td>
+<td>Bajo</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-9-4">A.9.4 Uso previsto del sistema de IA</a></td>
+<td>Usar cada sistema conforme a su uso previsto y su documentación, y escalar cuando algo preocupa</td>
+<td>Usa · Desarrolla</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<p>Así se encadenan los tres controles en la vida de un caso de uso:</p>
+<pre class="mermaid"><code>flowchart TD
+  S["Solicitud de un nuevo uso de IA"] --&gt; C{"¿Herramienta aprobada, datos de bajo riesgo y sin decisiones sobre personas?"}
+  C --&gt;|"Sí"| R["Vía rápida: registro en el inventario"]
+  C --&gt;|"No"| F["Revisión completa: seguridad, privacidad, legal, compras y evaluación de impacto"]
+  F --&gt; AP{"¿Aprobado por el nivel que corresponde?"}
+  AP --&gt;|"No"| X["Rechazo documentado"]
+  AP --&gt;|"Sí"| R
+  R --&gt; O["Uso con objetivos y supervisión humana definidos · A.9.3"]
+  O --&gt; M["Monitoreo del uso real frente al uso previsto · A.9.4"]
+  M --&gt;|"Uso nuevo o preocupación"| S</code></pre>
 <h2 class="dx-control obj-a9" id="a-9-2">A.9.2 Procesos para el uso responsable<a class="headerlink" href="#a-9-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que el uso de un sistema de IA sea una decisión tomada por quien corresponde, con la información necesaria, y no algo que simplemente sucede.</p>
+<p><strong>En la práctica.</strong> El control pide definir y documentar los procesos para usar la IA de forma responsable. En una organización real eso se traduce en dos piezas complementarias:</p>
+<ol>
+<li><strong>Un proceso de alta de casos de uso de IA.</strong> Cualquier área que quiera usar IA para algo nuevo, sea un sistema propio o comprado, llena una solicitud breve: qué problema resuelve, qué datos usará, a quién afecta el resultado y qué herramienta propone. Con eso se clasifica el caso y se definen las revisiones. En nuestra lectura, hay cuatro preguntas que nunca deberían faltar: <strong>qué requisitos legales aplican</strong> (datos personales, propiedad intelectual, regulación del sector); <strong>por qué vía se adquiere</strong> (catálogo de herramientas y proveedores aprobados, ver <a href="../a10-terceros/#a-10-3">A.10.3</a>); <strong>cuánto cuesta de verdad</strong>, contando monitoreo, mantenimiento, reentrenamiento y las horas de quienes supervisan; y <strong>quién aprueba</strong> según el nivel del caso. Si el caso tiene impacto en personas, se dispara la evaluación de impacto (<a href="../a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>). Al aprobarse, entra al inventario con sus condiciones de uso.</li>
+<li><strong>Una política de uso aceptable de IA generativa</strong> para el personal: herramientas autorizadas, datos que nunca se introducen (datos personales de clientes, nóminas, información fiscal, secretos comerciales), revisión de todo resultado antes de usarlo, cuándo etiquetar contenido generado y cómo reportar un incidente. Puedes partir de la plantilla de <a href="../../plantillas/#uso-aceptable-ia-generativa">política de uso aceptable de IA generativa</a>.</li>
+</ol>
+<p><strong>IA en la sombra.</strong> Cuando un colaborador de Contadores Alameda pegó una nómina en un chatbot gratuito, la reacción instintiva fue prohibir; la eficaz fue <strong>prohibir y ofrecer una alternativa</strong>. El despacho ya pagaba la licencia empresarial de su suite de ofimática con asistente de IA (IA-01), cuyo contrato excluye el uso de sus datos para entrenar, y la política dirige ahí cualquier uso. Sumó el bloqueo de chatbots gratuitos desde la red de la oficina, una capacitación breve con el caso real anonimizado y un periodo para declarar sin sanción las herramientas que ya se usaban. Para descubrir lo no declarado conviene revisar gastos con tarjeta corporativa, registros del proxy y extensiones instaladas.</p>
+<p><strong>Proporcionalidad.</strong> El proceso <strong>no</strong> tiene que ser un comité para cada idea. Una cadena de tiendas en México que quiere usar el generador de imágenes ya autorizado para bocetos de campaña pasa por la vía rápida (revisar derechos de imagen y etiquetar); si quiere usar IA para priorizar candidatos en reclutamiento, pasa por revisión completa y evaluación de impacto. Un proceso demasiado pesado es la mejor fábrica de IA en la sombra.</p>
+<p><strong>Qué reutilizas de ISO 27001.</strong> La política de uso aceptable (ISO 27001 A.5.10) y la evaluación de servicios en la nube (ISO 27001 A.5.23). Agregas la clasificación por impacto en personas, el costo total y el vínculo con la evaluación de impacto.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Procedimiento de alta de casos de uso con formulario breve y niveles de revisión.</li>
+<li>Matriz de aprobación: qué tipo de caso aprueba quién.</li>
+<li>Catálogo de herramientas y proveedores de IA aprobados.</li>
+<li>Política de uso aceptable de IA generativa comunicada y aceptada por el personal.</li>
+<li>Registro de cada aprobación en el inventario, con su costo total estimado.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Flujo en la herramienta de tickets, conectado con compras y seguridad.</li>
+<li>Descubrimiento periódico de IA en la sombra (proxy, gastos, extensiones, herramientas de control de acceso a la nube).</li>
+<li>Revisión posterior a la implementación para comparar beneficio y costo reales.</li>
+<li>Indicadores: tiempo de aprobación y usos descubiertos frente a usos registrados.</li>
+<li>Baja formal de los casos que ya no se usan.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Procedimiento de alta de casos de uso de IA y su formulario.</li>
+<li>Solicitudes con su clasificación y aprobaciones registradas, incluidas las rechazadas.</li>
+<li>Política de uso aceptable con acuses de lectura.</li>
+<li>Catálogo de herramientas aprobadas y análisis de costos de los casos aprobados.</li>
+<li>Reportes de detección de IA en la sombra y acciones tomadas.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Si un área quiere usar mañana una herramienta nueva de IA, ¿qué tiene que hacer? Muéstrame un caso aprobado y uno rechazado.</li>
+<li>¿Quién aprobó el uso de este sistema y con qué información?</li>
+<li>¿Qué costos consideraron además de la licencia?</li>
+<li>¿Cómo saben qué herramientas de IA usa realmente el personal?</li>
+<li>¿Qué requisitos legales revisaron antes de aprobar?</li>
+<li>¿Cómo se conecta este proceso con compras y con la evaluación de impacto?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Prohibir la IA generativa sin ofrecer una alternativa aprobada.</li>
+<li>Un proceso tan lento que empuja a la gente a la IA en la sombra.</li>
+<li>Aprobar la herramienta pero no el caso de uso: la misma herramienta sirve para algo trivial o para algo de alto impacto.</li>
+<li>Considerar solo el precio de la licencia.</li>
+<li>Aprobaciones de palabra, sin registro.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> muy difícilmente, porque hoy casi toda organización usa IA de alguna forma. Un caso límite sería un alcance limitado a la provisión de un sistema a clientes, con evidencia de que la organización no usa IA en sus procesos internos. Ejemplo de redacción: "Se excluye A.9.2 porque la organización no usa sistemas de IA en sus procesos internos y el uso del sistema provisto corresponde a los clientes, lo que se atiende en A.10.4."</p>
+<p><strong>No se justifica si…</strong> el personal usa herramientas de IA generativa, aunque sean gratuitas o "de prueba".</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a2-politicas/#a-2-2">A.2.2</a>, <a href="../a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="#a-9-3">A.9.3</a>, <a href="#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: A.5.10 y A.5.23 · <strong>Anexo B:</strong> la guía B.9.2 sugiere qué tipo de consideraciones (de gobierno, económicas, de abastecimiento y legales) conviene pesar antes de adoptar un sistema, venga de dentro o de fuera, y admite apoyarse en políticas que la organización ya tenga para otros activos.</p>
 <h2 class="dx-control obj-a9" id="a-9-3">A.9.3 Objetivos para el uso responsable<a class="headerlink" href="#a-9-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--esfuerzo-bajo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 2.4 1 4.5 2.7 6 1.4-1.3 3.3-2 5.3-2s3.8.7 5.3 2c1.7-1.5 2.7-3.6 2.7-6a8 8 0 0 0-8-8m-2 1.89c.38.01.74.26.9.65l1.29 3.23.1.23c.71.13 1.3.6 1.57 1.26.41 1.03-.09 2.19-1.12 2.6s-2.19-.09-2.6-1.12c-.26-.66-.14-1.42.29-1.98l-.1-.26-1.29-3.21-.01-.03c-.2-.51.05-1.09.56-1.3.13-.05.26-.07.41-.07M14 6a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 9a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> Esfuerzo bajo</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Darle contenido concreto a la expresión "uso responsable" en cada sistema, y decidir de antemano dónde una persona revisa, corrige o detiene lo que hace la IA.</p>
+<p><strong>En la práctica.</strong> La norma pide identificar y documentar objetivos que orienten el uso responsable. Los temas típicos son conocidos (equidad, privacidad, transparencia y explicabilidad, rendición de cuentas, fiabilidad y robustez, seguridad, accesibilidad), pero un objetivo útil no es una palabra: es una palabra con indicador, meta y dueño. Para Monarca Crédito podrían verse así:</p>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Objetivo para el Score Monarca v3</th>
+<th>Indicador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equidad</td>
+<td>Que la tasa de aprobación no difiera de forma injustificada por sexo ni por entidad federativa</td>
+<td>Brecha de aprobación entre grupos, revisada cada mes</td>
+</tr>
+<tr>
+<td>Explicabilidad</td>
+<td>Que todo rechazo lleve motivos comprensibles</td>
+<td>Porcentaje de rechazos con motivos en lenguaje claro</td>
+</tr>
+<tr>
+<td>Rendición de cuentas</td>
+<td>Que cada decisión de la banda gris tenga un analista identificado</td>
+<td>Decisiones con responsable registrado</td>
+</tr>
+<tr>
+<td>Robustez</td>
+<td>Detectar la deriva antes de que afecte decisiones</td>
+<td>Índice de estabilidad de la población por variable</td>
+</tr>
+</tbody>
+</table>
+<p>Estos objetivos aterrizan los objetivos de IA de <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, complementan los de desarrollo responsable de <a href="../a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a> y sirven también para decidir si una solución de terceros es aceptable antes de adoptarla.</p>
+<p><strong>Supervisión humana significativa.</strong> La otra mitad del control, y la más exigente, es decidir en qué puntos del ciclo de vida interviene una persona y con qué poder. En nuestra lectura, la supervisión humana (<em>human oversight</em>) es significativa cuando la persona tiene <strong>autoridad real para anular</strong> el resultado; cuenta con <strong>información y tiempo</strong> para formarse un juicio; está <strong>capacitada</strong> en el funcionamiento, las instrucciones y los límites del sistema; puede <strong>reportar inquietudes</strong> sobre resultados extraños o un desempeño que se degrada; y su labor <strong>se mide</strong>. Además, alguien vigila la exactitud en producción y la organización decide conscientemente dónde acepta la decisión automática. La evaluación de impacto (<a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>) es la base de esas decisiones, y si la documentación del proveedor exige supervisión humana, esa exigencia se vuelve tuya.</p>
+<p><strong>El caso de la banda gris.</strong> Score Monarca v3 aprueba en automático los casos claros, rechaza los claramente inviables y envía la banda gris a revisión humana. El Comité de Modelos documentó por qué acepta la decisión automática en los extremos y la condicionó a que todo solicitante rechazado pueda pedir la revisión de una persona, algo que se conecta con el derecho de oposición a ciertos tratamientos automatizados de la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr> vigente (art. 26, fr. II)<sup id="fnref:lfpdppp"><a class="footnote-ref" href="#fn:lfpdppp">1</a></sup>. En la banda gris, los analistas ven el <em>score</em>, los motivos principales y el expediente, y pueden decidir en contra del modelo dejando su razón. Para evitar el <strong>sello de goma</strong>, el Comité revisa cada mes la tasa de anulación por analista (casi cero indica que nadie revisa; un salto, que quizá el modelo se degradó), el tiempo por expediente y una muestra revisada por un segundo analista. Las anulaciones justificadas no se castigan: alimentan el reentrenamiento.</p>
+<p>El control <strong>no</strong> exige revisar cada resultado: en el asistente de ofimática de Contadores Alameda basta con que quien redacta lea el texto antes de enviarlo, si la política así lo establece.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>De 3 a 5 objetivos de uso responsable por sistema relevante, con indicador y responsable.</li>
+<li>Mapa de puntos de supervisión humana por sistema: dónde, quién y con qué autoridad.</li>
+<li>Criterio documentado de cuándo se acepta la decisión automatizada.</li>
+<li>Capacitación registrada de quienes supervisan.</li>
+<li>Canal para que los supervisores reporten inquietudes sobre resultados o desempeño.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Tablero de indicadores de los objetivos, revisado por un comité.</li>
+<li>Métricas contra el sello de goma: tasa de anulación, concordancia entre revisores, tiempo por caso.</li>
+<li>Muestreos de calidad y revisiones "a ciegas" periódicas.</li>
+<li>Calibración de revisores con casos de referencia.</li>
+<li>Cargas de trabajo revisadas para que la supervisión sea posible.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Objetivos de uso responsable documentados, con indicadores y resultados.</li>
+<li>Definición de los puntos de supervisión humana y de su autoridad.</li>
+<li>Registros de anulaciones con su justificación.</li>
+<li>Constancias de capacitación de supervisores.</li>
+<li>Procedimiento de revisión a petición de la persona afectada.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué significa, en concreto, usar este sistema de forma responsable? ¿Cómo lo miden?</li>
+<li>¿En qué punto interviene una persona y qué puede hacer si no está de acuerdo con el sistema?</li>
+<li>Muéstrame las anulaciones del último trimestre y sus motivos.</li>
+<li>¿Cómo saben que los revisores no aprueban todo lo que propone el modelo?</li>
+<li>¿Qué capacitación recibieron los supervisores?</li>
+<li>¿Por qué consideran aceptable la decisión automática en este caso?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Objetivos copiados de una lista de principios, sin indicador ni dueño.</li>
+<li>Supervisión nominal: revisores sin tiempo, sin información o sin autoridad para anular.</li>
+<li>Medir a los revisores solo por productividad, lo que premia aprobar rápido.</li>
+<li>Automatizar decisiones sobre personas sin pasar por la evaluación de impacto.</li>
+<li>Ignorar los requisitos de supervisión que fija la documentación del proveedor.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> prácticamente nunca: quien usa o desarrolla IA necesita saber qué significa para él usarla bien. Lo que sí varía es la intensidad; un sistema de bajo impacto puede tener un solo objetivo y supervisión ligera. Caso límite de redacción: "Se excluye A.9.3 porque la organización no usa sistemas de IA en sus procesos; los objetivos de desarrollo responsable se gestionan en A.6.1.2." Espera que el auditor ponga a prueba esa premisa.</p>
+<p><strong>No se justifica si…</strong> hay decisiones automatizadas o apoyadas por IA sobre personas.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> · Controles: <a href="../a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../a4-recursos/#a-4-6">A.4.6</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="#a-9-4">A.9.4</a> · ISO 27001: sin equivalente directo · Normas: <a href="../../anexos-b-c-d/">Anexo C</a> (menú de objetivos), ISO/IEC 23894 · <strong>Anexo B:</strong> la guía B.9.3 reconoce que lo que se considera responsable cambia con el contexto, sugiere temas para los objetivos y dedica buena parte a la supervisión humana: en qué etapas incorporarla, qué actividades puede abarcar y la necesidad de que quienes la ejercen estén capacitados.</p>
 <h2 class="dx-control obj-a9" id="a-9-4">A.9.4 Uso previsto del sistema de IA<a class="headerlink" href="#a-9-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Evitar que un sistema se use fuera de aquello para lo que fue diseñado, probado y documentado, que es justo donde sus errores se vuelven impredecibles.</p>
+<p><strong>En la práctica.</strong> Todo sistema de IA tiene un uso previsto (<em>intended use</em>): las tareas, la población, los datos y el contexto para los que se diseñó y validó. Fuera de ahí, su desempeño es una incógnita. El control pide asegurar que se use conforme a ese uso previsto y a la documentación que lo acompaña. En la práctica implica cuatro cosas:</p>
+<ol>
+<li><strong>Desplegarlo como indican sus instrucciones</strong>, con los recursos que requiere, incluida la supervisión humana de <a href="#a-9-3">A.9.3</a>. Si la documentación del proveedor dice "no usar para decisiones sin revisión humana", esa condición forma parte del uso previsto.</li>
+<li><strong>Alimentarlo con datos parecidos a los documentados.</strong> Un extractor de CFDI entrenado con facturas mexicanas no tiene por qué funcionar con facturas de proveedores extranjeros, y un modelo de <em>score</em> para microcréditos personales no se reutiliza para micronegocios sin validarlo (por eso Monarca trata su modelo de líneas de crédito, IA-02, como un sistema con validación propia). Vigilar las entradas fuera de distribución (<em>out-of-distribution</em>) es parte del trabajo.</li>
+<li><strong>Monitorear la operación</strong> (<a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>) para detectar usos y entradas que se salen de lo previsto, por ejemplo, revisando qué temas le preguntan realmente a un chatbot.</li>
+<li><strong>Escalar cuando algo preocupa</strong>, incluso si el sistema <strong>funciona como debe</strong>. Un hospital en Chile usa, conforme a las instrucciones del fabricante, una herramienta de apoyo al triaje, y su monitoreo muestra que subestima la urgencia en pacientes mayores. Usarla "bien" no basta: hay que comunicarlo al personal pertinente y al proveedor, y documentar la respuesta.</li>
+</ol>
+<p><strong>Registros.</strong> Conviene conservar registros de eventos y documentación de la operación que permitan demostrar que el sistema se usa según lo previsto o respaldar un escalamiento. El plazo depende del uso previsto, de tu política de retención y de los requisitos legales; con datos personales también aplica no guardar más de lo necesario, así que la retención se decide, no se deja al azar.</p>
+<p><strong>El desvío de propósito.</strong> El riesgo más común no es técnico: es que alguien encuentre un uso nuevo. Contadores Alameda configuró a Alma para preguntas frecuentes, estatus y citas; si un día se quiere que Alma "recomiende el régimen fiscal más conveniente", eso no es un ajuste de configuración sino un caso de uso nuevo que vuelve a pasar por <a href="#a-9-2">A.9.2</a> y por evaluación de impacto.</p>
+<p>Por rol: si <strong>usas</strong> IA de terceros, el uso previsto lo define sobre todo el proveedor; léelo y respétalo. Si <strong>desarrollas</strong>, lo defines tú en los requisitos (<a href="../a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>). El control <strong>no</strong> pide congelar la innovación ni guardar registros para siempre.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Declaración de uso previsto y de usos no permitidos por sistema, en el inventario o la ficha.</li>
+<li>Instrucciones de uso disponibles para quienes operan el sistema.</li>
+<li>Verificación, al desplegar, de que los datos de entrada coinciden con lo documentado.</li>
+<li>Procedimiento para escalar inquietudes internamente y al proveedor.</li>
+<li>Plazo de retención de registros definido y aplicado.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Controles técnicos contra usos fuera del dominio: validación de entradas, filtros de temas, detección de datos fuera de distribución.</li>
+<li>Alertas automáticas ante cambios en el perfil de las entradas.</li>
+<li>Revisión periódica del uso real frente al previsto, con resultados al comité.</li>
+<li>Registro de escalamientos al proveedor con seguimiento hasta el cierre.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Declaración de uso previsto por sistema.</li>
+<li>Documentación e instrucciones del proveedor o del equipo de desarrollo.</li>
+<li>Registros de operación y reportes de monitoreo.</li>
+<li>Escalamientos al proveedor y sus respuestas.</li>
+<li>Tabla de retención de registros aplicada al sistema.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cuál es el uso previsto de este sistema y dónde está documentado?</li>
+<li>¿Cómo evitan o detectan que se use para otra cosa?</li>
+<li>¿Los datos con los que opera hoy se parecen a aquellos con los que se validó? ¿Cómo lo saben?</li>
+<li>¿Han escalado alguna inquietud al proveedor? Muéstrame el caso y la respuesta.</li>
+<li>¿Cuánto tiempo conservan los registros de operación y por qué ese plazo?</li>
+<li>¿Qué pasó la última vez que alguien propuso un uso nuevo?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Un uso previsto tan vago ("apoyar al negocio") que nada queda fuera.</li>
+<li>No leer la documentación del proveedor y desconocer sus restricciones.</li>
+<li>Reutilizar un modelo en otra población o producto sin validarlo.</li>
+<li>No conservar registros, o conservarlos sin plazo ni criterio.</li>
+<li>Callar una preocupación porque "el sistema hace lo que dice el manual".</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> prácticamente nunca para quien usa o desarrolla IA, porque todo sistema tiene un uso previsto que respetar. Caso límite de redacción: "Se excluye A.9.4 porque la organización no opera sistemas de IA propios ni de terceros; el uso del sistema que provee corresponde a sus clientes, a quienes se informa conforme a A.8.2 y A.10.4."</p>
+<p><strong>No se justifica si…</strong> cualquier sistema en alcance tiene instrucciones, documentación del proveedor o requisitos de uso definidos.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="#a-9-2">A.9.2</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: sin equivalente directo · <strong>Anexo B:</strong> la guía B.9.4 vincula el uso previsto con las instrucciones del sistema, la supervisión humana y la coherencia de los datos de entrada; pide monitorear, comunicar inquietudes también a proveedores externos y conservar registros con plazos que dependen del uso, las políticas internas y la ley.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Contadores Alameda</label><label for="__tabbed_4_2">Monarca Crédito</label><label for="__tabbed_4_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>El incidente de la nómina pegada en un chatbot gratuito fue el punto de partida. Para <strong>A.9.2</strong>, el despacho publicó su política de uso aceptable de IA generativa, definió un formulario de una página para nuevos usos que revisan la Gerente de TI y la Coordinadora de cumplimiento y datos personales, y registró en su inventario los tres sistemas aprobados (IA-01, Alma e IA-03). Para <strong>A.9.3</strong>, fijó objetivos sencillos: cero datos personales en herramientas no aprobadas, al menos 95 % de respuestas correctas de Alma en el muestreo mensual de la Líder de atención a clientes (meta ilustrativa) y revisión humana obligatoria de los CFDI que el módulo de captura extrae con baja confianza. Para <strong>A.9.4</strong>, documentó que Alma sirve para preguntas frecuentes, estatus y citas, y que cualquier tema de asesoría se transfiere a una persona.</p>
+</div>
+<div class="tabbed-block">
+<p>Monarca <strong>desarrolla</strong> y <strong>usa</strong> su modelo, así que A.9 es central. Su Comité de Modelos funciona como el proceso de <strong>A.9.2</strong>: ningún modelo nuevo ni cambio de uso sale a producción sin su aprobación, que incluye costo de operación y revisión del Oficial de Cumplimiento y del Oficial de Privacidad. En <strong>A.9.3</strong>, la banda gris es su principal punto de supervisión humana, con métricas contra el sello de goma. En <strong>A.9.4</strong>, documentó que la API de detección de fraude (IA-03) genera alertas para revisión de un analista, como indica su proveedor, y no rechazos automáticos; usarla como filtro de rechazo sería salirse de su uso previsto.</p>
+</div>
+<div class="tabbed-block">
+<p>Aunque su rol principal es proveer, Conversa también <strong>usa</strong> IA: su equipo de ingeniería trabaja con asistentes de programación y la empresa consume el modelo fundacional de su proveedor. Para <strong>A.9.2</strong>, su política de uso aceptable prohíbe introducir datos o bases de conocimiento de clientes en herramientas no aprobadas y su proceso de alta pasa por la Responsable de Confianza y Seguridad. Para <strong>A.9.4</strong>, revisa que su uso del modelo fundacional se mantenga dentro de las políticas de uso del proveedor. La supervisión humana que ofrece a sus clientes (traspaso a agente humano) se documenta como parte del uso previsto de la plataforma y se comunica según <a href="../a10-terceros/#a-10-4">A.10.4</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#uso-aceptable-ia-generativa">Política de uso aceptable de IA generativa</a>: base para A.9.2 y para atajar la IA en la sombra.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>: dónde registrar aprobaciones, uso previsto y puntos de supervisión.</li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>: para decidir dónde se necesita supervisión humana.</li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: declaración de uso previsto y usos no permitidos.</li>
+<li><a href="../../plantillas/#politica-de-ia">Política de IA</a> y <a href="../../plantillas/#raci-ia">roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a>.</li>
+<li>Casos completos: <a href="../../casos-practicos/pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a>, <a href="../../casos-practicos/fintech-scoring/">fintech de <em>scoring</em></a> y <a href="../../casos-practicos/empresa-desarrolla-chatbot/">empresa que desarrolla un chatbot</a>.</li>
+<li>Para profundizar: <a href="../../fundamentos/principios-ia-responsable/">principios de IA responsable</a> y <a href="../../fundamentos/riesgo-vs-impacto/">riesgo frente a impacto</a>.</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:lfpdppp">
+<p>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, texto vigente publicado por la Cámara de Diputados: <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf</a> (consultado el 9 de octubre de 2026). Resumen propio; no es asesoría legal.&#160;<a class="footnote-backref" href="#fnref:lfpdppp" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 

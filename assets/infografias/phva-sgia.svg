@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 724" role="img" aria-labelledby="ig-phva-sgia-t ig-phva-sgia-d">
+<title id="ig-phva-sgia-t">El ciclo PHVA del sistema de gestión de IA y sus cláusulas</title>
+<desc id="ig-phva-sgia-d">Ciclo de cuatro fases que gira en el sentido de las manecillas del reloj alrededor de la cláusula 5, Liderazgo. Planificar agrupa la cláusula 4 (contexto), la 6 (planificación: riesgos, impacto, Declaración de Aplicabilidad y objetivos) y la 7 (apoyo), que habilita todas las fases. Hacer corresponde a la cláusula 8, Operación, con 8.1 control operacional, 8.2 evaluación de riesgos, 8.3 tratamiento de riesgos y 8.4 evaluación de impacto. Verificar corresponde a la cláusula 9 con 9.1 seguimiento y medición, 9.2 auditoría interna y 9.3 revisión por la dirección. Actuar corresponde a la cláusula 10 con 10.1 mejora continua y 10.2 no conformidad y acción correctiva. Entran el contexto, las partes interesadas y los requisitos aplicables; salen una IA responsable y objetivos de IA cumplidos.</desc>
+<text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700">El ciclo PHVA del SGIA</text>
+<text x="400" y="84" text-anchor="middle" font-size="14" font-weight="700">Entran</text>
+<text x="400" y="104" text-anchor="middle" font-size="13" class="ig-muted">contexto, partes interesadas</text>
+<text x="400" y="121" text-anchor="middle" font-size="13" class="ig-muted">y requisitos aplicables</text>
+<line x1="400" y1="134" x2="400" y2="246" class="ig-line-strong" stroke-width="2"/>
+<polygon points="393,244 407,244 400,257" fill="currentColor"/>
+<line x1="400" y1="506" x2="400" y2="566" class="ig-line-strong" stroke-width="2"/>
+<polygon points="393,564 407,564 400,577" fill="currentColor"/>
+<text x="400" y="600" text-anchor="middle" font-size="14" font-weight="700">Salen</text>
+<text x="400" y="620" text-anchor="middle" font-size="13" class="ig-muted">IA responsable y</text>
+<text x="400" y="637" text-anchor="middle" font-size="13" class="ig-muted">objetivos de IA cumplidos</text>
+<path d="M 282.1 374.9 A 118 118 0 0 1 394.9 262.1 L 411.2 281.6 L 396.5 300.1 A 80 80 0 0 0 320.1 376.5 L 303.0 360.3 Z" class="ig-phva-p"/>
+<text x="335.7" y="311.7" text-anchor="middle" font-size="21" font-weight="700" class="ig-on-color">P</text>
+<path d="M 405.1 262.1 A 118 118 0 0 1 517.9 374.9 L 498.4 391.2 L 479.9 376.5 A 80 80 0 0 0 403.5 300.1 L 419.7 283.0 Z" class="ig-phva-h"/>
+<text x="475.3" y="322.7" text-anchor="middle" font-size="21" font-weight="700" class="ig-on-color">H</text>
+<path d="M 517.9 385.1 A 118 118 0 0 1 405.1 497.9 L 388.8 478.4 L 403.5 459.9 A 80 80 0 0 0 479.9 383.5 L 497.0 399.7 Z" class="ig-phva-v"/>
+<text x="464.3" y="462.3" text-anchor="middle" font-size="21" font-weight="700" class="ig-on-color">V</text>
+<path d="M 394.9 497.9 A 118 118 0 0 1 282.1 385.1 L 301.6 368.8 L 320.1 383.5 A 80 80 0 0 0 396.5 459.9 L 380.3 477.0 Z" class="ig-phva-a"/>
+<text x="324.7" y="451.3" text-anchor="middle" font-size="21" font-weight="700" class="ig-on-color">A</text>
+<a xlink:href="../../clausulas/c5-liderazgo/">
+<circle cx="400" cy="380" r="70" class="ig-brand"/>
+<text x="400" y="374" text-anchor="middle" font-size="17" font-weight="700" class="ig-on-color">5 Liderazgo</text>
+<text x="400" y="395" text-anchor="middle" font-size="13" class="ig-on-color">alta dirección,</text>
+<text x="400" y="412" text-anchor="middle" font-size="13" class="ig-on-color">política y roles</text>
+</a>
+<rect x="14" y="56" width="268" height="214" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 14 96 L 14 68 Q 14 56 26 56 L 270 56 Q 282 56 282 68 L 282 96 Z" class="ig-phva-p"/>
+<text x="32" y="82" font-size="16" font-weight="700" class="ig-on-color">P · Planificar</text>
+<a xlink:href="../../clausulas/c4-contexto/">
+<text x="32" y="124" font-size="15" font-weight="700">4 Contexto</text>
+<text x="32" y="143" font-size="13" class="ig-muted">partes interesadas, roles y alcance</text>
+</a>
+<a xlink:href="../../clausulas/c6-planificacion/">
+<text x="32" y="174" font-size="15" font-weight="700">6 Planificación</text>
+<text x="32" y="193" font-size="13" class="ig-muted">riesgos, impacto, SoA, objetivos</text>
+</a>
+<a xlink:href="../../clausulas/c7-apoyo/">
+<text x="32" y="224" font-size="15" font-weight="700">7 Apoyo · habilitador</text>
+<text x="32" y="243" font-size="13" class="ig-muted">recursos, competencia, documentos</text>
+</a>
+<rect x="518" y="56" width="268" height="214" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 518 96 L 518 68 Q 518 56 530 56 L 774 56 Q 786 56 786 68 L 786 96 Z" class="ig-phva-h"/>
+<text x="536" y="82" font-size="16" font-weight="700" class="ig-on-color">H · Hacer</text>
+<a xlink:href="../../clausulas/c8-operacion/"><text x="536" y="124" font-size="15" font-weight="700">8 Operación</text></a>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-1"><text x="536" y="152" font-size="14">8.1 Control operacional</text></a>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-2"><text x="536" y="178" font-size="14">8.2 Evaluación de riesgos</text></a>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-3"><text x="536" y="204" font-size="14">8.3 Tratamiento de riesgos</text></a>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-4"><text x="536" y="230" font-size="14">8.4 Evaluación de impacto</text></a>
+<rect x="518" y="470" width="268" height="182" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 518 510 L 518 482 Q 518 470 530 470 L 774 470 Q 786 470 786 482 L 786 510 Z" class="ig-phva-v"/>
+<text x="536" y="496" font-size="16" font-weight="700" class="ig-on-color">V · Verificar</text>
+<a xlink:href="../../clausulas/c9-evaluacion-del-desempeno/"><text x="536" y="538" font-size="15" font-weight="700">9 Evaluación del desempeño</text></a>
+<a xlink:href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1"><text x="536" y="566" font-size="14">9.1 Seguimiento y medición</text></a>
+<a xlink:href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2"><text x="536" y="592" font-size="14">9.2 Auditoría interna</text></a>
+<a xlink:href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3"><text x="536" y="618" font-size="14">9.3 Revisión por la dirección</text></a>
+<rect x="14" y="470" width="268" height="182" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 14 510 L 14 482 Q 14 470 26 470 L 270 470 Q 282 470 282 482 L 282 510 Z" class="ig-phva-a"/>
+<text x="32" y="496" font-size="16" font-weight="700" class="ig-on-color">A · Actuar</text>
+<a xlink:href="../../clausulas/c10-mejora/"><text x="32" y="538" font-size="15" font-weight="700">10 Mejora</text></a>
+<a xlink:href="../../clausulas/c10-mejora/#c-10-1"><text x="32" y="566" font-size="14">10.1 Mejora continua</text></a>
+<a xlink:href="../../clausulas/c10-mejora/#c-10-2"><text x="32" y="592" font-size="14">10.2 No conformidad y</text>
+<text x="32" y="610" font-size="14">acción correctiva</text></a>
+<line x1="312.3" y1="292.3" x2="282" y2="250" class="ig-line" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="487.7" y1="292.3" x2="518" y2="250" class="ig-line" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="487.7" y1="467.7" x2="518" y2="490" class="ig-line" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="312.3" y1="467.7" x2="282" y2="490" class="ig-line" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="400" y="706" text-anchor="middle" font-size="13" class="ig-muted">El ciclo gira con las manecillas del reloj: lo que se mejora alimenta la siguiente planificación.</text>
+</svg>

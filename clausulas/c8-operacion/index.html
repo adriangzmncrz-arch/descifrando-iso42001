@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Cláusula 8 de ISO/IEC 42001 explicada con ejemplos — control operacional, gestión de cambios y de proveedores de IA, y reevaluación de riesgos e impactos por calendario, cambios significativos o incidentes.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1277,6 +1277,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pide-explicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué pide, explicado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué pide, explicado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#c-8-1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1286,8 +1309,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-8-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1297,8 +1320,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-8-3" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1308,12 +1331,83 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-8-4" class="md-nav__link">
     <span class="md-ellipsis">
       
         8.4 Evaluación de impacto del sistema de IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-aplica-segun-tu-rol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se aplica según tu rol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-evidencia-espera-ver-un-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué evidencia espera ver un auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-resuelto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo resuelto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-con-otras-clausulas-controles-y-normas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación con otras cláusulas, controles y normas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas relacionadas
       
     </span>
   </a>
@@ -2757,24 +2851,631 @@
 
 
 <h1 id="clausula-8-operacion">Cláusula 8 · Operación<a class="headerlink" href="#clausula-8-operacion" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h7.81c-.36-.62-.61-1.3-.73-2H6V4h7v5h5v4.08c.33-.05.67-.08 1-.08.34 0 .67.03 1 .08V8l-6-6M8 12v2h8v-2m-8 4v2h5v-2Z"/></svg></span> Requisito certificable</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 20 min de lectura</span></p>
 </div>
-<h2 id="c-8-1">8.1 Planificación y control operacional<a class="headerlink" href="#c-8-1" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-8-2">8.2 Evaluación de riesgos de IA<a class="headerlink" href="#c-8-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-8-3">8.3 Tratamiento de riesgos de IA<a class="headerlink" href="#c-8-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-8-4">8.4 Evaluación de impacto del sistema de IA<a class="headerlink" href="#c-8-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>La cláusula 8 convierte en rutina lo que diseñaste en la cláusula 6: los controles funcionan todos los días, los cambios se gestionan antes de que sorprendan, los proveedores de IA están bajo control y las evaluaciones de riesgo e impacto se repiten cuando toca, dejando evidencia de cada vuelta.</p>
+</div>
+<h2 id="proposito">Propósito<a class="headerlink" href="#proposito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Los sistemas de IA no se quedan quietos. Un modelo que era justo el día del lanzamiento puede degradarse cuando cambia la economía; un proveedor puede actualizar el modelo detrás de la misma API sin avisar; un área puede empezar a usar el chatbot para algo que nadie evaluó. Una evaluación de riesgos hecha una sola vez, al arrancar, envejece rápido.</p>
+<p>La cláusula 6 define <strong>cómo</strong> se evalúan y tratan los riesgos y los impactos. La cláusula 8 exige <strong>hacerlo de verdad</strong>, una y otra vez, cuando lo marca el calendario o cuando algo cambia, y conservar los resultados.</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía</p>
+<p>La cláusula 6 es el esquema de vacunación: qué vacunas, a qué edad, con qué criterios. La cláusula 8 es ir a la clínica, ponértelas y que te sellen la cartilla. Y si hay un brote o viajas a otro país (un cambio significativo), te toca un refuerzo fuera de calendario. Al auditor no le basta ver el esquema: quiere la cartilla sellada.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cláusula 6 · Planificación</th>
+<th>Cláusula 8 · Operación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verbo</strong></td>
+<td>Definir, diseñar</td>
+<td>Ejecutar, repetir, conservar</td>
+</tr>
+<tr>
+<td><strong>Riesgos</strong></td>
+<td>Metodología y criterios (<a href="../c6-planificacion/#c-6-1-2">6.1.2</a>)</td>
+<td>Evaluaciones hechas, con fecha y resultados (<a href="#c-8-2">8.2</a>)</td>
+</tr>
+<tr>
+<td><strong>Tratamiento</strong></td>
+<td>Opciones, controles, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y plan (<a href="../c6-planificacion/#c-6-1-3">6.1.3</a>)</td>
+<td>Plan implementado y eficacia comprobada (<a href="#c-8-3">8.3</a>)</td>
+</tr>
+<tr>
+<td><strong>Impacto</strong></td>
+<td>Proceso de evaluación de impacto (<a href="../c6-planificacion/#c-6-1-4">6.1.4</a>)</td>
+<td>Evaluaciones realizadas por sistema y por cambio (<a href="#c-8-4">8.4</a>)</td>
+</tr>
+<tr>
+<td><strong>Cambios</strong></td>
+<td>Cambios al propio <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> (<a href="../c6-planificacion/#c-6-3">6.3</a>)</td>
+<td>Cambios en procesos y sistemas en operación (<a href="#c-8-1">8.1</a>)</td>
+</tr>
+<tr>
+<td><strong>Evidencia típica</strong></td>
+<td>Procedimientos, metodologías, criterios</td>
+<td>Registros, reportes, actas, tickets, bitácoras</td>
+</tr>
+<tr>
+<td><strong>Pregunta del auditor</strong></td>
+<td>"¿Cómo lo deciden?"</td>
+<td>"Muéstrame las últimas tres veces que lo hicieron"</td>
+</tr>
+</tbody>
+</table>
+<p>La fila de cambios es interpretación nuestra: leemos 6.3 como cambios al sistema de gestión (nuevo alcance, nueva estructura de roles) y 8.1 como cambios en lo que opera dentro de él (un modelo, un proveedor, un proceso).</p>
+<h2 id="que-pide-explicado">Qué pide, explicado<a class="headerlink" href="#que-pide-explicado" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="c-8-1">8.1 Planificación y control operacional<a class="headerlink" href="#c-8-1" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Esta subcláusula pide preparar, poner en marcha y vigilar los procesos con los que la organización cumple su <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y ejecuta lo que decidió en la cláusula 6. Lo desglosamos en cinco piezas.</p>
+<h4 id="criterios-de-proceso-y-control-conforme-a-ellos">Criterios de proceso y control conforme a ellos<a class="headerlink" href="#criterios-de-proceso-y-control-conforme-a-ellos" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Un criterio es una regla verificable que dice cuándo un proceso se hizo bien. Algunos ejemplos:</p>
+<ul>
+<li>Ningún sistema de IA entra a producción sin estar en el inventario y sin evaluación de impacto aprobada.</li>
+<li>Toda respuesta nueva en la base de conocimiento de un chatbot necesita fuente oficial y aprobación de un experto.</li>
+<li>Un modelo de crédito no se despliega si la diferencia de tasas de aprobación entre grupos supera el umbral fijado.</li>
+<li>Ninguna versión de un asistente se libera si no pasa la batería de pruebas de inyección de instrucciones (<em>prompt injection</em>).</li>
+</ul>
+<p>Controlar el proceso significa comprobar que esos criterios se cumplen cada vez: puertas automáticas en la canalización de despliegue (<em>pipeline</em>), listas de verificación, aprobaciones registradas.</p>
+<h4 id="implementar-los-controles-determinados-en-613">Implementar los controles determinados en 6.1.3<a class="headerlink" href="#implementar-los-controles-determinados-en-613" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La Declaración de Aplicabilidad (<abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>) no es una lista de deseos. Los controles elegidos que tienen que ver con la operación, sobre todo los del ciclo de vida de desarrollo y de uso, deben estar funcionando: despliegue (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>), operación y monitoreo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>), registro de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>), calidad de datos (<a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>), uso responsable (<a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>) y uso previsto (<a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a>), entre otros. (Los nombres de los controles son traducción libre de referencia).</p>
+<h4 id="monitorear-la-eficacia-de-los-controles">Monitorear la eficacia de los controles<a class="headerlink" href="#monitorear-la-eficacia-de-los-controles" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Este es un añadido importante frente a ISO 27001: 42001 pide en la propia cláusula 8 vigilar si esos controles <strong>logran lo que se esperaba</strong> y, si no, considerar acciones correctivas (<a href="../c10-mejora/#c-10-2">10.2</a>). Un control que existe pero no funciona es solo decoración.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Indicador de eficacia</th>
+<th>Si no se cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitoreo de un modelo de crédito (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>)</td>
+<td>Estabilidad de la población y de las variables clave dentro del umbral</td>
+<td>Análisis de deriva (<em>drift</em>) y posible reentrenamiento</td>
+</tr>
+<tr>
+<td>Supervisión humana en la banda gris (<a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>)</td>
+<td>Porcentaje de anulaciones con justificación documentada</td>
+<td>Refuerzo de capacitación y revisión del flujo</td>
+</tr>
+<tr>
+<td>Aviso de interacción con IA (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>)</td>
+<td>Conversaciones que muestran el aviso</td>
+<td>Corrección inmediata con el proveedor del chatbot</td>
+</tr>
+<tr>
+<td>Filtros contra inyección de instrucciones</td>
+<td>Tasa de bloqueo en la batería adversaria</td>
+<td>Bloquear la liberación</td>
+</tr>
+<tr>
+<td>Gestión de proveedores (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>)</td>
+<td>Proveedores críticos evaluados en el año</td>
+<td>Escalamiento a la dirección</td>
+</tr>
+</tbody>
+</table>
+<h4 id="informacion-documentada-suficiente-y-control-de-cambios">Información documentada suficiente y control de cambios<a class="headerlink" href="#informacion-documentada-suficiente-y-control-de-cambios" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La norma pide suficiente información documentada para poder confiar en que cada proceso se hizo según lo previsto: tickets, aprobaciones, bitácoras de despliegue. Además, los <strong>cambios que planeas</strong> deben pasar por control, y los que <strong>ocurren sin querer</strong> deben analizarse para entender qué provocaron y mitigar sus efectos adversos.</p>
+<p>En IA, los cambios no intencionados son el pan de cada día:</p>
+<ul>
+<li>El proveedor actualiza el modelo detrás de la misma API y cambian el tono, la calidad o los temas que el modelo se niega a contestar.</li>
+<li>Deriva de datos o de concepto: los clientes, la economía o el lenguaje cambian, y el modelo envejece.</li>
+<li>Un área empieza a usar el sistema para un propósito no previsto.</li>
+<li>El proveedor cambia sus términos, por ejemplo para usar tus datos en entrenamiento.</li>
+</ul>
+<p>El siguiente flujo resume una gestión de cambios proporcionada para sistemas de IA:</p>
+<pre class="mermaid"><code>flowchart TD
+  A["Solicitud de cambio o&lt;br/&gt;cambio detectado"] --&gt; B{"¿Fue planificado?"}
+  B --&gt;|"Sí"| C["Registrar y describir&lt;br/&gt;el cambio"]
+  B --&gt;|"No, lo detectó el monitoreo"| D["Contener: revertir, congelar&lt;br/&gt;o limitar el uso"]
+  D --&gt; C
+  C --&gt; E{"¿Cambio significativo&lt;br/&gt;según criterios?"}
+  E --&gt;|"No"| F["Cambio estándar:&lt;br/&gt;pruebas de regresión"]
+  E --&gt;|"Sí"| G["Reevaluar riesgos 8.2&lt;br/&gt;e impacto 8.4"]
+  G --&gt; H["Ajustar tratamiento 8.3&lt;br/&gt;y SoA si aplica"]
+  H --&gt; I["Verificación y validación"]
+  F --&gt; I
+  I --&gt; J{"¿Cumple criterios&lt;br/&gt;de liberación?"}
+  J --&gt;|"No"| K["Rechazar o rediseñar"]
+  J --&gt;|"Sí"| L["Aprobación del dueño&lt;br/&gt;del sistema"]
+  L --&gt; M["Despliegue gradual&lt;br/&gt;con plan de reversa"]
+  M --&gt; N["Comunicar a usuarios&lt;br/&gt;y clientes"]
+  N --&gt; O["Monitoreo reforzado&lt;br/&gt;y cierre con evidencia"]</code></pre>
+<h4 id="procesos-productos-y-servicios-externos">Procesos, productos y servicios externos<a class="headerlink" href="#procesos-productos-y-servicios-externos" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Lo que hace un tercero y es relevante para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> también debe estar bajo control. La responsabilidad no se terceriza: si tu chatbot usa el modelo de otro, sus fallas son tu problema frente a tus clientes. Esta pieza se apoya en <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> y <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Servicio externo</th>
+<th>Riesgo típico</th>
+<th>Control operacional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modelo fundacional vía API</td>
+<td>Cambios de versión, retención de datos, disponibilidad</td>
+<td>Fijar la versión, cláusula de aviso previo, pruebas de regresión, proveedor alterno</td>
+</tr>
+<tr>
+<td>Chatbot o IA como servicio (SaaS)</td>
+<td>Configuración opaca; depende a su vez del modelo de otro</td>
+<td>Debida diligencia, documentación del proveedor, niveles de servicio, derecho a recibir informes</td>
+</tr>
+<tr>
+<td>API de detección de fraude u otra "caja negra"</td>
+<td>Falsos positivos concentrados en ciertos grupos</td>
+<td>Monitorear tasas por segmento, revisión humana de rechazos</td>
+</tr>
+<tr>
+<td>Datos de terceros</td>
+<td>Licencia, procedencia, calidad</td>
+<td>Contrato con procedencia documentada (<a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a>, <a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a>)</td>
+</tr>
+<tr>
+<td>Servicios de etiquetado</td>
+<td>Calidad y confidencialidad</td>
+<td>Guía de etiquetado, muestreo de calidad, acuerdo de confidencialidad</td>
+</tr>
+</tbody>
+</table>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Criterios de liberación escritos para cada sistema de IA.</li>
+<li>Un registro de cambios (aunque sea una hoja de cálculo) con clasificación de significativo o estándar.</li>
+<li>Contratos con proveedores de IA revisados con una lista de verificación.</li>
+<li>Tres a cinco indicadores de eficacia de los controles más críticos, revisados cada mes.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Puertas automáticas en la canalización que bloquean liberaciones sin pruebas ni aprobación.</li>
+<li>Versiones de modelos y datos fijadas y trazables en un registro de modelos.</li>
+<li>Monitoreo continuo de deriva, calidad y comportamiento del proveedor, con alertas.</li>
+<li>Revisiones periódicas de proveedores críticos y planes de salida probados.</li>
+</ul>
+</div>
+</div>
+<h3 id="c-8-2">8.2 Evaluación de riesgos de IA<a class="headerlink" href="#c-8-2" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La organización debe ejecutar evaluaciones de riesgos de IA, con el método que definió en <a href="../c6-planificacion/#c-6-1-2">6.1.2</a>, <strong>a intervalos planificados</strong> y <strong>cuando se proponen o se producen cambios significativos</strong>, y conservar los resultados de cada una.</p>
+<p>Tres claves:</p>
+<ul>
+<li><strong>Intervalos planificados.</strong> La norma no dice cada cuánto; te recomendamos ligarlo al nivel de riesgo del sistema (ver la tabla de abajo).</li>
+<li><strong>"Se proponen o se producen".</strong> Hay que evaluar <em>antes</em> de un cambio que planeas y <em>después</em> de uno que ocurrió sin tu permiso, como una actualización silenciosa del proveedor.</li>
+<li><strong>Conservar todas.</strong> El historial permite comparar resultados, algo que <a href="../c6-planificacion/#c-6-1-2">6.1.2</a> exige al pedir resultados consistentes y comparables.</li>
+</ul>
+<p>Una propuesta de frecuencias, que debes ajustar a tus criterios de riesgo:</p>
+<table>
+<thead>
+<tr>
+<th>Nivel del sistema</th>
+<th>Reevaluación de riesgos</th>
+<th>Reevaluación de impacto</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alto: decide sobre personas o su dinero</td>
+<td>Semestral</td>
+<td>Anual y antes de cada cambio significativo</td>
+<td>Score Monarca v3</td>
+</tr>
+<tr>
+<td>Medio: informa a clientes o al público</td>
+<td>Anual</td>
+<td>Anual</td>
+<td>Alma, el chatbot de WhatsApp</td>
+</tr>
+<tr>
+<td>Bajo: apoyo interno con revisión humana</td>
+<td>Anual o con la revisión del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Cada dos años</td>
+<td>Resumen de juntas con IA-01</td>
+</tr>
+</tbody>
+</table>
+<h4 id="que-es-un-cambio-significativo-en-ia">¿Qué es un "cambio significativo" en IA?<a class="headerlink" href="#que-es-un-cambio-significativo-en-ia" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La norma no lo define; te toca a ti fijar el criterio en tu metodología. Estos ejemplos sirven de punto de partida:</p>
+<table>
+<thead>
+<tr>
+<th>Cambio</th>
+<th>Ejemplo</th>
+<th>¿Reevaluar riesgos (8.2)?</th>
+<th>¿Reevaluar impacto (8.4)?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reentrenar el modelo</td>
+<td>Score Monarca v3 reentrenado con datos del último año</td>
+<td>Sí</td>
+<td>Sí, si cambian variables, umbrales o población; si es rutinario con la misma especificación, puede bastar la validación (lectura nuestra)</td>
+</tr>
+<tr>
+<td>Cambiar de modelo fundacional</td>
+<td>Conversa migra a otro proveedor</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Nuevo uso o propósito</td>
+<td>Alma empieza a responder dudas de nómina a trabajadores de los clientes</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Nuevo segmento de población</td>
+<td>Monarca abre créditos a micronegocios rurales</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Nueva jurisdicción</td>
+<td>Conversa firma su primer cliente en España</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Más automatización</td>
+<td>Eliminar la banda gris de revisión humana</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Nueva fuente de datos</td>
+<td>Incorporar datos de uso de la app al modelo</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Nuevas capacidades</td>
+<td>El asistente ahora agenda citas o ejecuta acciones</td>
+<td>Sí</td>
+<td>Según el caso</td>
+</tr>
+<tr>
+<td>Incidente grave</td>
+<td>Alma da un plazo fiscal equivocado a decenas de clientes</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>No significativo</td>
+<td>Corregir una errata en la base de conocimiento; cambiar el color del widget</td>
+<td>No: cambio estándar</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>El ciclo completo de la operación se ve así:</p>
+<pre class="mermaid"><code>flowchart LR
+  subgraph DIS["Disparadores"]
+    T1["Calendario:&lt;br/&gt;intervalo planificado"]
+    T2["Cambio significativo&lt;br/&gt;propuesto u ocurrido"]
+    T3["Incidente o hallazgo&lt;br/&gt;del monitoreo"]
+  end
+  T1 --&gt; I["Evaluación de impacto 8.4&lt;br/&gt;con el proceso de 6.1.4"]
+  T2 --&gt; I
+  T3 --&gt; I
+  T1 --&gt; R["Evaluación de riesgos 8.2&lt;br/&gt;con el método de 6.1.2"]
+  T2 --&gt; R
+  T3 --&gt; R
+  I --&gt;|"alimenta"| R
+  R --&gt; TR["Tratamiento 8.3:&lt;br/&gt;implementar y verificar eficacia"]
+  TR --&gt; EV["Evidencia conservada:&lt;br/&gt;resultados, aprobaciones, SoA"]
+  EV --&gt; MO["Monitoreo de controles 8.1&lt;br/&gt;y medición 9.1"]
+  MO -.-&gt;|"nuevo hallazgo"| T3</code></pre>
+<h3 id="c-8-3">8.3 Tratamiento de riesgos de IA<a class="headerlink" href="#c-8-3" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La organización debe <strong>implementar</strong> el plan de tratamiento que formuló según <a href="../c6-planificacion/#c-6-1-3">6.1.3</a> y <strong>verificar que funciona</strong>. Además:</p>
+<ul>
+<li>Si una nueva evaluación encuentra riesgos que requieren tratamiento, se les aplica el mismo proceso de 6.1.3.</li>
+<li>Si una opción de tratamiento no resultó eficaz, se revisa, se vuelve a validar y se actualiza el plan.</li>
+<li>Se conservan los resultados de los tratamientos.</li>
+</ul>
+<p>La diferencia entre <em>implementado</em> y <em>eficaz</em> es el corazón de esta subcláusula:</p>
+<table>
+<thead>
+<tr>
+<th>Riesgo</th>
+<th>Tratamiento implementado</th>
+<th>Cómo se verifica la eficacia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alma inventa plazos fiscales</td>
+<td>Respuestas limitadas a la base de conocimiento curada, aviso de confirmar con el contador y traspaso a persona</td>
+<td>Muestreo mensual de 50 conversaciones sobre plazos; meta de errores cercana a cero</td>
+</tr>
+<tr>
+<td>Sesgo por código postal en Score Monarca v3</td>
+<td>Variable excluida y pruebas de equidad en cada validación</td>
+<td>Métricas de equidad por entidad federativa en producción, cada mes</td>
+</tr>
+<tr>
+<td>Inyección de instrucciones a través de documentos del <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr></td>
+<td>Filtros y separación entre instrucciones y contenido</td>
+<td>Batería adversaria en cada versión y ejercicio de equipo rojo (<em>red team</em>) periódico</td>
+</tr>
+</tbody>
+</table>
+<p>Para demostrarlo, conviene que el seguimiento del plan registre, por cada acción: riesgo, acción, responsable, fecha compromiso, estado, evidencia de implementación, evidencia de eficacia, riesgo residual resultante y fecha de aceptación. Una hoja de cálculo bien llevada basta; lo que no basta es una columna de "cerrado" sin nada detrás.</p>
+<p>Cuando el tratamiento cambia, revisa también la aceptación del riesgo residual por la dirección designada (6.1.3) y actualiza la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> si entran o salen controles.</p>
+<h3 id="c-8-4">8.4 Evaluación de impacto del sistema de IA<a class="headerlink" href="#c-8-4" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La organización debe ejecutar evaluaciones de impacto del sistema de IA, con el proceso de <a href="../c6-planificacion/#c-6-1-4">6.1.4</a>, <strong>a intervalos planificados</strong> o <strong>ante cambios significativos</strong>, y conservar los resultados de todas.</p>
+<p>Puntos prácticos:</p>
+<ul>
+<li><strong>Otra perspectiva.</strong> La evaluación de riesgos mira consecuencias para la organización, las personas y la sociedad; la de impacto se concentra en personas, grupos y sociedad. Ver <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>.</li>
+<li><strong>Alimenta a 8.2.</strong> Los resultados del impacto entran a la evaluación de riesgos, como pide 6.1.4. En la práctica, un mismo ticket de cambio puede disparar ambas.</li>
+<li><strong>Matiz de redacción.</strong> En nuestra lectura, 8.4 habla de cambios significativos que <em>se proponen</em>, mientras que 8.2 cubre también los que <em>ya ocurrieron</em>. Aun así, te recomendamos reevaluar el impacto cuando un cambio te tomó por sorpresa.</li>
+<li><strong>Conservación.</strong> La guía de <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> sugiere conservar los resultados por un periodo definido.</li>
+<li><strong>Quién participa.</strong> Además del evaluador, alguien que conozca el dominio y, de preferencia, la voz de los grupos afectados (quejas, encuestas, reconsideraciones). Ver <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>.</li>
+</ul>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>Buenas fuentes para reevaluar el impacto: quejas de clientes (para entidades financieras, también las que llegan por Condusef), solicitudes de derechos <abbr title="Derechos de Acceso, Rectificación, Cancelación y Oposición sobre datos personales.">ARCO</abbr> relacionadas con decisiones automatizadas y reclamaciones en redes sociales o en WhatsApp. Si además realizas evaluaciones de impacto en protección de datos, coordínalas para no duplicar trabajo. Revisa <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a> para el marco aplicable.</p>
+</div>
+<h2 id="como-se-aplica-segun-tu-rol">Cómo se aplica según tu rol<a class="headerlink" href="#como-se-aplica-segun-tu-rol" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Si usas IA de terceros</label><label for="__tabbed_1_2">Si desarrollas IA</label><label for="__tabbed_1_3">Si provees IA a clientes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> (despacho contable en Querétaro).</p>
+<ul>
+<li><strong>8.1:</strong> criterio de que ningún uso nuevo de IA se activa sin alta en el inventario y aprobación (<a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>); la base de conocimiento de Alma con doble revisión; muestreo de CFDI capturados por IA-03. El contrato con BotNorte exige aviso previo si cambia el modelo de lenguaje que usa. Si la suite de ofimática activa por defecto una función nueva de IA, se trata como cambio no intencionado y se revisa la configuración.</li>
+<li><strong>8.2:</strong> evaluación anual, más disparadores: que BotNorte cambie de modelo, que una reforma fiscal cambie plazos que Alma responde o que se quiera ampliar Alma a nuevas consultas.</li>
+<li><strong>8.3:</strong> tras el incidente de la nómina, el tratamiento fue bloquear chatbots no autorizados en la red y reforzar la concientización; la eficacia se verifica con una revisión trimestral del tráfico web.</li>
+<li><strong>8.4:</strong> el impacto clave es que un cliente <abbr title="Pequeña y mediana empresa.">PyME</abbr> reciba un plazo equivocado y pague una multa. Se reevalúa antes de ampliar Alma a trabajadores de los clientes, porque cambia la población y entran datos personales.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> (SOFOM E.N.R. con modelo de <em>scoring</em> propio).</p>
+<ul>
+<li><strong>8.1:</strong> el Comité de Modelos funciona como comité de cambios con criterios de liberación (poder discriminante, equidad, explicabilidad de motivos de rechazo). Se monitorea la deriva de variables y la tasa de anulaciones en la banda gris. La API de fraude del proveedor (IA-03) se vigila por segmento.</li>
+<li><strong>8.2:</strong> evaluación semestral de Score Monarca v3. Un reentrenamiento con la misma especificación es cambio estándar con validación; agregar variables o cambiar umbrales es significativo.</li>
+<li><strong>8.3:</strong> la regla de reconsideración humana para rechazos se verifica con el porcentaje de reconsideraciones que terminan en aprobación.</li>
+<li><strong>8.4:</strong> impactos en solicitantes (exclusión financiera, sesgo regional); se reevalúa antes de lanzar créditos para micronegocios.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> (plataforma SaaS de asistentes con IA generativa).</p>
+<ul>
+<li><strong>8.1:</strong> cada versión pasa por baterías de evaluación de calidad y pruebas adversarias; los cambios que el cliente hace en su propia base de conocimiento son responsabilidad suya, pero Conversa le da herramientas para probarlos. El proveedor del modelo fundacional es el servicio externo más crítico.</li>
+<li><strong>8.2:</strong> se evalúa la plataforma y, aparte, los grupos de clientes por sector. Disparadores: nuevo modelo, nueva capacidad (por ejemplo, que el asistente cotice pólizas), nuevo sector o nuevo país.</li>
+<li><strong>8.3:</strong> la eficacia de los filtros de seguridad (<em>guardrails</em>) se mide en cada liberación.</li>
+<li><strong>8.4:</strong> responsabilidad compartida (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>): Conversa evalúa el impacto de la plataforma y da a cada cliente insumos para la suya. Para el cliente en España, ver el <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<ul>
+<li><strong>8.1</strong> comparte la base con ISO 27001:2022 (criterios, información documentada, cambios, procesos externos), pero 42001 añade un bloque explícito: implementar los controles de 6.1.3 ligados a la operación y <strong>monitorear su eficacia</strong>, con referencia a los Anexos A y B.</li>
+<li><strong>8.2</strong> es paralela a la de ISO 27001, pero el riesgo considera consecuencias para personas y sociedades, no solo para la información.</li>
+<li><strong>8.3</strong> va más allá que su par de ISO 27001: además de implementar el plan, pide verificar su eficacia y dice qué hacer con riesgos nuevos y con opciones de tratamiento que no funcionaron.</li>
+<li><strong>8.4</strong> no tiene equivalente en ISO 27001.</li>
+<li>Los <strong>cambios no intencionados</strong> (deriva, actualizaciones silenciosas del proveedor) son mucho más frecuentes en IA que en TI tradicional.</li>
+<li>Los <strong>servicios externos</strong> abarcan modelos, datos y etiquetado, y se valoran también por su alineación con el enfoque de IA responsable (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>).</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tenemos criterios verificables para liberar, cambiar y retirar sistemas de IA?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Cada control operativo de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> está funcionando y tiene un indicador de eficacia?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Definimos por escrito qué es un "cambio significativo" para nuestros sistemas?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Detectaríamos si el proveedor cambia el modelo detrás de la API sin avisar?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Nuestros contratos con proveedores de IA exigen aviso previo de cambios y prohíben usar nuestros datos para entrenar, si así lo necesitamos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Las evaluaciones de riesgo e impacto tienen frecuencia definida según el nivel de riesgo, y se cumplen?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Podemos mostrar las últimas evaluaciones de cada sistema, con fecha y versión?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Verificamos que los tratamientos funcionan, no solo que se implementaron?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Cuando un tratamiento falla, actualizamos el plan y la aceptación del riesgo residual?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Los incidentes y hallazgos de monitoreo disparan reevaluaciones?</li>
+</ul>
+<h2 id="que-evidencia-espera-ver-un-auditor">Qué evidencia espera ver un auditor<a class="headerlink" href="#que-evidencia-espera-ver-un-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Evidencia</th>
+<th>Ejemplo</th>
+<th>Señal de alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criterios de proceso</td>
+<td>Criterios de liberación documentados y aplicados</td>
+<td>Despliegues sin evidencia de pruebas ni aprobación</td>
+</tr>
+<tr>
+<td>Controles en operación</td>
+<td>Registros de monitoreo, bitácoras, reportes de pruebas</td>
+<td>Controles "aplicables" en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> sin ninguna evidencia de operación</td>
+</tr>
+<tr>
+<td>Eficacia de controles</td>
+<td>Tablero de indicadores con acciones cuando se salen de rango</td>
+<td>Indicadores en rojo durante meses sin acción</td>
+</tr>
+<tr>
+<td>Gestión de cambios</td>
+<td>Tickets con clasificación, análisis, aprobación y reversa</td>
+<td>Cambios de modelo o de proveedor sin registro</td>
+</tr>
+<tr>
+<td>Control de proveedores</td>
+<td>Debida diligencia, contratos con cláusulas de IA, revisiones periódicas</td>
+<td>Se usa una API de IA sin contrato revisado ni documentación</td>
+</tr>
+<tr>
+<td>Evaluaciones de riesgo (8.2)</td>
+<td>Matrices fechadas y versionadas; disparadores registrados</td>
+<td>Una sola evaluación del año de implementación</td>
+</tr>
+<tr>
+<td>Tratamiento (8.3)</td>
+<td>Plan con estado, responsables y evidencia de eficacia</td>
+<td>Acciones "cerradas" sin verificar si funcionaron</td>
+</tr>
+<tr>
+<td>Evaluaciones de impacto (8.4)</td>
+<td>Evaluaciones actualizadas tras cambios relevantes</td>
+<td>Un sistema cambió de población y la evaluación es la original</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition auditor">
+<p class="admonition-title">Lo que mira el auditor</p>
+<p>La técnica favorita aquí es el <strong>muestreo hacia atrás</strong>: el auditor elige un cambio real (una nueva versión de modelo, un proveedor nuevo) y pide ver el ticket, la clasificación, la reevaluación de riesgos e impacto, las pruebas, la aprobación y la comunicación. Si algún eslabón falta, hay hallazgo.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes</p>
+<ul>
+<li>Hacer la evaluación de riesgos para la certificación y no volver a tocarla.</li>
+<li>No definir qué es un cambio significativo, de modo que nada lo es.</li>
+<li>Usar el alias "última versión" del modelo del proveedor y enterarse de los cambios por las quejas de los clientes.</li>
+<li>Confundir "implementado" con "eficaz" en el plan de tratamiento.</li>
+<li>Reevaluar riesgos tras un cambio, pero olvidar el impacto.</li>
+<li>Tratar a los proveedores de IA como cualquier proveedor de software, sin preguntar por datos, versiones ni documentación.</li>
+</ul>
+</div>
+<h2 id="ejemplo-resuelto">Ejemplo resuelto<a class="headerlink" href="#ejemplo-resuelto" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Caso: Conversa Labs — cambio de proveedor del modelo fundacional</p>
+<p><strong>Contexto.</strong> El proveedor actual anunció el retiro programado de la versión del modelo que usa Conversa. El CTO propone migrar a otro proveedor con mejor costo y menor latencia. La Responsable de Confianza y Seguridad, dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, abre el proceso.</p>
+<p><strong>1. Registro y clasificación (8.1).</strong> Se abre un ticket de cambio. Según los criterios de Conversa, cambiar de modelo fundacional es un cambio significativo: exige reevaluar riesgos e impacto y la aprobación conjunta del CEO, el CTO y Confianza y Seguridad.</p>
+<p><strong>2. Debida diligencia del nuevo proveedor (8.1 y A.10.3).</strong> Legal y Confianza y Seguridad revisan: si el proveedor usa los datos enviados por API para entrenar (Conversa prometió a sus clientes que no); cuánto tiempo retiene entradas y salidas; dónde procesa y con qué subprocesadores; qué documentación entrega sobre limitaciones y evaluaciones de seguridad; cómo avisa de nuevas versiones y de retiros de versiones; cómo notifica incidentes. El nuevo proveedor acepta por contrato no entrenar con los datos y avisar con anticipación de cualquier cambio de versión.</p>
+<p><strong>3. Reevaluación de riesgos (8.2).</strong> Se corre la batería de evaluación con 1200 preguntas sintéticas y anonimizadas por sector, aprobadas por los clientes piloto:</p>
+<table>
+<thead>
+<tr>
+<th>Riesgo</th>
+<th>Proveedor actual</th>
+<th>Nuevo proveedor (antes de tratar)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Respuestas inventadas sobre coberturas de pólizas</td>
+<td>Medio</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Errores con modismos de Chile y Colombia</td>
+<td>Bajo</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Susceptibilidad a inyección de instrucciones (bloqueo)</td>
+<td>Medio (97 %)</td>
+<td>Alto (91 %)</td>
+</tr>
+<tr>
+<td>Procesamiento de datos en otra región</td>
+<td>Bajo</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Dependencia de un solo proveedor</td>
+<td>Alto</td>
+<td>Medio (se construye una capa multiproveedor)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Reevaluación de impacto (8.4).</strong> Los grupos más sensibles son los asegurados que consultan coberturas: una respuesta equivocada puede llevarlos a no presentar una reclamación. También se detecta que el nuevo modelo se niega más a hablar de temas de salud, lo que reduce el acceso a información legítima. Conclusión: piloto más estricto con aseguradoras y documentación actualizada para el cliente en España.</p>
+<p><strong>5. Tratamiento (8.3).</strong> Ajuste de instrucciones de sistema y filtros; glosario regional en el <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>; versión del modelo fijada, nunca "la última"; acuerdo de procesamiento en la región requerida; despliegue gradual (5 % del tráfico de un comercio y una universidad, luego 25 %, luego 100 %) con reversa en menos de una hora; aviso a los clientes con 30 días de anticipación, notas de versión y documentación actualizada (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>). Se actualizan el inventario, la ficha del sistema y los recursos documentados (<a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a>).</p>
+<p>El calendario quedó así:</p>
+<table>
+<thead>
+<tr>
+<th>Semanas</th>
+<th>Fase</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 a 3</td>
+<td>Debida diligencia y negociación del contrato</td>
+<td>Legal y Confianza y Seguridad</td>
+</tr>
+<tr>
+<td>2 a 5</td>
+<td>Evaluaciones de riesgo e impacto; batería de pruebas</td>
+<td>Confianza y Seguridad y CTO</td>
+</tr>
+<tr>
+<td>5 a 7</td>
+<td>Ajustes de tratamiento y nueva corrida de pruebas</td>
+<td>Equipo de ingeniería</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Aviso a clientes, 30 días antes de iniciar el despliegue</td>
+<td>Customer Success</td>
+</tr>
+<tr>
+<td>10 a 12</td>
+<td>Despliegue gradual por cliente</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Revisión posterior a la implementación</td>
+<td>Dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+</tbody>
+</table>
+<p><strong>6. Verificación de eficacia.</strong> Tras el ajuste, el bloqueo de inyecciones sube a 98 % y los errores con modismos bajan al nivel previo. Treinta días después de la migración completa, la tasa de traspaso a agente humano y las quejas se mantienen estables. El riesgo residual se presenta y se acepta formalmente.</p>
+<p><strong>7. El cambio que nadie planeó.</strong> Dos semanas después de completar la migración, el monitoreo detecta más negativas a responder en un ambiente donde la versión no quedó fijada: el proveedor actualizó su alias. Se trata como cambio no intencionado (8.1): se contiene, se fija la versión y se agrega una verificación automática a la canalización.</p>
+<p><strong>Evidencia conservada.</strong> Ticket y clasificación, cuestionario de debida diligencia y contrato, evaluación de riesgos nueva frente a la anterior, evaluación de impacto actualizada, reportes de pruebas, aprobaciones, avisos a clientes, revisión posterior a la implementación y registro del incidente del alias.</p>
+</div>
+<h2 id="relacion-con-otras-clausulas-controles-y-normas">Relación con otras cláusulas, controles y normas<a class="headerlink" href="#relacion-con-otras-clausulas-controles-y-normas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Planificación:</strong> 8.2, 8.3 y 8.4 ejecutan lo definido en <a href="../c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../c6-planificacion/#c-6-1-3">6.1.3</a> y <a href="../c6-planificacion/#c-6-1-4">6.1.4</a>; los cambios al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> mismo van por <a href="../c6-planificacion/#c-6-3">6.3</a>.</li>
+<li><strong>Apoyo:</strong> los resultados se controlan como información documentada (<a href="../c7-apoyo/#c-7-5">7.5</a>) y los cambios se comunican según la matriz de <a href="../c7-apoyo/#c-7-4">7.4</a>.</li>
+<li><strong>Evaluación y mejora:</strong> los indicadores de eficacia alimentan <a href="../c9-evaluacion-del-desempeno/#c-9-1">9.1</a>; conviene llevar a <a href="../c9-evaluacion-del-desempeno/#c-9-3">9.3</a> el estado de las evaluaciones y del plan de tratamiento; los controles ineficaces pueden terminar en <a href="../c10-mejora/#c-10-2">10.2</a>.</li>
+<li><strong>Controles:</strong> ciclo de vida <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> y <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>; impacto <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> a <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>; incidentes <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>; uso previsto <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a>; terceros <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> y <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>.</li>
+<li><strong>Normas y marcos:</strong> ISO/IEC 23894 para la gestión de riesgos de IA (<a href="../../fundamentos/familia-de-normas/">familia de normas</a>); la función de gestión del <a href="../../integracion/nist-ai-rmf/"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></a>; <a href="../../integracion/con-iso27001/">integración con ISO 27001</a>.</li>
+<li><strong>Casos completos:</strong> <a href="../../casos-practicos/pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a>, <a href="../../casos-practicos/fintech-scoring/">fintech con <em>scoring</em></a> y <a href="../../casos-practicos/empresa-desarrolla-chatbot/">empresa que desarrolla un chatbot</a>.</li>
+</ul>
+<h2 id="plantillas-relacionadas">Plantillas relacionadas<a class="headerlink" href="#plantillas-relacionadas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a></li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad (<abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>)</a></li>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a></li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a></li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a></li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a></li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

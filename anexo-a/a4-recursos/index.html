@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Guía práctica del objetivo A.4 de ISO/IEC 42001 para documentar los recursos de cada sistema de IA (inventario, datos, herramientas y modelos, infraestructura y personas), con fichas de datos, AI-BOM e inventario de ejemplo.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1511,6 +1511,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-4-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1559,6 +1581,45 @@
     <span class="md-ellipsis">
       
         A.4.6 Recursos humanos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo se ve este objetivo en los casos prácticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventario-de-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventario de ejemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2768,26 +2829,711 @@
 
 
 <h1 id="a4-recursos-para-sistemas-de-ia">A.4 · Recursos para sistemas de IA<a class="headerlink" href="#a4-recursos-para-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a4">A.4 · Recursos</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 5 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 35 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a4">
+<p><strong>El objetivo, en palabras simples:</strong> saber con qué está hecho cada sistema de IA (qué datos lo alimentan, qué modelos y herramientas lo construyen, en qué infraestructura corre y qué personas lo hacen funcionar) para poder entender a fondo sus riesgos e impactos.</p>
+<p><strong>Lo que está en juego:</strong> no se puede gestionar lo que no se conoce. Sin este expediente, la evaluación de impacto se hace a ciegas, un cambio del proveedor del modelo te toma por sorpresa y nadie sabe qué sistemas se ven afectados cuando aparece una vulnerabilidad, un sesgo en los datos o una persona clave renuncia.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.4 es el expediente técnico de tu IA: un inventario de sistemas y, para cada uno, una descripción suficiente de sus datos, herramientas, cómputo y personas.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>En México, cualquier producto empacado lleva su lista de ingredientes. Si una galleta contiene cacahuate y no lo dice, la persona alérgica no tiene forma de protegerse. Con la IA pasa lo mismo: si no sabes que un modelo se entrenó casi solo con datos de una región, no puedes advertir que funcionará peor en otra; si no sabes que tu chatbot depende de un modelo de un tercero, no puedes prever qué pasa cuando ese tercero lo cambia. Y como en la industria automotriz, donde la lista de materiales permite llamar a revisión justo a los autos que llevan la pieza defectuosa, un buen inventario de recursos te dice en minutos qué sistemas tocan un conjunto de datos, una biblioteca o un proveedor con problemas.</p>
+<p>En nuestra lectura, la idea de fondo es que la organización pueda dar cuenta de todo lo que compone cada sistema (piezas, activos, insumos), porque solo así entiende y atiende sus riesgos e impactos. Por eso A.4 es, en la práctica, el insumo de casi todo lo demás: la <a href="../../clausulas/c6-planificacion/#c-6-1-2">evaluación de riesgos (6.1.2)</a> y la <a href="../../clausulas/c6-planificacion/#c-6-1-4">evaluación de impacto (6.1.4)</a> necesitan saber qué datos se usan y a quién representan; el diseño (<a href="../a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>) documenta las decisiones sobre esos recursos; los controles de datos (<a href="../a7-datos/">A.7</a>) gestionan lo que A.4.3 cataloga; y la gestión de proveedores (<a href="../a10-terceros/#a-10-3">A.10.3</a>) se ocupa de los recursos que aporta un tercero. A nivel de sistema de gestión, la <a href="../../clausulas/c7-apoyo/#c-7-1">cláusula 7.1</a> pide los recursos para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> en general; A.4 baja esa idea a cada sistema de IA.</p>
+<p>Los riesgos que aborda son muy concretos: la IA en la sombra que nadie inventarió, la dependencia de un proveedor que nadie dimensionó, datos de origen dudoso, costos de cómputo que se disparan en temporada alta y sistemas que solo una persona entiende.</p>
+<p>El objetivo cambia de peso según tu rol:</p>
+<ul>
+<li><strong>Si usas IA de terceros</strong>, tu trabajo central es el inventario (<a href="#a-4-2">A.4.2</a>) y las personas que operan y supervisan los sistemas (<a href="#a-4-6">A.4.6</a>). De los datos, herramientas e infraestructura del proveedor documentas lo que él te informa. En esta guía clasificamos A.4.3, A.4.4 y A.4.5 como propios de quien desarrolla o provee, aunque con matices que verás en cada control.</li>
+<li><strong>Si desarrollas IA</strong>, los cinco controles aplican de lleno: fichas de datos, versiones de modelos y bibliotecas, capacidad de cómputo y equipos con competencias diversas.</li>
+<li><strong>Si provees IA a clientes</strong>, además debes distinguir qué recursos aporta cada cliente (sus bases de conocimiento, por ejemplo) y cuáles aporta tu proveedor del modelo, porque eso define responsabilidades y lo que tienes que informar.</li>
+</ul>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-4-2">A.4.2 Documentación de recursos</a></td>
+<td>Identificar y documentar los recursos que cada sistema de IA necesita en las etapas de su ciclo de vida.</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar</td>
+</tr>
+<tr>
+<td><a href="#a-4-3">A.4.3 Recursos de datos</a></td>
+<td>Documentar los conjuntos de datos que usa el sistema.</td>
+<td>Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-4-4">A.4.4 Recursos de herramientas</a></td>
+<td>Documentar modelos, algoritmos, bibliotecas y plataformas.</td>
+<td>Desarrolla · Provee</td>
+<td>Bajo</td>
+<td>Similar</td>
+</tr>
+<tr>
+<td><a href="#a-4-5">A.4.5 Recursos de sistema y cómputo</a></td>
+<td>Documentar dónde corre el sistema, con qué capacidad y con qué impacto.</td>
+<td>Desarrolla · Provee</td>
+<td>Bajo</td>
+<td>Equivalente</td>
+</tr>
+<tr>
+<td><a href="#a-4-6">A.4.6 Recursos humanos</a></td>
+<td>Documentar las personas y competencias que el sistema necesita en todo su ciclo de vida.</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<pre class="mermaid"><code>flowchart LR
+  D["Datos · A.4.3"] --&gt; S["Sistema de IA · inventario A.4.2"]
+  H["Herramientas y modelos · A.4.4"] --&gt; S
+  C["Cómputo e infraestructura · A.4.5"] --&gt; S
+  P["Personas y competencias · A.4.6"] --&gt; S
+  S --&gt; R["Evaluación de riesgos 6.1.2"]
+  S --&gt; I["Evaluación de impacto A.5"]</code></pre>
 <h2 class="dx-control obj-a4" id="a-4-2">A.4.2 Documentación de recursos<a class="headerlink" href="#a-4-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> No se puede evaluar el riesgo ni el impacto de algo cuyas piezas no conoces. Documentar los recursos de cada sistema es el primer paso para entenderlo.</p>
+<p><strong>En la práctica.</strong> El control pide saber, y dejar por escrito, qué recursos hacen falta en cada fase por la que pasa un sistema de IA, además de los que requieren otras actividades de IA de la organización. Lo más útil es pensarlo en dos capas. La primera es el <strong>inventario de sistemas de IA</strong>: la lista completa de lo que está en el alcance, incluidas las herramientas generativas que usa el personal y las funciones de IA incrustadas en software que ya contrataste. La segunda es, para cada sistema, la descripción de sus recursos: los componentes del propio sistema y las cuatro familias que desarrollan los controles siguientes (datos, herramientas, cómputo y personas). Registra también <strong>quién aporta cada recurso</strong>: la organización, un cliente o un tercero.</p>
+<p><strong>Cómo encontrar la IA que no sabes que tienes.</strong> Revisa contratos y facturas (las suscripciones pagadas con tarjeta corporativa son una mina), los registros del inicio de sesión único y del proxy, las notas de versión de tus proveedores de software (muchos activan funciones de IA sin avisar) y pregunta directamente a cada líder de área. Para cada sistema, como mínimo: identificador, nombre, uso previsto, dueño, rol de la organización (usa, desarrolla o provee), proveedor, datos que usa (con indicación de datos personales), modelo o herramienta, dónde corre, tipo de supervisión humana, estado (piloto, producción, retirado) y vínculo con sus evaluaciones de riesgo e impacto. Al final de esta página hay un <a href="#inventario-de-ejemplo">inventario de ejemplo</a> con los sistemas de las tres empresas de los casos prácticos.</p>
+<p><strong>Diagramas.</strong> Un diagrama de arquitectura y uno de flujo de datos valen más que diez páginas de descripción: muestran por dónde viajan los datos, qué terceros intervienen, en qué países se procesan y dónde están las fronteras de confianza. Así se ve, simplificado, el flujo de datos de Alma, el chatbot de Contadores Alameda:</p>
+<pre class="mermaid"><code>flowchart LR
+  U["Cliente en WhatsApp"] --&gt; B["Plataforma de BotNorte"]
+  K["Base de conocimiento FAQ · la cura el despacho"] --&gt; B
+  B --&gt;|"consulta"| M["Modelo de lenguaje de un tercero"]
+  M --&gt;|"respuesta"| B
+  B --&gt;|"escalamiento"| L["Líder de atención a clientes"]
+  B --&gt; R["Registro de conversaciones"]</code></pre>
+<p><strong>Detectar lo que falta.</strong> Documentar recursos también sirve para descubrir que algo no está disponible antes de que sea tarde. Una cadena de tiendas en México que planeaba analizar video con IA en la nube descubrió, al documentar recursos, que los enlaces de internet de sus sucursales no soportaban ese tráfico; tuvo que rediseñar el sistema para procesar en la tienda. Cuando falta un recurso, lo correcto es ajustar el diseño o los requisitos de despliegue, no lanzar y esperar lo mejor.</p>
+<p><strong>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></strong>, reutiliza el inventario de activos de ISO 27001 A.5.9: la herramienta, el concepto de dueño y el ciclo de actualización. Lo que hay que agregar son los atributos propios de la IA (uso previsto, rol, modelo, conjuntos de datos, supervisión humana) y la vista por sistema, que agrupa activos dispersos en una sola ficha.</p>
+<p>Lo que <strong>no</strong> exige: una base de datos de configuración ni una herramienta especial; una hoja de cálculo bien mantenida funciona. En nuestra lectura, también se vale ser proporcional: una herramienta de bajo riesgo puede tener un registro breve, mientras que un sistema que decide sobre personas merece una ficha completa.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Inventario de sistemas de IA en hoja de cálculo, incluidas herramientas generativas y funciones de IA incrustadas.</li>
+<li>Campos mínimos por sistema: dueño, uso previsto, rol, proveedor, datos, modelo, ubicación, supervisión humana, estado.</li>
+<li>Diagrama de flujo de datos para cada sistema de impacto medio o alto.</li>
+<li>Indicación de qué recursos aporta la organización, el cliente o un tercero.</li>
+<li>Revisión del inventario al menos dos veces al año y con cada alta o baja.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Inventario integrado al catálogo de activos, con atributos de IA y filtros por sistema.</li>
+<li>Detección automática de IA en la sombra a partir de registros de acceso, proxy y gastos.</li>
+<li>Fichas del sistema completas, enlazadas con sus evaluaciones de riesgo e impacto.</li>
+<li>Diagramas de arquitectura versionados junto con el código.</li>
+<li>Alta en el inventario como paso obligatorio de compras y de despliegue.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Inventario de sistemas de IA vigente, con fecha de última revisión.</li>
+<li>Fichas del sistema con sus recursos.</li>
+<li>Diagramas de arquitectura y de flujo de datos.</li>
+<li>Registro de altas, cambios y bajas en el inventario.</li>
+<li>Evidencia del método usado para detectar IA no registrada.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Muéstrame el inventario de sistemas de IA. ¿Cómo saben que está completo?</li>
+<li>¿Qué funciones de IA vienen incluidas en el software que ya contrataron? ¿Están inventariadas?</li>
+<li>Para este sistema, ¿qué datos usa, quién los aporta y a dónde viajan?</li>
+<li>¿Cuándo se actualizó el diagrama de flujo de datos y qué cambió?</li>
+<li>¿Qué recursos dependen de un tercero y qué pasa si deja de prestarlos?</li>
+<li>¿Cómo usaron esta documentación en la evaluación de impacto?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Inventariar solo los proyectos de ciencia de datos y olvidar las herramientas generativas y la IA incrustada en servicios contratados.</li>
+<li>Un inventario que se hizo una vez para la auditoría y nunca se actualizó.</li>
+<li>Diagramas de cajas sin flujos de datos ni terceros.</li>
+<li>No distinguir qué recursos aporta el cliente o el proveedor.</li>
+<li>Mezclar la IA con el inventario general de activos sin forma de filtrarla.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no vemos un supuesto razonable. Cualquier organización con un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> tiene al menos un sistema de IA en su alcance, y sin inventario no hay forma de evaluar riesgos ni impactos.</p>
+<p><strong>No se justifica si…</strong> en ningún caso. Una redacción típica de inclusión: "Incluido. Inventario INV-IA-01 con siete sistemas; fichas completas para los de impacto medio y alto".</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c4-contexto/#c-4-3">4.3</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a>, <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a> · Controles: <a href="#a-4-3">A.4.3</a>, <a href="#a-4-6">A.4.6</a>, <a href="../a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001 A.5.9 (inventario de información y otros activos asociados) · Normas: ISO/IEC 22989, ISO/IEC 23053 (ver <a href="../../fundamentos/familia-de-normas/">familia de normas</a>) · <strong>Anexo B:</strong> la guía B.4.2 explica para qué sirve documentar recursos (entender riesgos e impactos y alimentar la evaluación de impacto), sugiere apoyarse en diagramas, ofrece una tipología general de recursos, recuerda que pueden venir de la organización, de sus clientes o de terceros, y añade que la documentación ayuda a detectar recursos faltantes.</p>
 <h2 class="dx-control obj-a4" id="a-4-3">A.4.3 Recursos de datos<a class="headerlink" href="#a-4-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Los datos determinan en gran medida cómo se comporta un sistema de IA. Documentarlos permite saber de dónde vienen, para qué sirven, qué tan buenos son y qué sesgos pueden arrastrar.</p>
+<p><strong>En la práctica.</strong> Como parte de la identificación de recursos, el control pide documentar información sobre los datos que usa el sistema. La herramienta habitual es la <strong>ficha del conjunto de datos</strong> (<em>datasheet</em>), inspirada en la propuesta académica conocida como <em>Datasheets for Datasets</em>. Se hace una por cada conjunto relevante: los de entrenamiento, validación y prueba, pero también los datos de producción y las bases de conocimiento que consulta un sistema con generación aumentada por recuperación (<abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>). Esta es una estructura que funciona, ilustrada con el histórico de solicitudes de Monarca Crédito:</p>
+<table>
+<thead>
+<tr>
+<th>Bloque</th>
+<th>Qué registrar</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación</td>
+<td>Nombre, versión, dueño, descripción breve</td>
+<td>"HIST-SOL v7", dueño: líder de Ciencia de Datos</td>
+</tr>
+<tr>
+<td>Origen y derechos</td>
+<td>Procedencia (interna, proveedor, fuente pública, cliente), licencia o base legal, presencia de datos personales o sensibles</td>
+<td>Solicitudes propias; buró de crédito con autorización del solicitante; uso de la app con consentimiento</td>
+</tr>
+<tr>
+<td>Tiempo</td>
+<td>Periodo que cubre, fecha de la última actualización o modificación, frecuencia de actualización</td>
+<td>36 meses de solicitudes; corte mensual con fecha en los metadatos</td>
+</tr>
+<tr>
+<td>Papel en el ciclo de vida</td>
+<td>Entrenamiento, validación, prueba o producción, y cómo se hizo la partición</td>
+<td>Partición temporal: los meses más recientes se reservan para prueba</td>
+</tr>
+<tr>
+<td>Contenido</td>
+<td>Categorías de datos, variables, volumen, población que representa</td>
+<td>Ingresos, historial crediticio, comportamiento transaccional</td>
+</tr>
+<tr>
+<td>Etiquetado</td>
+<td>Qué significa la etiqueta, quién y cómo la asigna, cómo se verifica</td>
+<td>"Incumplimiento" definido por días de atraso en los primeros meses del crédito</td>
+</tr>
+<tr>
+<td>Calidad</td>
+<td>Requisitos y métricas: completitud, exactitud, duplicados, actualidad</td>
+<td>Ingresos faltantes en una fracción pequeña de registros, tratados según <a href="../a7-datos/#a-7-6">A.7.6</a></td>
+</tr>
+<tr>
+<td>Sesgos conocidos o potenciales</td>
+<td>Subrepresentación, variables sustitutas, sesgo histórico</td>
+<td>Pocas solicitudes de estados del sur; el código postal podría actuar como sustituto del nivel socioeconómico</td>
+</tr>
+<tr>
+<td>Preparación</td>
+<td>Limpieza, transformaciones, enriquecimiento</td>
+<td>Cuaderno de preparación versionado</td>
+</tr>
+<tr>
+<td>Uso previsto</td>
+<td>Para qué se puede usar el conjunto y para qué no</td>
+<td>Solo modelos de riesgo de crédito; prohibido para mercadotecnia</td>
+</tr>
+<tr>
+<td>Retención y eliminación</td>
+<td>Plazo, criterio, método de eliminación o anonimización</td>
+<td>Conservación alineada con obligaciones regulatorias y con el aviso de privacidad</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A.4.3 frente a A.7.</strong> Este control es el "qué hay": el catálogo con sus metadatos. Los controles de <a href="../a7-datos/">A.7</a> son el "cómo se gestiona": adquisición, calidad, procedencia y preparación. Se alimentan entre sí, y una buena ficha termina siendo evidencia de varios controles de A.7 a la vez. Como referencias técnicas, la guía de la norma remite a una norma de categorías de datos (ISO/IEC 19944-1) y a la serie ISO/IEC 5259 sobre calidad de datos para analítica y aprendizaje automático.</p>
+<p><strong>Si provees IA</strong>, ojo con los datos que aportan tus clientes. Conversa Labs mantiene una ficha ligera por cada base de conocimiento: el dueño es el cliente; registra qué contiene, la fecha de su última carga, si incluye datos personales, qué pasa con ella al terminar el contrato y la confirmación de que no se usa para entrenar modelos. También documenta sus conjuntos de evaluación, como las baterías de preguntas de prueba y de ataques de inyección de instrucciones.</p>
+<p><strong>Si solo usas IA de terceros</strong>, este control suele pesar poco, pero hay un matiz importante: si alimentas al sistema con datos propios, como la base de preguntas frecuentes que Contadores Alameda cura para Alma, en nuestra lectura ya estás aportando un recurso de datos y conviene documentarlo, aunque sea con una ficha de media página.</p>
+<p><strong>Por qué es nuevo frente a ISO 27001.</strong> El inventario de ISO 27001 A.5.9 y la clasificación de ISO 27001 A.5.12 te dan el dueño y la etiqueta de confidencialidad de los datos. Pero no preguntan si un conjunto sirvió para entrenar o para probar, cómo se etiquetó, a quién representa ni qué sesgos tiene. Esa es la parte nueva.</p>
+<p>Lo que <strong>no</strong> exige: una herramienta de catálogo de datos ni fichas para cada tabla de tus bases de datos; solo para los conjuntos que alimentan sistemas de IA.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Lista de conjuntos de datos por sistema de IA, con dueño.</li>
+<li>Ficha básica por conjunto relevante: procedencia, fechas, papel en el ciclo de vida, datos personales, uso previsto, retención y sesgos conocidos.</li>
+<li>Trazabilidad entre la versión de los datos y la versión del modelo que entrenaron.</li>
+<li>Ficha ligera para las bases de conocimiento usadas en <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>.</li>
+<li>Actualización de la ficha cada vez que el conjunto cambia de forma significativa.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Catálogo de datos con metadatos automáticos: fechas, esquema, perfilado de calidad.</li>
+<li>Versionado de datos con herramientas especializadas, vinculado al registro de modelos.</li>
+<li>Métricas de representatividad y sesgo recalculadas en cada actualización.</li>
+<li>Fichas generadas en parte automáticamente desde el flujo de procesamiento.</li>
+<li>Revisión de privacidad y legal antes de incorporar un conjunto nuevo.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Fichas de conjuntos de datos versionadas.</li>
+<li>Catálogo o inventario de datos por sistema de IA.</li>
+<li>Metadatos de versiones y fechas de actualización.</li>
+<li>Reportes de perfilado de calidad.</li>
+<li>Registro de sesgos conocidos y de cómo se tratan.</li>
+<li>Base legal o licencia de cada fuente.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Con qué datos se entrenó la versión del modelo que está en producción? Muéstrame la ficha.</li>
+<li>¿Cómo separaron los datos de entrenamiento, validación y prueba, y cómo evitaron que se contaminaran entre sí?</li>
+<li>¿Qué sesgos conocen en estos datos y qué hicieron al respecto?</li>
+<li>¿Cuándo se actualizaron los datos por última vez?</li>
+<li>¿Qué datos personales contiene el conjunto y con qué base legal los usan?</li>
+<li>¿Cuánto tiempo conservan estos datos y cómo los eliminan?</li>
+<li>¿Para qué otros fines se ha usado este conjunto?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Documentar las tablas de la base de datos y no los conjuntos que de verdad alimentan al modelo.</li>
+<li>No poder decir qué versión de los datos entrenó qué versión del modelo.</li>
+<li>Dejar vacío el campo de sesgos "porque no encontramos ninguno", sin haber buscado.</li>
+<li>Olvidar las bases de conocimiento de <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr> y los conjuntos de evaluación.</li>
+<li>Fichas que nadie actualiza después del primer entrenamiento.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización solo usa servicios de IA terminados y no aporta datos propios para entrenarlos, ajustarlos ni alimentarlos. Ejemplo de redacción: "Excluido. La organización no desarrolla ni ajusta modelos; los datos de entrenamiento son responsabilidad del proveedor y se gestionan mediante A.10.3. Los datos que el personal introduce durante el uso se controlan con la política de uso aceptable y A.7.4".</p>
+<p><strong>No se justifica si…</strong> desarrollas, ajustas o evalúas modelos, o alimentas un sistema con bases de conocimiento propias o de tus clientes, porque esos datos determinan el comportamiento del sistema.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a> · Controles: <a href="#a-4-2">A.4.2</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a7-datos/#a-7-3">A.7.3</a>, <a href="../a7-datos/#a-7-4">A.7.4</a>, <a href="../a7-datos/#a-7-5">A.7.5</a>, <a href="../a7-datos/#a-7-6">A.7.6</a> · ISO 27001 A.5.9 (inventario de activos) e ISO 27001 A.5.12 (clasificación de la información) · Normas: ISO/IEC 19944-1, serie ISO/IEC 5259 · <strong>Anexo B:</strong> la guía B.4.3 propone los temas que debería cubrir la documentación de datos, desde su origen y vigencia hasta su calidad, sesgos, retención y preparación, y remite a normas de categorías y de calidad de datos.</p>
 <h2 class="dx-control obj-a4" id="a-4-4">A.4.4 Recursos de herramientas<a class="headerlink" href="#a-4-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-bajo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 2.4 1 4.5 2.7 6 1.4-1.3 3.3-2 5.3-2s3.8.7 5.3 2c1.7-1.5 2.7-3.6 2.7-6a8 8 0 0 0-8-8m-2 1.89c.38.01.74.26.9.65l1.29 3.23.1.23c.71.13 1.3.6 1.57 1.26.41 1.03-.09 2.19-1.12 2.6s-2.19-.09-2.6-1.12c-.26-.66-.14-1.42.29-1.98l-.1-.26-1.29-3.21-.01-.03c-.2-.51.05-1.09.56-1.3.13-.05.26-.07.41-.07M14 6a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 9a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> Esfuerzo bajo</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Saber con qué se construyó, evaluó y opera el sistema para poder reproducirlo, auditarlo y reaccionar rápido cuando una herramienta cambia, se retira o resulta vulnerable.</p>
+<p><strong>En la práctica.</strong> El control pide documentar los recursos de herramientas del sistema de IA. "Herramientas" aquí es un término amplio: abarca desde el tipo de algoritmo y el modelo hasta las bibliotecas, las plataformas y los métodos con los que se prepara, optimiza y evalúa. Una forma práctica de organizarlo:</p>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Ejemplos</th>
+<th>Qué registrar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modelos y algoritmos</td>
+<td>Árboles con <em>gradient boosting</em>; modelo fundacional vía API; modelo de pesos abiertos descargado</td>
+<td>Tipo, versión exacta, origen, licencia</td>
+</tr>
+<tr>
+<td>Bibliotecas y marcos</td>
+<td>scikit-learn, XGBoost, LightGBM, PyTorch; marcos de orquestación de modelos de lenguaje</td>
+<td>Versión fijada, licencia, vulnerabilidades conocidas</td>
+</tr>
+<tr>
+<td>Preparación de datos</td>
+<td>Flujos de extracción y transformación, herramientas de etiquetado</td>
+<td>Versión y configuración</td>
+</tr>
+<tr>
+<td>Optimización y evaluación</td>
+<td>Búsqueda de hiperparámetros, métricas de equidad, evaluaciones automáticas de respuestas, pruebas adversarias</td>
+<td>Métodos, umbrales y conjuntos usados</td>
+</tr>
+<tr>
+<td>Plataformas de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr></td>
+<td>Seguimiento de experimentos y registro de modelos (por ejemplo, MLflow), orquestación de procesos, aprovisionamiento de recursos</td>
+<td>Plataforma, responsable, configuración</td>
+</tr>
+<tr>
+<td>Componentes de IA generativa</td>
+<td>Base de datos vectorial, gestor de instrucciones, filtros de seguridad (<em>guardrails</em>)</td>
+<td>Versión y reglas activas</td>
+</tr>
+<tr>
+<td>Entorno de desarrollo</td>
+<td>Cuadernos (<em>notebooks</em>), asistentes de programación con IA</td>
+<td>Herramientas autorizadas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Modelos fundacionales vía API.</strong> Merecen atención especial porque el proveedor puede cambiar el comportamiento de tu sistema sin que tú cambies una línea de código. Registra el proveedor, el nombre y la <strong>versión exacta</strong> del modelo (evita los alias genéricos del tipo "la más reciente"), la fecha en que empezaste a usarla, la región donde se procesan los datos, las condiciones de retención y si el proveedor puede usar tus datos para entrenar. Vigila los avisos de retiro de versiones: es común que los proveedores anuncien con algunos meses de anticipación que una versión dejará de estar disponible, y la migración exige volver a evaluar.</p>
+<p><strong>La idea de la <abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr>.</strong> La lista de materiales de software (<abbr title="Lista de materiales de software (software bill of materials).">SBOM</abbr>) que ya usan muchos equipos de desarrollo se puede extender a la IA: una lista de materiales de IA (<em>AI bill of materials</em>) que enumera modelos, conjuntos de datos, bibliotecas y servicios, con sus versiones y relaciones. Formatos abiertos como CycloneDX y SPDX ya contemplan componentes de aprendizaje automático y conjuntos de datos. Su valor se ve en una crisis: si se publica una vulnerabilidad en una biblioteca, un proveedor retira un modelo o se descubre un problema de licencia, sabes en minutos qué sistemas están afectados. Un ejemplo: una universidad en Perú que descarga un modelo de pesos abiertos desde un repositorio público registra la fuente, la licencia y la huella digital (<em>hash</em>) del archivo, para comprobar después que nadie lo alteró.</p>
+<p><strong>Si solo usas IA de terceros</strong>, las herramientas son del proveedor. Aun así, conviene anotar en el inventario (<a href="#a-4-2">A.4.2</a>) qué modelo subyacente usa cada servicio, cuando el proveedor lo informa.</p>
+<p><strong>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></strong>, reutiliza el inventario de software de ISO 27001 A.5.9 y, si lo tienes, tu proceso de <abbr title="Lista de materiales de software (software bill of materials).">SBOM</abbr>. Lo que hay que agregar: versiones de modelos, métodos de optimización y evaluación, dependencias de modelos consumidos por API y las condiciones de uso de datos de esos proveedores. Para la tipología de componentes de un sistema de aprendizaje automático, ISO/IEC 23053 es la referencia.</p>
+<p>Lo que <strong>no</strong> exige: listar a mano cada dependencia indirecta; para eso están los archivos de dependencias y las herramientas que generan <abbr title="Lista de materiales de software (software bill of materials).">SBOM</abbr> automáticamente.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Lista de herramientas, bibliotecas y modelos por sistema, con versión.</li>
+<li>Para modelos vía API: proveedor, nombre y versión exacta, región y condiciones de uso de datos.</li>
+<li>Métodos de evaluación usados para aprobar cada versión del modelo.</li>
+<li>Archivo de dependencias con versiones fijadas en el repositorio.</li>
+<li>Registro de cambios de versión de modelos y herramientas críticas.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li><abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr> generada automáticamente en cada liberación, en un formato estándar.</li>
+<li>Registro de modelos con linaje completo: datos, código, hiperparámetros y métricas de cada versión.</li>
+<li>Monitoreo de avisos de retiro de modelos y de vulnerabilidades en bibliotecas.</li>
+<li>Verificación de integridad de los modelos descargados.</li>
+<li>Lista de herramientas autorizadas para el desarrollo, incluidos los asistentes de programación.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Inventario de herramientas y modelos con versiones.</li>
+<li><abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr> o <abbr title="Lista de materiales de software (software bill of materials).">SBOM</abbr> del sistema.</li>
+<li>Registro de modelos o de experimentos.</li>
+<li>Términos y condiciones del proveedor del modelo fundacional.</li>
+<li>Registro de cambios de versión del modelo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué versión exacta del modelo está en producción hoy y desde cuándo?</li>
+<li>Si el proveedor retira esa versión, ¿cómo se enteran y qué hacen?</li>
+<li>¿Con qué métodos y métricas evaluaron el modelo antes de liberarlo?</li>
+<li>Si mañana se publica una vulnerabilidad grave en una biblioteca de aprendizaje automático, ¿cuánto tardan en saber qué sistemas la usan?</li>
+<li>¿Qué licencias tienen los modelos y bibliotecas que usan? ¿Alguna restringe el uso comercial?</li>
+<li>¿Cómo verifican que un modelo descargado no fue alterado?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Llamar al modelo con un alias genérico y no saber qué versión respondió en una fecha dada.</li>
+<li>Documentar bibliotecas, pero no los métodos de evaluación.</li>
+<li>Olvidar piezas "pequeñas" que cambian el resultado: filtros de seguridad, plantillas de instrucciones, bases vectoriales.</li>
+<li>No revisar las licencias de los modelos de pesos abiertos.</li>
+<li>Un inventario de herramientas sin dueño que se desactualiza en semanas.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización solo usa servicios de IA terminados y no construye, ajusta, configura de manera relevante ni evalúa modelos. Ejemplo de redacción: "Excluido. La organización no desarrolla sistemas de IA; las herramientas de construcción son responsabilidad del proveedor y se gestionan con A.10.3. El modelo subyacente de cada servicio se registra en el inventario (A.4.2) cuando el proveedor lo informa".</p>
+<p><strong>No se justifica si…</strong> desarrollas o integras sistemas, aunque sea con un modelo de terceros vía API: la orquestación, las instrucciones de sistema y los filtros son herramientas tuyas.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="#a-4-2">A.4.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>, <a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001 A.5.9 (inventario de activos) · Normas: ISO/IEC 23053 · <strong>Anexo B:</strong> la guía B.4.4 ofrece una tipología amplia de herramientas para aprendizaje automático, que va de los algoritmos y modelos a los métodos de evaluación, el aprovisionamiento y el software y hardware de desarrollo, y remite a ISO/IEC 23053.</p>
 <h2 class="dx-control obj-a4" id="a-4-5">A.4.5 Recursos de sistema y cómputo<a class="headerlink" href="#a-4-5" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-bajo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 2.4 1 4.5 2.7 6 1.4-1.3 3.3-2 5.3-2s3.8.7 5.3 2c1.7-1.5 2.7-3.6 2.7-6a8 8 0 0 0-8-8m-2 1.89c.38.01.74.26.9.65l1.29 3.23.1.23c.71.13 1.3.6 1.57 1.26.41 1.03-.09 2.19-1.12 2.6s-2.19-.09-2.6-1.12c-.26-.66-.14-1.42.29-1.98l-.1-.26-1.29-3.21-.01-.03c-.2-.51.05-1.09.56-1.3.13-.05.26-.07.41-.07M14 6a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 9a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> Esfuerzo bajo</span>
+<span class="dx-badge dx-badge--equivalente"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 10H5V8h14zm0 6H5v-2h14z"/></svg></span> Equivalente en 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Saber dónde y con qué capacidad corre el sistema de IA, cuánto cuesta y qué impacto ambiental tiene, para evitar caídas, sorpresas de costo y decisiones a ciegas sobre dónde se procesan los datos.</p>
+<p><strong>En la práctica.</strong> El control pide documentar la información sobre los recursos de sistema y de cómputo que usa el sistema de IA. Empieza por <strong>dónde corre</strong>: en servidores propios, en la nube, en el borde (<em>edge</em>: un celular, una terminal punto de venta, una cámara) o como servicio del proveedor. Después, <strong>qué necesita</strong>: procesadores y aceleradores, memoria, almacenamiento, red y latencia aceptable. Esto último importa mucho cuando el sistema debe funcionar en dispositivos con recursos limitados, como una app de crédito que corre en teléfonos de gama baja.</p>
+<p><strong>Cada etapa pide recursos distintos.</strong> Entrenar un modelo exige ráfagas de cómputo intensivo; servirlo en producción exige latencia estable; reentrenarlo y mejorarlo exige capacidad reservada y ambientes de prueba. Si consumes modelos por API, tus "recursos" son cuotas, límites de consultas por minuto y costo por consulta o por <em>token</em>. Y hay que pensar en los picos: en México, la temporada de declaración anual de personas físicas en abril multiplica las preguntas a un chatbot fiscal; las quincenas disparan las solicitudes en una app de crédito; el Buen Fin pone a prueba a cualquier sistema de comercio electrónico.</p>
+<p><strong>Impacto ambiental y costo.</strong> La guía de la norma pide considerar el impacto del hardware que ejecuta las cargas de IA, tanto ambiental (energía durante el entrenamiento y el uso, enfriamiento, fabricación del equipo) como económico. Conecta con la consideración del cambio climático en el <a href="../../clausulas/c4-contexto/#c-4-1">contexto de la organización (4.1)</a>, con los impactos sociales de <a href="../a5-evaluacion-de-impacto/#a-5-5">A.5.5</a> y con el objetivo de impacto ambiental que sugiere el Anexo C. Algunos proveedores de nube ofrecen tableros de huella de carbono; si no tienes datos, documenta una estimación o deja constancia de que no están disponibles. Una decisión sencilla con impacto real: elegir el modelo más pequeño que cumpla los requisitos.</p>
+<p>Dos ejemplos regionales: un hospital en Chile prefiere ejecutar su modelo de apoyo diagnóstico en servidores propios para mantener los datos clínicos dentro de su red; una cadena de tiendas en México procesa video en cada sucursal porque sus enlaces no soportan subirlo a la nube. Ambos deben documentar esas decisiones, su capacidad y sus límites.</p>
+<p><strong>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></strong>, este control equivale en buena medida a la gestión de la capacidad de ISO 27001 A.8.6, sumada al inventario de infraestructura de ISO 27001 A.5.9. Reutiliza tus planes de capacidad, tu monitoreo y tu inventario. Lo que hay que agregar: aceleradores gráficos, cuotas y costos de servicios de IA consumidos por API, las diferencias entre etapas del ciclo de vida y el impacto ambiental.</p>
+<p>Lo que <strong>no</strong> exige: una contabilidad de carbono precisa ni centro de datos propio.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Para cada sistema: dónde corre (local, nube, borde o servicio del proveedor), región y proveedor de infraestructura.</li>
+<li>Requisitos de cómputo, memoria y almacenamiento en desarrollo y en producción.</li>
+<li>Cuotas, límites y costo estimado de los servicios de IA consumidos por API.</li>
+<li>Monitoreo básico de capacidad con alertas de saturación.</li>
+<li>Nota de impacto ambiental: datos del proveedor o constancia de que no están disponibles.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Plan de capacidad que contempla picos de temporada y reentrenamientos.</li>
+<li>Tablero de costos por sistema (horas de cómputo, <em>tokens</em>) con presupuesto y alertas.</li>
+<li>Métricas de consumo energético o de huella de carbono por sistema cuando el proveedor las ofrece.</li>
+<li>Criterio documentado para elegir el modelo más pequeño que cumpla los requisitos.</li>
+<li>Pruebas de carga antes de las temporadas altas.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_4_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_4_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Inventario de infraestructura asociado a cada sistema de IA.</li>
+<li>Plan de capacidad y reportes de monitoreo.</li>
+<li>Cuotas y límites contratados con proveedores de API.</li>
+<li>Reportes de costos de cómputo.</li>
+<li>Datos de consumo energético o de huella de carbono, cuando existan.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Dónde se ejecuta este sistema y en qué región se procesan los datos?</li>
+<li>¿Qué pasa si en temporada alta se alcanza el límite de consultas del proveedor del modelo?</li>
+<li>¿Cómo planearon la capacidad para el reentrenamiento?</li>
+<li>¿Cuánto cuesta operar este sistema al mes y quién le da seguimiento?</li>
+<li>¿Consideraron el impacto ambiental al elegir el modelo o la infraestructura?</li>
+<li>¿Qué diferencias de recursos hay entre el ambiente de desarrollo y el de producción?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Documentar servidores, pero no las cuotas ni los límites de los servicios de IA consumidos por API.</li>
+<li>No prever los picos de temporada.</li>
+<li>Descubrir el costo real de un modelo cuando llega la factura.</li>
+<li>Ignorar el impacto ambiental "porque todo está en la nube".</li>
+<li>No registrar la región donde se procesan los datos, lo que después complica el aviso de privacidad y los contratos.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización solo consume servicios de IA terminados y no administra infraestructura para IA. Ejemplo de redacción: "Excluido. La organización no opera infraestructura para sistemas de IA; los servicios se consumen como SaaS y su ubicación y capacidad se gestionan con A.10.3 y en el inventario (A.4.2)". Aun en ese caso, conviene registrar región y proveedor de cada servicio.</p>
+<p><strong>No se justifica si…</strong> entrenas, ajustas u hospedas modelos, o integras modelos vía API en un producto propio: las cuotas, la latencia y los costos son recursos tuyos.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="#a-4-2">A.4.2</a>, <a href="../a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>, <a href="../a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001 A.5.9 (inventario de activos) e ISO 27001 A.8.6 (gestión de la capacidad) · Normas: ISO/IEC 22989 · <strong>Anexo B:</strong> la guía B.4.5 sugiere qué información de cómputo documentar, desde los requisitos y la ubicación de los recursos hasta el impacto ambiental y económico del hardware, y advierte que el desarrollo, el despliegue, la operación y la mejora continua pueden necesitar recursos distintos.</p>
 <h2 class="dx-control obj-a4" id="a-4-6">A.4.6 Recursos humanos<a class="headerlink" href="#a-4-6" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Asegurar que cada sistema de IA tenga, en cada etapa, a las personas con los conocimientos necesarios, incluidas las que supervisan sus resultados, y que eso quede documentado.</p>
+<p><strong>En la práctica.</strong> El control pide documentar a las personas y sus competencias durante toda la vida del sistema: desde que se concibe y se construye, pasando por las pruebas, la integración, la puesta en marcha, la operación, los cambios y el mantenimiento, hasta su traspaso a otro equipo o proveedor y su retiro. Cada etapa pide perfiles distintos: una científica de datos en el desarrollo, un experto del negocio en la validación, operadores y supervisores en la operación, y alguien que sepa retirar el sistema y sus datos de forma segura cuando llegue el momento.</p>
+<p><strong>Diversidad de experiencia.</strong> Ningún equipo técnico, por bueno que sea, ve todos los riesgos. Conviene combinar perfiles técnicos con expertos del dominio (contadores, médicos, analistas de crédito), legal y privacidad, seguridad, ética y la perspectiva de los grupos afectados. La guía de la norma llega a contemplar la inclusión de personas de grupos demográficos relacionados con los datos de entrenamiento cuando el diseño del sistema lo requiere. Un ejemplo: un gobierno estatal que diseña un asistente de voz para atender a hablantes de lenguas indígenas integra a hablantes de esas lenguas en el diseño y en las pruebas; sin ellos, nadie en el equipo notaría que el asistente confunde palabras clave.</p>
+<p><strong>Supervisión humana.</strong> Las personas que revisan, corrigen o anulan los resultados de la IA necesitan competencias específicas: entender qué hace y qué no hace el sistema, reconocer errores típicos, resistir el sesgo de automatización (<em>automation bias</em>, la tendencia a confiar de más en lo que dice la máquina) y saber cuándo y cómo detenerlo. Además, necesitan tiempo y autoridad: un supervisor que debe revisar cien casos por hora no supervisa, firma. Documenta quiénes supervisan, con qué capacitación y con qué carga de trabajo.</p>
+<p><strong>Matriz de competencias.</strong> La forma más práctica de documentar este control es una matriz: rol, competencias requeridas, nivel esperado, nivel actual, evidencia y acción para cerrar la brecha. Se conecta directamente con la <a href="../../clausulas/c7-apoyo/#c-7-2">cláusula 7.2</a>, que pide determinar la competencia necesaria, asegurarla, actuar cuando falta y conservar evidencia. Para todo el personal, conviene una base de alfabetización en IA; el <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a> incluye medidas en este sentido, relevantes si tienes operaciones o clientes en Europa.</p>
+<p><strong>Si solo usas IA de terceros</strong>, también necesitas personas: quien administra la herramienta, quien cura la información que la alimenta, quien revisa los resultados antes de entregarlos y quien entiende el contrato con el proveedor.</p>
+<p><strong>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></strong>, reutiliza tu programa de concienciación y capacitación de ISO 27001 A.6.3: la plataforma, los registros y el ciclo anual. Lo que hay que agregar: competencias técnicas de IA, formación específica para supervisores humanos, participación de expertos del dominio, diversidad de perspectivas y la documentación por sistema y por etapa del ciclo de vida.</p>
+<p>Lo que <strong>no</strong> exige: contratar científicos de datos si no desarrollas, ni cuotas de diversidad.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Roles necesarios por sistema y por etapa, con las personas asignadas.</li>
+<li>Matriz de competencias para roles de IA con brechas identificadas.</li>
+<li>Capacitación específica para supervisores humanos, con registro.</li>
+<li>Sensibilización básica en IA para todo el personal.</li>
+<li>Identificación de dependencias críticas de una sola persona.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Perfiles de puesto con competencias de IA y criterios de evaluación.</li>
+<li>Plan de capacitación con medición de eficacia: evaluaciones y simulacros de supervisión.</li>
+<li>Equipos multidisciplinarios formales, con expertos del dominio y perspectivas de grupos afectados.</li>
+<li>Planes de sucesión para roles críticos y para el traspaso de sistemas.</li>
+<li>Indicadores de carga de trabajo de los supervisores humanos.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_5_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_5_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_5_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Matriz de competencias para roles relacionados con IA.</li>
+<li>Perfiles o descripciones de puesto con responsabilidades y competencias de IA.</li>
+<li>Planes y registros de capacitación, incluida la de supervisión humana.</li>
+<li>Evidencias de competencia: certificados, evaluaciones, experiencia documentada.</li>
+<li>Composición de los equipos de proyecto que muestre diversidad de experiencia.</li>
+<li>Planes de sucesión o de traspaso.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Quiénes supervisan los resultados de este sistema y qué capacitación recibieron?</li>
+<li>¿Qué competencias definieron para cada rol de IA y cómo verificaron que se cumplen?</li>
+<li>¿Qué expertos del dominio participaron en el diseño y la validación?</li>
+<li>Si la persona que más sabe de este sistema se va mañana, ¿qué pasa?</li>
+<li>¿Cómo evalúan la eficacia de la capacitación en IA?</li>
+<li>¿Cómo consideraron la diversidad de perspectivas al integrar el equipo?</li>
+<li>¿Quién participará cuando haya que retirar este sistema?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Documentar solo al equipo técnico y olvidar a supervisores, expertos del dominio y personal de operación.</li>
+<li>Capacitar a todo el personal con el mismo curso genérico.</li>
+<li>Depender por completo de una persona clave sin respaldo documentado.</li>
+<li>Supervisores humanos sin tiempo real para revisar.</li>
+<li>Confundir una lista de asistencia con evidencia de competencia.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no vemos un supuesto razonable. Incluso quien solo usa IA de terceros necesita personas que la administren, revisen y supervisen; lo que varía es la profundidad.</p>
+<p><strong>No se justifica si…</strong> en ningún caso. Una redacción típica de inclusión: "Incluido. Matriz de competencias MC-IA-01 y plan de capacitación anual; supervisores de IA-02 capacitados".</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a>, <a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a>, <a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a> · Controles: <a href="../a3-organizacion-interna/#a-3-2">A.3.2</a>, <a href="#a-4-2">A.4.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../a9-uso/#a-9-3">A.9.3</a> · ISO 27001 A.6.3 (concienciación, educación y formación en seguridad de la información) · Normas: ISO/IEC 22989 · <strong>Anexo B:</strong> la guía B.4.6 subraya la necesidad de experiencia diversa, da ejemplos de perfiles que suelen requerirse (técnicos, de supervisión humana, de confiabilidad y del dominio) y recuerda que las necesidades cambian a lo largo del ciclo de vida.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="inventario-de-ejemplo">Inventario de ejemplo<a class="headerlink" href="#inventario-de-ejemplo" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Así podría verse un inventario que reúne los sistemas de las tres empresas ficticias de los casos prácticos. En la vida real cada organización tiene el suyo; aquí se juntan para comparar el nivel de detalle según el rol. La <a href="../../plantillas/#inventario-sistemas-ia">plantilla de inventario</a> incluye más columnas, como estado, nivel de riesgo y vínculo con la evaluación de impacto.</p>
+<table>
+<thead>
+<tr>
+<th>Empresa</th>
+<th>ID · Sistema</th>
+<th>Rol</th>
+<th>Uso previsto</th>
+<th>Proveedor, modelo e infraestructura</th>
+<th>Datos principales</th>
+<th>Dueño</th>
+<th>Supervisión humana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contadores Alameda</td>
+<td>IA-01 · Asistente de IA generativa de la suite de ofimática</td>
+<td>Usa</td>
+<td>Redactar correos, resumir juntas, analizar hojas de cálculo</td>
+<td>Proveedor de la suite, en su nube; licencia empresarial</td>
+<td>Documentos y correos internos; datos de clientes solo con la cuenta corporativa</td>
+<td>Gerente de TI</td>
+<td>Quien lo usa revisa el resultado antes de enviarlo</td>
+</tr>
+<tr>
+<td>Contadores Alameda</td>
+<td>IA-02 · Alma, chatbot de WhatsApp</td>
+<td>Usa y despliega ante clientes</td>
+<td>Preguntas frecuentes, estatus de trámites, agenda de citas</td>
+<td>BotNorte (SaaS) con un modelo de lenguaje de un tercero</td>
+<td>Base de conocimiento curada por el despacho; mensajes y teléfono de clientes</td>
+<td>Líder de atención a clientes</td>
+<td>Escalamiento a una persona; revisión semanal por muestreo</td>
+</tr>
+<tr>
+<td>Contadores Alameda</td>
+<td>IA-03 · Captura automática de facturas y CFDI</td>
+<td>Usa</td>
+<td>Extraer datos de facturas para registrarlas en la contabilidad</td>
+<td>Proveedor nacional del software contable</td>
+<td>Comprobantes fiscales de clientes</td>
+<td>Gerente del área contable</td>
+<td>El contador asignado revisa las discrepancias</td>
+</tr>
+<tr>
+<td>Monarca Crédito</td>
+<td>IA-01 · Score Monarca v3</td>
+<td>Desarrolla y usa</td>
+<td>Estimar la probabilidad de incumplimiento y clasificar solicitudes en tres bandas</td>
+<td>Modelo propio de <em>gradient boosting</em> en nube pública</td>
+<td>Solicitud, buró de crédito (con autorización), comportamiento transaccional, uso de la app (con consentimiento)</td>
+<td>Director de Riesgos</td>
+<td>Analistas revisan la banda gris; reconsideración a petición del solicitante</td>
+</tr>
+<tr>
+<td>Monarca Crédito</td>
+<td>IA-02 · Asignación de línea de crédito</td>
+<td>Desarrolla y usa</td>
+<td>Proponer el monto de la línea para solicitudes aprobadas</td>
+<td>Modelo propio derivado de IA-01</td>
+<td>Datos de IA-01 más el resultado del score</td>
+<td>Director de Riesgos</td>
+<td>Montos máximos fijados por política; revisión de excepciones</td>
+</tr>
+<tr>
+<td>Monarca Crédito</td>
+<td>IA-03 · API de detección de fraude</td>
+<td>Usa (cliente de un tercero)</td>
+<td>Señalar solicitudes con indicios de fraude en la originación</td>
+<td>Proveedor externo vía API</td>
+<td>Datos de la solicitud enviados al proveedor</td>
+<td>Oficial de Cumplimiento</td>
+<td>Analistas revisan las alertas antes de rechazar</td>
+</tr>
+<tr>
+<td>Conversa Labs</td>
+<td>IA-01 · Plataforma Conversa</td>
+<td>Provee y desarrolla; cliente del proveedor del modelo</td>
+<td>Asistentes virtuales de atención a clientes, uno por cliente</td>
+<td>Modelo fundacional vía API, <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>, orquestación propia y filtros de seguridad, en nube pública</td>
+<td>Base de conocimiento de cada cliente; conversaciones de usuarios finales (no se usan para entrenar)</td>
+<td>CTO</td>
+<td>Traspaso a agente humano del cliente; revisión de calidad por muestreo</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Contadores Alameda</label><label for="__tabbed_6_2">Monarca Crédito</label><label for="__tabbed_6_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Inventario (A.4.2).</strong> Al armar el inventario, el gerente de TI descubrió que el módulo de captura de facturas (IA-03) usaba IA: lo supo por las notas de versión del proveedor, no por el contrato. Lo agregó al inventario y al alcance. Para Alma elaboró el diagrama de flujo de datos que aparece en <a href="#a-4-2">A.4.2</a>, que mostró que los mensajes de los clientes pasan por BotNorte y por el proveedor del modelo; eso se reflejó en el aviso de privacidad.</p>
+<p><strong>Datos, herramientas y cómputo (A.4.3 a A.4.5).</strong> En la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, el despacho excluyó A.4.4 y A.4.5 con la justificación de que no construye ni hospeda modelos. Mantuvo A.4.3 en versión ligera, por la base de conocimiento de Alma: una ficha de media página con su dueña, sus fuentes (por ejemplo, información oficial publicada por el SAT), la fecha de la última actualización y una revisión mensual obligatoria antes de cada temporada de declaraciones.</p>
+<p><strong>Personas (A.4.6).</strong> La líder de atención recibió capacitación para curar la base de conocimiento y para revisar conversaciones escaladas; los contadores, un taller sobre cómo verificar lo que produce el asistente de ofimática; los 58 colaboradores, una sesión de sensibilización sobre la política de uso aceptable.</p>
+<p><a href="../../casos-practicos/pyme-usa-ia-generativa/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Inventario y datos (A.4.2 y A.4.3).</strong> Cada sistema tiene ficha completa. Para el Score Monarca v3 existen fichas del histórico de solicitudes, de los datos de buró y de los datos de uso de la app, y el registro de modelos vincula cada versión del score con la versión exacta de los datos que la entrenaron. La ficha del histórico registra dos sesgos conocidos: pocas solicitudes de algunos estados del sur y el riesgo de que el código postal funcione como sustituto del nivel socioeconómico.</p>
+<p><strong>Herramientas y cómputo (A.4.4 y A.4.5).</strong> Cada liberación genera una <abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr> con la biblioteca de <em>gradient boosting</em>, sus dependencias y la versión de los datos. El entrenamiento corre por lotes en la nube; la calificación de solicitudes corre en tiempo real con un requisito de latencia, y el plan de capacidad considera los picos de quincena. La API de fraude (IA-03) se documenta con sus cuotas contratadas y su tiempo de respuesta.</p>
+<p><strong>Personas (A.4.6).</strong> Los analistas de la banda gris tienen un programa de capacitación sobre cómo leer el score y sus motivos, y cómo resistir el sesgo de automatización; se mide cuántos casos revisa cada analista por día. La validación del modelo la hace una persona del área de Riesgos que no participó en el desarrollo.</p>
+<p><a href="../../casos-practicos/fintech-scoring/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Inventario (A.4.2).</strong> Conversa inventaria un solo producto, pero con muchos componentes: el modelo fundacional, el motor de <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>, la orquestación, los filtros de seguridad, el traspaso a agentes humanos y el panel de analítica. Sus diagramas de arquitectura muestran cómo se aíslan los datos de cada cliente.</p>
+<p><strong>Datos (A.4.3).</strong> Una ficha por cada base de conocimiento de cliente y fichas para sus conjuntos de evaluación: preguntas de prueba por industria y baterías de ataques de inyección de instrucciones.</p>
+<p><strong>Herramientas y cómputo (A.4.4 y A.4.5).</strong> La <abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr> fija la versión exacta del modelo fundacional, y el equipo del CTO monitorea los avisos de retiro de versiones del proveedor; cada cambio de versión pasa por la batería de evaluaciones antes de llegar a los clientes. Se documentan las cuotas de la API, el costo por conversación de cada cliente y la región donde se procesan los datos, algo que preguntan los clientes de Chile, Colombia y España. Para clasificar la intención de los mensajes se usa un modelo más pequeño, con menor costo y consumo.</p>
+<p><strong>Personas (A.4.6).</strong> La matriz de competencias incluye ingeniería de evaluación, Confianza y Seguridad, y Customer Success, que recibió capacitación sobre los límites del producto para no prometer de más. Los contratistas que revisan muestras de conversaciones tienen su propia capacitación sobre privacidad.</p>
+<p><a href="../../casos-practicos/empresa-desarrolla-chatbot/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver el caso completo</a></p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA (Excel)</a></li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a></li>
+<li><a href="../../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a>: punto de partida para la matriz de competencias.</li>
+<li><a href="../a7-datos/">A.7 · Datos para sistemas de IA</a>: cómo se gestionan los datos que A.4.3 cataloga.</li>
+<li><a href="../a10-terceros/">A.10 · Relaciones con terceros y clientes</a>: recursos que aportan proveedores y clientes.</li>
+<li><a href="../../clausulas/c7-apoyo/">Cláusula 7 · Apoyo</a>: recursos y competencia a nivel del sistema de gestión.</li>
+<li><a href="../../implementacion/documentacion-requerida/">Documentación requerida</a>.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

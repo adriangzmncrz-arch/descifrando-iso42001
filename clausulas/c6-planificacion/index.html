@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Guía práctica de la cláusula 6 de ISO/IEC 42001. Explica los criterios de riesgo de IA, la evaluación y el tratamiento de riesgos, la Declaración de Aplicabilidad, la evaluación de impacto, los objetivos de IA y la planificación de cambios.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1221,16 +1221,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#c-6-1" class="md-nav__link">
+  <a href="#proposito" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1 Acciones para abordar riesgos y oportunidades
+        Propósito
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6.1 Acciones para abordar riesgos y oportunidades">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pide-explicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué pide, explicado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué pide, explicado">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-6-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Acciones frente a riesgos y oportunidades
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#c-6-1-1" class="md-nav__link">
@@ -1247,7 +1269,7 @@
   <a href="#c-6-1-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1.2 Evaluación de riesgos de IA
+        6.1.2 Evaluación de los riesgos de IA
       
     </span>
   </a>
@@ -1276,12 +1298,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#c-6-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1291,12 +1308,83 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-6-3" class="md-nav__link">
     <span class="md-ellipsis">
       
         6.3 Planificación de los cambios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-aplica-segun-tu-rol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se aplica según tu rol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-evidencia-espera-ver-un-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué evidencia espera ver un auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-resuelto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo resuelto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-con-otras-clausulas-controles-y-normas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación con otras cláusulas, controles y normas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas relacionadas
       
     </span>
   </a>
@@ -2796,30 +2884,1027 @@
 
 
 <h1 id="clausula-6-planificacion">Cláusula 6 · Planificación<a class="headerlink" href="#clausula-6-planificacion" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h7.81c-.36-.62-.61-1.3-.73-2H6V4h7v5h5v4.08c.33-.05.67-.08 1-.08.34 0 .67.03 1 .08V8l-6-6M8 12v2h8v-2m-8 4v2h5v-2Z"/></svg></span> Requisito certificable</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 30 min de lectura</span></p>
 </div>
-<h2 id="c-6-1">6.1 Acciones para abordar riesgos y oportunidades<a class="headerlink" href="#c-6-1" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>En la cláusula 6 fijas las reglas para medir el riesgo y decides qué puede salir mal (o bien) con tu IA, a quién afectaría, qué tan grave sería, qué harás al respecto y cómo sabrás si lo lograste. De aquí salen la matriz de riesgos, la evaluación de impacto, la Declaración de Aplicabilidad y los objetivos de IA.</p>
+</div>
+<h2 id="proposito">Propósito<a class="headerlink" href="#proposito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Las cláusulas 4 y 5 responden dónde estás parado y quién manda. La cláusula 6 convierte esas respuestas en <strong>decisiones</strong>: qué riesgos atiendes primero, con qué controles, cuáles aceptas de forma consciente y qué metas te pones. La operación (<a href="../c8-operacion/">cláusula 8</a>), la medición (<a href="../c9-evaluacion-del-desempeno/">cláusula 9</a>) y la mejora (<a href="../c10-mejora/">cláusula 10</a>) dependen de lo que aquí se decida.</p>
+<p>Sin planificación basada en riesgos, los controles de IA se adoptan por moda, por miedo ("prohibamos la IA generativa") o copiando una lista de verificación. La cláusula 6 obliga a que cada control tenga una razón rastreable: un riesgo, un impacto, un requisito legal o un objetivo. Y agrega algo que otras normas de sistemas de gestión no piden: mirar <strong>lo que le puede pasar a las personas y a la sociedad</strong>, no solo a la organización.</p>
+<p>Al terminar tendrás criterios de riesgo aprobados, evaluaciones de riesgos e impacto, un plan de tratamiento con residuales aceptados, la Declaración de Aplicabilidad y objetivos de IA con su plan.</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía</p>
+<p>Una constructora que va a levantar un puente hace dos estudios: uno de <strong>riesgos del proyecto</strong> (sobrecostos, retrasos, fallas estructurales) y una <strong>manifestación de impacto</strong> que mira hacia afuera (vecinos, río, tráfico, comercio). Luego elige medidas: unas del reglamento de construcción (tu Anexo A), otras diseñadas para ese terreno, y deja por escrito qué normas técnicas aplican y por qué alguna no (tu Declaración de Aplicabilidad). Al final, el director de obra firma que acepta los riesgos que quedan. La cláusula 6 pide lo mismo para sistemas de IA.</p>
+</div>
+<h2 id="que-pide-explicado">Qué pide, explicado<a class="headerlink" href="#que-pide-explicado" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="c-6-1">6.1 Acciones frente a riesgos y oportunidades<a class="headerlink" href="#c-6-1" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La subcláusula 6.1 tiene cuatro piezas que funcionan como engranes:</p>
+<table>
+<thead>
+<tr>
+<th>Subcláusula</th>
+<th>Pregunta que responde</th>
+<th>Producto principal</th>
+<th>Se repite en</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#c-6-1-1">6.1.1</a></td>
+<td>¿Con qué reglas medimos el riesgo? ¿Qué riesgos tiene el propio <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>?</td>
+<td>Criterios de riesgo de IA; riesgos y oportunidades del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td><a href="../c9-evaluacion-del-desempeno/#c-9-3">9.3</a></td>
+</tr>
+<tr>
+<td><a href="#c-6-1-2">6.1.2</a></td>
+<td>¿Qué puede pasar con cada sistema y qué tan grave es?</td>
+<td>Metodología y resultados de la evaluación de riesgos</td>
+<td><a href="../c8-operacion/#c-8-2">8.2</a></td>
+</tr>
+<tr>
+<td><a href="#c-6-1-3">6.1.3</a></td>
+<td>¿Qué vamos a hacer al respecto?</td>
+<td>Plan de tratamiento, Declaración de Aplicabilidad, aceptación de residuales</td>
+<td><a href="../c8-operacion/#c-8-3">8.3</a></td>
+</tr>
+<tr>
+<td><a href="#c-6-1-4">6.1.4</a></td>
+<td>¿A quién afecta fuera de la organización?</td>
+<td>Proceso y registros de evaluación de impacto</td>
+<td><a href="../c8-operacion/#c-8-4">8.4</a></td>
+</tr>
+</tbody>
+</table>
+<p>Regla práctica: <strong>la cláusula 6 diseña el proceso y lo ejecuta por primera vez; la cláusula 8 lo repite</strong> a intervalos planificados o ante cambios significativos.</p>
 <h3 id="c-6-1-1">6.1.1 Generalidades y criterios de riesgo<a class="headerlink" href="#c-6-1-1" title="Enlace permanente a esta sección">&para;</a></h3>
-<p>Próximamente.</p>
-<h3 id="c-6-1-2">6.1.2 Evaluación de riesgos de IA<a class="headerlink" href="#c-6-1-2" title="Enlace permanente a esta sección">&para;</a></h3>
-<p>Próximamente.</p>
+<h4 id="dos-niveles-de-riesgo">Dos niveles de riesgo<a class="headerlink" href="#dos-niveles-de-riesgo" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La primera parte de 6.1.1 es la de cualquier norma con estructura armonizada: con base en el contexto (<a href="../c4-contexto/#c-4-1">4.1</a>) y las partes interesadas (<a href="../c4-contexto/#c-4-2">4.2</a>), identificas riesgos y oportunidades del <strong>propio sistema de gestión</strong>, planificas acciones, decides cómo integrarlas y medir su eficacia, y guardas evidencia. Lo particular de ISO/IEC 42001 es que también pide considerar el <strong>dominio y contexto de aplicación</strong> de cada sistema de IA y su <strong>uso previsto</strong>. Conviven así dos niveles:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Riesgos y oportunidades del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></th>
+<th>Riesgos de los sistemas de IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Objeto</strong></td>
+<td>El sistema de gestión</td>
+<td>Cada sistema de IA o grupo de sistemas</td>
+</tr>
+<tr>
+<td><strong>Riesgos típicos</strong></td>
+<td>Rotación del responsable; falta de presupuesto; áreas que usan IA sin avisar (IA en la sombra)</td>
+<td>Sesgo contra un grupo; respuestas inventadas (<em>hallucinations</em>); fuga de datos en instrucciones (<em>prompts</em>); deriva (<em>drift</em>) del modelo</td>
+</tr>
+<tr>
+<td><strong>Oportunidades típicas</strong></td>
+<td>Reutilizar el comité y la estructura documental del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>; usar la certificación para cerrar alianzas</td>
+<td>Aprobar créditos a personas sin historial con datos alternativos; reducir tiempos de atención</td>
+</tr>
+<tr>
+<td><strong>Dónde se registra</strong></td>
+<td>Registro del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> o plan anual del sistema de gestión</td>
+<td>Registro por sistema, conectado con la evaluación de impacto y la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr></td>
+</tr>
+</tbody>
+</table>
+<p>Puedes llevar ambos en la misma herramienta, pero que los riesgos del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> no queden huérfanos: es común que solo exista el registro por sistema.</p>
+<h4 id="criterios-de-riesgo-de-ia-las-reglas-del-juego">Criterios de riesgo de IA: las reglas del juego<a class="headerlink" href="#criterios-de-riesgo-de-ia-las-reglas-del-juego" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La pieza más subestimada de 6.1.1 son los <strong>criterios de riesgo de IA</strong> (<em>AI risk criteria</em>), que deben servir para separar lo aceptable de lo inaceptable, evaluar riesgos, decidir su tratamiento y valorar impactos. Si son vagos, todo lo demás será subjetivo. Unos criterios completos tienen:</p>
+<ol>
+<li><strong>Escalas de consecuencia</strong> con tres dimensiones: organización, individuos y sociedad.</li>
+<li><strong>Escala de probabilidad</strong>, para usarla cuando aplique.</li>
+<li><strong>Matriz</strong> que combine ambas en un nivel de riesgo.</li>
+<li><strong>Umbrales de aceptación</strong> y plazos de tratamiento.</li>
+<li><strong>Autoridad de aceptación</strong>: quién acepta cada nivel residual.</li>
+<li><strong>Líneas rojas</strong>: lo que nunca se acepta, sin importar la calificación.</li>
+</ol>
+<h5 id="escalas-de-consecuencia-en-tres-dimensiones">Escalas de consecuencia en tres dimensiones<a class="headerlink" href="#escalas-de-consecuencia-en-tres-dimensiones" title="Enlace permanente a esta sección">&para;</a></h5>
+<p>Ejemplo de escala de cinco niveles; ajusta los descriptores a tu tamaño y sector, pero que sean <strong>observables</strong> en las tres dimensiones:</p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Organización</th>
+<th>Individuos</th>
+<th>Sociedad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Insignificante</strong></td>
+<td>Sin pérdida relevante ni atención externa</td>
+<td>Molestia que se corrige en el momento</td>
+<td>Sin efecto perceptible</td>
+</tr>
+<tr>
+<td><strong>2 · Menor</strong></td>
+<td>Pérdida absorbible por el área; queja aislada</td>
+<td>Error que la persona corrige sola en días, sin costo</td>
+<td>Efecto local y aislado</td>
+</tr>
+<tr>
+<td><strong>3 · Moderada</strong></td>
+<td>Reasignar presupuesto; requerimiento de una autoridad; quejas repetidas</td>
+<td>Afectación a derechos u oportunidades reversible con esfuerzo (un rechazo de crédito injusto corregido en reconsideración)</td>
+<td>Afecta a un segmento identificable de forma reversible</td>
+</tr>
+<tr>
+<td><strong>4 · Mayor</strong></td>
+<td>Sanción; pérdida de un cliente clave o de una alianza; prensa nacional negativa</td>
+<td>Daño significativo y difícil de revertir: discriminación sistemática, exposición de datos sensibles, pérdida de ingresos</td>
+<td>Refuerza desigualdades o daña la confianza en un sector (exclusión financiera de una región)</td>
+</tr>
+<tr>
+<td><strong>5 · Severa</strong></td>
+<td>Amenaza la continuidad del negocio o la licencia para operar</td>
+<td>Daño grave o irreversible a la vida, la salud, la libertad o el patrimonio, sobre todo de grupos vulnerables</td>
+<td>Efecto sistémico o duradero: desinformación masiva, servicios esenciales o procesos democráticos afectados</td>
+</tr>
+</tbody>
+</table>
+<p>Dos recomendaciones: <strong>toma el peor de los tres valores, no el promedio</strong> (promediar esconde el daño a personas) y <strong>escribe ejemplos ancla de tu negocio</strong> en cada celda: un "3" en una fintech no se parece a un "3" en un despacho contable.</p>
+<h5 id="probabilidad-cuando-aplique">Probabilidad "cuando aplique"<a class="headerlink" href="#probabilidad-cuando-aplique" title="Enlace permanente a esta sección">&para;</a></h5>
+<p>La norma pide estimar una probabilidad realista <strong>cuando corresponda</strong>, porque en IA hay riesgos cuya probabilidad no se puede estimar con honestidad (un ataque nuevo, un modelo fundacional que cambia de versión sin aviso). Tienes tres caminos: frecuencia medida cuando hay datos (en sistemas de alto volumen, exprésala <strong>por número de decisiones o interacciones</strong>, no solo por año); plausibilidad cualitativa cuando no los hay; y, para impactos graves, un criterio basado solo en la consecuencia (por ejemplo, "toda consecuencia 5 se trata como mínimo como Alto", que es lo que hace la fila superior de la matriz).</p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Descriptor</th>
+<th>Guía de frecuencia (ejemplo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · Rara</td>
+<td>No se espera en la vida del sistema</td>
+<td>Menos de una vez en cinco años o de 1 en 1 000 000 de decisiones</td>
+</tr>
+<tr>
+<td>2 · Improbable</td>
+<td>Ha ocurrido en otras organizaciones, no en la nuestra</td>
+<td>Una vez cada dos a cinco años</td>
+</tr>
+<tr>
+<td>3 · Posible</td>
+<td>Antecedentes internos aislados</td>
+<td>Una vez al año</td>
+</tr>
+<tr>
+<td>4 · Probable</td>
+<td>Se observa varias veces al año o en las pruebas</td>
+<td>Trimestral o más de 1 en 10 000 decisiones</td>
+</tr>
+<tr>
+<td>5 · Casi segura</td>
+<td>Ya está ocurriendo de forma recurrente</td>
+<td>Mensual o más de 1 en 1 000 decisiones</td>
+</tr>
+</tbody>
+</table>
+<h5 id="matriz-5-5-y-criterio-de-aceptacion">Matriz 5 × 5 y criterio de aceptación<a class="headerlink" href="#matriz-5-5-y-criterio-de-aceptacion" title="Enlace permanente a esta sección">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Consecuencia ↓ · Probabilidad →</th>
+<th>1 · Rara</th>
+<th>2 · Improbable</th>
+<th>3 · Posible</th>
+<th>4 · Probable</th>
+<th>5 · Casi segura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5 · Severa</strong></td>
+<td>🟧 Alto</td>
+<td>🟧 Alto</td>
+<td>🟥 Crítico</td>
+<td>🟥 Crítico</td>
+<td>🟥 Crítico</td>
+</tr>
+<tr>
+<td><strong>4 · Mayor</strong></td>
+<td>🟨 Medio</td>
+<td>🟧 Alto</td>
+<td>🟧 Alto</td>
+<td>🟥 Crítico</td>
+<td>🟥 Crítico</td>
+</tr>
+<tr>
+<td><strong>3 · Moderada</strong></td>
+<td>🟩 Bajo</td>
+<td>🟨 Medio</td>
+<td>🟧 Alto</td>
+<td>🟧 Alto</td>
+<td>🟥 Crítico</td>
+</tr>
+<tr>
+<td><strong>2 · Menor</strong></td>
+<td>🟩 Bajo</td>
+<td>🟩 Bajo</td>
+<td>🟨 Medio</td>
+<td>🟨 Medio</td>
+<td>🟧 Alto</td>
+</tr>
+<tr>
+<td><strong>1 · Insignificante</strong></td>
+<td>🟩 Bajo</td>
+<td>🟩 Bajo</td>
+<td>🟩 Bajo</td>
+<td>🟨 Medio</td>
+<td>🟨 Medio</td>
+</tr>
+</tbody>
+</table>
+<p>La matriz es <strong>asimétrica</strong>: pesa más la consecuencia, coherente con un apetito bajo para daños a personas. Otras son válidas si puedes explicarlas.</p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Decisión</th>
+<th>Plazo</th>
+<th>Quién acepta el residual</th>
+<th>Revisión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <strong>Bajo</strong></td>
+<td>Aceptable con controles existentes</td>
+<td>Sin plan</td>
+<td>Dueño del sistema de IA</td>
+<td>Anual</td>
+</tr>
+<tr>
+<td>🟨 <strong>Medio</strong></td>
+<td>Aceptable con monitoreo; tratar si el costo es razonable</td>
+<td>6 meses, si se trata</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Semestral</td>
+</tr>
+<tr>
+<td>🟧 <strong>Alto</strong></td>
+<td>No aceptable sin tratamiento</td>
+<td>Plan en 30 días; ejecución en 90</td>
+<td>Comité de IA o dirección designada, informando a la alta dirección</td>
+<td>Trimestral</td>
+</tr>
+<tr>
+<td>🟥 <strong>Crítico</strong></td>
+<td>Inaceptable: no se lanza o se suspende la función</td>
+<td>Inmediato</td>
+<td>Sin aceptación permanente; excepción temporal solo con firma de la dirección general y medidas compensatorias</td>
+<td>Mensual</td>
+</tr>
+</tbody>
+</table>
+<p>Completa con <strong>líneas rojas</strong> que no pasan por la matriz: incumplir deliberadamente una ley aplicable, desplegar un uso de IA prohibido en alguna jurisdicción donde operas o usar datos personales para una finalidad no informada en el aviso de privacidad.</p>
+<h5 id="apetito-de-riesgo">Apetito de riesgo<a class="headerlink" href="#apetito-de-riesgo" title="Enlace permanente a esta sección">&para;</a></h5>
+<p>Los umbrales de aceptación traducen el <strong>apetito de riesgo</strong> (<em>risk appetite</em>): cuánto riesgo, y de qué tipo, está dispuesta a asumir la organización para obtener lo que busca con la IA. Una nota de la norma remite a ISO/IEC 38507 (gobernanza de la IA) e ISO/IEC 23894 (gestión de riesgos de IA) para pensarlo; ambas se describen en <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>. Conviene que la alta dirección (<a href="../c5-liderazgo/#c-5-1">5.1</a>) apruebe una declaración breve y diferenciada: apetito muy bajo para daños a individuos e incumplimientos legales, bajo para riesgos reputacionales frente a clientes y moderado para riesgos de productividad en herramientas internas. Si los criterios contradicen la política de IA (<a href="../c5-liderazgo/#c-5-2">5.2</a>), el auditor lo notará.</p>
+<h5 id="por-sistema-o-por-grupos-de-sistemas">Por sistema o por grupos de sistemas<a class="headerlink" href="#por-sistema-o-por-grupos-de-sistemas" title="Enlace permanente a esta sección">&para;</a></h5>
+<p>Una nota de 6.1.1 permite determinar riesgos y oportunidades por sistema o por <strong>grupos de sistemas</strong>. Agrupa cuando comparten propósito, tipo de datos, rol de la organización y personas afectadas; separa cuando alguno de esos factores cambia. Contadores Alameda puede evaluar juntos su asistente de ofimática y su módulo de captura de CFDI, pero no a "Alma", su chatbot de WhatsApp para clientes. Monarca Crédito evalúa Score Monarca v3 de forma individual. Conversa Labs evalúa la plataforma completa y además usa perfiles por sector de cliente.</p>
+<p>Otra nota admite usar la definición de riesgo de tu sector (por ejemplo, la Guía ISO/IEC 51 para seguridad física).</p>
+<div class="admonition latam">
+<p class="admonition-title">En México y Latinoamérica</p>
+<p>Si ya tienes una metodología institucional (riesgo operativo en una entidad financiera, prevención de lavado de dinero, <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>), te recomendamos <strong>alinear las escalas</strong> para que el consejo compare un "Alto" de IA con un "Alto" operativo, y añadir las dimensiones de individuos y sociedad, que casi nunca están en las matrices heredadas.</p>
+</div>
+<h3 id="c-6-1-2">6.1.2 Evaluación de los riesgos de IA<a class="headerlink" href="#c-6-1-2" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La norma pide contar con un proceso documentado para evaluar los riesgos de IA, alineado con la política y los objetivos de IA. Tiene las tres etapas clásicas, con matices propios de la IA.</p>
+<h4 id="el-proceso-paso-a-paso">El proceso paso a paso<a class="headerlink" href="#el-proceso-paso-a-paso" title="Enlace permanente a esta sección">&para;</a></h4>
+<p><strong>Paso 0. Insumos.</strong> Inventario de sistemas, contexto y rol frente a cada sistema (4.1), requisitos de partes interesadas (4.2), política y objetivos de IA, criterios de 6.1.1 y, cuando exista, la evaluación de impacto (<a href="#c-6-1-4">6.1.4</a>).</p>
+<p><strong>Paso 1. Identificar.</strong> Recorre el ciclo de vida completo, de diseño a retiro, con un catálogo de fuentes de riesgo, y redacta cada riesgo con estructura fija: <em>debido a</em> [causa], <em>podría ocurrir</em> [evento], <em>lo que provocaría</em> [consecuencia] <em>para</em> [quién]. Por ejemplo: "Debido a que las preguntas frecuentes de Alma no siguen el calendario fiscal, podría dar una fecha límite equivocada, lo que provocaría recargos al cliente".</p>
+<p>La norma pide identificar riesgos que <strong>ayudan o impiden</strong> lograr los objetivos de IA. Es decir, también se identifican oportunidades: eventos inciertos que favorecen un objetivo. Para Monarca Crédito, evaluar con datos de uso de la app a personas sin historial en buró de crédito es una oportunidad ligada a su objetivo de inclusión financiera: se gestiona para aprovecharla.</p>
+<p><strong>Paso 2. Analizar.</strong> Estima la <strong>consecuencia en las tres dimensiones</strong>; una nota de la norma permite apoyarse en la evaluación de impacto para ello, y en nuestra opinión es la mejor fuente para las columnas de individuos y sociedad. Estima la <strong>probabilidad realista</strong>, cuando aplique, considerando los controles existentes, y obtén el <strong>nivel</strong> con la matriz. La norma no exige calcular un nivel inherente (sin controles), pero ayuda a mostrar el valor de los controles.</p>
+<p><strong>Paso 3. Evaluar y priorizar.</strong> Compara cada nivel con los criterios y ordena los riesgos que necesitan tratamiento. Esa lista entra a <a href="#c-6-1-3">6.1.3</a>.</p>
+<p><strong>Paso 4. Documentar y repetir.</strong> La cláusula 6.1.2 pide documentar el <strong>proceso</strong>; <a href="../c8-operacion/#c-8-2">8.2</a> pide conservar los <strong>resultados</strong> de cada evaluación, que se repite a intervalos planificados y ante cambios significativos.</p>
+<h4 id="resultados-consistentes-validos-y-comparables">Resultados consistentes, válidos y comparables<a class="headerlink" href="#resultados-consistentes-validos-y-comparables" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Evaluaciones repetidas deben dar resultados <strong>consistentes, válidos y comparables</strong>. Es el requisito que más hallazgos genera, porque la calificación suele depender de quién llena la matriz.</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>En la práctica</th>
+<th>Cómo lograrlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Consistente</strong></td>
+<td>Dos evaluadores con la misma información llegan al mismo nivel</td>
+<td>Guía de calificación con ejemplos ancla; calibración; plantilla única</td>
+</tr>
+<tr>
+<td><strong>Válido</strong></td>
+<td>La calificación refleja la realidad, no la intuición</td>
+<td>Evidencia por calificación: métricas, pruebas, incidentes, quejas, evaluación de impacto</td>
+</tr>
+<tr>
+<td><strong>Comparable</strong></td>
+<td>Se comparan riesgos entre sistemas y en el tiempo</td>
+<td>Mismas escalas para todos; criterios versionados</td>
+</tr>
+</tbody>
+</table>
+<p>Tres herramientas que funcionan:</p>
+<ol>
+<li>
+<p><strong>Catálogo de fuentes de riesgo</strong> basado en el Anexo C (informativo), convertido en preguntas guía y ampliado:</p>
+<table>
+<thead>
+<tr>
+<th>Fuente de riesgo</th>
+<th>Pregunta guía</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complejidad del entorno</td>
+<td>¿Qué tan variadas e impredecibles son las situaciones que enfrenta?</td>
+<td>Asistente universitario que atiende a alumnos, padres y proveedores</td>
+</tr>
+<tr>
+<td>Falta de transparencia y explicabilidad</td>
+<td>¿Podemos explicar un resultado a quien lo necesita?</td>
+<td>Rechazo de crédito sin motivos comprensibles</td>
+</tr>
+<tr>
+<td>Nivel de automatización</td>
+<td>¿Qué decide el sistema sin intervención humana?</td>
+<td>Rechazo automático de solicitudes</td>
+</tr>
+<tr>
+<td>Aprendizaje automático</td>
+<td>¿Los datos son suficientes, representativos y están protegidos contra manipulación?</td>
+<td>Datos históricos con sesgos pasados</td>
+</tr>
+<tr>
+<td>Hardware y plataforma</td>
+<td>¿Un cambio de infraestructura altera resultados?</td>
+<td>Migrar el modelo a otra nube</td>
+</tr>
+<tr>
+<td>Ciclo de vida</td>
+<td>¿Hay fallas posibles en diseño, mantenimiento o retiro?</td>
+<td>Base de conocimiento desactualizada</td>
+</tr>
+<tr>
+<td>Madurez tecnológica</td>
+<td>¿Desconocemos sus límites, o nos confiamos por "probada"?</td>
+<td>Alucinaciones de la IA generativa</td>
+</tr>
+<tr>
+<td>Terceros <em>(añadida)</em></td>
+<td>¿Qué depende de un proveedor que no controlamos?</td>
+<td>Cambio de versión del modelo de lenguaje</td>
+</tr>
+<tr>
+<td>Uso indebido y factores humanos <em>(añadida)</em></td>
+<td>¿Cómo podría usarse para algo no previsto o generar confianza excesiva?</td>
+<td>Nóminas pegadas en un chatbot gratuito</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Guía de calificación</strong> breve, con ejemplos ancla y reglas como "sin evidencia, se califica con el nivel más alto plausible".</p>
+</li>
+<li><strong>Calibración entre evaluadores</strong>: tres o cuatro personas califican por separado los mismos cinco riesgos de prueba, discuten las diferencias de más de un nivel y ajustan la guía. Repítela cada año o cuando entren evaluadores nuevos.</li>
+</ol>
+<h4 id="el-proceso-completo">El proceso completo<a class="headerlink" href="#el-proceso-completo" title="Enlace permanente a esta sección">&para;</a></h4>
+<pre class="mermaid"><code>flowchart TD
+  IN["Insumos: contexto 4.1 y 4.2, inventario, política y objetivos"] --&gt; CR["Criterios de riesgo de IA · 6.1.1"]
+  CR --&gt; EIA["Evaluación de impacto · 6.1.4"]
+  CR --&gt; ID
+  subgraph EV["Evaluación de riesgos · 6.1.2"]
+    ID["1 · Identificar riesgos y oportunidades"] --&gt; AN["2 · Analizar consecuencias y probabilidad"]
+    AN --&gt; VA["3 · Evaluar contra criterios y priorizar"]
+  end
+  EIA --&gt;|"consecuencias para personas y sociedad"| AN
+  VA --&gt; Q{"¿Nivel aceptable?"}
+  Q --&gt;|"Sí"| AC["Aceptar y monitorear"]
+  Q --&gt;|"No"| OP
+  subgraph TR["Tratamiento · 6.1.3"]
+    OP["Elegir opción de tratamiento"] --&gt; CT["Determinar controles necesarios"]
+    CT --&gt; AA["Comparar con el Anexo A y considerar el Anexo B"]
+    AA --&gt; SOA["Declaración de Aplicabilidad"]
+    SOA --&gt; PL["Plan de tratamiento"]
+  end
+  PL --&gt; APR["Aprobación de la dirección designada y aceptación de residuales"]
+  APR --&gt; IMP["Implementar y verificar eficacia · 8.3"]
+  IMP --&gt; MON["Seguimiento y medición · 9.1"]
+  AC --&gt; MON
+  MON --&gt; RE["Reevaluar a intervalos o ante cambios · 8.2 y 8.4"]
+  RE --&gt; ID</code></pre>
 <h3 id="c-6-1-3">6.1.3 Tratamiento de riesgos de IA<a class="headerlink" href="#c-6-1-3" title="Enlace permanente a esta sección">&para;</a></h3>
-<p>Próximamente.</p>
+<p>El tratamiento te lleva de "este riesgo es Alto" a "esto haremos, con qué controles, quién y cuándo, y esto aceptamos que quede".</p>
+<h4 id="opciones-de-tratamiento">Opciones de tratamiento<a class="headerlink" href="#opciones-de-tratamiento" title="Enlace permanente a esta sección">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Ejemplo en IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evitar</strong> la actividad</td>
+<td>No lanzar el rechazo automático; retirar una función del asistente</td>
+</tr>
+<tr>
+<td><strong>Reducir</strong> probabilidad o consecuencia</td>
+<td>Pruebas de equidad antes de cada versión; filtros de contenido; aviso de interacción con IA</td>
+</tr>
+<tr>
+<td><strong>Compartir</strong> con un tercero</td>
+<td>Cláusulas con el proveedor del modelo; seguro de responsabilidad profesional</td>
+</tr>
+<tr>
+<td><strong>Retener</strong> de forma informada</td>
+<td>Aceptar un riesgo Medio con monitoreo trimestral</td>
+</tr>
+<tr>
+<td><strong>Aprovechar</strong> (oportunidades)</td>
+<td>Piloto controlado de datos alternativos</td>
+</tr>
+</tbody>
+</table>
+<p>Ojo con "compartir": trasladas costos, no la rendición de cuentas. Si Alma se equivoca, el cliente le reclama a Contadores Alameda, no a BotNorte.</p>
+<h4 id="determinar-controles-y-compararlos-con-el-anexo-a">Determinar controles y compararlos con el Anexo A<a class="headerlink" href="#determinar-controles-y-compararlos-con-el-anexo-a" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>El orden importa. La norma no pide empezar por el Anexo A y marcar casillas: pide <strong>determinar primero los controles necesarios</strong> para las opciones elegidas y <strong>luego compararlos con el Anexo A</strong> para confirmar que no omitiste ninguno. En la práctica:</p>
+<ol>
+<li><strong>Diseña desde el riesgo</strong>: ¿qué tendría que pasar para bajar su consecuencia o su probabilidad?</li>
+<li><strong>Contrasta con los 38 controles</strong> de referencia (A.2 a A.10): ¿alguno es relevante para tus riesgos, objetivos o requisitos externos y se te escapó?</li>
+<li><strong>Añade controles propios</strong>. El Anexo A no es exhaustivo: puedes diseñarlos o tomarlos de ISO/IEC 27001, ISO/IEC 27701, el <a href="../../integracion/nist-ai-rmf/"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></a> o buenas prácticas técnicas (pruebas contra inyección de instrucciones o <em>prompt injection</em>, interruptores automáticos por deriva).</li>
+<li><strong>Considera el Anexo B</strong> al implementarlos.</li>
+</ol>
+<p>En esta guía, los nombres de los controles del Anexo A son traducción libre de referencia del autor, no el texto oficial.</p>
+<div class="admonition question">
+<p class="admonition-title">¿El Anexo B es obligatorio o no?</p>
+<p>Es la confusión más frecuente. El Anexo B está marcado como <strong>normativo</strong> y 6.1.3 pide <strong>considerar</strong> su orientación. Pero el propio Anexo B aclara que no tienes que documentar ni justificar en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> si sigues cada recomendación, y que puedes ampliarla, modificarla o implementar el control a tu manera. En nuestra lectura, lo obligatorio es haberlo tomado en cuenta: basta con que tus procedimientos citen la sección del Anexo B que usaste como base y puedas explicar por qué te apartaste cuando lo hiciste.</p>
+</div>
+<h4 id="la-declaracion-de-aplicabilidad-soa">La Declaración de Aplicabilidad (<abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>)<a class="headerlink" href="#la-declaracion-de-aplicabilidad-soa" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La <strong>Declaración de Aplicabilidad</strong> (<em>Statement of Applicability</em>, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>) lista los controles necesarios (los del Anexo A elegidos y los propios) y justifica por qué cada control del Anexo A se incluye o se excluye. Una exclusión puede justificarse cuando la evaluación de riesgos no hace necesario el control <strong>y</strong> ningún requisito externo aplicable (ley, contrato) lo exige. Una nota permite excluir objetivos de control completos, en general o para sistemas específicos.</p>
+<p>Conviene que cada fila indique el control (los propios, con un prefijo distinto como "C-ORG-01"), si se incluye y para qué sistemas, la justificación, el estado, la evidencia y el dueño.</p>
+<div class="admonition note">
+<p class="admonition-title">Estado de implementación</p>
+<p>A diferencia de ISO/IEC 27001, el texto de 6.1.3 de ISO/IEC 42001 no menciona expresamente que la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> indique si cada control está implementado. En nuestra lectura, incluirlo es buena práctica: facilita el seguimiento del plan de tratamiento, y algunos organismos de certificación lo piden.</p>
+</div>
+<p><strong>La justificación es lo primero que lee el auditor:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Justificación débil</th>
+<th>Por qué falla</th>
+<th>Justificación sólida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Aplica."</td>
+<td>No dice por qué ni para qué sistemas</td>
+<td>"Incluido para Score Monarca v3: trata R-01 (variables sustitutas) y R-02 (deriva); apoya el objetivo OBJ-02 de equidad."</td>
+</tr>
+<tr>
+<td>"Requerido por la norma."</td>
+<td>Los controles se eligen por riesgo, no en bloque</td>
+<td>"Incluido: el contrato con un banco aliado exige informar al solicitante que lo evalúa un modelo automatizado; además trata R-03."</td>
+</tr>
+<tr>
+<td>"No aplica."</td>
+<td>Una exclusión sin razón es sospechosa</td>
+<td>"A.7.3 excluido: no adquirimos datos para entrenar ni mejorar modelos; lo hace el proveedor, gestionado con A.10.3. La evaluación ER-2026-01 no lo requiere y ningún contrato ni ley lo exige. Se revisará si contratamos ajuste fino."</td>
+</tr>
+<tr>
+<td>"A.5 no aplica: ya hacemos evaluaciones de privacidad."</td>
+<td>La evaluación de impacto de 6.1.4 es requisito y abarca más que privacidad</td>
+<td>"Incluido: las evaluaciones de privacidad se integran como un capítulo de la evaluación de impacto, que además cubre equidad, acceso a servicios e impactos sociales."</td>
+</tr>
+</tbody>
+</table>
+<p>Extracto de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> de Contadores Alameda: usar IA de terceros no equivale a excluir en automático los controles de ciclo de vida y datos.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Se incluye?</th>
+<th>Justificación</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a> Requisitos y especificación</td>
+<td>Sí, para Alma</td>
+<td>No desarrolla modelos, pero define la configuración de Alma (temas permitidos, tono, escalamiento a humano). Trata R-02 (respuestas erróneas sobre plazos).</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a> Calidad de los datos</td>
+<td>Sí, para Alma</td>
+<td>La base de preguntas frecuentes determina las respuestas de Alma; se revisa cada mes contra el calendario fiscal. Trata R-02.</td>
+<td>En implementación</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a> Adquisición de datos</td>
+<td>No</td>
+<td>No adquiere datos para entrenar modelos; los proveedores se evalúan con A.10.3. Sin riesgo ni requisito externo que lo exija.</td>
+<td>No aplica</td>
+</tr>
+</tbody>
+</table>
+<h4 id="plan-de-tratamiento">Plan de tratamiento<a class="headerlink" href="#plan-de-tratamiento" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>El <strong>plan de tratamiento de riesgos</strong> (<em>risk treatment plan</em>) puede ser una pestaña del registro de riesgos, siempre que indique opción, controles, responsable, recursos, fecha, residual esperado y cómo se verificará la eficacia. Ejemplo de Conversa Labs:</p>
+<table>
+<thead>
+<tr>
+<th>Riesgo</th>
+<th>Opción</th>
+<th>Controles</th>
+<th>Responsable y recursos</th>
+<th>Fecha</th>
+<th>Residual</th>
+<th>Verificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-C03: un usuario final manipula al asistente con inyección de instrucciones y obtiene información de otro cliente</td>
+<td>Reducir</td>
+<td>Aislamiento por cliente en el índice de recuperación; pruebas adversarias por versión (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>); detección en producción (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>); filtro de salida propio C-SEG-02</td>
+<td>CTO; 2 ingenieros por 6 semanas</td>
+<td>Marzo de 2027</td>
+<td>🟨 Medio</td>
+<td>Éxito de ataques menor a 2 % en la batería trimestral; cero fugas entre clientes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="aprobacion-residuales-y-comunicacion">Aprobación, residuales y comunicación<a class="headerlink" href="#aprobacion-residuales-y-comunicacion" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La <strong>dirección designada</strong> (<em>designated management</em>) debe aprobar el plan y aceptar los <strong>riesgos residuales</strong> (<em>residual risks</em>). No tiene que ser la alta dirección: puede ser un comité de IA o de modelos, siempre que la designación esté documentada (en los criterios y en los roles de <a href="../c5-liderazgo/#c-5-3">5.3</a>). Una aceptación sólida es <strong>explícita</strong> (lista riesgos y niveles, no "se aprueba la matriz"), <strong>informada</strong>, <strong>acorde a la autoridad</strong> de quien firma y, para niveles altos, <strong>temporal</strong>.</p>
+<p>Los controles necesarios deben alinearse con los objetivos de IA (<a href="#c-6-2">6.2</a>), estar documentados, comunicarse internamente y, cuando corresponda, estar disponibles para partes interesadas (Monarca Crédito comparte con bancos aliados un extracto de su <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>). Conserva evidencia del proceso de tratamiento.</p>
 <h3 id="c-6-1-4">6.1.4 Evaluación de impacto del sistema de IA<a class="headerlink" href="#c-6-1-4" title="Enlace permanente a esta sección">&para;</a></h3>
-<p>Próximamente.</p>
-<h2 id="c-6-2">6.2 Objetivos de IA y planificación para lograrlos<a class="headerlink" href="#c-6-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-6-3">6.3 Planificación de los cambios<a class="headerlink" href="#c-6-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<p>Aquí aparece la pieza más novedosa de la norma: <strong>evaluar el impacto del sistema de IA</strong> (<em>AI system impact assessment</em>), una evaluación que mira hacia afuera. La evaluación de riesgos pregunta qué puede pasar y qué tan grave sería; la de impacto pregunta cómo cambia la vida de personas, grupos y sociedades porque el sistema existe y se usa así, incluidos los efectos positivos. La diferencia se desarrolla en <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>.</p>
+<h4 id="que-pide-la-norma">Qué pide la norma<a class="headerlink" href="#que-pide-la-norma" title="Enlace permanente a esta sección">&para;</a></h4>
+<ul>
+<li>Tener un <strong>proceso</strong> para valorar qué consecuencias puede traer a individuos, grupos y sociedades el desarrollo, suministro o uso de la IA.</li>
+<li>Que cada evaluación cubra cómo se despliega el sistema, para qué está pensado y cómo podría usarse mal de forma <strong>razonablemente previsible</strong> (<em>reasonably foreseeable misuse</em>).</li>
+<li>Que considere el <strong>contexto técnico y social</strong> y las <strong>jurisdicciones</strong> aplicables.</li>
+<li><strong>Documentar</strong> los resultados y, cuando corresponda, ponerlos a disposición de partes interesadas en la forma que la organización defina.</li>
+<li><strong>Usar los resultados</strong> en la evaluación de riesgos.</li>
+</ul>
+<p>Los controles <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> (proceso), <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> (documentación), <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> (individuos o grupos) y <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a> (impactos sociales) lo aterrizan. Para el método existe una norma dedicada, ISO/IEC 42005 (ver <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>).</p>
+<h4 id="cuando-hay-que-hacerla">¿Cuándo hay que hacerla?<a class="headerlink" href="#cuando-hay-que-hacerla" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La cláusula 6.1.4 pide el proceso y <a href="../c8-operacion/#c-8-4">8.4</a> pide ejecutarlo a intervalos planificados y ante cambios significativos. En nuestra lectura, <strong>todo sistema dentro del alcance debe pasar por el proceso</strong>, aunque sea en versión breve; lo que varía es la profundidad. Un tamizaje inicial ayuda a decidirla:</p>
+<table>
+<thead>
+<tr>
+<th>Pregunta de tamizaje</th>
+<th>Si es "sí"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿Influye en el acceso de personas a crédito, empleo, educación, salud, seguros o servicios públicos?</td>
+<td>Evaluación completa</td>
+</tr>
+<tr>
+<td>¿Decide sin intervención humana o con una mínima?</td>
+<td>Evaluación completa</td>
+</tr>
+<tr>
+<td>¿Procesa datos sensibles o de menores u otros grupos vulnerables?</td>
+<td>Evaluación completa</td>
+</tr>
+<tr>
+<td>¿Interactúa con el público o genera contenido para terceros?</td>
+<td>Al menos evaluación intermedia</td>
+</tr>
+<tr>
+<td>¿Es una herramienta interna sin decisiones sobre personas?</td>
+<td>Evaluación breve documentada</td>
+</tr>
+</tbody>
+</table>
+<p>Repítela, como mínimo, cuando cambie el propósito o la población atendida, se reduzca la supervisión humana, entren datos de un tipo nuevo, el sistema llegue a otra jurisdicción o haya un incidente relevante.</p>
+<h4 id="que-considerar">Qué considerar<a class="headerlink" href="#que-considerar" title="Enlace permanente a esta sección">&para;</a></h4>
+<ul>
+<li><strong>Despliegue y uso previsto:</strong> dónde, por qué canal y frente a quién opera (no es lo mismo un asistente interno que uno en WhatsApp).</li>
+<li><strong>Uso indebido previsible:</strong> usar el puntaje de crédito para presionar la cobranza; pedir un diagnóstico médico al asistente de una aseguradora.</li>
+<li><strong>Contexto técnico:</strong> dependencia de terceros, automatización, calidad de datos, explicabilidad.</li>
+<li><strong>Contexto social:</strong> qué tan capaces son los afectados de defenderse de un error (microempresarios con poca educación financiera, adultos mayores, estudiantes menores de edad), brechas digitales, idioma, desigualdades regionales.</li>
+<li><strong>Jurisdicciones:</strong> protección de datos, protección al consumidor y regulación de IA de cada país donde opera el sistema; ver <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a> y <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>.</li>
+</ul>
+<h4 id="documentacion-disponibilidad-y-vinculo-con-el-riesgo">Documentación, disponibilidad y vínculo con el riesgo<a class="headerlink" href="#documentacion-disponibilidad-y-vinculo-con-el-riesgo" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Documenta sistema y versión, usos previstos e indebidos, grupos afectados, impactos y severidad, supervisión humana, medidas, quién evaluó y aprobó, y próxima revisión; conserva cada versión el tiempo que definas. "Disponible cuando corresponda" no significa publicarlo todo: puede ser un resumen público o una versión para clientes bajo confidencialidad. Lo que sí necesitas es una decisión documentada sobre qué compartes y con quién.</p>
+<p>La conexión con 6.1.2 debe ser visible: cada impacto negativo relevante se vuelve un riesgo con referencia cruzada ("<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01 § 4.2 → R-01"), su severidad alimenta las columnas de individuos y sociedad, sus medidas se vuelven controles candidatos y todo disparador de una nueva evaluación de impacto dispara también una reevaluación de riesgos.</p>
+<div class="admonition legal">
+<p class="admonition-title">No sustituye a evaluaciones exigidas por ley</p>
+<p>Esta evaluación no reemplaza las que una ley pueda exigir (por ejemplo, de protección de datos en algunas jurisdicciones). Una nota de 6.1.4 reconoce que ciertos contextos piden evaluaciones especializadas de seguridad física, privacidad o seguridad de la información. Lo recomendable es integrarlas y referenciarlas, no duplicarlas.</p>
+</div>
+<h3 id="c-6-2">6.2 Objetivos de IA y planificación para lograrlos<a class="headerlink" href="#c-6-2" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La organización debe fijar <strong>objetivos de IA</strong> en las funciones y niveles pertinentes. Piensa en tres preguntas de calidad: <strong>¿está bien anclado?</strong> (coherente con la política de IA y con los requisitos aplicables), <strong>¿se puede seguir?</strong> (medible cuando sea factible, monitoreado y actualizado) y <strong>¿la gente lo conoce?</strong> (comunicado y documentado). La fórmula SMART (específico, medible, alcanzable, relevante y con tiempo) ayuda a llegar ahí:</p>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Objetivo débil</th>
+<th>Objetivo SMART</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contadores Alameda</td>
+<td>"Que Alma conteste bien."</td>
+<td>"Mantener en 98 % o más la exactitud de Alma sobre fechas y obligaciones fiscales, medida cada mes por un contador en 200 conversaciones."</td>
+</tr>
+<tr>
+<td>Monarca Crédito</td>
+<td>"Eliminar el sesgo del modelo."</td>
+<td>"Mantener la razón entre tasas de aprobación de mujeres y hombres, y entre grupos de edad, dentro del rango interno de 0.80 a 1.25 en cada revisión trimestral de Score Monarca v3."</td>
+</tr>
+<tr>
+<td>Conversa Labs</td>
+<td>"Que el asistente sea seguro."</td>
+<td>"Que el éxito de ataques de inyección de instrucciones en la batería trimestral sea menor a 2 % y que no haya fugas de información entre clientes en 2027."</td>
+</tr>
+</tbody>
+</table>
+<p>Los <strong>objetivos del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></strong> ("certificar en 2027", "cerrar a tiempo el 90 % de las acciones correctivas") conviven con los de <strong>desarrollo y uso responsable</strong> de cada sistema. Las notas de 6.2 remiten a los controles de A.6.1 (en especial <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>, metas de desarrollo responsable para quien desarrolla), a <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a> (metas de uso responsable para quien usa) y al Anexo C, que propone temas como equidad, privacidad, robustez, transparencia y explicabilidad, rendición de cuentas o impacto ambiental (ver <a href="../../anexos-b-c-d/">Anexos B, C y D</a>). Los objetivos más útiles conectan tres capas: la política dice "trato justo", el objetivo fija "0.80 a 1.25" y el monitoreo de <a href="../c9-evaluacion-del-desempeno/#c-9-1">9.1</a> lo mide.</p>
+<p>Para cada objetivo hay que planificar qué se hará, con qué recursos, quién responde, para cuándo y cómo se evaluará:</p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Qué se hará</th>
+<th>Recursos</th>
+<th>Responsable</th>
+<th>Fecha</th>
+<th>Cómo se evaluará</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exactitud de Alma ≥ 98 %</td>
+<td>Calendario de actualización de preguntas frecuentes; revisión mensual de 200 conversaciones; corrección en 48 horas</td>
+<td>6 horas al mes de un contador; tablero del proveedor</td>
+<td>Líder de atención a clientes</td>
+<td>Primera medición en enero de 2027</td>
+<td>Porcentaje correcto en la muestra, reportado a la revisión por la dirección</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-6-3">6.3 Planificación de los cambios<a class="headerlink" href="#c-6-3" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Cuando la organización decide cambiar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, el cambio se hace <strong>de forma planificada</strong>. Distingue tres cosas que suelen mezclarse: cambios al <strong><abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></strong> (alcance, procesos, roles, metodología: 6.3), cambios a un <strong>sistema de IA</strong> (control operativo en <a href="../c8-operacion/#c-8-1">8.1</a> y ciclo de vida en <a href="../../anexo-a/a6-ciclo-de-vida/">A.6</a>) y <strong>disparadores de reevaluación</strong> de riesgos e impacto (<a href="../c8-operacion/#c-8-2">8.2</a> y <a href="../c8-operacion/#c-8-4">8.4</a>). Muchos cambios son de los tres tipos a la vez.</p>
+<p>Te recomendamos una ficha corta por cambio: propósito y posibles consecuencias, qué documentos, controles, riesgos y entradas de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> se tocan, recursos, responsables, calendario, comunicación y criterios de éxito.</p>
+<table>
+<thead>
+<tr>
+<th>Cambio</th>
+<th>Ejemplo</th>
+<th>Qué se planifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cambiar de proveedor de modelo de lenguaje</td>
+<td>Conversa Labs migra a otro modelo fundacional por costos</td>
+<td>Evaluación del proveedor (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>); reevaluación de riesgos e impacto; pruebas de regresión (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>); contratos y responsabilidad compartida (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>); aviso a clientes (<a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>); <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y documentación técnica</td>
+</tr>
+<tr>
+<td>Añadir un sistema al alcance</td>
+<td>Monarca Crédito incorpora un modelo de cobranza preventiva</td>
+<td>Alcance (<a href="../c4-contexto/#c-4-3">4.3</a>) e inventario; evaluación de impacto completa; evaluación de riesgos; <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>; objetivos; programa de auditoría interna</td>
+</tr>
+<tr>
+<td>Fusionar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></td>
+<td>Contadores Alameda integra ambos en un solo manual</td>
+<td>Metodología de riesgos única con dimensiones de IA; comité y revisión por la dirección conjuntos; control documental unificado; transición sin perder trazabilidad; auditorías combinadas con el organismo de certificación</td>
+</tr>
+</tbody>
+</table>
+<h2 id="como-se-aplica-segun-tu-rol">Cómo se aplica según tu rol<a class="headerlink" href="#como-se-aplica-segun-tu-rol" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Si usas IA de terceros</label><label for="__tabbed_1_2">Si desarrollas IA</label><label for="__tabbed_1_3">Si provees IA a clientes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> no entrena modelos, pero decide cómo usa la IA y frente a quién.</p>
+<ul>
+<li><strong>Criterios con ejemplos ancla propios:</strong> un "4" para individuos es que un cliente pague recargos por una fecha equivocada; un "4" para la organización, perder a un cliente corporativo o recibir una reclamación formal del banco cliente.</li>
+<li><strong>Riesgos principales:</strong> fuga de datos personales y fiscales en instrucciones; respuestas erróneas de Alma sobre plazos; clientes que no saben que hablan con una IA; dependencia de BotNorte; errores de extracción de CFDI.</li>
+<li><strong>Tratamiento:</strong> política de uso aceptable y capacitación; verificar que la licencia empresarial no use sus datos para entrenar modelos; revisión mensual de preguntas frecuentes; aviso de IA en Alma con opción de hablar con una persona; cláusulas con BotNorte; muestreo de CFDI capturados.</li>
+<li><strong>Evaluación de impacto:</strong> breve para las herramientas internas; intermedia para Alma, pensando en microempresarios que confían en la fecha que les dio el chatbot.</li>
+<li><strong>Proveedor:</strong> si BotNorte no entrega documentación técnica ni resultados de pruebas, ese silencio es un riesgo más.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> es productor y usuario de Score Monarca v3.</p>
+<ul>
+<li><strong>Criterios integrados</strong> con su riesgo de modelo y operativo; el <strong>Comité de Modelos</strong> es la dirección designada que aprueba planes y acepta residuales Altos.</li>
+<li><strong>Evaluación por sistema:</strong> el modelo de asignación de línea (IA-02) tiene su propia evaluación de impacto: una línea excesiva puede sobreendeudar a una persona.</li>
+<li><strong>Fuentes de riesgo dominantes:</strong> datos históricos sesgados y variables sustitutas (<em>proxy variables</em>) como el código postal, el rechazo automático y la deriva por cambios económicos.</li>
+<li><strong>Controles:</strong> mucho peso en <a href="../../anexo-a/a6-ciclo-de-vida/">A.6</a> y <a href="../../anexo-a/a7-datos/">A.7</a>, más controles propios como un interruptor automático por deriva. Los objetivos de desarrollo responsable se vuelven criterios de liberación de cada versión.</li>
+<li><strong>Cambios:</strong> cada reentrenamiento significativo dispara reevaluación de riesgos e impacto; conviene definir de antemano qué es "significativo".</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> vende una plataforma que otros despliegan frente a sus propios usuarios.</p>
+<ul>
+<li><strong>Dos niveles de evaluación:</strong> la plataforma (orquestación, recuperación aumentada, filtros, traspaso a humano) y perfiles por sector: una aseguradora no es una tienda en línea.</li>
+<li><strong>Responsabilidad compartida:</strong> cada riesgo indica si lo controla Conversa, el cliente o el proveedor del modelo fundacional. Los clientes evalúan el impacto de su despliegue con insumos de Conversa (ficha del sistema, limitaciones, resultados de pruebas).</li>
+<li><strong>Uso indebido previsible:</strong> clientes que configuran el asistente para dar asesoría médica o legal; usuarios que intentan extraer datos de otros clientes.</li>
+<li><strong>Jurisdicciones:</strong> México, Colombia, Chile y España; para el cliente español se revisan las obligaciones de transparencia del <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a> que correspondan a cada parte.</li>
+<li><strong>Disponibilidad:</strong> un centro de confianza con resumen de controles, de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y de la evaluación de impacto.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<ul>
+<li><strong>Objeto del riesgo:</strong> ISO/IEC 27001 gira en torno a que la información pierda confidencialidad, integridad o disponibilidad; ISO/IEC 42001 analiza qué les pasaría a la organización, <strong>a las personas y a la sociedad</strong>. Una matriz copiada del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> no cumple.</li>
+<li><strong>Sin equivalente en ISO/IEC 27001:</strong> probabilidad "cuando aplique", criterios que también sirven para valorar impactos y la evaluación de impacto (6.1.4, 8.4 y controles A.5).</li>
+<li><strong>Quién aprueba:</strong> en nuestra lectura, en ISO/IEC 27001 son los dueños de riesgo; en ISO/IEC 42001, la dirección designada (tener dueños de riesgo sigue siendo buena práctica).</li>
+<li><strong>Oportunidades:</strong> ISO/IEC 42001 pide identificar riesgos que ayudan o impiden los objetivos de IA.</li>
+<li><strong><abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>:</strong> existe en ambas, con 38 controles de referencia en ISO/IEC 42001 frente a 93 en ISO/IEC 27001; en ISO/IEC 42001 no se menciona expresamente el estado de implementación.</li>
+<li><strong>Guía de controles:</strong> en ISO/IEC 42001 es el Anexo B, normativo y dentro de la misma norma; en el mundo 27001 es una norma aparte, ISO/IEC 27002.</li>
+<li><strong>Objetivos</strong> ligados al uso y desarrollo responsable; <strong>cambios</strong> (6.3) prácticamente igual. Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, reutiliza herramienta de riesgos, formato de <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y comité: ver <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>.</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tenemos criterios de riesgo de IA aprobados con escalas para la organización, los individuos y la sociedad?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Está escrito quién acepta cada nivel de riesgo residual, y coincide con la realidad?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La alta dirección expresó un apetito de riesgo para la IA, aunque sea en una página?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Identificamos riesgos y oportunidades del propio <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, no solo de los sistemas?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Dos personas calificarían igual el mismo riesgo con nuestra guía? ¿Lo probamos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Determinamos controles desde los riesgos y luego comparamos con el Anexo A, o al revés?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Cada exclusión de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> explica por qué el riesgo no la requiere y que ninguna ley ni contrato la exige?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La dirección designada aprobó el plan y aceptó de forma explícita los residuales?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Todo sistema en el alcance pasó por la evaluación de impacto, con profundidad proporcional, considerando uso indebido y jurisdicciones?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Los resultados de impacto aparecen, con referencia cruzada, en el registro de riesgos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Nuestros objetivos de IA son medibles y tienen responsable, fecha y forma de evaluación?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿El último cambio importante al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> quedó planificado y documentado?</li>
+</ul>
+<h2 id="que-evidencia-espera-ver-un-auditor">Qué evidencia espera ver un auditor<a class="headerlink" href="#que-evidencia-espera-ver-un-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Evidencia</th>
+<th>Ejemplo</th>
+<th>Señal de alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criterios de riesgo de IA</td>
+<td>Metodología aprobada con escalas en tres dimensiones, matriz, umbrales y autoridad de aceptación</td>
+<td>Matriz de riesgos idéntica a la del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, solo con confidencialidad, integridad y disponibilidad; sin columnas de individuos ni sociedad; sin versión ni aprobación</td>
+</tr>
+<tr>
+<td>Riesgos y oportunidades del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Registro con acciones y verificación de eficacia</td>
+<td>Solo riesgos por sistema; nada sobre recursos, competencias o IA en la sombra</td>
+</tr>
+<tr>
+<td>Evaluación de riesgos</td>
+<td>Procedimiento, guía de calificación, calibración y registro por sistema con evidencia</td>
+<td>Cada área usa su propia escala; riesgos genéricos ("sesgo", "alucinación") idénticos para todos los sistemas; evaluación anterior al último cambio significativo</td>
+</tr>
+<tr>
+<td>Plan de tratamiento</td>
+<td>Acciones con responsable, recursos, fecha y verificación</td>
+<td>Acciones vencidas sin seguimiento; "aceptar" como tratamiento de riesgos Críticos</td>
+</tr>
+<tr>
+<td>Declaración de Aplicabilidad</td>
+<td>Documento versionado con 38 controles más los propios</td>
+<td><abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> con 38 controles "aplica" sin justificación; exclusión de A.5 sin evaluación de impacto; "N/A" como justificación; faltan los controles propios del plan; no coincide con lo que se observa</td>
+</tr>
+<tr>
+<td>Aceptación de residuales</td>
+<td>Acta que lista riesgos, niveles y condiciones</td>
+<td>"Se aprueba la matriz"; firma sin la autoridad que marcan los criterios; Altos aceptados sin fecha de revisión</td>
+</tr>
+<tr>
+<td>Evaluaciones de impacto</td>
+<td>Procedimiento con tamizaje y disparadores; una evaluación firmada por sistema o grupo</td>
+<td>Es una evaluación de privacidad renombrada; no considera uso indebido ni grupos afectados; sus resultados no aparecen en el registro de riesgos</td>
+</tr>
+<tr>
+<td>Objetivos de IA</td>
+<td>Tabla con indicadores, responsables, fechas y resultados</td>
+<td>Objetivos no medibles ("ser éticos"); meses sin seguimiento</td>
+</tr>
+<tr>
+<td>Planificación de cambios</td>
+<td>Fichas de cambio con impacto en documentos y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr></td>
+<td>Cambio de proveedor de modelo o del alcance sin rastro de planificación ni reevaluación</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition auditor">
+<p class="admonition-title">Lo que mira el auditor</p>
+<p>Suele hacer una <strong>prueba de trazabilidad</strong>: de un control de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> al riesgo que trata, la evaluación de impacto que lo originó, el plan, la aceptación del residual y la evidencia de operación; y de vuelta desde un riesgo Alto. Si el hilo se rompe, hay hallazgo. Más en <a href="../../auditoria/preguntas-del-auditor/">Preguntas del auditor</a> y <a href="../../auditoria/hallazgos-ejemplo/">Hallazgos de ejemplo</a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes</p>
+<ul>
+<li>Reciclar la matriz del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> sin individuos ni sociedad, o promediar las consecuencias.</li>
+<li>Empezar por el Anexo A y marcar casillas en lugar de partir de los riesgos.</li>
+<li>Tratar la evaluación de impacto como opcional, cuando 6.1.4 es requisito.</li>
+<li>Excluir controles "porque no desarrollamos IA" sin revisar lo que sí se hace (configurar, curar bases de conocimiento, desplegar frente a clientes).</li>
+<li>Tratar el Anexo B como lista obligatoria o, al revés, ignorarlo.</li>
+<li>Evaluaciones de una sola vez que no se actualizan cuando el sistema cambia.</li>
+</ul>
+</div>
+<p>Más en <a href="../../implementacion/errores-frecuentes/">Errores frecuentes</a>.</p>
+<h2 id="ejemplo-resuelto">Ejemplo resuelto<a class="headerlink" href="#ejemplo-resuelto" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="example" open="open">
+<summary>Caso: Monarca Crédito — Riesgos y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> de Score Monarca v3</summary>
+<p><strong>Contexto.</strong> El Director de Riesgos, dueño del modelo, reúne a la Líder de Ciencia de Datos, los oficiales de Cumplimiento y de Privacidad y dos analistas de la banda gris, con los criterios de esta página. Su insumo es la evaluación de impacto <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01: grupos potencialmente afectados (mujeres con micronegocio, adultos mayores, solicitantes del sur del país) y un uso indebido previsible (priorizar cobranza con el score).</p>
+<p><strong>Identificación.</strong></p>
+<ul>
+<li><strong>R-01 Variables sustitutas.</strong> Debido a que el código postal se correlaciona con región e ingreso, el modelo podría rechazar de forma desproporcionada a solicitantes de ciertas entidades, lo que provocaría negación de crédito a grupos enteros.</li>
+<li><strong>R-02 Deriva económica.</strong> Debido a cambios en inflación y empleo, los solicitantes podrían dejar de parecerse a los de entrenamiento, lo que provocaría morosidad y rechazos injustos.</li>
+<li><strong>R-03 Rechazos sin explicación.</strong> Debido a que el rechazo automático muestra un mensaje genérico, los solicitantes no pueden entender ni impugnar la decisión, lo que provocaría quejas ante la Condusef.</li>
+<li><strong>R-04 Datos fuera de finalidad.</strong> Debido a que algunas variables de uso de la app se recolectaron para otra finalidad del aviso de privacidad, podrían usarse en el modelo sin una base adecuada, lo que provocaría un posible incumplimiento de la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr> y afectaría la privacidad de los clientes.</li>
+<li><strong>R-05 Sesgo de automatización</strong> (<em>automation bias</em>). Debido a la carga de trabajo, los analistas podrían confirmar casi siempre la sugerencia del modelo, lo que volvería ineficaz la supervisión humana.</li>
+<li><strong>O-01 Oportunidad.</strong> Los datos de uso de la app, con consentimiento, podrían permitir aprobar a personas sin historial en buró de crédito.</li>
+</ul>
+<p><strong>Análisis, evaluación y tratamiento</strong> (C = peor de las tres dimensiones):</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Org. · Ind. · Soc.</th>
+<th>C</th>
+<th>P</th>
+<th>Nivel</th>
+<th>Evidencia</th>
+<th>Controles del Anexo A</th>
+<th>Propios</th>
+<th>Residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-01</td>
+<td>4 · 4 · 3</td>
+<td>4</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Razón de aprobación de 0.74 en dos entidades</td>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>, <a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a> (transformar el código postal), <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a></td>
+<td>C-MOD-01 prueba de variables sustitutas por reentrenamiento</td>
+<td>C4 · P1 · 🟨 Medio</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>4 · 3 · 2</td>
+<td>4</td>
+<td>4</td>
+<td>🟥 Crítico</td>
+<td>La versión anterior perdió desempeño en seis meses; sin monitoreo de deriva</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a></td>
+<td>C-MON-02 interruptor: si el índice de estabilidad poblacional supera 0.25, todo pasa a la banda gris</td>
+<td>C3 · P2 · 🟨 Medio</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>3 · 4 · 2</td>
+<td>4</td>
+<td>4</td>
+<td>🟥 Crítico</td>
+<td>100 % de rechazos con mensaje genérico; quejas recibidas</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a></td>
+<td>C-EXP-01 motivos en lenguaje claro probados con usuarios</td>
+<td>C2 · P3 · 🟨 Medio</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>4 · 3 · 1</td>
+<td>4</td>
+<td>2</td>
+<td>🟧 Alto</td>
+<td>Dos variables con finalidad dudosa</td>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a>, <a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a>, <a href="../../anexo-a/a4-recursos/#a-4-3">A.4.3</a>, <a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a></td>
+<td>Retiro de las dos variables (evitar)</td>
+<td>C4 · P1 · 🟨 Medio</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>3 · 4 · 2</td>
+<td>4</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Analistas cambian la sugerencia en menos de 2 % de los casos</td>
+<td><a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a></td>
+<td>C-HUM-01: 5 % de la banda gris se presenta sin el score</td>
+<td>C4 · P2 · 🟧 Alto</td>
+</tr>
+</tbody>
+</table>
+<p>Como R-02 y R-03 son Críticos, los criterios exigen actuar de inmediato: mientras se implementan los controles, el Comité ordena un seguimiento semanal de morosidad por cosecha y habilita desde ya un medio de reconsideración para todo rechazo automático.</p>
+<p>Para O-01 la opción es <strong>aprovechar</strong>: piloto con 5 000 solicitudes, condicionado a que R-01 y R-04 estén tratados.</p>
+<p><strong>Aprobación.</strong> En su sesión de noviembre de 2026, el Comité de Modelos aprueba el plan, acepta los residuales Medios de R-01 a R-04 y acepta temporalmente el residual Alto de R-05 por seis meses, con revisión trimestral, mientras se capacita a los analistas. Como marcan los criterios, informa a la dirección general. El acta lista cada riesgo, su residual y sus condiciones.</p>
+<p><strong>Extracto de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Se incluye?</th>
+<th>Justificación</th>
+<th>Vínculos</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A.5.4 Evaluación del impacto en individuos o grupos</td>
+<td>Sí</td>
+<td>El score decide sobre acceso a crédito; <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-01 identifica grupos con posible desventaja</td>
+<td>R-01, R-03</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td>A.6.2.4 Verificación y validación</td>
+<td>Sí</td>
+<td>Liberación de cada versión condicionada a métricas de desempeño y equidad por segmento</td>
+<td>R-01, R-02</td>
+<td>En implementación</td>
+</tr>
+<tr>
+<td>A.7.3 Adquisición de datos</td>
+<td>Sí</td>
+<td>Base y consentimiento documentados por fuente (solicitud, buró, transacciones, app)</td>
+<td>R-04; legislación de datos personales</td>
+<td>En implementación</td>
+</tr>
+<tr>
+<td>A.8.2 Documentación del sistema e información para usuarios</td>
+<td>Sí</td>
+<td>Aviso de decisión automatizada y motivos de rechazo; además lo exige el contrato con un banco aliado</td>
+<td>R-03; contrato</td>
+<td>En implementación</td>
+</tr>
+<tr>
+<td>A.10.3 Proveedores</td>
+<td>Sí</td>
+<td>La API de fraude (IA-03) es de un tercero; evaluación anual y cláusulas de cambios</td>
+<td>R-06</td>
+<td>Implementado</td>
+</tr>
+<tr>
+<td>A.10.4 Clientes</td>
+<td>No</td>
+<td>Monarca no provee IA a clientes; los solicitantes son sujetos del sistema, cubiertos con A.5.4 y A.8.2. La evaluación ER-2026-02 no lo requiere y ningún contrato ni ley lo exige. Se reevaluará si el score se ofrece como servicio a bancos</td>
+<td>—</td>
+<td>No aplica</td>
+</tr>
+<tr>
+<td>C-MON-02 Interruptor por deriva (propio)</td>
+<td>Sí</td>
+<td>Limita la consecuencia de R-02 mientras se investiga la deriva</td>
+<td>R-02</td>
+<td>En implementación</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué revisaría el auditor:</strong> que la razón de 0.74 sea reproducible, que el acta fije la fecha límite de R-05, que C-MON-02 figure en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y que la exclusión de A.10.4 tenga un disparador de revisión. El caso completo está en <a href="../../casos-practicos/fintech-scoring/">Fintech con scoring crediticio</a>.</p>
+</details>
+<h2 id="relacion-con-otras-clausulas-controles-y-normas">Relación con otras cláusulas, controles y normas<a class="headerlink" href="#relacion-con-otras-clausulas-controles-y-normas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Insumos:</strong> contexto y rol (<a href="../c4-contexto/#c-4-1">4.1</a>), partes interesadas (<a href="../c4-contexto/#c-4-2">4.2</a>), alcance (<a href="../c4-contexto/#c-4-3">4.3</a>), liderazgo y apetito (<a href="../c5-liderazgo/#c-5-1">5.1</a>), política (<a href="../c5-liderazgo/#c-5-2">5.2</a>) y roles (<a href="../c5-liderazgo/#c-5-3">5.3</a>).</li>
+<li><strong>Apoyo:</strong> competencia de los evaluadores (<a href="../c7-apoyo/#c-7-2">7.2</a>), comunicación (<a href="../c7-apoyo/#c-7-4">7.4</a>) e información documentada (<a href="../c7-apoyo/#c-7-5">7.5</a>).</li>
+<li><strong>Ejecución y mejora:</strong> <a href="../c8-operacion/#c-8-1">8.1</a>, <a href="../c8-operacion/#c-8-2">8.2</a>, <a href="../c8-operacion/#c-8-3">8.3</a>, <a href="../c8-operacion/#c-8-4">8.4</a>, seguimiento (<a href="../c9-evaluacion-del-desempeno/#c-9-1">9.1</a>), revisión por la dirección (<a href="../c9-evaluacion-del-desempeno/#c-9-3">9.3</a>) y acción correctiva cuando un control falla (<a href="../c10-mejora/#c-10-2">10.2</a>).</li>
+<li><strong>Controles:</strong> <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> a <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>, <a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a>, <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> y el panorama del <a href="../../anexo-a/">Anexo A</a>; guía, objetivos, fuentes de riesgo y sectores en <a href="../../anexos-b-c-d/">Anexos B, C y D</a>.</li>
+<li><strong>Normas:</strong> ISO/IEC 23894, ISO/IEC 38507, ISO/IEC 42005, ISO 31000, ISO/IEC 27001 e ISO/IEC 27701 en <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>; ver también <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>, <a href="../../integracion/nist-ai-rmf/"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></a>, <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a> y <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>.</li>
+</ul>
+<h2 id="plantillas-relacionadas">Plantillas relacionadas<a class="headerlink" href="#plantillas-relacionadas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA (Excel)</a>: escalas, matriz, aceptación y plan de tratamiento.</li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>: tamizaje y formato completo.</li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad de 38 controles (Excel/CSV)</a>.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA (Excel)</a> y <a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: insumos de ambas evaluaciones.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

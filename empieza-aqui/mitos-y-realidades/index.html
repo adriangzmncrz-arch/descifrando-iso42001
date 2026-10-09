@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Quince mitos frecuentes sobre ISO/IEC 42001 y lo que en realidad pide la norma - alcance, los 38 controles, el Anexo B, ISO 27001, el Reglamento de IA de la UE, la EIPD y los proveedores de IA.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -701,6 +701,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mitos y realidades
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -717,6 +735,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-a-quien-aplica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre a quién aplica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-los-controles-y-los-anexos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre los controles y los anexos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-otras-normas-y-leyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre otras normas y leyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-proveedores-y-terceros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre proveedores y terceros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sobre el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conoces-otro-mito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Conoces otro mito?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2676,16 +2779,108 @@
 
 
 <h1 id="mitos-y-realidades">Mitos y realidades<a class="headerlink" href="#mitos-y-realidades" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3c3.88 0 7 3.14 7 7 0 2.8-1.63 5.19-4 6.31V21H9v-3H8c-1.11 0-2-.89-2-2v-3H4.5c-.42 0-.66-.5-.42-.81L6 9.66A7.003 7.003 0 0 1 13 3m-2.68 4.39h1.93c.01-.3.1-.53.28-.69a1 1 0 0 1 .66-.23c.31 0 .57.1.75.28.18.19.26.45.26.75 0 .32-.07.59-.23.82-.14.23-.35.43-.61.59-.51.34-.86.64-1.05.91-.2.26-.31.68-.31 1.18h2c0-.31.04-.56.13-.74.09-.19.26-.36.51-.52.45-.24.82-.53 1.11-.93s.44-.81.44-1.31c0-.76-.27-1.37-.81-1.82-.53-.45-1.26-.68-2.19-.68-.87 0-1.57.2-2.11.59-.52.41-.78.98-.77 1.77zM12 14h2v-2h-2zm1-13C8.41 1 4.61 4.42 4.06 8.9L2.5 11h-.03l-.02.03c-.55.76-.62 1.76-.19 2.59.36.69 1 1.17 1.74 1.32V16c0 1.85 1.28 3.42 3 3.87V23h11v-5.5c2.5-1.67 4-4.44 4-7.5 0-4.97-4.04-9-9-9"/></svg></span> Conceptos clave</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 12 min de lectura</span></p>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>ISO 42001 es más amplia de lo que muchos creen (también aplica a quien solo usa IA) y más flexible de lo que otros temen (no son 38 controles obligatorios), pero no hace milagros: ni sustituye a la ley ni certifica que un modelo sea justo.</p>
+</div>
+<p>Cada mito es un bloque plegable: ábrelo para leer la realidad. Los rojos (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>) son <strong>falsos</strong>; los anaranjados (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2z"/></svg></span>) son <strong>verdades a medias</strong>: tienen algo de cierto, pero la conclusión que se saca de ellos es equivocada. Los nombres de controles que aparecen aquí son traducción libre de referencia.</p>
+<h2 id="sobre-a-quien-aplica">Sobre a quién aplica<a class="headerlink" href="#sobre-a-quien-aplica" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="failure">
+<summary>Mito: «Solo aplica a quien desarrolla IA»</summary>
+<p><strong>Realidad.</strong> La norma está pensada para cualquier organización que desarrolle, ofrezca <strong>o use</strong> productos y servicios con IA. Quien solo usa IA de terceros también decide para qué la usa, con qué datos la alimenta y cómo presenta sus resultados, y ahí hay riesgos propios. Contadores Alameda no ha entrenado un solo modelo, pero su chatbot "Alma" responde a clientes sobre plazos fiscales: si se equivoca, la multa la paga el cliente y el reclamo llega al despacho.</p>
+<p><strong>Matiz.</strong> El rol sí cambia el peso de los controles. Varios de ciclo de vida (<a href="../../anexo-a/a6-ciclo-de-vida/">A.6</a>) y de datos para desarrollo (<a href="../../anexo-a/a7-datos/">A.7</a>) pesan mucho menos, o pueden excluirse con justificación, cuando no desarrollas. Más en <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «Es solo para grandes empresas»</summary>
+<p><strong>Realidad.</strong> La norma se declara aplicable sin importar el tamaño ni el tipo de organización. Lo que se ajusta es el alcance y la profundidad: una <abbr title="Pequeña y mediana empresa.">PyME</abbr> puede definir un alcance acotado, cubrir pocos sistemas y mantener documentos breves. Contadores Alameda, con 58 personas, puede operar un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> razonable sin crear un departamento nuevo.</p>
+<p><strong>Matiz.</strong> La certificación tiene costos casi fijos (auditorías, tiempo de la dirección, auditoría interna) que pesan más en una organización pequeña. Por eso, para muchas <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> el mejor primer paso es alinearse sin certificar. Revisa <a href="../necesito-iso42001/">¿Necesito ISO 42001?</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «La IA generativa no entra porque es una herramienta de productividad»</summary>
+<p><strong>Realidad.</strong> Un asistente de IA generativa es un sistema de IA que tu organización usa, aunque venga como una función más de tu suite de ofimática. Si cae dentro del alcance, va al inventario, a la evaluación de riesgos y a los controles de uso responsable (<a href="../../anexo-a/a9-uso/">A.9</a>). El riesgo es muy concreto: en Contadores Alameda, un colaborador pegó una nómina con datos personales en un chatbot gratuito. Eso es IA en la sombra (<em>shadow AI</em>).</p>
+<p><strong>Matiz.</strong> No hace falta una evaluación de impacto exhaustiva para cada asistente de redacción: conviene que el esfuerzo sea proporcional al riesgo. Lo que no se sostiene es dejarlos fuera del inventario. Empieza con una <a href="../../plantillas/#uso-aceptable-ia-generativa">política de uso aceptable de IA generativa</a> y una lista de herramientas aprobadas.</p>
+</details>
+<h2 id="sobre-los-controles-y-los-anexos">Sobre los controles y los anexos<a class="headerlink" href="#sobre-los-controles-y-los-anexos" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="failure">
+<summary>Mito: «Tengo que implementar los 38 controles»</summary>
+<p><strong>Realidad.</strong> El Anexo A es un catálogo de referencia. Lo que pide <a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a> es que, después de evaluar tus riesgos, determines qué controles necesitas, los compares contra el Anexo A para no pasar por alto ninguno relevante y documentes en la Declaración de Aplicabilidad (<abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>) cuáles incluyes y por qué excluyes los demás. Una exclusión se sostiene cuando tu evaluación de riesgos no la requiere y ningún requisito externo (ley, contrato) la exige. También puedes agregar controles propios: el catálogo no es exhaustivo.</p>
+<p><strong>Matiz.</strong> Un "no aplica" sin justificación es uno de los hallazgos más comunes. Y en nuestra lectura, algunos controles son muy difíciles de excluir para casi cualquier organización, como la Política de IA (<a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>) o los Roles y responsabilidades de IA (<a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>).</p>
+</details>
+<details class="warning">
+<summary>Verdad a medias: «El Anexo B es opcional y no cuenta»</summary>
+<p><strong>Lo cierto.</strong> El Anexo B es guía de implementación, y la propia norma aclara que no tienes que documentar ni justificar en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> si sigues o no cada una de sus recomendaciones. Puedes ampliarla, modificarla o implementar el control a tu manera.</p>
+<p><strong>Lo equivocado.</strong> El Anexo B está marcado como <strong>normativo</strong>, igual que el Anexo A, y eso sorprende a muchos. En la práctica es la mejor pista de la intención de cada control, así que es razonable esperar que un auditor lo use como referencia para valorar si tu implementación cubre lo esencial. Si te apartas de la guía, conviene que puedas explicar cómo tu solución logra el mismo objetivo. Más en <a href="../../anexos-b-c-d/">Anexos B, C y D</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «Hay que documentar el código del modelo»</summary>
+<p><strong>Realidad.</strong> Ningún requisito pide documentar el código fuente línea por línea. Si desarrollas, lo que se espera es documentación del diseño y desarrollo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>), documentación técnica adecuada para quien la necesita, como usuarios, clientes o autoridades (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>), registro de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) y documentación de los recursos que usa el sistema: datos, herramientas, cómputo y personas (<a href="../../anexo-a/a4-recursos/">A.4</a>). Si solo usas IA de terceros, buena parte de esa información se la pides a tu proveedor.</p>
+<p><strong>Matiz.</strong> Sí se espera trazabilidad: qué versión del modelo está en producción, con qué datos se entrenó, qué pruebas pasó y quién aprobó su despliegue. En Monarca Crédito, eso significa poder reconstruir qué versión de Score Monarca decidió una solicitud rechazada.</p>
+</details>
+<details class="failure">
+<summary>Mito: «Con una política de IA basta»</summary>
+<p><strong>Realidad.</strong> La política (<a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a> y <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>) es el punto de partida, no el sistema. Un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> necesita además alcance, roles, criterios de riesgo, evaluaciones de riesgo e impacto, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, objetivos, controles en operación, auditoría interna, revisión por la dirección y acciones correctivas. Un auditor no busca un documento bonito: busca evidencia de que la política se cumple, como registros, decisiones tomadas y excepciones atendidas.</p>
+<p><strong>Matiz.</strong> Para quien apenas empieza, una política bien escrita, aprobada y comunicada sí es una gran primera victoria. Revisa la <a href="../../implementacion/documentacion-requerida/">documentación requerida</a>.</p>
+</details>
+<h2 id="sobre-otras-normas-y-leyes">Sobre otras normas y leyes<a class="headerlink" href="#sobre-otras-normas-y-leyes" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="warning">
+<summary>Verdad a medias: «Si ya tengo ISO 27001, estoy cubierto»</summary>
+<p><strong>Lo cierto.</strong> Ambas comparten la estructura armonizada, así que puedes reutilizar mucho: control de documentos, auditoría interna, revisión por la dirección, acciones correctivas, gestión de competencias, de proveedores y de incidentes. Te ahorras meses.</p>
+<p><strong>Lo que falta.</strong> En ISO 27001 el riesgo gira alrededor de la seguridad de la información; en ISO 42001 también pesan las consecuencias para personas y para la sociedad. Además hay piezas sin equivalente: la evaluación de impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a>), los roles frente a cada sistema (<a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>), la calidad y procedencia de los datos (<a href="../../anexo-a/a7-datos/">A.7</a>) y la información para partes interesadas (<a href="../../anexo-a/a8-informacion-partes-interesadas/">A.8</a>). En nuestra clasificación, 17 de los 38 controles son nuevos frente al Anexo A de ISO 27001:2022 y solo 2 se reutilizan prácticamente tal cual. Más en <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «Certificarme garantiza cumplir el Reglamento de IA de la UE»</summary>
+<p><strong>Realidad.</strong> Un certificado ISO 42001 dice que tu sistema de gestión cumple con una norma voluntaria. El Reglamento de IA de la Unión Europea es una ley con obligaciones propias, que dependen de tu papel (proveedor o responsable del despliegue, entre otros) y del nivel de riesgo del sistema; ninguna certificación de sistema de gestión las sustituye por sí sola. Lo que sí hace un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> es dejarte ordenados el inventario, la gestión de riesgos, la documentación y la supervisión humana, que esa ley también pide en muchos casos.</p>
+<p><strong>Ejemplo.</strong> Conversa Labs tiene un cliente en España. Su <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> le ayuda a documentar el aviso de que el usuario habla con una IA, pero sus obligaciones bajo el reglamento se analizan aparte. Revisa <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «La evaluación de impacto es lo mismo que la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr>»</summary>
+<p><strong>Realidad.</strong> La <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> se centra en los riesgos del tratamiento de datos personales para sus titulares. La evaluación de impacto de un sistema de IA (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a>) es más amplia: mira consecuencias para personas, grupos y la sociedad (trato injusto, exclusión de servicios, seguridad física, autonomía, efectos ambientales), incluso cuando el sistema no trata datos personales, y considera los usos indebidos previsibles.</p>
+<p><strong>Matiz.</strong> Se complementan y conviene coordinarlas; la propia norma reconoce que en ciertos contextos hacen falta evaluaciones por disciplina, como la de privacidad. En Monarca Crédito, el equipo de privacidad lleva la <abbr title="Evaluación de impacto en la protección de datos personales (DPIA en inglés).">EIPD</abbr> de Score Monarca y el Comité de Modelos la evaluación de impacto: comparten insumos, pero responden preguntas distintas. Más en <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>.</p>
+</details>
+<details class="failure">
+<summary>Mito: «El certificado demuestra que mis modelos son justos y seguros»</summary>
+<p><strong>Realidad.</strong> Se certifica el sistema de gestión, no el producto. El auditor verifica que defines criterios (por ejemplo, de equidad), que evalúas contra ellos, que tratas lo que encuentras y que corriges; no "aprueba" tu modelo ni opina sobre su precisión. Un modelo con sesgo puede existir en una organización certificada. Lo que no debería pasar es que nadie lo busque ni lo atienda.</p>
+<p><strong>Qué hacer.</strong> Comunica el certificado con precisión: "nuestro sistema de gestión de IA está certificado", en lugar de "nuestra IA está certificada".</p>
+</details>
+<h2 id="sobre-proveedores-y-terceros">Sobre proveedores y terceros<a class="headerlink" href="#sobre-proveedores-y-terceros" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="failure">
+<summary>Mito: «El certificado cubre a mis proveedores de IA»</summary>
+<p><strong>Realidad.</strong> Tu certificado cubre tu <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> dentro de tu alcance. Tus proveedores siguen siendo terceros que te toca gestionar: evaluarlos, repartir responsabilidades y vigilar que lo que entregan sea coherente con tu enfoque (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> y <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>). Y al revés: que tu proveedor esté certificado no te certifica a ti, aunque es buena evidencia para tu evaluación de proveedores.</p>
+<p><strong>Ejemplo.</strong> Contadores Alameda contrata a "Alma" como servicio de BotNorte. Aunque BotNorte tuviera su propio certificado, el despacho seguiría a cargo de curar la base de preguntas frecuentes, de avisar a sus clientes que hablan con una IA y de atender los errores sobre plazos fiscales. Y si BotNorte presume un certificado, conviene revisar que su alcance incluya el servicio que contratas.</p>
+</details>
+<details class="failure">
+<summary>Mito: «Si uso un <abbr title="Modelo de lenguaje de gran tamaño (large language model), como los que impulsan a los asistentes de IA generativa.">LLM</abbr> de un gran proveedor, la responsabilidad es suya»</summary>
+<p><strong>Realidad.</strong> La responsabilidad se reparte, no se transfiere. El proveedor del modelo responde por lo que controla (cómo lo entrena, sus filtros, su infraestructura); tú respondes por lo que decides: para qué lo usas, qué datos le envías, cómo presentas sus respuestas y qué supervisión humana pones. La norma te pide repartir esas responsabilidades de forma explícita (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>) y usar cada sistema dentro de su uso previsto (<a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a>). Lee los términos de servicio: es común que dejen al cliente la responsabilidad por el uso y los resultados.</p>
+<p><strong>Ejemplo.</strong> En Conversa Labs hay tres capas: el proveedor del modelo fundacional, Conversa (orquestación, generación aumentada por recuperación, filtros de seguridad y pruebas) y cada cliente, que despliega el asistente frente a sus propios usuarios. Una matriz de responsabilidad compartida evita que cada uno crea que el otro se encarga.</p>
+</details>
+<h2 id="sobre-el-proyecto">Sobre el proyecto<a class="headerlink" href="#sobre-el-proyecto" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="failure">
+<summary>Mito: «Es un proyecto del área de TI»</summary>
+<p><strong>Realidad.</strong> La <a href="../../clausulas/c5-liderazgo/">cláusula 5</a> pone a la alta dirección al frente: compromiso, política, recursos y roles. Las decisiones más difíciles (qué riesgos aceptar, qué usos prohibir, cuándo una decisión automatizada necesita revisión humana) son de negocio, legales y éticas. TI suele operar parte de los controles, pero un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> que vive solo en TI difícilmente demuestra liderazgo ante un auditor.</p>
+<p><strong>Ejemplo.</strong> En Contadores Alameda, la Gerencia de TI es responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, pero la Socia directora aprueba la política y acepta los riesgos residuales, la Coordinadora de cumplimiento y datos personales vigila el tratamiento de datos, y el área de atención a clientes es dueña del proceso de "Alma".</p>
+</details>
+<details class="failure">
+<summary>Mito: «Mejor espero a que haya una ley de IA en mi país»</summary>
+<p><strong>Realidad.</strong> La IA ya está sujeta a reglas vigentes: protección de datos personales (en México, la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>, con su aviso de privacidad y derechos <abbr title="Derechos de Acceso, Rectificación, Cancelación y Oposición sobre datos personales.">ARCO</abbr>), protección a usuarios de servicios financieros, normas laborales, de consumo y sectoriales. Además, la presión suele llegar antes por la vía de los contratos: cuestionarios de bancos, aseguradoras y clientes extranjeros. Un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> te prepara para lo que ya existe y para lo que venga, sin depender del calendario legislativo. Revisa <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>.</p>
+</details>
+<h2 id="conoces-otro-mito">¿Conoces otro mito?<a class="headerlink" href="#conoces-otro-mito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Si escuchaste otra idea equivocada en una junta, un curso o una propuesta comercial, cuéntanos. Las instrucciones están en <a href="../../acerca-de/#como-contribuir">Cómo contribuir</a>. Y si quieres seguir, la siguiente parada natural son las <a href="../rutas-de-lectura/">rutas de lectura</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

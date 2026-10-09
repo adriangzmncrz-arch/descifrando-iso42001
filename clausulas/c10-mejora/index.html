@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Cómo gestionar incidentes de IA, no conformidades y acciones correctivas, y cómo mejorar de forma continua un SGIA según la cláusula 10 de ISO/IEC 42001.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1333,6 +1333,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pide-explicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué pide, explicado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué pide, explicado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#c-10-1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1342,12 +1365,83 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-10-2" class="md-nav__link">
     <span class="md-ellipsis">
       
         10.2 No conformidad y acción correctiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-aplica-segun-tu-rol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se aplica según tu rol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-evidencia-espera-ver-un-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué evidencia espera ver un auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-resuelto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo resuelto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-con-otras-clausulas-controles-y-normas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación con otras cláusulas, controles y normas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas relacionadas
       
     </span>
   </a>
@@ -2735,20 +2829,445 @@
 
 
 <h1 id="clausula-10-mejora">Cláusula 10 · Mejora<a class="headerlink" href="#clausula-10-mejora" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h7.81c-.36-.62-.61-1.3-.73-2H6V4h7v5h5v4.08c.33-.05.67-.08 1-.08.34 0 .67.03 1 .08V8l-6-6M8 12v2h8v-2m-8 4v2h5v-2Z"/></svg></span> Requisito certificable</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 17 min de lectura</span></p>
 </div>
-<h2 id="c-10-1">10.1 Mejora continua<a class="headerlink" href="#c-10-1" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-10-2">10.2 No conformidad y acción correctiva<a class="headerlink" href="#c-10-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>La cláusula 10 cierra el ciclo: cuando algo falla, reaccionas, averiguas por qué pasó, evitas que se repita aquí y en otros sistemas, y usas lo aprendido para que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> sea cada vez más útil.</p>
+</div>
+<h2 id="proposito">Propósito<a class="headerlink" href="#proposito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Es la fase <strong>Actuar</strong> del ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr>. Todo lo que mediste, auditaste y revisaste en la <a href="../c9-evaluacion-del-desempeno/">cláusula 9</a> sirve de poco si no cambia nada. La cláusula 10 tiene dos caras: una reactiva (tratar las no conformidades para que no se repitan) y otra proactiva (mejorar aunque nada haya fallado).</p>
+<p>En IA, la parte reactiva tiene un reto especial: muchas fallas no se parecen a las de seguridad de la información. Un asistente que inventa una cobertura de seguro no sufrió un ataque ni perdió datos; hizo lo que hacen los modelos de lenguaje cuando el proceso que los rodea no los contiene. Si solo corriges la respuesta equivocada, la siguiente llegará mañana con otra forma.</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía</p>
+<p>Aparece una mancha de humedad en el techo. Pintar encima es la <strong>corrección</strong>: el síntoma desaparece hoy. Encontrar la tubería rota y cambiarla es la <strong>acción correctiva</strong>: atacas la causa. Revisar las demás tuberías del edificio que se instalaron igual es buscar <strong>no conformidades similares</strong>. Y cambiar el plan de mantenimiento para que el impermeabilizante se revise cada año es <strong>mejorar el sistema</strong>. Muchas organizaciones se quedan en la pintura.</p>
+</div>
+<h2 id="que-pide-explicado">Qué pide, explicado<a class="headerlink" href="#que-pide-explicado" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="c-10-1">10.1 Mejora continua<a class="headerlink" href="#c-10-1" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La norma pide mejorar de manera continua tres cualidades del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>. Suenan parecido, pero miden cosas distintas:</p>
+<table>
+<thead>
+<tr>
+<th>Cualidad</th>
+<th>Pregunta</th>
+<th>Señal de que falla</th>
+<th>Mejora posible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Idoneidad</strong> (<em>suitability</em>)</td>
+<td>¿El <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> sigue correspondiendo a lo que la organización es y hace hoy?</td>
+<td>Contadores Alameda empieza a ajustar un modelo propio para clasificar gastos de sus clientes: ahora también desarrolla IA, pero su alcance y sus procesos solo contemplan el uso de IA de terceros</td>
+<td>Ampliar el alcance e incorporar procesos de ciclo de vida y datos (A.6, A.7)</td>
+</tr>
+<tr>
+<td><strong>Adecuación</strong> (<em>adequacy</em>)</td>
+<td>¿Alcanza? ¿Cubre lo suficiente en extensión y profundidad?</td>
+<td>Monarca monitorea la equidad de Score Monarca v3, pero no la del modelo de asignación de línea, que deriva de él</td>
+<td>Extender indicadores y evaluaciones de impacto a IA-02</td>
+</tr>
+<tr>
+<td><strong>Eficacia</strong> (<em>effectiveness</em>)</td>
+<td>¿Logra los resultados planificados?</td>
+<td>Alameda tiene política de uso aceptable y capacitación, pero la herramienta de prevención de fuga de datos sigue detectando nóminas pegadas en chatbots gratuitos</td>
+<td>Ofrecer una alternativa autorizada, bloquear servicios no aprobados y rehacer la capacitación con casos reales</td>
+</tr>
+</tbody>
+</table>
+<p>En nuestra lectura, la forma más fácil de recordarlas es esta: idóneo es que <strong>encaja</strong>, adecuado es que <strong>alcanza</strong> y eficaz es que <strong>funciona</strong>. Un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> puede encajar y alcanzar, y aun así no funcionar.</p>
+<p>Las mejoras salen de la cláusula 9; de incidentes y no conformidades; de los reportes del personal (<a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>; en esta guía, los nombres de los controles son traducción libre de referencia) y de los usuarios externos (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>); de incidentes públicos de otras organizaciones, y de técnicas nuevas, como un mejor método para medir sesgo. Te recomendamos llevar una <strong>cartera de mejoras</strong> con origen, beneficio esperado, responsable y estado, que llegue a la revisión por la dirección (<a href="../c9-evaluacion-del-desempeno/#c-9-3">9.3</a>). Bajar de 30 a 10 días el tiempo para cerrar una evaluación de impacto también es mejorar.</p>
+<h3 id="c-10-2">10.2 No conformidad y acción correctiva<a class="headerlink" href="#c-10-2" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Cuando aparece una no conformidad (<em>nonconformity</em>), la norma espera una secuencia que, contada a nuestra manera, es así:</p>
+<ol>
+<li><strong>Reaccionar:</strong> controlar el problema, corregirlo en lo que haga falta y hacerse cargo de sus consecuencias.</li>
+<li><strong>Decidir si hay que eliminar la causa</strong> para que no se repita ni aparezca en otro lado. Para decidirlo, analizas lo ocurrido, buscas sus causas y revisas si hay casos parecidos, ya presentes o posibles.</li>
+<li><strong>Ejecutar</strong> las acciones necesarias.</li>
+<li><strong>Comprobar que funcionaron.</strong></li>
+<li><strong>Ajustar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></strong> si el problema lo exige.</li>
+</ol>
+<p>Las acciones deben ser proporcionales a los efectos (no se investiga igual una firma faltante que una decisión de crédito discriminatoria) y debe quedar evidencia de qué pasó, qué se hizo y con qué resultado.</p>
+<h4 id="incidente-de-ia-no-conformidad-y-riesgo">Incidente de IA, no conformidad y riesgo<a class="headerlink" href="#incidente-de-ia-no-conformidad-y-riesgo" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Tres conceptos que se mezclan con frecuencia. ISO/IEC 42001 define la no conformidad (incumplir un requisito), pero no define <em>incidente de IA</em>, así que te proponemos una definición operativa:</p>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Qué es</th>
+<th>Ejemplo en Contadores Alameda</th>
+<th>Dónde se gestiona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Riesgo</strong></td>
+<td>Algo que podría pasar y afectaría objetivos, personas o sociedad</td>
+<td>Que Alma informe un plazo fiscal equivocado</td>
+<td>Evaluación y tratamiento de riesgos (<a href="../c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../c8-operacion/#c-8-2">8.2</a>)</td>
+</tr>
+<tr>
+<td><strong>Incidente de IA</strong></td>
+<td>Algo que ya pasó: el sistema se comportó de forma no prevista y causó o pudo causar daño</td>
+<td>Alma dio a un cliente una fecha posterior al vencimiento y el cliente pagó recargos</td>
+<td>Gestión de incidentes y su comunicación (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>)</td>
+</tr>
+<tr>
+<td><strong>No conformidad</strong></td>
+<td>Incumplimiento de un requisito de la norma, de tu política o procedimiento, de un contrato o de la ley</td>
+<td>El procedimiento exigía validar la base de conocimiento de Alma cada mes y nadie lo hacía desde noviembre</td>
+<td>Esta subcláusula</td>
+</tr>
+</tbody>
+</table>
+<p>Cómo se relacionan:</p>
+<ul>
+<li>Un riesgo que se materializa se vuelve incidente.</li>
+<li>Un incidente <strong>puede o no</strong> revelar una no conformidad. Si un control no operó como debía, la hay. Si todo funcionó según lo diseñado y aun así ocurrió (por ejemplo, un riesgo residual aceptado), no hay no conformidad, pero sí hay que revisar riesgos e impacto.</li>
+<li>Una no conformidad puede existir sin incidente: un sistema desplegado sin evaluación de impacto incumple aunque nunca haya dañado a nadie. La mayoría se encuentran así, en auditorías.</li>
+</ul>
+<h4 id="el-flujo-de-un-incidente-de-ia">El flujo de un incidente de IA<a class="headerlink" href="#el-flujo-de-un-incidente-de-ia" title="Enlace permanente a esta sección">&para;</a></h4>
+<pre class="mermaid"><code>flowchart TD
+    A["Detección"] --&gt; B["Contención"]
+    B --&gt; C["Evaluación del impacto del incidente"]
+    C --&gt; D{"¿Hay que avisar?"}
+    D --&gt;|Sí| E["Comunicación a usuarios, clientes o autoridades · A.8.4"]
+    D --&gt;|No| F["Corrección"]
+    E --&gt; F
+    F --&gt; G["Análisis de causa raíz"]
+    G --&gt; H{"¿Se incumplió un requisito?"}
+    H --&gt;|Sí| I["No conformidad y acción correctiva · 10.2"]
+    H --&gt;|No| J["Lecciones aprendidas"]
+    I --&gt; J
+    J --&gt; K["Actualización de riesgos y evaluación de impacto · 8.2 y 8.4"]
+    K --&gt; L["Entrada a la revisión por la dirección · 9.3"]</code></pre>
+<p>Puedes integrar este flujo en tu proceso general de incidentes, como el de tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, si contempla lo propio de la IA: hay incidentes graves sin brecha de seguridad alguna.</p>
+<h4 id="reaccionar-contener-corregir-y-hacerse-cargo">Reaccionar: contener, corregir y hacerse cargo<a class="headerlink" href="#reaccionar-contener-corregir-y-hacerse-cargo" title="Enlace permanente a esta sección">&para;</a></h4>
+<ul>
+<li><strong>Detección.</strong> Llega por el monitoreo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>), por reportes de usuarios, del personal, del proveedor o de un cliente.</li>
+<li><strong>Contención.</strong> Detén el daño antes de entenderlo del todo: modo degradado, desvío a revisión humana, desactivar una función o volver a la versión anterior. Estos interruptores se preparan antes del incidente.</li>
+<li><strong>Evaluación del impacto del incidente.</strong> No es rehacer la evaluación formal de <a href="../c6-planificacion/#c-6-1-4">6.1.4</a>, sino dimensionar: cuántas personas, qué daño, desde cuándo. Los registros de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) lo hacen posible; sin ellos, solo especulas.</li>
+<li><strong>Comunicación.</strong> <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a> te pide tener definido de antemano cómo avisarás a quienes usan el sistema; la guía del Anexo B sugiere considerar además si hay que avisar a autoridades, en qué plazo y con qué detalle, según contratos y regulación. Si hay datos personales involucrados, revisa tus obligaciones frente a los titulares conforme a la legislación aplicable (<a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>).</li>
+<li><strong>Corrección y consecuencias.</strong> Arregla el efecto concreto (la respuesta, la decisión, el dato) y atiende a los afectados: contactarlos, revertir decisiones, compensar cuando corresponda.</li>
+</ul>
+<h4 id="analisis-de-causa-raiz-aplicado-a-un-fallo-de-ia">Análisis de causa raíz aplicado a un fallo de IA<a class="headerlink" href="#analisis-de-causa-raiz-aplicado-a-un-fallo-de-ia" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Ejemplo: Alma, el chatbot de WhatsApp de Contadores Alameda, informó a un cliente un vencimiento posterior al real; el cliente pagó tarde y con recargos.</p>
+<p><strong>Los cinco porqués</strong></p>
+<ol>
+<li>¿Por qué el cliente pagó tarde? Porque Alma le dio una fecha límite equivocada.</li>
+<li>¿Por qué Alma dio esa fecha? Porque la base de conocimiento conservaba el calendario del año anterior, cuando ese vencimiento cayó en día inhábil y se recorrió al siguiente día hábil; este año no ocurría, y el modelo repitió la fecha vieja.</li>
+<li>¿Por qué seguía el calendario anterior? Porque nadie actualizó la base de conocimiento en enero.</li>
+<li>¿Por qué nadie la actualizó? Porque el procedimiento decía que se validaba cada mes, pero no asignaba responsable ni fecha; en la práctica dependía de la memoria de la Líder de atención a clientes.</li>
+<li>¿Por qué no asignaba responsable? Porque se redactó cuando Alma se veía como un proyecto de TI ya terminado, y el proceso de alta de sistemas de IA (<a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>) no exige planear la operación del contenido que la organización aporta.</li>
+</ol>
+<p><strong>Causa raíz:</strong> la incorporación de sistemas de IA de terceros no contempla la operación continua del contenido propio.</p>
+<p>Los cinco porqués empujan a una sola cadena causal, y las fallas de IA casi siempre tienen varias. Conviene complementarlos con un diagrama de Ishikawa (espina de pescado) con categorías adaptadas:</p>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Causas posibles en el caso de Alma</th>
+<th>¿Confirmada?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datos y contenido</td>
+<td>Calendario vencido; dos documentos con fechas contradictorias</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Modelo</td>
+<td>Ante contexto ambiguo, el modelo completa con una fecha plausible en lugar de abstenerse</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Proceso</td>
+<td>Sin responsable, control de cambios ni validación de la base de conocimiento</td>
+<td>Sí, causa raíz</td>
+</tr>
+<tr>
+<td>Personas y supervisión</td>
+<td>Nadie revisaba muestras de conversaciones sobre plazos</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Proveedor</td>
+<td>BotNorte cambió la versión del modelo en febrero sin avisar</td>
+<td>No influyó, pero se documenta</td>
+</tr>
+<tr>
+<td>Medición</td>
+<td>No existía indicador de exactitud de Alma</td>
+<td>Sí: por eso el problema duró semanas</td>
+</tr>
+</tbody>
+</table>
+<h4 id="buscar-casos-similares">Buscar casos similares<a class="headerlink" href="#buscar-casos-similares" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Esta pregunta es la que más rinde en IA. En Alameda llevó a revisar todo lo que depende de datos que caducan: los catálogos del SAT que usa el módulo de captura de CFDI (IA-03) y las tablas que el personal consulta con el asistente de ofimática (IA-01). Resultó que nadie verificaba que el proveedor del módulo de CFDI actualizara sus catálogos a tiempo; se pactó un compromiso contractual y una verificación trimestral (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>).</p>
+<h4 id="verificar-la-eficacia-y-ajustar-el-sgia">Verificar la eficacia y ajustar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr><a class="headerlink" href="#verificar-la-eficacia-y-ajustar-el-sgia" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Una acción correctiva (<em>corrective action</em>) no se cierra cuando se implementa, sino cuando se comprueba que funcionó. Define el criterio de eficacia al abrirla y deja pasar tiempo suficiente para que el problema pudiera repetirse. Si la causa está en el diseño del sistema de gestión, la acción toca el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>: un procedimiento nuevo, un rol con más responsabilidades, un control en la Declaración de Aplicabilidad, un riesgo nuevo en la matriz. Esos cambios se planifican como pide <a href="../c6-planificacion/#c-6-3">6.3</a>.</p>
+<h4 id="registro-de-ejemplo-completo">Registro de ejemplo completo<a class="headerlink" href="#registro-de-ejemplo-completo" title="Enlace permanente a esta sección">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Folio y fuente</td>
+<td><abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-004 · queja de un cliente por WhatsApp, vinculada al incidente INC-011</td>
+</tr>
+<tr>
+<td>Requisito incumplido</td>
+<td>Procedimiento de operación de Alma (validación mensual de la base de conocimiento), que implementa controles declarados aplicables: <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> y <a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a></td>
+</tr>
+<tr>
+<td>Descripción</td>
+<td>Alma informó a 14 clientes un vencimiento posterior al real; uno pagó con recargos. La base de conocimiento no se validaba desde noviembre</td>
+</tr>
+<tr>
+<td>Severidad</td>
+<td>Alta: daño económico a clientes y riesgo reputacional</td>
+</tr>
+<tr>
+<td>Contención</td>
+<td>El mismo día, Alma deja de responder sobre plazos y transfiere a una persona</td>
+</tr>
+<tr>
+<td>Corrección y consecuencias</td>
+<td>Base de conocimiento corregida y validada por la Coordinadora de cumplimiento; se contacta a los 14 clientes; el despacho absorbe los recargos del cliente afectado</td>
+</tr>
+<tr>
+<td>Análisis de causa</td>
+<td>Cinco porqués e Ishikawa. Causa raíz: la incorporación de sistemas de IA de terceros no contempla la operación del contenido propio</td>
+</tr>
+<tr>
+<td>Casos similares</td>
+<td>Revisión de IA-01 e IA-03; falta de verificación de catálogos del SAT en IA-03</td>
+</tr>
+<tr>
+<td>Acciones correctivas</td>
+<td>1) Dueño y calendario mensual de validación (Líder de atención a clientes, 15 días). 2) Visto bueno de cumplimiento antes de publicar cambios (Coordinadora de cumplimiento, 15 días). 3) Indicador de exactitud con muestreo (Gerente de TI, 30 días). 4) Alma se abstiene y transfiere si no encuentra el dato (BotNorte, 30 días). 5) Procedimiento de alta con plan de operación del contenido (Gerente de TI, 45 días). 6) Verificación trimestral de catálogos con el proveedor de IA-03 (Gerente de TI, 60 días)</td>
+</tr>
+<tr>
+<td>Criterio de eficacia</td>
+<td>Tres meses seguidos con exactitud ≥ 98 % en la muestra y cero quejas por plazos</td>
+</tr>
+<tr>
+<td>Verificación</td>
+<td>Tres meses posteriores: 99 %, 98.3 % y 99.2 %; sin quejas. Eficaz</td>
+</tr>
+<tr>
+<td>Cambios al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Nuevo riesgo en la matriz; evaluación de impacto de Alma actualizada; procedimiento de alta en su versión 2</td>
+</tr>
+<tr>
+<td>Cierre</td>
+<td>Aprobado por el Gerente de TI y presentado en la revisión por la dirección</td>
+</tr>
+</tbody>
+</table>
+<h2 id="como-se-aplica-segun-tu-rol">Cómo se aplica según tu rol<a class="headerlink" href="#como-se-aplica-segun-tu-rol" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Si usas IA de terceros</label><label for="__tabbed_1_2">Si desarrollas IA</label><label for="__tabbed_1_3">Si provees IA a clientes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> no puede corregir el modelo, pero sí casi todo lo que lo rodea: el contenido que le da, la configuración, la supervisión, el contrato y la decisión de seguir o no con el proveedor.</p>
+<ul>
+<li>Exige por contrato que el proveedor avise de incidentes y de cambios de versión del modelo, con plazos (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>). Sin eso, tu flujo de incidentes empieza tarde.</li>
+<li>Muchas no conformidades serán de uso, no de tecnología. El colaborador que pegó una nómina en un chatbot gratuito protagonizó un incidente con datos personales y una no conformidad a la política de uso aceptable. Corrección: documentar qué se compartió y valorar el aviso a los titulares. Acción correctiva: no basta con "recordar la política"; ofrece una alternativa con licencia empresarial, bloquea servicios no autorizados y revisa si otras áreas hacen lo mismo.</li>
+<li>Si la causa raíz está en el proveedor, tu acción puede ser exigirle un cambio, añadir un control compensatorio propio o, en último caso, cambiar de proveedor.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> controla el modelo y, por eso, tiene más formas de corregir.</p>
+<ul>
+<li>Corrección típica: volver a la versión anterior desde el registro de modelos y reprocesar las decisiones afectadas. Si el incidente fue un sesgo, identifica a los solicitantes rechazados en la ventana afectada y ofréceles reconsideración.</li>
+<li>El análisis de causa raíz casi siempre cruza equipos: datos, ingeniería de variables, validación y producto, como la pantalla que preseleccionaba la aceptación en el <a href="../c9-evaluacion-del-desempeno/#ejemplo-resuelto">ejemplo de la cláusula 9</a>.</li>
+<li>Busca casos similares en los modelos derivados: lo que falla en IA-01 probablemente afecta a IA-02, que hereda sus datos.</li>
+<li>Si la acción correctiva implica reentrenar, el Comité de Modelos la aprueba como cambio significativo, con nueva validación y evaluación de impacto (<a href="../c8-operacion/#c-8-4">8.4</a>).</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> atiende incidentes que se multiplican por el número de clientes.</p>
+<ul>
+<li>Un defecto de la orquestación puede aparecer en decenas de bases de conocimiento: la búsqueda de casos similares abarca toda la plataforma, no un solo cliente.</li>
+<li>La comunicación tiene dos capas: Conversa avisa al cliente según el contrato, y el cliente avisa a sus usuarios finales, porque es quien despliega frente a ellos (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>). Plazos, contenido y responsables se pactan antes.</li>
+<li>Si la causa está en el proveedor del modelo fundacional (por ejemplo, una versión nueva que cambia el comportamiento), la acción correctiva incluye pruebas de regresión antes de aceptar cada versión.</li>
+<li>Un análisis posterior sin culpables (<em>blameless postmortem</em>) compartido con los clientes genera confianza en lugar de restarla.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<ul>
+<li><strong>Misma estructura y mismo orden.</strong> ISO/IEC 27001:2022 y 42001 siguen la estructura armonizada vigente: 10.1 es mejora continua y 10.2 es no conformidad y acción correctiva. En la edición anterior de ISO 27001 el orden era el inverso, por eso todavía circulan procedimientos con la numeración cambiada.</li>
+<li><strong>Lo que dispara una no conformidad.</strong> En un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> suele nacer de incidentes de seguridad o de controles que fallan. En un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> también aparece por efectos en personas sin brecha alguna: una alucinación, un sesgo, una supervisión humana que se volvió trámite.</li>
+<li><strong>Incidentes.</strong> Los controles de incidentes de ISO 27001 (ISO 27001 A.5.24 a A.5.28) se enfocan en seguridad de la información. La guía de 42001 admite integrar la respuesta a incidentes de IA en ese proceso, siempre que atienda sus particularidades.</li>
+<li><strong>Un solo registro.</strong> Con ambos sistemas, usa un registro común de no conformidades con un campo que indique a cuál aplica.</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Distingues en tus registros entre riesgo, incidente de IA y no conformidad?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tu definición de incidente de IA incluye daños sin brecha de seguridad, como alucinaciones o sesgos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tus sistemas de IA tienen interruptores de contención preparados: modo degradado, desvío a una persona, reversión de versión?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tu plan de comunicación de incidentes dice a quién avisar, en qué plazo y con qué contenido, incluidos clientes y autoridades cuando aplique?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tus análisis de causa raíz llegan a causas de proceso, o se quedan en "error humano"?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Buscas sistemáticamente el mismo problema en otros sistemas de IA y otros clientes?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Defines el criterio de eficacia al abrir la acción correctiva?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Las lecciones aprendidas actualizan la evaluación de riesgos y de impacto?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Llevas una cartera de mejoras que no dependa solo de las fallas?</li>
+</ul>
+<h2 id="que-evidencia-espera-ver-un-auditor">Qué evidencia espera ver un auditor<a class="headerlink" href="#que-evidencia-espera-ver-un-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Evidencia</th>
+<th>Ejemplo</th>
+<th>Señal de alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Procedimiento de no conformidades y acciones correctivas</td>
+<td>Flujo, responsables, criterios de severidad, plazos</td>
+<td>Procedimiento genérico copiado, sin mención a la IA</td>
+</tr>
+<tr>
+<td>Registro de no conformidades</td>
+<td>Folios con causa, acciones, eficacia y cierre</td>
+<td>Registro vacío o solo con hallazgos del organismo de certificación</td>
+</tr>
+<tr>
+<td>Análisis de causa raíz</td>
+<td>Cinco porqués, Ishikawa, análisis posteriores</td>
+<td>"Error humano" como causa; "capacitar" como única acción</td>
+</tr>
+<tr>
+<td>Registro de incidentes de IA</td>
+<td>Impacto, contención y comunicación de cada incidente</td>
+<td>Solo incidentes de seguridad; ninguno de calidad o sesgo</td>
+</tr>
+<tr>
+<td>Verificación de eficacia</td>
+<td>Datos posteriores que demuestran que no se repitió</td>
+<td>Acciones cerradas el mismo día en que se implementan</td>
+</tr>
+<tr>
+<td>Actualizaciones derivadas y cartera de mejoras</td>
+<td>Riesgos e impactos modificados a raíz de incidentes; iniciativas con responsable</td>
+<td>Incidentes que no cambian nada; ninguna mejora fuera de las correcciones</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes</p>
+<ul>
+<li>Cerrar como "error humano" con la acción "capacitar al personal". Si una persona pudo equivocarse así, el proceso lo permitió.</li>
+<li>Corregir la respuesta equivocada sin investigar por qué el sistema la produjo.</li>
+<li>Cerrar acciones correctivas al implementarlas, sin verificar su eficacia.</li>
+<li>Tratar cada incidente de forma aislada, sin buscar el mismo patrón en otros sistemas o clientes.</li>
+<li>Esconder no conformidades para "llegar limpios" a la auditoría: un registro vacío genera más preguntas que uno lleno y bien gestionado.</li>
+<li>Gestionar incidentes de IA solo desde seguridad de la información, sin quienes entienden el modelo ni quienes atienden a los afectados.</li>
+</ul>
+</div>
+<h2 id="ejemplo-resuelto">Ejemplo resuelto<a class="headerlink" href="#ejemplo-resuelto" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="example">
+<summary>Caso: Conversa Labs — el asistente que inventó una cobertura</summary>
+<p><strong>Qué pasó.</strong> Una aseguradora mexicana usa Conversa como asistente de atención a sus asegurados. Uno preguntó si su póliza de auto incluía auto sustituto mientras su vehículo estaba en el taller. El asistente respondió con seguridad que sí, por 15 días. Su plan no la incluía; otro plan de la misma aseguradora sí, pero por 10 días. El asegurado rentó un auto, le rechazaron el reembolso y se quejó con la aseguradora, advirtiendo que acudiría a la Condusef.</p>
+<p><strong>Detección y contención (día 1).</strong> La aseguradora reportó el caso por el portal de soporte. La Responsable de <em>Trust &amp; Safety</em> lo clasificó como incidente de severidad alta y, en dos horas, activó una regla de contención: para ese cliente, toda pregunta sobre coberturas se transfiere a un agente humano.</p>
+<p><strong>Evaluación del impacto (días 1 y 2).</strong> Con los registros de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) el equipo revisó los últimos 60 días: en 9 conversaciones el asistente afirmó la cobertura a quien no la tenía y 2 asegurados actuaron con base en ello. Otras 3 conversaciones citaban deducibles de otro plan.</p>
+<p><strong>Comunicación (día 2).</strong> Conforme a su plan (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>) y al contrato, Conversa entregó a la aseguradora un informe con las 12 conversaciones afectadas, la contención aplicada y los siguientes pasos. La aseguradora, que despliega el asistente frente a sus asegurados, contactó a los afectados, reembolsó a los dos que rentaron auto y valoró con su área legal si debía reportar algo.</p>
+<p><strong>Corrección (días 2 a 5).</strong> Los documentos de la base de conocimiento se etiquetaron por producto y se reindexaron. Las respuestas sobre coberturas volvieron con una restricción: el asistente pregunta primero el plan y solo cita documentos de ese plan.</p>
+<p><strong>Causa raíz.</strong> El modelo no "se volvió loco": recuperó las condiciones reales de otro plan y, a partir de ellas, completó una respuesta con un plazo que no aparece en ningún documento. Es una alucinación construida sobre un contexto equivocado. El verificador de sustento solo comprobó que el concepto "auto sustituto" apareciera en algún documento recuperado; no revisaba cifras ni plazos, ni si el documento correspondía al plan del asegurado. ¿Por qué no se detectó antes? Tres semanas atrás, Customer Success cargó desde el panel de autoservicio las condiciones de dos planes nuevos. El procedimiento de verificación y validación (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) exige repetir la batería de evaluación del cliente cuando su base de conocimiento cambia de forma significativa. No se hizo: el panel no la disparaba y la definición de cambio significativo no mencionaba cargas masivas. Además, la batería de seguros no comparaba coberturas entre planes.</p>
+<p><strong>La no conformidad.</strong> <abbr title="No conformidad: incumplimiento de un requisito.">NC</abbr>-019 al procedimiento de verificación y validación: un cambio significativo en la base de conocimiento se publicó sin la evaluación de regresión requerida. El incidente fue el síntoma; la no conformidad es del proceso.</p>
+<table>
+<thead>
+<tr>
+<th>N.º</th>
+<th>Acción correctiva</th>
+<th>Responsable</th>
+<th>Plazo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>El panel bloquea la publicación de cambios relevantes a la base de conocimiento hasta que pase la evaluación de regresión</td>
+<td>CTO</td>
+<td>30 días</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Metadatos de producto obligatorios en clientes multiproducto; la recuperación filtra por el plan del usuario</td>
+<td>CTO</td>
+<td>45 días</td>
+</tr>
+<tr>
+<td>3</td>
+<td>El verificador de sustento valida cada afirmación, incluidas cifras y plazos, contra los documentos del plan identificado</td>
+<td>CTO</td>
+<td>45 días</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Preguntas trampa entre planes en la batería de todos los clientes de seguros, y equivalentes para universidades y comercios con varios productos</td>
+<td><em>Trust &amp; Safety</em></td>
+<td>30 días</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Definición de cambio significativo que incluye cargas masivas y productos nuevos; capacitación a Customer Success</td>
+<td><em>Trust &amp; Safety</em></td>
+<td>30 días</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Guía para clientes sobre integrar los datos de la póliza (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>) y aclaración contractual de quién cura el contenido (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>)</td>
+<td>Legal y Customer Success</td>
+<td>60 días</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Casos similares.</strong> La revisión de toda la plataforma encontró dos universidades con becas de distintos programas mezcladas en la misma base de conocimiento. Se les aplicaron las acciones 2 y 4 antes de que hubiera un incidente.</p>
+<p><strong>Eficacia.</strong> Criterio fijado al abrir la acción: 90 días sin afirmaciones de cobertura ajenas al plan correcto, en una muestra semanal de 400 conversaciones, y evidencia de evaluación en cada cambio significativo. A los 90 días apareció un caso: un deducible del plan correcto, pero de una versión anterior de las condiciones. La acción se declaró eficaz solo en parte y se agregó control de versiones de documentos; a los 120 días, sin casos, se cerró.</p>
+<p><strong>Cambios al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y lecciones.</strong> Nuevo riesgo en la matriz (confusión entre productos en bases de conocimiento multiproducto) con su tratamiento; evaluación de impacto del vertical de seguros actualizada; el análisis sin culpables se presentó en la revisión por la dirección y se compartió, anonimizado, con los clientes de seguros.</p>
+</details>
+<h2 id="relacion-con-otras-clausulas-controles-y-normas">Relación con otras cláusulas, controles y normas<a class="headerlink" href="#relacion-con-otras-clausulas-controles-y-normas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../c9-evaluacion-del-desempeno/#c-9-1">9.1</a>, <a href="../c9-evaluacion-del-desempeno/#c-9-2">9.2</a> y <a href="../c9-evaluacion-del-desempeno/#c-9-3">9.3</a>: fuentes de no conformidades y oportunidades; la revisión por la dirección decide las mejoras.</li>
+<li><a href="../c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../c8-operacion/#c-8-2">8.2</a> y <a href="../c8-operacion/#c-8-4">8.4</a>: conviene que toda lección aprendida se refleje en riesgos e impactos.</li>
+<li><a href="../c8-operacion/#c-8-1">8.1</a>: la operación también pide considerar acciones correctivas cuando los controles no logran lo esperado.</li>
+<li><a href="../c6-planificacion/#c-6-3">6.3</a> y <a href="../c7-apoyo/#c-7-5">7.5</a>: cambios planificados al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y evidencia documentada.</li>
+<li>Controles: <a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> y <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>.</li>
+<li>Normas: un proceso común de incidentes y acciones correctivas en <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>; el resto de la familia en <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>.</li>
+<li>Auditoría: cómo se redacta una no conformidad en <a href="../../auditoria/hallazgos-ejemplo/">Hallazgos de ejemplo</a>; qué se pregunta en <a href="../../auditoria/preguntas-del-auditor/">Preguntas del auditor</a>.</li>
+</ul>
+<h2 id="plantillas-relacionadas">Plantillas relacionadas<a class="headerlink" href="#plantillas-relacionadas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a></li>
+<li><a href="../../plantillas/#checklist-auditoria-interna">Checklist de auditoría interna</a></li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a></li>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a></li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

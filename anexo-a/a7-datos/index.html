@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Gestión de datos para sistemas de IA según ISO/IEC 42001 (A.7.2 a A.7.6) con adquisición, derechos, calidad, sesgo, procedencia y preparación, y cómo aplicarla si solo usas IA de terceros.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1595,6 +1595,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-recorrido-de-los-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El recorrido de los datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-usas-ia-de-terceros-a7-aplica-a-medias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si usas IA de terceros: A.7 aplica a medias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-7-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1643,6 +1687,28 @@
     <span class="md-ellipsis">
       
         A.7.6 Preparación de los datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2768,26 +2834,727 @@
 
 
 <h1 id="a7-datos-para-sistemas-de-ia">A.7 · Datos para sistemas de IA<a class="headerlink" href="#a7-datos-para-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a7">A.7 · Datos</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 5 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 31 min de lectura</span></p>
+</div>
+<div class="dx-obj-banner obj-a7">
+<p><strong>El objetivo, en palabras simples:</strong> entender qué papel juegan los datos en lo que hace cada sistema de IA y tenerlos bajo control en todo su recorrido: de dónde salen, con qué derecho se usan, qué tan buenos son, qué se les hizo antes de usarlos y cómo cambian con el tiempo.</p>
+<p><strong>Lo que está en juego:</strong> un modelo aprende lo que le enseñan sus datos, defectos incluidos. Datos sesgados, incompletos, mal etiquetados u obtenidos sin derecho producen decisiones injustas, errores en producción, sanciones por datos personales y conflictos por derechos de autor. Y sin registro de procedencia, nadie puede explicar después por qué el sistema se comportó como lo hizo.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.7 pide tratar los datos de IA como un insumo crítico con ficha técnica: reglas para gestionarlos, registro de cómo se obtuvieron, requisitos de calidad medibles, trazabilidad de su origen y transformaciones, y criterios documentados para prepararlos.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Piensa en un restaurante serio. El chef sabe de qué proveedor vino cada ingrediente, cuándo llegó, cómo se almacenó y qué se le hizo antes de llegar al plato. Si un comensal se intoxica, puede rastrear el lote en minutos. En la IA, los datos son los ingredientes y el modelo es la receta: con ingredientes en mal estado, la mejor receta del mundo produce un plato peligroso.</p>
+<p>En el software tradicional, el comportamiento está escrito en el código y se puede leer. En los sistemas de aprendizaje automático (<em>machine learning</em>), el comportamiento <strong>emerge de los datos</strong>: los datos son, en la práctica, una especificación implícita que nadie escribió línea por línea. Por eso los riesgos de datos en IA van mucho más allá de la confidencialidad:</p>
+<ul>
+<li><strong>Sesgo histórico:</strong> si las decisiones del pasado fueron injustas, el modelo aprende a repetirlas.</li>
+<li><strong>Falta de representatividad:</strong> un modelo entrenado con clientes del centro del país puede fallar con los del sureste.</li>
+<li><strong>Deriva</strong> (<em>drift</em>): los datos de hoy dejan de parecerse a los de entrenamiento y el modelo pierde precisión sin avisar.</li>
+<li><strong>Envenenamiento de datos</strong> (<em>data poisoning</em>): alguien manipula los datos de entrenamiento o la base de conocimiento para alterar el comportamiento.</li>
+<li><strong>Derechos:</strong> datos personales sin una base adecuada, contenidos protegidos por derechos de autor, licencias que prohíben el uso comercial.</li>
+<li><strong>Explicabilidad:</strong> sin saber qué datos intervinieron, es imposible explicar un resultado a la persona afectada.</li>
+</ul>
+<p><strong>Cómo encaja con el resto del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</strong> <a href="../a4-recursos/#a-4-3">A.4.3</a> pide <em>inventariar</em> los recursos de datos; A.7 pide <em>gestionarlos</em>. Los datos alimentan la evaluación de impacto (<a href="../a5-evaluacion-de-impacto/">A.5</a>), las pruebas (<a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) y el monitoreo en producción (<a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>), y sus riesgos se analizan en <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>. El Anexo C, además, sugiere como posible objetivo de IA contar con datos suficientes y de buena calidad para entrenar y probar los sistemas.</p>
+<p><strong>Frente a ISO 27001.</strong> Los cinco controles son nuevos. Tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> protege la confidencialidad, integridad y disponibilidad de los datos, pero nunca te preguntó si un conjunto de datos <em>representa</em> a la población donde se usará o si es <em>adecuado para un propósito</em>. Lo que sí reutilizas: clasificación de la información, control de acceso, enmascaramiento, protección de datos personales y gestión de la información de prueba.</p>
+<p><strong>Cómo cambia según tu rol.</strong> Si <strong>desarrollas</strong> IA, como Monarca Crédito, A.7 completo es el corazón técnico de tu <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>. Si <strong>provees</strong> IA, como Conversa Labs, se aplica a tus propios datos y a la forma en que tratas los datos que te confían tus clientes. Si <strong>usas</strong> IA de terceros, como Contadores Alameda, A.7 aplica a medias: lo explicamos <a href="#si-usas-ia-de-terceros-a7-aplica-a-medias">más abajo</a>.</p>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-7-2">A.7.2 Datos para desarrollo y mejora</a></td>
+<td>Tener procesos de gestión de datos para construir y mejorar sistemas de IA</td>
+<td>Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-7-3">A.7.3 Adquisición de datos</a></td>
+<td>Documentar de dónde salen los datos, por qué se eligieron y con qué derecho se usan</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-7-4">A.7.4 Calidad de los datos</a></td>
+<td>Fijar requisitos de calidad medibles y comprobar que los datos los cumplen</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Alto</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-7-5">A.7.5 Procedencia de los datos</a></td>
+<td>Registrar el origen, las transformaciones y las transferencias de los datos</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-7-6">A.7.6 Preparación de los datos</a></td>
+<td>Elegir con criterio y documentar cómo se limpian y transforman</td>
+<td>Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<h2 id="el-recorrido-de-los-datos">El recorrido de los datos<a class="headerlink" href="#el-recorrido-de-los-datos" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Los cinco controles siguen el viaje de los datos. A.7.2 es el marco que lo gobierna todo; A.7.5 acompaña cada etapa, porque la procedencia se registra mientras existan los datos y mientras opere el sistema.</p>
+<pre class="mermaid"><code>flowchart TD
+  F["Fuentes: internas, compradas, compartidas, abiertas o sintéticas"] --&gt; AD["Adquisición y selección · A.7.3"]
+  AD --&gt; CAL["Perfilado y requisitos de calidad · A.7.4"]
+  CAL --&gt; PREP["Preparación · A.7.6"]
+  PREP --&gt; ENT["Entrenamiento, validación y prueba"]
+  ENT --&gt; OP["Operación: datos de entrada y bases de conocimiento"]
+  OP --&gt; MON["Monitoreo de calidad y deriva · A.7.4"]
+  MON --&gt; MEJ["Mejora o reentrenamiento"]
+  MEJ --&gt; AD
+  GOV["Gestión de datos para IA · A.7.2"] -.-&gt; AD
+  GOV -.-&gt; MEJ
+  PROV["Registro de procedencia · A.7.5"] -.-&gt; AD
+  PROV -.-&gt; PREP
+  PROV -.-&gt; OP</code></pre>
+<h2 id="si-usas-ia-de-terceros-a7-aplica-a-medias">Si usas IA de terceros: A.7 aplica a medias<a class="headerlink" href="#si-usas-ia-de-terceros-a7-aplica-a-medias" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Cuando no entrenas modelos, la mayor parte de A.7 se refiere a datos que no controlas: los que usó el proveedor para entrenar su modelo. Esos los supervisas mediante <a href="../a10-terceros/#a-10-3">A.10.3</a> (cuestionarios, cláusulas contractuales) y con la documentación que el proveedor te entrega. Pero los datos siguen pasando por tus manos en al menos cuatro lugares:</p>
+<ol>
+<li><strong>Datos de entrada en producción:</strong> las facturas que lee tu módulo de captura, los documentos que resume tu asistente, lo que tus colaboradores escriben en las instrucciones (<em>prompts</em>).</li>
+<li><strong>Bases de conocimiento para generación aumentada por recuperación (<abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>)</strong> que tú escribes o curas, como la FAQ que alimenta a Alma, el chatbot de Contadores Alameda.</li>
+<li><strong>Datos de configuración o de ajuste fino</strong> (<em>fine-tuning</em>), si el proveedor te permite personalizar el modelo.</li>
+<li><strong>Conjuntos de prueba</strong> que armas para comprobar que el sistema del proveedor funciona en tu contexto.</li>
+</ol>
+<p>Sobre esos datos, A.7.4 aplica de lleno (por eso es el único control de A.7 que marcamos para quien usa IA de terceros) y partes de A.7.3 y A.7.5 suelen aplicar también.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Aplica si usas IA de terceros?</th>
+<th>Qué cubrir</th>
+<th>Ejemplo: Contadores Alameda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A.7.2</td>
+<td>Normalmente no; parcial si ajustas el modelo o construyes una base de conocimiento</td>
+<td>Reglas sobre qué datos puedes cargar al sistema</td>
+<td>La FAQ de Alma solo contiene información general del despacho, nunca datos de clientes</td>
+</tr>
+<tr>
+<td>A.7.3</td>
+<td>Parcial</td>
+<td>Fuentes de lo que cargas y derecho a usarlo</td>
+<td>La FAQ se redacta a partir del calendario fiscal oficial y de criterios internos</td>
+</tr>
+<tr>
+<td>A.7.4</td>
+<td>Sí</td>
+<td>Calidad de la base de conocimiento y de las entradas</td>
+<td>FAQ revisada cada mes; CFDI en XML de preferencia sobre PDF escaneado</td>
+</tr>
+<tr>
+<td>A.7.5</td>
+<td>Parcial</td>
+<td>Historial de versiones de lo que cargas</td>
+<td>Cada respuesta de la FAQ tiene responsable, fuente y fecha de revisión</td>
+</tr>
+<tr>
+<td>A.7.6</td>
+<td>Normalmente no, si el proveedor hace la ingesta</td>
+<td>Solo si tú transformas datos antes de cargarlos</td>
+<td>BotNorte segmenta e indexa la FAQ; el despacho no prepara datos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cómo justificar exclusiones parciales.</strong> La cláusula 6.1.3 pide justificar en la Declaración de Aplicabilidad (<abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>) por qué incluyes o excluyes cada control; una exclusión se sostiene si tu evaluación de riesgos no requiere el control y ningún requisito externo lo exige. En nuestra lectura, cuando <em>alguna parte</em> del control aplica, es más sólido marcarlo como <strong>aplicable con alcance acotado</strong> que excluirlo, porque una exclusión tiene que ser cierta para todo el control.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo de redacción en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> de Contadores Alameda</p>
+<p><strong>A.7.2 · Excluido.</strong> El despacho no desarrolla, entrena ni ajusta modelos de IA; los tres sistemas en alcance son servicios de terceros. La gestión de sus datos de entrenamiento corresponde a los proveedores y se supervisa mediante A.10.3. Se reevaluará si se decide ajustar un modelo.</p>
+<p><strong>A.7.4 · Aplicable.</strong> Requisitos de calidad para la base de conocimiento de Alma (vigencia, fuente, revisión mensual) y para los CFDI que procesa IA-03 (formato, legibilidad, muestreo de exactitud).</p>
+<p><strong>A.7.5 · Aplicable con alcance acotado.</strong> Solo a la base de conocimiento de Alma: control de versiones, responsable y fuente de cada respuesta.</p>
 </div>
 <h2 class="dx-control obj-a7" id="a-7-2">A.7.2 Datos para desarrollo y mejora<a class="headerlink" href="#a-7-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que el uso de datos para construir y mejorar sistemas de IA siga reglas definidas y no la improvisación de cada proyecto: qué datos se pueden usar, para qué, con qué protecciones y con qué comprobaciones de representatividad y exactitud.</p>
+<p><strong>En la práctica.</strong> Este control es el marco de los otros cuatro. Pide un <strong>proceso de gestión de datos</strong> definido, documentado y, sobre todo, aplicado. En una organización mediana suele ser un procedimiento que cubre la solicitud y aprobación de datos para un proyecto, su clasificación, quién accede, en qué entorno se trabaja, cuánto tiempo se conservan y cómo se eliminan. Lo que lo distingue de un procedimiento de seguridad de la información son los temas propios de la IA que conviene que atienda (la guía del Anexo B los sugiere, no los impone):</p>
+<ul>
+<li><strong>Privacidad y seguridad</strong>, porque los conjuntos de entrenamiento suelen concentrar datos sensibles en un solo lugar.</li>
+<li><strong>Amenazas que existen precisamente porque el sistema depende de datos:</strong> envenenamiento, inferencia de pertenencia (<em>membership inference</em>: averiguar si una persona estaba en los datos de entrenamiento), inversión del modelo o extracción de datos memorizados.</li>
+<li><strong>Transparencia y explicabilidad:</strong> poder decir qué datos intervinieron y cómo influyen en un resultado, cuando el sistema lo requiere.</li>
+<li><strong>Representatividad:</strong> que los datos de entrenamiento se parezcan a la población y a las condiciones donde el sistema va a operar.</li>
+<li><strong>Exactitud e integridad:</strong> que los datos sean correctos y no se alteren sin control.</li>
+</ul>
+<p><strong>Representatividad, en concreto.</strong> Supón que el 70 % de los clientes históricos de Monarca Crédito vive en la Ciudad de México, el Estado de México, Jalisco y Nuevo León, y que la empresa está creciendo en Chiapas, Oaxaca y Guerrero. Score Monarca v3 aprendió muy poco de esos estados; su desempeño ahí es una incógnita. El proceso de Monarca exige comparar la distribución por entidad federativa de los datos de entrenamiento con la de los solicitantes actuales, medir el desempeño por entidad y decidir: reponderar, recolectar más datos o enviar a la banda gris de revisión humana las solicitudes de las entidades poco representadas hasta tener evidencia suficiente.</p>
+<p><strong>Privacidad y consentimiento.</strong> Monarca usa datos de comportamiento en la app con consentimiento. Su procedimiento verifica, antes de cada entrenamiento, que la finalidad "desarrollo y mejora de modelos de riesgo" esté cubierta por el aviso de privacidad y que los consentimientos sigan vigentes. La nueva <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr> pide consentimiento expreso para datos financieros o patrimoniales y reconoce el derecho de oposición frente a tratamientos automatizados que afecten significativamente a la persona sin intervención humana; el detalle está en <a href="../../integracion/contexto-mexico-latam/">Contexto México y Latinoamérica</a>. En los entornos de desarrollo se trabaja con datos seudonimizados, nunca con la base de producción completa.</p>
+<p><strong>Mejora con datos de producción.</strong> Aquí está una de las decisiones más delicadas, sobre todo para quien provee IA. Conversa Labs se comprometió por contrato a <strong>no entrenar modelos con datos de sus clientes</strong>. Su procedimiento lo vuelve operativo: las conversaciones no alimentan ningún ajuste de modelos, y si el equipo quiere usar conversaciones para construir conjuntos de evaluación, necesita autorización expresa del cliente y anonimización previa. Además, como los clientes cargan sus propios documentos a la base de conocimiento, Conversa trata esos documentos como una superficie de ataque: un documento manipulado puede contener instrucciones ocultas (inyección indirecta de instrucciones) o información falsa.</p>
+<p><strong>Qué NO exige.</strong> No exige un lago de datos ni una plataforma de gobierno de datos, ni prohíbe usar datos personales: exige gestionarlos con reglas claras. Tampoco pide que los datos sean perfectos, sino que conozcas y controles sus limitaciones.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Procedimiento de gestión de datos para IA (puede ser un anexo del <a href="../../plantillas/#procedimiento-ciclo-de-vida">procedimiento del ciclo de vida</a>).</li>
+<li>Solicitud y aprobación de datos por proyecto: finalidad, base legal, clasificación y responsable.</li>
+<li>Entornos de desarrollo separados y con datos seudonimizados.</li>
+<li>Análisis de representatividad documentado antes de liberar cada modelo.</li>
+<li>Controles de integridad de los conjuntos (sumas de verificación, accesos restringidos).</li>
+<li>Regla explícita sobre el uso de datos de producción o de clientes para mejorar el sistema.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Catálogo de datos con clasificación y etiquetas de uso permitido por conjunto.</li>
+<li>Pruebas automáticas de representatividad y deriva en el flujo de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr>.</li>
+<li>Modelado de amenazas de datos y pruebas adversarias (envenenamiento, extracción).</li>
+<li>Técnicas de mejora de la privacidad: datos sintéticos validados, privacidad diferencial cuando proceda.</li>
+<li>Hojas de datos (<em>datasheets</em>) por conjunto, enlazadas desde la <a href="../../plantillas/#ficha-del-sistema">ficha del sistema</a>.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Procedimiento de gestión de datos para IA aprobado.</li>
+<li>Solicitudes y aprobaciones de uso de datos por proyecto.</li>
+<li>Análisis de representatividad con resultados por segmento.</li>
+<li>Registros de acceso a los conjuntos de entrenamiento.</li>
+<li>Evidencia de seudonimización en entornos de desarrollo.</li>
+<li>Cláusulas contractuales sobre el uso de datos de clientes (si provees IA).</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué reglas siguen para decidir qué datos se pueden usar para entrenar o mejorar un modelo? Muéstreme una aprobación reciente.</li>
+<li>¿Cómo comprobaron que los datos de entrenamiento representan a la población donde opera el sistema?</li>
+<li>¿Qué amenazas específicas de datos consideraron y qué controles tienen frente a ellas?</li>
+<li>¿Los datos personales usados para entrenar están cubiertos por el aviso de privacidad y el consentimiento?</li>
+<li>¿Usan datos de producción o de clientes para mejorar los modelos? ¿Bajo qué reglas?</li>
+<li>¿Podrían explicar qué datos influyen más en una decisión concreta?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Tratar la gestión de datos para IA como tema exclusivo de TI o de privacidad.</li>
+<li>Copiar la base de producción completa al equipo del científico de datos.</li>
+<li>Medir la representatividad solo en el total, nunca por segmento.</li>
+<li>Reentrenar con datos de producción o de clientes sin revisar el contrato ni el aviso de privacidad.</li>
+<li>Descartar el envenenamiento de datos porque "los datos son internos".</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no desarrolla, entrena, ajusta ni mejora sistemas de IA, y tampoco construye bases de conocimiento que cambien su comportamiento. Redacción sugerida: <em>"Excluido. No se desarrollan, entrenan ni ajustan modelos; los datos de entrenamiento de los sistemas de terceros se supervisan mediante A.10.3."</em></p>
+<p><strong>No se justifica si…</strong> entrenas, reentrenas o ajustas modelos, aunque sea con datos internos, o si provees IA a clientes.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a4-recursos/#a-4-3">A.4.3</a>, <a href="#a-7-3">A.7.3</a>, <a href="#a-7-4">A.7.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>, <a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001 A.5.12 (clasificación), ISO 27001 A.5.34 (datos personales), ISO 27001 A.8.11 (enmascaramiento) e ISO 27001 A.8.33 (información de prueba): se reutilizan; lo nuevo es la representatividad y las amenazas propias de la IA · Normas: ISO/IEC 22989, ISO/IEC 27701 · <strong>Anexo B:</strong> la guía B.7.2 enumera los temas que la gestión de datos para IA puede abarcar, desde la privacidad y la seguridad hasta la representatividad y la exactitud, y remite a ISO/IEC 22989 para los conceptos de ciclo de vida y gestión de datos.</p>
 <h2 class="dx-control obj-a7" id="a-7-3">A.7.3 Adquisición de datos<a class="headerlink" href="#a-7-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Saber, y poder demostrar, cómo llegaron los datos a tus manos y por qué se eligieron: qué se necesitaba, de dónde salió, con qué derecho se usa y qué defectos se conocían desde el principio.</p>
+<p><strong>En la práctica.</strong> Te recomendamos una <strong>ficha de adquisición</strong> por conjunto de datos. No tiene que ser larga; tiene que responder siete preguntas:</p>
+<table>
+<thead>
+<tr>
+<th>Pregunta</th>
+<th>Qué documentar</th>
+<th>Ejemplo: Score Monarca v3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿Para qué y cuánto?</td>
+<td>Categorías de datos necesarias y volumen requerido, con su justificación</td>
+<td>Solicitudes de 36 meses con su resultado de pago a 12 meses</td>
+</tr>
+<tr>
+<td>¿De dónde viene?</td>
+<td>Tipo de fuente: interna, comprada, compartida por un socio, abierta o sintética</td>
+<td>Interna (solicitudes y transacciones), consulta a buró con autorización, indicadores públicos por municipio</td>
+</tr>
+<tr>
+<td>¿Cómo se genera?</td>
+<td>Si es estática o llega en flujo continuo, si la capturan personas o la generan máquinas</td>
+<td>Uso de la app: flujo continuo generado por el dispositivo</td>
+</tr>
+<tr>
+<td>¿Qué historia trae?</td>
+<td>Usos anteriores y si se trató conforme a requisitos de privacidad y seguridad</td>
+<td>Datos de cobranza recabados para gestionar la cartera</td>
+</tr>
+<tr>
+<td>¿Quiénes están representados?</td>
+<td>Rasgos demográficos y sesgos o errores sistemáticos conocidos o sospechados</td>
+<td>Pocas mujeres con micronegocio rural; solo hay resultado de pago de quienes fueron aprobados</td>
+</tr>
+<tr>
+<td>¿Con qué derecho?</td>
+<td>Base legal y consentimiento para datos personales, licencias, derechos de autor, contratos</td>
+<td>Autorización de consulta a buró; consentimiento para datos de la app</td>
+</tr>
+<tr>
+<td>¿Qué la acompaña?</td>
+<td>Metadatos, diccionario, reglas de etiquetado y enlace al registro de procedencia</td>
+<td>Diccionario de variables v3; definición de incumplimiento</td>
+</tr>
+</tbody>
+</table>
+<p>Fíjate en el quinto renglón. El historial de Monarca solo tiene resultado de pago de quienes <strong>fueron aprobados</strong> por la política anterior; de los rechazados no se sabe si habrían pagado. Ese sesgo de selección es invisible si nadie lo documenta al adquirir los datos, y explica por qué un modelo puede perpetuar los criterios de la política que lo precedió.</p>
+<p><strong>Variables sustitutas.</strong> Elegir datos también es elegir riesgos. Score Monarca v3 no usa el sexo ni la edad como variables de entrada, pero el código postal puede funcionar como sustituto de nivel de ingreso, origen étnico o región. La ficha de adquisición de Monarca documenta la decisión del Comité de Modelos: ni el código postal ni la entidad federativa son variables de entrada del modelo; la entidad se usa para monitorear la equidad y la representatividad. Lo importante no es que tu decisión coincida con la de Monarca, sino que exista, esté razonada y quede escrita.</p>
+<p><strong>Derechos sobre los datos.</strong> Tres frentes suelen dar sorpresas:</p>
+<ul>
+<li><strong>Datos personales:</strong> que la finalidad de entrenar modelos esté cubierta por el aviso de privacidad y, cuando corresponda, por el consentimiento. Si compras datos, verifica que el proveedor tenía derecho a transferirlos.</li>
+<li><strong>Derechos de autor y términos de uso:</strong> que un texto o una imagen esté publicado en internet no significa que puedas usarlo para entrenar; muchos sitios prohíben la extracción automatizada en sus términos.</li>
+<li><strong>Licencias de datos abiertos:</strong> algunas prohíben el uso comercial o exigen atribución.</li>
+</ul>
+<p>Los <strong>datos sintéticos</strong> merecen su propia línea en la ficha: heredan los sesgos del generador y de los datos que lo alimentaron, así que conviene documentar cómo se generaron y cómo se validaron.</p>
+<p>Un ejemplo distinto: una universidad en Perú que quería predecir la deserción estudiantil evaluó comprar a un proveedor un "índice socioeconómico" por estudiante. Al llenar la ficha, nadie pudo responder de dónde obtenía el proveedor sus datos ni con qué consentimiento. La universidad descartó la compra; la ficha cumplió su función antes de que existiera el problema.</p>
+<p><strong>Si provees IA.</strong> Conversa Labs documenta qué recibe de cada cliente para la base de conocimiento (tipo de documentos, si contienen datos personales, quién es el titular de los derechos) y qué datos genera por su cuenta (conversaciones sintéticas para pruebas). El contrato deja claro que el cliente garantiza su derecho a usar los documentos que carga. <strong>Qué NO exige:</strong> no prohíbe datos abiertos, comprados ni sintéticos; exige saber qué son y de dónde vienen. ISO/IEC 19944-1 ofrece una estructura útil para categorizar datos y sus usos.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Registro de fuentes de datos por sistema (una hoja de cálculo basta).</li>
+<li>Ficha de adquisición por conjunto con las siete preguntas.</li>
+<li>Verificación de derechos (base legal, licencia o contrato) antes del primer uso.</li>
+<li>Lista de sesgos conocidos o sospechados por fuente.</li>
+<li>Aprobación de la selección por el dueño del modelo.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Catálogo de datos con fichas y licencias legibles por máquina.</li>
+<li>Debida diligencia de proveedores de datos: cuestionario, cláusulas de origen lícito y derecho de auditoría.</li>
+<li>Revisión legal estandarizada para datos obtenidos de internet.</li>
+<li>Categorización de datos y usos con ISO/IEC 19944-1.</li>
+<li>Alertas cuando una licencia vence o cambia de condiciones.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Registro de fuentes de datos por sistema.</li>
+<li>Contratos y licencias de datos.</li>
+<li>Aviso de privacidad y evidencia de consentimiento, cuando aplica.</li>
+<li>Fichas de adquisición con sesgos conocidos.</li>
+<li>Análisis y decisión documentada sobre variables sustitutas.</li>
+<li>Expedientes de debida diligencia de proveedores de datos.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿De dónde provienen los datos con los que se entrenó este modelo? Muéstreme el registro.</li>
+<li>¿Con qué derecho usan cada fuente? Muéstreme la licencia, el contrato o la base legal.</li>
+<li>¿Por qué eligieron esta cantidad y este periodo de datos?</li>
+<li>¿Qué sesgos conocían de estas fuentes al adquirirlas y qué hicieron al respecto?</li>
+<li>¿Cómo comprueban que un proveedor de datos los obtuvo de forma lícita?</li>
+<li>¿Usan datos sintéticos? ¿Cómo se generaron y validaron?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Que la única documentación sea "los datos los pasó el área de negocio".</li>
+<li>Asumir que todo lo publicado en internet es libre de usar.</li>
+<li>No documentar el sesgo de selección de los datos históricos.</li>
+<li>Comprar bases de datos sin verificar su origen.</li>
+<li>Olvidar que los datos sintéticos heredan los sesgos de su generador.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no adquieres ni seleccionas datos para desarrollar o mejorar sistemas de IA, porque solo usas servicios de terceros. Si cargas una base de conocimiento, considera aplicarlo con alcance acotado. Redacción sugerida para exclusión total: <em>"Excluido. No se adquieren datos para desarrollar o ajustar sistemas de IA; la información cargada a los servicios de terceros se rige por A.7.4 y por la política de uso aceptable."</em></p>
+<p><strong>No se justifica si…</strong> entrenas o ajustas modelos, aunque sea solo con datos internos: "interno" también es una fuente que se documenta.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a> · Controles: <a href="../a4-recursos/#a-4-3">A.4.3</a>, <a href="#a-7-2">A.7.2</a>, <a href="#a-7-4">A.7.4</a>, <a href="#a-7-5">A.7.5</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001 A.5.19 (proveedores), ISO 27001 A.5.32 (derechos de propiedad intelectual) e ISO 27001 A.5.34 (datos personales): se reutilizan para la verificación de derechos; lo nuevo es documentar sesgos, representatividad e historia de cada fuente · Normas: ISO/IEC 19944-1 · <strong>Anexo B:</strong> la guía B.7.3 propone un conjunto amplio de detalles de adquisición que conviene documentar, desde el tipo de fuente hasta los derechos y los sesgos conocidos, y sugiere ISO/IEC 19944-1 como estructura para describir datos y usos.</p>
 <h2 class="dx-control obj-a7" id="a-7-4">A.7.4 Calidad de los datos<a class="headerlink" href="#a-7-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-alto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m-2 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m3.09 2.94c-.13 0-.25.03-.39.06l-3.2 1.32-.27.11c-.56-.43-1.32-.55-1.98-.28a1.99 1.99 0 0 0-1.1 2.6 1.99 1.99 0 0 0 2.6 1.1c.66-.26 1.13-.85 1.25-1.57l.23-.1 3.22-1.3.02-.01c.53-.21.76-.79.56-1.31a1 1 0 0 0-.94-.62M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo alto</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que "datos buenos" deje de ser una opinión: definir por escrito qué calidad necesita cada conjunto para su propósito y comprobar con mediciones que la cumple, tanto al desarrollar el sistema como al operarlo.</p>
+<p><strong>En la práctica.</strong> La calidad de datos no es absoluta: un conjunto puede ser excelente para un propósito e inútil para otro. Las normas de calidad de datos la entienden como el grado en que los datos satisfacen las necesidades de quien los usa en un contexto concreto. Por eso el control pide <strong>requisitos por conjunto</strong> (entrenamiento, validación, prueba y producción), expresados en métricas con umbrales:</p>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Métrica posible</th>
+<th>Umbral: Score Monarca v3</th>
+<th>Umbral: FAQ de Alma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completitud</td>
+<td>Porcentaje de valores faltantes por variable</td>
+<td>≤ 5 % en variables obligatorias</td>
+<td>Toda respuesta tiene fuente y fecha de revisión</td>
+</tr>
+<tr>
+<td>Exactitud</td>
+<td>Coincidencia con una fuente de verdad, por muestreo</td>
+<td>≥ 98 % en ingreso declarado contra comprobantes</td>
+<td>100 % de plazos coinciden con el calendario oficial</td>
+</tr>
+<tr>
+<td>Actualidad</td>
+<td>Antigüedad del dato</td>
+<td>Datos de buró con menos de 30 días</td>
+<td>Revisión mensual; semanal en temporada de declaración anual</td>
+</tr>
+<tr>
+<td>Consistencia y unicidad</td>
+<td>Registros contradictorios o duplicados</td>
+<td>0 duplicados por solicitud</td>
+<td>Sin respuestas contradictorias entre sí</td>
+</tr>
+<tr>
+<td>Representatividad</td>
+<td>Distribución por segmento frente a la población objetivo</td>
+<td>Cada entidad con al menos 2 000 casos o se marca como poco representada</td>
+<td>Cubre las 30 preguntas más frecuentes del último trimestre</td>
+</tr>
+<tr>
+<td>Calidad de etiquetas</td>
+<td>Acuerdo entre etiquetadores</td>
+<td>Definición única de incumplimiento aplicada al 100 %</td>
+<td>No aplica</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sesgo y equidad.</strong> Un conjunto de datos no es de calidad si su sesgo hace que el sistema funcione peor o trate peor a un grupo. Monarca mide, por sexo, rango de edad y entidad federativa, la tasa de aprobación, la tasa de falsos rechazos (personas que habrían pagado y fueron rechazadas) y la calibración del puntaje. Como referencia usa la regla de los cuatro quintos, de origen estadounidense (la tasa de aprobación de un grupo no debería ser menor al 80 % de la del grupo más favorecido), y cuando un segmento no la cumple, el Comité de Modelos decide si ajustar los datos, el modelo o los umbrales, y documenta por qué el resultado final es aceptable para el caso de uso. ISO/IEC TR 24027 describe las distintas formas de sesgo en sistemas de IA y es una buena lectura para el equipo.</p>
+<p><strong>Calidad en operación.</strong> El control no termina al entrenar. Los datos que entran al sistema en producción también deben cumplir requisitos. Monarca vigila, con alertas, cambios bruscos en los valores faltantes (por ejemplo, tras una actualización de la app que dejó de capturar un campo) o en el formato de la respuesta del buró. Conversa Labs define requisitos mínimos para las bases de conocimiento de sus clientes (formatos admitidos, vigencia, sin duplicados) y entrega un diagnóstico antes de salir a producción; la responsabilidad queda repartida: el cliente responde por la exactitud del contenido y Conversa por la calidad de la ingesta.</p>
+<p><strong>Si usas IA de terceros, esto sí te toca.</strong> Contadores Alameda no entrena ningún modelo, pero la calidad de las respuestas de Alma depende por completo de la FAQ que el despacho escribe. Una FAQ con un plazo vencido produce respuestas equivocadas, por buena que sea la tecnología de BotNorte. Lo mismo con IA-03: un CFDI fotografiado con mala luz da extracciones erróneas. El despacho fijó requisitos (cada respuesta con responsable, fuente y fecha; preferencia por el XML del CFDI; muestreo mensual de 2 % de extracciones contra el XML) y los revisa.</p>
+<p><strong>Qué NO exige.</strong> No exige datos perfectos, ni una herramienta de calidad de datos, ni métricas concretas. Exige requisitos definidos y documentados, y evidencia de que se cumplen o de qué se hace cuando no. La serie ISO/IEC 5259, dedicada a la calidad de datos para analítica y aprendizaje automático, es la referencia si quieres profundizar.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Requisitos de calidad documentados por conjunto, con métricas y umbrales.</li>
+<li>Reporte de perfilado antes de cada entrenamiento o actualización de la base de conocimiento.</li>
+<li>Métricas de sesgo por los segmentos relevantes, con umbral de aceptación aprobado.</li>
+<li>Un responsable de calidad por conjunto.</li>
+<li>Regla de qué pasa si no se cumple un umbral: no liberar, escalar o aceptar la excepción por escrito.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Validaciones automáticas de esquema y de expectativas en el flujo de datos.</li>
+<li>Monitoreo continuo de los datos de producción, con alertas.</li>
+<li>Tablero de calidad por conjunto con tendencias.</li>
+<li>Auditorías periódicas del etiquetado.</li>
+<li>Adopción de la serie ISO/IEC 5259 como marco de referencia.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Documento de requisitos de calidad por conjunto.</li>
+<li>Reportes de perfilado.</li>
+<li>Resultados de pruebas de sesgo por segmento.</li>
+<li>Registro de excepciones aprobadas.</li>
+<li>Alertas y tickets de calidad de datos en producción.</li>
+<li>Si usas IA de terceros: bitácora de revisión de la base de conocimiento y muestreos de exactitud.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué requisitos de calidad definieron para este conjunto y cómo los miden?</li>
+<li>Muéstreme el último reporte de perfilado. ¿Qué pasó con lo que no cumplió?</li>
+<li>¿Cómo evalúan el sesgo y qué umbrales consideran aceptables? ¿Quién los aprobó?</li>
+<li>¿Cómo vigilan la calidad de los datos que entran al sistema en producción?</li>
+<li>¿Quién revisa la base de conocimiento y con qué frecuencia?</li>
+<li>¿Qué hacen cuando un conjunto no cumple los requisitos y hay presión por lanzar?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Definir calidad como "datos limpios", sin métricas ni umbrales.</li>
+<li>Revisar la calidad al entrenar y nunca en producción.</li>
+<li>Medir el sesgo solo en el total de la población.</li>
+<li>Creer que, si usas IA de terceros, la calidad de los datos no es asunto tuyo.</li>
+<li>Mover el umbral cada vez que no se cumple.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> en nuestra lectura, casi nunca: aplica a los tres roles porque todos alimentan datos al sistema en operación. Si tu único uso es un asistente generalista sin datos propios, conviene aplicarlo con alcance acotado (calidad de los insumos mediante la guía de uso) en lugar de excluirlo.</p>
+<p><strong>No se justifica si…</strong> el resultado del sistema depende de bases de conocimiento, documentos o datos que tú aportas.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> · Controles: <a href="#a-7-2">A.7.2</a>, <a href="#a-7-6">A.7.6</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> · ISO 27001: sin control equivalente; la integridad de 27001 protege contra cambios no autorizados, pero no dice si un dato es adecuado para un propósito · Normas: serie ISO/IEC 5259, ISO/IEC TR 24027, ISO/IEC 25024 · <strong>Anexo B:</strong> la guía B.7.4 explica por qué la calidad de los datos condiciona la validez de los resultados, pide definirla, medirla y mejorarla en las distintas etapas del aprendizaje automático, tomar en cuenta cómo el sesgo afecta tanto el funcionamiento como el trato justo, y remite a la serie ISO/IEC 5259 y a ISO/IEC TR 24027.</p>
 <h2 class="dx-control obj-a7" id="a-7-5">A.7.5 Procedencia de los datos<a class="headerlink" href="#a-7-5" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Poder reconstruir la historia de cualquier dato que usó el sistema: de dónde vino, quién lo tocó, qué se le hizo y a dónde fue. Sin esa trazabilidad no se puede investigar un incidente, responder a un titular de datos ni repetir un resultado.</p>
+<p><strong>En la práctica.</strong> Conviene distinguir dos conceptos cercanos. La <strong>procedencia</strong> (<em>provenance</em>) es la historia del dato: su origen y lo que le ha pasado. El <strong>linaje</strong> (<em>lineage</em>) es su recorrido técnico por sistemas y transformaciones. El control pide un proceso para registrar la procedencia durante dos ciclos de vida que no coinciden: el de los datos (un conjunto puede vivir más que un modelo) y el del sistema (un modelo reentrenado usa varias versiones de datos). Los eventos que conviene registrar son:</p>
+<ul>
+<li>cuándo y cómo se <strong>creó</strong> o capturó el dato;</li>
+<li>cada <strong>actualización</strong> o corrección;</li>
+<li>las <strong>transformaciones</strong>: agregaciones, resúmenes, cambios de formato, transcripciones;</li>
+<li>las <strong>validaciones</strong> aplicadas;</li>
+<li>cada vez que el dato <strong>cambia de manos</strong> (se transfiere su control) o se <strong>comparte</strong> sin transferirlo.</li>
+</ul>
+<p><strong>La pregunta que lo justifica todo.</strong> Una persona presenta una queja ante la Condusef por un rechazo de crédito del 3 de marzo. Monarca necesita responder: ¿qué versión de Score Monarca v3 tomó esa decisión, con qué datos se entrenó esa versión y qué datos de la solicitante usó? Si cada versión del modelo está ligada a las versiones exactas de los conjuntos de datos (con un identificador inmutable, como una suma de verificación) y cada decisión queda registrada con la versión del modelo (<a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>), la respuesta toma minutos. Si no, toma semanas o nunca llega.</p>
+<p><strong>Verificar cuando el riesgo lo amerita.</strong> La guía de la norma pide considerar, según la fuente, el contenido y el contexto de uso, si hacen falta medidas para <em>verificar</em> la procedencia y no solo registrarla. Datos de una fuente externa, contenidos sensibles o sistemas de alto impacto justifican más: sumas de verificación al recibir archivos, firmas digitales, constancias contractuales de origen, muestreos contra la fuente. Para datos obtenidos de internet, registra la dirección, la fecha de obtención y los términos de uso vigentes. Para datos sintéticos, la versión del generador y los datos que lo alimentaron.</p>
+<p>Un ejemplo distinto: un hospital en Chile entrena un modelo de lectura de radiografías con imágenes de tres hospitales de una misma red. Su registro de procedencia guarda, por imagen, el hospital, el equipo que la tomó y el proceso de anonimización aplicado. Cuando el desempeño cayó en uno de ellos, el registro permitió descubrir en un día que ese hospital había cambiado de equipo y que el modelo nunca había visto imágenes de ese fabricante.</p>
+<p><strong>Si provees IA con <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>.</strong> En Conversa Labs, cada fragmento indexado de la base de conocimiento lleva metadatos de procedencia: cliente, documento de origen, versión y fecha de ingesta. Eso permite tres cosas: citar la fuente en la respuesta, eliminar con certeza todo lo derivado de un documento cuando el cliente lo retira o termina el contrato, y rastrear de qué documento salió una respuesta problemática.</p>
+<p><strong>Qué NO exige.</strong> No exige una herramienta automatizada de linaje ni registrar la historia de cada fila. La granularidad puede ser por conjunto de datos en la mayoría de los casos y por registro solo donde el riesgo lo justifique.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Registro de procedencia por conjunto: origen, fecha, responsable, transformaciones y versiones.</li>
+<li>Versionado de conjuntos con identificador inmutable.</li>
+<li>Vínculo entre cada versión del modelo y las versiones de datos que usó.</li>
+<li>Registro de los datos recibidos de terceros y entregados a terceros.</li>
+<li>Criterio documentado de cuándo hay que verificar la procedencia.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Linaje capturado automáticamente por la plataforma de datos.</li>
+<li>Metadatos de procedencia en cada fragmento de la base de conocimiento.</li>
+<li>Firmas o sumas de verificación para datos externos y constancias de origen de proveedores.</li>
+<li>Capacidad de reproducir un entrenamiento completo a partir del registro.</li>
+<li>Ejercicios periódicos de trazabilidad: elegir una decisión al azar y reconstruir su origen.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_4_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_4_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Registros de linaje o de procedencia por conjunto.</li>
+<li>Repositorio de versiones de conjuntos de datos.</li>
+<li>Registro de modelos con referencia a las versiones de datos.</li>
+<li>Bitácora de transferencias de datos con terceros.</li>
+<li>Constancias de origen entregadas por proveedores de datos.</li>
+<li>Resultado de un ejercicio de trazabilidad.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Elija una predicción del mes pasado: ¿pueden decirme con qué versión del modelo y de los datos se generó?</li>
+<li>¿Cómo registran las transformaciones que sufren los datos desde su origen?</li>
+<li>¿Qué datos reciben de terceros o entregan a terceros y cómo queda registro?</li>
+<li>¿En qué casos verifican la procedencia de un conjunto y cómo lo hacen?</li>
+<li>Si un cliente pide retirar un documento de la base de conocimiento, ¿cómo saben dónde quedó todo lo derivado de él?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Confundir procedencia con "la base vino de TI".</li>
+<li>Sobrescribir conjuntos de datos sin versión.</li>
+<li>Registrar el linaje de los datos de entrenamiento, pero no el de los datos de producción ni el de la base de conocimiento.</li>
+<li>No poder ligar el modelo en producción con los datos que lo entrenaron.</li>
+<li>Tener un registro de procedencia que nadie actualiza después de los cambios.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no desarrollas ni provees IA y no cargas datos propios a los sistemas de terceros. Si mantienes una base de conocimiento, aplícalo con alcance acotado a ella, como en el <a href="#si-usas-ia-de-terceros-a7-aplica-a-medias">ejemplo de Contadores Alameda</a>.</p>
+<p><strong>No se justifica si…</strong> entrenas, ajustas o provees sistemas de IA, o si tus obligaciones de datos personales te exigen saber dónde están los datos de una persona para atender sus derechos <abbr title="Derechos de Acceso, Rectificación, Cancelación y Oposición sobre datos personales.">ARCO</abbr>.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a4-recursos/#a-4-3">A.4.3</a>, <a href="#a-7-3">A.7.3</a>, <a href="#a-7-4">A.7.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a> · ISO 27001 A.5.14 (transferencia de información) e ISO 27001 A.8.15 (registro de eventos): aportan la bitácora de transferencias y de accesos; lo nuevo es la historia y las transformaciones del dato · Normas: ISO 8000-2 · <strong>Anexo B:</strong> la guía B.7.5 se apoya en ISO 8000-2 para describir qué puede contener un registro de procedencia, lo amplía a intercambios y transformaciones de datos, y pide valorar, según la fuente, el contenido y el contexto, si hace falta verificar la procedencia.</p>
 <h2 class="dx-control obj-a7" id="a-7-6">A.7.6 Preparación de los datos<a class="headerlink" href="#a-7-6" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que las transformaciones que se aplican a los datos antes de entrenar u operar, y que pueden cambiar radicalmente lo que el modelo aprende, se elijan con criterios explícitos y queden documentadas, en lugar de depender del gusto o la costumbre de cada científico de datos.</p>
+<p><strong>En la práctica.</strong> Casi ningún dato llega listo para usarse: hay valores faltantes, errores de captura, escalas muy distintas, categorías que hay que convertir en números. Cada decisión de preparación parece técnica y neutral, pero puede introducir sesgos o errores. El control pide documentar dos cosas: los <strong>criterios</strong> con que eliges los métodos y los <strong>métodos concretos</strong> que aplicaste en cada tarea.</p>
+<table>
+<thead>
+<tr>
+<th>Técnica</th>
+<th>Para qué sirve</th>
+<th>Riesgo si se elige sin criterio</th>
+<th>Decisión en Score Monarca v3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploración estadística</td>
+<td>Conocer distribuciones, medias, medianas, dispersión y estratos antes de tocar nada</td>
+<td>Pasar por alto un sesgo que estaba a la vista</td>
+<td>Se descubrió que el 18 % de los ingresos declarados faltaba, concentrado en solicitantes con micronegocio</td>
+</tr>
+<tr>
+<td>Limpieza</td>
+<td>Corregir errores, valores imposibles y duplicados</td>
+<td>Borrar filas incompletas elimina de forma desproporcionada a un grupo</td>
+<td>No se eliminan solicitudes incompletas; se corrigen solo valores imposibles</td>
+</tr>
+<tr>
+<td>Imputación</td>
+<td>Completar valores faltantes</td>
+<td>Usar la media general oculta diferencias entre grupos</td>
+<td>Mediana por segmento más una variable que indica "dato faltante"</td>
+</tr>
+<tr>
+<td>Codificación</td>
+<td>Convertir categorías en números</td>
+<td>Inventar un orden que no existe; colar variables sustitutas</td>
+<td>Entidad federativa fuera del modelo (solo para monitoreo); código postal excluido</td>
+</tr>
+<tr>
+<td>Normalización y escalado</td>
+<td>Llevar variables a rangos comparables</td>
+<td>Calcular parámetros con datos de prueba (fuga de información)</td>
+<td>No se escala para el modelo de árboles, que no lo necesita; sí para el modelo logístico de referencia</td>
+</tr>
+<tr>
+<td>Etiquetado</td>
+<td>Definir la variable objetivo o las categorías</td>
+<td>Una definición distinta cambia por completo lo que se aprende</td>
+<td>Incumplimiento: 90 días de atraso en los primeros 12 meses, aprobado por el Comité de Modelos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Por qué, no solo qué.</strong> La diferencia entre un registro útil y uno decorativo está en la justificación. "Imputamos con la mediana" no dice nada; "imputamos con la mediana por segmento porque los faltantes no son aleatorios (se concentran en micronegocios) y la media general subestimaría su ingreso" sí permite a un auditor, o a tu yo de dentro de un año, entender y cuestionar la decisión. Te recomendamos además una regla contra la <strong>fuga de información</strong> (<em>data leakage</em>): toda transformación que aprende parámetros de los datos (medias, escalas, codificaciones) se ajusta solo con el conjunto de entrenamiento.</p>
+<p><strong>Etiquetado con guía.</strong> Cuando las etiquetas las ponen personas, la calidad depende de la guía y de la capacitación. Una cadena de comercio minorista en México que clasifica conversaciones de servicio por intención (queja, devolución, factura, seguimiento de pedido) necesita una guía con definiciones, ejemplos de casos límite y doble revisión de una muestra para medir el acuerdo entre etiquetadores. Sin eso, el modelo aprende las inconsistencias del equipo.</p>
+<p><strong>En sistemas de IA generativa.</strong> Para Conversa Labs, preparar la base de conocimiento de un cliente incluye convertir documentos a texto, segmentarlos en fragmentos (<em>chunking</em>), quitar duplicados, añadir metadatos de procedencia y enmascarar datos personales como CURP, RFC o números de póliza antes de indexar. El tamaño de los fragmentos no se eligió por costumbre: se probaron varias opciones contra un conjunto de evaluación y se documentó la que daba respuestas más exactas. Esa configuración queda registrada por cliente.</p>
+<p><strong>Qué NO exige.</strong> No impone técnicas concretas ni prohíbe ninguna. No pide el "mejor" método, sino que la elección esté razonada y escrita, y que lo aplicado se pueda reproducir.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Cuaderno (<em>notebook</em>) o guion de preparación versionado por sistema.</li>
+<li>Registro de cada transformación con su justificación.</li>
+<li>Regla contra la fuga de información entre entrenamiento y prueba.</li>
+<li>Guía de etiquetado cuando hay etiquetado manual.</li>
+<li>Revisión por pares de la preparación antes de entrenar.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Flujos de preparación como código, reproducibles y con pruebas automatizadas.</li>
+<li>Almacén de variables (<em>feature store</em>) con definiciones y responsables.</li>
+<li>Análisis del efecto de cada transformación en las métricas de equidad.</li>
+<li>Medición continua del acuerdo entre etiquetadores.</li>
+<li>Metadatos estadísticos estandarizados, por ejemplo con la especificación DDI.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_5_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_5_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_5_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Cuadernos o flujos de preparación versionados.</li>
+<li>Documento de decisiones de preparación con su justificación.</li>
+<li>Guía de etiquetado y métricas de acuerdo entre etiquetadores.</li>
+<li>Reportes de exploración estadística.</li>
+<li>Registros de revisión por pares.</li>
+<li>Configuración documentada de la ingesta a la base de conocimiento.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué transformaciones aplicaron a los datos de entrenamiento y por qué esas y no otras?</li>
+<li>¿Cómo trataron los valores faltantes? ¿Revisaron si se concentran en algún grupo?</li>
+<li>¿Cómo evitan que información del conjunto de prueba se filtre al entrenamiento?</li>
+<li>¿Quién etiquetó los datos, con qué guía y cómo midieron la calidad del etiquetado?</li>
+<li>¿Podrían reproducir hoy la preparación del modelo que está en producción?</li>
+<li>¿Cómo preparan los documentos antes de indexarlos en la base de conocimiento?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Documentar qué se hizo, pero no por qué.</li>
+<li>Eliminar registros incompletos sin revisar a quién se está dejando fuera.</li>
+<li>Preparar datos a mano en hojas de cálculo imposibles de reproducir.</li>
+<li>Etiquetar sin guía o con personal sin capacitación.</li>
+<li>Ajustar transformaciones con todo el conjunto de datos y contaminar la prueba.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> no desarrollas ni provees IA y no transformas datos antes de cargarlos, porque el proveedor hace toda la ingesta. Redacción sugerida: <em>"Excluido. La organización no prepara datos para sistemas de IA; la segmentación e indexación de la base de conocimiento de IA-02 la realiza el proveedor y se supervisa mediante A.10.3."</em></p>
+<p><strong>No se justifica si…</strong> entrenas o ajustas modelos, o si tú preparas los documentos que alimentan una base de conocimiento.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="#a-7-4">A.7.4</a>, <a href="#a-7-5">A.7.5</a>, <a href="../a4-recursos/#a-4-4">A.4.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a>, <a href="../a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> · ISO 27001 A.8.11 (enmascaramiento de datos): se reutiliza para proteger datos personales durante la preparación; lo nuevo es justificar cada transformación · Normas: serie ISO/IEC 5259, ISO/IEC 23053 · <strong>Anexo B:</strong> la guía B.7.6 explica por qué los datos suelen necesitar preparación, menciona métodos y transformaciones habituales y pide documentar tanto los criterios de selección como los métodos concretos de cada tarea; remite a ISO/IEC 5259 e ISO/IEC 23053 para profundizar.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Contadores Alameda</label><label for="__tabbed_6_2">Monarca Crédito</label><label for="__tabbed_6_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>El despacho aplica A.7 a medias, y lo dice en su <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>: excluye A.7.2, A.7.3 y A.7.6 porque no desarrolla ni prepara datos, y aplica A.7.4 completo y A.7.5 con alcance acotado. Su trabajo real de datos está en dos lugares. Primero, la <strong>FAQ de Alma</strong>: cada respuesta tiene responsable, fuente (calendario fiscal oficial o criterio interno) y fecha de revisión, y la Coordinadora de cumplimiento la revisa cada mes y cada semana en temporada de declaración anual. Segundo, los <strong>CFDI</strong> que entran a IA-03: se prefiere el XML y se revisa por muestreo la exactitud de lo extraído.</p>
+<p>Lo que los colaboradores escriben en el asistente de ofimática (IA-01) no se gestiona con A.7, sino con la política de uso aceptable y los controles de uso (<a href="../a9-uso/">A.9</a>). Ver el <a href="../../casos-practicos/pyme-usa-ia-generativa/">caso completo</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>Para Monarca, A.7 es el corazón técnico del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>. Score Monarca v3 tiene ficha de adquisición por fuente (incluido el sesgo de selección del historial), análisis de representatividad por entidad federativa, decisión documentada de excluir el código postal, verificación de que el aviso de privacidad y los consentimientos cubren el entrenamiento de modelos conforme a la nueva <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>, requisitos de calidad con umbrales, métricas de equidad por sexo, edad y entidad, y un registro que liga cada versión del modelo con sus datos.</p>
+<p>Como los cambios económicos alteran el perfil de los solicitantes, el monitoreo de deriva puede disparar un reentrenamiento, que vuelve a pasar por A.7.3 a A.7.6. El servicio de detección de fraude (IA-03) es de un tercero: sus datos se supervisan mediante <a href="../a10-terceros/#a-10-3">A.10.3</a>. Ver el <a href="../../casos-practicos/fintech-scoring/">caso completo</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>Conversa no entrena modelos con datos de clientes, y su procedimiento de datos lo vuelve verificable. Los datos que gestiona son de tres tipos: las <strong>bases de conocimiento</strong> de cada cliente (con requisitos de calidad, enmascaramiento de datos personales y metadatos de procedencia por fragmento), los <strong>conjuntos de evaluación</strong> propios (conversaciones sintéticas etiquetadas por Customer Success) y los <strong>registros de conversación</strong> (que no alimentan ningún ajuste de modelos y se eliminan según el contrato).</p>
+<p>Los datos con los que se entrenó el modelo fundacional quedan fuera de su control: Conversa los supervisa como cliente de su proveedor mediante <a href="../a10-terceros/#a-10-3">A.10.3</a> y traslada a sus clientes la información pertinente (<a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>). Ver el <a href="../../casos-practicos/empresa-desarrolla-chatbot/">caso completo</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: incluye la sección de datos (fuentes, calidad, procedencia).</li>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a>: puede alojar el procedimiento de gestión de datos para IA.</li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de aplicabilidad</a>: para registrar exclusiones o alcances acotados de A.7.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>: punto de partida para el inventario de datos de <a href="../a4-recursos/#a-4-3">A.4.3</a>.</li>
+<li><a href="../a5-evaluacion-de-impacto/">A.5 Evaluación de impactos</a>: los datos son una de las fuentes principales de impacto.</li>
+<li><a href="../a6-ciclo-de-vida/">A.6 Ciclo de vida</a>: pruebas, despliegue y monitoreo que usan estos datos.</li>
+<li><a href="../../integracion/contexto-mexico-latam/">Contexto México y Latinoamérica</a>: datos personales y nueva <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>.</li>
+<li><a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>: series ISO/IEC 5259 y TR 24027, entre otras.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

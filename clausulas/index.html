@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Mapa de las cláusulas 4 a 10 de ISO/IEC 42001, los requisitos certificables del sistema de gestión de IA. Qué pide cada una, cómo se encadenan y cómo leer cada página de la guía.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -2666,16 +2666,246 @@
 
 
 <h1 id="las-clausulas-4-a-10">Las cláusulas 4 a 10<a class="headerlink" href="#las-clausulas-4-a-10" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h7.81c-.36-.62-.61-1.3-.73-2H6V4h7v5h5v4.08c.33-.05.67-.08 1-.08.34 0 .67.03 1 .08V8l-6-6M8 12v2h8v-2m-8 4v2h5v-2Z"/></svg></span> Requisito certificable</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 9 min de lectura</span></p>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>Las cláusulas 4 a 10 describen el sistema de gestión que tu organización tiene que tener funcionando para gobernar la IA que usa, desarrolla o provee; son la parte que el auditor revisa completa, sin importar tu tamaño ni tu rol.</p>
+</div>
+<h2 id="que-son-las-clausulas-con-requisitos">Qué son las cláusulas con requisitos<a class="headerlink" href="#que-son-las-clausulas-con-requisitos" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>ISO/IEC 42001 tiene diez cláusulas y cuatro anexos, y no todas sus partes pesan lo mismo: las tres primeras cláusulas preparan el terreno, de la 4 a la 10 están las obligaciones del sistema de gestión y los anexos aportan controles, guía y contexto.</p>
+<table>
+<thead>
+<tr>
+<th>Parte de la norma</th>
+<th>Qué contiene</th>
+<th>¿Cómo la trata el auditor?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cláusulas 1 a 3</td>
+<td>Objeto y campo de aplicación, referencias normativas y términos. ISO/IEC 22989 es referencia normativa, así que sus definiciones de IA, de ciclo de vida y de roles cuentan para interpretar la norma.</td>
+<td>No contienen requisitos, pero el auditor usa su vocabulario para leer todo lo demás.</td>
+</tr>
+<tr>
+<td><strong>Cláusulas 4 a 10</strong></td>
+<td>Lo que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> tiene que cumplir: contexto, liderazgo, planificación, apoyo, operación, evaluación del desempeño y mejora.</td>
+<td><strong>Las audita todas.</strong> En nuestra lectura, y como ocurre en ISO 27001, no hay forma de declarar conformidad dejando fuera alguna de ellas.</td>
+</tr>
+<tr>
+<td>Anexo A (normativo)</td>
+<td>38 controles de referencia agrupados en nueve temas, de A.2 a A.10.</td>
+<td>Los revisa a través de tu Declaración de Aplicabilidad (<em>Statement of Applicability</em>, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>): incluyes los que tus riesgos piden y justificas los que excluyes. Puedes añadir controles propios.</td>
+</tr>
+<tr>
+<td>Anexo B (normativo)</td>
+<td>Guía de implementación para cada control del Anexo A.</td>
+<td>Aunque está marcado como normativo, funciona como orientación: no tienes que justificar en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> si sigues o no cada recomendación, y puedes adaptarla.</td>
+</tr>
+<tr>
+<td>Anexo C (informativo)</td>
+<td>Ejemplos de objetivos organizacionales y de fuentes de riesgo propios de la IA.</td>
+<td>No se audita como tal; es un insumo muy útil para <a href="c6-planificacion/#c-6-1">6.1</a> y <a href="c6-planificacion/#c-6-2">6.2</a>.</td>
+</tr>
+<tr>
+<td>Anexo D (informativo)</td>
+<td>Uso del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> en distintos sectores e integración con otras normas de gestión.</td>
+<td>No se audita.</td>
+</tr>
+</tbody>
+</table>
+<p>Encontrarás más detalle de los anexos en <a href="../anexo-a/">Anexo A</a> y en <a href="../anexos-b-c-d/">Anexos B, C y D</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">El orden de las cláusulas no es el orden de implementación</p>
+<p>La propia norma aclara que la secuencia en que presenta los requisitos no indica ni su importancia ni el orden en que debes implementarlos. En la práctica casi todas las organizaciones arrancan por el contexto y el inventario de sistemas de IA (cláusula 4), pero avanzan en paralelo con la política (5.2) y la metodología de riesgos (6.1). La <a href="../implementacion/hoja-de-ruta/">hoja de ruta</a> propone una secuencia realista.</p>
+</div>
+<h2 id="la-estructura-armonizada-el-mismo-esqueleto-que-iso-27001-e-iso-9001">La estructura armonizada: el mismo esqueleto que ISO 27001 e ISO 9001<a class="headerlink" href="#la-estructura-armonizada-el-mismo-esqueleto-que-iso-27001-e-iso-9001" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>ISO/IEC 42001 está escrita sobre la <strong>estructura armonizada</strong> (<em>harmonized structure</em>), la plantilla común que ISO usa para sus normas de sistemas de gestión. Quizá la conozcas como "Anexo SL" (el anexo de las directivas de ISO que la contiene) o por su nombre anterior, "estructura de alto nivel". Esto significa que la numeración, los títulos de las cláusulas y buena parte del texto base son los mismos que en ISO/IEC 27001:2022, ISO 9001, ISO 14001 o ISO 22301.</p>
+<p>¿Qué ganas con eso?</p>
+<ul>
+<li><strong>Si ya tienes ISO 27001 o ISO 9001</strong>, una parte importante del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> ya existe: control de documentos, auditoría interna, revisión por la dirección, acciones correctivas, gestión de competencias. No tienes que construirla de nuevo, sino extenderla. La página <a href="../integracion/con-iso27001/">Integración con ISO 27001</a> lo explica en detalle.</li>
+<li><strong>Si es tu primer sistema de gestión</strong>, aprender la estructura una vez te sirve para cualquier otra norma que adoptes después.</li>
+<li><strong>En la auditoría</strong>, la estructura común permite auditorías combinadas, con ahorro de días.</li>
+</ul>
+<p>Sobre ese esqueleto común, ISO/IEC 42001 agrega lo que es propio de la IA: el propósito previsto de los sistemas y los roles de la organización (4.1), criterios de riesgo de IA (6.1.1), una evaluación de riesgos que mira consecuencias para individuos y sociedades (6.1.2), una evaluación de impacto de los sistemas de IA sobre personas y sociedades (6.1.4 y 8.4) y la ejecución periódica de riesgos e impactos en la operación (8.2 a 8.4). Ahí está el verdadero trabajo nuevo.</p>
+<h2 id="como-se-encadenan-las-clausulas">Cómo se encadenan las cláusulas<a class="headerlink" href="#como-se-encadenan-las-clausulas" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Las siete cláusulas no son una lista de pendientes independientes: forman un ciclo. Lo que descubres en el contexto alimenta la planificación; lo que mides en la evaluación regresa a la dirección y a la mejora, y la mejora vuelve a tocar el contexto y los riesgos. Una lectura habitual las agrupa en las fases del ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr> (Planificar, Hacer, Verificar, Actuar), con el liderazgo como eje que atraviesa todo.</p>
+<pre class="mermaid"><code>flowchart TD
+  subgraph P["Planificar"]
+    C4["4 · Contexto&lt;br/&gt;¿Qué IA tenemos, para qué y con qué rol?"]
+    C5["5 · Liderazgo&lt;br/&gt;Política, recursos y responsables"]
+    C6["6 · Planificación&lt;br/&gt;Riesgos, impactos, SoA y objetivos"]
+  end
+  subgraph H["Hacer"]
+    C7["7 · Apoyo&lt;br/&gt;Recursos, competencia, comunicación, documentos"]
+    C8["8 · Operación&lt;br/&gt;Controles en marcha, riesgos e impactos periódicos"]
+  end
+  subgraph V["Verificar"]
+    C9["9 · Evaluación del desempeño&lt;br/&gt;Medición, auditoría interna, revisión por la dirección"]
+  end
+  subgraph A["Actuar"]
+    C10["10 · Mejora&lt;br/&gt;No conformidades, acciones correctivas, mejora continua"]
+  end
+  C4 --&gt; C5 --&gt; C6 --&gt; C7 --&gt; C8 --&gt; C9 --&gt; C10
+  C9 -.-&gt;|"cambios de contexto y de partes interesadas"| C4
+  C9 -.-&gt;|"decisiones de la dirección"| C5
+  C10 -.-&gt;|"ajustes a riesgos, controles y objetivos"| C6
+  C8 -.-&gt;|"riesgos nuevos o cambios significativos"| C6</code></pre>
+<p>Las flechas punteadas son la retroalimentación que convierte un conjunto de documentos en un sistema vivo. Si un chatbot empieza a dar respuestas erróneas (operación), el incidente se analiza (mejora), obliga a reevaluar el riesgo (planificación) y puede terminar en un cambio de política o de alcance que revisa la dirección.</p>
+<p>Si prefieres verlo como imagen, la página <a href="../fundamentos/que-es-un-sgia/">¿Qué es un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>?</a> incluye una infografía del ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr> aplicado a la IA.</p>
+<h2 id="resumen-por-clausula">Resumen por cláusula<a class="headerlink" href="#resumen-por-clausula" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La siguiente tabla te da una vista rápida. El esfuerzo es una estimación del autor para una organización mediana que parte de cero en gobierno de IA; si ya tienes ISO 27001, réstale bastante a las cláusulas 7, 9 y 10.</p>
+<table>
+<thead>
+<tr>
+<th>Cláusula</th>
+<th>Qué pide, en una línea</th>
+<th>Documentos y registros clave</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="c4-contexto/">4 · Contexto</a></td>
+<td>Entender tu entorno, tus sistemas de IA, su propósito, tu rol frente a ellos y quién espera algo de ti; con eso, fijar el alcance.</td>
+<td>Análisis de contexto, registro de partes interesadas y requisitos, alcance documentado, inventario de sistemas de IA (recomendado).</td>
+<td>Medio</td>
+<td>Similar, con dos añadidos de peso: propósito previsto y roles.</td>
+</tr>
+<tr>
+<td><a href="c5-liderazgo/">5 · Liderazgo</a></td>
+<td>Que la alta dirección se haga cargo: política de IA, recursos, integración en el negocio y responsables con autoridad.</td>
+<td>Política de IA aprobada, nombramientos o <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>, actas con decisiones de la dirección.</td>
+<td>Bajo a medio</td>
+<td>Muy similar; el contenido de la política se enriquece con A.2.</td>
+</tr>
+<tr>
+<td><a href="c6-planificacion/">6 · Planificación</a></td>
+<td>Definir criterios de riesgo de IA, evaluar y tratar riesgos, evaluar impactos en personas y sociedad, producir la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y fijar objetivos.</td>
+<td>Criterios y metodología de riesgo, matriz de riesgos, plan de tratamiento, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, evaluaciones de impacto, objetivos de IA.</td>
+<td>Alto</td>
+<td>La más distinta: riesgo para individuos y sociedades y evaluación de impacto separada.</td>
+</tr>
+<tr>
+<td><a href="c7-apoyo/">7 · Apoyo</a></td>
+<td>Asegurar recursos, competencia, toma de conciencia, comunicación e información documentada.</td>
+<td>Perfiles y evidencias de competencia, plan de concientización, plan de comunicación, control documental.</td>
+<td>Medio</td>
+<td>Casi equivalente; los recursos propios de la IA se detallan en A.4.</td>
+</tr>
+<tr>
+<td><a href="c8-operacion/">8 · Operación</a></td>
+<td>Operar los procesos y controles planificados, y repetir las evaluaciones de riesgo e impacto cuando toca o cuando algo cambia.</td>
+<td>Criterios operativos, registros de controles en marcha, resultados periódicos de riesgo e impacto, seguimiento del plan de tratamiento.</td>
+<td>Alto</td>
+<td>Misma estructura, más exigente: añade 8.4 y pide vigilar la eficacia de los controles.</td>
+</tr>
+<tr>
+<td><a href="c9-evaluacion-del-desempeno/">9 · Evaluación del desempeño</a></td>
+<td>Medir, auditar internamente y revisar el sistema en la dirección.</td>
+<td>Indicadores y resultados, programa e informes de auditoría interna, actas de revisión por la dirección.</td>
+<td>Medio</td>
+<td>Similar; la lista de entradas de la revisión cambia un poco.</td>
+</tr>
+<tr>
+<td><a href="c10-mejora/">10 · Mejora</a></td>
+<td>Corregir no conformidades, atacar sus causas y mejorar el sistema de forma continua.</td>
+<td>Registro de no conformidades y acciones correctivas, evidencias de eficacia.</td>
+<td>Bajo a medio</td>
+<td>Equivalente.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="las-siete-clausulas">Las siete cláusulas<a class="headerlink" href="#las-siete-clausulas" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 12c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.7-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5m4-12a.5.5 0 0 1 .5.5v9.31c-.58-.55-1.25-1-2-1.31V4.7l-3 1.16V10c-.7.07-1.38.24-2 .5V5.87l-4-1.4V16.5c0 .64.09 1.26.26 1.84L8 17.9l-5.34 2.07-.16.03a.5.5 0 0 1-.5-.5V4.38c0-.23.15-.41.36-.48L8 2l6 2.1 5.34-2.07zM4 5.46v11.85l3-1.16V4.45z"/></svg></span> <strong>4 · Contexto de la organización</strong></p>
+<hr />
+<p>Entorno, propósito previsto de cada sistema, roles según ISO/IEC 22989, partes interesadas, cambio climático y alcance del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<p><a href="c4-contexto/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 4</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 12.76C18.31 13.42 20 14.5 20 16v5H4v-5c0-1.5 1.69-2.58 3.65-3.24L8.27 14l.23.5c-1.5.46-2.6 1.12-2.6 1.5v3.1h4.22l.88-5.07-.94-1.88c.62-.07 1.27-.12 1.94-.12s1.32.05 1.94.12L13 14.03l.88 5.07h4.22V16c0-.38-1.1-1.04-2.6-1.5l.23-.5zM12 5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4"/></svg></span> <strong>5 · Liderazgo</strong></p>
+<hr />
+<p>Cómo demuestra compromiso la alta dirección, qué lleva la política de IA y quién responde por el sistema.</p>
+<p><a href="c5-liderazgo/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 5</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1M7 7h10V5h2v14H5V5h2zm5 10v-2h5v2zm0-6V9h5v2zm-4 1V9H7V8h2v4zm1.25 2c.41 0 .75.34.75.75 0 .2-.08.39-.21.52L8.12 17H10v1H7v-.92L9 15H7v-1z"/></svg></span> <strong>6 · Planificación</strong></p>
+<hr />
+<p>Criterios de riesgo, evaluación y tratamiento de riesgos de IA, evaluación de impacto, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, objetivos y cambios.</p>
+<p><a href="c6-planificacion/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 6</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 12a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 5m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 10a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 7M5.5 8A2.5 2.5 0 0 0 3 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32c.37-.21.68-.51.91-.87A5.42 5.42 0 0 1 6.5 8.5v-.28c-.3-.14-.64-.22-1-.22m13 0c-.36 0-.7.08-1 .22v.28c0 1.2-.39 2.36-1.12 3.31.12.19.25.34.4.49a2.482 2.482 0 0 0 1.72.7c.44 0 .85-.12 1.21-.32.76-.43 1.29-1.24 1.29-2.18A2.5 2.5 0 0 0 18.5 8M12 14c-2.34 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.66-3.5-7-3.5m-7.29.55C2.78 14.78 0 15.76 0 17.5V19h3v-1.93c0-1.01.69-1.85 1.71-2.52m14.58 0c1.02.67 1.71 1.51 1.71 2.52V19h3v-1.5c0-1.74-2.78-2.72-4.71-2.95M12 16c1.53 0 3.24.5 4.23 1H7.77c.99-.5 2.7-1 4.23-1"/></svg></span> <strong>7 · Apoyo</strong></p>
+<hr />
+<p>Recursos, competencia, toma de conciencia, comunicación e información documentada.</p>
+<p><a href="c7-apoyo/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 7</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg></span> <strong>8 · Operación</strong></p>
+<hr />
+<p>Control operacional y ejecución periódica de las evaluaciones de riesgo y de impacto.</p>
+<p><a href="c8-operacion/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 8</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"/></svg></span> <strong>9 · Evaluación del desempeño</strong></p>
+<hr />
+<p>Seguimiento y medición, auditoría interna y revisión por la dirección.</p>
+<p><a href="c9-evaluacion-del-desempeno/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 9</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg></span> <strong>10 · Mejora</strong></p>
+<hr />
+<p>No conformidades, acciones correctivas y mejora continua del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<p><a href="c10-mejora/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la cláusula 10</a></p>
+</li>
+</ul>
+</div>
+<h2 id="como-leer-una-pagina-de-clausula">Cómo leer una página de cláusula<a class="headerlink" href="#como-leer-una-pagina-de-clausula" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Todas las páginas de cláusula siguen el mismo formato de doce bloques, para que encuentres lo que buscas sin releer todo:</p>
+<ol>
+<li><strong>Encabezado con insignias:</strong> tipo de requisito, roles a los que aplica y tiempo de lectura.</li>
+<li><strong>En una frase:</strong> la idea central, para cuando solo tienes un minuto.</li>
+<li><strong>Propósito:</strong> qué problema resuelve la cláusula, a veces con una analogía.</li>
+<li><strong>Qué pide, explicado:</strong> una subsección por subcláusula, con nuestras palabras, tablas y diagramas. No reproducimos el texto de la norma; para eso necesitas la norma oficial.</li>
+<li><strong>Cómo se aplica según tu rol:</strong> pestañas para quien usa IA de terceros, quien la desarrolla y quien la provee a clientes.</li>
+<li><strong>Diferencias con ISO 27001:</strong> qué cambia si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</li>
+<li><strong>Preguntas para tu organización:</strong> una lista de verificación para tu diagnóstico.</li>
+<li><strong>Qué evidencia espera ver un auditor:</strong> evidencias, ejemplos y señales de alerta.</li>
+<li><strong>Errores comunes:</strong> lo que vemos fallar una y otra vez.</li>
+<li><strong>Ejemplo resuelto:</strong> una de las tres empresas ficticias de la guía (Contadores Alameda, Monarca Crédito o Conversa Labs) resolviendo la cláusula paso a paso.</li>
+<li><strong>Relación con otras cláusulas, controles y normas:</strong> enlaces para seguir el hilo.</li>
+<li><strong>Plantillas relacionadas:</strong> las plantillas que te ayudan a producir la evidencia.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Cómo leer las palabras de obligación</p>
+<p>En esta guía usamos "debe" solo cuando describimos lo que pide la norma. Cuando la recomendación es nuestra, decimos "conviene" o "te recomendamos". Y cuando una interpretación es discutible, lo señalamos con frases como "en nuestra lectura" o "algunos organismos de certificación".</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Un término que verás en todas las páginas: información documentada</p>
+<p>La norma no habla de "documentos" y "registros", sino de <strong>información documentada</strong> (<em>documented information</em>). Cuando pide <em>mantenerla</em>, piensa en un documento vivo que se actualiza (una política, un procedimiento, el alcance). Cuando pide <em>conservarla</em>, piensa en un registro que prueba que algo ocurrió (el resultado de una evaluación de riesgos, un acta). La página <a href="../implementacion/documentacion-requerida/">Documentación requerida</a> reúne todos los casos.</p>
+</div>
+<h2 id="por-donde-empezar">Por dónde empezar<a class="headerlink" href="#por-donde-empezar" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Si es tu primera vez con la norma, lee las cláusulas en orden: la 4 y la 5 tienen pocos requisitos y te dan el marco para entender la 6, que es la más densa. Si vienes de ISO 27001, puedes ir directo a la 4 (por los roles), la 6 y la 8, y revisar las demás solo en sus diferencias. Si tu perfil es directivo, empieza por la <a href="c5-liderazgo/">cláusula 5</a> y la <a href="c9-evaluacion-del-desempeno/#c-9-3">revisión por la dirección</a>.</p>
+<p>También puedes seguir una de las <a href="../empieza-aqui/rutas-de-lectura/">rutas de lectura</a>: la <a href="../empieza-aqui/rutas-de-lectura/#ruta-grc">ruta GRC</a>, la <a href="../empieza-aqui/rutas-de-lectura/#ruta-datos">ruta de datos</a>, la <a href="../empieza-aqui/rutas-de-lectura/#ruta-directivo">ruta directiva</a> o la <a href="../empieza-aqui/rutas-de-lectura/#ruta-auditor">ruta del auditor</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Qué pide el objetivo A.8 de ISO/IEC 42001 sobre información a usuarios, reporte externo de impactos, comunicación de incidentes y obligaciones de informar a clientes y autoridades, con ejemplos de México y Latinoamérica.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1623,6 +1623,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-8-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1660,6 +1682,28 @@
     <span class="md-ellipsis">
       
         A.8.5 Información para las partes interesadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2757,24 +2801,535 @@
 
 
 <h1 id="a8-informacion-para-las-partes-interesadas">A.8 · Información para las partes interesadas<a class="headerlink" href="#a8-informacion-para-las-partes-interesadas" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a8">A.8 · Información</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 4 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 25 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a8">
+<p><strong>El objetivo, en palabras simples:</strong> que cada persona u organización que usa tu sistema de IA, lo contrata, lo supervisa o resulta afectada por él tenga la información suficiente para entender los riesgos e impactos que puede traerle, tanto los buenos como los malos.</p>
+<p><strong>Lo que está en juego:</strong> personas que no saben que conversan con una máquina, que no tienen dónde quejarse cuando el sistema las trata mal, que se enteran de un incidente por las redes sociales antes que por ti, y clientes o autoridades que piden documentos que nadie preparó.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>A.8 convierte la transparencia en procesos concretos: qué le dices a quien usa la IA, cómo te pueden avisar de un daño, cómo avisas tú cuando algo falla y qué estás obligado a reportar, a quién y cuándo.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Piensa en un medicamento. Trae un instructivo que explica para qué sirve, cómo tomarlo, qué efectos secundarios puede causar y cuándo suspenderlo. Existe un mecanismo para que pacientes y médicos reporten reacciones adversas. Si se descubre un problema en un lote, el laboratorio emite una alerta y retira el producto. Y la autoridad sanitaria recibe expedientes y reportes periódicos. Nadie consideraría responsable a un laboratorio que tuviera solo una de esas cuatro piezas.</p>
+<p>A.8 pide lo mismo para los sistemas de IA, y sus cuatro controles se corresponden casi uno a uno con la analogía:</p>
+<ul>
+<li><strong>A.8.2</strong> es el instructivo y la etiqueta: lo que el usuario necesita saber para usar bien el sistema, empezando por saber que es una IA.</li>
+<li><strong>A.8.3</strong> es el buzón de reacciones adversas: un medio para que usuarios y terceros te avisen de impactos negativos.</li>
+<li><strong>A.8.4</strong> es la alerta y el retiro del lote: un plan para comunicar incidentes a quienes resultan afectados.</li>
+<li><strong>A.8.5</strong> es el expediente ante la autoridad: saber qué información debes entregar, a quién y en qué momento.</li>
+</ul>
+<p>Los riesgos que aborda este objetivo son muy propios de la IA. El primero es la <strong>opacidad</strong>: un sistema puede equivocarse con un tono de total seguridad, y si el usuario no conoce sus límites confiará de más. El segundo es el sesgo de automatización (<em>automation bias</em>), la tendencia a aceptar lo que dice la máquina, que crece cuando la gente no sabe que puede (y conviene) cuestionar el resultado. El tercero es que muchos daños de la IA <strong>solo los percibe quien los sufre</strong>: un solicitante rechazado una y otra vez, una persona a la que el chatbot no entiende por su forma de escribir. Sin un canal externo, esos daños nunca llegan a tu evaluación de riesgos. Y el cuarto es el <strong>costo de improvisar</strong>: avisar tarde, a medias o con jerga técnica cuando ocurre un incidente destruye la confianza más rápido que el incidente mismo.</p>
+<p><strong>Relación con las cláusulas.</strong> A.8 aterriza varias exigencias del cuerpo de la norma. La cláusula <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a> te pide identificar a las partes interesadas y sus requisitos; A.8 decide qué información reciben. La <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a> pide planificar la comunicación (qué, cuándo, con quién, cómo); A.8 la especializa para usuarios, afectados y autoridades. La <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a> prevé que las conclusiones de tu evaluación de impacto (<em>AI system impact assessment</em>) puedan compartirse con partes interesadas cuando corresponda; A.8.2 y A.8.5 dicen cómo. Y lo que entra por A.8.3 alimenta el seguimiento de <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a> y las acciones correctivas de <a href="../../clausulas/c10-mejora/#c-10-2">10.2</a>.</p>
+<p><strong>Cómo cambia según tu rol.</strong> Los cuatro controles aplican a los tres roles, pero el énfasis se mueve:</p>
+<ul>
+<li><strong>Si usas IA de terceros</strong> (como Contadores Alameda con su chatbot Alma), tú das la cara ante tus clientes: dependes de la documentación de tu proveedor, pero traducirla a lenguaje claro y avisar al usuario final te corresponde a ti.</li>
+<li><strong>Si desarrollas IA</strong> (como Monarca Crédito con su modelo de <em>score</em>), produces la información desde cero y tienes dos públicos: quienes operan el sistema (los analistas) y las personas sobre las que decide (los solicitantes).</li>
+<li><strong>Si provees IA a clientes</strong> (como Conversa Labs), informas a tu cliente para que él, a su vez, informe a sus usuarios finales. Tu documentación se vuelve insumo del cumplimiento de otros, y por eso A.8 se cruza con <a href="../a10-terceros/#a-10-4">A.10.4</a>.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<p>El Anexo A de ISO 27001 no tiene un tema equivalente. Hay piezas reutilizables: la gestión de incidentes (ISO 27001 A.5.24 a A.5.26), el contacto con autoridades (ISO 27001 A.5.5), la identificación de requisitos legales (ISO 27001 A.5.31) y el reporte de eventos por el personal (ISO 27001 A.6.8). Pero todas miran hacia dentro o hacia la seguridad de la información. A.8 mira hacia las personas que usan o sufren la IA y agrega temas que un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> no cubre: avisar que hay una IA, explicar sus límites, recibir reportes de trato injusto y comunicar incidentes que no son brechas de datos.</p>
+</div>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-8-2">A.8.2 Documentación del sistema e información para usuarios</a></td>
+<td>Decidir con criterios qué necesita saber cada tipo de usuario y dárselo de forma accesible y vigente</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Nuevo</td>
+</tr>
+<tr>
+<td><a href="#a-8-3">A.8.3 Reporte externo</a></td>
+<td>Un canal para que usuarios y terceros reporten impactos adversos, con seguimiento</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Bajo</td>
+<td>Nuevo (relacionado con 6.8)</td>
+</tr>
+<tr>
+<td><a href="#a-8-4">A.8.4 Comunicación de incidentes</a></td>
+<td>Un plan documentado para avisar de incidentes a usuarios y, si aplica, a autoridades</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (5.24, 5.26, 5.5)</td>
+</tr>
+<tr>
+<td><a href="#a-8-5">A.8.5 Información para las partes interesadas</a></td>
+<td>Saber y documentar qué información sobre la IA debes reportar, a quién y cuándo</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (5.31, 5.5)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<p>El objetivo completo se entiende mejor como un conjunto de flujos de información en ambos sentidos:</p>
+<pre class="mermaid"><code>flowchart LR
+  ORG["Tu organización"]
+  USR["Usuarios"]
+  AFE["Afectados y terceros"]
+  CLI["Clientes"]
+  AUT["Autoridades"]
+  ORG --&gt;|"A.8.2 qué es, para qué sirve, límites"| USR
+  USR --&gt;|"A.8.3 reporte de impacto adverso"| ORG
+  AFE --&gt;|"A.8.3 reporte de impacto adverso"| ORG
+  ORG --&gt;|"A.8.4 aviso de incidente"| USR
+  ORG --&gt;|"A.8.5 información obligatoria"| CLI
+  ORG --&gt;|"A.8.5 información obligatoria"| AUT</code></pre>
 <h2 class="dx-control obj-a8" id="a-8-2">A.8.2 Documentación del sistema e información para usuarios<a class="headerlink" href="#a-8-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que nadie use un sistema de IA, ni dependa de sus resultados, a ciegas. Previene la confianza excesiva, el uso equivocado y el engaño de creer que se trata con una persona cuando no es así.</p>
+<p><strong>En la práctica.</strong> El control pide <strong>decidir</strong> qué información necesita cada tipo de usuario y <strong>entregarla</strong>. "Usuario" aquí es amplio: el analista que opera un modelo de crédito, el administrador que configura una plataforma y la persona que escribe a un chatbot por WhatsApp; una sola ficha técnica para todos no funciona. Te recomendamos pensar la información en tres bloques:</p>
+<table>
+<thead>
+<tr>
+<th>Bloque</th>
+<th>Qué puede incluir</th>
+<th>En Alma, el chatbot de Contadores Alameda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Saber con qué se trata</strong></td>
+<td>Que es una IA; para qué sirve y para qué no; beneficios y daños posibles según la evaluación de impacto, sobre todo para grupos específicos; a quién contactar</td>
+<td>"Soy Alma, asistente virtual con IA del despacho. Resuelvo dudas sobre fechas, trámites y citas; no doy asesoría fiscal personalizada."</td>
+</tr>
+<tr>
+<td><strong>Usarlo bien</strong></td>
+<td>Cómo interactuar; requisitos técnicos y limitaciones; precisión esperada; supervisión humana necesaria; cómo y cuándo anular el resultado o pedir a una persona; material de apoyo</td>
+<td>"Escribe ASESOR en cualquier momento y te atiende una persona."</td>
+</tr>
+<tr>
+<td><strong>Mantenerse al día</strong></td>
+<td>Cambios que alteran el comportamiento, mantenimiento, ajustes a los beneficios prometidos, vida útil prevista</td>
+<td>Aviso cuando la base de conocimiento cambia por ajustes al calendario fiscal</td>
+</tr>
+</tbody>
+</table>
+<p>La norma no exige informar todo a todos: pide <strong>documentar los criterios</strong> con los que decides qué se informa. Los más útiles son el uso previsto, el uso indebido razonablemente previsible, la pericia de quien usa el sistema y la magnitud del impacto. Regla práctica: a mayor impacto y menor pericia, información más visible, breve y temprana. Un analista lee un manual de veinte páginas; quien pregunta por su declaración anual en WhatsApp necesita dos líneas y una salida hacia un humano.</p>
+<p>La información tiene que ser <strong>accesible</strong> (fácil de encontrar, en lenguaje claro, compatible con lectores de pantalla) y conviene <strong>comprobar que llega y sigue vigente</strong>: que el aviso aparece en cada conversación nueva y que la cifra de precisión publicada no es de hace tres versiones. No olvides el <strong>contenido generado</strong>: si una universidad en Perú produce imágenes de campaña con IA, o Contadores Alameda entrega a un cliente un resumen de junta hecho con su asistente de ofimática (IA-01), conviene etiquetarlo ("borrador elaborado con apoyo de IA y revisado por…"). Conversa Labs, por su parte, trae el aviso de interacción con IA activado por defecto y da a cada cliente textos sugeridos para sus canales.</p>
+<p>Por rol: si <strong>usas</strong> IA de terceros, pide la documentación al proveedor y tradúcela; si <strong>desarrollas</strong>, escríbela a partir de la evaluación de impacto (<a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>) y la documentación técnica (<a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>); si <strong>provees</strong>, entrega una capa para tu cliente y plantillas para sus usuarios finales. El control <strong>no</strong> exige explicar las matemáticas del modelo ni revelar secretos industriales.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Aviso de interacción con IA visible al inicio de cada canal donde un sistema conversa con personas.</li>
+<li>Ficha breve de uso por sistema para usuarios internos: propósito, límites y cuándo escalar.</li>
+<li>Ruta probada y documentada para anular el resultado o pedir a una persona.</li>
+<li>Tabla de criterios de qué se informa a cada tipo de usuario, aprobada por el dueño del sistema.</li>
+<li>Revisión de la información cada vez que cambia la versión del sistema o del modelo.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Biblioteca versionada de avisos e instrucciones por canal, audiencia e idioma.</li>
+<li>Pruebas de comprensión con usuarios reales: ¿entendieron que era IA?, ¿supieron pedir a una persona?</li>
+<li>Indicadores: sesiones con aviso mostrado, tasa de escalamiento a humano, quejas de "no sabía que era un bot".</li>
+<li>Revisión de accesibilidad con criterios reconocidos (por ejemplo, WCAG).</li>
+<li>Página pública de transparencia por sistema y etiquetado automático del contenido generado.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Capturas o configuraciones de los avisos de interacción con IA en cada canal.</li>
+<li>Instrucciones de uso o fichas del sistema para usuarios internos y externos.</li>
+<li>Criterios documentados de qué información recibe cada tipo de usuario.</li>
+<li>Registro de actualizaciones de la información, con su detonante.</li>
+<li>Resultados de pruebas de comprensión o de accesibilidad.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cómo decidieron qué información recibe cada tipo de usuario? Muéstrame los criterios.</li>
+<li>Si hoy escribo a su chatbot, ¿en qué momento me entero de que es una IA? Hagamos la prueba.</li>
+<li>¿Cómo pide una persona hablar con alguien del equipo y cuánto tarda en lograrlo?</li>
+<li>¿Qué hallazgos de la evaluación de impacto se tradujeron en información para usuarios?</li>
+<li>¿Cuándo se actualizó por última vez esta ficha y qué lo motivó?</li>
+<li>¿Cómo comprueban que la información llega y se entiende, incluidas personas con discapacidad?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Esconder el aviso de IA en los términos y condiciones o en el aviso de privacidad.</li>
+<li>Entregar documentación técnica a público no técnico, o lo contrario.</li>
+<li>Publicar cifras de precisión sin fuente, sin fecha o de otra versión del modelo.</li>
+<li>Ofrecer "hablar con un humano" cuando, fuera de horario, nadie responde.</li>
+<li>No tener criterios escritos: la información depende de quien redactó el aviso.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> ningún sistema del alcance tiene personas que interactúen con él o consuman sus resultados, algo poco común. Ejemplo de redacción: "Se excluye A.8.2 porque el único sistema en alcance es un clasificador automático de registros técnicos cuyas salidas no consultan personas ni afectan decisiones sobre ellas."</p>
+<p><strong>No se justifica si…</strong> hay chatbots, asistentes, sistemas que apoyan decisiones sobre personas o contenido generado que llega a terceros.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a> · Controles: <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="#a-8-3">A.8.3</a>, <a href="../a9-uso/#a-9-3">A.9.3</a>, <a href="../a9-uso/#a-9-4">A.9.4</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001: sin equivalente directo · Normas: ISO/IEC 22989 (conceptos de transparencia y explicabilidad) · <strong>Anexo B:</strong> la guía B.8.2 ofrece un repertorio amplio de temas sobre los que informar e insiste en documentar los criterios de selección, cuidar la accesibilidad y verificar que lo informado esté completo y al día.</p>
 <h2 class="dx-control obj-a8" id="a-8-3">A.8.3 Reporte externo<a class="headerlink" href="#a-8-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-bajo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 2.4 1 4.5 2.7 6 1.4-1.3 3.3-2 5.3-2s3.8.7 5.3 2c1.7-1.5 2.7-3.6 2.7-6a8 8 0 0 0-8-8m-2 1.89c.38.01.74.26.9.65l1.29 3.23.1.23c.71.13 1.3.6 1.57 1.26.41 1.03-.09 2.19-1.12 2.6s-2.19-.09-2.6-1.12c-.26-.66-.14-1.42.29-1.98l-.1-.26-1.29-3.21-.01-.03c-.2-.51.05-1.09.56-1.3.13-.05.26-.07.41-.07M14 6a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 9a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> Esfuerzo bajo</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Darle voz a quien está fuera de la organización. Muchos impactos adversos de la IA (un trato injusto, una respuesta ofensiva, una decisión que no cuadra) solo los percibe la persona afectada; sin un canal para reportarlos, nunca llegan a tus procesos de riesgo y mejora.</p>
+<p><strong>En la práctica.</strong> El monitoreo técnico (<a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>) detecta caídas, errores y desviaciones estadísticas, pero no se entera de que a una persona la rechazaron injustamente o de que el chatbot le respondió con un comentario discriminatorio. Este control pide ofrecer a usuarios y otras partes externas una forma de avisarte de esos impactos adversos; en nuestra lectura, también implica darles seguimiento real. Conviene distinguirlo de dos cosas parecidas:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><a href="../a3-organizacion-interna/#a-3-3">A.3.3</a> Reporte de inquietudes</th>
+<th>Atención a quejas tradicional</th>
+<th>A.8.3 Reporte externo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿Quién reporta?</td>
+<td>Personal y personas de la organización</td>
+<td>Clientes</td>
+<td>Usuarios, afectados que no son clientes, terceros, investigadores</td>
+</tr>
+<tr>
+<td>¿Sobre qué?</td>
+<td>El papel de la organización respecto de la IA</td>
+<td>Fallas del servicio, cobros, tiempos</td>
+<td>Impactos adversos del sistema de IA: trato injusto, daño, información falsa, privacidad</td>
+</tr>
+<tr>
+<td>¿Qué se busca?</td>
+<td>Proteger a quien alerta y corregir</td>
+<td>Resolver el caso individual</td>
+<td>Resolver el caso <strong>y</strong> aprender: alimentar riesgos, impacto y mejoras del sistema</td>
+</tr>
+</tbody>
+</table>
+<p>No necesitas un canal nuevo si ya tienes uno de quejas. Lo importante es que sea <strong>visible donde está la IA</strong>, que el registro permita <strong>etiquetar</strong> los casos relacionados con ella y que alguien que conozca el sistema los <strong>analice</strong>. Un buen diseño tiene cinco piezas: punto de entrada (formulario, correo, opción "reportar esta respuesta" en el chat), clasificación (¿es un impacto adverso?, ¿es ya un incidente?), responsable del análisis, respuesta a quien reportó y retroalimentación hacia las evaluaciones de riesgo e impacto. De ISO 27001 puedes reutilizar la mecánica del reporte de eventos (ISO 27001 A.6.8), aunque ese control está pensado para el personal y para eventos de seguridad, no para que externos reporten daños.</p>
+<p><strong>Ejemplo: Monarca Crédito.</strong> Como SOFOM, Monarca ya atiende reclamaciones. Si cuenta con su Unidad Especializada de Atención a Usuarios (UNE) y recibe casos que llegan vía Condusef, lo sensato es integrarse en vez de abrir un canal paralelo: agregar al registro de la UNE la categoría "relacionado con decisión automatizada", turnar esos casos también a Ciencia de Datos y al Oficial de Cumplimiento, y llevar al Comité de Modelos las tendencias del mes (por ejemplo, si los rechazos reclamados se concentran en ciertas entidades federativas). Las obligaciones concretas frente a Condusef dependen de la regulación financiera aplicable y conviene confirmarlas con el área jurídica; aquí solo se ilustra cómo encajar A.8.3 en lo que ya existe.</p>
+<p>Por rol: si <strong>usas</strong> IA de terceros, el canal es tuyo aunque el sistema sea del proveedor; pacta cómo escalarle los casos. Si <strong>provees</strong>, acuerda con tu cliente quién atiende el primer nivel: el botón "reportar esta respuesta" de Conversa Labs envía cada reporte a ambos paneles. El control <strong>no</strong> exige una línea permanente ni modificar el modelo por cada reporte: exige poder recibir, atender y aprender.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Canal publicado (formulario o correo) y mencionado en el propio punto de contacto con la IA.</li>
+<li>Categoría "IA" o "impacto adverso" en el registro de quejas o tickets que ya existe.</li>
+<li>Responsable de clasificación, con criterio para escalar a incidente (<a href="#a-8-4">A.8.4</a>).</li>
+<li>Plazo interno para acusar recibo y responder a quien reporta.</li>
+<li>Revisión periódica de los reportes como entrada a la evaluación de riesgos.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Opción de reporte dentro de la interfaz (botón o palabra clave en WhatsApp) que adjunta el contexto de la conversación.</li>
+<li>Taxonomía de impactos adversos: sesgo, error factual, daño emocional, privacidad, seguridad.</li>
+<li>Tablero de tendencias para el comité responsable o la dirección.</li>
+<li>Opción anónima y acceso en varios idiomas o formatos accesibles.</li>
+<li>Retroalimentación formal hacia la evaluación de impacto y el plan de tratamiento.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Captura del canal publicado (sitio, app o mensaje del chatbot).</li>
+<li>Procedimiento de atención de reportes externos sobre IA.</li>
+<li>Registro de reportes recibidos, con clasificación, análisis, respuesta y cierre.</li>
+<li>Reportes de tendencias revisados por el comité o la dirección.</li>
+<li>Cambios en riesgos o en el sistema derivados de reportes.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Si soy una persona afectada por una decisión del sistema, ¿dónde y cómo lo reporto? Muéstramelo.</li>
+<li>Enséñame los últimos cinco reportes relacionados con IA y cómo se cerraron.</li>
+<li>¿Cómo distinguen un reporte de impacto adverso de una queja comercial?</li>
+<li>¿Qué ocurre con un reporte que llega por redes sociales o por un canal no oficial?</li>
+<li>¿Algún reporte ha modificado la evaluación de riesgos o de impacto? ¿Cuál?</li>
+<li>¿Cómo se coordinan con su proveedor cuando el reporte es sobre su componente?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Confundirlo con A.3.3 y ofrecer solo un canal para el personal.</li>
+<li>Un canal que existe pero nadie encuentra, porque solo aparece en el aviso de privacidad.</li>
+<li>Cerrar todo como "queja atendida" sin revisar si hay un patrón.</li>
+<li>No responder a quien reportó.</li>
+<li>Depender del canal del proveedor sin acceso a los reportes de tus propios usuarios.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> el alcance solo incluye herramientas internas cuyos resultados no llegan a personas externas ni deciden sobre ellas. Ejemplo de redacción: "Se excluye A.8.3 porque el único sistema en alcance es un asistente de programación usado por el equipo de TI, que no interactúa con terceros ni produce resultados que los afecten; las inquietudes del personal se atienden mediante A.3.3."</p>
+<p><strong>No se justifica si…</strong> hay usuarios externos o personas sujetas a decisiones apoyadas por IA, aunque el sistema sea de un proveedor.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>, <a href="../../clausulas/c10-mejora/#c-10-2">10.2</a> · Controles: <a href="../a3-organizacion-interna/#a-3-3">A.3.3</a>, <a href="../a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="#a-8-4">A.8.4</a> · ISO 27001: A.6.8 (solo la mecánica de reporte) · <strong>Anexo B:</strong> la guía B.8.3 es breve; recuerda que el monitoreo propio no alcanza y que conviene habilitar a usuarios y externos para reportar impactos adversos, con la injusticia como ejemplo.</p>
 <h2 class="dx-control obj-a8" id="a-8-4">A.8.4 Comunicación de incidentes<a class="headerlink" href="#a-8-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que, cuando un sistema de IA falla de una forma que afecta a las personas, ellas se enteren a tiempo, por ti y con información útil para protegerse, y que también se entere cualquier autoridad a la que corresponda avisar.</p>
+<p><strong>En la práctica.</strong> El control pide un <strong>plan documentado</strong> para comunicar incidentes a los usuarios. La primera tarea es ampliar lo que entiendes por incidente. Además de los de seguridad y privacidad (una brecha, datos personales que aparecen en registros o en los datos de entrenamiento, un acceso indebido), existen incidentes <strong>propios de la IA</strong>: un chatbot que da información falsa a cientos de personas, una deriva del modelo (<em>drift</em>) que multiplica rechazos injustificados, una inyección de instrucciones (<em>prompt injection</em>) que lleva al asistente a revelar datos de otro cliente, un sesgo descubierto en una auditoría o un cambio de versión del modelo del proveedor que altera las respuestas.</p>
+<p>El plan responde, por tipo de incidente, cuatro preguntas: <strong>qué</strong> se comunica (umbrales de severidad), <strong>en qué plazo</strong> (metas internas y los plazos que impongan contratos o leyes), <strong>a quién</strong>, incluidas qué autoridades y bajo qué condiciones, y <strong>con qué detalle</strong> (qué pasó, a quién afecta, qué datos o decisiones están involucrados, qué conviene que haga la persona, qué está haciendo la organización y cómo contactarla). Súmale canales, quién aprueba cada mensaje, plantillas y un registro de cada decisión, incluida la de <strong>no</strong> notificar con su justificación.</p>
+<p><strong>Integración con el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</strong> No hace falta un proceso aparte: conviene extender la gestión de incidentes que ya tengas (ISO 27001 A.5.24 a A.5.26, y el contacto con autoridades de ISO 27001 A.5.5). Reutilizas clasificación, equipo de respuesta, bitácora y lecciones aprendidas. Agregas categorías de incidentes de IA, una persona responsable del modelo en el equipo, acciones específicas (volver a una versión anterior, desactivar una función, revisar decisiones ya tomadas) y la coordinación con proveedores y clientes. Para incidentes con datos personales, ISO/IEC 27701 orienta la gestión desde la privacidad, y la ley local manda: en México, la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr> vigente prevé dar aviso inmediato de las vulneraciones de seguridad que afecten de forma significativa (art. 19)<sup id="fnref:lfpdppp"><a class="footnote-ref" href="#fn:lfpdppp">1</a></sup>; confirma con tu área jurídica a quién, cómo y con qué contenido. Para otros países, revisa <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a> y <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</p>
+<p><strong>Ejemplo: Conversa Labs.</strong> Cuando la falla viaja por la cadena, la comunicación también. Así se ve un incidente en el asistente de una aseguradora cliente, tras una nueva versión del modelo fundacional:</p>
+<pre class="mermaid"><code>sequenceDiagram
+  autonumber
+  participant PM as Proveedor del modelo
+  participant CL as Conversa Labs
+  participant AS as Aseguradora cliente
+  participant UF as Usuarios finales
+  PM-&gt;&gt;CL: Aviso de nueva versión del modelo
+  CL-&gt;&gt;CL: El monitoreo detecta respuestas erróneas sobre coberturas
+  CL-&gt;&gt;CL: Clasifica severidad alta y regresa a la versión anterior
+  CL-&gt;&gt;AS: Notificación inicial en el plazo pactado
+  CL-&gt;&gt;PM: Reporte técnico y solicitud de análisis
+  AS-&gt;&gt;CL: Pide la lista de conversaciones afectadas
+  CL-&gt;&gt;AS: Envía la lista y un texto sugerido de aviso
+  Note over AS: Evalúa con su área jurídica si debe avisar a su supervisor o a la autoridad de datos
+  AS-&gt;&gt;UF: Aviso con la información correcta y un canal humano
+  PM-&gt;&gt;CL: Causa raíz y corrección
+  CL-&gt;&gt;AS: Informe de cierre y lecciones aprendidas</code></pre>
+<p>La aseguradora es quien despliega el asistente frente a sus asegurados y quien les habla; Conversa le da los insumos y el proveedor del modelo responde por su componente. Ese reparto se pacta antes, en la matriz de <a href="../a10-terceros/#a-10-2">A.10.2</a>. El control <strong>no</strong> exige avisar a todos los usuarios de cada falla menor ni crear un comité nuevo: exige haber decidido de antemano cómo se comunica lo que sí importa.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Plan de comunicación de incidentes de IA, como anexo breve del procedimiento de incidentes del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</li>
+<li>Categorías de incidentes de IA y criterios de severidad que detonan la comunicación.</li>
+<li>Matriz de notificación: tipo de incidente, destinatario, plazo, canal y quién aprueba.</li>
+<li>Plantillas de aviso y directorio de contactos (autoridades, clientes clave, proveedores).</li>
+<li>Registro de cada notificación y de cada decisión de no notificar.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Simulacros de escritorio (<em>tabletop exercises</em>) con escenarios de IA, junto con proveedores y clientes.</li>
+<li>Umbrales cuantitativos de severidad (personas afectadas, decisiones por revisar).</li>
+<li>Cláusulas de notificación en ambos sentidos de la cadena de suministro.</li>
+<li>Medición de tiempos de detección, notificación y cierre, revisada por la dirección.</li>
+<li>Lecciones aprendidas que actualizan las evaluaciones de impacto y de riesgos.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Plan de comunicación de incidentes aprobado, con matriz de notificación y plantillas.</li>
+<li>Registro de incidentes de IA con las decisiones de comunicación y su justificación.</li>
+<li>Copias de avisos enviados y acuses de recibo.</li>
+<li>Resultados de simulacros y acciones derivadas.</li>
+<li>Contratos con cláusulas de notificación con proveedores y clientes.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué consideran un incidente de IA, más allá de una brecha de datos?</li>
+<li>Muéstrame el último incidente y cómo decidieron si avisar a los usuarios.</li>
+<li>¿De dónde salen los plazos de su plan: de un contrato, de la ley o de un criterio propio?</li>
+<li>¿A qué autoridades notificarían y quién toma esa decisión?</li>
+<li>¿Cómo se enteran de un incidente en el componente de su proveedor?</li>
+<li>¿Han probado el plan? ¿Qué aprendieron?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Un plan solo de seguridad que no reconoce como incidente un sesgo o una ola de respuestas falsas.</li>
+<li>Plazos copiados de otra jurisdicción o inventados, sin fuente.</li>
+<li>Ignorar la cadena: no saber cómo avisa el proveedor ni a quién hay que avisar del lado del cliente.</li>
+<li>Mensajes con jerga técnica que no le dicen a la persona qué hacer.</li>
+<li>No dejar registro de la decisión de no notificar.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> prácticamente nunca. Caso límite: "Se excluye A.8.4 porque el único sistema en alcance es de uso interno, no trata datos personales ni tiene usuarios externos, y la comunicación de sus incidentes al personal se rige por el procedimiento general de incidentes." Aun así, muchos auditores esperarán verlo incluido e implementado de forma ligera.</p>
+<p><strong>No se justifica si…</strong> hay usuarios externos, datos personales o decisiones sobre personas.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../clausulas/c10-mejora/#c-10-2">10.2</a> · Controles: <a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="#a-8-3">A.8.3</a>, <a href="#a-8-5">A.8.5</a>, <a href="../a10-terceros/#a-10-2">A.10.2</a>, <a href="../a10-terceros/#a-10-3">A.10.3</a> · ISO 27001: A.5.24, A.5.26 y A.5.5 · Normas: ISO/IEC 27001, ISO/IEC 27701, serie ISO/IEC 27035 (gestión de incidentes) · <strong>Anexo B:</strong> la guía B.8.4 distingue incidentes propios de la IA de los de seguridad y privacidad, señala que contratos y regulación pueden fijar qué, cuándo, a quién y con qué detalle comunicar, admite integrarse a la gestión general de incidentes sin perder lo específico de la IA y remite a ISO/IEC 27001 e ISO/IEC 27701.</p>
 <h2 class="dx-control obj-a8" id="a-8-5">A.8.5 Información para las partes interesadas<a class="headerlink" href="#a-8-5" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Saber de antemano qué información sobre tus sistemas de IA estás obligado a entregar, a quién y cuándo, para no descubrirlo el día que llega el requerimiento y tener lista la documentación que lo respalda.</p>
+<p><strong>En la práctica.</strong> A.8.2 trata de lo que conviene que sepan los usuarios; A.8.5 trata de lo que <strong>tienes que</strong> reportar. El control pide determinar y documentar esas obligaciones. La forma más práctica es un <strong>registro de obligaciones de reporte</strong> organizado por jurisdicción y por parte interesada:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quién recibe</td>
+<td>Cliente corporativo, autoridad de protección de datos, supervisor del sector, autoridad investigadora</td>
+</tr>
+<tr>
+<td>Fuente de la obligación</td>
+<td>Ley, regulación sectorial, contrato, cuestionario de un cliente, requerimiento puntual</td>
+</tr>
+<tr>
+<td>Qué información</td>
+<td>Documentación técnica, riesgos identificados, resultados de evaluaciones de impacto, registros de eventos</td>
+</tr>
+<tr>
+<td>Detonante y plazo</td>
+<td>Anual, a solicitud, ante un incidente, antes de lanzar en un país</td>
+</tr>
+<tr>
+<td>Responsable y aprobador</td>
+<td>Quién prepara la información y quién autoriza compartirla</td>
+</tr>
+<tr>
+<td>Evidencia de entrega</td>
+<td>Acuse, folio, correo de envío</td>
+</tr>
+</tbody>
+</table>
+<p>La información que suelen pedir es la que ya produces en otros controles: la documentación técnica (<a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>), que puede abarcar qué datos se usaron para entrenar, validar y probar, por qué se eligieron ciertos algoritmos y qué arrojaron las pruebas; los riesgos (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>); los resultados de las evaluaciones de impacto (<a href="../a5-evaluacion-de-impacto/#a-5-3">A.5.3</a>); y los registros de eventos (<a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>). A.8.5 te obliga a preguntarte si esa documentación existe en una forma entregable para cuando alguien la pida.</p>
+<p><strong>De dónde salen las obligaciones.</strong> La fuente más frecuente son los <strong>contratos</strong>: si el banco cliente de Contadores Alameda, además de su cuestionario sobre gobierno de IA, pide en el contrato un informe anual de los sistemas de IA que tocan sus datos, eso ya es una obligación de reporte. Le siguen las <strong>leyes de datos personales</strong> y la <strong>regulación sectorial</strong>: si una autoridad financiera le requiere a Monarca Crédito información sobre cómo decide el crédito, tener lista la ficha del modelo, su validación y las pruebas de sesgo convierte una semana de urgencia en un día de trabajo. Luego, la <strong>regulación específica de IA</strong>: Conversa Labs analiza qué le toca por su cliente en España según el <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>, y para Colombia y Chile da seguimiento a iniciativas en curso (ver <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>) sin asumir obligaciones que todavía no existen. Por último, los <strong>requerimientos de autoridades de procuración de justicia</strong>: conviene un procedimiento que valide la solicitud, pase por revisión jurídica, entregue solo lo necesario y deje registro.</p>
+<p><strong>Qué reutilizas de ISO 27001.</strong> El registro de requisitos legales y contractuales (ISO 27001 A.5.31) y el contacto con autoridades (ISO 27001 A.5.5). Agregas las obligaciones propias de la IA, el contenido por entregar y la decisión de qué es confidencial. El control <strong>no</strong> exige publicar todo ni regalar tu propiedad intelectual: puedes compartir bajo confidencialidad o en versión resumida.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Registro de obligaciones de reporte sobre IA por jurisdicción y parte interesada, con fuente y responsable.</li>
+<li>Revisión del registro al entrar a un país, firmar un cliente relevante o lanzar un sistema.</li>
+<li>Procedimiento para atender requerimientos de autoridades: validación, revisión jurídica, mínimo necesario y registro.</li>
+<li>Paquete documental por sistema listo para entregar (ficha, riesgos, resumen de la evaluación de impacto).</li>
+<li>Directorio de contactos con las autoridades relevantes.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Registro integrado al de requisitos legales del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, con vigilancia regulatoria periódica.</li>
+<li>Calendario con alertas para los reportes periódicos.</li>
+<li>Versiones pública, para clientes y para autoridades de la documentación, con criterios de confidencialidad.</li>
+<li>Trazabilidad de cada entrega: qué versión, a quién y cuándo.</li>
+<li>Revisión anual del registro por el área jurídica y la dueña o dueño del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_4_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_4_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Registro de obligaciones de reporte vigente.</li>
+<li>Reportes entregados, con acuses o folios.</li>
+<li>Procedimiento y bitácora de requerimientos de autoridades.</li>
+<li>Evidencia de vigilancia regulatoria (boletines, análisis jurídicos).</li>
+<li>Contactos con autoridades y minutas de reuniones.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Qué obligaciones de informar sobre sus sistemas de IA tienen y de dónde provienen?</li>
+<li>Muéstrame el registro y la última vez que se actualizó.</li>
+<li>Si mañana una autoridad pide la documentación técnica de este sistema, ¿qué entregan y en cuánto tiempo?</li>
+<li>¿Quién autoriza qué información se comparte y cómo protegen la que es confidencial?</li>
+<li>¿Qué cambió en el registro cuando firmaron con un cliente en otro país?</li>
+<li>¿Cómo atenderían una solicitud de información de una autoridad investigadora?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Confundirlo con A.8.2 y documentar solo avisos a usuarios.</li>
+<li>Registrar solo leyes y olvidar contratos y cuestionarios de clientes.</li>
+<li>Afirmar "no tenemos obligaciones" sin un análisis documentado.</li>
+<li>Copiar obligaciones de otra jurisdicción (por ejemplo, de la UE) para operaciones que no están sujetas a ella.</li>
+<li>Tener el registro, pero no la documentación que habría que entregar.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> difícilmente: el control pide <em>determinar</em> las obligaciones, y aun si el resultado es que no hay ninguna, ese análisis documentado ya es la implementación. Si aun así se decide excluir, una redacción posible sería: "Se excluye A.8.5 porque el análisis jurídico de [fecha] no identificó obligaciones de reportar información sobre los sistemas de IA en alcance a clientes ni autoridades; se revisará anualmente." Lo recomendable es incluirlo y mantenerlo ligero.</p>
+<p><strong>No se justifica si…</strong> tienes clientes que piden informes sobre IA, operas en un sector regulado o tienes operaciones en jurisdicciones con regulación de IA.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a> · Controles: <a href="../a5-evaluacion-de-impacto/#a-5-3">A.5.3</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="#a-8-4">A.8.4</a>, <a href="../a10-terceros/#a-10-4">A.10.4</a> · ISO 27001: A.5.31 y A.5.5 · Normas: ISO/IEC 27001 · <strong>Anexo B:</strong> la guía B.8.5 explica que algunas jurisdicciones pueden exigir compartir información del sistema con autoridades, sugiere qué tipo de información podría pedirse y recuerda tener en cuenta los requisitos para entregar información a autoridades de procuración de justicia.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Contadores Alameda</label><label for="__tabbed_5_2">Monarca Crédito</label><label for="__tabbed_5_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Contadores Alameda <strong>usa</strong> IA de terceros, pero ante sus cerca de 400 <abbr title="Pequeñas y medianas empresas.">PyMEs</abbr> cliente es quien da la cara. Para <strong>A.8.2</strong> redactó con BotNorte el saludo de Alma: "Hola, soy Alma, asistente virtual con inteligencia artificial del despacho. Te ayudo con fechas, estatus de trámites y citas. No doy asesoría fiscal personalizada: para eso escribe ASESOR y te atiende una persona". También preparó una ficha interna para el equipo de atención con los temas que Alma no debe tocar y con qué hacer si un cliente insiste. Para <strong>A.8.3</strong> agregó a Alma la palabra clave REPORTE y publicó un correo de contacto; la Líder de atención a clientes revisa los casos cada semana. Para <strong>A.8.4</strong> su plan distingue "Alma dio una fecha equivocada" (aviso directo a los clientes que la consultaron, con la fecha correcta) de "fuga de datos en BotNorte" (procedimiento de vulneraciones con la Coordinadora de cumplimiento y datos personales). Para <strong>A.8.5</strong> su registro de obligaciones empezó por el cuestionario del banco cliente.</p>
+</div>
+<div class="tabbed-block">
+<p>Monarca <strong>desarrolla</strong> y <strong>usa</strong> su modelo de <em>score</em>, así que su información tiene dos públicos. Para los analistas de la banda gris hay un manual de uso del Score Monarca v3 con las limitaciones conocidas y los criterios para anular. Para los solicitantes, la app explica que la evaluación usa un modelo automatizado, presenta los principales motivos de un rechazo en lenguaje claro y ofrece pedir la revisión de una persona. Los reportes externos se integran al circuito de su UNE con la categoría "decisión automatizada". Su plan de incidentes incluye el escenario "deriva que eleva los rechazos", con revisión de las decisiones afectadas, y su registro de obligaciones contempla requerimientos de autoridades financieras y los cuestionarios de los bancos con los que busca aliarse.</p>
+</div>
+<div class="tabbed-block">
+<p>Conversa <strong>provee</strong> IA, así que su información tiene dos niveles: lo que entrega a cada cliente (ficha del sistema, límites del dominio, resultados de evaluaciones, guía de configuración) y lo que el cliente muestra a sus usuarios (aviso de IA activado por defecto, textos sugeridos, etiquetado de los mensajes generados). El botón "reportar esta respuesta" alimenta al mismo tiempo el panel del cliente y la cola del equipo de Confianza y Seguridad. Su plan de incidentes es el que muestra el diagrama de <a href="#a-8-4">A.8.4</a>, y su registro de obligaciones se organiza por país de sus clientes: México, Colombia, Chile y España. Para el cliente español, el análisis remite a <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: base para la información a usuarios y clientes.</li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a>: incluye la decisión de comunicar o no y su justificación.</li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a>: fuente de la información sobre beneficios y daños posibles.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>: dónde anotar canales, avisos y obligaciones por sistema.</li>
+<li>Casos completos: <a href="../../casos-practicos/pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a>, <a href="../../casos-practicos/fintech-scoring/">fintech de <em>scoring</em></a> y <a href="../../casos-practicos/empresa-desarrolla-chatbot/">empresa que desarrolla un chatbot</a>.</li>
+<li>Contexto regulatorio: <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a> · <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a> · <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>.</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:lfpdppp">
+<p>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, texto vigente publicado por la Cámara de Diputados: <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf</a> (consultado el 9 de octubre de 2026). Resumen propio; no es asesoría legal.&#160;<a class="footnote-backref" href="#fnref:lfpdppp" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 

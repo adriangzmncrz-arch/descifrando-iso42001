@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Qué medir en un SGIA y en tus sistemas de IA, cómo auditarlo internamente y cómo preparar la revisión por la dirección según la cláusula 9 de ISO/IEC 42001.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1305,6 +1305,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pide-explicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué pide, explicado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué pide, explicado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#c-9-1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1314,8 +1337,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-9-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1325,12 +1348,94 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#c-9-3" class="md-nav__link">
     <span class="md-ellipsis">
       
         9.3 Revisión por la dirección
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-ano-del-sgia-en-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El año del SGIA en un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-aplica-segun-tu-rol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se aplica según tu rol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-evidencia-espera-ver-un-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué evidencia espera ver un auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-resuelto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo resuelto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-con-otras-clausulas-controles-y-normas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación con otras cláusulas, controles y normas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-relacionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas relacionadas
       
     </span>
   </a>
@@ -2746,22 +2851,662 @@
 
 
 <h1 id="clausula-9-evaluacion-del-desempeno">Cláusula 9 · Evaluación del desempeño<a class="headerlink" href="#clausula-9-evaluacion-del-desempeno" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h7.81c-.36-.62-.61-1.3-.73-2H6V4h7v5h5v4.08c.33-.05.67-.08 1-.08.34 0 .67.03 1 .08V8l-6-6M8 12v2h8v-2m-8 4v2h5v-2Z"/></svg></span> Requisito certificable</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 22 min de lectura</span></p>
 </div>
-<h2 id="c-9-1">9.1 Seguimiento, medición, análisis y evaluación<a class="headerlink" href="#c-9-1" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-9-2">9.2 Auditoría interna<a class="headerlink" href="#c-9-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
-<h2 id="c-9-3">9.3 Revisión por la dirección<a class="headerlink" href="#c-9-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>La cláusula 9 te pide demostrar con datos que tu <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> funciona y que tus sistemas de IA se comportan como prometiste: defines qué medir, lo auditas con ojos objetivos y la alta dirección decide con esa información.</p>
+</div>
+<h2 id="proposito">Propósito<a class="headerlink" href="#proposito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Hasta la cláusula 8 construiste y pusiste a operar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>. La cláusula 9 es la fase <strong>Verificar</strong> del ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr>: la pregunta deja de ser "¿lo hicimos?" y pasa a ser "¿funciona?".</p>
+<p>En IA esa pregunta es más urgente que en otras disciplinas porque los sistemas se degradan en silencio. Un modelo de crédito que hoy trata parejo a todos los grupos puede dejar de hacerlo mañana porque cambió el perfil de quienes solicitan; un asistente que hoy responde bien puede empezar a inventar porque alguien cargó un documento contradictorio en su base de conocimiento. Nadie tocó el código y el sistema ya no es el que aprobaste. Si no mides, te enteras por una queja ante la Condusef o por una captura de pantalla en redes.</p>
+<p>La cláusula tiene tres piezas que se alimentan entre sí: <strong>9.1</strong> (¿cómo vamos, en números?), <strong>9.2</strong> (¿lo que decimos que hacemos se cumple y sirve?) y <strong>9.3</strong> (¿qué decidimos con todo esto?).</p>
+<div class="admonition tip">
+<p class="admonition-title">Analogía</p>
+<p>Piensa en tu salud. El glucómetro y la báscula de todos los días son 9.1: datos frecuentes y baratos que tú mismo registras. El chequeo anual con un médico que no eres tú es 9.2: alguien con criterio y distancia revisa si tus números cuentan la historia completa. La plática en familia para decidir si cambian la dieta y cuánto se gasta en el gimnasio es 9.3: ahí se toman las decisiones y se asignan recursos. Sin la báscula, el médico adivina; sin la plática familiar, el diagnóstico se queda en un papel.</p>
+</div>
+<h2 id="que-pide-explicado">Qué pide, explicado<a class="headerlink" href="#que-pide-explicado" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="c-9-1">9.1 Seguimiento, medición, análisis y evaluación<a class="headerlink" href="#c-9-1" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En nuestras palabras, 9.1 te obliga a tomar cuatro decisiones explícitas y a guardar evidencia de lo que resulte:</p>
+<ol>
+<li><strong>Qué vas a vigilar y medir</strong>: no todo, sino lo que te dice si el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y los sistemas de IA cumplen su propósito.</li>
+<li><strong>Con qué método</strong>, de modo que el resultado sea confiable. Una cifra que cambia según quién la calcula no sirve para decidir.</li>
+<li><strong>Cada cuánto se mide.</strong></li>
+<li><strong>Cada cuánto se analiza y se evalúa.</strong> Un tablero puede actualizarse cada hora y discutirse en comité una vez al mes.</li>
+</ol>
+<p>Con esos resultados documentados, la organización valora el desempeño del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y su eficacia, es decir, si logra lo que planificó. El <em>seguimiento</em> (<em>monitoring</em>) observa el estado de algo; la <em>medición</em> (<em>measurement</em>) le asigna un valor. En México se dice mucho "monitoreo" para lo primero.</p>
+<h4 id="dos-sentidos-de-desempeno">Dos sentidos de "desempeño"<a class="headerlink" href="#dos-sentidos-de-desempeno" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La norma usa <em>desempeño</em> (<em>performance</em>) en dos planos y lo aclara en su propia definición (3.11): puede referirse al sistema de gestión o a los resultados que logran los sistemas de IA. En nuestra lectura, conviene que 9.1 cubra ambos, porque los objetivos de IA (<a href="../c6-planificacion/#c-6-2">6.2</a>) suelen expresarse como métricas de los sistemas y porque el control de operación y monitoreo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>; en esta guía, los nombres de los controles son traducción libre de referencia) produce justamente esos datos.</p>
+<ul>
+<li><strong>Desempeño del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>:</strong> ¿el sistema de gestión hace lo que prometió? Evaluaciones de impacto a tiempo, acciones correctivas cerradas, personal capacitado, objetivos cumplidos.</li>
+<li><strong>Desempeño y efectos de los sistemas de IA:</strong> ¿cada sistema funciona según su uso previsto y sin causar daño? Precisión, deriva, equidad, alucinaciones, anulaciones humanas, quejas.</li>
+</ul>
+<h4 id="indicadores-de-ejemplo">Indicadores de ejemplo<a class="headerlink" href="#indicadores-de-ejemplo" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>Un <abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr> te dice si logras lo que te propusiste; un <abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr> te avisa que un riesgo se acerca a la zona que no estás dispuesto a aceptar. Las cifras son ilustrativas: conviene que tus umbrales salgan de tus criterios de riesgo (<a href="../c6-planificacion/#c-6-1-1">6.1.1</a>) y de tus objetivos.</p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Tipo</th>
+<th>Fórmula</th>
+<th>Frecuencia y fuente</th>
+<th>Umbral de ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Del sistema de gestión</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cumplimiento del programa de evaluaciones de impacto</td>
+<td><abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr></td>
+<td>Evaluaciones completadas en fecha ÷ programadas o detonadas por cambios</td>
+<td>Trimestral · inventario y registro de evaluaciones</td>
+<td>≥ 95 %; menos de 80 % se escala a la dirección</td>
+</tr>
+<tr>
+<td>Acciones correctivas cerradas a tiempo</td>
+<td><abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr></td>
+<td>Cerradas con eficacia verificada antes de su fecha ÷ las que vencían en el periodo</td>
+<td>Mensual · registro de no conformidades</td>
+<td>≥ 90 %</td>
+</tr>
+<tr>
+<td>Cobertura de capacitación en IA</td>
+<td><abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr></td>
+<td>Personas con rol en el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y capacitación vigente ÷ personas con rol</td>
+<td>Trimestral · plataforma de capacitación</td>
+<td>≥ 95 %</td>
+</tr>
+<tr>
+<td>IA fuera del inventario</td>
+<td><abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Herramientas de IA detectadas en uso sin registro</td>
+<td>Trimestral · tarjetas corporativas, filtro web, compras</td>
+<td>Ninguna con más de 30 días sin registrar</td>
+</tr>
+<tr>
+<td><strong>De los sistemas de IA</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Precisión o poder predictivo</td>
+<td><abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr></td>
+<td>Clasificador: AUC en muestra etiquetada reciente. Extracción: campos correctos ÷ campos extraídos</td>
+<td>Mensual · muestra fuera de tiempo, correcciones manuales</td>
+<td>Caída de más de 3 puntos frente a la línea base</td>
+</tr>
+<tr>
+<td>Tasa de alucinación medida</td>
+<td><abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Respuestas con alguna afirmación sin sustento en las fuentes autorizadas ÷ respuestas revisadas</td>
+<td>Semanal · muestreo de conversaciones con rúbrica</td>
+<td>≤ 2 %; desde 5 % se trata como incidente</td>
+</tr>
+<tr>
+<td>Deriva de datos (<em>data drift</em>)</td>
+<td><abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Índice de estabilidad poblacional (<em>population stability index</em>, PSI) de variables clave y de la salida</td>
+<td>Mensual · plataforma de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr></td>
+<td>&lt; 0.10 estable; 0.10 a 0.25 vigilar; &gt; 0.25 actuar</td>
+</tr>
+<tr>
+<td>Brecha de equidad entre grupos</td>
+<td><abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Tasa de resultado favorable del grupo menos favorecido ÷ la del más favorecido</td>
+<td>Trimestral · decisiones con el atributo, obtenido lícitamente</td>
+<td>Cociente ≥ 0.80 como alerta</td>
+</tr>
+<tr>
+<td>Tasa de anulación humana (<em>override rate</em>)</td>
+<td><abbr title="Indicador clave de desempeño (key performance indicator).">KPI</abbr> / <abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Decisiones de la IA modificadas por el supervisor ÷ decisiones que revisó</td>
+<td>Mensual · bitácora de revisión</td>
+<td>Banda esperada, p. ej., 5 % a 20 %</td>
+</tr>
+<tr>
+<td>Quejas atribuibles a la IA</td>
+<td><abbr title="Indicador clave de riesgo (key risk indicator).">KRI</abbr></td>
+<td>Quejas relacionadas con la IA por cada 10 000 interacciones o decisiones</td>
+<td>Mensual · CRM, canal de reporte externo</td>
+<td>Dos meses seguidos al alza disparan análisis</td>
+</tr>
+</tbody>
+</table>
+<p>Tres advertencias:</p>
+<ul>
+<li>Los cortes de PSI son una regla práctica muy difundida en riesgo de crédito, no un valor de la norma. El 0.80 viene de la llamada regla de los cuatro quintos, una heurística estadounidense del ámbito laboral: úsalo como alerta, no como frontera legal.</li>
+<li>La tasa de anulación se lee en dos sentidos. Casi cero puede significar que los analistas firman sin mirar (sesgo de automatización, <em>automation bias</em>); demasiado alta, que el modelo no sirve o nadie confía en él.</li>
+<li>Un promedio esconde problemas: 1 % de alucinaciones global puede ser 8 % en preguntas sobre coberturas, que son justo las que dañan.</li>
+</ul>
+<h4 id="metodos-que-den-resultados-validos">Métodos que den resultados válidos<a class="headerlink" href="#metodos-que-den-resultados-validos" title="Enlace permanente a esta sección">&para;</a></h4>
+<ul>
+<li><strong>Ficha por indicador con definiciones estables.</strong> Escribe qué cuenta como "alucinación" o como "queja atribuible a la IA" y qué población entra al cálculo. Si cambias la definición, marca el corte en la serie.</li>
+<li><strong>Muestras de tamaño razonable.</strong> Para estimar una tasa cercana a 3 % con ±1.5 puntos de margen y 95 % de confianza necesitas unos 500 casos; con 50 al mes solo sabes que "no es una catástrofe". Estratifica por canal, cliente, banda de <em>score</em> o tipo de pregunta.</li>
+<li><strong>Evaluadores calibrados.</strong> Si la medición depende de juicio humano, usa una rúbrica, entrena a los revisores y revisa por duplicado una fracción de la muestra. Si un modelo de IA hace de evaluador automático, compáralo antes contra revisión humana.</li>
+<li><strong>Indicadores adelantados y rezagados.</strong> En crédito, el incumplimiento se conoce meses después (análisis por cosechas); mientras tanto, vigila deriva, distribución de <em>scores</em> y tasa de aprobación.</li>
+<li><strong>Separación de funciones y responsables con nombre.</strong> Conviene que quien construyó el modelo no sea el único que reporta su desempeño. ISO 27001 pide definir quién mide y quién analiza; 42001 no lo enumera en 9.1, pero sin dueño los indicadores mueren en dos trimestres (<a href="../c5-liderazgo/#c-5-3">5.3</a>).</li>
+</ul>
+<details class="example">
+<summary>Ficha de indicador: exactitud de Alma en plazos fiscales (Contadores Alameda)</summary>
+<ul>
+<li><strong>Para qué sirve:</strong> evitar que el chatbot de WhatsApp cause recargos a clientes por informar plazos equivocados.</li>
+<li><strong>Definición:</strong> es incorrecta cualquier fecha u obligación que no coincida con el calendario fiscal que la Coordinadora de cumplimiento validó para ese mes.</li>
+<li><strong>Fórmula y muestra:</strong> respuestas con plazo correcto ÷ respuestas sobre plazos revisadas; 120 conversaciones al mes elegidas al azar, más todas las que terminaron en queja.</li>
+<li><strong>Frecuencia:</strong> medición mensual; análisis trimestral.</li>
+<li><strong>Umbral:</strong> ≥ 98 %. Por debajo de 95 %, Alma deja de responder sobre plazos y transfiere a una persona.</li>
+<li><strong>Responsables:</strong> Líder de atención a clientes (mide) y Gerente de TI (analiza y reporta).</li>
+</ul>
+</details>
+<h3 id="c-9-2">9.2 Auditoría interna<a class="headerlink" href="#c-9-2" title="Enlace permanente a esta sección">&para;</a></h3>
+<h4 id="921-generalidades">9.2.1 Generalidades<a class="headerlink" href="#921-generalidades" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La auditoría interna (<em>internal audit</em>) existe para que la organización se entere de sus fallas antes que el organismo de certificación (<abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr>). Se hace a intervalos planificados y responde dos preguntas. La primera es de <strong>conformidad</strong>: ¿el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> cumple lo que la propia organización definió y lo que pide ISO/IEC 42001? La segunda es de <strong>eficacia</strong>: ¿está implementado y se mantiene, o solo existe en documentos? Que exista un procedimiento de monitoreo de deriva es conformidad documental; que las alertas se atiendan en plazo es eficacia.</p>
+<h4 id="922-programa-de-auditoria-interna">9.2.2 Programa de auditoría interna<a class="headerlink" href="#922-programa-de-auditoria-interna" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>El programa de auditoría (<em>audit programme</em>) dice cuántas auditorías habrá, de qué, cada cuándo, con qué métodos, quién las hace y cómo se informan. Al diseñarlo se toman en cuenta la importancia de los procesos y lo que encontraron auditorías previas. Cada auditoría tiene objetivos, criterios y alcance; los auditores se eligen para que el proceso sea objetivo e imparcial, y los resultados llegan a la dirección que corresponde. Todo con evidencia documentada.</p>
+<p><strong>Un programa basado en riesgo.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Área auditable</th>
+<th>Frecuencia sugerida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistemas de IA de alto impacto en personas (crédito, empleo, salud, coberturas de seguros)</td>
+<td>Cada 6 meses o tras cambios significativos</td>
+</tr>
+<tr>
+<td>Procesos centrales: riesgos, impacto, tratamiento, incidentes, acciones correctivas, proveedores</td>
+<td>Anual</td>
+</tr>
+<tr>
+<td>Sistemas de bajo impacto (asistentes de productividad)</td>
+<td>Al menos una vez en el ciclo de certificación, por muestreo</td>
+</tr>
+<tr>
+<td>Áreas con hallazgos previos o incidentes recientes</td>
+<td>En la siguiente auditoría, sin excepción</td>
+</tr>
+</tbody>
+</table>
+<p>En la práctica, antes de certificar, los <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr> esperan ver un ciclo completo de auditoría interna que cubra las cláusulas 4 a 10 y los controles aplicables de tu Declaración de Aplicabilidad, seguido de una revisión por la dirección (ver <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>).</p>
+<p><strong>Competencia del auditor interno.</strong> Auditar un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> exige dos conocimientos que pocas veces vienen juntos: <strong>sistemas de gestión y técnica de auditoría</strong> (muestrear, entrevistar, redactar hallazgos; la guía general es ISO 19011) e <strong>IA suficiente para hacer buenas preguntas</strong> (entrenamiento frente a inferencia, precisión, deriva, sesgo, cómo funciona un asistente con <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>, qué es una inyección de instrucciones o <em>prompt injection</em>). Si no los tienes en una persona, forma un equipo: auditor líder de sistemas de gestión más un experto técnico en IA ajeno al sistema auditado, con su competencia documentada (<a href="../c7-apoyo/#c-7-2">7.2</a>).</p>
+<p><strong>Objetividad e imparcialidad.</strong> Nadie audita su propio trabajo: el Líder de Ciencia de Datos de Monarca no audita la validación de su equipo, y el Gerente de TI que diseñó el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> de Contadores Alameda no puede ser su único auditor. La norma no exige independencia total, sino un proceso objetivo e imparcial. Opciones para una <abbr title="Pequeña y mediana empresa.">PyME</abbr>:</p>
+<ul>
+<li><strong>Auditor externo contratado.</strong> Sigue siendo auditoría interna (de primera parte) aunque la ejecute un tercero en nombre de la organización. Te recomendamos que no sea la misma consultoría que te ayudó a implementar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</li>
+<li><strong>Intercambio entre áreas</strong>, con capacitación previa: cumplimiento audita a TI y viceversa.</li>
+<li><strong>Intercambio entre organizaciones</strong> que no compiten, con convenio de confidencialidad y cuidado de los datos personales que se verán.</li>
+</ul>
+<p><strong>Técnicas para auditar IA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Técnica</th>
+<th>Cómo se ve en la práctica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muestreo de evaluaciones de impacto</td>
+<td>Tomar 5 de 20 y comprobar que se hicieron antes del despliegue, que consideran el uso indebido previsible, que alimentaron la evaluación de riesgos y que se repitieron tras cambios (<a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>)</td>
+</tr>
+<tr>
+<td>Trazabilidad de punta a punta de un modelo</td>
+<td>Seguir un sistema desde sus requisitos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>), datos, pruebas con criterios de aceptación (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>) y aprobación del despliegue hasta el monitoreo con umbrales (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>) y los incidentes</td>
+</tr>
+<tr>
+<td>Revisión de registros de eventos</td>
+<td>Pedir los registros de un día que elige el auditor; verificar que contienen lo que promete la ficha del sistema (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) y que las salidas fuera de rango se atendieron</td>
+</tr>
+<tr>
+<td>Entrevistas a supervisores humanos</td>
+<td>Preguntar a los analistas qué hacen cuando no coinciden con el modelo, cuánto tiempo tienen por caso y si alguien les reclama por anular; contrastar con la tasa de anulación</td>
+</tr>
+<tr>
+<td>Recálculo y prueba de recorrido</td>
+<td>Recalcular una brecha de equidad con los datos fuente; conversar con el chatbot como cliente para ver si avisa que es IA y si transfiere a una persona cuando debe</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Plan de auditoría de ejemplo: Monarca Crédito, dos días.</strong> Objetivo: verificar conformidad y eficacia del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> aplicado a Score Monarca v3 (IA-01). Criterios: ISO/IEC 42001, política de IA, metodología de riesgos, procedimiento del ciclo de vida y Declaración de Aplicabilidad. Alcance: 6.1, 8.2 a 8.4, 9.1 y 10.2, y los controles de A.5, A.6.2, A.7, A.8 y A.9 aplicados a IA-01. Equipo: auditora líder externa y una científica de datos del área de cobranza como experta técnica.</p>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Actividad</th>
+<th>Personas auditadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Día 1 · mañana</td>
+<td>Apertura; criterios de riesgo, evaluación y plan de tratamiento; muestreo de evaluaciones de impacto</td>
+<td>Director de Riesgos, Oficial de Cumplimiento, Oficial de Privacidad</td>
+</tr>
+<tr>
+<td>Día 1 · tarde</td>
+<td>Trazabilidad de requisitos a aprobación del Comité de Modelos; tablero de deriva y equidad con recálculo</td>
+<td>Líder de Ciencia de Datos, equipo de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr></td>
+</tr>
+<tr>
+<td>Día 2 · mañana</td>
+<td>Registros de eventos de un día al azar; entrevistas a tres analistas de la banda gris</td>
+<td><abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr>, analistas de crédito</td>
+</tr>
+<tr>
+<td>Día 2 · tarde</td>
+<td>Reconsideraciones y quejas; incidentes y acciones correctivas; cierre</td>
+<td>Atención a clientes, Oficial de Cumplimiento</td>
+</tr>
+</tbody>
+</table>
+<p>Para preparar la tuya, usa el <a href="../../auditoria/checklist-preparacion/">checklist de preparación</a> y la plantilla de <a href="../../plantillas/#checklist-auditoria-interna">checklist de auditoría interna</a>. Para redactar hallazgos con evidencia y clasificación, revisa los <a href="../../auditoria/hallazgos-ejemplo/">hallazgos de ejemplo</a>.</p>
+<h3 id="c-9-3">9.3 Revisión por la dirección<a class="headerlink" href="#c-9-3" title="Enlace permanente a esta sección">&para;</a></h3>
+<h4 id="931-generalidades">9.3.1 Generalidades<a class="headerlink" href="#931-generalidades" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>En la revisión por la dirección (<em>management review</em>), la alta dirección examina el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> a intervalos planificados para confirmar que sigue siendo idóneo, adecuado y eficaz (en <a href="../c10-mejora/#c-10-1">10.1</a> explicamos cada palabra con ejemplos). Dos aclaraciones:</p>
+<ul>
+<li><strong>Es de la alta dirección, no del responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</strong> El Gerente de TI de Contadores Alameda prepara la información, pero quien revisa y decide es la socia directora. Sin dirección no hay revisión: hay una junta de seguimiento.</li>
+<li><strong>No tiene que ser una reunión aparte.</strong> Puede integrarse al comité de riesgos o al consejo si la agenda cubre lo necesario y la minuta registra decisiones. Muchas organizaciones con ISO 27001 la hacen junto con la revisión del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</li>
+</ul>
+<h4 id="932-entradas">9.3.2 Entradas<a class="headerlink" href="#932-entradas" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La norma fija un mínimo de temas. Dicho con nuestras palabras y en otro orden: la evolución del desempeño (no conformidades y acciones correctivas, resultados de medición, resultados de auditoría); en qué quedaron los acuerdos anteriores; qué cambió afuera y adentro de la organización; qué cambió en lo que esperan las partes interesadas; y qué oportunidades de mejora hay.</p>
+<p><strong>Lo que conviene agregar aunque la lista no lo diga:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entrada adicional</th>
+<th>Por qué conviene</th>
+<th>De dónde sale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resultados de la evaluación de riesgos y estado del plan de tratamiento</td>
+<td>La dirección aprueba el plan y acepta los riesgos residuales (6.1.3); revisar su avance sostiene esa aprobación</td>
+<td><a href="../c8-operacion/#c-8-2">8.2</a>, <a href="../c8-operacion/#c-8-3">8.3</a></td>
+</tr>
+<tr>
+<td>Resultados de las evaluaciones de impacto</td>
+<td>Muestran efectos en personas y sociedad que no aparecen en indicadores financieros</td>
+<td><a href="../c8-operacion/#c-8-4">8.4</a></td>
+</tr>
+<tr>
+<td>Retroalimentación de partes interesadas</td>
+<td>Quejas, reportes externos, cuestionarios de clientes y bancos</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a></td>
+</tr>
+<tr>
+<td>Incidentes de IA y su comunicación</td>
+<td>La evidencia más directa de que algo no funciona</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../c10-mejora/#c-10-2">10.2</a></td>
+</tr>
+<tr>
+<td>Cambios regulatorios</td>
+<td>Las reglas de IA y de datos personales cambian rápido en la región y en la UE</td>
+<td><a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>, <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a></td>
+</tr>
+</tbody>
+</table>
+<p>Suma también el cumplimiento de los objetivos de IA (<a href="../c6-planificacion/#c-6-2">6.2</a>), el desempeño de los proveedores de IA (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>) y la suficiencia de recursos (<a href="../c7-apoyo/#c-7-1">7.1</a>).</p>
+<div class="admonition note">
+<p class="admonition-title">Una diferencia con ISO 27001 que conviene leer con cuidado</p>
+<p>La lista de entradas de ISO/IEC 27001:2022 nombra de forma expresa la retroalimentación de las partes interesadas y los resultados de la evaluación de riesgos junto con el estado del plan de tratamiento; la de 42001 no. En nuestra lectura, eso no invita a omitirlos: la dirección aprueba el plan y acepta los riesgos residuales, y 8.2 y 8.3 generan esa información, así que llevarla a la revisión es la forma más simple de demostrar que la dirección está al tanto. Algunos auditores con formación en 27001 la esperarán por costumbre; otros no la exigirán. Incluirla evita la discusión.</p>
+</div>
+<h4 id="933-resultados">9.3.3 Resultados<a class="headerlink" href="#933-resultados" title="Enlace permanente a esta sección">&para;</a></h4>
+<p>La revisión tiene que terminar en decisiones —qué oportunidades de mejora se aprovechan y qué cambios necesita el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>— con evidencia documentada. Una buena minuta registra una conclusión explícita sobre idoneidad, adecuación y eficacia; decisiones con responsable, fecha y recursos; riesgos residuales aceptados y su vigencia; cambios a política, objetivos, alcance o Declaración de Aplicabilidad; y decisiones sobre sistemas concretos: seguir, limitar, reentrenar o retirar.</p>
+<p><strong>Agenda de ejemplo (dos horas)</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tema</th>
+<th>Presenta</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Estado de acuerdos anteriores; cambios de contexto, regulatorios y de partes interesadas</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, Cumplimiento</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tablero de indicadores del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y de los sistemas de IA, con tendencias</td>
+<td>Dueños de sistemas</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Incidentes, no conformidades, acciones correctivas y resultados de auditoría</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, auditor interno</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Riesgos, evaluaciones de impacto, plan de tratamiento y riesgos residuales por aceptar</td>
+<td>Dueños de los riesgos</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Retroalimentación de clientes, usuarios y proveedores</td>
+<td>Atención a clientes</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Oportunidades de mejora, recursos y decisiones</td>
+<td>Alta dirección</td>
+<td>15 min</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Estructura de minuta</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>MINUTA DE REVISIÓN POR LA DIRECCIÓN DEL SGIA
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Fecha · medio · número de sesión · asistentes (nombre y cargo)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>1. Entradas revisadas (enlace o anexo de cada una)
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>2. Conclusión: idóneo / adecuado / eficaz (sí, con ajustes, en parte) y fundamento
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>3. Decisiones: N.º | decisión | responsable | fecha | recursos aprobados
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>4. Riesgos residuales aceptados (riesgo, nivel, vigencia)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>5. Cambios al SGIA (política, objetivos, alcance, SoA, procesos)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>6. Fecha de la próxima revisión · aprobación de la alta dirección
+</span></code></pre></div>
+<h3 id="el-ano-del-sgia-en-un-vistazo">El año del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> en un vistazo<a class="headerlink" href="#el-ano-del-sgia-en-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Las tres piezas, junto con las reevaluaciones de <a href="../c8-operacion/#c-8-2">8.2</a> y <a href="../c8-operacion/#c-8-4">8.4</a>, forman un calendario. El orden importa: la auditoría interna y el cierre de sus hallazgos alimentan la revisión por la dirección, y conviene que esta ocurra antes de la auditoría del <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr>.</p>
+<pre class="mermaid"><code>gantt
+    title Calendario anual del SGIA · ejemplo
+    dateFormat YYYY-MM-DD
+    axisFormat %m/%y
+    section Seguimiento 9.1
+    Tableros mensuales de los sistemas de IA :active, s1, 2027-01-01, 2027-12-31
+    Comité de indicadores T1 :milestone, s2, 2027-04-20, 0d
+    Comité de indicadores T2 :milestone, s3, 2027-07-20, 0d
+    Comité de indicadores T3 :milestone, s4, 2027-10-08, 0d
+    section Reevaluaciones 8.2 y 8.4
+    Reevaluación de riesgos de IA :r1, 2027-02-01, 30d
+    Reevaluación de impacto de sistemas críticos :r2, 2027-03-03, 30d
+    section Auditoría interna 9.2
+    Auditoría de sistemas de alto impacto :a1, 2027-05-10, 5d
+    Auditoría del resto del SGIA :a2, 2027-08-02, 10d
+    Cierre de hallazgos :a3, 2027-08-16, 45d
+    section Revisión por la dirección 9.3
+    Preparación de entradas :d1, 2027-10-01, 14d
+    Revisión por la dirección :milestone, d2, 2027-10-20, 0d
+    Seguimiento de acuerdos :d3, 2027-10-21, 60d
+    section Certificación
+    Auditoría de seguimiento del OC :c1, 2027-11-22, 3d</code></pre>
+<p>Las reevaluaciones también se disparan fuera de calendario ante cambios significativos, incidentes graves o un indicador que cruza su umbral.</p>
+<h2 id="como-se-aplica-segun-tu-rol">Cómo se aplica según tu rol<a class="headerlink" href="#como-se-aplica-segun-tu-rol" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Si usas IA de terceros</label><label for="__tabbed_1_2">Si desarrollas IA</label><label for="__tabbed_1_3">Si provees IA a clientes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> no ve el modelo por dentro, así que mide lo que sí controla: lo que reciben sus clientes y lo que hace su personal con la IA.</p>
+<ul>
+<li><strong>9.1:</strong> exactitud de Alma en plazos fiscales (ver la ficha de arriba), quejas por WhatsApp relacionadas con el chatbot, campos de CFDI corregidos a mano en IA-03 y alertas de la herramienta de prevención de fuga de datos (<em>data loss prevention</em>, DLP) por RFC, CURP o nóminas pegados en instrucciones. A BotNorte le pide reportes de disponibilidad y aviso de cada cambio de versión del modelo.</li>
+<li><strong>9.2:</strong> con 58 personas no hay área de auditoría. Conviene contratar a un auditor externo que no haya participado en la implementación y pedirle una prueba de recorrido con Alma como si fuera cliente.</li>
+<li><strong>9.3:</strong> la socia directora preside una revisión semestral dentro de la junta de socios. Entrada obligada: el cuestionario del banco cliente y qué tanto puede responder ya el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con evidencia.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> controla datos, modelo y decisiones, y eso eleva lo que espera el auditor.</p>
+<ul>
+<li><strong>9.1:</strong> poder predictivo por cosecha, deriva, brechas de equidad por sexo, edad y entidad federativa, tasa de anulación en la banda gris, tiempo de respuesta a reconsideraciones y quejas en la unidad especializada de atención a usuarios. El Comité de Modelos analiza cada mes y eleva conclusiones cada trimestre.</li>
+<li><strong>9.2:</strong> la auditoría interna corporativa conduce, con una científica de datos de otro equipo como experta técnica. IA-02 se audita junto con IA-01, porque hereda sus datos y sus posibles sesgos.</li>
+<li><strong>9.3:</strong> la dirección general y el Comité de Modelos revisan una vez al año, más una sesión extraordinaria si un indicador de equidad cruza su umbral.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> mide su plataforma y lo que ve cada cliente.</p>
+<ul>
+<li><strong>9.1:</strong> tasa de alucinación por cliente y por tipo de pregunta, respuestas con cita a la base de conocimiento, bloqueos de los filtros de seguridad, resultado de las pruebas de inyección de instrucciones por versión e incidentes por cliente. Cada cliente recibe un reporte mensual de calidad (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>).</li>
+<li><strong>9.2:</strong> además, recibe auditorías de segunda parte de aseguradoras y universidades; un buen programa interno deja lista la evidencia. La Responsable de <em>Trust &amp; Safety</em> es dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, así que no puede auditarlo: conviene un auditor externo o alguien de ingeniería ajeno a la orquestación.</li>
+<li><strong>9.3:</strong> el CEO y el CTO encabezan la revisión. Conviene no omitir los cambios del proveedor del modelo fundacional, la retroalimentación de Customer Success y las obligaciones derivadas del cliente en España (<a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>).</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<ul>
+<li><strong>Misma arquitectura.</strong> 9.1, 9.2.1, 9.2.2 y 9.3.1 a 9.3.3 siguen la estructura armonizada, igual que ISO/IEC 27001:2022. Un solo programa de auditoría y una sola revisión por la dirección pueden cubrir ambos sistemas.</li>
+<li><strong>El "quién" en 9.1</strong> y <strong>las entradas de 9.3.2:</strong> ISO 27001 los nombra de forma más explícita (quién mide y analiza; retroalimentación de partes interesadas, riesgos y plan de tratamiento). En 42001 conviene incluirlos igual.</li>
+<li><strong>Qué se mide.</strong> En un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, sobre todo la eficacia de controles de seguridad. En un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, además, el comportamiento de los sistemas y sus efectos en personas.</li>
+<li><strong>Competencia del auditor.</strong> Sin nociones de IA, un auditor de 27001 puede verificar documentos, pero difícilmente juzgará si la validación de un modelo es suficiente.</li>
+</ul>
+</div>
+<h2 id="preguntas-para-tu-organizacion">Preguntas para tu organización<a class="headerlink" href="#preguntas-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tienes indicadores para ambos planos: el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y cada sistema de IA relevante?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Cada indicador tiene definición, fórmula, fuente, frecuencia, umbral y responsable?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Sabes qué pasa si un indicador cruza su umbral mañana, y quién actúa?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tus muestras son lo bastante grandes y están estratificadas para ver problemas en grupos pequeños?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tu programa de auditoría visita más seguido los sistemas de mayor impacto y las áreas con hallazgos previos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿Tus auditores internos entienden de IA y no auditan su propio trabajo?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La auditoría prueba la operación (registros, recálculos, entrevistas) o solo revisa documentos?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ¿La revisión por la dirección incluye riesgos, impactos, incidentes y retroalimentación, aunque la lista de 42001 no los nombre?</li>
+</ul>
+<h2 id="que-evidencia-espera-ver-un-auditor">Qué evidencia espera ver un auditor<a class="headerlink" href="#que-evidencia-espera-ver-un-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Evidencia</th>
+<th>Ejemplo</th>
+<th>Señal de alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Catálogo de indicadores</td>
+<td>Fichas con definición, fórmula, umbral y responsable</td>
+<td>Solo métricas del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y ninguna de los sistemas</td>
+</tr>
+<tr>
+<td>Resultados y análisis</td>
+<td>Tableros, reportes de muestreo, minutas del comité</td>
+<td>Indicadores en rojo sin acción; definiciones que cambian sin registro</td>
+</tr>
+<tr>
+<td>Programa de auditoría interna</td>
+<td>Plan de varios años con prioridades y cobertura de cláusulas y controles</td>
+<td>Programa idéntico cada año, sin relación con riesgos ni hallazgos</td>
+</tr>
+<tr>
+<td>Planes e informes de auditoría</td>
+<td>Objetivo, criterios, alcance, muestras, hallazgos con evidencia</td>
+<td>Cero hallazgos en todas las auditorías</td>
+</tr>
+<tr>
+<td>Competencia e imparcialidad de auditores</td>
+<td>Capacitación en ISO 42001 y en IA, declaración de no conflicto</td>
+<td>El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> audita su propio sistema</td>
+</tr>
+<tr>
+<td>Minutas de revisión y seguimiento</td>
+<td>Entradas, conclusiones, decisiones con recursos, bitácora de acuerdos</td>
+<td>Presentación sin decisiones; acuerdos que reaparecen idénticos</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Errores comunes</p>
+<ul>
+<li>Medir solo lo fácil (capacitaciones, documentos aprobados) y nada del comportamiento real de los sistemas de IA.</li>
+<li>Confiar en la métrica del proveedor sin ninguna verificación propia.</li>
+<li>Tableros con cuarenta indicadores decorativos en lugar de ocho bien definidos.</li>
+<li>Nombrar como auditor interno al responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> o al equipo que desarrolló el modelo.</li>
+<li>Convertir la revisión por la dirección en un informe por correo sin que nadie decida nada.</li>
+<li>Copiar la agenda de 27001 sin entradas propias de IA o, al revés, quitar riesgos y retroalimentación porque 42001 no los lista.</li>
+</ul>
+</div>
+<h2 id="ejemplo-resuelto">Ejemplo resuelto<a class="headerlink" href="#ejemplo-resuelto" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="example">
+<summary>Caso: Monarca Crédito — tablero trimestral de equidad y deriva y revisión por la dirección</summary>
+<p><strong>Contexto.</strong> Score Monarca v3 (IA-01) clasifica solicitudes en aprobación automática, rechazo automático y banda gris de revisión humana. El Comité de Modelos revisa el tablero cada mes y cada trimestre eleva conclusiones.</p>
+<table>
+<thead>
+<tr>
+<th>Indicador del tercer trimestre</th>
+<th>T2</th>
+<th>T3</th>
+<th>Umbral</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUC en la última cosecha observable</td>
+<td>0.74</td>
+<td>0.71</td>
+<td>≥ 0.72</td>
+<td>Rojo</td>
+</tr>
+<tr>
+<td>PSI de la distribución de <em>scores</em></td>
+<td>0.06</td>
+<td>0.19</td>
+<td>&lt; 0.10; rojo desde 0.25</td>
+<td>Ámbar</td>
+</tr>
+<tr>
+<td>PSI de "ingreso declarado"</td>
+<td>0.08</td>
+<td>0.27</td>
+<td>&lt; 0.10; rojo desde 0.25</td>
+<td>Rojo</td>
+</tr>
+<tr>
+<td>Cociente de aprobación mujeres ÷ hombres</td>
+<td>0.93</td>
+<td>0.91</td>
+<td>≥ 0.85</td>
+<td>Verde</td>
+</tr>
+<tr>
+<td>Cociente de aprobación 18 a 25 años ÷ 26 a 55 años</td>
+<td>0.86</td>
+<td>0.78</td>
+<td>≥ 0.85</td>
+<td>Rojo</td>
+</tr>
+<tr>
+<td>Tasa de anulación en la banda gris</td>
+<td>11 %</td>
+<td>4 %</td>
+<td>6 % a 20 %</td>
+<td>Ámbar</td>
+</tr>
+<tr>
+<td>Quejas por decisiones automatizadas por 10 000 solicitudes</td>
+<td>3.1</td>
+<td>4.6</td>
+<td>≤ 4.0</td>
+<td>Rojo</td>
+</tr>
+</tbody>
+</table>
+<p>Monarca fijó un cociente mínimo de 0.85, más exigente que la referencia de 0.80, porque su evaluación de impacto calificó como alta la severidad de negar crédito a grupos con menos acceso a financiamiento.</p>
+<p><strong>El análisis del Comité de Modelos.</strong> Al cruzar los indicadores apareció una historia coherente:</p>
+<ol>
+<li>Una campaña en redes sociales atrajo a muchos jóvenes con expediente delgado (poco o ningún historial en buró). Eso explica la deriva del ingreso declarado y de los <em>scores</em>.</li>
+<li>El modelo castiga la poca antigüedad crediticia, que se correlaciona con la edad y funciona como variable sustituta (<em>proxy</em>). Por eso cayó el cociente de 18 a 25 años aunque la edad no sea variable del modelo.</li>
+<li>La tasa de anulación cayó cuando una nueva pantalla para analistas empezó a mostrar preseleccionada la opción de aceptar la recomendación. En entrevistas, dos analistas reconocieron que casi nunca la cambiaban. Es sesgo de automatización: la supervisión humana dejó de operar como se diseñó y se abrió una no conformidad (<a href="../c10-mejora/#c-10-2">10.2</a>).</li>
+<li>Las quejas subieron por rechazos automáticos de jóvenes sin un motivo comprensible.</li>
+</ol>
+<p><strong>La revisión por la dirección de octubre</strong> incluyó, además de las entradas mínimas, el estado del plan de tratamiento, la reevaluación de impacto de IA-01, la auditoría interna de mayo (que ya había observado que el umbral de equidad por edad no tenía una reacción predefinida) y un punto sobre consentimientos para datos de la app, a cargo del Oficial de Privacidad. Extracto de la minuta:</p>
+<table>
+<thead>
+<tr>
+<th>N.º</th>
+<th>Decisión</th>
+<th>Responsable</th>
+<th>Plazo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Recalibrar el modelo con datos de los últimos 12 meses como cambio significativo: nueva evaluación de impacto y validación independiente antes de desplegar; se aprueba un científico de datos externo por dos meses</td>
+<td>Director de Riesgos</td>
+<td>90 días</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Medida temporal: solicitantes de 18 a 25 años con expediente delgado que caerían en rechazo automático pasan a la banda gris; dos analistas adicionales</td>
+<td>Líder de Ciencia de Datos</td>
+<td>7 días</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Quitar la preselección de la pantalla y capacitar a los analistas en sesgo de automatización</td>
+<td>Director de Riesgos</td>
+<td>30 días</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Aceptar el riesgo residual de un AUC de 0.71 por 90 días con monitoreo semanal; si baja de 0.70, se suspende la aprobación automática</td>
+<td>Director de Riesgos</td>
+<td>Vigencia de 90 días</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nuevo indicador de aprobación por antigüedad en buró y motivos de rechazo más claros para el solicitante</td>
+<td>Oficial de Cumplimiento</td>
+<td>60 días</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Revisar avisos de privacidad y consentimientos sobre datos de uso de la app frente a la legislación vigente</td>
+<td>Oficial de Privacidad</td>
+<td>45 días</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusión.</strong> El <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> se declaró idóneo y adecuado, pero eficaz solo en parte: el monitoreo detectó el problema a tiempo; en cambio, el umbral de equidad por edad no tenía reacción predefinida y la supervisión humana se erosionó dos meses sin que nadie lo notara.</p>
+<p><strong>Lo que miraría un auditor.</strong> Que el hilo sea continuo: tablero, minuta del comité, minuta de la dirección, acciones con evidencia, no conformidad en el registro y nueva evaluación de impacto antes del redespliegue. Si falta un eslabón, la historia se cae.</p>
+</details>
+<h2 id="relacion-con-otras-clausulas-controles-y-normas">Relación con otras cláusulas, controles y normas<a class="headerlink" href="#relacion-con-otras-clausulas-controles-y-normas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../c6-planificacion/#c-6-1-1">6.1.1</a> y <a href="../c6-planificacion/#c-6-2">6.2</a>: criterios de riesgo y objetivos de IA, fuente de umbrales e indicadores.</li>
+<li><a href="../c8-operacion/#c-8-1">8.1</a> a <a href="../c8-operacion/#c-8-4">8.4</a>: operación y reevaluaciones, que producen buena parte de los datos de 9.1.</li>
+<li><a href="../c5-liderazgo/#c-5-3">5.3</a>, <a href="../c7-apoyo/#c-7-2">7.2</a> y <a href="../c7-apoyo/#c-7-5">7.5</a>: quién informa del desempeño, competencia de los auditores y evidencia documentada.</li>
+<li><a href="../c10-mejora/#c-10-1">10.1</a> y <a href="../c10-mejora/#c-10-2">10.2</a>: lo que se decide en 9.3 y se encuentra en 9.2 se vuelve mejora y acción correctiva.</li>
+<li>Controles: <a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a> y <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>.</li>
+<li>Normas: ISO 19011 (auditoría de sistemas de gestión) e ISO/IEC 23894 (riesgos de IA) en <a href="../../fundamentos/familia-de-normas/">La familia de normas de IA</a>; la función de medición en <a href="../../integracion/nist-ai-rmf/"><abbr title="National Institute of Standards and Technology, organismo de normalización técnica de EE. UU.">NIST</abbr> AI <abbr title="Risk Management Framework: marco de gestión de riesgos (por ejemplo, el NIST AI RMF).">RMF</abbr></a>; auditoría y revisión unificadas con un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> en <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>.</li>
+<li>Auditoría: <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>, <a href="../../auditoria/preguntas-del-auditor/">Preguntas del auditor</a> y <a href="../../auditoria/hallazgos-ejemplo/">Hallazgos de ejemplo</a>.</li>
+</ul>
+<h2 id="plantillas-relacionadas">Plantillas relacionadas<a class="headerlink" href="#plantillas-relacionadas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#checklist-auditoria-interna">Checklist de auditoría interna</a></li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a></li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>, con los umbrales de monitoreo de cada sistema</li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a></li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a></li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

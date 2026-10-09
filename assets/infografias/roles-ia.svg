@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 840" role="img" aria-labelledby="ig-roles-ia-t ig-roles-ia-d">
+<title id="ig-roles-ia-t">Los seis roles de las partes en la IA y cómo cambian las obligaciones</title>
+<desc id="ig-roles-ia-d">Diagrama con un sistema de IA al centro y los seis roles de ISO/IEC 22989 alrededor. El productor de IA lo construye y opera; el proveedor de IA lo pone a disposición y entrega el producto o servicio al cliente de IA, que lo usa; el socio de IA lo integra o le aporta datos; al sujeto de IA le llegan sus efectos; las autoridades pertinentes fijan reglas y supervisan. Una franja inferior resume cómo cambian las obligaciones: el cliente se enfoca en el uso responsable (A.9 y A.10.3), el productor en el ciclo de vida y los datos (A.6 y A.7), el proveedor en la información y los clientes (A.8 y A.10.4) y el socio en el reparto de responsabilidades y la procedencia de los datos (A.10.2 y A.7.5). Sujetos y autoridades no se certifican como rol, pero elevan la exigencia de evaluación de impacto (A.5) y de transparencia (A.8).</desc>
+<text x="450" y="32" text-anchor="middle" font-size="19" font-weight="700">Seis roles frente a un sistema de IA</text>
+<text x="450" y="54" text-anchor="middle" font-size="13" class="ig-muted">según ISO/IEC 22989, a la que remite la cláusula 4.1 de ISO/IEC 42001</text>
+<line x1="236.0" y1="202.0" x2="374.1" y2="271.7" class="ig-line-strong" stroke-width="2"/>
+<polygon points="382.2,275.8 369.9,275.7 374.8,265.9" fill="currentColor"/>
+<line x1="450.0" y1="202.0" x2="450.0" y2="225.0" class="ig-line-strong" stroke-width="2"/>
+<polygon points="450.0,234.0 444.5,223.0 455.5,223.0" fill="currentColor"/>
+<line x1="664.0" y1="202.0" x2="525.9" y2="271.7" class="ig-line-strong" stroke-width="2"/>
+<polygon points="517.8,275.8 525.2,265.9 530.1,275.7" fill="currentColor"/>
+<line x1="574.0" y1="150.0" x2="627.0" y2="150.0" class="ig-line-strong" stroke-width="2"/>
+<polygon points="636.0,150.0 625.0,155.5 625.0,144.5" fill="currentColor"/>
+<text x="605" y="140" text-anchor="middle" font-size="13" font-weight="700">entrega</text>
+<line x1="236.0" y1="400.0" x2="371.6" y2="343.0" class="ig-line-strong" stroke-width="2"/>
+<polygon points="379.9,339.5 371.9,348.8 367.7,338.7" fill="currentColor"/>
+<line x1="518.2" y1="338.7" x2="655.7" y2="396.5" class="ig-line-strong" stroke-width="2"/>
+<polygon points="664.0,400.0 651.7,400.8 656.0,390.7" fill="currentColor"/>
+<line x1="450.0" y1="470.0" x2="450.0" y2="395.0" class="ig-line-strong" stroke-width="2" stroke-dasharray="6 5"/>
+<polygon points="450.0,386.0 455.5,397.0 444.5,397.0" fill="currentColor"/>
+<circle cx="450" cy="310" r="72" class="ig-brand"/>
+<text x="450" y="304" text-anchor="middle" font-size="19" font-weight="700" class="ig-on-color">Sistema</text>
+<text x="450" y="326" text-anchor="middle" font-size="19" font-weight="700" class="ig-on-color">de IA</text>
+<rect x="236.0" y="226.0" width="128" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="300.0" y="242.5" text-anchor="middle" font-size="13">construye y opera</text>
+<rect x="375.0" y="208.0" width="150" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="450.0" y="224.5" text-anchor="middle" font-size="13">lo pone a disposición</text>
+<rect x="573.0" y="226.0" width="62" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="604.0" y="242.5" text-anchor="middle" font-size="13">lo usa</text>
+<rect x="231.0" y="356.0" width="158" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="310.0" y="372.5" text-anchor="middle" font-size="13">integra o aporta datos</text>
+<rect x="526.0" y="356.0" width="132" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="592.0" y="372.5" text-anchor="middle" font-size="13">recibe sus efectos</text>
+<rect x="362.0" y="416.0" width="176" height="24" rx="12" class="ig-card" stroke-width="1"/>
+<text x="450.0" y="432.5" text-anchor="middle" font-size="13">fijan reglas y supervisan</text>
+<a href="#rol-productor">
+<rect x="20" y="76" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 20 110 L 20 88 Q 20 76 32 76 L 248 76 Q 260 76 260 88 L 260 110 Z" class="ig-brand"/>
+<text x="34" y="99" font-size="15" font-weight="700" class="ig-on-color">Productor de IA</text>
+<text x="34" y="129" font-size="13" font-style="italic" class="ig-muted">AI producer</text>
+<text x="34" y="149" font-size="13">diseña, desarrolla, prueba</text>
+<text x="34" y="167" font-size="13">y opera el sistema</text>
+<text x="34" y="187" font-size="13" class="ig-muted">Ej.: Monarca Crédito</text>
+</a>
+<a href="#rol-proveedor">
+<rect x="330" y="76" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 330 110 L 330 88 Q 330 76 342 76 L 558 76 Q 570 76 570 88 L 570 110 Z" class="ig-brand"/>
+<text x="344" y="99" font-size="15" font-weight="700" class="ig-on-color">Proveedor de IA</text>
+<text x="344" y="129" font-size="13" font-style="italic" class="ig-muted">AI provider</text>
+<text x="344" y="149" font-size="13">ofrece plataformas o</text>
+<text x="344" y="167" font-size="13">productos y servicios de IA</text>
+<text x="344" y="187" font-size="13" class="ig-muted">Ej.: BotNorte, Conversa Labs</text>
+</a>
+<a href="#rol-cliente">
+<rect x="640" y="76" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 640 110 L 640 88 Q 640 76 652 76 L 868 76 Q 880 76 880 88 L 880 110 Z" class="ig-brand"/>
+<text x="654" y="99" font-size="15" font-weight="700" class="ig-on-color">Cliente de IA</text>
+<text x="654" y="129" font-size="13" font-style="italic" class="ig-muted">AI customer</text>
+<text x="654" y="149" font-size="13">adquiere el sistema y lo usa;</text>
+<text x="654" y="167" font-size="13">incluye al usuario</text>
+<text x="654" y="187" font-size="13" class="ig-muted">Ej.: Contadores Alameda</text>
+</a>
+<a href="#rol-socio">
+<rect x="20" y="400" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 20 434 L 20 412 Q 20 400 32 400 L 248 400 Q 260 400 260 412 L 260 434 Z" class="ig-brand"/>
+<text x="34" y="423" font-size="15" font-weight="700" class="ig-on-color">Socio de IA</text>
+<text x="34" y="453" font-size="13" font-style="italic" class="ig-muted">AI partner</text>
+<text x="34" y="473" font-size="13">integrador de sistemas</text>
+<text x="34" y="491" font-size="13">o proveedor de datos</text>
+<text x="34" y="511" font-size="13" class="ig-muted">Ej.: buró de crédito</text>
+</a>
+<a href="#rol-sujeto">
+<rect x="640" y="400" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 640 434 L 640 412 Q 640 400 652 400 L 868 400 Q 880 400 880 412 L 880 434 Z" class="ig-accent"/>
+<text x="654" y="423" font-size="15" font-weight="700" class="ig-on-color">Sujeto de IA</text>
+<text x="654" y="453" font-size="13" font-style="italic" class="ig-muted">AI subject</text>
+<text x="654" y="473" font-size="13">titular de los datos u</text>
+<text x="654" y="491" font-size="13">otra persona afectada</text>
+<text x="654" y="511" font-size="13" class="ig-muted">Ej.: solicitante de crédito</text>
+</a>
+<a href="#rol-autoridad">
+<rect x="330" y="470" width="240" height="122" rx="12" class="ig-card" stroke-width="1.5"/>
+<path d="M 330 504 L 330 482 Q 330 470 342 470 L 558 470 Q 570 470 570 482 L 570 504 Z" class="ig-accent"/>
+<text x="344" y="493" font-size="15" font-weight="700" class="ig-on-color">Autoridades pertinentes</text>
+<text x="344" y="523" font-size="13" font-style="italic" class="ig-muted">relevant authorities</text>
+<text x="344" y="543" font-size="13">legisladores y reguladores;</text>
+<text x="344" y="561" font-size="13">vigilan a todos los demás</text>
+<text x="344" y="581" font-size="13" class="ig-muted">Ej.: Condusef, SAT</text>
+</a>
+<rect x="20" y="552" width="16" height="16" rx="4" class="ig-brand"/>
+<text x="44" y="565" font-size="13" class="ig-muted">roles que asume una organización</text>
+<rect x="20" y="576" width="16" height="16" rx="4" class="ig-accent"/>
+<text x="44" y="589" font-size="13" class="ig-muted">afectados y supervisores</text>
+<line x1="20" y1="612" x2="880" y2="612" class="ig-line" stroke-width="1"/>
+<text x="450" y="638" text-anchor="middle" font-size="16" font-weight="700">Cómo cambian las obligaciones</text>
+<g class="obj-a9">
+<rect x="20" y="654" width="206" height="112" rx="10" class="ig-tint"/>
+<rect x="20" y="654" width="6" height="112" rx="3" class="ig-obj"/>
+<text x="38" y="680" font-size="15" font-weight="700">Cliente</text>
+<text x="38" y="700" font-size="13" class="ig-muted">uso responsable</text>
+<a href="../../anexo-a/a9-uso/"><text x="38" y="728" font-size="14" font-weight="700" text-decoration="underline">A.9 Uso</text></a>
+<a href="../../anexo-a/a10-terceros/#a-10-3"><text x="38" y="750" font-size="14" font-weight="700" text-decoration="underline">A.10.3 Proveedores</text></a>
+</g>
+<g class="obj-a6">
+<rect x="238" y="654" width="206" height="112" rx="10" class="ig-tint"/>
+<rect x="238" y="654" width="6" height="112" rx="3" class="ig-obj"/>
+<text x="256" y="680" font-size="15" font-weight="700">Productor</text>
+<text x="256" y="700" font-size="13" class="ig-muted">ciclo de vida y datos</text>
+<a href="../../anexo-a/a6-ciclo-de-vida/"><text x="256" y="728" font-size="14" font-weight="700" text-decoration="underline">A.6 Ciclo de vida</text></a>
+<a href="../../anexo-a/a7-datos/"><text x="256" y="750" font-size="14" font-weight="700" text-decoration="underline">A.7 Datos</text></a>
+</g>
+<g class="obj-a8">
+<rect x="456" y="654" width="206" height="112" rx="10" class="ig-tint"/>
+<rect x="456" y="654" width="6" height="112" rx="3" class="ig-obj"/>
+<text x="474" y="680" font-size="15" font-weight="700">Proveedor</text>
+<text x="474" y="700" font-size="13" class="ig-muted">información y clientes</text>
+<a href="../../anexo-a/a8-informacion-partes-interesadas/"><text x="474" y="728" font-size="14" font-weight="700" text-decoration="underline">A.8 Información</text></a>
+<a href="../../anexo-a/a10-terceros/#a-10-4"><text x="474" y="750" font-size="14" font-weight="700" text-decoration="underline">A.10.4 Clientes</text></a>
+</g>
+<g class="obj-a10">
+<rect x="674" y="654" width="206" height="112" rx="10" class="ig-tint"/>
+<rect x="674" y="654" width="6" height="112" rx="3" class="ig-obj"/>
+<text x="692" y="680" font-size="15" font-weight="700">Socio</text>
+<text x="692" y="700" font-size="13" class="ig-muted">reparto y procedencia</text>
+<a href="../../anexo-a/a10-terceros/#a-10-2"><text x="692" y="728" font-size="14" font-weight="700" text-decoration="underline">A.10.2 Responsabilidades</text></a>
+<a href="../../anexo-a/a7-datos/#a-7-5"><text x="692" y="750" font-size="14" font-weight="700" text-decoration="underline">A.7.5 Procedencia</text></a>
+</g>
+<text x="450" y="796" text-anchor="middle" font-size="13" class="ig-muted">Sujetos y autoridades no se certifican como rol, pero elevan la exigencia de A.5 (impacto) y A.8 (transparencia).</text>
+<a href="../../herramientas/selector-de-rol/"><text x="450" y="820" text-anchor="middle" font-size="14" font-weight="700" text-decoration="underline">¿Cuál es tu rol? Usa el selector de rol</text></a>
+</svg>

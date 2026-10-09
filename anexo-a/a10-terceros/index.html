@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Qué pide el objetivo A.10 de ISO/IEC 42001 sobre relaciones con terceros y clientes - responsabilidad compartida, evaluación de proveedores de IA y atención a las necesidades de los clientes - con matriz de responsabilidades, cuestionario y ejemplos latinoamericanos.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1679,6 +1679,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#por-que-importa-este-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa este objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-controles-de-un-vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los controles de un vistazo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-10-2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1705,6 +1727,28 @@
     <span class="md-ellipsis">
       
         A.10.4 Clientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-ve-este-objetivo-en-los-casos-practicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se ve este objetivo en los casos prácticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-y-recursos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas y recursos relacionados
       
     </span>
   </a>
@@ -2746,22 +2790,425 @@
 
 
 <h1 id="a10-relaciones-con-terceros-y-clientes">A.10 · Relaciones con terceros y clientes<a class="headerlink" href="#a10-relaciones-con-terceros-y-clientes" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--obj obj-a10">A.10 · Terceros</span>
+<span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 3 controles</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 21 min de lectura</span></p>
 </div>
+<div class="dx-obj-banner obj-a10">
+<p><strong>El objetivo, en palabras simples:</strong> cuando proveedores, socios o clientes intervienen en cualquier momento de la vida de un sistema de IA, que cada quien sepa qué le toca, que los riesgos queden bien repartidos y que tu organización no pierda nunca su propia rendición de cuentas.</p>
+<p><strong>Lo que está en juego:</strong> la tierra de nadie. El proveedor cree que el cliente revisa, el cliente cree que el proveedor garantiza, y cuando algo falla nadie avisó, nadie corrigió y nadie responde.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>Puedes subcontratar partes de la IA, pero no la responsabilidad: A.10 te pide repartirla por escrito, vigilar lo que te entregan tus proveedores y entender lo que esperan tus clientes.</p>
+</div>
+<h2 id="por-que-importa-este-objetivo">Por qué importa este objetivo<a class="headerlink" href="#por-que-importa-este-objetivo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Piensa en la construcción de una casa. La dueña contrata a una constructora, que compra materiales a distintos proveedores y subcontrata la instalación eléctrica. Si el techo se filtra, el contrato dirá quién paga la reparación, pero quien vive bajo la gotera es la dueña; y si la constructora usó un impermeabilizante sin especificaciones, la responsabilidad ante su clienta sigue siendo suya. Una obra bien llevada tiene tres cosas: un reparto claro de responsabilidades, control de lo que entra de los proveedores y un entendimiento compartido de lo que la clienta espera y de lo que ella misma debe hacer para mantener la casa. Esos son, en ese orden, <strong>A.10.2</strong>, <strong>A.10.3</strong> y <strong>A.10.4</strong>.</p>
+<p>En IA la cadena es más larga y menos visible que en la mayoría de los servicios de TI. Un sistema típico combina un modelo fundacional de un tercero, datos de otro, bibliotecas de código abierto, una nube, un integrador y un cliente que lo despliega frente a sus propios usuarios. Cada eslabón decide algo que afecta el comportamiento final. Los riesgos que aborda este objetivo son:</p>
+<ul>
+<li><strong>Huecos de responsabilidad</strong>: tareas críticas (el aviso de IA, la calidad de la base de conocimiento, la atención de reportes) que nadie asumió.</li>
+<li><strong>Cambios unilaterales</strong>: el proveedor publica una nueva versión del modelo o modifica sus términos sobre el uso de tus datos.</li>
+<li><strong>Opacidad</strong>: componentes de terceros de los que no sabes con qué se entrenaron, cómo se evaluaron ni qué limitaciones tienen.</li>
+<li><strong>Dependencia</strong>: no poder cambiar de proveedor sin rehacer el sistema.</li>
+<li><strong>Uso fuera de dominio por el cliente</strong>: tu sistema funciona bien para lo que lo diseñaste, y el cliente lo usa para otra cosa.</li>
+</ul>
+<p><strong>Relación con las cláusulas.</strong> La cláusula <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> pide determinar tus roles respecto de cada sistema de IA, y una nota remite a los roles de ISO/IEC 22989 (proveedor, productor, cliente, socio, sujeto de IA, autoridades); A.10 es lo que haces con esos roles cuando hay más de una organización involucrada (ver <a href="../../fundamentos/roles-en-la-ia/">roles en la IA</a>). La <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> pide controlar los procesos, productos o servicios externos relevantes para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, y A.10.3 es la herramienta para hacerlo. La <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a> pide entender a las partes interesadas, y A.10.4 lo aterriza para los clientes. Y las evaluaciones de riesgo e impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>) tienen que considerar lo que aportan y deciden los terceros.</p>
+<p><strong>Cómo cambia según tu rol.</strong> A.10.2 y A.10.3 aplican a los tres roles; A.10.4 solo a quien provee IA a clientes.</p>
+<ul>
+<li><strong>Si usas IA de terceros</strong> (Contadores Alameda), A.10.3 es tu control más importante: casi todo lo que haces con IA depende de BotNorte, de tu suite de ofimática y de tu software contable.</li>
+<li><strong>Si desarrollas IA</strong> (Monarca Crédito), tus terceros son proveedores de datos (como la información crediticia que consultas con autorización), de componentes y de servicios como la API de detección de fraude.</li>
+<li><strong>Si provees IA a clientes</strong> (Conversa Labs), estás en medio de la cadena: eres cliente del proveedor del modelo fundacional y proveedor de tus clientes. Para ti, A.10 es el centro de gravedad del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Diferencias con ISO 27001</p>
+<p>La base reutilizable son los controles de relaciones con proveedores de ISO 27001 (ISO 27001 A.5.19 a A.5.23): inventario de proveedores, diligencia debida, cláusulas, seguimiento, gestión de cambios y servicios en la nube con responsabilidad compartida. Lo que agrega A.10: preguntas propias de la IA (uso de tus datos para entrenar, evaluaciones de sesgo, cambios de versión del modelo, documentación técnica), responsabilidades por los impactos en personas y no solo por la seguridad, y el lado del cliente (A.10.4), que el <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> apenas toca.</p>
+</div>
+<h2 id="los-controles-de-un-vistazo">Los controles de un vistazo<a class="headerlink" href="#los-controles-de-un-vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué pide, en una línea</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a-10-2">A.10.2 Asignación de responsabilidades</a></td>
+<td>Repartir y documentar quién hace qué en cada etapa del ciclo de vida cuando participan terceros</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (5.19, 5.20, 5.23)</td>
+</tr>
+<tr>
+<td><a href="#a-10-3">A.10.3 Proveedores</a></td>
+<td>Un proceso para que lo que entregan los proveedores sea coherente con tu enfoque responsable</td>
+<td>Usa · Desarrolla · Provee</td>
+<td>Medio</td>
+<td>Similar (5.19 a 5.22)</td>
+</tr>
+<tr>
+<td><a href="#a-10-4">A.10.4 Clientes</a></td>
+<td>Considerar necesidades y expectativas de los clientes y comunicarles límites y responsabilidades</td>
+<td>Provee</td>
+<td>Medio</td>
+<td>Nuevo (relacionado con 5.20)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Son traducciones libres de referencia del autor; la redacción oficial puede variar.</p>
+</div>
+<p>Así se ve la cadena de Conversa Labs, el caso con más eslabones de esta guía:</p>
+<pre class="mermaid"><code>flowchart LR
+  PM["Proveedor del modelo fundacional"]
+  CL["Conversa Labs"]
+  AS["Cliente: aseguradora"]
+  UF["Usuarios finales"]
+  PM --&gt;|"Modelo vía API, documentación, avisos de cambio"| CL
+  CL --&gt;|"Plataforma, ficha del sistema, límites del dominio"| AS
+  AS --&gt;|"Asistente con aviso de IA y canal humano"| UF
+  UF -.-&gt;|"Reportes e inquietudes"| AS
+  AS -.-&gt;|"Incidentes y requisitos"| CL
+  CL -.-&gt;|"Incidentes y solicitudes de corrección"| PM</code></pre>
 <h2 class="dx-control obj-a10" id="a-10-2">A.10.2 Asignación de responsabilidades<a class="headerlink" href="#a-10-2" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que, cuando varias organizaciones intervienen en un sistema de IA, quede claro quién hace qué en cada etapa, para que ninguna tarea crítica caiga entre dos sillas.</p>
+<p><strong>En la práctica.</strong> El control pide que las responsabilidades del ciclo de vida queden repartidas entre tu organización y las demás partes (socios, proveedores, clientes, terceros), lo que exige saber quién participa y con qué rol. La herramienta natural es una <strong>matriz de responsabilidad compartida</strong>: la misma idea del modelo de responsabilidad compartida de la nube (<em>shared responsibility model</em>), extendida a lo que añade la IA. Te recomendamos organizarla en cuatro capas: <strong>datos, modelo, sistema y uso</strong>. Así se ve, resumida, la de Conversa Labs para una aseguradora cliente:</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Proveedor del modelo fundacional</th>
+<th>Conversa Labs</th>
+<th>Cliente (aseguradora)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Datos</strong></td>
+<td>Datos de entrenamiento del modelo base; compromiso contractual de no entrenar con lo enviado por API</td>
+<td>Ingesta de la base de conocimiento; aislamiento entre clientes; compromiso de no entrenar con datos de clientes</td>
+<td>Contenido de la base de conocimiento: exactitud, vigencia y derechos de uso</td>
+</tr>
+<tr>
+<td><strong>Modelo</strong></td>
+<td>Entrenamiento y evaluaciones de seguridad del modelo base; documentación; aviso de cambios de versión</td>
+<td>Elección del modelo y su versión; evaluaciones de calidad en el caso de uso; pruebas adversarias y de inyección de instrucciones</td>
+<td>Aceptar el desempeño en su dominio antes de salir a producción</td>
+</tr>
+<tr>
+<td><strong>Sistema</strong></td>
+<td>Disponibilidad y seguridad de la API</td>
+<td>Orquestación, filtros de seguridad, traspaso a humano, registros, seguridad de la plataforma</td>
+<td>Configuración: temas permitidos, tono, aviso de IA, horarios del equipo humano</td>
+</tr>
+<tr>
+<td><strong>Uso</strong></td>
+<td>Políticas de uso aceptable de su modelo</td>
+<td>Monitoreo agregado de calidad; soporte de segundo nivel; plan de incidentes de la plataforma</td>
+<td>Aviso a usuarios finales y aviso de privacidad; supervisión de conversaciones; primer nivel de atención; comunicación con sus asegurados</td>
+</tr>
+</tbody>
+</table>
+<p>Una matriz así solo vale si <strong>baja a los contratos</strong>: cada celda importante debería tener detrás una cláusula, un anexo de servicio o una sección de los términos de uso, y una persona dentro de cada organización que responda por ella (tu <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> interno de <a href="../a3-organizacion-interna/#a-3-2">A.3.2</a>).</p>
+<p><strong>Roles de datos personales.</strong> Con datos personales, el reparto tiene una capa jurídica: quién decide sobre el tratamiento (responsable; <em><abbr title="Información de identificación personal (personally identifiable information); en México, datos personales.">PII</abbr> controller</em> en ISO/IEC 29100) y quién trata por cuenta de otro (encargado; <em><abbr title="Información de identificación personal (personally identifiable information); en México, datos personales.">PII</abbr> processor</em>). Una organización puede tener ambos roles según el tratamiento. En nuestra lectura, sujeta a revisión jurídica de cada contrato: la aseguradora es responsable de los datos de sus asegurados; Conversa es encargada al procesar las conversaciones, y el proveedor del modelo, subcontratado de Conversa; pero Conversa es responsable de los datos de contacto de sus propios clientes. Si un proveedor usara los datos para fines propios, como entrenar, podría dejar de ser un simple encargado. ISO/IEC 27701 ofrece controles para cada rol; en México, conviene reflejarlos en el aviso de privacidad y en el contrato con cada encargado (ver <a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>).</p>
+<p><strong>Qué reutilizas de ISO 27001.</strong> La política de proveedores y los acuerdos (ISO 27001 A.5.19 y A.5.20) y, sobre todo, la responsabilidad compartida de los servicios en la nube (ISO 27001 A.5.23). Agregas responsabilidades que no son de seguridad: calidad de datos, sesgo, supervisión humana, transparencia e incidentes de IA. Si <strong>provees</strong>, la guía añade desarrollar con enfoque responsable (<a href="../a6-ciclo-de-vida/">A.6</a>) y poder entregar la documentación. Si <strong>usas</strong>, la matriz suele ser corta: la de Alma, en Contadores Alameda, cabe en una página. El control <strong>no</strong> exige matrices de doscientas filas: exige que nadie suponga.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Lista de las partes que intervienen en cada sistema, registrada en el inventario.</li>
+<li>Matriz de responsabilidad compartida por capa (datos, modelo, sistema, uso) para los sistemas relevantes.</li>
+<li>Roles de datos personales definidos por tratamiento y reflejados en contratos y avisos de privacidad.</li>
+<li>Cláusulas que respalden las responsabilidades críticas.</li>
+<li>Revisión de la matriz cuando cambia un proveedor, un cliente o la arquitectura.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Matriz publicada para clientes en el portal de documentación.</li>
+<li>Trazabilidad de cada responsabilidad a su cláusula, su control y su responsable interno.</li>
+<li>Revisión anual conjunta con proveedores y clientes clave.</li>
+<li>Lista de materiales de IA (<abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr>) vinculada a la matriz.</li>
+<li>Escenarios de incidente ensayados con las otras partes.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Matriz de responsabilidad compartida aprobada.</li>
+<li>Contratos, anexos de servicio y términos de uso con las cláusulas correspondientes.</li>
+<li>Contratos de encargo o cláusulas de tratamiento de datos personales.</li>
+<li>Avisos de privacidad que reflejan los roles.</li>
+<li><abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> interno vinculado a la matriz.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Quiénes intervienen en el ciclo de vida de este sistema y qué hace cada uno?</li>
+<li>¿Quién responde por la exactitud de la base de conocimiento? ¿Dónde está escrito?</li>
+<li>¿Qué rol de datos personales tienen respecto de estas conversaciones?</li>
+<li>¿Qué pasa si el proveedor cambia la versión del modelo sin avisar?</li>
+<li>¿Cómo se enteran sus clientes de lo que les toca a ellos?</li>
+<li>¿Qué responsabilidades consideran que no pueden delegar?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Suponer que el contrato estándar del proveedor resuelve todo.</li>
+<li>Una matriz bien diseñada que no se refleja en ningún contrato.</li>
+<li>Celdas huérfanas: nadie es dueño del aviso de IA o de la base de conocimiento.</li>
+<li>Confundir responsable y encargado, u olvidar a los subcontratados.</li>
+<li>No actualizar la matriz cuando cambia la arquitectura.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> el sistema se diseña, entrena, opera y usa enteramente dentro de la organización, con infraestructura propia y sin datos, componentes ni clientes externos; hoy es raro. Ejemplo de redacción: "Se excluye A.10.2 porque el único sistema en alcance se desarrolla y opera con personal, datos e infraestructura propios, sin participación de terceros en ninguna etapa de su ciclo de vida."</p>
+<p><strong>No se justifica si…</strong> hay cualquier proveedor de modelos, datos, nube o plataforma, o clientes que despliegan el sistema.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a3-organizacion-interna/#a-3-2">A.3.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="#a-10-3">A.10.3</a>, <a href="#a-10-4">A.10.4</a> · ISO 27001: A.5.19, A.5.20 y A.5.23 · Normas: ISO/IEC 22989 (roles), ISO/IEC 29100, ISO/IEC 27701 · <strong>Anexo B:</strong> la guía B.10.2 explica que en la cadena de la IA las responsabilidades pueden quedar divididas entre quienes aportan datos, modelos, desarrollo o uso; pide identificar a todas las partes y orienta sobre los roles de datos personales con apoyo de ISO/IEC 29100 e ISO/IEC 27701.</p>
 <h2 class="dx-control obj-a10" id="a-10-3">A.10.3 Proveedores<a class="headerlink" href="#a-10-3" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--similar"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 9.2c-.8.9-2.3 1.8-3.9 1.8-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.8-2.9-.8-1.2 0-2.3.7-2.9 1.3L5 9.1c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.6 3.2.9s1.6.9 2.9.9c1.2 0 2.3-.8 2.9-1.4zm.1 4.9c-.9.9-2.3 1.9-3.9 1.9-1.5 0-2.4-.5-3.2-.9-.8-.3-1.6-.9-2.9-.9-1.2 0-2.3.8-2.9 1.4l-1-1.6c.9-.9 2.3-1.9 3.9-1.9 1.5 0 2.4.5 3.2.9.8.3 1.6.8 2.9.8 1.2 0 2.3-.8 2.9-1.4z"/></svg></span> Similar a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Que lo que compras a terceros (datos, modelos, componentes, sistemas completos o servicios por API) no contradiga tu enfoque de IA responsable, y que puedas reaccionar cuando deje de cumplirlo.</p>
+<p><strong>En la práctica.</strong> El control pide un proceso que asegure esa alineación. Empieza por reconocer <strong>qué tipo</strong> de proveedor tienes, porque el riesgo cambia:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Ejemplos</th>
+<th>Riesgo típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datos</td>
+<td>Conjuntos de datos, servicios de etiquetado, información crediticia</td>
+<td>Calidad, sesgo, derechos de uso, datos personales</td>
+</tr>
+<tr>
+<td>Modelos</td>
+<td>Modelos preentrenados o fundacionales</td>
+<td>Opacidad, cambios de versión, uso de tus datos</td>
+</tr>
+<tr>
+<td>Componentes</td>
+<td>Bibliotecas, bases vectoriales, herramientas de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr></td>
+<td>Vulnerabilidades, licencias, dependencia</td>
+</tr>
+<tr>
+<td>Sistemas completos</td>
+<td>SaaS con IA (como Alma, de BotNorte) o IA embebida en software que ya usas</td>
+<td>Poca visibilidad interna, cambios sin aviso</td>
+</tr>
+<tr>
+<td>APIs</td>
+<td>Detección de fraude, transcripción, modelos de lenguaje</td>
+<td>Desempeño en tu población, disponibilidad, retención</td>
+</tr>
+</tbody>
+</table>
+<p>Con el tipo y el uso que le darás, asignas un <strong>nivel de diligencia</strong>: <em>básico</em> para herramientas de productividad sin datos sensibles (revisión de términos y cuestionario corto); <em>reforzado</em> para lo que trata datos personales o llega a clientes (cuestionario completo, evidencias, cláusulas); <em>crítico</em> para lo que decide sobre personas o forma parte de tu producto (todo lo anterior, más pruebas propias y revisión periódica).</p>
+<p><strong>Cuestionario de evaluación de proveedores de IA.</strong> Las preguntas que más información dan, en nuestra experiencia:</p>
+<ol>
+<li>¿Usan nuestras entradas, archivos o resultados para entrenar o mejorar sus modelos? ¿Se puede excluir por contrato?</li>
+<li>¿Cuánto tiempo retienen entradas y salidas, para qué y cómo se eliminan?</li>
+<li>¿En qué países se procesan y almacenan los datos? ¿Qué subcontratados intervienen?</li>
+<li>¿Qué evaluaciones de sesgo, desempeño y seguridad han hecho? ¿Pueden compartir resultados?</li>
+<li>¿Qué documentación técnica entregan: uso previsto, limitaciones, datos de entrenamiento a alto nivel, métricas?</li>
+<li>¿Cómo y en qué plazo notifican incidentes que nos afecten?</li>
+<li>¿Cómo gestionan los cambios de versión del modelo: aviso previo, versiones fijas, fecha de retiro?</li>
+<li>¿Tienen un sistema de gestión de IA o certificaciones como ISO/IEC 42001 o ISO/IEC 27001?</li>
+</ol>
+<p><strong>Cláusulas que conviene negociar:</strong> no entrenamiento con tus datos; retención y eliminación; ubicación y aviso de nuevos subcontratados; notificación de incidentes con plazo; aviso previo de cambios de modelo y posibilidad de fijar versión (<em>version pinning</em>); entrega de documentación; acceso a reportes de auditoría; acciones correctivas; y salida ordenada.</p>
+<p><strong>Seguimiento y acciones correctivas.</strong> La evaluación no termina al firmar: revisa a cada proveedor según su nivel, vigila sus avisos de cambio y mide el desempeño del componente en tu propio uso (<a href="../a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>). Si no funciona como se esperaba o produce impactos contrarios a tu enfoque, exige acciones correctivas o trabaja con el proveedor para lograrlas. Ejemplo: Monarca nota que la API de detección de fraude (IA-03) marca de forma desproporcionada solicitudes de ciertos estados; pide un análisis al proveedor y, mientras tanto, envía esas alertas a revisión humana. Además, <strong>documenta la integración</strong> de cada componente (versión, configuración, flujos de datos, dependencias): es la base de tu lista de materiales de IA (<em><abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr></em>).</p>
+<p><strong>Realismo con proveedores grandes.</strong> A un proveedor fundacional global no lo vas a auditar en sitio ni a renegociarle el contrato. Compensa con su documentación pública, pruebas propias en tu caso de uso, versiones fijas y una arquitectura que te permita cambiar de modelo. Lo que no se vale es no haber leído sus términos. Reutiliza tu proceso de ISO 27001 (ISO 27001 A.5.19 a A.5.22) y agrégale las preguntas de IA.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Inventario de proveedores de IA con tipo y nivel de diligencia.</li>
+<li>Cuestionario de IA aplicado a los proveedores de nivel reforzado y crítico.</li>
+<li>Cláusulas mínimas en contratos nuevos: no entrenamiento, retención, incidentes, cambios de versión.</li>
+<li>Documentación del proveedor recibida y archivada, con la integración documentada.</li>
+<li>Revisión anual de los proveedores críticos y procedimiento para exigir acciones correctivas.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Diligencia diferenciada integrada en el flujo de compras.</li>
+<li>Pruebas de regresión automáticas cada vez que cambia la versión de un modelo.</li>
+<li>Tablero de proveedores con indicadores (incidentes, desempeño, cumplimiento de cláusulas).</li>
+<li>Plan de salida y alternativa probada para componentes críticos.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Evaluaciones de proveedores y cuestionarios respondidos.</li>
+<li>Contratos y anexos con cláusulas de IA.</li>
+<li>Documentación técnica recibida del proveedor.</li>
+<li>Registros de seguimiento periódico y de cambios de versión.</li>
+<li>Solicitudes de acción correctiva y su cierre.</li>
+<li>Diagramas o registros de integración de componentes.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cuáles son sus proveedores de IA y cómo decidieron el nivel de diligencia de cada uno?</li>
+<li>Muéstrame la evaluación de su proveedor más crítico.</li>
+<li>¿El proveedor usa sus datos para entrenar? ¿Cómo lo verificaron?</li>
+<li>¿Cómo se enteran de un cambio de versión del modelo y qué hacen cuando ocurre?</li>
+<li>¿Han exigido alguna acción correctiva a un proveedor?</li>
+<li>¿Dónde está documentado cómo se integra este componente en su sistema?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Usar el cuestionario de seguridad de siempre, sin preguntas de IA.</li>
+<li>Evaluar solo al contratar y nunca más.</li>
+<li>No detectar la IA embebida en software que ya se usa (suite de ofimática, sistema contable).</li>
+<li>Aceptar términos estándar sin revisar qué dicen sobre el uso de tus datos para entrenar.</li>
+<li>No tener plan si el proveedor retira el modelo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no adquiere datos, modelos, componentes ni servicios de IA de terceros, algo rarísimo: incluso quien desarrolla todo suele depender de bibliotecas y nubes. Ejemplo de redacción: "Se excluye A.10.3 porque el sistema en alcance se construye solo con datos propios, componentes desarrollados internamente e infraestructura propia; las bibliotecas de terceros se gestionan bajo el proceso de proveedores del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>."</p>
+<p><strong>No se justifica si…</strong> usas cualquier servicio, modelo o conjunto de datos de terceros en un sistema de IA.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a4-recursos/#a-4-4">A.4.4</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a7-datos/#a-7-3">A.7.3</a>, <a href="../a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, <a href="../a9-uso/#a-9-2">A.9.2</a>, <a href="#a-10-2">A.10.2</a> · ISO 27001: A.5.19, A.5.20, A.5.21 y A.5.22 · <strong>Anexo B:</strong> la guía B.10.3 repasa la variedad de cosas que pueden obtenerse de proveedores y pide ajustar selección, requisitos y vigilancia al riesgo de cada tipo, documentar la integración, exigir correcciones cuando algo no está alineado y asegurar que el proveedor entregue documentación adecuada.</p>
 <h2 class="dx-control obj-a10" id="a-10-4">A.10.4 Clientes<a class="headerlink" href="#a-10-4" title="Enlace permanente a esta sección">&para;</a></h2>
-<p>Próximamente.</p>
+<div class="dx-control-meta">
+<p><span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--esfuerzo-medio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23-.1.23c-.71.13-1.3.6-1.57 1.26-.41 1.03.09 2.19 1.12 2.6s2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26 1.29-3.21.01-.03c.2-.51-.05-1.09-.56-1.3-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Esfuerzo medio</span>
+<span class="dx-badge dx-badge--nuevo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 6.7 1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1 9 9l-8 3 8 3 3 8 3-8 8-3-8-3z"/></svg></span> Nuevo frente a 27001</span></p>
+</div>
+<p><strong>Propósito.</strong> Cuando tú suministras IA, que tu enfoque responsable tenga en cuenta lo que tus clientes necesitan y esperan, y que quede claro dónde termina tu responsabilidad y empieza la suya.</p>
+<p><strong>En la práctica.</strong> Aplica cuando tu organización es proveedora de un producto o servicio de IA. Las necesidades y expectativas de los clientes llegan por tres vías: <strong>requisitos de producto</strong> durante el diseño (idiomas, temas prohibidos, traspaso a humano, integración con sus sistemas), <strong>requisitos contractuales</strong> (datos, niveles de servicio, auditoría) y <strong>términos de uso generales</strong> para quienes contratan sin negociar. Y cada tipo de cliente espera algo distinto: una aseguradora quiere control estricto de lo que se dice sobre coberturas; una universidad, lenguaje adecuado para jóvenes y accesibilidad; un comercio, rapidez.</p>
+<p>La relación proveedor–cliente en IA es enredada, y el control pide entender dónde cae cada responsabilidad sin dejar de atender lo que el cliente espera. Dos herramientas son clave:</p>
+<ul>
+<li><strong>Comunicar los límites del dominio de uso válido.</strong> Conversa documenta en la ficha que entrega a cada cliente que su plataforma está evaluada para atención informativa (preguntas frecuentes, estatus, citas) en español; que <strong>no</strong> está validada para diagnósticos médicos, asesoría legal o financiera personalizada, ni para decidir elegibilidad o coberturas; y que su desempeño depende de la calidad de la base de conocimiento que carga el cliente.</li>
+<li><strong>Dar información para que el cliente trate sus propios riesgos.</strong> Si identificas riesgos en el uso que hará el cliente, puedes tratarlos entregándole lo que necesita: resultados de tus evaluaciones, limitaciones conocidas, configuración recomendada, plantillas de aviso de IA, guías de supervisión de conversaciones y de retención. Así el cliente puede cumplir <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> y <a href="../a9-uso/#a-9-4">A.9.4</a> de su lado.</li>
+</ul>
+<p><strong>Ejemplo: el cliente en España.</strong> Uno de los clientes de Conversa opera en la Unión Europea. El Reglamento de IA de la UE incluye obligaciones de transparencia (art. 50), como informar a las personas de que interactúan con un sistema de IA, que recaen en el proveedor o en el responsable del despliegue según el caso; cuándo y cómo aplican se analiza en <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>. Para Conversa, A.10.4 se traduce en levantar al inicio los requisitos regulatorios del cliente, activar para él un aviso de IA que no puede desactivarse, entregarle documentación que respalde sus propias obligaciones y dejar por escrito, en el contrato y en la matriz de <a href="#a-10-2">A.10.2</a>, qué hace cada parte, sin emitir conclusiones jurídicas que corresponden a la asesoría legal del cliente.</p>
+<p><strong>Considerar no es obedecer.</strong> Si un cliente pide desactivar el aviso de IA o usar el asistente para negar reclamaciones de forma automática, tu enfoque responsable puede llevarte a decir que no o a aceptar solo con condiciones. Esa decisión, documentada, también es evidencia del control. Fíjate en la diferencia con A.8.2: aquel mira a los usuarios; este, al cliente que te contrata, que muchas veces no es quien usa el sistema. De ISO 27001 solo reutilizas la lógica de los acuerdos (ISO 27001 A.5.20), vista desde el otro lado.</p>
+<div class="grid">
+<div class="admonition success">
+<p class="admonition-title">Implementación mínima viable</p>
+<ul>
+<li>Cuestionario de arranque para levantar requisitos del cliente: sector, país, usuarios, regulación.</li>
+<li>Términos de uso con usos permitidos y prohibidos.</li>
+<li>Ficha del sistema para clientes con los límites del dominio de uso válido.</li>
+<li>Matriz de responsabilidades compartida con el cliente (<a href="#a-10-2">A.10.2</a>).</li>
+<li>Canal para que los clientes reporten problemas y reciban avisos de cambios.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementación madura</p>
+<ul>
+<li>Portal de confianza (<em>trust center</em>) con fichas, resultados de evaluación y registro de cambios.</li>
+<li>Configuraciones seguras por defecto según el sector y la jurisdicción del cliente.</li>
+<li>Revisiones periódicas con clientes clave que incluyan el uso responsable.</li>
+<li>Requisitos de clientes rastreados hasta el diseño y las pruebas.</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m8.34-3.16-3.59 3.59-1.59-1.59L15 19l2.75 3 4.75-4.75z"/></svg></span> Evidencia típica</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 13c-.35.59-.64 1.24-.81 1.93C6.5 15.16 3.9 16.42 3.9 17v1.1h5.3c.17.68.45 1.32.8 1.9H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4c0 .91-.31 1.75-.82 2.43-.86.32-1.63.83-2.27 1.47L10 12a4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 1.9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8 2.1 2.1 0 0 0 10 5.9m5.5 6.1c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Preguntas del auditor</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></svg></span> Errores comunes</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> ¿Se puede excluir?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Requisitos de clientes registrados (cuestionarios de arranque, especificaciones).</li>
+<li>Contratos y términos de uso vigentes.</li>
+<li>Documentación entregada al cliente, con acuse.</li>
+<li>Comunicaciones sobre límites del dominio y cambios relevantes.</li>
+<li>Registro de solicitudes de clientes rechazadas o condicionadas, con su justificación.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>¿Cómo conocen las expectativas de sus clientes sobre el uso responsable del sistema?</li>
+<li>¿Qué le dicen al cliente sobre los límites del sistema? Muéstrame la documentación.</li>
+<li>¿Dónde está escrito qué le toca al cliente y qué les toca a ustedes?</li>
+<li>¿Qué hacen si un cliente pide desactivar el aviso de IA?</li>
+<li>¿Cómo atienden a clientes en otras jurisdicciones?</li>
+<li>¿Cómo sabrían si un cliente usa el sistema fuera del dominio validado?</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Términos de uso genéricos, sin límites del dominio.</li>
+<li>Material comercial que exagera capacidades y contradice la documentación técnica.</li>
+<li>Tratar igual a todos los clientes sin importar su sector o país.</li>
+<li>Dar por hecho que el cliente leerá y entenderá todo.</li>
+<li>No avisar al cliente de cambios de modelo que alteran el comportamiento.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Podría justificarse si…</strong> la organización no suministra sistemas, productos ni servicios de IA a clientes. Contadores Alameda, por ejemplo, podría razonar así: "Se excluye A.10.4 porque la organización no suministra sistemas de IA a clientes: usa sistemas de terceros para prestar servicios contables, y la información a los clientes que interactúan con el asistente se cubre en A.8.2." En nuestra lectura es defendible, pero algunos auditores podrían considerar que ofrecer a Alma a sus clientes es un servicio relacionado con IA; conviene comentarlo con el organismo de certificación.</p>
+<p><strong>No se justifica si…</strong> vendes, licencias o integras un producto o servicio con IA, aunque sea una función secundaria.</p>
+</div>
+</div>
+</div>
+<p><strong>Relaciones.</strong> Cláusulas: <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a> · Controles: <a href="../a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a>, <a href="../a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>, <a href="../a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>, <a href="../a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>, <a href="#a-10-2">A.10.2</a> · ISO 27001: A.5.20 · <strong>Anexo B:</strong> la guía B.10.4 orienta sobre cómo se manifiestan las expectativas del cliente (en el diseño, en contratos o en términos de uso), sobre entender dónde recae cada responsabilidad en una relación proveedor–cliente compleja y sobre tratar riesgos dando información al cliente, con la comunicación de los límites del dominio como ejemplo.</p>
+<h2 id="como-se-ve-este-objetivo-en-los-casos-practicos">Cómo se ve este objetivo en los casos prácticos<a class="headerlink" href="#como-se-ve-este-objetivo-en-los-casos-practicos" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Contadores Alameda</label><label for="__tabbed_4_2">Monarca Crédito</label><label for="__tabbed_4_3">Conversa Labs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Para <strong>A.10.2</strong>, el despacho resolvió en una página la matriz de Alma: BotNorte responde por la plataforma, la relación con el proveedor del modelo de lenguaje y la disponibilidad; Contadores Alameda, por la base de conocimiento, el aviso a sus clientes, la atención humana y los datos de sus clientes como responsable, con BotNorte como encargado. Para <strong>A.10.3</strong>, aplicó el cuestionario de IA a BotNorte, a su suite de ofimática (IA-01) y al proveedor de su software contable (IA-03), y descubrió que este último no había informado qué subcontratados intervenían en la extracción de facturas: pidió la aclaración por escrito. Esa misma evaluación le sirvió para contestar el cuestionario del banco cliente, porque ante el banco el proveedor es el despacho. <strong>A.10.4</strong> lo excluyó con la justificación que se muestra en ese control.</p>
+</div>
+<div class="tabbed-block">
+<p>Monarca <strong>desarrolla</strong> IA con insumos de terceros. Su matriz de <strong>A.10.2</strong> cubre a la sociedad de información crediticia que le da el historial (con autorización de cada solicitante), al proveedor de la API de detección de fraude (IA-03) y a su proveedor de nube, con roles de datos personales definidos para cada uno. En <strong>A.10.3</strong> clasificó la API de fraude como crítica y le exigió acciones correctivas cuando detectó alertas desproporcionadas por entidad federativa. Hoy <strong>A.10.4</strong> no le aplica porque no suministra IA a clientes; si sus alianzas con bancos llegaran a incluir ofrecer el Score Monarca como servicio, tendría que incorporarlo.</p>
+</div>
+<div class="tabbed-block">
+<p>Conversa vive en medio de la cadena, y A.10 es su objetivo más denso. Su matriz de <strong>A.10.2</strong> es la de la tabla de este capítulo y se anexa a cada contrato. En <strong>A.10.3</strong> clasificó al proveedor del modelo fundacional como crítico: respondió el cuestionario con su documentación pública y su contrato empresarial, fija la versión del modelo en producción y corre su batería de evaluaciones antes de adoptar cada versión nueva. En <strong>A.10.4</strong>, su proceso de arranque pregunta a cada cliente sector, país, usuarios y regulación; para el cliente español activó configuraciones específicas y documentación de apoyo, sin emitir conclusiones jurídicas en su nombre.</p>
+</div>
+</div>
+</div>
+<h2 id="plantillas-y-recursos-relacionados">Plantillas y recursos relacionados<a class="headerlink" href="#plantillas-y-recursos-relacionados" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a>: punto de partida para la matriz interna que respalda A.10.2.</li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a>: dónde registrar proveedores, componentes y clientes de cada sistema.</li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a>: documentación que pides a tus proveedores y entregas a tus clientes.</li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a>: para clasificar a los proveedores por nivel de riesgo.</li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a>: incluye columnas para incidentes originados en terceros.</li>
+<li>Casos completos: <a href="../../casos-practicos/pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a>, <a href="../../casos-practicos/fintech-scoring/">fintech de <em>scoring</em></a> y <a href="../../casos-practicos/empresa-desarrolla-chatbot/">empresa que desarrolla un chatbot</a>.</li>
+<li>Para profundizar: <a href="../../fundamentos/roles-en-la-ia/">roles en la IA</a>, <a href="../../integracion/con-iso27001/">integración con ISO 27001</a> y <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 
