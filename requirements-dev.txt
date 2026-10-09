@@ -1,0 +1,3 @@
+# Dependencias opcionales para verificar las plantillas Excel (no se usan para construir el sitio).
+-r requirements.txt
+formulas==1.3.4
