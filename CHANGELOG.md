@@ -7,6 +7,10 @@ Para una guía de contenido, la versión *mayor* cambia con reestructuras del si
 
 ## [Sin publicar]
 
+### Añadido
+
+- Imagen de vista previa para redes sociales (`docs/assets/img/social.png`, 1280 × 640) y metadatos Open Graph y de X/Twitter en todas las páginas, con el título y la descripción de cada una.
+
 ## [1.0.0] - 2026-10-09
 
 Primera versión completa de la guía. Los datos regulatorios y de estado de normas se consultaron el 9 de octubre de 2026.
