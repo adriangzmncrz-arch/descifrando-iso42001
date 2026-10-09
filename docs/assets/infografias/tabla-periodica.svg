@@ -1,0 +1,466 @@
+<svg viewBox="0 0 1020 980" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ig-tabla-t ig-tabla-d">
+<title id="ig-tabla-t">Tabla periódica de los 38 controles del Anexo A de ISO/IEC 42001</title>
+<desc id="ig-tabla-d">Nueve columnas, una por objetivo de control de A.2 a A.10, con una celda por control. Cada celda muestra el número del control, su nombre abreviado, un símbolo de novedad frente a ISO 27001 (estrella: nuevo; aproximado: similar; igual: equivalente) y de uno a tres puntos de esfuerzo de implementación. Cada celda enlaza a la guía del control.</desc>
+<g class="obj-a2">
+<rect class="ig-obj" x="10" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="62.0" y="35" text-anchor="middle" font-size="19">A.2</text>
+<text class="ig-on-color" x="62.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Políticas</text>
+<a href="a2-politicas/#a-2-2" aria-label="A.2.2 Política de IA. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.2.2 Política de IA. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="83" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="93" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="121" text-anchor="middle" font-size="22">2.2</text>
+<text x="62.0" y="146" text-anchor="middle" font-size="11.5">Política de IA</text>
+</a>
+<a href="a2-politicas/#a-2-3" aria-label="A.2.3 Alineación con otras políticas de la organización. Esfuerzo bajo. Similar frente a ISO 27001.">
+<title>A.2.3 Alineación con otras políticas de la organización. Esfuerzo bajo. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="83" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="93" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="221" text-anchor="middle" font-size="22">2.3</text>
+<text x="62.0" y="239" text-anchor="middle" font-size="11.5">Alineación con</text>
+<text x="62.0" y="253" text-anchor="middle" font-size="11.5">políticas</text>
+</a>
+<a href="a2-politicas/#a-2-4" aria-label="A.2.4 Revisión de la política de IA. Esfuerzo bajo. Equivalente frente a ISO 27001.">
+<title>A.2.4 Revisión de la política de IA. Esfuerzo bajo. Equivalente frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="295" font-size="13" font-weight="700" opacity=".75">=</text>
+<circle class="ig-obj" cx="83" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="93" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="321" text-anchor="middle" font-size="22">2.4</text>
+<text x="62.0" y="339" text-anchor="middle" font-size="11.5">Revisión de la</text>
+<text x="62.0" y="353" text-anchor="middle" font-size="11.5">política</text>
+</a>
+</g>
+<g class="obj-a3">
+<rect class="ig-obj" x="122" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="174.0" y="35" text-anchor="middle" font-size="19">A.3</text>
+<text class="ig-on-color" x="174.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Organización</text>
+<a href="a3-organizacion-interna/#a-3-2" aria-label="A.3.2 Roles y responsabilidades de IA. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.3.2 Roles y responsabilidades de IA. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="122" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="131" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="195" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="205" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="215" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="174.0" y="121" text-anchor="middle" font-size="22">3.2</text>
+<text x="174.0" y="139" text-anchor="middle" font-size="10.5">Roles y</text>
+<text x="174.0" y="153" text-anchor="middle" font-size="10.5">responsabilidades</text>
+</a>
+<a href="a3-organizacion-interna/#a-3-3" aria-label="A.3.3 Reporte de inquietudes. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.3.3 Reporte de inquietudes. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="122" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="131" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="195" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="205" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="215" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="174.0" y="221" text-anchor="middle" font-size="22">3.3</text>
+<text x="174.0" y="239" text-anchor="middle" font-size="11.5">Reporte de</text>
+<text x="174.0" y="253" text-anchor="middle" font-size="11.5">inquietudes</text>
+</a>
+</g>
+<g class="obj-a4">
+<rect class="ig-obj" x="234" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="286.0" y="35" text-anchor="middle" font-size="19">A.4</text>
+<text class="ig-on-color" x="286.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Recursos</text>
+<a href="a4-recursos/#a-4-2" aria-label="A.4.2 Documentación de recursos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.4.2 Documentación de recursos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="121" text-anchor="middle" font-size="22">4.2</text>
+<text x="286.0" y="139" text-anchor="middle" font-size="11.5">Documentación</text>
+<text x="286.0" y="153" text-anchor="middle" font-size="11.5">de recursos</text>
+</a>
+<a href="a4-recursos/#a-4-3" aria-label="A.4.3 Recursos de datos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.4.3 Recursos de datos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="307" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="327" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="221" text-anchor="middle" font-size="22">4.3</text>
+<text x="286.0" y="239" text-anchor="middle" font-size="11.5">Recursos de</text>
+<text x="286.0" y="253" text-anchor="middle" font-size="11.5">datos</text>
+</a>
+<a href="a4-recursos/#a-4-4" aria-label="A.4.4 Recursos de herramientas. Esfuerzo bajo. Similar frente a ISO 27001.">
+<title>A.4.4 Recursos de herramientas. Esfuerzo bajo. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="317" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="321" text-anchor="middle" font-size="22">4.4</text>
+<text x="286.0" y="346" text-anchor="middle" font-size="11.5">Herramientas</text>
+</a>
+<a href="a4-recursos/#a-4-5" aria-label="A.4.5 Recursos de sistema y cómputo. Esfuerzo bajo. Equivalente frente a ISO 27001.">
+<title>A.4.5 Recursos de sistema y cómputo. Esfuerzo bajo. Equivalente frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="395" font-size="13" font-weight="700" opacity=".75">=</text>
+<circle class="ig-obj" cx="307" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="317" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="421" text-anchor="middle" font-size="22">4.5</text>
+<text x="286.0" y="439" text-anchor="middle" font-size="11.5">Sistema y</text>
+<text x="286.0" y="453" text-anchor="middle" font-size="11.5">cómputo</text>
+</a>
+<a href="a4-recursos/#a-4-6" aria-label="A.4.6 Recursos humanos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.4.6 Recursos humanos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="495" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="521" text-anchor="middle" font-size="22">4.6</text>
+<text x="286.0" y="539" text-anchor="middle" font-size="11.5">Recursos</text>
+<text x="286.0" y="553" text-anchor="middle" font-size="11.5">humanos</text>
+</a>
+</g>
+<g class="obj-a5">
+<rect class="ig-obj" x="346" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="398.0" y="35" text-anchor="middle" font-size="19">A.5</text>
+<text class="ig-on-color" x="398.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Impacto</text>
+<a href="a5-evaluacion-de-impacto/#a-5-2" aria-label="A.5.2 Proceso de evaluación de impacto. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.5.2 Proceso de evaluación de impacto. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="439" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="121" text-anchor="middle" font-size="22">5.2</text>
+<text x="398.0" y="139" text-anchor="middle" font-size="11.5">Proceso de</text>
+<text x="398.0" y="153" text-anchor="middle" font-size="11.5">evaluación</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-3" aria-label="A.5.3 Documentación de las evaluaciones de impacto. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.5.3 Documentación de las evaluaciones de impacto. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="439" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="221" text-anchor="middle" font-size="22">5.3</text>
+<text x="398.0" y="239" text-anchor="middle" font-size="10.5">Documentación</text>
+<text x="398.0" y="253" text-anchor="middle" font-size="10.5">de evaluaciones</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-4" aria-label="A.5.4 Evaluación del impacto en individuos o grupos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.5.4 Evaluación del impacto en individuos o grupos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="439" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="321" text-anchor="middle" font-size="22">5.4</text>
+<text x="398.0" y="339" text-anchor="middle" font-size="11.5">Impacto en</text>
+<text x="398.0" y="353" text-anchor="middle" font-size="11.5">personas</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-5" aria-label="A.5.5 Evaluación de impactos sociales. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.5.5 Evaluación de impactos sociales. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="395" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="439" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="421" text-anchor="middle" font-size="22">5.5</text>
+<text x="398.0" y="439" text-anchor="middle" font-size="11.5">Impactos</text>
+<text x="398.0" y="453" text-anchor="middle" font-size="11.5">sociales</text>
+</a>
+</g>
+<g class="obj-a6">
+<rect class="ig-obj" x="458" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="510.0" y="35" text-anchor="middle" font-size="19">A.6</text>
+<text class="ig-on-color" x="510.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Ciclo de vida</text>
+<a href="a6-ciclo-de-vida/#a-6-1-2" aria-label="A.6.1.2 Objetivos para el desarrollo responsable. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.6.1.2 Objetivos para el desarrollo responsable. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="531" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="121" text-anchor="middle" font-size="19">6.1.2</text>
+<text x="510.0" y="139" text-anchor="middle" font-size="11.5">Objetivos de</text>
+<text x="510.0" y="153" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-1-3" aria-label="A.6.1.3 Procesos para el diseño y desarrollo responsable. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.1.3 Procesos para el diseño y desarrollo responsable. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="221" text-anchor="middle" font-size="19">6.1.3</text>
+<text x="510.0" y="239" text-anchor="middle" font-size="11.5">Proceso de</text>
+<text x="510.0" y="253" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-2" aria-label="A.6.2.2 Requisitos y especificación. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.2 Requisitos y especificación. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="321" text-anchor="middle" font-size="19">6.2.2</text>
+<text x="510.0" y="346" text-anchor="middle" font-size="11.5">Requisitos</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-3" aria-label="A.6.2.3 Documentación del diseño y desarrollo. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.3 Documentación del diseño y desarrollo. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="395" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="421" text-anchor="middle" font-size="19">6.2.3</text>
+<text x="510.0" y="439" text-anchor="middle" font-size="11.5">Diseño y</text>
+<text x="510.0" y="453" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-4" aria-label="A.6.2.4 Verificación y validación. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.2.4 Verificación y validación. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="495" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="521" text-anchor="middle" font-size="19">6.2.4</text>
+<text x="510.0" y="539" text-anchor="middle" font-size="11.5">Verificación y</text>
+<text x="510.0" y="553" text-anchor="middle" font-size="11.5">validación</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-5" aria-label="A.6.2.5 Despliegue. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.5 Despliegue. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="576" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="595" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="590" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="590" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="590" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="621" text-anchor="middle" font-size="19">6.2.5</text>
+<text x="510.0" y="646" text-anchor="middle" font-size="11.5">Despliegue</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-6" aria-label="A.6.2.6 Operación y monitoreo. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.2.6 Operación y monitoreo. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="676" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="695" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="690" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="690" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="690" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="721" text-anchor="middle" font-size="19">6.2.6</text>
+<text x="510.0" y="739" text-anchor="middle" font-size="11.5">Operación y</text>
+<text x="510.0" y="753" text-anchor="middle" font-size="11.5">monitoreo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-7" aria-label="A.6.2.7 Documentación técnica. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.6.2.7 Documentación técnica. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="776" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="795" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="531" cy="790" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="790" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="790" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="821" text-anchor="middle" font-size="19">6.2.7</text>
+<text x="510.0" y="839" text-anchor="middle" font-size="11.5">Documentación</text>
+<text x="510.0" y="853" text-anchor="middle" font-size="11.5">técnica</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-8" aria-label="A.6.2.8 Registro de eventos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.8 Registro de eventos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="876" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="895" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="890" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="890" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="890" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="921" text-anchor="middle" font-size="19">6.2.8</text>
+<text x="510.0" y="939" text-anchor="middle" font-size="11.5">Registro de</text>
+<text x="510.0" y="953" text-anchor="middle" font-size="11.5">eventos</text>
+</a>
+</g>
+<g class="obj-a7">
+<rect class="ig-obj" x="570" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="622.0" y="35" text-anchor="middle" font-size="19">A.7</text>
+<text class="ig-on-color" x="622.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Datos</text>
+<a href="a7-datos/#a-7-2" aria-label="A.7.2 Datos para desarrollo y mejora. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.7.2 Datos para desarrollo y mejora. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="663" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="121" text-anchor="middle" font-size="22">7.2</text>
+<text x="622.0" y="139" text-anchor="middle" font-size="11.5">Datos para</text>
+<text x="622.0" y="153" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a7-datos/#a-7-3" aria-label="A.7.3 Adquisición de datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.3 Adquisición de datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="221" text-anchor="middle" font-size="22">7.3</text>
+<text x="622.0" y="246" text-anchor="middle" font-size="11.5">Adquisición</text>
+</a>
+<a href="a7-datos/#a-7-4" aria-label="A.7.4 Calidad de los datos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.7.4 Calidad de los datos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="663" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="321" text-anchor="middle" font-size="22">7.4</text>
+<text x="622.0" y="346" text-anchor="middle" font-size="11.5">Calidad</text>
+</a>
+<a href="a7-datos/#a-7-5" aria-label="A.7.5 Procedencia de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.5 Procedencia de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="395" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="421" text-anchor="middle" font-size="22">7.5</text>
+<text x="622.0" y="446" text-anchor="middle" font-size="11.5">Procedencia</text>
+</a>
+<a href="a7-datos/#a-7-6" aria-label="A.7.6 Preparación de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.6 Preparación de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="495" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="521" text-anchor="middle" font-size="22">7.6</text>
+<text x="622.0" y="546" text-anchor="middle" font-size="11.5">Preparación</text>
+</a>
+</g>
+<g class="obj-a8">
+<rect class="ig-obj" x="682" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="734.0" y="35" text-anchor="middle" font-size="19">A.8</text>
+<text class="ig-on-color" x="734.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Información</text>
+<a href="a8-informacion-partes-interesadas/#a-8-2" aria-label="A.8.2 Documentación del sistema e información para usuarios. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.8.2 Documentación del sistema e información para usuarios. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="755" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="121" text-anchor="middle" font-size="22">8.2</text>
+<text x="734.0" y="139" text-anchor="middle" font-size="11.5">Información a</text>
+<text x="734.0" y="153" text-anchor="middle" font-size="11.5">usuarios</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-3" aria-label="A.8.3 Reporte externo. Esfuerzo bajo. Nuevo frente a ISO 27001.">
+<title>A.8.3 Reporte externo. Esfuerzo bajo. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="755" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="765" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="221" text-anchor="middle" font-size="22">8.3</text>
+<text x="734.0" y="246" text-anchor="middle" font-size="10.5">Reporte externo</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-4" aria-label="A.8.4 Comunicación de incidentes. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.8.4 Comunicación de incidentes. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="755" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="321" text-anchor="middle" font-size="22">8.4</text>
+<text x="734.0" y="339" text-anchor="middle" font-size="10.5">Comunicación de</text>
+<text x="734.0" y="353" text-anchor="middle" font-size="10.5">incidentes</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-5" aria-label="A.8.5 Información para las partes interesadas. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.8.5 Información para las partes interesadas. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="395" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="755" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="421" text-anchor="middle" font-size="22">8.5</text>
+<text x="734.0" y="439" text-anchor="middle" font-size="11.5">Información a</text>
+<text x="734.0" y="453" text-anchor="middle" font-size="11.5">partes</text>
+</a>
+</g>
+<g class="obj-a9">
+<rect class="ig-obj" x="794" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="846.0" y="35" text-anchor="middle" font-size="19">A.9</text>
+<text class="ig-on-color" x="846.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Uso</text>
+<a href="a9-uso/#a-9-2" aria-label="A.9.2 Procesos para el uso responsable. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.9.2 Procesos para el uso responsable. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="867" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="877" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="121" text-anchor="middle" font-size="22">9.2</text>
+<text x="846.0" y="139" text-anchor="middle" font-size="11.5">Proceso de uso</text>
+<text x="846.0" y="153" text-anchor="middle" font-size="11.5">responsable</text>
+</a>
+<a href="a9-uso/#a-9-3" aria-label="A.9.3 Objetivos para el uso responsable. Esfuerzo bajo. Nuevo frente a ISO 27001.">
+<title>A.9.3 Objetivos para el uso responsable. Esfuerzo bajo. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="867" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="877" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="221" text-anchor="middle" font-size="22">9.3</text>
+<text x="846.0" y="239" text-anchor="middle" font-size="10.5">Objetivos de</text>
+<text x="846.0" y="253" text-anchor="middle" font-size="10.5">uso responsable</text>
+</a>
+<a href="a9-uso/#a-9-4" aria-label="A.9.4 Uso previsto del sistema de IA. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.9.4 Uso previsto del sistema de IA. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="867" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="877" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="321" text-anchor="middle" font-size="22">9.4</text>
+<text x="846.0" y="346" text-anchor="middle" font-size="11.5">Uso previsto</text>
+</a>
+</g>
+<g class="obj-a10">
+<rect class="ig-obj" x="906" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="958.0" y="35" text-anchor="middle" font-size="19">A.10</text>
+<text class="ig-on-color" x="958.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Terceros</text>
+<a href="a10-terceros/#a-10-2" aria-label="A.10.2 Asignación de responsabilidades. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.10.2 Asignación de responsabilidades. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="979" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="121" text-anchor="middle" font-size="22">10.2</text>
+<text x="958.0" y="139" text-anchor="middle" font-size="10.5">Asignación de</text>
+<text x="958.0" y="153" text-anchor="middle" font-size="10.5">responsabilidades</text>
+</a>
+<a href="a10-terceros/#a-10-3" aria-label="A.10.3 Proveedores. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.10.3 Proveedores. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="979" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="221" text-anchor="middle" font-size="22">10.3</text>
+<text x="958.0" y="246" text-anchor="middle" font-size="11.5">Proveedores</text>
+</a>
+<a href="a10-terceros/#a-10-4" aria-label="A.10.4 Clientes. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.10.4 Clientes. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="979" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="321" text-anchor="middle" font-size="22">10.4</text>
+<text x="958.0" y="346" text-anchor="middle" font-size="11.5">Clientes</text>
+</a>
+</g>
+<rect class="ig-card" x="682" y="468" width="328" height="190" rx="10"/>
+<text class="ig-bold" x="698" y="494" font-size="15">Cómo leer la tabla</text>
+<text x="698" y="518" font-size="13">7.4  →  número del control (A.7.4)</text>
+<text x="698" y="542" font-size="13">★ nuevo · ≈ similar · = equivalente</text>
+<text class="ig-muted" x="698" y="566" font-size="12">(novedad frente a ISO 27001)</text>
+<text x="698" y="590" font-size="13">●○○ ●●○ ●●●  esfuerzo bajo · medio · alto</text>
+<text class="ig-muted" x="698" y="614" font-size="12">Haz clic en una celda para abrir</text>
+<text class="ig-muted" x="698" y="638" font-size="12">la guía del control.</text>
+<text class="ig-bold" x="118.0" y="436" text-anchor="middle" font-size="64">38</text>
+<text x="118.0" y="464" text-anchor="middle" font-size="15" font-weight="600">controles</text>
+<text class="ig-muted" x="118.0" y="486" text-anchor="middle" font-size="13">en 9 objetivos</text>
+</svg>

@@ -1,4 +1,3 @@
-<!-- Glosario autoinsertado (pymdownx.snippets + abbr). Cada término muestra su definición al pasar el cursor. -->
 *[SGIA]: Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.
 *[AIMS]: AI management system: nombre en inglés del SGIA.
 *[SGSI]: Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.

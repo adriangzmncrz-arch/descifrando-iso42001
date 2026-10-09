@@ -12,6 +12,7 @@
 #   roles:     usa (usa IA de terceros) · desarrolla (desarrolla IA) · provee (provee IA a clientes)
 #   esfuerzo:  bajo · medio · alto
 #   novedad:   nuevo · similar · equivalente   (frente al Anexo A de ISO/IEC 27001:2022)
+#   corto:     nombre abreviado para la tabla periódica (máx. ~32 caracteres)
 
 objetivos:
   - id: A.2
@@ -73,6 +74,7 @@ controles:
   # ---------------------------------------------------------------- A.2
   - id: A.2.2
     nombre: Política de IA
+    corto: Política de IA
     objetivo: A.2
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -82,6 +84,7 @@ controles:
     evidencia: Política de IA aprobada y vigente; registro de comunicación; procedimiento de excepciones.
   - id: A.2.3
     nombre: Alineación con otras políticas de la organización
+    corto: Alineación con políticas
     objetivo: A.2
     roles: [usa, desarrolla, provee]
     esfuerzo: bajo
@@ -91,6 +94,7 @@ controles:
     evidencia: Matriz de cruce entre políticas; políticas actualizadas con referencias a IA.
   - id: A.2.4
     nombre: Revisión de la política de IA
+    corto: Revisión de la política
     objetivo: A.2
     roles: [usa, desarrolla, provee]
     esfuerzo: bajo
@@ -101,6 +105,7 @@ controles:
   # ---------------------------------------------------------------- A.3
   - id: A.3.2
     nombre: Roles y responsabilidades de IA
+    corto: Roles y responsabilidades
     objetivo: A.3
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -110,6 +115,7 @@ controles:
     evidencia: Matriz RACI de IA; descripciones de puesto; nombramientos firmados.
   - id: A.3.3
     nombre: Reporte de inquietudes
+    corto: Reporte de inquietudes
     objetivo: A.3
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -120,6 +126,7 @@ controles:
   # ---------------------------------------------------------------- A.4
   - id: A.4.2
     nombre: Documentación de recursos
+    corto: Documentación de recursos
     objetivo: A.4
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -129,6 +136,7 @@ controles:
     evidencia: Inventario de sistemas de IA con sus recursos; diagramas de arquitectura y de flujo de datos.
   - id: A.4.3
     nombre: Recursos de datos
+    corto: Recursos de datos
     objetivo: A.4
     roles: [desarrolla, provee]
     esfuerzo: alto
@@ -138,6 +146,7 @@ controles:
     evidencia: Fichas de conjuntos de datos (datasheets); catálogo de datos; metadatos de versiones.
   - id: A.4.4
     nombre: Recursos de herramientas
+    corto: Herramientas
     objetivo: A.4
     roles: [desarrolla, provee]
     esfuerzo: bajo
@@ -147,6 +156,7 @@ controles:
     evidencia: Inventario de herramientas y modelos con versiones; lista de componentes (AI-BOM o SBOM).
   - id: A.4.5
     nombre: Recursos de sistema y cómputo
+    corto: Sistema y cómputo
     objetivo: A.4
     roles: [desarrolla, provee]
     esfuerzo: bajo
@@ -156,6 +166,7 @@ controles:
     evidencia: Inventario de infraestructura; planes de capacidad; datos de consumo energético cuando existan.
   - id: A.4.6
     nombre: Recursos humanos
+    corto: Recursos humanos
     objetivo: A.4
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -166,6 +177,7 @@ controles:
   # ---------------------------------------------------------------- A.5
   - id: A.5.2
     nombre: Proceso de evaluación de impacto
+    corto: Proceso de evaluación
     objetivo: A.5
     roles: [usa, desarrolla, provee]
     esfuerzo: alto
@@ -175,6 +187,7 @@ controles:
     evidencia: Procedimiento de evaluación de impacto con disparadores, responsables, método y criterios.
   - id: A.5.3
     nombre: Documentación de las evaluaciones de impacto
+    corto: Documentación de evaluaciones
     objetivo: A.5
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -184,6 +197,7 @@ controles:
     evidencia: Evaluaciones de impacto firmadas y versionadas; política de retención aplicada.
   - id: A.5.4
     nombre: Evaluación del impacto en individuos o grupos
+    corto: Impacto en personas
     objetivo: A.5
     roles: [usa, desarrolla, provee]
     esfuerzo: alto
@@ -193,6 +207,7 @@ controles:
     evidencia: Sección de impactos individuales de la evaluación; consulta con expertos o usuarios; medidas de mitigación.
   - id: A.5.5
     nombre: Evaluación de impactos sociales
+    corto: Impactos sociales
     objetivo: A.5
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -203,6 +218,7 @@ controles:
   # ---------------------------------------------------------------- A.6
   - id: A.6.1.2
     nombre: Objetivos para el desarrollo responsable
+    corto: Objetivos de desarrollo
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -212,6 +228,7 @@ controles:
     evidencia: Objetivos documentados; requisitos derivados en historias de usuario o criterios de aceptación.
   - id: A.6.1.3
     nombre: Procesos para el diseño y desarrollo responsable
+    corto: Proceso de desarrollo
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: alto
@@ -221,6 +238,7 @@ controles:
     evidencia: Procedimiento del ciclo de vida; puertas de aprobación (stage gates); registros de aprobaciones.
   - id: A.6.2.2
     nombre: Requisitos y especificación
+    corto: Requisitos
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -230,6 +248,7 @@ controles:
     evidencia: Documento de requisitos o caso de negocio; requisitos de datos, desempeño y supervisión.
   - id: A.6.2.3
     nombre: Documentación del diseño y desarrollo
+    corto: Diseño y desarrollo
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -239,6 +258,7 @@ controles:
     evidencia: Documento de diseño; registros de decisiones de arquitectura (ADR); modelo de amenazas de IA.
   - id: A.6.2.4
     nombre: Verificación y validación
+    corto: Verificación y validación
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: alto
@@ -248,6 +268,7 @@ controles:
     evidencia: Plan de pruebas; reportes de evaluación por segmento; criterios de liberación firmados.
   - id: A.6.2.5
     nombre: Despliegue
+    corto: Despliegue
     objetivo: A.6
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -257,6 +278,7 @@ controles:
     evidencia: Plan de despliegue; lista de verificación de salida a producción; aprobación de la dirección.
   - id: A.6.2.6
     nombre: Operación y monitoreo
+    corto: Operación y monitoreo
     objetivo: A.6
     roles: [usa, desarrolla, provee]
     esfuerzo: alto
@@ -266,6 +288,7 @@ controles:
     evidencia: Tableros de monitoreo; umbrales y alertas de deriva; registros de cambios y soporte.
   - id: A.6.2.7
     nombre: Documentación técnica
+    corto: Documentación técnica
     objetivo: A.6
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -275,6 +298,7 @@ controles:
     evidencia: Ficha del sistema o del modelo; manual de operación; plan de manejo de fallas.
   - id: A.6.2.8
     nombre: Registro de eventos
+    corto: Registro de eventos
     objetivo: A.6
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -285,6 +309,7 @@ controles:
   # ---------------------------------------------------------------- A.7
   - id: A.7.2
     nombre: Datos para desarrollo y mejora
+    corto: Datos para desarrollo
     objetivo: A.7
     roles: [desarrolla, provee]
     esfuerzo: alto
@@ -294,6 +319,7 @@ controles:
     evidencia: Procedimiento de gestión de datos para IA; aprobaciones de uso de datos; análisis de representatividad.
   - id: A.7.3
     nombre: Adquisición de datos
+    corto: Adquisición
     objetivo: A.7
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -303,6 +329,7 @@ controles:
     evidencia: Registro de fuentes de datos; licencias y contratos de datos; base legal del tratamiento.
   - id: A.7.4
     nombre: Calidad de los datos
+    corto: Calidad
     objetivo: A.7
     roles: [usa, desarrolla, provee]
     esfuerzo: alto
@@ -312,6 +339,7 @@ controles:
     evidencia: Requisitos de calidad por conjunto; reportes de perfilado; métricas de sesgo y completitud.
   - id: A.7.5
     nombre: Procedencia de los datos
+    corto: Procedencia
     objetivo: A.7
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -321,6 +349,7 @@ controles:
     evidencia: Registros de linaje (lineage); versionado de conjuntos de datos; cadena de custodia.
   - id: A.7.6
     nombre: Preparación de los datos
+    corto: Preparación
     objetivo: A.7
     roles: [desarrolla, provee]
     esfuerzo: medio
@@ -331,6 +360,7 @@ controles:
   # ---------------------------------------------------------------- A.8
   - id: A.8.2
     nombre: Documentación del sistema e información para usuarios
+    corto: Información a usuarios
     objetivo: A.8
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -340,6 +370,7 @@ controles:
     evidencia: Avisos de interacción con IA; instrucciones de uso; criterios documentados de qué informar.
   - id: A.8.3
     nombre: Reporte externo
+    corto: Reporte externo
     objetivo: A.8
     roles: [usa, desarrolla, provee]
     esfuerzo: bajo
@@ -349,6 +380,7 @@ controles:
     evidencia: Formulario o buzón publicado; registro de reportes recibidos y su atención.
   - id: A.8.4
     nombre: Comunicación de incidentes
+    corto: Comunicación de incidentes
     objetivo: A.8
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -358,6 +390,7 @@ controles:
     evidencia: Plan de comunicación de incidentes de IA; plantillas de aviso; registros de notificaciones.
   - id: A.8.5
     nombre: Información para las partes interesadas
+    corto: Información a partes interesadas
     objetivo: A.8
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -368,6 +401,7 @@ controles:
   # ---------------------------------------------------------------- A.9
   - id: A.9.2
     nombre: Procesos para el uso responsable
+    corto: Proceso de uso responsable
     objetivo: A.9
     roles: [usa, desarrolla]
     esfuerzo: medio
@@ -377,6 +411,7 @@ controles:
     evidencia: Procedimiento de alta de casos de uso de IA; política de uso aceptable; aprobaciones registradas.
   - id: A.9.3
     nombre: Objetivos para el uso responsable
+    corto: Objetivos de uso responsable
     objetivo: A.9
     roles: [usa, desarrolla]
     esfuerzo: bajo
@@ -386,6 +421,7 @@ controles:
     evidencia: Objetivos de uso documentados; definición de puntos de supervisión humana; indicadores.
   - id: A.9.4
     nombre: Uso previsto del sistema de IA
+    corto: Uso previsto
     objetivo: A.9
     roles: [usa, desarrolla]
     esfuerzo: medio
@@ -396,6 +432,7 @@ controles:
   # ---------------------------------------------------------------- A.10
   - id: A.10.2
     nombre: Asignación de responsabilidades
+    corto: Asignación de responsabilidades
     objetivo: A.10
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -405,6 +442,7 @@ controles:
     evidencia: Matriz de responsabilidad compartida; cláusulas contractuales; roles de protección de datos definidos.
   - id: A.10.3
     nombre: Proveedores
+    corto: Proveedores
     objetivo: A.10
     roles: [usa, desarrolla, provee]
     esfuerzo: medio
@@ -414,6 +452,7 @@ controles:
     evidencia: Evaluaciones de proveedores de IA; cuestionarios; documentación recibida; seguimiento periódico.
   - id: A.10.4
     nombre: Clientes
+    corto: Clientes
     objetivo: A.10
     roles: [provee]
     esfuerzo: medio
