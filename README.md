@@ -9,7 +9,7 @@
   <a href="LICENSE"><img alt="Licencia del contenido: CC BY-SA 4.0" src="https://img.shields.io/badge/contenido-CC%20BY--SA%204.0-312e81?style=flat-square&logo=creativecommons&logoColor=white"></a>
   <a href="LICENSE-CODE"><img alt="Licencia del código: MIT" src="https://img.shields.io/badge/c%C3%B3digo-MIT-4338ca?style=flat-square"></a>
   <img alt="Idioma: español" src="https://img.shields.io/badge/idioma-espa%C3%B1ol-16a34a?style=flat-square">
-  <a href="CHANGELOG.md"><img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-0.1.0-ea580c?style=flat-square"></a>
+  <a href="CHANGELOG.md"><img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-1.0.0-ea580c?style=flat-square"></a>
 </p>
 
 <h3 align="center">
@@ -26,6 +26,13 @@ No es un paquete de plantillas. Es una explicación de **qué pide la norma, por
 
 > [!IMPORTANT]
 > Esta guía es la interpretación de su autor; no es una postura oficial de ISO ni de IEC. No reproduce ni sustituye a la norma, que debe adquirirse en [iso.org](https://www.iso.org/standard/81230.html) o en el organismo nacional de normalización de tu país. Las referencias legales son informativas y no constituyen asesoría legal. Lee el [aviso legal completo](https://adriangzmncrz-arch.github.io/descifrando-iso42001/acerca-de/#aviso-legal).
+
+## Así se ve
+
+<p align="center">
+  <a href="https://adriangzmncrz-arch.github.io/descifrando-iso42001/"><img src="docs/assets/img/captura-portada.jpg" alt="Portada del sitio Descifrando ISO 42001 con accesos por perfil" width="49%"></a>
+  <a href="https://adriangzmncrz-arch.github.io/descifrando-iso42001/anexo-a/"><img src="docs/assets/img/captura-tabla.jpg" alt="Tabla periódica de los 38 controles del Anexo A en modo oscuro" width="49%"></a>
+</p>
 
 ## ¿Para quién?
 
@@ -48,7 +55,21 @@ No es un paquete de plantillas. Es una explicación de **qué pide la norma, por
 | **Casos prácticos** | Una PyME que usa IA generativa, una fintech con *scoring* crediticio y una empresa que vende un chatbot. |
 | **Implementación y auditoría** | Hoja de ruta, documentación requerida, errores frecuentes, proceso de certificación y hallazgos de ejemplo. |
 | **Integración** | ISO 27001, NIST AI RMF, Reglamento de IA de la UE y contexto de México y Latinoamérica (con fuentes y fechas de consulta). |
-| **Recursos** | Autodiagnóstico con gráfica de radar, selector de rol, plantillas descargables, glosario y preguntas frecuentes. |
+| **Recursos** | Autodiagnóstico con gráfica de radar, selector de rol, 11 plantillas descargables, glosario de más de 150 términos y 40 preguntas frecuentes. |
+
+### Plantillas incluidas
+
+| Plantilla | Formato |
+|---|---|
+| Política de IA · Política de uso aceptable de IA generativa · Roles y responsabilidades (RACI) | Markdown |
+| Inventario de sistemas de IA | Excel |
+| Metodología de evaluación de riesgos de IA y matriz con mapa de calor | Markdown + Excel |
+| Evaluación de impacto del sistema de IA · Ficha del sistema de IA | Markdown |
+| Declaración de Aplicabilidad de los 38 controles, con validación de consistencia | Excel + CSV |
+| Procedimiento y registro de incidentes de IA | Markdown + Excel |
+| Procedimiento de gestión del ciclo de vida · Checklist de auditoría interna | Markdown |
+
+Todas están en la carpeta [`plantillas/`](plantillas/) y tienen vista previa en el sitio.
 
 ## Inicio rápido
 
@@ -68,8 +89,10 @@ mkdocs build --strict
 Los datos de los 38 controles viven en [`data/controles.yml`](data/controles.yml). Si los cambias, regenera los archivos derivados:
 
 ```bash
-python scripts/generar_datos.py       # datos de la matriz y la tabla periódica
-python scripts/validar_contenido.py   # consistencia de controles, anclas e insignias
+python scripts/generar_datos.py              # datos de la matriz, tabla periódica y tabla estática
+python scripts/generar_plantillas_excel.py   # plantillas Excel y CSV
+python scripts/validar_contenido.py          # consistencia de controles, anclas e insignias
+pip install -r requirements-dev.txt && python scripts/verificar_excel.py   # recalcula las fórmulas de los Excel
 ```
 
 ## Autor
