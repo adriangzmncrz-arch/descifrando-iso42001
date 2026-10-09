@@ -274,7 +274,7 @@ El alcance es la frase más importante del certificado, porque dice qué cubre y
 |---|---|---|
 | Contadores Alameda | Uso de sistemas de IA de terceros en la prestación de servicios contables, de nómina y de atención a clientes desde la oficina de Querétaro | "Gestión de inteligencia artificial", sin decir que solo usa IA de terceros |
 | Monarca Crédito | Desarrollo, operación y uso de modelos de aprendizaje automático para originación y asignación de línea de microcréditos en la app, y uso de un servicio externo de detección de fraude | Solo "uso de IA para originación", omitiendo que desarrolla sus modelos |
-| Conversa Labs | Diseño, desarrollo, operación y provisión como servicio de la plataforma Conversa de asistentes virtuales con IA generativa | Excluir la canalización de recuperación (RAG) o el traspaso a agente humano para "simplificar" la auditoría |
+| Conversa Labs | Diseño, desarrollo, operación y suministro de la plataforma SaaS Conversa de asistentes virtuales con IA generativa a clientes empresariales, incluida la integración con modelos fundacionales de terceros, desde Guadalajara, Jalisco | Excluir la canalización de recuperación (RAG) o el traspaso a agente humano para "simplificar" la auditoría |
 
 Reglas prácticas:
 
