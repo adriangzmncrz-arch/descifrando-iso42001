@@ -25,7 +25,7 @@ description: Plantillas descargables y editables para implementar ISO/IEC 42001 
 - **Markdown (.md):** ábrelas en cualquier editor de texto, en Word o en Google Docs (pegando el contenido), o en herramientas como Obsidian o Notion. Cada una tiene una vista previa en este sitio.
 - **Excel (.xlsx):** funcionan en Microsoft Excel, LibreOffice Calc y Google Sheets. Incluyen listas desplegables, fórmulas, formato condicional y una hoja de instrucciones.
 - **CSV:** la Declaración de Aplicabilidad también está en CSV para importarla en herramientas GRC.
-- **Todo junto:** descarga el repositorio completo como [archivo ZIP](https://github.com/adriangzmncrz-arch/descifrando-iso42001/archive/refs/heads/main.zip); las plantillas están en la carpeta `plantillas/`.
+- **Todo junto:** cada versión publicada incluye un ZIP con todas las plantillas y la licencia; descárgalo desde la [última versión](https://github.com/adriangzmncrz-arch/descifrando-iso42001/releases/latest). Si prefieres lo más reciente, aunque aún no esté en una versión, descarga el [repositorio completo](https://github.com/adriangzmncrz-arch/descifrando-iso42001/archive/refs/heads/main.zip); las plantillas están en la carpeta `plantillas/`.
 
 Las plantillas Excel y CSV se generan con el script [`scripts/generar_plantillas_excel.py`](https://github.com/adriangzmncrz-arch/descifrando-iso42001/blob/main/scripts/generar_plantillas_excel.py) a partir de los datos de los controles, así que puedes regenerarlas o adaptarlas.
 

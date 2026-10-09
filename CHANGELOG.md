@@ -12,6 +12,10 @@ Para una guía de contenido, la versión *mayor* cambia con reestructuras del si
 - Imagen de vista previa para redes sociales (`docs/assets/img/social.png`, 1280 × 640) y metadatos Open Graph y de X/Twitter en todas las páginas, con el título y la descripción de cada una.
 - Flujo `publicar-version.yml`: al subir una etiqueta `vX.Y.Z` crea el *release* con las notas del CHANGELOG y un ZIP de las plantillas; el proceso queda documentado en CONTRIBUTING.
 
+### Cambiado
+
+- El README y la página de plantillas enlazan al ZIP de plantillas de la última versión publicada.
+
 ## [1.0.0] - 2026-10-09
 
 Primera versión completa de la guía. Los datos regulatorios y de estado de normas se consultaron el 9 de octubre de 2026.

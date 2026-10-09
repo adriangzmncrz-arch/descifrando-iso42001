@@ -69,7 +69,7 @@ No es un paquete de plantillas. Es una explicación de **qué pide la norma, por
 | Procedimiento y registro de incidentes de IA | Markdown + Excel |
 | Procedimiento de gestión del ciclo de vida · Checklist de auditoría interna | Markdown |
 
-Todas están en la carpeta [`plantillas/`](plantillas/) y tienen vista previa en el sitio.
+Todas están en la carpeta [`plantillas/`](plantillas/) y tienen vista previa en el sitio. Para descargarlas juntas, cada [versión publicada](https://github.com/adriangzmncrz-arch/descifrando-iso42001/releases/latest) incluye un ZIP con las plantillas y la licencia.
 
 ## Inicio rápido
 
