@@ -68,7 +68,7 @@ Cada ruta te dice para quién es, qué ya sabes, qué te falta y qué páginas l
 2. [IA para profesionales de GRC](../fundamentos/ia-para-profesionales-grc.md) · *20 min* — El vocabulario técnico mínimo para conversar con los equipos de datos sin perderte.
 3. [Roles en la IA](../fundamentos/roles-en-la-ia.md) · *15 min* — Tu rol frente a cada sistema define tu alcance y el peso de cada control.
 4. [Riesgo frente a impacto](../fundamentos/riesgo-vs-impacto.md) · *15 min* — El mayor cambio conceptual respecto de ISO 27001.
-5. [Integración con ISO 27001](../integracion/con-iso27001.md) · *20 min* — Qué reutilizas tal cual, qué adaptas y qué construyes desde cero.
+5. [Integración con ISO 27001](../integracion/con-iso27001.md) · *25 min* — Qué reutilizas tal cual, qué adaptas y qué construyes desde cero.
 6. [Cláusula 4 · Contexto](../clausulas/c4-contexto.md) · *20 min* — Cómo entran los roles y el propósito de cada sistema al contexto.
 7. [Cláusula 6 · Planificación](../clausulas/c6-planificacion.md) · *30 min* — Criterios de riesgo, tratamiento, SoA y evaluación de impacto: el corazón del SGIA.
 8. [Anexo A: los 38 controles](../anexo-a/index.md) · *15 min* — Filtra por la insignia "Nuevo frente a 27001" para ver dónde está tu trabajo real.
