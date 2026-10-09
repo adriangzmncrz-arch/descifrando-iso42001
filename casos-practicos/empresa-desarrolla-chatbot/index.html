@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Caso práctico completo de ISO/IEC 42001 para un proveedor SaaS de asistentes con IA generativa en Guadalajara - roles, riesgos, evaluación de impacto, información a usuarios y clientes, responsabilidad compartida, incidentes, cambio de modelo fundacional y el cliente en España.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#caso-3-empresa-que-desarrolla-y-vende-un-chatbot" class="md-skip">
+        <a href="#caso-3-conversa-labs-una-empresa-que-desarrolla-y-vende-un-chatbot" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -1820,6 +1820,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empresa que desarrolla un chatbot
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1836,6 +1854,373 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto-y-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto y alcance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles-frente-a-la-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles frente a la IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventario-de-sistemas-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventario de sistemas de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riesgos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riesgos principales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-de-impacto-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación de impacto completa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluación de impacto completa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datos-del-sistema-y-disparador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datos del sistema y disparador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-previsto-y-uso-indebido-previsible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso previsto y uso indebido previsible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto-tecnico-social-y-jurisdicciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto técnico, social y jurisdicciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partes-afectadas-y-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partes afectadas y consulta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impactos-en-individuos-grupos-y-sociedad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impactos en individuos, grupos y sociedad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supervision-humana-decision-y-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervisión humana, decisión y comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacion-para-usuarios-finales-y-clientes-a8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Información para usuarios finales y clientes (A.8)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Información para usuarios finales y clientes (A.8)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-recibe-cada-parte-interesada-a82-y-a627" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué recibe cada parte interesada (A.8.2 y A.6.2.7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporte-externo-de-impactos-adversos-a83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporte externo de impactos adversos (A.8.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-de-comunicacion-de-incidentes-a84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan de comunicación de incidentes (A.8.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inc-2026-014" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INC-2026-014: la cobertura que no existía
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obligaciones-de-informar-a8-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obligaciones de informar (A.8.5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsabilidad-compartida-proveedor-y-clientes-a10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsabilidad compartida, proveedor y clientes (A.10)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Responsabilidad compartida, proveedor y clientes (A.10)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-responsabilidad-compartida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de responsabilidad compartida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluacion-del-proveedor-del-modelo-fundacional-a103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación del proveedor del modelo fundacional (A.10.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-de-clientes-a104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestión de clientes (A.10.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambio-de-proveedor-del-modelo-fundacional-81-a-84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambio de proveedor del modelo fundacional (8.1 a 8.4)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-de-calidad-y-pruebas-adversarias-a624" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación de calidad y pruebas adversarias (A.6.2.4)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-cliente-en-espana-transparencia-del-art-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El cliente en España: transparencia del art. 50
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracto-de-la-declaracion-de-aplicabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracto de la Declaración de Aplicabilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-e-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos e indicadores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-ruta-del-caso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de ruta del caso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-le-diria-el-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué le diría el auditor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecciones-para-tu-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecciones para tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas-usadas-en-este-caso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas usadas en este caso
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3009,10 +3394,1286 @@
   
 
 
-<h1 id="caso-3-empresa-que-desarrolla-y-vende-un-chatbot">Caso 3 · Empresa que desarrolla y vende un chatbot<a class="headerlink" href="#caso-3-empresa-que-desarrolla-y-vende-un-chatbot" title="Enlace permanente a esta sección">&para;</a></h1>
+<h1 id="caso-3-conversa-labs-una-empresa-que-desarrolla-y-vende-un-chatbot">Caso 3 · Conversa Labs: una empresa que desarrolla y vende un chatbot<a class="headerlink" href="#caso-3-conversa-labs-una-empresa-que-desarrolla-y-vende-un-chatbot" title="Enlace permanente a esta sección">&para;</a></h1>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6c.58 0 1.05.2 1.42.59.38.41.58.86.58 1.41v11c0 .55-.2 1-.58 1.41-.37.39-.84.59-1.42.59H4c-.58 0-1.05-.2-1.42-.59C2.2 20 2 19.55 2 19V8c0-.55.2-1 .58-1.41C2.95 6.2 3.42 6 4 6h4V4c0-.58.2-1.05.58-1.42C8.95 2.2 9.42 2 10 2h4c.58 0 1.05.2 1.42.58.38.37.58.84.58 1.42v2zM4 8v11h16V8zm10-2V4h-4v2z"/></svg></span> Caso práctico</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 40 min de lectura</span></p>
+</div>
 <div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<p class="admonition-title">Empresa ficticia</p>
+<p>Conversa Labs, sus clientes, su proveedor de modelo, sus cifras y sus incidentes son inventados con fines didácticos; cualquier parecido con organizaciones reales es coincidencia. Las referencias a leyes ilustran el razonamiento y no constituyen asesoría legal (<a href="../../acerca-de/#aviso-legal">aviso legal</a>).</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">El caso en una frase</p>
+<p>Una empresa de Guadalajara que vende asistentes virtuales con IA generativa descubre que, para un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, su producto no es solo software: es una cadena de responsabilidades que va del proveedor del modelo fundacional al asegurado que pregunta por su póliza a las once de la noche, y que hay que documentar, repartir y comunicar eslabón por eslabón.</p>
+</div>
+<h2 id="contexto-y-alcance">Contexto y alcance<a class="headerlink" href="#contexto-y-alcance" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>La organización.</strong> Conversa Labs, S.A. de C.V. es una empresa de software de Guadalajara, Jalisco, con 95 personas. Vende <strong>Conversa</strong>, una plataforma SaaS con la que sus clientes ponen en marcha asistentes virtuales con IA generativa para atender a sus propios clientes por WhatsApp, chat web o aplicación móvil. Tiene unos 70 clientes (16 aseguradoras, 21 universidades y 32 comercios) en México, Colombia y Chile, más un comercio en línea en España, su primer cliente en la Unión Europea. Atiende alrededor de 1.8 millones de conversaciones al mes.</p>
+<p><strong>Cómo funciona.</strong> Cada asistente combina un modelo de lenguaje de un proveedor de modelo fundacional (<em>foundation model</em>), consumido por API; generación aumentada por recuperación (<em>retrieval-augmented generation</em>, <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>) sobre la base de conocimiento que carga cada cliente; orquestación propia; filtros de seguridad (<em>guardrails</em>); traspaso a un agente humano del cliente, y un panel de analítica. Conversa <strong>no entrena ni ajusta modelos con datos de sus clientes</strong>: es un compromiso contractual, no una promesa de ventas.</p>
+<pre class="mermaid"><code>flowchart TD
+  U["Usuario final:&lt;br/&gt;WhatsApp, web o app"] --&gt; O["Orquestación propia:&lt;br/&gt;intención y filtros de entrada"]
+  O --&gt; R["Recuperación en la base&lt;br/&gt;de conocimiento del cliente"]
+  O --&gt;|"duda, riesgo o petición"| H["Agente humano&lt;br/&gt;del cliente"]
+  R --&gt; M["Modelo fundacional vía API,&lt;br/&gt;versión fijada"]
+  M --&gt; V["Verificador de sustento&lt;br/&gt;y filtros de salida"]
+  V --&gt;|"respuesta con fuente"| U
+  V -.-&gt; L["Registros enmascarados&lt;br/&gt;y panel de analítica"]</code></pre>
+<p><strong>Personas clave.</strong> El <strong>CEO</strong> (alta dirección) preside el <strong>Comité de IA</strong>, que integran también el <strong>CTO</strong> (dueño técnico de la plataforma), la <strong>Responsable de Confianza y Seguridad</strong> (<em>Trust &amp; Safety</em>), dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y con autoridad para detener una liberación, y <strong>Legal</strong> (contratos, privacidad y regulación). Ese comité es la dirección designada que aprueba planes de tratamiento y acepta riesgos residuales (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>). <strong>Customer Success</strong> comunica cambios e incidentes a los clientes.</p>
+<p><strong>Detonantes.</strong> A finales de 2025 coincidieron cuatro presiones: cada venta a aseguradoras y universidades traía un cuestionario de IA y dos clientes anunciaron auditorías de segunda parte; el prospecto español pidió evidencia de gobierno de la IA y de cómo se cumplirían las obligaciones de transparencia europeas; el proveedor del modelo anunció el retiro de la versión en producción, y la competencia presumía "IA responsable" sin evidencia.</p>
+<p><strong>La decisión.</strong> En febrero de 2026 el CEO aprobó certificarse en ISO/IEC 42001 <strong>integrando el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con su <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></strong>, certificado en ISO/IEC 27001 desde hace tres años. La integración ahorró meses, pero no todo se reutiliza (<a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>):</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Qué reutilizó del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr></th>
+<th>Qué agregó para el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Riesgos</td>
+<td>Herramienta, flujo de aprobación y calendario</td>
+<td>Consecuencias para personas y sociedad (<a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>) y evaluación de impacto (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>)</td>
+</tr>
+<tr>
+<td>Proveedores</td>
+<td>Proceso de ISO 27001 A.5.19 a A.5.23</td>
+<td>Cuestionario de IA y nivel "crítico" para el modelo fundacional</td>
+</tr>
+<tr>
+<td>Incidentes</td>
+<td>Procedimiento de ISO 27001 A.5.24 a A.5.26</td>
+<td>Categorías de IA y plan de comunicación con clientes</td>
+</tr>
+<tr>
+<td>Requisitos legales</td>
+<td>Registro de ISO 27001 A.5.31</td>
+<td>Obligaciones de informar por país</td>
+</tr>
+<tr>
+<td>Gobierno, documentos, auditoría y revisión</td>
+<td>Comité trimestral, control documental, programa de auditoría y revisión por la dirección</td>
+<td>Agenda propia de IA y una Declaración de Aplicabilidad de 38 controles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>El alcance</strong>, el mismo que se analiza en la <a href="../../clausulas/c4-contexto/#c-4-3">cláusula 4</a>:</p>
+<blockquote>
+<p><em>"Diseño, desarrollo, operación y suministro de la plataforma SaaS Conversa de asistentes virtuales con IA generativa a clientes empresariales, incluida la integración con modelos fundacionales de terceros, desde Guadalajara, Jalisco."</em></p>
+</blockquote>
+<p>Qué quedó fuera y por qué:</p>
+<ul>
+<li><strong>El despliegue de cada cliente ante sus usuarios finales</strong> (su aviso de privacidad, su equipo humano, sus decisiones de negocio): es responsabilidad del cliente, y la frontera se gestiona con contratos, matriz de responsabilidad y documentación (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>).</li>
+<li><strong>El entrenamiento del modelo fundacional:</strong> lo hace el proveedor; Conversa lo controla como servicio externo (<a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>).</li>
+<li><strong>Las herramientas de IA de uso interno</strong> (asistentes de programación, asistente de ofimática): se registran como herramientas del desarrollo (<a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a>) bajo la política de uso aceptable (<a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>), no como sistemas aparte. En nuestra lectura es defendible porque no producen resultados para usuarios finales; conviene comentarlo con el organismo de certificación.</li>
+</ul>
+<p>Lo que <strong>no</strong> quedó fuera, aunque alguien lo propuso para "simplificar": la recuperación sobre bases de conocimiento y el traspaso a humano, el corazón del producto (<a href="../../auditoria/como-se-certifica/">cómo se certifica</a>).</p>
+<h2 id="roles-frente-a-la-ia">Roles frente a la IA<a class="headerlink" href="#roles-frente-a-la-ia" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa es <strong>cliente</strong> hacia arriba, <strong>productor</strong> de lo que construye y <strong>proveedor</strong> hacia abajo. La tabla usa los roles de ISO/IEC 22989 a los que remite la cláusula <a href="../../clausulas/c4-contexto/#c-4-1">4.1</a> (ver <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a>):</p>
+<table>
+<thead>
+<tr>
+<th>Sistema o relación</th>
+<th>Rol de Conversa</th>
+<th>Otros actores</th>
+<th>Datos personales (en nuestra lectura)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plataforma Conversa</td>
+<td>Proveedor y productor (orquestación, evaluación, filtros, operación)</td>
+<td>Clientes que despliegan y aportan su base de conocimiento (socios) · Usuarios finales: usuarios y sujetos de IA</td>
+<td>Encargado de conversaciones y bases de conocimiento; responsable de los datos de sus clientes y su personal</td>
+</tr>
+<tr>
+<td>Modelo fundacional vía API</td>
+<td>Cliente y usuario</td>
+<td>Proveedor fundacional: proveedor de plataforma</td>
+<td>El proveedor, subcontratado de Conversa</td>
+</tr>
+<tr>
+<td>Despliegue para la aseguradora SEG-03</td>
+<td>Proveedor</td>
+<td>Aseguradora: cliente y dueña del despliegue · Asegurados: usuarios y sujetos · Condusef, Comisión Nacional de Seguros y Fianzas y autoridad de datos: autoridades</td>
+<td>Aseguradora responsable; Conversa encargado</td>
+</tr>
+<tr>
+<td>Asistente del cliente en España</td>
+<td>Proveedor</td>
+<td>Cliente: responsable del despliegue (<em>deployer</em>) en el Reglamento de IA de la UE · Sus usuarios: sujetos</td>
+<td>Cliente responsable; Conversa encargado</td>
+</tr>
+<tr>
+<td>Herramientas internas</td>
+<td>Cliente y usuario</td>
+<td>Sus proveedores</td>
+<td>Conversa responsable; nunca se ingresan datos de clientes</td>
+</tr>
+</tbody>
+</table>
+<p>Dos ideas ordenan el caso: <strong>la responsabilidad no se terceriza</strong> (si el modelo se equivoca, el asegurado reclama a la aseguradora y esta a Conversa) y <strong>los roles de IA y de datos personales son ejes distintos</strong>. La figura de Conversa ante el Reglamento de la UE se analiza <a href="#el-cliente-en-espana-transparencia-del-art-50">más abajo</a>.</p>
+<h2 id="inventario-de-sistemas-de-ia">Inventario de sistemas de IA<a class="headerlink" href="#inventario-de-sistemas-de-ia" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa inventaria <strong>un solo sistema</strong>, la plataforma, desglosado en perfiles por vertical, porque una aseguradora no es una tienda en línea (6.1.1 permite evaluar por grupos). Columnas de la <a href="../../plantillas/#inventario-sistemas-ia">plantilla de inventario</a>:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Sistema</th>
+<th>Propósito</th>
+<th>Rol</th>
+<th>Origen</th>
+<th>Proveedor</th>
+<th>Tipo</th>
+<th>Datos</th>
+<th>¿Datos personales?</th>
+<th>¿Decisiones sobre personas?</th>
+<th>Nivel de riesgo</th>
+<th>¿Evaluación de impacto?</th>
+<th>Dueño</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IA-01</td>
+<td>Plataforma Conversa (núcleo multicliente)</td>
+<td>Asistentes de atención, uno por cliente</td>
+<td>Provee y desarrolla; cliente del modelo</td>
+<td>Propio con modelo de tercero</td>
+<td>Proveedor fundacional (API)</td>
+<td>IA generativa con <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr></td>
+<td>Bases de conocimiento y conversaciones</td>
+<td>Sí, enmascarados en registros</td>
+<td>No; informa</td>
+<td>Alto</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C01 (plataforma)</td>
+<td>CTO</td>
+<td>Producción</td>
+</tr>
+<tr>
+<td>IA-01/SEG</td>
+<td>Perfil seguros (16 aseguradoras; referencia SEG-03)</td>
+<td>Coberturas, estatus de siniestros, orientación</td>
+<td>Provee</td>
+<td>Configuración de IA-01</td>
+<td>Igual</td>
+<td>Igual</td>
+<td>Condiciones por plan; póliza y siniestro por integración</td>
+<td>Sí</td>
+<td>No, pero influye en si la persona reclama</td>
+<td>Alto</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C02 completa</td>
+<td>CTO, con Customer Success</td>
+<td>Producción</td>
+</tr>
+<tr>
+<td>IA-01/EDU</td>
+<td>Perfil universidades</td>
+<td>Trámites, becas, calendario</td>
+<td>Provee</td>
+<td>Configuración de IA-01</td>
+<td>Igual</td>
+<td>Igual</td>
+<td>Reglamentos y convocatorias</td>
+<td>Sí; posibles aspirantes menores de edad</td>
+<td>No, pero influye en postular a becas</td>
+<td>Alto</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C03 completa</td>
+<td>CTO</td>
+<td>Producción</td>
+</tr>
+<tr>
+<td>IA-01/COM</td>
+<td>Perfil comercios</td>
+<td>Pedidos, devoluciones, horarios</td>
+<td>Provee</td>
+<td>Configuración de IA-01</td>
+<td>Igual</td>
+<td>Igual</td>
+<td>Catálogos y políticas</td>
+<td>Sí</td>
+<td>No</td>
+<td>Medio</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C04 intermedia</td>
+<td>CTO</td>
+<td>Producción</td>
+</tr>
+<tr>
+<td>IA-01/UE</td>
+<td>Comercio en España</td>
+<td>Igual que COM, con controles de transparencia de la UE</td>
+<td>Provee</td>
+<td>Configuración de IA-01</td>
+<td>Igual</td>
+<td>Igual</td>
+<td>Igual que COM</td>
+<td>Sí</td>
+<td>No</td>
+<td>Medio</td>
+<td>Anexo de jurisdicción de <abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C04</td>
+<td>CTO</td>
+<td>Producción desde julio de 2026</td>
+</tr>
+</tbody>
+</table>
+<p>De IA-01 cuelga su lista de componentes (<abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr>): el modelo fundacional en versión fijada, un modelo pequeño para clasificar intenciones, la recuperación híbrida (palabras clave más vectores), el verificador de sustento, los filtros, un servicio de transcripción de notas de voz de otro proveedor y el panel de analítica (<a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a>).</p>
+<h2 id="riesgos-principales">Riesgos principales<a class="headerlink" href="#riesgos-principales" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa usa los criterios de la <a href="../../clausulas/c6-planificacion/#c-6-1-1">cláusula 6</a>: consecuencia en tres dimensiones (organización, individuos, sociedad) tomando <strong>la peor</strong>, probabilidad de 1 a 5 y matriz asimétrica de 5 × 5. Evalúa la plataforma y luego cada perfil por vertical:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Riesgo: causa → evento → consecuencia</th>
+<th>O · I · S</th>
+<th>P</th>
+<th>Nivel</th>
+<th>Tratamiento y controles</th>
+<th>Residual</th>
+<th>Acepta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-C01</td>
+<td>Bases de conocimiento con documentos de varios planes y un verificador que no revisaba cifras → el asistente afirma coberturas, deducibles o plazos sin sustento → el asegurado gasta, no reclama o reclama tarde</td>
+<td>4 · 3 · 2</td>
+<td>4</td>
+<td>🟥 Crítico</td>
+<td>Verificador por afirmación C-VER-01; filtro por plan y vigencia; regresión obligatoria (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>); abstención y traspaso; fuente citada (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>); el cliente resarce gastos razonables</td>
+<td>🟧 Alto (C4 · P2)</td>
+<td>Comité de IA, revisión trimestral</td>
+</tr>
+<tr>
+<td>R-C02</td>
+<td>El proveedor publica una versión o mueve un alias → el comportamiento cambia sin detección → más negativas o menos bloqueo de ataques en todos los clientes a la vez</td>
+<td>4 · 3 · 2</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Versión fijada; verificación automática C-VER-02; batería ante cada versión; aviso previo contractual; despliegue gradual con reversa (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>)</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C03</td>
+<td>Un usuario final aplica inyección de instrucciones (<em>prompt injection</em>), directa o escondida en un documento → obtiene datos de otro cliente o la instrucción de sistema</td>
+<td>4 · 4 · 2</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Aislamiento por cliente en el índice; pruebas adversarias por versión; detección en producción (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>); filtro de salida C-SEG-02 (CTO, dos ingenieros, marzo de 2027)</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C04</td>
+<td>Configuraciones del cliente o plantillas de WhatsApp omiten el saludo → la persona no sabe que conversa con una IA → engaño y, en España, posible incumplimiento del art. 50</td>
+<td>4 · 2 · 2</td>
+<td>2</td>
+<td>🟧 Alto</td>
+<td>Aviso no eliminable C-TRA-01 en la primera interacción de todo canal; indicador diario</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C05</td>
+<td>Un cliente usa el asistente fuera del dominio validado (dictaminar siniestros, consejo médico) → daño a sus usuarios</td>
+<td>3 · 4 · 3</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Términos de uso con usos prohibidos; temas bloqueados que el cliente no puede activar; solicitudes rechazadas registradas (<a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>)</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C06</td>
+<td>Conversaciones usadas fuera de su finalidad (entrenamiento, copia a herramientas no aprobadas, retención excesiva) → exposición de datos y ruptura del compromiso contractual</td>
+<td>4 · 4 · 2</td>
+<td>2</td>
+<td>🟧 Alto</td>
+<td>No entrenamiento por contrato en ambos sentidos; ningún flujo técnico hacia entrenamiento; autorización expresa para evaluación; supresión automática (<a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a>)</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C07</td>
+<td><em>(Nuevo tras INC-2026-014)</em> Productos o versiones mezclados en bases multiproducto → se citan condiciones de otro plan o vencidas</td>
+<td>4 · 3 · 1</td>
+<td>3</td>
+<td>🟧 Alto</td>
+<td>Metadatos de producto y vigencia; recuperación filtrada por plan; control de versiones (<a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a>); preguntas trampa</td>
+<td>🟨 Medio (C4 · P1)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td>R-C08</td>
+<td>Variantes del español, notas de voz y baja alfabetización digital → más fallas y traspasos tardíos para chilenos, colombianos y personas mayores</td>
+<td>2 · 3 · 3</td>
+<td>4</td>
+<td>🟧 Alto</td>
+<td>Métricas por país y canal; glosario regional; umbral de confianza de la transcripción; traspaso tras dos intentos fallidos</td>
+<td>🟨 Medio (C3 · P2)</td>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+</tbody>
+</table>
+<p>También registró una <strong>oportunidad</strong> (O-C01): atender siniestros de noche y en fin de semana con el estatus en tiempo real, medida con el tiempo de primera respuesta.</p>
+<p><strong>R-C01 llegó a Crítico</strong> tras <a href="#inc-2026-014">INC-2026-014</a> y los criterios no aceptan un Crítico: la función de coberturas se suspendió para ese cliente hasta volver con restricciones. <strong>R-C03 y R-C06 tienen dos sombreros</strong>: son riesgos del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y de IA (<a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a>). Y cada riesgo dice quién lo controla (proveedor, cliente o Conversa), lo que alimenta la <a href="#matriz-de-responsabilidad-compartida">matriz de responsabilidad</a>.</p>
+<h2 id="evaluacion-de-impacto-completa">Evaluación de impacto completa<a class="headerlink" href="#evaluacion-de-impacto-completa" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa hace evaluaciones de impacto del sistema de IA (<em>AI system impact assessment</em>) de la plataforma (<abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C01), de cada vertical y, por jurisdicción, como anexos. La más exigente es la de seguros: los asegurados deciden con dinero de por medio y muchos son personas mayores. La aseguradora, dueña del despliegue, participa en la consulta y usa el resultado como insumo de su propia evaluación. Sigue la estructura de <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> y la escala de severidad de <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a> (gravedad + alcance + reversibilidad, de 3 a 12).</p>
+<h3 id="datos-del-sistema-y-disparador">Datos del sistema y disparador<a class="headerlink" href="#datos-del-sistema-y-disparador" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C02 v2.0 · IA-01/SEG · Despliegue de referencia: SEG-03, aseguradora mexicana de autos y daños con cerca de 400 000 asegurados</td>
+</tr>
+<tr>
+<td>Versión evaluada</td>
+<td>Orquestación 4.3; modelo del nuevo proveedor, versión fijada; configuración SEG-03 revisión 12</td>
+</tr>
+<tr>
+<td>Evaluaron</td>
+<td>Responsable de Confianza y Seguridad (coordina), ingeniera de evaluación, Customer Success de seguros y Legal; por la aseguradora, su dueño del despliegue, su oficial de privacidad y su centro de contacto</td>
+</tr>
+<tr>
+<td>Aprobó</td>
+<td>Comité de IA, julio de 2026</td>
+</tr>
+<tr>
+<td>Disparadores</td>
+<td>v1.0, marzo de 2026: primer ciclo del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> · v1.1, mayo: cambio de proveedor del modelo (<a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>) · v2.0, julio: INC-2026-014</td>
+</tr>
+<tr>
+<td>Cribado</td>
+<td>Completa: influye en el acceso a un seguro, conversa con el público y atiende a personas mayores (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uso-previsto-y-uso-indebido-previsible">Uso previsto y uso indebido previsible<a class="headerlink" href="#uso-previsto-y-uso-indebido-previsible" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Uso previsto.</strong> Responder 24/7 por WhatsApp y chat web sobre coberturas <strong>del plan identificado</strong>, citando el documento; estatus de un siniestro ya reportado (solo lectura, tras un código de verificación enviado al número registrado); cómo reportar un siniestro y qué documentos reunir; talleres y citas. Ante duda, riesgo o petición, traspasa a una persona.</p>
+<p><strong>Fuera del uso previsto.</strong> Dictaminar si un siniestro procede, calcular indemnizaciones, cotizar, cancelar pólizas, dar consejo médico o legal y levantar reportes de siniestro (eso lo hace la cabina de la aseguradora).</p>
+<p><strong>Uso indebido razonablemente previsible.</strong> Tomar la respuesta como confirmación vinculante de cobertura; pedir consejo médico tras un accidente; consultar una póliza ajena con un número obtenido de algún modo; intentar inyección de instrucciones; que la aseguradora quiera desalentar reclamaciones o vender más a personas mayores; que los agentes copien sin verificar el resumen del asistente (sesgo de automatización, <em>automation bias</em>).</p>
+<h3 id="contexto-tecnico-social-y-jurisdicciones">Contexto técnico, social y jurisdicciones<a class="headerlink" href="#contexto-tecnico-social-y-jurisdicciones" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Técnico.</strong> Recuperación por plan con metadatos de vigencia, verificador de sustento, integración de solo lectura con siniestros, modelo de tercero con versión fijada, transcripción de voz y registros enmascarados (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>). Limitación de fondo: un modelo generativo puede producir texto convincente sin sustento.</p>
+<p><strong>Social.</strong> La gente escribe en momentos de estrés (un choque, un robo, una inundación) y la cultura de seguros es baja: deducible y coaseguro se confunden con facilidad. Cerca del 22 % de los asegurados de hogar tiene 65 años o más; muchos usan notas de voz y confían más en lo que "dice el sistema". Reclamar ante la unidad especializada de la aseguradora y luego ante la Condusef es un camino lento para quien ya gastó.</p>
+<p><strong>Jurisdicciones.</strong> México: <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>, protección a usuarios de servicios financieros y supervisión del sector asegurador, cuyas obligaciones concretas valora el área jurídica de la aseguradora. El perfil se reutiliza en dos aseguradoras colombianas con un anexo de jurisdicción (<a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>).</p>
+<h3 id="partes-afectadas-y-consulta">Partes afectadas y consulta<a class="headerlink" href="#partes-afectadas-y-consulta" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Afectados:</strong> asegurados titulares y beneficiarios; <strong>personas mayores</strong>, grupo con necesidades de protección; personas con discapacidad visual o auditiva; terceros en un siniestro que escriben al canal sin ser asegurados; agentes del centro de contacto, cuyo trabajo cambia, y el sector asegurador, cuya credibilidad se erosiona si los errores se repiten a escala.</p>
+<p><strong>Consulta realizada:</strong> dos talleres con agentes del centro de contacto; revisión de 600 conversaciones anonimizadas, con autorización expresa y por escrito de la aseguradora; ocho entrevistas telefónicas con asegurados de 65 años o más, organizadas por la aseguradora; las categorías de quejas de su unidad especializada, y una revisión de accesibilidad por una especialista externa.</p>
+<h3 id="impactos-en-individuos-grupos-y-sociedad">Impactos en individuos, grupos y sociedad<a class="headerlink" href="#impactos-en-individuos-grupos-y-sociedad" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>G · A · R son gravedad, alcance y reversibilidad. Si el grupo expuesto son personas mayores, la gravedad sube un nivel (regla de piso por vulnerabilidad de A.5).</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Signo</th>
+<th>G · A · R inicial</th>
+<th>Severidad</th>
+<th>Medidas</th>
+<th>Residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I-01</td>
+<td>Información errónea sobre coberturas, deducibles o plazos (incluye personas mayores)</td>
+<td>−</td>
+<td>4 · 2 · 2 = 8</td>
+<td>Alta</td>
+<td>Verificador por afirmación; solo documentos del plan y versión vigentes; aviso de que la póliza manda; abstención y traspaso; la aseguradora resarce gastos razonables</td>
+<td>3 · 1 · 1 = 5, Media</td>
+</tr>
+<tr>
+<td>I-02</td>
+<td>La persona cree que su siniestro ya quedó reportado, o no se reconoce una urgencia</td>
+<td>−</td>
+<td>3 · 2 · 3 = 8</td>
+<td>Alta</td>
+<td>Palabras de urgencia con traspaso inmediato; mensaje fijo "sin folio no hay reporte"; teléfono de cabina en cada respuesta sobre siniestros</td>
+<td>3 · 1 · 2 = 6, Media</td>
+</tr>
+<tr>
+<td>I-03</td>
+<td>Datos de una póliza expuestos a un tercero o a otro cliente</td>
+<td>−</td>
+<td>3 · 2 · 3 = 8</td>
+<td>Alta</td>
+<td>Código de verificación; aislamiento por cliente; pruebas adversarias; enmascaramiento</td>
+<td>3 · 1 · 3 = 7, Media</td>
+</tr>
+<tr>
+<td>I-04</td>
+<td>Peor servicio para quien no domina el canal</td>
+<td>−</td>
+<td>3 · 3 · 1 = 7</td>
+<td>Media</td>
+<td>Traspaso tras dos intentos fallidos; opción "llámame"; mensajes cortos; confirmación si la transcripción es dudosa</td>
+<td>3 · 2 · 1 = 6, Media</td>
+</tr>
+<tr>
+<td>I-05</td>
+<td>Agentes que aceptan sin revisar el resumen del asistente</td>
+<td>−</td>
+<td>2 · 2 · 2 = 6</td>
+<td>Media</td>
+<td>El resumen marca lo no verificado; manual del panel</td>
+<td>2 · 1 · 1 = 4, Baja</td>
+</tr>
+<tr>
+<td>I-06</td>
+<td>Cambios en el empleo del centro de contacto</td>
+<td>− / +</td>
+<td>2 · 2 · 2 = 6</td>
+<td>Media</td>
+<td>Diseño orientado a liberar agentes para casos complejos; la plantilla la decide el cliente</td>
+<td>Media, decisión del cliente</td>
+</tr>
+<tr>
+<td>P-01</td>
+<td>Respuesta inmediata de noche y en fin de semana</td>
+<td>+</td>
+<td>—</td>
+<td>—</td>
+<td>Tiempo de primera respuesta medido</td>
+<td>Se mantiene</td>
+</tr>
+<tr>
+<td>P-02</td>
+<td>Coberturas en lenguaje claro, con la fuente a la mano</td>
+<td>+</td>
+<td>—</td>
+<td>—</td>
+<td>Glosario aprobado por la aseguradora</td>
+<td>Se mantiene</td>
+</tr>
+<tr>
+<td>S-01</td>
+<td>Error repetido a escala en varias aseguradoras</td>
+<td>−</td>
+<td>2 · 4 · 2 = 8</td>
+<td>Alta</td>
+<td>Regresión por plataforma; casos similares en todos los clientes; plan de incidentes</td>
+<td>2 · 3 · 1 = 6, Media</td>
+</tr>
+<tr>
+<td>S-02</td>
+<td>Consumo de cómputo</td>
+<td>−</td>
+<td>1 · 2 · 2 = 5</td>
+<td>Media</td>
+<td>Modelo pequeño para clasificar intenciones; respuestas acotadas</td>
+<td>1 · 2 · 1 = 4, Baja</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supervision-humana-decision-y-comunicacion">Supervisión humana, decisión y comunicación<a class="headerlink" href="#supervision-humana-decision-y-comunicacion" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Supervisión humana.</strong> El asistente no decide nada sobre la póliza ni el siniestro. Cualquier persona puede escribir AGENTE (o tocar el botón); de noche, el traspaso va a la cabina de siniestros. Los agentes ven el resumen con lo no verificado marcado.</p>
+<p><strong>Impactos residuales.</strong> Todos en Media o Baja. I-01 es el más vigilado: depende de que la aseguradora mantenga sus documentos al día, algo que Conversa no controla.</p>
+<p><strong>Decisión.</strong> <em>Aprobada con condiciones</em>: coberturas solo con plan identificado y verificador activo; la procedencia de siniestros queda fuera de forma permanente; todo cambio significativo a la base exige regresión antes de publicarse.</p>
+<p><strong>Comunicación.</strong> La aseguradora recibe la evaluación completa bajo confidencialidad y una <strong>ficha de impacto</strong> para su propia evaluación; las demás aseguradoras, un resumen sin datos de SEG-03; el centro de confianza (<em>trust center</em>), un resumen general del vertical.</p>
+<p><strong>Retención.</strong> Cada versión se conserva mientras el vertical esté activo y cinco años después del último contrato de seguros (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>).</p>
+<p><strong>Próxima revisión.</strong> Enero de 2027 (semestral, por severidad Media) o antes, ante una nueva versión del modelo, nuevas funciones (por ejemplo, cotizar) o un incidente relevante. Cada impacto negativo tiene su riesgo enlazado: I-01 y S-01 → R-C01 y R-C07; I-03 → R-C03; I-04 → R-C08.</p>
+<h2 id="informacion-para-usuarios-finales-y-clientes-a8">Información para usuarios finales y clientes (A.8)<a class="headerlink" href="#informacion-para-usuarios-finales-y-clientes-a8" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>A.8 y A.10 son el centro de gravedad del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> de Conversa. La dificultad de A.8 es que hay <strong>dos niveles de usuarios</strong>, el cliente que configura y el usuario final que conversa, y Conversa solo le habla directamente al primero.</p>
+<h3 id="que-recibe-cada-parte-interesada-a82-y-a627">Qué recibe cada parte interesada (A.8.2 y A.6.2.7)<a class="headerlink" href="#que-recibe-cada-parte-interesada-a82-y-a627" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El criterio documentado: a mayor impacto y menor pericia, información más breve, visible y temprana.</p>
+<table>
+<thead>
+<tr>
+<th>Parte interesada</th>
+<th>Qué recibe</th>
+<th>Cuándo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usuarios finales (asegurados)</td>
+<td>Aviso de que conversan con una IA; qué hace y qué no; cómo pedir a una persona y cómo reportar; la fuente de cada respuesta sobre coberturas</td>
+<td>En la primera interacción de cada canal y en cada respuesta sensible</td>
+</tr>
+<tr>
+<td>Dueño del despliegue del cliente</td>
+<td>Ficha del asistente, límites del dominio, guía de configuración segura, guía para la base de conocimiento, reporte mensual de calidad, notas de versión</td>
+<td>Al arrancar, en cada versión y cada mes</td>
+</tr>
+<tr>
+<td>Agentes humanos del cliente</td>
+<td>Manual del panel de traspaso: cómo leer el resumen y cuándo desconfiar de él</td>
+<td>En su capacitación</td>
+</tr>
+<tr>
+<td>Compras, riesgos, jurídico y TI del cliente</td>
+<td>Paquete de debida diligencia (resúmenes de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y de la evaluación de impacto, matriz, pruebas, subcontratados, certificado del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>) y guía de integración</td>
+<td>En la venta y la integración</td>
+</tr>
+<tr>
+<td>Autoridades</td>
+<td>Expediente técnico bajo confidencialidad</td>
+<td>Solo a solicitud</td>
+</tr>
+</tbody>
+</table>
+<p>La <strong>ficha del asistente</strong> sale de la misma fuente que la documentación técnica (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>) y cambia con cada versión: usos previstos y fuera de alcance, modelo y versión, métricas fechadas del conjunto dorado, limitaciones conocidas (respuestas inventadas, notas de voz con ruido, modismos) y responsabilidades del cliente.</p>
+<p><strong>El aviso de interacción con IA</strong> viene activado y <strong>no se puede eliminar</strong> (control propio C-TRA-01). El cliente adapta el texto a su marca, pero tres elementos son fijos: que es una IA, qué no hace y cómo pedir a una persona. El texto base para seguros:</p>
+<blockquote>
+<p>"Hola, soy el asistente virtual de [Aseguradora]. Soy un sistema de inteligencia artificial: puedo orientarte sobre tu póliza y el estatus de tu siniestro, pero no autorizo coberturas ni pagos. Escribe AGENTE cuando quieras hablar con una persona."</p>
+</blockquote>
+<p>El aviso también aparece cuando la empresa inicia la conversación con una plantilla de WhatsApp, el hueco que reveló R-C04. Para personas mayores, el asistente usa mensajes cortos, ofrece "¿quieres que te llamemos?" y repite la salida a una persona si nota confusión.</p>
+<p><strong>Límites del dominio de uso.</strong> La ficha distingue tres cosas, porque "no validado" no es lo mismo que "prohibido":</p>
+<table>
+<thead>
+<tr>
+<th>Validado</th>
+<th>No validado: requiere evaluación previa</th>
+<th>Prohibido en los términos de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atención informativa en español de México, Colombia, Chile y España: preguntas frecuentes, estatus, citas, orientación sobre trámites</td>
+<td>Otros idiomas; menores sin acompañamiento; integraciones que escriben en los sistemas del cliente</td>
+<td>Dictaminar coberturas, elegibilidad o siniestros; consejo médico, legal o financiero personalizado; ocultar que es una IA; campañas políticas o mensajes engañosos</td>
+</tr>
+</tbody>
+</table>
+<p>Y una frase sin letra chica: el desempeño depende de la calidad de la base de conocimiento que carga el cliente.</p>
+<h3 id="reporte-externo-de-impactos-adversos-a83">Reporte externo de impactos adversos (A.8.3)<a class="headerlink" href="#reporte-externo-de-impactos-adversos-a83" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En el chat web hay un botón "reportar esta respuesta" y en WhatsApp, la palabra REPORTAR. Cada reporte llega <strong>a dos lugares</strong>: al panel del cliente, que atiende el primer nivel y responde a la persona, y a la cola de Confianza y Seguridad, que busca patrones. Entre julio y septiembre de 2026 llegaron 1 140 reportes: 58 % quejas comerciales (se turnan al cliente), 24 % errores factuales, 11 % "no me entendió", 5 % tono inapropiado y 2 % posibles fallas de seguridad o privacidad. Las tendencias van cada mes al Comité de IA y alimentan R-C01 y R-C08.</p>
+<h3 id="plan-de-comunicacion-de-incidentes-a84">Plan de comunicación de incidentes (A.8.4)<a class="headerlink" href="#plan-de-comunicacion-de-incidentes-a84" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Es un anexo del procedimiento de incidentes del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>. Su matriz de notificación:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de incidente</th>
+<th>Conversa avisa a</th>
+<th>Plazo contractual</th>
+<th>El cliente avisa a</th>
+<th>Aprueba en Conversa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Respuestas erróneas con efecto en usuarios</td>
+<td>Cliente afectado</td>
+<td>Aviso en 24 h; informe con alcance en 72 h; cierre en 15 días hábiles</td>
+<td>Usuarios afectados y, si su jurídico lo decide, autoridades</td>
+<td>Responsable de Confianza y Seguridad</td>
+</tr>
+<tr>
+<td>Fuga entre clientes o inyección exitosa</td>
+<td>Todos los clientes afectados</td>
+<td>Aviso en 24 h</td>
+<td>Titulares y autoridad de datos, según su ley</td>
+<td>CEO, con Legal</td>
+</tr>
+<tr>
+<td>Cambio de comportamiento por versión del modelo</td>
+<td>Clientes del perfil y proveedor del modelo</td>
+<td>24 h si afecta a usuarios; si no, nota de versión</td>
+<td>Según su evaluación</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>Incidente del proveedor</td>
+<td>Clientes afectados</td>
+<td>Según severidad, tras el aviso del proveedor</td>
+<td>Según su evaluación</td>
+<td>CTO y Legal</td>
+</tr>
+<tr>
+<td>Error en el contenido del cliente</td>
+<td>Cliente</td>
+<td>24 h</td>
+<td>Usuarios afectados</td>
+<td>Customer Success</td>
+</tr>
+</tbody>
+</table>
+<p>Con datos personales, Conversa actúa como encargado: avisa de inmediato al cliente responsable para que cumpla su propia obligación, que en México incluye avisar de las vulneraciones que afecten de forma significativa (art. 19 de la <abbr title="Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).">LFPDPPP</abbr>)<sup id="fnref:lfpdppp"><a class="footnote-ref" href="#fn:lfpdppp">1</a></sup>. Toda decisión de <strong>no</strong> notificar se registra con su justificación. El plan se probó en un simulacro de escritorio con dos aseguradoras en agosto de 2026.</p>
+<h3 id="inc-2026-014">INC-2026-014: la cobertura que no existía<a class="headerlink" href="#inc-2026-014" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>En junio de 2026 el asistente de SEG-03 le afirmó a un asegurado que su plan de autos incluía auto sustituto por 15 días; no lo incluía. La historia completa (contención en dos horas, 60 días de registros revisados, 12 conversaciones afectadas, causa raíz y eficacia) está en el <a href="../../clausulas/c10-mejora/#ejemplo-resuelto">ejemplo resuelto de la cláusula 10</a>. Aquí interesa cómo viajó la responsabilidad. El flujo es distinto del de <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a>, donde la falla nace en una versión nueva del modelo: aquí el aviso llega del cliente y la causa estaba en la base de conocimiento y en la verificación de Conversa.</p>
+<pre class="mermaid"><code>sequenceDiagram
+  autonumber
+  participant AF as Asegurado
+  participant AS as Aseguradora SEG-03
+  participant TS as Conversa · Confianza y Seguridad
+  participant CS as Conversa · Customer Success
+  participant PM as Proveedor del modelo
+  AF-&gt;&gt;AS: Queja por el reembolso rechazado
+  AS-&gt;&gt;TS: Reporte por el portal de soporte
+  TS-&gt;&gt;TS: Abre INC-2026-014 con severidad alta
+  TS-&gt;&gt;TS: Contención en 2 horas, coberturas pasan a humano
+  TS-&gt;&gt;PM: Consulta si cambió la versión fijada
+  PM--&gt;&gt;TS: Sin cambios, se descarta su componente
+  TS-&gt;&gt;TS: Revisa registros y encuentra 12 conversaciones
+  CS-&gt;&gt;AS: Informe del día 2 con lista y texto sugerido
+  Note over AS: Valora con su área jurídica si avisa a alguna autoridad
+  AS-&gt;&gt;AF: Contacta a los afectados y reembolsa
+  TS-&gt;&gt;TS: Registra NC-019 y abre AC-2026-009
+  CS-&gt;&gt;AS: Informe de cierre y análisis sin culpables</code></pre>
+<p>La acción correctiva <strong>AC-2026-009</strong> atacó tres causas: cargas significativas publicadas sin regresión; documentos de varios planes y versiones (incluidas condiciones vencidas) sin metadatos de producto ni vigencia, y un verificador que comprobaba conceptos, no cifras ni plazos. Sus seis acciones se cerraron a los 120 días: la verificación de eficacia de los 90 días encontró un deducible tomado de una versión vencida y obligó a añadir control de versiones. Para A.8 y A.10 dejó tres cosas: una <strong>guía para clientes</strong> sobre cómo cargar y mantener sus documentos; una <strong>aclaración contractual</strong> de que el contenido es del cliente aunque Customer Success lo cargue como servicio administrado, siempre con su aprobación, y un análisis sin culpables (<em>blameless postmortem</em>) compartido de forma anónima con las aseguradoras.</p>
+<h3 id="obligaciones-de-informar-a8-5">Obligaciones de informar (A.8.5)<a class="headerlink" href="#obligaciones-de-informar-a8-5" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El registro extiende el de requisitos legales del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> y se revisa al firmar en un país nuevo:</p>
+<table>
+<thead>
+<tr>
+<th>Destinatario</th>
+<th>Fuente</th>
+<th>Qué se entrega</th>
+<th>Detonante</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aseguradoras y universidades</td>
+<td>Contratos</td>
+<td>Reporte mensual de calidad, incidentes, subcontratados, acceso a auditorías de segunda parte</td>
+<td>Mensual, ante incidente, anual</td>
+<td>Customer Success</td>
+</tr>
+<tr>
+<td>Clientes como responsables de datos</td>
+<td>Leyes de datos personales y contratos de encargo</td>
+<td>Apoyo con derechos de los titulares; avisos de vulneraciones</td>
+<td>A solicitud o ante incidente</td>
+<td>Legal</td>
+</tr>
+<tr>
+<td>Cliente en España</td>
+<td>Reglamento de IA de la UE (art. 50) y contrato</td>
+<td>Cómo se informa de la interacción con IA y, si aplica, cómo se marca el contenido</td>
+<td>Antes de cada cambio relevante</td>
+<td>Legal y CTO</td>
+</tr>
+<tr>
+<td>Autoridades</td>
+<td>Requerimientos formales</td>
+<td>Solo lo necesario, tras validación y revisión jurídica</td>
+<td>A solicitud</td>
+<td>Legal</td>
+</tr>
+</tbody>
+</table>
+<p>Para Colombia y Chile el registro anota proyectos de ley de IA que <strong>todavía no son ley</strong>; Legal les da seguimiento sin asumir obligaciones inexistentes (<a href="../../integracion/contexto-mexico-latam/">México y Latinoamérica</a>).</p>
+<h2 id="responsabilidad-compartida-proveedor-y-clientes-a10">Responsabilidad compartida, proveedor y clientes (A.10)<a class="headerlink" href="#responsabilidad-compartida-proveedor-y-clientes-a10" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="matriz-de-responsabilidad-compartida">Matriz de responsabilidad compartida<a class="headerlink" href="#matriz-de-responsabilidad-compartida" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La versión resumida por capas, anexa a todos los contratos, está en <a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>. Esta es la versión detallada por actividad que acompaña a los contratos de seguros; cada fila tiene detrás una cláusula y una persona responsable en el <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> interno (<a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>):</p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proveedor del modelo fundacional</th>
+<th>Conversa Labs</th>
+<th>Cliente (aseguradora)</th>
+<th>Dónde está escrito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datos de entrenamiento del modelo base</td>
+<td>Responde por ellos</td>
+<td>Los evalúa como cliente</td>
+<td>—</td>
+<td>Términos del proveedor</td>
+</tr>
+<tr>
+<td>No entrenar con datos de clientes</td>
+<td>No entrena con lo enviado por API</td>
+<td>No entrena ni ajusta; ningún flujo de registros hacia entrenamiento</td>
+<td>Puede autorizar por escrito conversaciones anonimizadas solo para evaluar</td>
+<td>Contrato del proveedor; contrato marco; formato de autorización</td>
+</tr>
+<tr>
+<td>Contenido de la base de conocimiento</td>
+<td>—</td>
+<td>Ingesta, enmascaramiento, metadatos y diagnóstico; carga solo con aprobación del cliente</td>
+<td>Exactitud, vigencia y derechos de uso</td>
+<td>Anexo de servicio (aclarado por AC-2026-009)</td>
+</tr>
+<tr>
+<td>Modelo y versión</td>
+<td>Versiones fijas y aviso de retiros</td>
+<td>Elige, fija, evalúa antes de adoptar y avisa con 30 días</td>
+<td>Recibe notas de versión</td>
+<td>Contrato del proveedor; anexo de servicio</td>
+</tr>
+<tr>
+<td>Evaluación y pruebas</td>
+<td>Evaluaciones de seguridad del modelo base</td>
+<td>Conjunto dorado, batería adversaria y regresión</td>
+<td>Acepta el desempeño en su dominio y aporta preguntas</td>
+<td>Procedimiento de verificación; acta de aceptación</td>
+</tr>
+<tr>
+<td>Configuración</td>
+<td>—</td>
+<td>Valores seguros por defecto; temas prohibidos bloqueados</td>
+<td>Configura dentro de los límites</td>
+<td>Guía de configuración; términos de uso</td>
+</tr>
+<tr>
+<td>Aviso de interacción con IA</td>
+<td>—</td>
+<td>Activo y no eliminable; textos por país</td>
+<td>Lo adapta a su marca</td>
+<td>Términos de uso; anexo UE</td>
+</tr>
+<tr>
+<td>Aviso de privacidad</td>
+<td>—</td>
+<td>Describe su tratamiento como encargado</td>
+<td>Lo emite ante sus usuarios, con mención de la IA</td>
+<td>Contrato de encargo</td>
+</tr>
+<tr>
+<td>Supervisión humana</td>
+<td>—</td>
+<td>Traspaso y resumen para el agente</td>
+<td>Equipo humano, horarios y tiempos</td>
+<td>Anexo de servicio</td>
+</tr>
+<tr>
+<td>Reportes de usuarios finales</td>
+<td>—</td>
+<td>Segundo nivel y patrones</td>
+<td>Primer nivel y respuesta a quien reporta</td>
+<td>Anexo de servicio</td>
+</tr>
+<tr>
+<td>Incidentes</td>
+<td>Avisa de fallas de su API o modelo</td>
+<td>Contención, informes y plan de la plataforma</td>
+<td>Reporta lo que detecta; decide medidas de negocio</td>
+<td>Contratos en ambos sentidos</td>
+</tr>
+<tr>
+<td>Comunicación a usuarios y autoridades</td>
+<td>—</td>
+<td>Insumos y textos sugeridos</td>
+<td>Avisa a sus usuarios; evalúa avisos a su supervisor y a la autoridad de datos</td>
+<td>Plan de A.8.4</td>
+</tr>
+<tr>
+<td>Evaluación de impacto</td>
+<td>Documenta las limitaciones del modelo</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr> de plataforma y vertical; ficha de impacto</td>
+<td>Evalúa su propio despliegue</td>
+<td>Anexo de servicio</td>
+</tr>
+<tr>
+<td>Resarcimiento por respuestas erróneas</td>
+<td>—</td>
+<td>Corrige y documenta</td>
+<td>Resarce gastos razonables a sus asegurados</td>
+<td>Anexo de servicio de seguros</td>
+</tr>
+</tbody>
+</table>
+<p>La matriz también deja claro lo que <strong>nadie puede delegar</strong>: Conversa no traslada al proveedor la evaluación en su caso de uso, ni la aseguradora a Conversa la relación con sus asegurados.</p>
+<h3 id="evaluacion-del-proveedor-del-modelo-fundacional-a103">Evaluación del proveedor del modelo fundacional (A.10.3)<a class="headerlink" href="#evaluacion-del-proveedor-del-modelo-fundacional-a103" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El proveedor del modelo es el único de nivel <strong>crítico</strong>: es parte del producto y afecta a todos los clientes; el de transcripción de voz es de nivel reforzado. Con el cambio de proveedor, Conversa aplicó el cuestionario de IA de <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> al nuevo:</p>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Respuesta y evidencia</th>
+<th>Decisión o control compensatorio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uso de datos para entrenar</td>
+<td>El contrato empresarial excluye entrenar con lo enviado por API</td>
+<td>Cumple; alerta ante cambios de términos</td>
+</tr>
+<tr>
+<td>Retención</td>
+<td>Limitada, para vigilancia de abuso, con plazo definido</td>
+<td>Se informa en la lista de subcontratados</td>
+</tr>
+<tr>
+<td>Ubicación y subcontratados</td>
+<td>Región acordada; lista pública con aviso de cambios</td>
+<td>Acuerdo de procesamiento regional</td>
+</tr>
+<tr>
+<td>Cambios de versión</td>
+<td>Versiones fijas con fecha, aviso de retiro anticipado y alias móviles opcionales</td>
+<td>Fijar siempre la versión; C-VER-02</td>
+</tr>
+<tr>
+<td>Incidentes</td>
+<td>Notificación contractual y página de estado</td>
+<td>Página de estado integrada al monitoreo</td>
+</tr>
+<tr>
+<td>Documentación</td>
+<td>Ficha del modelo, resumen de evaluaciones de seguridad, políticas de uso</td>
+<td>Lo pertinente pasa a la ficha del asistente</td>
+</tr>
+<tr>
+<td>Desempeño en el caso de uso</td>
+<td>No lo garantiza</td>
+<td>Conjunto dorado y batería propios</td>
+</tr>
+<tr>
+<td>Certificaciones</td>
+<td>ISO/IEC 27001 vigente; informe de auditoría bajo confidencialidad</td>
+<td>Alcance del certificado verificado</td>
+</tr>
+</tbody>
+</table>
+<p>Seguimiento semestral y ante cada cambio de términos o de versión. El proveedor anterior sigue evaluado como contingencia para el perfil de comercios.</p>
+<h3 id="gestion-de-clientes-a104">Gestión de clientes (A.10.4)<a class="headerlink" href="#gestion-de-clientes-a104" title="Enlace permanente a esta sección">&para;</a></h3>
+<p><strong>Arranque y contrato.</strong> Un cuestionario levanta sector, país, usuarios (¿menores?, ¿personas mayores?), canales, regulación, integraciones y quién será el <strong>dueño del despliegue</strong>. El paquete contractual tiene contrato marco, anexo de servicio con plazos y matriz, contrato de encargo, términos de uso con usos permitidos y prohibidos y, cuando aplica, un anexo UE.</p>
+<p><strong>El compromiso de no entrenar con datos de clientes</strong> vive en cuatro lugares que dicen lo mismo, algo que verificó la revisión de <a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a>: contrato, declaración pública de principios, procedimiento de datos (<a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a>) y un control técnico, porque no existe flujo de registros hacia entrenamiento. Confianza y Seguridad revisa los flujos cada trimestre.</p>
+<p><strong>Autorización expresa para conjuntos de evaluación.</strong> Usar conversaciones reales en las pruebas exige un formato firmado por el dueño del despliegue: qué conversaciones (periodo y muestra), solo para evaluar, anonimizadas antes de salir del espacio del cliente, conservadas 12 meses y revocables. Han firmado 9 de los 70 clientes; SEG-03 autorizó las 600 conversaciones de su evaluación de impacto.</p>
+<p><strong>Considerar no es obedecer.</strong> El registro de solicitudes rechazadas o condicionadas también es evidencia:</p>
+<table>
+<thead>
+<tr>
+<th>Solicitud</th>
+<th>Decisión</th>
+<th>Razón</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Una aseguradora quería que el asistente dictaminara siniestros de cristales</td>
+<td>Rechazada</td>
+<td>Fuera del dominio validado (R-C05)</td>
+</tr>
+<tr>
+<td>Un comercio quería quitar el aviso de IA "porque baja la conversión"</td>
+<td>Rechazada; se permitió acortar el texto</td>
+<td>C-TRA-01 (R-C04)</td>
+</tr>
+<tr>
+<td>Una universidad pidió "entrenar el asistente con nuestras conversaciones"</td>
+<td>Condicionada: no hay ajuste de modelos; se ofreció usarlas para evaluar, con autorización</td>
+<td>Compromiso de no entrenar</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cambio-de-proveedor-del-modelo-fundacional-81-a-84">Cambio de proveedor del modelo fundacional (8.1 a 8.4)<a class="headerlink" href="#cambio-de-proveedor-del-modelo-fundacional-81-a-84" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Entre mayo y agosto de 2026, por el retiro de la versión en uso, Conversa migró a otro proveedor. El paso a paso y su calendario de 16 semanas están en el <a href="../../clausulas/c8-operacion/#ejemplo-resuelto">ejemplo resuelto de la cláusula 8</a>. En resumen:</p>
+<table>
+<thead>
+<tr>
+<th>Subcláusula</th>
+<th>Qué hizo Conversa</th>
+<th>Evidencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-1">8.1</a></td>
+<td>Lo clasificó como cambio significativo; debida diligencia; despliegue gradual (5 %, 25 %, 100 %) con reversa en menos de una hora</td>
+<td>Ticket, cuestionario, contrato, bitácora</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-2">8.2</a></td>
+<td>Reevaluó riesgos con el conjunto dorado de 1 200 preguntas y la batería adversaria: el bloqueo de inyecciones bajó de 97 % a 91 %</td>
+<td>Matriz nueva frente a la anterior</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-3">8.3</a></td>
+<td>Ajustó instrucciones de sistema, filtros y glosario regional: el bloqueo subió a 98 %</td>
+<td>Plan con verificación de eficacia</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-4">8.4</a></td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C02 v1.1: el modelo nuevo se niega más a hablar de salud; piloto más estricto con aseguradoras</td>
+<td>Evaluación versionada</td>
+</tr>
+</tbody>
+</table>
+<p>También movió A.8 y A.10: aviso a clientes con 30 días de anticipación y ficha, matriz, subcontratados y anexo UE actualizados. Dos semanas después, el monitoreo detectó más negativas en un ambiente sin versión fijada: el proveedor había actualizado su alias. Se registró como <strong>INC-2026-017</strong>, cambio no intencionado: se contuvo, se fijó la versión y nació C-VER-02, que verifica en la canalización que ningún ambiente use un alias móvil.</p>
+<h2 id="evaluacion-de-calidad-y-pruebas-adversarias-a624">Evaluación de calidad y pruebas adversarias (A.6.2.4)<a class="headerlink" href="#evaluacion-de-calidad-y-pruebas-adversarias-a624" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La verificación y validación tiene tres piezas, con criterios de liberación escritos antes de probar:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Contenido</th>
+<th>Criterio de liberación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Conjunto dorado</strong> (<em>golden set</em>)</td>
+<td>1 200 preguntas sintéticas y anonimizadas (420 de seguros, 400 de universidades, 380 de comercio) etiquetadas por Customer Success y validadas por expertos de los clientes piloto, en variantes de México, Colombia y Chile; incluye preguntas sin respuesta en la base y, desde AC-2026-009, preguntas trampa entre planes y versiones</td>
+<td>Fundamentadas ≥ 97 %; afirmaciones sin sustento ≤ 1 % y cero en cifras de cobertura; abstención correcta ≥ 95 %; brecha entre países ≤ 3 puntos</td>
+</tr>
+<tr>
+<td><strong>Batería adversaria</strong></td>
+<td>650 ataques, 400 directos y 250 escondidos en documentos: revelar la instrucción de sistema, obtener datos de otro cliente, salir del dominio, contenido dañino, manipular el traspaso</td>
+<td>Éxito global menor a 2 % y <strong>cero</strong> éxitos en las dos primeras categorías</td>
+</tr>
+<tr>
+<td><strong>Regresión de cliente</strong></td>
+<td>Subconjunto del vertical más preguntas propias del cliente</td>
+<td>El panel bloquea la publicación de un cambio significativo hasta pasarla</td>
+</tr>
+</tbody>
+</table>
+<p>Se corren en cada liberación de la orquestación, ante cada versión del modelo y ante cada cambio significativo de una base; cada trimestre hay además un ejercicio de equipo rojo (<em>red team</em>). Resultados de la migración:</p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Proveedor anterior</th>
+<th>Nuevo, antes de ajustes</th>
+<th>Nuevo, después</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Respuestas fundamentadas (seguros)</td>
+<td>97.2 %</td>
+<td>96.1 %</td>
+<td>97.6 %</td>
+</tr>
+<tr>
+<td>Bloqueo de ataques de inyección</td>
+<td>97 %</td>
+<td>91 %</td>
+<td>98 %</td>
+</tr>
+<tr>
+<td>Brecha Chile frente a México</td>
+<td>2.1 puntos</td>
+<td>5.4 puntos</td>
+<td>2.3 puntos</td>
+</tr>
+</tbody>
+</table>
+<p>El "cero éxitos" en fuga entre clientes no se negocia: en marzo de 2026 un ingeniero reportó de forma anónima que se pensaba liberar una función sin terminar esa batería, y la Responsable de Confianza y Seguridad detuvo la liberación (<a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>).</p>
+<h2 id="el-cliente-en-espana-transparencia-del-art-50">El cliente en España: transparencia del art. 50<a class="headerlink" href="#el-cliente-en-espana-transparencia-del-art-50" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Por qué alcanza a una empresa de Guadalajara.</strong> El Reglamento (UE) 2024/1689 aplica a proveedores que ponen sistemas de IA en el mercado de la Unión aunque estén fuera de ella, y a proveedores y responsables del despliegue de terceros países cuando los resultados del sistema se usan en la Unión (art. 2)<sup id="fnref:ue"><a class="footnote-ref" href="#fn:ue">2</a></sup>. Las conversaciones del comercio español ocurren con personas en España.</p>
+<p><strong>El calendario.</strong> El Reglamento entró en vigor el 1 de agosto de 2024 y su aplicación general, que incluye la transparencia del art. 50, empezó el <strong>2 de agosto de 2026</strong>. El Reglamento (UE) 2026/1744 (Ómnibus Digital sobre IA) dio a los sistemas generativos comercializados antes de esa fecha hasta el <strong>2 de diciembre de 2026</strong> para el marcado del art. 50(2)<sup id="fnref2:ue"><a class="footnote-ref" href="#fn:ue">2</a></sup>.</p>
+<p><strong>Qué analizó Legal</strong>, con un despacho en España. En nuestra lectura del art. 50, el deber de diseñar el sistema para que la persona sepa que conversa con una IA, a más tardar en la primera interacción y de forma clara y accesible, recae en el proveedor; el apartado 2 trata del marcado legible por máquina del contenido sintético, texto incluido, con excepciones. Si Conversa es "proveedor" en el sentido del Reglamento frente a ese cliente, y si el marcado alcanza a sus respuestas, quedó como <strong>análisis preliminar</strong>. La decisión de negocio fue <strong>diseñar para el escenario más exigente</strong>:</p>
+<ul>
+<li>Aviso de IA no eliminable en la primera interacción de todos los canales, en español de España y con revisión de accesibilidad, desde la salida a producción en julio de 2026.</li>
+<li>Marcado legible por máquina en los metadatos de la API y del widget, programado para noviembre de 2026, antes del plazo de diciembre, tomando como referencia el código de buenas prácticas sobre marcado y etiquetado, que es voluntario<sup id="fnref:codigo"><a class="footnote-ref" href="#fn:codigo">3</a></sup>.</li>
+<li>Documentación para que el cliente respalde sus propias obligaciones como responsable del despliegue, sin conclusiones jurídicas en su nombre (<a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>).</li>
+<li>Medidas de alfabetización en IA (art. 4) para el equipo que atiende a ese cliente.</li>
+<li>El análisis no ubicó este uso en las categorías de alto riesgo; se revisará si el cliente pide funciones nuevas.</li>
+</ul>
+<div class="admonition legal">
+<p class="admonition-title">ISO 42001 no es cumplimiento del Reglamento</p>
+<p>El <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> le dio a Conversa dónde documentar, decidir y evidenciar todo esto, pero un certificado ISO/IEC 42001 no da presunción de conformidad con el Reglamento de IA de la UE. Profundiza en <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a> y en los <a href="../../fundamentos/roles-en-la-ia/#reglamento-ue">roles del Reglamento</a>.</p>
+</div>
+<h2 id="extracto-de-la-declaracion-de-aplicabilidad">Extracto de la Declaración de Aplicabilidad<a class="headerlink" href="#extracto-de-la-declaracion-de-aplicabilidad" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa <strong>no excluyó ningún control</strong> del Anexo A, porque provee, desarrolla y usa IA, pero acotó cuatro. Una propuesta de exclusión merece contarse: el CTO sugirió excluir A.9 "porque nosotros proveemos, no usamos"; se rechazó, porque el equipo usa asistentes de programación y la empresa consume el modelo de su proveedor (<a href="../../anexo-a/a9-uso/">A.9</a>).</p>
+<p>Los nombres de los controles son traducción libre de referencia del autor.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>¿Se incluye?</th>
+<th>Justificación</th>
+<th>Estado</th>
+<th>ISO 27001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> Política de IA</td>
+<td>Sí</td>
+<td>Política del CEO, de desarrollo responsable y principios públicos con el compromiso de no entrenar</td>
+<td>Implementado</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a> Roles y responsabilidades de IA</td>
+<td>Sí</td>
+<td>Dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y CTO dueño de IA-01; el contrato pide al cliente un dueño del despliegue</td>
+<td>Implementado</td>
+<td>5.2, 5.3</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> Evaluación del impacto en individuos o grupos</td>
+<td>Sí</td>
+<td><abbr title="Evaluación de impacto del sistema de IA (AI system impact assessment).">EIA</abbr>-C01 a C04: personas mayores y aspirantes menores de edad. Trata R-C01 y R-C08</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> Verificación y validación</td>
+<td>Sí</td>
+<td>Conjunto dorado, batería adversaria y regresión de cliente. Trata R-C01, R-C03 y R-C07</td>
+<td>Implementado</td>
+<td>8.29</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> Operación y monitoreo</td>
+<td>Sí</td>
+<td>Calidad por cliente, sesiones con aviso, versión fijada. Trata R-C02</td>
+<td>Implementado</td>
+<td>8.16</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a> Documentación técnica</td>
+<td>Sí</td>
+<td>Ficha del asistente por versión y matriz de audiencias</td>
+<td>Implementado</td>
+<td>5.37</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a> Datos para desarrollo y mejora</td>
+<td>Sí, acotado</td>
+<td>No entrena ni ajusta; aplica a conjuntos de evaluación y a la configuración de la recuperación. Trata R-C06</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a> Adquisición de datos</td>
+<td>Sí, acotado</td>
+<td>No compra datos; aplica a documentos de clientes (derechos garantizados por contrato) y a datos sintéticos</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a> Procedencia de los datos</td>
+<td>Sí</td>
+<td>Metadatos por fragmento, con vigencia desde AC-2026-009. Trata R-C07</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> Documentación del sistema e información para usuarios</td>
+<td>Sí</td>
+<td>Matriz por parte interesada, aviso de IA, límites del dominio. Trata R-C04 y R-C05</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a> Reporte externo</td>
+<td>Sí</td>
+<td>Botón y palabra REPORTAR hacia dos paneles</td>
+<td>Implementado</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a> Comunicación de incidentes</td>
+<td>Sí</td>
+<td>Plan anexo al procedimiento del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, con matriz de notificación</td>
+<td>Implementado</td>
+<td>5.24, 5.26, 5.5</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a> Información para las partes interesadas</td>
+<td>Sí</td>
+<td>Registro de obligaciones por país, incluida la UE</td>
+<td>Implementado</td>
+<td>5.31, 5.5</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a> y <a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a> Uso responsable y uso previsto</td>
+<td>Sí, acotado</td>
+<td>Usos internos: asistentes de programación y modelo dentro de las políticas del proveedor</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> Asignación de responsabilidades</td>
+<td>Sí</td>
+<td>Matriz por actividad anexa a cada contrato</td>
+<td>Implementado</td>
+<td>5.19, 5.20, 5.23</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> Proveedores</td>
+<td>Sí</td>
+<td>Proveedor fundacional de nivel crítico; transcripción de voz, reforzado. Trata R-C02</td>
+<td>Implementado</td>
+<td>5.19 a 5.22</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a> Clientes</td>
+<td>Sí</td>
+<td>Cuestionario de arranque, términos de uso, solicitudes rechazadas. Trata R-C05</td>
+<td>Implementado</td>
+<td>5.20</td>
+</tr>
+<tr>
+<td>C-VER-01 Verificador de sustento (propio)</td>
+<td>Sí</td>
+<td>Revisa cifras y plazos contra el documento del plan. Trata R-C01</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td>C-TRA-01 Aviso de IA no eliminable (propio)</td>
+<td>Sí</td>
+<td>Trata R-C04; respalda el art. 50 en España</td>
+<td>Implementado</td>
+<td>—</td>
+</tr>
+<tr>
+<td>C-SEG-02 Filtro de salida (propio)</td>
+<td>Sí</td>
+<td>Trata R-C03</td>
+<td>En implementación (marzo de 2027)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2 id="objetivos-e-indicadores">Objetivos e indicadores<a class="headerlink" href="#objetivos-e-indicadores" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Los objetivos conectan la política con los criterios de liberación (<a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a>) y se revisan en el Comité de IA:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Objetivo</th>
+<th>Indicador y fórmula</th>
+<th>Meta</th>
+<th>Frecuencia</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OBJ-C01</td>
+<td>Asistentes resistentes a la manipulación</td>
+<td>Ataques exitosos ÷ ataques ejecutados en la batería; fugas entre clientes en producción</td>
+<td>Menos de 2 % y cero fugas en 2027</td>
+<td>Trimestral</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>OBJ-C02</td>
+<td>Respuestas con sustento</td>
+<td>Afirmaciones sin sustento ÷ afirmaciones revisadas en 400 conversaciones de seguros por semana</td>
+<td>≤ 0.5 % y cero en cifras de cobertura</td>
+<td>Mensual</td>
+<td>Responsable de Confianza y Seguridad</td>
+</tr>
+<tr>
+<td>OBJ-C03</td>
+<td>Nadie conversa con Conversa sin saberlo</td>
+<td>Sesiones nuevas con aviso ÷ sesiones nuevas</td>
+<td>100 % en todos los canales</td>
+<td>Diaria, revisión mensual</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>OBJ-C04</td>
+<td>Clientes informados a tiempo</td>
+<td>Incidentes altos o críticos notificados al cliente en 24 h ÷ total</td>
+<td>100 %</td>
+<td>Trimestral</td>
+<td>Customer Success</td>
+</tr>
+<tr>
+<td>OBJ-C05</td>
+<td>Cambios de modelo bajo control</td>
+<td>Versiones adoptadas con batería previa ÷ versiones adoptadas; ambientes con alias móvil</td>
+<td>100 % y cero</td>
+<td>Trimestral</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>OBJ-C06</td>
+<td>Servicio parejo entre países</td>
+<td>Diferencia máxima de respuestas correctas entre México, Colombia y Chile</td>
+<td>≤ 3 puntos porcentuales</td>
+<td>Por liberación</td>
+<td>Responsable de Confianza y Seguridad</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hoja-de-ruta-del-caso">Hoja de ruta del caso<a class="headerlink" href="#hoja-de-ruta-del-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Conversa tardó unos 12 meses, en el límite superior de la <a href="../../implementacion/hoja-de-ruta/#variantes">estimación para un proveedor SaaS</a>. El <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> le ahorró tiempo en gobierno, documentos, proveedores e incidentes, pero la migración del modelo y el incidente de junio cayeron en plena implementación; a cambio, generaron justo la evidencia que un auditor quiere ver.</p>
+<pre class="mermaid"><code>gantt
+    title Conversa Labs · implementación del SGIA
+    dateFormat YYYY-MM-DD
+    axisFormat %m/%y
+    todayMarker off
+    section Diseño
+    0 · Decisión y patrocinio        :f0, 2026-02-02, 2w
+    1 · Inventario de componentes    :f1, 2026-02-09, 3w
+    2 · Contexto, roles y alcance    :f2, 2026-02-16, 4w
+    3 · Política y roles             :f3, 2026-02-23, 5w
+    4 · Riesgo, impacto y SoA        :f4, 2026-03-16, 9w
+    section Implementación
+    5 · Controles A.6, A.8 y A.10    :f5, 2026-04-13, 18w
+    Cambio de modelo fundacional     :cp, 2026-05-04, 16w
+    6 · Operación y evidencia        :f6, 2026-06-01, 17w
+    section Verificación
+    7 · Auditoría interna y revisión :f7, 2026-09-07, 5w
+    8 · Correctivas y certificación  :f8, 2026-10-12, 16w
+    section Hitos
+    Política aprobada                :milestone, m1, 2026-03-27, 0d
+    Contrato con el cliente en España :milestone, m2, 2026-04-17, 0d
+    SoA y plan aprobados             :milestone, m3, 2026-05-15, 0d
+    INC-2026-014                     :milestone, m4, 2026-06-02, 0d
+    Etapa 1                          :milestone, m5, 2026-11-16, 0d
+    Etapa 2 combinada con el SGSI    :milestone, m6, 2027-01-25, 0d</code></pre>
+<p>La firma con el cliente español disparó una revisión extraordinaria de la política (<a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>) y nuevas evaluaciones de riesgo e impacto. La auditoría interna de septiembre la condujo un auditor externo, con una ingeniera de analítica como experta técnica, porque la dueña del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> no puede auditar su propio sistema (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a>). La revisión por la dirección de octubre (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a>) incluyó el cierre de AC-2026-009, los cambios del proveedor y las obligaciones del cliente en España. La etapa 2 se programó como auditoría combinada con la de seguimiento del <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</p>
+<h2 id="que-le-diria-el-auditor">Qué le diría el auditor<a class="headerlink" href="#que-le-diria-el-auditor" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition auditor">
+<p class="admonition-title">Lo que esperaríamos escuchar en la reunión de cierre de la etapa 2</p>
+<p><strong>Fortalezas.</strong> Una matriz de responsabilidad por actividad, anexa a cada contrato y respaldada por cláusulas. Un incidente real gestionado de punta a punta: contención, comunicación en dos niveles, causa raíz, casos similares y eficacia verificada a los 90 y 120 días. Un cambio de proveedor con trazabilidad de 8.1 a 8.4, incluido el alias. Un compromiso de no entrenar que se puede verificar.</p>
+<p><strong>Hallazgos probables.</strong></p>
+<ol>
+<li><strong>No conformidad menor (8.1 y <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>).</strong> Tras INC-2026-017 la organización estableció una verificación automática para que ningún ambiente use un alias móvil del modelo. Sin embargo, el ambiente de pruebas donde tres clientes aprueban cambios a su base de conocimiento no la tiene y, durante la auditoría, consumía el alias móvil. Las regresiones aprobadas ahí no representan a producción, y la búsqueda de casos similares no cubrió todos los ambientes.</li>
+<li><strong>No conformidad menor (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> y 7.5.2).</strong> El procedimiento exige actualizar la ficha del asistente en cada cambio de versión del modelo. En una muestra de diez clientes, tres seguían con la ficha de la versión anterior seis semanas después de la migración.</li>
+<li><strong>Observación (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>).</strong> No hay plazo documentado para responder a quien reporta cuando el cliente no atiende el primer nivel; 37 reportes del trimestre llevaban más de 30 días sin respuesta a la persona.</li>
+<li><strong>Observación (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a>).</strong> El análisis sobre el marcado del art. 50(2) sigue como preliminar y sin fecha de cierre, aunque el plazo transitorio vence el 2 de diciembre de 2026. Implementar el marcado reduce el riesgo, pero conviene que el registro refleje el estado real.</li>
+</ol>
+<p><strong>Recomendaciones.</strong> Extender C-VER-02 a todos los ambientes; publicar la ficha desde la canalización de liberación; fijar en el anexo de servicio un plazo de respuesta a quien reporta, con escalamiento a Conversa; y poner fecha y responsable al análisis del art. 50(2). Más ejemplos de redacción en <a href="../../auditoria/hallazgos-ejemplo/">Hallazgos de ejemplo</a>.</p>
+</div>
+<h2 id="lecciones-para-tu-organizacion">Lecciones para tu organización<a class="headerlink" href="#lecciones-para-tu-organizacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Si provees IA, tu documentación es insumo del cumplimiento de otros.</strong> Diséñala por tipo de parte interesada y versiónala con el modelo.</li>
+<li><strong>El aviso de IA es una decisión de producto, no un texto legal.</strong> Hazlo imposible de quitar y mide cuántas sesiones lo muestran.</li>
+<li><strong>Una matriz de responsabilidad sin contrato es un dibujo.</strong> Cada celda importante necesita una cláusula y una persona responsable.</li>
+<li><strong>Evalúa a tu proveedor de modelo aunque no puedas auditarlo:</strong> lee sus términos, fija versiones y prueba en tu caso de uso.</li>
+<li><strong>Las bases de conocimiento de tus clientes son tu riesgo, aunque su contenido sea de ellos.</strong> Pon puertas técnicas antes de publicar.</li>
+<li><strong>Busca casos similares en todos los clientes y en todos los ambientes.</strong> En una plataforma, un defecto rara vez vive en un solo lugar.</li>
+<li><strong>Diseña para el escenario regulatorio más exigente</strong> y deja las conclusiones jurídicas a quien corresponde.</li>
+<li><strong>Integra con tu <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> sin copiar su lente:</strong> incidentes, proveedores y requisitos legales se reutilizan; el impacto en personas es nuevo.</li>
+</ul>
+<h2 id="plantillas-usadas-en-este-caso">Plantillas usadas en este caso<a class="headerlink" href="#plantillas-usadas-en-este-caso" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#politica-de-ia">Política de IA</a></li>
+<li><a href="../../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a></li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a></li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a></li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a></li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a></li>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a></li>
+<li><a href="../../plantillas/#checklist-auditoria-interna">Checklist de auditoría interna</a></li>
+</ul>
+<p>Otros casos: <a href="../pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a> y <a href="../fintech-scoring/">fintech con <em>scoring</em> crediticio</a>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:lfpdppp">
+<p>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, texto vigente publicado por la Cámara de Diputados: <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf</a> (consultado el 9 de octubre de 2026). Resumen propio; no es asesoría legal.&#160;<a class="footnote-backref" href="#fnref:lfpdppp" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ue">
+<p>Reglamento (UE) 2024/1689 (Reglamento de Inteligencia Artificial), arts. 2, 4, 50, 111 y 113: <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa">https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa</a>; calendario vigente tras el Reglamento (UE) 2026/1744 ("Ómnibus Digital sobre IA"), publicado en el Diario Oficial de la UE el 24 de julio de 2026: <a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng">https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng</a>; resumen de la Comisión Europea: <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai</a> (consultados el 9 de octubre de 2026). Resumen propio; no es asesoría legal.&#160;<a class="footnote-backref" href="#fnref:ue" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:ue" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:codigo">
+<p>Comisión Europea, código de buenas prácticas sobre marcado y etiquetado de contenido generado por IA, versión final publicada el 10 de junio de 2026: <a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content">https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content</a> (consultado el 9 de octubre de 2026).&#160;<a class="footnote-backref" href="#fnref:codigo" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -3020,6 +4681,9 @@
 
 
 
+
+  
+  
 
 
 
