@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Descifrando ISO 42001">
+  <path d="M24 3.5 41.8 13.75v20.5L24 44.5 6.2 34.25v-20.5z" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <g stroke="#67e8f9" stroke-width="2.4" stroke-linecap="round">
+    <path d="M24 24 15 18.5M24 24l9-5.5M24 24v10.5"/>
+  </g>
+  <circle cx="24" cy="24" r="4.6" fill="#22d3ee"/>
+  <circle cx="15" cy="18.5" r="3" fill="#ffffff"/>
+  <circle cx="33" cy="18.5" r="3" fill="#ffffff"/>
+  <circle cx="24" cy="34.5" r="3" fill="#ffffff"/>
+</svg>
