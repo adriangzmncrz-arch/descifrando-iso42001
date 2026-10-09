@@ -15,7 +15,7 @@ authors:
 repository-code: "https://github.com/adriangzmncrz-arch/descifrando-iso42001"
 url: "https://adriangzmncrz-arch.github.io/descifrando-iso42001/"
 license: CC-BY-SA-4.0
-version: 0.1.0
+version: 1.0.0
 date-released: "2026-10-09"
 keywords:
   - ISO/IEC 42001
