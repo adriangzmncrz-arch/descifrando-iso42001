@@ -172,7 +172,7 @@ Todos los ejemplos usan el mismo formato: tipo, cláusula o control, criterio, e
     | **Tipo** | Oportunidad de mejora |
     | **Cláusula / control** | [A.6.2.6](../anexo-a/a6-ciclo-de-vida.md#a-6-2-6) |
     | **Criterio** | Control A.6.2.6. Procedimiento de monitoreo PR-MON-01: las alertas de deriva se atienden en un máximo de cinco días hábiles. |
-    | **Evidencia** | Las alertas de deriva de Score Monarca se envían solo al correo de la Líder de Ciencia de Datos. Las siete alertas del semestre se atendieron en tres días hábiles o menos. Durante sus vacaciones de julio no hubo alertas, y no existe un suplente designado. |
+    | **Evidencia** | Las alertas de deriva de Score Monarca se envían solo al correo del Líder de Ciencia de Datos. Las siete alertas del semestre se atendieron en tres días hábiles o menos. Durante sus vacaciones de julio no hubo alertas, y no existe un suplente designado. |
     | **Hallazgo** | El monitoreo de deriva opera eficazmente, pero depende de una sola persona para recibir y atender las alertas. |
     | **Por qué no es NC** | El control cumplió su criterio durante todo el periodo. El riesgo es de continuidad: si la alerta llega cuando esa persona no está, nadie la verá. |
 

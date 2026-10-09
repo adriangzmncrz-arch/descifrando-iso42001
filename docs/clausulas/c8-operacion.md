@@ -240,7 +240,7 @@ Puntos prácticos:
     - **8.1:** el Comité de Modelos funciona como comité de cambios con criterios de liberación (poder discriminante, equidad, explicabilidad de motivos de rechazo). Se monitorea la deriva de variables y la tasa de anulaciones en la banda gris. La API de fraude del proveedor (IA-03) se vigila por segmento.
     - **8.2:** evaluación semestral de Score Monarca v3. Un reentrenamiento con la misma especificación es cambio estándar con validación; agregar variables o cambiar umbrales es significativo.
     - **8.3:** la regla de reconsideración humana para rechazos se verifica con el porcentaje de reconsideraciones que terminan en aprobación.
-    - **8.4:** impactos en solicitantes (exclusión financiera, sesgo regional); se reevalúa antes de lanzar créditos para micronegocios.
+    - **8.4:** impactos en solicitantes (exclusión financiera, sesgo regional); se reevalúa antes de lanzar créditos para micronegocios rurales.
 
 === "Si provees IA a clientes"
 

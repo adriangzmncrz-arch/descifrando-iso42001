@@ -434,7 +434,7 @@ Más en [Errores frecuentes](../implementacion/errores-frecuentes.md).
 ## Ejemplo resuelto
 
 ???+ example "Caso: Monarca Crédito — Riesgos y SoA de Score Monarca v3"
-    **Contexto.** El Director de Riesgos, dueño del modelo, reúne a la Líder de Ciencia de Datos, los oficiales de Cumplimiento y de Privacidad y dos analistas de la banda gris, con los criterios de esta página. Su insumo es la evaluación de impacto EIA-01: grupos potencialmente afectados (mujeres con micronegocio, adultos mayores, solicitantes del sur del país) y un uso indebido previsible (priorizar cobranza con el score).
+    **Contexto.** El Director de Riesgos, dueño del modelo, reúne al Líder de Ciencia de Datos, los oficiales de Cumplimiento y de Privacidad y dos analistas de la banda gris, con los criterios de esta página. Su insumo es la evaluación de impacto EIA-01: grupos potencialmente afectados (mujeres con micronegocio, adultos mayores, solicitantes del sur del país) y un uso indebido previsible (priorizar cobranza con el score).
 
     **Identificación.**
 

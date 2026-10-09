@@ -196,7 +196,7 @@ Cada subcláusula y cada control tiene una ficha plegable con el enlace a su gu�
 
     | Respuesta débil | Respuesta sólida |
     |---|---|
-    | "Usar la IA de forma ética y responsable." | "Mantener por encima de 0.80 el cociente de tasas de aprobación entre grupos de sexo y edad en Score Monarca, medido cada trimestre; responsable, la Líder de Ciencia de Datos; el último trimestre fue 0.83." |
+    | "Usar la IA de forma ética y responsable." | "Mantener por encima de 0.80 el cociente de tasas de aprobación entre grupos de sexo y edad en Score Monarca, medido cada trimestre; responsable, el Líder de Ciencia de Datos; el último trimestre fue 0.83." |
 
 ??? auditor "6.3 · Planificación de cambios"
     **Guía:** [6.3](../clausulas/c6-planificacion.md#c-6-3) · **A quién:** responsable del SGIA

@@ -61,7 +61,7 @@ La alta dirección de [NOMBRE DE LA ORGANIZACIÓN] se compromete a:
 4. **Proveer los recursos necesarios**: personas competentes, presupuesto, herramientas y tiempo para operar los controles de IA.
 5. **Rendir cuentas**: ninguna decisión tomada con apoyo de un sistema de IA deja de ser responsabilidad de la organización, aunque el sistema sea de un tercero.
 
-*Ejemplo de objetivo derivado de esta política (Monarca Crédito): "Mantener la diferencia en tasas de aprobación entre mujeres y hombres con perfil de riesgo equivalente por debajo de 3 puntos porcentuales, medida cada mes".*
+*Ejemplo de objetivo derivado de esta política (Monarca Crédito): "Mantener entre 0.80 y 1.25 la razón de tasas de aprobación entre mujeres y hombres con perfil de riesgo equivalente, con alerta interna en 0.85, medida cada mes".*
 
 ## 5. Principios de IA responsable
 

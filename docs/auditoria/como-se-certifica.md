@@ -363,7 +363,7 @@ La preparación completa, en formato de lista de verificación, está en el [Che
     | Mes 1 | Propuesta con el cálculo de días explicado, perfiles de la auditora líder y de un experto técnico en aprendizaje automático, y programa de tres años. |
     | Mes 2 | Etapa 1. Áreas de preocupación: IA-02 no tiene evaluación de impacto propia ("deriva de IA-01", argumenta el equipo) y la SoA excluye [A.7.5](../anexo-a/a7-datos.md#a-7-5) con una justificación genérica. |
     | Meses 2 a 4 | El Comité de Modelos aprueba la evaluación de impacto de IA-02 y el registro de procedencia de datos entra en operación; la SoA se corrige. |
-    | Mes 4 | Etapa 2: entrevistas al Director de Riesgos, a la Líder de Ciencia de Datos, al Oficial de Privacidad y a tres analistas de la banda gris; trazabilidad de IA-01 desde requisitos hasta monitoreo; muestreo de reconsideraciones de clientes. Resultado: dos NC menores y tres oportunidades de mejora. |
+    | Mes 4 | Etapa 2: entrevistas al Director de Riesgos, al Líder de Ciencia de Datos, al Oficial de Privacidad y a tres analistas de la banda gris; trazabilidad de IA-01 desde requisitos hasta monitoreo; muestreo de reconsideraciones de clientes. Resultado: dos NC menores y tres oportunidades de mejora. |
     | Mes 4 y medio | Monarca envía el plan de acciones con análisis de causa; el OC lo acepta. |
     | Mes 5 | Decisión de certificación por un revisor del OC ajeno a la auditoría. Empieza el ciclo. |
     | Mes 16 | Primer seguimiento, dentro de los 12 meses posteriores a la decisión: verifica la eficacia de las acciones de las menores y revisa el cambio a Score Monarca v3.1. |
