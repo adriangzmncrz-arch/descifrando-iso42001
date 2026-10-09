@@ -216,7 +216,7 @@ Una acción correctiva (*corrective action*) no se cierra cuando se implementa, 
 ## Ejemplo resuelto
 
 ??? example "Caso: Conversa Labs — el asistente que inventó una cobertura"
-    **Qué pasó.** Una aseguradora mexicana usa Conversa como asistente de atención a sus asegurados. Uno preguntó si su póliza de auto incluía auto sustituto mientras su vehículo estaba en el taller. El asistente respondió con seguridad que sí, por 15 días. Su plan no la incluía; otro plan de la misma aseguradora sí, pero por 10 días. El asegurado rentó un auto, le rechazaron el reembolso y se quejó con la aseguradora, advirtiendo que acudiría a la Condusef.
+    **Qué pasó (incidente INC-2026-014).** Una aseguradora mexicana usa Conversa como asistente de atención a sus asegurados. Uno preguntó si su póliza de auto incluía auto sustituto mientras su vehículo estaba en el taller. El asistente respondió con seguridad que sí, por 15 días. Su plan no la incluía; otro plan de la misma aseguradora sí, pero por 10 días. El asegurado rentó un auto, le rechazaron el reembolso y se quejó con la aseguradora, advirtiendo que acudiría a la Condusef.
 
     **Detección y contención (día 1).** La aseguradora reportó el caso por el portal de soporte. La Responsable de *Trust & Safety* lo clasificó como incidente de severidad alta y, en dos horas, activó una regla de contención: para ese cliente, toda pregunta sobre coberturas se transfiere a un agente humano.
 
@@ -228,7 +228,7 @@ Una acción correctiva (*corrective action*) no se cierra cuando se implementa, 
 
     **Causa raíz.** El modelo no "se volvió loco": recuperó las condiciones reales de otro plan y, a partir de ellas, completó una respuesta con un plazo que no aparece en ningún documento. Es una alucinación construida sobre un contexto equivocado. El verificador de sustento solo comprobó que el concepto "auto sustituto" apareciera en algún documento recuperado; no revisaba cifras ni plazos, ni si el documento correspondía al plan del asegurado. ¿Por qué no se detectó antes? Tres semanas atrás, Customer Success cargó desde el panel de autoservicio las condiciones de dos planes nuevos. El procedimiento de verificación y validación ([A.6.2.4](../anexo-a/a6-ciclo-de-vida.md#a-6-2-4)) exige repetir la batería de evaluación del cliente cuando su base de conocimiento cambia de forma significativa. No se hizo: el panel no la disparaba y la definición de cambio significativo no mencionaba cargas masivas. Además, la batería de seguros no comparaba coberturas entre planes.
 
-    **La no conformidad.** NC-019 al procedimiento de verificación y validación: un cambio significativo en la base de conocimiento se publicó sin la evaluación de regresión requerida. El incidente fue el síntoma; la no conformidad es del proceso.
+    **La no conformidad.** NC-019 al procedimiento de verificación y validación, atendida con la acción correctiva AC-2026-009: un cambio significativo en la base de conocimiento se publicó sin la evaluación de regresión requerida. El incidente fue el síntoma; la no conformidad es del proceso.
 
     | N.º | Acción correctiva | Responsable | Plazo |
     |---|---|---|---|
