@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 646" role="img" aria-labelledby="ig-riesgo-vs-impacto-t ig-riesgo-vs-impacto-d">
+<title id="ig-riesgo-vs-impacto-t">Evaluación de riesgos de IA frente a evaluación de impacto del sistema de IA</title>
+<desc id="ig-riesgo-vs-impacto-d">Dos columnas. A la izquierda, la evaluación de riesgos de IA: pone en el centro a la organización y sus objetivos de IA; protege la capacidad de lograrlos y de cumplir obligaciones; considera consecuencias para la organización, las personas y la sociedad, con probabilidad y nivel de riesgo; pregunta qué puede impedir o ayudar a lograr los objetivos y qué tan grave es; produce riesgos priorizados que llevan a tratamiento, controles y Declaración de Aplicabilidad. A la derecha, la evaluación de impacto del sistema de IA: pone en el centro a las personas, los grupos y la sociedad; protege derechos, oportunidades, bienestar y seguridad; considera desarrollo, suministro, uso previsto y uso indebido previsible en su contexto; pregunta a quién puede beneficiar o perjudicar el sistema, cómo y cuánto; produce impactos documentados, mitigaciones y un insumo para evaluar riesgos. Una flecha va de la columna de impacto a la de riesgos: los resultados del impacto alimentan la evaluación de riesgos. Abajo, los puntos de la norma: 6.1.2 y 8.2 para riesgos; 6.1.4, 8.4 y el tema A.5 del Anexo A para impacto.</desc>
+<text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700">Dos evaluaciones, dos miradas</text>
+<rect x="16" y="50" width="372" height="442" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 16 122 L 16 64 Q 16 50 30 50 L 374 50 Q 388 50 388 64 L 388 122 Z" class="ig-brand"/>
+<rect x="38" y="70" width="34" height="38" rx="3" class="ig-on-color"/>
+<polygon points="35,72 55,60 75,72" class="ig-on-color"/>
+<rect x="44" y="77" width="8" height="7" class="ig-brand"/>
+<rect x="44" y="89" width="8" height="7" class="ig-brand"/>
+<rect x="58" y="77" width="8" height="7" class="ig-brand"/>
+<rect x="58" y="89" width="8" height="7" class="ig-brand"/>
+<rect x="51" y="99" width="8" height="9" class="ig-brand"/>
+<text x="92" y="82" font-size="18" font-weight="700" class="ig-on-color">Evaluación de</text>
+<text x="92" y="106" font-size="18" font-weight="700" class="ig-on-color">riesgos de IA</text>
+<text x="36" y="152" font-size="13" font-weight="700" class="ig-muted">En el centro</text>
+<text x="36" y="172" font-size="15">La organización y sus objetivos de IA</text>
+<line x1="36" y1="206" x2="368" y2="206" class="ig-line" stroke-width="1"/>
+<text x="36" y="224" font-size="13" font-weight="700" class="ig-muted">Protege</text>
+<text x="36" y="244" font-size="15">La capacidad de lograr los objetivos de IA</text>
+<text x="36" y="263" font-size="15">y de cumplir sus obligaciones</text>
+<line x1="36" y1="278" x2="368" y2="278" class="ig-line" stroke-width="1"/>
+<text x="36" y="296" font-size="13" font-weight="700" class="ig-muted">Considera</text>
+<text x="36" y="316" font-size="15">Consecuencias para la organización, las</text>
+<text x="36" y="335" font-size="15">personas y la sociedad; probabilidad y nivel</text>
+<line x1="36" y1="350" x2="368" y2="350" class="ig-line" stroke-width="1"/>
+<text x="36" y="368" font-size="13" font-weight="700" class="ig-muted">Pregunta guía</text>
+<text x="36" y="388" font-size="15">¿Qué puede impedir o ayudar a lograr</text>
+<text x="36" y="407" font-size="15">nuestros objetivos, y qué tan grave es?</text>
+<line x1="36" y1="422" x2="368" y2="422" class="ig-line" stroke-width="1"/>
+<text x="36" y="440" font-size="13" font-weight="700" class="ig-muted">Produce</text>
+<text x="36" y="460" font-size="15">Riesgos priorizados → tratamiento,</text>
+<text x="36" y="479" font-size="15">controles y Declaración de Aplicabilidad</text>
+<g class="obj-a5">
+<rect x="412" y="50" width="372" height="442" rx="14" class="ig-card" stroke-width="1.5"/>
+<path d="M 412 122 L 412 64 Q 412 50 426 50 L 770 50 Q 784 50 784 64 L 784 122 Z" class="ig-obj"/>
+<circle cx="440" cy="74.8" r="5.6" class="ig-on-color"/>
+<path d="M 431.2 108 Q 431.2 86.0 440 86.0 Q 448.8 86.0 448.8 108 Z" class="ig-on-color"/>
+<circle cx="464" cy="74.8" r="5.6" class="ig-on-color"/>
+<path d="M 455.2 108 Q 455.2 86.0 464 86.0 Q 472.8 86.0 472.8 108 Z" class="ig-on-color"/>
+<circle cx="452" cy="74.0" r="7.0" class="ig-on-color"/>
+<path d="M 441.0 108 Q 441.0 86.0 452 86.0 Q 463.0 86.0 463.0 108 Z" class="ig-on-color"/>
+<text x="488" y="82" font-size="18" font-weight="700" class="ig-on-color">Evaluación de impacto</text>
+<text x="488" y="106" font-size="18" font-weight="700" class="ig-on-color">del sistema de IA</text>
+<text x="432" y="152" font-size="13" font-weight="700" class="ig-muted">En el centro</text>
+<text x="432" y="172" font-size="15">Las personas, los grupos y la sociedad</text>
+<line x1="432" y1="206" x2="764" y2="206" class="ig-line" stroke-width="1"/>
+<text x="432" y="224" font-size="13" font-weight="700" class="ig-muted">Protege</text>
+<text x="432" y="244" font-size="15">Derechos, oportunidades, bienestar y</text>
+<text x="432" y="263" font-size="15">seguridad de quienes reciben los efectos</text>
+<line x1="432" y1="278" x2="764" y2="278" class="ig-line" stroke-width="1"/>
+<text x="432" y="296" font-size="13" font-weight="700" class="ig-muted">Considera</text>
+<text x="432" y="316" font-size="15">Desarrollo, suministro, uso previsto y</text>
+<text x="432" y="335" font-size="15">uso indebido previsible, en su contexto</text>
+<line x1="432" y1="350" x2="764" y2="350" class="ig-line" stroke-width="1"/>
+<text x="432" y="368" font-size="13" font-weight="700" class="ig-muted">Pregunta guía</text>
+<text x="432" y="388" font-size="15">¿A quién puede beneficiar o perjudicar</text>
+<text x="432" y="407" font-size="15">este sistema, de qué forma y cuánto?</text>
+<line x1="432" y1="422" x2="764" y2="422" class="ig-line" stroke-width="1"/>
+<text x="432" y="440" font-size="13" font-weight="700" class="ig-muted">Produce</text>
+<text x="432" y="460" font-size="15">Impactos documentados → mitigaciones</text>
+<text x="432" y="479" font-size="15">y un insumo para evaluar riesgos</text>
+</g>
+<path d="M 598 494 L 598 540 L 202 540 L 202 506" class="ig-line-strong" stroke-width="2.5"/>
+<polygon points="193,508 211,508 202,495" fill="currentColor"/>
+<rect x="250.0" y="516.0" width="300" height="48" rx="24" class="ig-card" stroke-width="1.5"/>
+<text x="400" y="536" text-anchor="middle" font-size="14" font-weight="700">Los resultados del impacto</text>
+<text x="400" y="554" text-anchor="middle" font-size="14" font-weight="700">alimentan la evaluación de riesgos</text>
+<text x="202" y="580" text-anchor="middle" font-size="13" class="ig-muted">En la norma</text>
+<text x="598" y="580" text-anchor="middle" font-size="13" class="ig-muted">En la norma</text>
+<rect x="92" y="590" width="220" height="40" rx="20" class="ig-tint"/>
+<a xlink:href="../../clausulas/c6-planificacion/#c-6-1-2"><text x="172" y="616" text-anchor="middle" font-size="16" font-weight="700">6.1.2</text></a>
+<text x="202" y="616" text-anchor="middle" font-size="16" class="ig-muted">·</text>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-2"><text x="232" y="616" text-anchor="middle" font-size="16" font-weight="700">8.2</text></a>
+<g class="obj-a5">
+<rect x="468" y="590" width="260" height="40" rx="20" class="ig-tint"/>
+<a xlink:href="../../clausulas/c6-planificacion/#c-6-1-4"><text x="530" y="616" text-anchor="middle" font-size="16" font-weight="700">6.1.4</text></a>
+<text x="562" y="616" text-anchor="middle" font-size="16" class="ig-muted">·</text>
+<a xlink:href="../../clausulas/c8-operacion/#c-8-4"><text x="590" y="616" text-anchor="middle" font-size="16" font-weight="700">8.4</text></a>
+<text x="618" y="616" text-anchor="middle" font-size="16" class="ig-muted">·</text>
+<a xlink:href="../../anexo-a/a5-evaluacion-de-impacto/"><text x="648" y="616" text-anchor="middle" font-size="16" font-weight="700">A.5</text></a>
+</g>
+</svg>
