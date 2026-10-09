@@ -1,0 +1,207 @@
+site_name: Descifrando ISO 42001
+site_url: https://adriangzmncrz-arch.github.io/descifrando-iso42001/
+site_description: >-
+  Guía interpretativa abierta en español para entender e implementar
+  ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA):
+  qué pide la norma, por qué lo pide y cómo se ve en la práctica.
+site_author: Carlos Adrián Guzmán
+repo_url: https://github.com/adriangzmncrz-arch/descifrando-iso42001
+repo_name: descifrando-iso42001
+edit_uri: edit/main/docs/
+copyright: >-
+  Contenido © 2026 Carlos Adrián Guzmán ·
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a> ·
+  Código bajo licencia MIT ·
+  Interpretación del autor: no sustituye a la norma ISO/IEC 42001 ni es asesoría legal.
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: es
+  logo: assets/img/logo.svg
+  favicon: assets/img/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil-outline
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Cambiar a modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Usar la preferencia del sistema
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/adriancruz-grc/
+      name: Carlos Adrián Guzmán en LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/adriangzmncrz-arch
+      name: Repositorios del autor en GitHub
+    - icon: material/shield-lock-outline
+      link: https://github.com/adriangzmncrz-arch/iso27001-toolkit-es
+      name: Proyecto hermano — ISO 27001 Toolkit en español
+    - icon: material/web
+      link: https://cipherwell-sec.com
+      name: Cipherwell
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/controles-data.js
+  - javascripts/matriz.js
+  - javascripts/autodiagnostico.js
+  - javascripts/selector-rol.js
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Enlace permanente a esta sección
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abreviaturas.md
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Inicio: index.md
+  - Empieza aquí:
+      - ISO 42001 en 5 minutos: empieza-aqui/iso42001-en-5-minutos.md
+      - ¿Necesito ISO 42001?: empieza-aqui/necesito-iso42001.md
+      - Mitos y realidades: empieza-aqui/mitos-y-realidades.md
+      - Rutas de lectura: empieza-aqui/rutas-de-lectura.md
+      - Cómo usar esta guía: empieza-aqui/como-usar-esta-guia.md
+  - Fundamentos:
+      - ¿Qué es un SGIA?: fundamentos/que-es-un-sgia.md
+      - IA para profesionales de GRC: fundamentos/ia-para-profesionales-grc.md
+      - Roles en la IA: fundamentos/roles-en-la-ia.md
+      - La familia de normas de IA: fundamentos/familia-de-normas.md
+      - Principios de IA responsable: fundamentos/principios-ia-responsable.md
+      - Riesgo frente a impacto: fundamentos/riesgo-vs-impacto.md
+  - Cláusulas:
+      - clausulas/index.md
+      - 4 · Contexto de la organización: clausulas/c4-contexto.md
+      - 5 · Liderazgo: clausulas/c5-liderazgo.md
+      - 6 · Planificación: clausulas/c6-planificacion.md
+      - 7 · Apoyo: clausulas/c7-apoyo.md
+      - 8 · Operación: clausulas/c8-operacion.md
+      - 9 · Evaluación del desempeño: clausulas/c9-evaluacion-del-desempeno.md
+      - 10 · Mejora: clausulas/c10-mejora.md
+  - Anexos:
+      - anexo-a/index.md
+      - A.2 · Políticas: anexo-a/a2-politicas.md
+      - A.3 · Organización interna: anexo-a/a3-organizacion-interna.md
+      - A.4 · Recursos: anexo-a/a4-recursos.md
+      - A.5 · Evaluación de impactos: anexo-a/a5-evaluacion-de-impacto.md
+      - A.6 · Ciclo de vida: anexo-a/a6-ciclo-de-vida.md
+      - A.7 · Datos: anexo-a/a7-datos.md
+      - A.8 · Información a partes interesadas: anexo-a/a8-informacion-partes-interesadas.md
+      - A.9 · Uso de la IA: anexo-a/a9-uso.md
+      - A.10 · Terceros y clientes: anexo-a/a10-terceros.md
+      - Anexos B, C y D: anexos-b-c-d.md
+  - Casos prácticos:
+      - casos-practicos/index.md
+      - PyME que usa IA generativa: casos-practicos/pyme-usa-ia-generativa.md
+      - Fintech con scoring crediticio: casos-practicos/fintech-scoring.md
+      - Empresa que desarrolla un chatbot: casos-practicos/empresa-desarrolla-chatbot.md
+  - Implementación:
+      - Hoja de ruta: implementacion/hoja-de-ruta.md
+      - Documentación requerida: implementacion/documentacion-requerida.md
+      - Errores frecuentes: implementacion/errores-frecuentes.md
+  - Auditoría:
+      - Cómo se certifica: auditoria/como-se-certifica.md
+      - Preguntas del auditor: auditoria/preguntas-del-auditor.md
+      - Hallazgos de ejemplo: auditoria/hallazgos-ejemplo.md
+      - Checklist de preparación: auditoria/checklist-preparacion.md
+  - Integración:
+      - Con ISO 27001: integracion/con-iso27001.md
+      - NIST AI RMF: integracion/nist-ai-rmf.md
+      - Reglamento de IA de la UE: integracion/reglamento-ia-ue.md
+      - México y Latinoamérica: integracion/contexto-mexico-latam.md
+  - Recursos:
+      - Herramientas:
+          - Autodiagnóstico: herramientas/autodiagnostico.md
+          - Selector de rol: herramientas/selector-de-rol.md
+      - Plantillas: plantillas/index.md
+      - Glosario: glosario.md
+      - Preguntas frecuentes: preguntas-frecuentes.md
+      - Acerca de: acerca-de.md
