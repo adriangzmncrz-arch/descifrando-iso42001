@@ -1,0 +1,36 @@
+name: Propuesta de mejora
+description: Sugiere contenido nuevo, una mejor explicación, un diagrama o una herramienta.
+title: "[Mejora] "
+labels: ["mejora"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de mejora
+      options:
+        - Explicación o ejemplo
+        - Página o sección nueva
+        - Infografía o diagrama
+        - Herramienta interactiva
+        - Plantilla
+        - Diseño, accesibilidad o navegación
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Describe tu propuesta
+      description: ¿Qué falta o qué podría explicarse mejor? ¿A quién le ayudaría?
+    validations:
+      required: true
+  - type: input
+    id: pagina
+    attributes:
+      label: Página relacionada (opcional)
+  - type: checkboxes
+    id: ayuda
+    attributes:
+      label: Participación
+      options:
+        - label: Me gustaría colaborar con un pull request.

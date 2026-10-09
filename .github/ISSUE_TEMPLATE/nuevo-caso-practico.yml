@@ -1,0 +1,47 @@
+name: Nuevo caso práctico
+description: Propón un caso práctico (ficticio o anonimizado) de implementación de ISO/IEC 42001.
+title: "[Caso] "
+labels: ["caso práctico"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Los casos deben ser **ficticios o estar completamente anonimizados**. No incluyas datos personales, información confidencial ni nombres de clientes reales.
+  - type: input
+    id: sector
+    attributes:
+      label: Sector y país
+      placeholder: "Salud · Colombia"
+    validations:
+      required: true
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Rol principal de la organización respecto a la IA
+      multiple: true
+      options:
+        - Usa IA de terceros
+        - Desarrolla IA
+        - Provee IA a clientes
+    validations:
+      required: true
+  - type: textarea
+    id: sistemas
+    attributes:
+      label: Sistemas de IA involucrados
+      description: Propósito, tipo de IA, datos que usa y quién se ve afectado.
+    validations:
+      required: true
+  - type: textarea
+    id: aprendizaje
+    attributes:
+      label: ¿Qué enseña este caso que no cubran los casos actuales?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmacion
+    attributes:
+      label: Confirmación
+      options:
+        - label: El caso es ficticio o está anonimizado y no contiene información confidencial.
+          required: true

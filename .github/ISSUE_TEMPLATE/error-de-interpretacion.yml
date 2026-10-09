@@ -1,0 +1,53 @@
+name: Error de interpretación
+description: Reporta una explicación que consideras incorrecta o imprecisa.
+title: "[Interpretación] "
+labels: ["interpretación"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar la guía. **No pegues texto de ISO/IEC 42001 ni de otras normas**: describe el punto con tus palabras y referencia la cláusula o el control.
+  - type: input
+    id: pagina
+    attributes:
+      label: Página
+      description: URL o ruta de la página donde está el error.
+      placeholder: https://adriangzmncrz-arch.github.io/descifrando-iso42001/anexo-a/a7-datos/#a-7-4
+    validations:
+      required: true
+  - type: input
+    id: referencia
+    attributes:
+      label: Cláusula o control
+      placeholder: "6.1.4 / A.7.4"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué dice la guía y por qué crees que es incorrecto?
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Interpretación que propones
+      description: Si conoces criterios de organismos de certificación, guías oficiales u otras fuentes, enlázalas.
+  - type: dropdown
+    id: experiencia
+    attributes:
+      label: Tu experiencia con la norma
+      options:
+        - Implementador o consultor
+        - Auditor interno
+        - Auditor de tercera parte
+        - Equipo de datos o IA
+        - Estudiante o lector interesado
+        - Otro
+  - type: checkboxes
+    id: derechos
+    attributes:
+      label: Confirmación
+      options:
+        - label: Mi reporte no incluye texto copiado de normas ISO/IEC.
+          required: true
