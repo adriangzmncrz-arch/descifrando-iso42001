@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="t d">
+  <title id="t">Descifrando ISO 42001</title>
+  <desc id="d">Guía interpretativa abierta en español de ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial: 7 cláusulas, 38 controles, 3 casos prácticos y 11 plantillas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset=".6" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".85" cy="0" r=".75">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="txt" x1="0" x2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#a5b4fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+  <g font-family="Inter, Segoe UI, system-ui, -apple-system, sans-serif">
+    <g transform="translate(80 78) scale(1.15)">
+      <path d="M24 3.5 41.8 13.75v20.5L24 44.5 6.2 34.25v-20.5z" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+      <g stroke="#67e8f9" stroke-width="2.4" stroke-linecap="round"><path d="M24 24 15 18.5M24 24l9-5.5M24 24v10.5"/></g>
+      <circle cx="24" cy="24" r="4.6" fill="#22d3ee"/>
+      <circle cx="15" cy="18.5" r="3" fill="#ffffff"/><circle cx="33" cy="18.5" r="3" fill="#ffffff"/><circle cx="24" cy="34.5" r="3" fill="#ffffff"/>
+    </g>
+    <rect x="152" y="92" width="452" height="36" rx="18" fill="rgba(8,145,178,.22)" stroke="rgba(103,232,249,.6)"/>
+    <text x="378" y="116" text-anchor="middle" fill="#a5f3fc" font-size="16" font-weight="700" letter-spacing="1.5">GUÍA INTERPRETATIVA ABIERTA · EN ESPAÑOL</text>
+    <text x="76" y="250" fill="#ffffff" font-size="96" font-weight="800" letter-spacing="-3">Descifrando</text>
+    <text x="76" y="352" fill="url(#txt)" font-size="96" font-weight="800" letter-spacing="-3">ISO 42001</text>
+    <text x="80" y="408" fill="rgba(255,255,255,.88)" font-size="25">El sistema de gestión de inteligencia artificial</text>
+    <text x="80" y="442" fill="rgba(255,255,255,.88)" font-size="25">explicado para México y Latinoamérica</text>
+    <g font-size="19" font-weight="700" fill="#ffffff">
+      <rect x="80" y="478" width="138" height="44" rx="10" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+      <text x="149" y="506" text-anchor="middle">7 cláusulas</text>
+      <rect x="230" y="478" width="154" height="44" rx="10" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+      <text x="307" y="506" text-anchor="middle">38 controles</text>
+      <rect x="396" y="478" width="202" height="44" rx="10" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+      <text x="497" y="506" text-anchor="middle">3 casos prácticos</text>
+      <rect x="610" y="478" width="158" height="44" rx="10" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+      <text x="689" y="506" text-anchor="middle">11 plantillas</text>
+    </g>
+    <text x="80" y="582" fill="#a5f3fc" font-size="20" font-weight="600">adriangzmncrz-arch.github.io/descifrando-iso42001</text>
+  </g>
+  <g transform="translate(1040 300) scale(1.08)">
+    <circle r="150" fill="none" stroke="rgba(103,232,249,.35)" stroke-width="2"/>
+    <circle r="185" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2" stroke-dasharray="3 8"/>
+    <g stroke="rgba(255,255,255,.16)" stroke-width="2">
+      <line x2="0" y2="-150"/><line x2="96.4" y2="-114.9"/><line x2="147.7" y2="-26"/><line x2="129.9" y2="75"/><line x2="51.3" y2="141"/>
+      <line x2="-51.3" y2="141"/><line x2="-129.9" y2="75"/><line x2="-147.7" y2="-26"/><line x2="-96.4" y2="-114.9"/>
+    </g>
+    <circle r="62" fill="rgba(34,211,238,.15)" stroke="#22d3ee" stroke-width="2.5"/>
+    <text y="4" text-anchor="middle" fill="#ffffff" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="30" font-weight="800">SGIA</text>
+    <text y="28" text-anchor="middle" fill="#a5f3fc" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="13" font-weight="600">38 controles</text>
+    <g font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#10111e">
+      <circle cx="0" cy="-150" r="25" fill="#a78bfa"/><text x="0" y="-145">A.2</text>
+      <circle cx="96.4" cy="-114.9" r="25" fill="#60a5fa"/><text x="96.4" y="-110">A.3</text>
+      <circle cx="147.7" cy="-26" r="25" fill="#22d3ee"/><text x="147.7" y="-21">A.4</text>
+      <circle cx="129.9" cy="75" r="25" fill="#f472b6"/><text x="129.9" y="80">A.5</text>
+      <circle cx="51.3" cy="141" r="25" fill="#fb923c"/><text x="51.3" y="146">A.6</text>
+      <circle cx="-51.3" cy="141" r="25" fill="#4ade80"/><text x="-51.3" y="146">A.7</text>
+      <circle cx="-129.9" cy="75" r="25" fill="#facc15"/><text x="-129.9" y="80">A.8</text>
+      <circle cx="-147.7" cy="-26" r="25" fill="#a3e635"/><text x="-147.7" y="-21">A.9</text>
+      <circle cx="-96.4" cy="-114.9" r="25" fill="#94a3b8"/><text x="-96.4" y="-110">A.10</text>
+    </g>
+  </g>
+</svg>
