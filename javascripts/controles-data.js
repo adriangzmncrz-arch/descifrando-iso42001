@@ -70,6 +70,7 @@ window.DX_DATA = {
     {
       "id": "A.2.2",
       "nombre": "Política de IA",
+      "corto": "Política de IA",
       "objetivo": "A.2",
       "roles": [
         "usa",
@@ -87,6 +88,7 @@ window.DX_DATA = {
     {
       "id": "A.2.3",
       "nombre": "Alineación con otras políticas de la organización",
+      "corto": "Alineación con políticas",
       "objetivo": "A.2",
       "roles": [
         "usa",
@@ -104,6 +106,7 @@ window.DX_DATA = {
     {
       "id": "A.2.4",
       "nombre": "Revisión de la política de IA",
+      "corto": "Revisión de la política",
       "objetivo": "A.2",
       "roles": [
         "usa",
@@ -121,6 +124,7 @@ window.DX_DATA = {
     {
       "id": "A.3.2",
       "nombre": "Roles y responsabilidades de IA",
+      "corto": "Roles y responsabilidades",
       "objetivo": "A.3",
       "roles": [
         "usa",
@@ -139,6 +143,7 @@ window.DX_DATA = {
     {
       "id": "A.3.3",
       "nombre": "Reporte de inquietudes",
+      "corto": "Reporte de inquietudes",
       "objetivo": "A.3",
       "roles": [
         "usa",
@@ -156,6 +161,7 @@ window.DX_DATA = {
     {
       "id": "A.4.2",
       "nombre": "Documentación de recursos",
+      "corto": "Documentación de recursos",
       "objetivo": "A.4",
       "roles": [
         "usa",
@@ -173,6 +179,7 @@ window.DX_DATA = {
     {
       "id": "A.4.3",
       "nombre": "Recursos de datos",
+      "corto": "Recursos de datos",
       "objetivo": "A.4",
       "roles": [
         "desarrolla",
@@ -190,6 +197,7 @@ window.DX_DATA = {
     {
       "id": "A.4.4",
       "nombre": "Recursos de herramientas",
+      "corto": "Herramientas",
       "objetivo": "A.4",
       "roles": [
         "desarrolla",
@@ -206,6 +214,7 @@ window.DX_DATA = {
     {
       "id": "A.4.5",
       "nombre": "Recursos de sistema y cómputo",
+      "corto": "Sistema y cómputo",
       "objetivo": "A.4",
       "roles": [
         "desarrolla",
@@ -223,6 +232,7 @@ window.DX_DATA = {
     {
       "id": "A.4.6",
       "nombre": "Recursos humanos",
+      "corto": "Recursos humanos",
       "objetivo": "A.4",
       "roles": [
         "usa",
@@ -240,6 +250,7 @@ window.DX_DATA = {
     {
       "id": "A.5.2",
       "nombre": "Proceso de evaluación de impacto",
+      "corto": "Proceso de evaluación",
       "objetivo": "A.5",
       "roles": [
         "usa",
@@ -255,6 +266,7 @@ window.DX_DATA = {
     {
       "id": "A.5.3",
       "nombre": "Documentación de las evaluaciones de impacto",
+      "corto": "Documentación de evaluaciones",
       "objetivo": "A.5",
       "roles": [
         "usa",
@@ -270,6 +282,7 @@ window.DX_DATA = {
     {
       "id": "A.5.4",
       "nombre": "Evaluación del impacto en individuos o grupos",
+      "corto": "Impacto en personas",
       "objetivo": "A.5",
       "roles": [
         "usa",
@@ -285,6 +298,7 @@ window.DX_DATA = {
     {
       "id": "A.5.5",
       "nombre": "Evaluación de impactos sociales",
+      "corto": "Impactos sociales",
       "objetivo": "A.5",
       "roles": [
         "usa",
@@ -300,6 +314,7 @@ window.DX_DATA = {
     {
       "id": "A.6.1.2",
       "nombre": "Objetivos para el desarrollo responsable",
+      "corto": "Objetivos de desarrollo",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -314,6 +329,7 @@ window.DX_DATA = {
     {
       "id": "A.6.1.3",
       "nombre": "Procesos para el diseño y desarrollo responsable",
+      "corto": "Proceso de desarrollo",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -331,6 +347,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.2",
       "nombre": "Requisitos y especificación",
+      "corto": "Requisitos",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -347,6 +364,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.3",
       "nombre": "Documentación del diseño y desarrollo",
+      "corto": "Diseño y desarrollo",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -364,6 +382,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.4",
       "nombre": "Verificación y validación",
+      "corto": "Verificación y validación",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -380,6 +399,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.5",
       "nombre": "Despliegue",
+      "corto": "Despliegue",
       "objetivo": "A.6",
       "roles": [
         "usa",
@@ -398,6 +418,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.6",
       "nombre": "Operación y monitoreo",
+      "corto": "Operación y monitoreo",
       "objetivo": "A.6",
       "roles": [
         "usa",
@@ -417,6 +438,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.7",
       "nombre": "Documentación técnica",
+      "corto": "Documentación técnica",
       "objetivo": "A.6",
       "roles": [
         "desarrolla",
@@ -433,6 +455,7 @@ window.DX_DATA = {
     {
       "id": "A.6.2.8",
       "nombre": "Registro de eventos",
+      "corto": "Registro de eventos",
       "objetivo": "A.6",
       "roles": [
         "usa",
@@ -451,6 +474,7 @@ window.DX_DATA = {
     {
       "id": "A.7.2",
       "nombre": "Datos para desarrollo y mejora",
+      "corto": "Datos para desarrollo",
       "objetivo": "A.7",
       "roles": [
         "desarrolla",
@@ -465,6 +489,7 @@ window.DX_DATA = {
     {
       "id": "A.7.3",
       "nombre": "Adquisición de datos",
+      "corto": "Adquisición",
       "objetivo": "A.7",
       "roles": [
         "desarrolla",
@@ -479,6 +504,7 @@ window.DX_DATA = {
     {
       "id": "A.7.4",
       "nombre": "Calidad de los datos",
+      "corto": "Calidad",
       "objetivo": "A.7",
       "roles": [
         "usa",
@@ -494,6 +520,7 @@ window.DX_DATA = {
     {
       "id": "A.7.5",
       "nombre": "Procedencia de los datos",
+      "corto": "Procedencia",
       "objetivo": "A.7",
       "roles": [
         "desarrolla",
@@ -508,6 +535,7 @@ window.DX_DATA = {
     {
       "id": "A.7.6",
       "nombre": "Preparación de los datos",
+      "corto": "Preparación",
       "objetivo": "A.7",
       "roles": [
         "desarrolla",
@@ -522,6 +550,7 @@ window.DX_DATA = {
     {
       "id": "A.8.2",
       "nombre": "Documentación del sistema e información para usuarios",
+      "corto": "Información a usuarios",
       "objetivo": "A.8",
       "roles": [
         "usa",
@@ -537,6 +566,7 @@ window.DX_DATA = {
     {
       "id": "A.8.3",
       "nombre": "Reporte externo",
+      "corto": "Reporte externo",
       "objetivo": "A.8",
       "roles": [
         "usa",
@@ -554,6 +584,7 @@ window.DX_DATA = {
     {
       "id": "A.8.4",
       "nombre": "Comunicación de incidentes",
+      "corto": "Comunicación de incidentes",
       "objetivo": "A.8",
       "roles": [
         "usa",
@@ -573,6 +604,7 @@ window.DX_DATA = {
     {
       "id": "A.8.5",
       "nombre": "Información para las partes interesadas",
+      "corto": "Información a partes interesadas",
       "objetivo": "A.8",
       "roles": [
         "usa",
@@ -591,6 +623,7 @@ window.DX_DATA = {
     {
       "id": "A.9.2",
       "nombre": "Procesos para el uso responsable",
+      "corto": "Proceso de uso responsable",
       "objetivo": "A.9",
       "roles": [
         "usa",
@@ -607,6 +640,7 @@ window.DX_DATA = {
     {
       "id": "A.9.3",
       "nombre": "Objetivos para el uso responsable",
+      "corto": "Objetivos de uso responsable",
       "objetivo": "A.9",
       "roles": [
         "usa",
@@ -621,6 +655,7 @@ window.DX_DATA = {
     {
       "id": "A.9.4",
       "nombre": "Uso previsto del sistema de IA",
+      "corto": "Uso previsto",
       "objetivo": "A.9",
       "roles": [
         "usa",
@@ -635,6 +670,7 @@ window.DX_DATA = {
     {
       "id": "A.10.2",
       "nombre": "Asignación de responsabilidades",
+      "corto": "Asignación de responsabilidades",
       "objetivo": "A.10",
       "roles": [
         "usa",
@@ -654,6 +690,7 @@ window.DX_DATA = {
     {
       "id": "A.10.3",
       "nombre": "Proveedores",
+      "corto": "Proveedores",
       "objetivo": "A.10",
       "roles": [
         "usa",
@@ -674,6 +711,7 @@ window.DX_DATA = {
     {
       "id": "A.10.4",
       "nombre": "Clientes",
+      "corto": "Clientes",
       "objetivo": "A.10",
       "roles": [
         "provee"

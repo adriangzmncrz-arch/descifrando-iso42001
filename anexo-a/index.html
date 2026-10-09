@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Los 38 controles del Anexo A de ISO/IEC 42001 en una tabla periódica interactiva y una matriz filtrable por objetivo, rol, esfuerzo y novedad frente a ISO 27001.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -2666,17 +2666,949 @@
 
 
 <h1 id="anexo-a-los-38-controles">Anexo A · Los 38 controles<a class="headerlink" href="#anexo-a-los-38-controles" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> 38 controles · 9 objetivos</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 8 min de lectura</span></p>
 </div>
-<!-- Glosario autoinsertado (pymdownx.snippets + abbr). Cada término muestra su definición al pasar el cursor. -->
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>El Anexo A es un catálogo de referencia de 38 controles agrupados en 9 objetivos: no tienes que aplicarlos todos, pero sí compararlos con tus riesgos, decidir cuáles necesitas y justificar en tu Declaración de Aplicabilidad por qué incluyes o excluyes cada uno.</p>
+</div>
+<h2 id="que-es-el-anexo-a-y-como-se-usa">Qué es el Anexo A y cómo se usa<a class="headerlink" href="#que-es-el-anexo-a-y-como-se-usa" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El Anexo A de ISO/IEC 42001 es <strong>normativo</strong>: forma parte de los requisitos auditables. Funciona igual que el Anexo A de ISO 27001: es una lista de controles de referencia contra la que comparas los controles que salieron de tu tratamiento de riesgos (<a href="../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>) para asegurarte de que no se te pasó nada importante.</p>
+<p>Tres ideas para no perderte:</p>
+<ol>
+<li><strong>No es una lista de verificación obligatoria.</strong> Seleccionas controles según tus riesgos de IA, tus evaluaciones de impacto y tus obligaciones. Puedes excluir controles si lo justificas, y también agregar controles propios que no estén en el anexo.</li>
+<li><strong>Cada objetivo agrupa controles con una misma finalidad.</strong> El objetivo te dice <em>para qué</em> existen esos controles; la guía de cada control te dice <em>cómo</em> se ve en la práctica. El objetivo A.6 se divide en dos subobjetivos (A.6.1 y A.6.2), por eso hay controles con cuatro niveles de numeración, como A.6.2.4.</li>
+<li><strong>El Anexo B explica cómo implementar cada control.</strong> También está marcado como normativo, pero la norma aclara que no tienes que justificar en la Declaración de Aplicabilidad si sigues o no cada recomendación de esa guía. Lo explicamos en <a href="../anexos-b-c-d/">Anexos B, C y D</a>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Sobre los nombres de los controles</p>
+<p>Los nombres que usa esta guía son <strong>traducciones libres de referencia</strong> del autor. La redacción oficial puede variar según la versión de la norma que adquieras. Las clasificaciones de rol, esfuerzo y novedad frente a ISO 27001 también son interpretación del autor.</p>
+</div>
+<h2 id="tabla-periodica">La tabla periódica de los controles<a class="headerlink" href="#tabla-periodica" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Cada columna es un objetivo y cada celda, un control. El color identifica al objetivo en toda la guía; la estrella marca los controles que no tienen equivalente en ISO 27001 y los puntos indican el esfuerzo estimado. Haz clic en cualquier celda para ir a su guía.</p>
+<figure class="dx-infografia dx-tabla-periodica">
+<svg viewBox="0 0 1020 980" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ig-tabla-t ig-tabla-d">
+<title id="ig-tabla-t">Tabla periódica de los 38 controles del Anexo A de ISO/IEC 42001</title>
+<desc id="ig-tabla-d">Nueve columnas, una por objetivo de control de A.2 a A.10, con una celda por control. Cada celda muestra el número del control, su nombre abreviado, un símbolo de novedad frente a ISO 27001 (estrella: nuevo; aproximado: similar; igual: equivalente) y de uno a tres puntos de esfuerzo de implementación. Cada celda enlaza a la guía del control.</desc>
+<g class="obj-a2">
+<rect class="ig-obj" x="10" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="62.0" y="35" text-anchor="middle" font-size="19">A.2</text>
+<text class="ig-on-color" x="62.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Políticas</text>
+<a href="a2-politicas/#a-2-2" aria-label="A.2.2 Política de IA. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.2.2 Política de IA. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="83" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="93" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="121" text-anchor="middle" font-size="22">2.2</text>
+<text x="62.0" y="146" text-anchor="middle" font-size="11.5">Política de IA</text>
+</a>
+<a href="a2-politicas/#a-2-3" aria-label="A.2.3 Alineación con otras políticas de la organización. Esfuerzo bajo. Similar frente a ISO 27001.">
+<title>A.2.3 Alineación con otras políticas de la organización. Esfuerzo bajo. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="83" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="93" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="221" text-anchor="middle" font-size="22">2.3</text>
+<text x="62.0" y="239" text-anchor="middle" font-size="11.5">Alineación con</text>
+<text x="62.0" y="253" text-anchor="middle" font-size="11.5">políticas</text>
+</a>
+<a href="a2-politicas/#a-2-4" aria-label="A.2.4 Revisión de la política de IA. Esfuerzo bajo. Equivalente frente a ISO 27001.">
+<title>A.2.4 Revisión de la política de IA. Esfuerzo bajo. Equivalente frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="10" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="19" y="295" font-size="13" font-weight="700" opacity=".75">=</text>
+<circle class="ig-obj" cx="83" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="93" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="103" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="62.0" y="321" text-anchor="middle" font-size="22">2.4</text>
+<text x="62.0" y="339" text-anchor="middle" font-size="11.5">Revisión de la</text>
+<text x="62.0" y="353" text-anchor="middle" font-size="11.5">política</text>
+</a>
+</g>
+<g class="obj-a3">
+<rect class="ig-obj" x="122" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="174.0" y="35" text-anchor="middle" font-size="19">A.3</text>
+<text class="ig-on-color" x="174.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Organización</text>
+<a href="a3-organizacion-interna/#a-3-2" aria-label="A.3.2 Roles y responsabilidades de IA. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.3.2 Roles y responsabilidades de IA. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="122" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="131" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="195" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="205" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="215" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="174.0" y="121" text-anchor="middle" font-size="22">3.2</text>
+<text x="174.0" y="139" text-anchor="middle" font-size="10.5">Roles y</text>
+<text x="174.0" y="153" text-anchor="middle" font-size="10.5">responsabilidades</text>
+</a>
+<a href="a3-organizacion-interna/#a-3-3" aria-label="A.3.3 Reporte de inquietudes. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.3.3 Reporte de inquietudes. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="122" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="131" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="195" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="205" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="215" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="174.0" y="221" text-anchor="middle" font-size="22">3.3</text>
+<text x="174.0" y="239" text-anchor="middle" font-size="11.5">Reporte de</text>
+<text x="174.0" y="253" text-anchor="middle" font-size="11.5">inquietudes</text>
+</a>
+</g>
+<g class="obj-a4">
+<rect class="ig-obj" x="234" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="286.0" y="35" text-anchor="middle" font-size="19">A.4</text>
+<text class="ig-on-color" x="286.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Recursos</text>
+<a href="a4-recursos/#a-4-2" aria-label="A.4.2 Documentación de recursos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.4.2 Documentación de recursos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="121" text-anchor="middle" font-size="22">4.2</text>
+<text x="286.0" y="139" text-anchor="middle" font-size="11.5">Documentación</text>
+<text x="286.0" y="153" text-anchor="middle" font-size="11.5">de recursos</text>
+</a>
+<a href="a4-recursos/#a-4-3" aria-label="A.4.3 Recursos de datos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.4.3 Recursos de datos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="307" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="327" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="221" text-anchor="middle" font-size="22">4.3</text>
+<text x="286.0" y="239" text-anchor="middle" font-size="11.5">Recursos de</text>
+<text x="286.0" y="253" text-anchor="middle" font-size="11.5">datos</text>
+</a>
+<a href="a4-recursos/#a-4-4" aria-label="A.4.4 Recursos de herramientas. Esfuerzo bajo. Similar frente a ISO 27001.">
+<title>A.4.4 Recursos de herramientas. Esfuerzo bajo. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="317" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="321" text-anchor="middle" font-size="22">4.4</text>
+<text x="286.0" y="346" text-anchor="middle" font-size="11.5">Herramientas</text>
+</a>
+<a href="a4-recursos/#a-4-5" aria-label="A.4.5 Recursos de sistema y cómputo. Esfuerzo bajo. Equivalente frente a ISO 27001.">
+<title>A.4.5 Recursos de sistema y cómputo. Esfuerzo bajo. Equivalente frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="395" font-size="13" font-weight="700" opacity=".75">=</text>
+<circle class="ig-obj" cx="307" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="317" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="421" text-anchor="middle" font-size="22">4.5</text>
+<text x="286.0" y="439" text-anchor="middle" font-size="11.5">Sistema y</text>
+<text x="286.0" y="453" text-anchor="middle" font-size="11.5">cómputo</text>
+</a>
+<a href="a4-recursos/#a-4-6" aria-label="A.4.6 Recursos humanos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.4.6 Recursos humanos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="234" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="243" y="495" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="307" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="317" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="327" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="286.0" y="521" text-anchor="middle" font-size="22">4.6</text>
+<text x="286.0" y="539" text-anchor="middle" font-size="11.5">Recursos</text>
+<text x="286.0" y="553" text-anchor="middle" font-size="11.5">humanos</text>
+</a>
+</g>
+<g class="obj-a5">
+<rect class="ig-obj" x="346" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="398.0" y="35" text-anchor="middle" font-size="19">A.5</text>
+<text class="ig-on-color" x="398.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Impacto</text>
+<a href="a5-evaluacion-de-impacto/#a-5-2" aria-label="A.5.2 Proceso de evaluación de impacto. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.5.2 Proceso de evaluación de impacto. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="439" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="121" text-anchor="middle" font-size="22">5.2</text>
+<text x="398.0" y="139" text-anchor="middle" font-size="11.5">Proceso de</text>
+<text x="398.0" y="153" text-anchor="middle" font-size="11.5">evaluación</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-3" aria-label="A.5.3 Documentación de las evaluaciones de impacto. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.5.3 Documentación de las evaluaciones de impacto. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="439" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="221" text-anchor="middle" font-size="22">5.3</text>
+<text x="398.0" y="239" text-anchor="middle" font-size="10.5">Documentación</text>
+<text x="398.0" y="253" text-anchor="middle" font-size="10.5">de evaluaciones</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-4" aria-label="A.5.4 Evaluación del impacto en individuos o grupos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.5.4 Evaluación del impacto en individuos o grupos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="439" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="321" text-anchor="middle" font-size="22">5.4</text>
+<text x="398.0" y="339" text-anchor="middle" font-size="11.5">Impacto en</text>
+<text x="398.0" y="353" text-anchor="middle" font-size="11.5">personas</text>
+</a>
+<a href="a5-evaluacion-de-impacto/#a-5-5" aria-label="A.5.5 Evaluación de impactos sociales. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.5.5 Evaluación de impactos sociales. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="346" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="355" y="395" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="419" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="429" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="439" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="398.0" y="421" text-anchor="middle" font-size="22">5.5</text>
+<text x="398.0" y="439" text-anchor="middle" font-size="11.5">Impactos</text>
+<text x="398.0" y="453" text-anchor="middle" font-size="11.5">sociales</text>
+</a>
+</g>
+<g class="obj-a6">
+<rect class="ig-obj" x="458" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="510.0" y="35" text-anchor="middle" font-size="19">A.6</text>
+<text class="ig-on-color" x="510.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Ciclo de vida</text>
+<a href="a6-ciclo-de-vida/#a-6-1-2" aria-label="A.6.1.2 Objetivos para el desarrollo responsable. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.6.1.2 Objetivos para el desarrollo responsable. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="531" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="121" text-anchor="middle" font-size="19">6.1.2</text>
+<text x="510.0" y="139" text-anchor="middle" font-size="11.5">Objetivos de</text>
+<text x="510.0" y="153" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-1-3" aria-label="A.6.1.3 Procesos para el diseño y desarrollo responsable. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.1.3 Procesos para el diseño y desarrollo responsable. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="221" text-anchor="middle" font-size="19">6.1.3</text>
+<text x="510.0" y="239" text-anchor="middle" font-size="11.5">Proceso de</text>
+<text x="510.0" y="253" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-2" aria-label="A.6.2.2 Requisitos y especificación. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.2 Requisitos y especificación. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="321" text-anchor="middle" font-size="19">6.2.2</text>
+<text x="510.0" y="346" text-anchor="middle" font-size="11.5">Requisitos</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-3" aria-label="A.6.2.3 Documentación del diseño y desarrollo. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.3 Documentación del diseño y desarrollo. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="395" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="421" text-anchor="middle" font-size="19">6.2.3</text>
+<text x="510.0" y="439" text-anchor="middle" font-size="11.5">Diseño y</text>
+<text x="510.0" y="453" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-4" aria-label="A.6.2.4 Verificación y validación. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.2.4 Verificación y validación. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="495" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="521" text-anchor="middle" font-size="19">6.2.4</text>
+<text x="510.0" y="539" text-anchor="middle" font-size="11.5">Verificación y</text>
+<text x="510.0" y="553" text-anchor="middle" font-size="11.5">validación</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-5" aria-label="A.6.2.5 Despliegue. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.5 Despliegue. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="576" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="595" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="590" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="590" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="590" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="621" text-anchor="middle" font-size="19">6.2.5</text>
+<text x="510.0" y="646" text-anchor="middle" font-size="11.5">Despliegue</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-6" aria-label="A.6.2.6 Operación y monitoreo. Esfuerzo alto. Similar frente a ISO 27001.">
+<title>A.6.2.6 Operación y monitoreo. Esfuerzo alto. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="676" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="695" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="690" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="690" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="551" cy="690" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="721" text-anchor="middle" font-size="19">6.2.6</text>
+<text x="510.0" y="739" text-anchor="middle" font-size="11.5">Operación y</text>
+<text x="510.0" y="753" text-anchor="middle" font-size="11.5">monitoreo</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-7" aria-label="A.6.2.7 Documentación técnica. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.6.2.7 Documentación técnica. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="776" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="795" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="531" cy="790" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="790" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="790" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="821" text-anchor="middle" font-size="19">6.2.7</text>
+<text x="510.0" y="839" text-anchor="middle" font-size="11.5">Documentación</text>
+<text x="510.0" y="853" text-anchor="middle" font-size="11.5">técnica</text>
+</a>
+<a href="a6-ciclo-de-vida/#a-6-2-8" aria-label="A.6.2.8 Registro de eventos. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.6.2.8 Registro de eventos. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="458" y="876" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="467" y="895" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="531" cy="890" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="541" cy="890" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="551" cy="890" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="510.0" y="921" text-anchor="middle" font-size="19">6.2.8</text>
+<text x="510.0" y="939" text-anchor="middle" font-size="11.5">Registro de</text>
+<text x="510.0" y="953" text-anchor="middle" font-size="11.5">eventos</text>
+</a>
+</g>
+<g class="obj-a7">
+<rect class="ig-obj" x="570" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="622.0" y="35" text-anchor="middle" font-size="19">A.7</text>
+<text class="ig-on-color" x="622.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Datos</text>
+<a href="a7-datos/#a-7-2" aria-label="A.7.2 Datos para desarrollo y mejora. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.7.2 Datos para desarrollo y mejora. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="663" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="121" text-anchor="middle" font-size="22">7.2</text>
+<text x="622.0" y="139" text-anchor="middle" font-size="11.5">Datos para</text>
+<text x="622.0" y="153" text-anchor="middle" font-size="11.5">desarrollo</text>
+</a>
+<a href="a7-datos/#a-7-3" aria-label="A.7.3 Adquisición de datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.3 Adquisición de datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="221" text-anchor="middle" font-size="22">7.3</text>
+<text x="622.0" y="246" text-anchor="middle" font-size="11.5">Adquisición</text>
+</a>
+<a href="a7-datos/#a-7-4" aria-label="A.7.4 Calidad de los datos. Esfuerzo alto. Nuevo frente a ISO 27001.">
+<title>A.7.4 Calidad de los datos. Esfuerzo alto. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="663" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="321" text-anchor="middle" font-size="22">7.4</text>
+<text x="622.0" y="346" text-anchor="middle" font-size="11.5">Calidad</text>
+</a>
+<a href="a7-datos/#a-7-5" aria-label="A.7.5 Procedencia de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.5 Procedencia de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="395" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="421" text-anchor="middle" font-size="22">7.5</text>
+<text x="622.0" y="446" text-anchor="middle" font-size="11.5">Procedencia</text>
+</a>
+<a href="a7-datos/#a-7-6" aria-label="A.7.6 Preparación de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.7.6 Preparación de los datos. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="570" y="476" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="579" y="495" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="643" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="653" cy="490" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="663" cy="490" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="622.0" y="521" text-anchor="middle" font-size="22">7.6</text>
+<text x="622.0" y="546" text-anchor="middle" font-size="11.5">Preparación</text>
+</a>
+</g>
+<g class="obj-a8">
+<rect class="ig-obj" x="682" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="734.0" y="35" text-anchor="middle" font-size="19">A.8</text>
+<text class="ig-on-color" x="734.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Información</text>
+<a href="a8-informacion-partes-interesadas/#a-8-2" aria-label="A.8.2 Documentación del sistema e información para usuarios. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.8.2 Documentación del sistema e información para usuarios. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="95" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="755" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="121" text-anchor="middle" font-size="22">8.2</text>
+<text x="734.0" y="139" text-anchor="middle" font-size="11.5">Información a</text>
+<text x="734.0" y="153" text-anchor="middle" font-size="11.5">usuarios</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-3" aria-label="A.8.3 Reporte externo. Esfuerzo bajo. Nuevo frente a ISO 27001.">
+<title>A.8.3 Reporte externo. Esfuerzo bajo. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="755" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="765" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="221" text-anchor="middle" font-size="22">8.3</text>
+<text x="734.0" y="246" text-anchor="middle" font-size="10.5">Reporte externo</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-4" aria-label="A.8.4 Comunicación de incidentes. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.8.4 Comunicación de incidentes. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="295" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="755" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="321" text-anchor="middle" font-size="22">8.4</text>
+<text x="734.0" y="339" text-anchor="middle" font-size="10.5">Comunicación de</text>
+<text x="734.0" y="353" text-anchor="middle" font-size="10.5">incidentes</text>
+</a>
+<a href="a8-informacion-partes-interesadas/#a-8-5" aria-label="A.8.5 Información para las partes interesadas. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.8.5 Información para las partes interesadas. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="682" y="376" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="691" y="395" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="755" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="765" cy="390" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="775" cy="390" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="734.0" y="421" text-anchor="middle" font-size="22">8.5</text>
+<text x="734.0" y="439" text-anchor="middle" font-size="11.5">Información a</text>
+<text x="734.0" y="453" text-anchor="middle" font-size="11.5">partes</text>
+</a>
+</g>
+<g class="obj-a9">
+<rect class="ig-obj" x="794" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="846.0" y="35" text-anchor="middle" font-size="19">A.9</text>
+<text class="ig-on-color" x="846.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Uso</text>
+<a href="a9-uso/#a-9-2" aria-label="A.9.2 Procesos para el uso responsable. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.9.2 Procesos para el uso responsable. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="867" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="877" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="121" text-anchor="middle" font-size="22">9.2</text>
+<text x="846.0" y="139" text-anchor="middle" font-size="11.5">Proceso de uso</text>
+<text x="846.0" y="153" text-anchor="middle" font-size="11.5">responsable</text>
+</a>
+<a href="a9-uso/#a-9-3" aria-label="A.9.3 Objetivos para el uso responsable. Esfuerzo bajo. Nuevo frente a ISO 27001.">
+<title>A.9.3 Objetivos para el uso responsable. Esfuerzo bajo. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="195" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="867" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="877" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="221" text-anchor="middle" font-size="22">9.3</text>
+<text x="846.0" y="239" text-anchor="middle" font-size="10.5">Objetivos de</text>
+<text x="846.0" y="253" text-anchor="middle" font-size="10.5">uso responsable</text>
+</a>
+<a href="a9-uso/#a-9-4" aria-label="A.9.4 Uso previsto del sistema de IA. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.9.4 Uso previsto del sistema de IA. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="794" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="803" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="867" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="877" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="887" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="846.0" y="321" text-anchor="middle" font-size="22">9.4</text>
+<text x="846.0" y="346" text-anchor="middle" font-size="11.5">Uso previsto</text>
+</a>
+</g>
+<g class="obj-a10">
+<rect class="ig-obj" x="906" y="10" width="104" height="56" rx="10"/>
+<text class="ig-on-color ig-bold" x="958.0" y="35" text-anchor="middle" font-size="19">A.10</text>
+<text class="ig-on-color" x="958.0" y="55" text-anchor="middle" font-size="12.5" font-weight="600">Terceros</text>
+<a href="a10-terceros/#a-10-2" aria-label="A.10.2 Asignación de responsabilidades. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.10.2 Asignación de responsabilidades. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="76" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="95" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="979" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="90" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="90" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="121" text-anchor="middle" font-size="22">10.2</text>
+<text x="958.0" y="139" text-anchor="middle" font-size="10.5">Asignación de</text>
+<text x="958.0" y="153" text-anchor="middle" font-size="10.5">responsabilidades</text>
+</a>
+<a href="a10-terceros/#a-10-3" aria-label="A.10.3 Proveedores. Esfuerzo medio. Similar frente a ISO 27001.">
+<title>A.10.3 Proveedores. Esfuerzo medio. Similar frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="176" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="195" font-size="13" font-weight="700" opacity=".75">≈</text>
+<circle class="ig-obj" cx="979" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="190" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="190" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="221" text-anchor="middle" font-size="22">10.3</text>
+<text x="958.0" y="246" text-anchor="middle" font-size="11.5">Proveedores</text>
+</a>
+<a href="a10-terceros/#a-10-4" aria-label="A.10.4 Clientes. Esfuerzo medio. Nuevo frente a ISO 27001.">
+<title>A.10.4 Clientes. Esfuerzo medio. Nuevo frente a ISO 27001.</title>
+<rect class="ig-tint ig-s-obj" x="906" y="276" width="104" height="92" rx="9" stroke-width="1.5"/>
+<text x="915" y="295" font-size="13" font-weight="700" opacity=".75">★</text>
+<circle class="ig-obj" cx="979" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-obj" cx="989" cy="290" r="3.6" stroke-width="1"/>
+<circle class="ig-card" cx="999" cy="290" r="3.6" stroke-width="1"/>
+<text class="ig-bold" x="958.0" y="321" text-anchor="middle" font-size="22">10.4</text>
+<text x="958.0" y="346" text-anchor="middle" font-size="11.5">Clientes</text>
+</a>
+</g>
+<rect class="ig-card" x="682" y="468" width="328" height="190" rx="10"/>
+<text class="ig-bold" x="698" y="494" font-size="15">Cómo leer la tabla</text>
+<text x="698" y="518" font-size="13">7.4  →  número del control (A.7.4)</text>
+<text x="698" y="542" font-size="13">★ nuevo · ≈ similar · = equivalente</text>
+<text class="ig-muted" x="698" y="566" font-size="12">(novedad frente a ISO 27001)</text>
+<text x="698" y="590" font-size="13">●○○ ●●○ ●●●  esfuerzo bajo · medio · alto</text>
+<text class="ig-muted" x="698" y="614" font-size="12">Haz clic en una celda para abrir</text>
+<text class="ig-muted" x="698" y="638" font-size="12">la guía del control.</text>
+<text class="ig-bold" x="118.0" y="436" text-anchor="middle" font-size="64">38</text>
+<text x="118.0" y="464" text-anchor="middle" font-size="15" font-weight="600">controles</text>
+<text class="ig-muted" x="118.0" y="486" text-anchor="middle" font-size="13">en 9 objetivos</text>
+</svg>
+
+<figcaption>Tabla periódica de los 38 controles del Anexo A. En pantallas pequeñas, desliza horizontalmente.</figcaption>
+</figure>
+
+<details class="note">
+<summary>Descripción textual de la tabla periódica</summary>
+<p>La tabla tiene nueve columnas, una por objetivo, de izquierda a derecha: A.2 Políticas (3 controles), A.3 Organización interna (2), A.4 Recursos (5), A.5 Evaluación de impactos (4), A.6 Ciclo de vida (9), A.7 Datos (5), A.8 Información para las partes interesadas (4), A.9 Uso de sistemas de IA (3) y A.10 Terceros y clientes (3). En cada celda aparece el número del control, su nombre abreviado, un símbolo de novedad frente a ISO 27001 (estrella para "nuevo", aproximado para "similar" e igual para "equivalente") y de uno a tres puntos que indican el esfuerzo de implementación. La lista completa, con enlaces, está en la tabla al final de esta página.</p>
+</details>
+<h3 id="lo-que-salta-a-la-vista">Lo que salta a la vista<a class="headerlink" href="#lo-que-salta-a-la-vista" title="Enlace permanente a esta sección">&para;</a></h3>
+<ul>
+<li><strong>17 de los 38 controles no tienen equivalente en ISO 27001.</strong> Se concentran en evaluación de impactos (A.5), datos (A.7), información para las partes interesadas (A.8) y uso responsable (A.9). Es justo lo que una organización con un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> maduro tiene que construir desde cero.</li>
+<li><strong>A.6, Ciclo de vida, es el objetivo más grande (9 controles)</strong> y pesa sobre todo en quien desarrolla o provee IA. Si solo usas IA de terceros, varios de sus controles suelen excluirse con justificación, aunque despliegue, operación y monitoreo y registro de eventos casi siempre aplican.</li>
+<li><strong>Los controles de esfuerzo alto</strong> están donde la IA se distingue del software tradicional: evaluación de impacto, datos para desarrollo, calidad de datos, verificación y validación, y monitoreo en operación.</li>
+</ul>
+<h2 id="matriz">Matriz filtrable<a class="headerlink" href="#matriz" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Filtra por objetivo, por el rol que tiene tu organización, por esfuerzo o por novedad frente a ISO 27001. Puedes descargar el resultado en CSV para empezar tu Declaración de Aplicabilidad (la <a href="../plantillas/">plantilla completa en Excel</a> trae validaciones y columnas de evidencia).</p>
+<div class="dx-matriz" id="dx-matriz">
+<div class="admonition info">
+<p class="admonition-title">Cargando la matriz…</p>
+<p>Si no ves los filtros, tu navegador tiene JavaScript desactivado. Abajo tienes la tabla completa de los 38 controles.</p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Enlaces con filtros</p>
+<p>Puedes compartir la matriz ya filtrada agregando parámetros a la dirección. Por ejemplo, <code>?rol=usa</code> muestra los controles relevantes para quien usa IA de terceros y <code>?obj=A.7&amp;esfuerzo=alto</code> los controles de datos con esfuerzo alto. El <a href="../herramientas/selector-de-rol/">selector de rol</a> usa estos enlaces.</p>
+</div>
+<h2 id="como-leer-las-guias-de-cada-control">Cómo leer las guías de cada control<a class="headerlink" href="#como-leer-las-guias-de-cada-control" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Cada objetivo tiene su página y cada control, una sección con el mismo formato:</p>
+<table>
+<thead>
+<tr>
+<th>Bloque</th>
+<th>Qué encontrarás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Encabezado</strong></td>
+<td>Número, nombre (traducción libre) e insignias: a quién aplica, esfuerzo y novedad frente a ISO 27001.</td>
+</tr>
+<tr>
+<td><strong>Propósito y explicación práctica</strong></td>
+<td>Qué problema previene el control y cómo se ve en una organización real.</td>
+</tr>
+<tr>
+<td><strong>Mínimo viable frente a maduro</strong></td>
+<td>Dos columnas: lo mínimo defendible ante un auditor y cómo luce una implementación madura.</td>
+</tr>
+<tr>
+<td><strong>Evidencia, preguntas del auditor y errores comunes</strong></td>
+<td>En pestañas, para consulta rápida. Si cambias de pestaña en un control, cambian todas las de la página.</td>
+</tr>
+<tr>
+<td><strong>¿Se puede excluir?</strong></td>
+<td>Cuándo una exclusión es razonable y cuándo sería una no conformidad.</td>
+</tr>
+<tr>
+<td><strong>Relaciones</strong></td>
+<td>Cláusulas, otros controles, ISO 27001, otras normas y el tipo de orientación que da el Anexo B.</td>
+</tr>
+</tbody>
+</table>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 12h8v2H8zm2 8H6V4h7v5h5v3.1l2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4zm-2-2h4.1l.9-.9V16H8zm12.2-5c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg></span> <strong>A.2 · Políticas</strong></p>
+<hr />
+<p>Política de IA, alineación con otras políticas y su revisión.</p>
+<p><a href="a2-politicas/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 12a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 5m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 10a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 7M5.5 8A2.5 2.5 0 0 0 3 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32c.37-.21.68-.51.91-.87A5.42 5.42 0 0 1 6.5 8.5v-.28c-.3-.14-.64-.22-1-.22m13 0c-.36 0-.7.08-1 .22v.28c0 1.2-.39 2.36-1.12 3.31.12.19.25.34.4.49a2.482 2.482 0 0 0 1.72.7c.44 0 .85-.12 1.21-.32.76-.43 1.29-1.24 1.29-2.18A2.5 2.5 0 0 0 18.5 8M12 14c-2.34 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.66-3.5-7-3.5m-7.29.55C2.78 14.78 0 15.76 0 17.5V19h3v-1.93c0-1.01.69-1.85 1.71-2.52m14.58 0c1.02.67 1.71 1.51 1.71 2.52V19h3v-1.5c0-1.74-2.78-2.72-4.71-2.95M12 16c1.53 0 3.24.5 4.23 1H7.77c.99-.5 2.7-1 4.23-1"/></svg></span> <strong>A.3 · Organización interna</strong></p>
+<hr />
+<p>Roles y responsabilidades de IA y canal para reportar inquietudes.</p>
+<p><a href="a3-organizacion-interna/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14c-2.42 0-4.7-.6-6-1.55V9.64c1.47.83 3.61 1.36 6 1.36s4.53-.53 6-1.36v2.44c.33-.05.66-.08 1-.08s.67.03 1 .08V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4h.29a7.4 7.4 0 0 1-.29-2c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23.24 0 .47 0 .7-.03.4-.83.95-1.56 1.62-2.16-.74.12-1.52.19-2.32.19m0-9c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2m10.7 14.6v-1l1.1-.8c.1-.1.2-.2.1-.3l-1-1.7c0-.1-.2-.1-.3-.1l-1.2.5c-.3-.2-.6-.4-.9-.5l-.2-1.3c0-.1-.1-.2-.2-.2h-2c-.2 0-.3.1-.3.2l-.2 1.3c-.3.2-.5.3-.8.5l-1.2-.5c-.1 0-.2 0-.3.1l-1 1.7c0 .1 0 .2.1.3l1.1.8v1l-1.1.8c-.1.1-.2.2-.1.3l1 1.7c.1.1.2.1.3.1l1.2-.5c.2.2.5.4.8.5l.2 1.3c.1.1.2.2.3.2h2c.1 0 .2-.1.2-.2l.2-1.3c.3-.2.5-.3.8-.5l1.2.4c.1 0 .2 0 .3-.1l1-1.7c.1-.1.1-.2 0-.2zm-3.7.9c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5"/></svg></span> <strong>A.4 · Recursos</strong></p>
+<hr />
+<p>Datos, herramientas, cómputo y personas que componen cada sistema.</p>
+<p><a href="a4-recursos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 15-.6-.5C2.4 12.6 1 11.4 1 9.9c0-1.2 1-2.2 2.2-2.2.7 0 1.4.3 1.8.8.4-.5 1.1-.8 1.8-.8C8 7.7 9 8.6 9 9.9c0 1.5-1.4 2.7-3.4 4.6zM15 4a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 6.1A2.1 2.1 0 0 1 12.9 8 2.1 2.1 0 0 1 15 5.9a2.1 2.1 0 1 1 0 4.2m0 2.9c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m6.1 5.1H8.9V17c0-.64 3.1-2.1 6.1-2.1 2.97 0 6.1 1.46 6.1 2.1z"/></svg></span> <strong>A.5 · Evaluación de impactos</strong></p>
+<hr />
+<p>Cómo afecta el sistema a personas, grupos y sociedad.</p>
+<p><a href="a5-evaluacion-de-impacto/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> <strong>A.6 · Ciclo de vida</strong></p>
+<hr />
+<p>Del requisito al monitoreo: diseño, pruebas, despliegue y operación.</p>
+<p><a href="a6-ciclo-de-vida/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18.95c-3.23-.23-5-1.5-5-1.95v-2.23c1.13.55 2.5.92 4 1.1 0-.66.04-1.33.21-1.98-1.71-.22-3.24-.73-4.21-1.44V9.64c1.43.81 3.5 1.33 5.82 1.36.03-.03.05-.07.08-.1 2.2-2.19 5.6-2.49 8.1-.87V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4 .34 0 .68 0 1-.03-.38-.25-.76-.53-1.1-.87-.35-.36-.65-.74-.9-1.15M12 5c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2m8.31 12.9c.44-.69.69-1.52.69-2.4 0-2.5-2-4.5-4.5-4.5S12 13 12 15.5s2 4.5 4.5 4.5c.87 0 1.69-.25 2.38-.68L22 22.39 23.39 21zm-3.81.1a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5"/></svg></span> <strong>A.7 · Datos</strong></p>
+<hr />
+<p>Adquisición, calidad, procedencia y preparación de los datos.</p>
+<p><a href="a7-datos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2zM4 4v13.17L5.17 16H20V4zm2 3h12v2H6zm0 4h9v2H6z"/></svg></span> <strong>A.8 · Información para las partes interesadas</strong></p>
+<hr />
+<p>Transparencia con usuarios, reportes externos e incidentes.</p>
+<p><a href="a8-informacion-partes-interesadas/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.1 12.5 1.4 1.41-6.53 6.59L12.5 17l1.4-1.41 2.07 2.08zM11 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 7c.68 0 1.5.09 2.41.26l-1.67 1.67-.74-.03c-2.97 0-6.1 1.46-6.1 2.1v1.1h6.2L13 20H3v-3c0-2.66 5.33-4 8-4"/></svg></span> <strong>A.9 · Uso de la IA</strong></p>
+<hr />
+<p>Uso responsable, supervisión humana y uso previsto.</p>
+<p><a href="a9-uso/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> <strong>A.10 · Terceros y clientes</strong></p>
+<hr />
+<p>Responsabilidades compartidas con proveedores, socios y clientes.</p>
+<p><a href="a10-terceros/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ver objetivo</a></p>
+</li>
+</ul>
+</div>
+<h2 id="tabla-completa">Tabla completa de los 38 controles<a class="headerlink" href="#tabla-completa" title="Enlace permanente a esta sección">&para;</a></h2>
+<details class="abstract">
+<summary>Ver la tabla completa (sin filtros)</summary>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Objetivo</th>
+<th>Aplica a</th>
+<th>Esfuerzo</th>
+<th>Frente a ISO 27001</th>
+<th>ISO 27001:2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="a2-politicas/#a-2-2">A.2.2 Política de IA</a></td>
+<td>A.2 Políticas</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td><a href="a2-politicas/#a-2-3">A.2.3 Alineación con otras políticas de la organización</a></td>
+<td>A.2 Políticas</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Bajo</td>
+<td>Similar</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td><a href="a2-politicas/#a-2-4">A.2.4 Revisión de la política de IA</a></td>
+<td>A.2 Políticas</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Bajo</td>
+<td>Equivalente</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td><a href="a3-organizacion-interna/#a-3-2">A.3.2 Roles y responsabilidades de IA</a></td>
+<td>A.3 Organización</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.2, 5.3</td>
+</tr>
+<tr>
+<td><a href="a3-organizacion-interna/#a-3-3">A.3.3 Reporte de inquietudes</a></td>
+<td>A.3 Organización</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td><a href="a4-recursos/#a-4-2">A.4.2 Documentación de recursos</a></td>
+<td>A.4 Recursos</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.9</td>
+</tr>
+<tr>
+<td><a href="a4-recursos/#a-4-3">A.4.3 Recursos de datos</a></td>
+<td>A.4 Recursos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Nuevo</td>
+<td>5.9, 5.12</td>
+</tr>
+<tr>
+<td><a href="a4-recursos/#a-4-4">A.4.4 Recursos de herramientas</a></td>
+<td>A.4 Recursos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Bajo</td>
+<td>Similar</td>
+<td>5.9</td>
+</tr>
+<tr>
+<td><a href="a4-recursos/#a-4-5">A.4.5 Recursos de sistema y cómputo</a></td>
+<td>A.4 Recursos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Bajo</td>
+<td>Equivalente</td>
+<td>5.9, 8.6</td>
+</tr>
+<tr>
+<td><a href="a4-recursos/#a-4-6">A.4.6 Recursos humanos</a></td>
+<td>A.4 Recursos</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>6.3</td>
+</tr>
+<tr>
+<td><a href="a5-evaluacion-de-impacto/#a-5-2">A.5.2 Proceso de evaluación de impacto</a></td>
+<td>A.5 Impacto</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a5-evaluacion-de-impacto/#a-5-3">A.5.3 Documentación de las evaluaciones de impacto</a></td>
+<td>A.5 Impacto</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a5-evaluacion-de-impacto/#a-5-4">A.5.4 Evaluación del impacto en individuos o grupos</a></td>
+<td>A.5 Impacto</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a5-evaluacion-de-impacto/#a-5-5">A.5.5 Evaluación de impactos sociales</a></td>
+<td>A.5 Impacto</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-1-2">A.6.1.2 Objetivos para el desarrollo responsable</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-1-3">A.6.1.3 Procesos para el diseño y desarrollo responsable</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Similar</td>
+<td>8.25, 8.27</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-2">A.6.2.2 Requisitos y especificación</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>8.26</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-3">A.6.2.3 Documentación del diseño y desarrollo</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>8.27, 8.28</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-4">A.6.2.4 Verificación y validación</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Similar</td>
+<td>8.29</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-5">A.6.2.5 Despliegue</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>8.31, 8.32</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-6">A.6.2.6 Operación y monitoreo</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Similar</td>
+<td>8.16, 8.6, 8.8</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-7">A.6.2.7 Documentación técnica</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>5.37</td>
+</tr>
+<tr>
+<td><a href="a6-ciclo-de-vida/#a-6-2-8">A.6.2.8 Registro de eventos</a></td>
+<td>A.6 Ciclo de vida</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>8.15, 8.17</td>
+</tr>
+<tr>
+<td><a href="a7-datos/#a-7-2">A.7.2 Datos para desarrollo y mejora</a></td>
+<td>A.7 Datos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a7-datos/#a-7-3">A.7.3 Adquisición de datos</a></td>
+<td>A.7 Datos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a7-datos/#a-7-4">A.7.4 Calidad de los datos</a></td>
+<td>A.7 Datos</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Alto</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a7-datos/#a-7-5">A.7.5 Procedencia de los datos</a></td>
+<td>A.7 Datos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a7-datos/#a-7-6">A.7.6 Preparación de los datos</a></td>
+<td>A.7 Datos</td>
+<td>Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a8-informacion-partes-interesadas/#a-8-2">A.8.2 Documentación del sistema e información para usuarios</a></td>
+<td>A.8 Información</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a8-informacion-partes-interesadas/#a-8-3">A.8.3 Reporte externo</a></td>
+<td>A.8 Información</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Bajo</td>
+<td>Nuevo</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td><a href="a8-informacion-partes-interesadas/#a-8-4">A.8.4 Comunicación de incidentes</a></td>
+<td>A.8 Información</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.24, 5.26, 5.5</td>
+</tr>
+<tr>
+<td><a href="a8-informacion-partes-interesadas/#a-8-5">A.8.5 Información para las partes interesadas</a></td>
+<td>A.8 Información</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.31, 5.5</td>
+</tr>
+<tr>
+<td><a href="a9-uso/#a-9-2">A.9.2 Procesos para el uso responsable</a></td>
+<td>A.9 Uso</td>
+<td>Usa IA de terceros · Desarrolla IA</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.10</td>
+</tr>
+<tr>
+<td><a href="a9-uso/#a-9-3">A.9.3 Objetivos para el uso responsable</a></td>
+<td>A.9 Uso</td>
+<td>Usa IA de terceros · Desarrolla IA</td>
+<td>Bajo</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a9-uso/#a-9-4">A.9.4 Uso previsto del sistema de IA</a></td>
+<td>A.9 Uso</td>
+<td>Usa IA de terceros · Desarrolla IA</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="a10-terceros/#a-10-2">A.10.2 Asignación de responsabilidades</a></td>
+<td>A.10 Terceros</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.19, 5.20, 5.23</td>
+</tr>
+<tr>
+<td><a href="a10-terceros/#a-10-3">A.10.3 Proveedores</a></td>
+<td>A.10 Terceros</td>
+<td>Usa IA de terceros · Desarrolla IA · Provee IA a clientes</td>
+<td>Medio</td>
+<td>Similar</td>
+<td>5.19, 5.20, 5.21, 5.22</td>
+</tr>
+<tr>
+<td><a href="a10-terceros/#a-10-4">A.10.4 Clientes</a></td>
+<td>A.10 Terceros</td>
+<td>Provee IA a clientes</td>
+<td>Medio</td>
+<td>Nuevo</td>
+<td>5.20</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
