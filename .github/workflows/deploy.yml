@@ -1,0 +1,45 @@
+name: Publicar sitio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-sitio
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Construir y publicar en gh-pages
+    runs-on: ubuntu-latest
+    env:
+      NO_MKDOCS_2_WARNING: "true"
+    steps:
+      - name: Obtener el código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Validar contenido
+        run: python scripts/validar_contenido.py
+
+      - name: Configurar identidad del bot de despliegue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Construir (modo estricto) y publicar
+        run: mkdocs gh-deploy --force --strict --message "Despliegue del sitio desde {sha}"
