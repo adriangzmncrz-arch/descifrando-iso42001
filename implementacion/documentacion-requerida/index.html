@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Mapa de la información documentada de un SGIA según ISO/IEC 42001 - lo que piden las cláusulas 4 a 10, lo que generan los 38 controles del Anexo A, cómo organizar el repositorio y cómo versionar modelos, datos y evaluaciones.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1943,6 +1943,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación requerida
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1959,6 +1977,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mantener-y-conservar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mantener y conservar: documentos y registros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clausulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que piden las cláusulas 4 a 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que conviene documentar aunque no se pida con esas palabras
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que generan los controles del Anexo A
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura sugerida de un repositorio documental
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-de-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control de versiones de artefactos de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores frecuentes con la documentación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas relacionadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2676,16 +2801,654 @@
 
 
 <h1 id="documentacion-requerida">Documentación requerida<a class="headerlink" href="#documentacion-requerida" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15a3 3 0 0 1 3 3 3 3 0 0 1-3 3 2.99 2.99 0 0 1-2.83-2H14v-2h1.17c.41-1.17 1.52-2 2.83-2m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m0-9a1.43 1.43 0 0 0 1.43-1.43 1.43 1.43 0 1 0-2.86 0A1.43 1.43 0 0 0 18 8m0-5.43a4 4 0 0 1 4 4C22 9.56 18 14 18 14s-4-4.44-4-7.43a4 4 0 0 1 4-4M8.83 17H10v2H8.83A2.99 2.99 0 0 1 6 21a3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V14h2v1.17c.85.3 1.53.98 1.83 1.83M6 17a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M6 3a3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83V10H5V8.83A2.99 2.99 0 0 1 3 6a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m5 14v-2h2v2zm-4-6H5v-2h2z"/></svg></span> Implementación</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 18 min de lectura</span></p>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>ISO 42001 pide relativamente pocos documentos con nombre propio, pero espera que puedas demostrar todo lo que haces; esta página separa lo obligatorio de lo recomendable y te propone cómo organizarlo para encontrar cualquier evidencia en minutos.</p>
+</div>
+<p>La norma no habla de "manual", de "procedimientos obligatorios" ni de "registros". Usa un solo término, <strong>información documentada</strong> (<em>documented information</em>): cualquier información que la organización tiene que controlar, sin importar el formato. Una página de la intranet, una hoja de cálculo, un repositorio Git, un tablero de indicadores o la grabación de una capacitación cuentan, siempre que estén identificados, protegidos y bajo control de versiones (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>).</p>
+<p>La información documentada de un sistema de gestión de IA (<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>) se forma en tres capas:</p>
+<ol>
+<li><strong>Lo que piden las cláusulas 4 a 10</strong> de forma explícita. Es igual para todas las organizaciones.</li>
+<li><strong>Lo que piden los controles del Anexo A</strong> que incluyas en tu Declaración de Aplicabilidad (<em>Statement of Applicability</em>, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>). Depende de tu rol y de tus riesgos.</li>
+<li><strong>Lo que tú decidas que es necesario</strong> para que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> funcione (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5.1</a>). Aquí cabe todo lo demás: instructivos, guías, listas de verificación.</li>
+</ol>
+<p>La propia norma reconoce que el volumen varía según el tamaño de la organización, la complejidad de sus procesos y la competencia de su gente. Contadores Alameda puede operar con una carpeta compartida bien ordenada y unas pocas decenas de documentos; Monarca Crédito necesitará integrar su repositorio documental con el registro de modelos de su equipo de ciencia de datos. Los nombres de los controles que aparecen en esta página son traducción libre de referencia.</p>
+<h2 id="mantener-y-conservar">Mantener y conservar: documentos y registros<a class="headerlink" href="#mantener-y-conservar" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>En las normas de sistemas de gestión verás dos verbos: <strong>mantener</strong> y <strong>conservar</strong> información documentada. Las ediciones recientes, construidas sobre la estructura armonizada, a veces solo dicen que cierta información debe estar disponible como información documentada, sin aclarar cuál de los dos casos es. En nuestra lectura, la distinción útil no está en el verbo sino en la naturaleza de la información:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Documento (se mantiene)</th>
+<th>Registro (se conserva)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Qué es</strong></td>
+<td>Dice cómo se hacen las cosas o qué reglas se decidieron</td>
+<td>Prueba que algo ocurrió y con qué resultado</td>
+</tr>
+<tr>
+<td><strong>¿Cambia?</strong></td>
+<td>Sí: se actualiza, se revisa y se versiona</td>
+<td>No: si tiene un error, se emite una versión nueva o una nota, pero el original no se reescribe</td>
+</tr>
+<tr>
+<td><strong>Pregunta típica del auditor</strong></td>
+<td>"¿Cómo lo hacen?"</td>
+<td>"Muéstrame que lo hicieron"</td>
+</tr>
+<tr>
+<td><strong>Riesgo típico</strong></td>
+<td>Que esté desactualizado y nadie lo siga</td>
+<td>Que no exista, o que se haya armado la semana anterior a la auditoría</td>
+</tr>
+<tr>
+<td><strong>Ejemplos</strong></td>
+<td>Política de IA, alcance, metodología de riesgos, procedimiento del ciclo de vida</td>
+<td>Evaluaciones de impacto realizadas, informes de auditoría, actas, bitácoras</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Analogía</p>
+<p>Piensa en una escuela. El plan de estudios es un documento: se revisa cada año, se mejora y siempre hay una versión vigente. Las boletas de calificaciones son registros: nadie reescribe la boleta de un alumno de hace tres ciclos, y si hubo un error se emite una corrección que deja rastro. Un buen <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> tiene las dos cosas y sabe cuál es cuál.</p>
+</div>
+<p>Algunas piezas son híbridas. La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> es un documento vivo, pero cada versión aprobada es también la prueba de una decisión. La matriz de riesgos se actualiza constantemente, pero la "fotografía" de cada ciclo de evaluación es un registro. Para estos casos, la solución práctica es versionar y no sobrescribir: la versión vigente sirve para operar y las anteriores sirven de evidencia.</p>
+<h2 id="clausulas">Lo que piden las cláusulas 4 a 10<a class="headerlink" href="#clausulas" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Esta tabla reúne la información documentada que la norma menciona de forma explícita en sus requisitos. La columna "Naturaleza" es nuestra clasificación, no de la norma.</p>
+<table>
+<thead>
+<tr>
+<th>Cláusula</th>
+<th>Información documentada</th>
+<th>Naturaleza</th>
+<th>Cómo se ve en la práctica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-3">4.3</a></td>
+<td>Alcance del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Documento</td>
+<td>Enunciado breve (el del certificado) y documento de alcance con sistemas, roles, ubicaciones y exclusiones</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c4-contexto/#c-4-4">4.4</a></td>
+<td>El propio <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, con sus procesos y cómo interactúan (esta cláusula pide documentarlo)</td>
+<td>Documento</td>
+<td>Mapa de procesos o manual breve del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a></td>
+<td>Política de IA</td>
+<td>Documento</td>
+<td>Política aprobada por la alta dirección, con referencias a otras políticas</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a></td>
+<td>Acciones emprendidas para identificar y atender riesgos y oportunidades de IA</td>
+<td>Registro</td>
+<td>Registro de riesgos y oportunidades del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con acciones y seguimiento</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a></td>
+<td>Cómo evalúas los riesgos de IA (el proceso mismo)</td>
+<td>Documento (en nuestra lectura)</td>
+<td>Metodología con criterios, escalas y responsables; guarda también sus versiones anteriores</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a></td>
+<td>Proceso de tratamiento de riesgos, controles necesarios y Declaración de Aplicabilidad</td>
+<td>Documento</td>
+<td>Metodología de tratamiento, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> con justificaciones y descripción de cómo opera cada control incluido</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a></td>
+<td>Lo que concluyó cada evaluación de impacto</td>
+<td>Registro</td>
+<td>Una evaluación fechada y aprobada por sistema</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a></td>
+<td>Objetivos de IA</td>
+<td>Documento</td>
+<td>Tabla de objetivos con indicador, meta, responsable y fecha</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a></td>
+<td>Evidencia de la competencia de las personas</td>
+<td>Registro</td>
+<td>Constancias, currículos, resultados de evaluaciones de capacitación</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c7-apoyo/#c-7-5">7.5.1</a></td>
+<td>Lo que la organización determine necesario para la eficacia del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Ambos</td>
+<td>Procedimientos, instructivos, fichas de sistemas, matrices</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-1">8.1</a></td>
+<td>Lo necesario para confiar en que los procesos se ejecutaron como se planificó</td>
+<td>Registro, sobre todo</td>
+<td>Aprobaciones de despliegue, registros de cambios, bitácoras, listas de verificación llenas</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-2">8.2</a></td>
+<td>Resultados de cada evaluación de riesgos de IA</td>
+<td>Registro</td>
+<td>Matriz fechada por ciclo o por cambio significativo</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-3">8.3</a></td>
+<td>Resultados de cada tratamiento de riesgos de IA</td>
+<td>Registro</td>
+<td>Avance del plan, evidencia de implementación y verificación de eficacia</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c8-operacion/#c-8-4">8.4</a></td>
+<td>Resultados de cada evaluación de impacto</td>
+<td>Registro</td>
+<td>Evaluaciones periódicas y por cambio significativo</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a></td>
+<td>Resultados del seguimiento y la medición</td>
+<td>Registro</td>
+<td>Tablero de indicadores con análisis y conclusiones</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a></td>
+<td>Implementación del programa de auditoría y sus resultados (9.2.2)</td>
+<td>Documento y registro</td>
+<td>Programa anual; planes, informes y listas de hallazgos</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a></td>
+<td>Conclusiones y decisiones de cada revisión de la dirección (9.3.3)</td>
+<td>Registro</td>
+<td>Acta con decisiones, responsables y fechas</td>
+</tr>
+<tr>
+<td><a href="../../clausulas/c10-mejora/#c-10-2">10.2</a></td>
+<td>Qué no conformidades hubo, qué se hizo y con qué resultado</td>
+<td>Registro</td>
+<td>Registro de no conformidades y acciones correctivas con análisis de causa y verificación de eficacia</td>
+</tr>
+</tbody>
+</table>
+<p>Dos matices que suelen pasarse por alto:</p>
+<ul>
+<li><strong>La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> conecta riesgos y controles.</strong> En la cláusula 3, la definición de Declaración de Aplicabilidad incluye una nota según la cual los riesgos identificados y los controles que los atienden quedan reflejados en ella. Por eso te recomendamos que cada fila de la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> remita a los riesgos o requisitos externos que justifican el control.</li>
+<li><strong>La información de origen externo también se controla</strong> (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5.3</a>). Contratos y términos de uso de proveedores de IA, documentación técnica de un modelo fundacional, leyes y criterios de autoridades: si los necesitas para operar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, identifícalos, guarda la versión vigente y revísalos cuando cambien.</li>
+</ul>
+<h2 id="recomendado">Lo que conviene documentar aunque no se pida con esas palabras<a class="headerlink" href="#recomendado" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Varios requisitos no mencionan la información documentada, pero sería muy difícil demostrar que los cumples sin dejar algo por escrito.</p>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Por qué documentarlo</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Análisis de contexto y partes interesadas</td>
+<td>Demuestra que el alcance consideró los factores internos, externos y las expectativas de terceros</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../clausulas/c4-contexto/#c-4-2">4.2</a></td>
+</tr>
+<tr>
+<td>Rol de la organización frente a cada sistema</td>
+<td>La norma pide determinarlo; el auditor preguntará cómo lo hiciste</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a></td>
+</tr>
+<tr>
+<td>Inventario de sistemas de IA</td>
+<td>Es la base del alcance, de los riesgos y de los controles de recursos</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-3">4.3</a>, <a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a></td>
+</tr>
+<tr>
+<td>Criterios de riesgo de IA</td>
+<td>La norma pide establecerlos y mantenerlos; normalmente viven dentro de la metodología</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a></td>
+</tr>
+<tr>
+<td>Aprobación del plan de tratamiento y aceptación de riesgos residuales</td>
+<td>Es obligatoria; sin firma o acta no hay forma de probarla</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a></td>
+</tr>
+<tr>
+<td>Roles, responsabilidades y autoridades</td>
+<td>Deben asignarse y comunicarse; la matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> es la evidencia natural</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a></td>
+</tr>
+<tr>
+<td>Planificación de cambios al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Prueba que los cambios se hicieron de manera planificada</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a></td>
+</tr>
+<tr>
+<td>Toma de conciencia y comunicación</td>
+<td>Acuses de lectura, campañas y una matriz de qué se comunica, a quién, cuándo y cómo</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a>, <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="anexo-a">Lo que generan los controles del Anexo A<a class="headerlink" href="#anexo-a" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Antes de la tabla, tres ideas:</p>
+<ol>
+<li><strong>Todo control incluido necesita una descripción.</strong> La cláusula <a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a> pide que los controles necesarios estén disponibles como información documentada. Aunque el control no hable de documentar, tiene que estar descrito en algún lado: en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>, en un procedimiento o en la ficha del sistema.</li>
+<li><strong>Veinticinco de los 38 controles piden documentar algo de forma expresa,</strong> con verbos como <em>documentar</em>, <em>definir y documentar</em> o <em>evaluar y documentar</em>. Si el control aplica, ese documento no es opcional.</li>
+<li><strong>Tres controles producen información por naturaleza:</strong> la documentación técnica para partes interesadas (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a>), las bitácoras de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) y la información para usuarios (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a>). No usan el verbo <em>documentar</em>, pero su resultado es información.</li>
+</ol>
+<p><strong>Cómo leer la columna "Carácter":</strong> <em>Obligatorio si aplica</em> significa que el texto del control pide documentar; <em>Obligatorio si aplica ✱</em> significa que el control produce información por naturaleza; <em>Recomendado</em> significa que el control no lo pide, pero sin evidencia difícilmente lo demostrarás. Si un control está excluido en tu <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> con una justificación válida, no genera documentos.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Documento o registro típico</th>
+<th>Carácter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a> Política de IA</td>
+<td>Política de IA aprobada y comunicada</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a> Alineación con otras políticas de la organización</td>
+<td>Matriz de cruce entre políticas; referencias en las políticas afectadas</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a> Revisión de la política de IA</td>
+<td>Historial de versiones y minuta de cada revisión</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a> Roles y responsabilidades de IA</td>
+<td>Matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>, nombramientos, descripciones de puesto</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a> Reporte de inquietudes</td>
+<td>Procedimiento del canal; registro de reportes y su atención</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a> Documentación de recursos</td>
+<td>Recursos de cada sistema por etapa del ciclo de vida</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-3">A.4.3</a> Recursos de datos</td>
+<td>Fichas de los conjuntos de datos (<em>datasheets</em>)</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-4">A.4.4</a> Recursos de herramientas</td>
+<td>Inventario de modelos, bibliotecas y plataformas con versiones (<abbr title="Lista de materiales de IA (AI bill of materials): inventario de modelos, datos, bibliotecas y servicios que componen un sistema de IA.">AI-BOM</abbr>)</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-5">A.4.5</a> Recursos de sistema y cómputo</td>
+<td>Inventario de infraestructura y capacidad</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a> Recursos humanos</td>
+<td>Personas y competencias requeridas en cada etapa</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a> Proceso de evaluación de impacto</td>
+<td>Procedimiento con disparadores, método y responsables</td>
+<td>Recomendado (en la práctica, casi indispensable)</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> Documentación de las evaluaciones de impacto</td>
+<td>Resultados de cada evaluación y plazo de conservación definido</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a> Evaluación del impacto en individuos o grupos</td>
+<td>Sección de impactos en personas y grupos</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a> Evaluación de impactos sociales</td>
+<td>Sección de impactos en la sociedad</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-2">A.6.1.2</a> Objetivos para el desarrollo responsable</td>
+<td>Objetivos y cómo se reflejan en el ciclo de desarrollo</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a> Procesos para el diseño y desarrollo responsable</td>
+<td>Procedimiento del ciclo de vida con puertas de aprobación</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-2">A.6.2.2</a> Requisitos y especificación</td>
+<td>Documento de requisitos o caso de negocio</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-3">A.6.2.3</a> Documentación del diseño y desarrollo</td>
+<td>Documento de diseño; registros de decisiones de arquitectura</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a> Verificación y validación</td>
+<td>Plan de pruebas con criterios; reportes de evaluación</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a> Despliegue</td>
+<td>Plan de despliegue; lista de verificación de salida</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a> Operación y monitoreo</td>
+<td>Qué se monitorea, cómo se repara, actualiza y da soporte</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a> Documentación técnica</td>
+<td>Ficha del modelo o del sistema; manual de operación</td>
+<td>Obligatorio si aplica ✱</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a> Registro de eventos</td>
+<td>Bitácoras y decisión de en qué etapas se registran</td>
+<td>Obligatorio si aplica ✱</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a> Datos para desarrollo y mejora</td>
+<td>Procesos de gestión de datos para desarrollo</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-3">A.7.3</a> Adquisición de datos</td>
+<td>Registro de fuentes, criterios de selección y derechos de uso</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a> Calidad de los datos</td>
+<td>Requisitos de calidad y evidencia de que se cumplen</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-5">A.7.5</a> Procedencia de los datos</td>
+<td>Proceso de registro de procedencia; registros de linaje</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a> Preparación de los datos</td>
+<td>Criterios y métodos de preparación</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a> Documentación del sistema e información para usuarios</td>
+<td>Aviso de interacción con IA, instrucciones, límites conocidos</td>
+<td>Obligatorio si aplica ✱</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a> Reporte externo</td>
+<td>Canal publicado; registro de reportes y su atención</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a> Comunicación de incidentes</td>
+<td>Plan de comunicación de incidentes</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-5">A.8.5</a> Información para las partes interesadas</td>
+<td>Registro de obligaciones de reporte</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a> Procesos para el uso responsable</td>
+<td>Proceso de alta y aprobación de usos de IA</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-3">A.9.3</a> Objetivos para el uso responsable</td>
+<td>Objetivos de uso responsable</td>
+<td>Obligatorio si aplica</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a9-uso/#a-9-4">A.9.4</a> Uso previsto del sistema de IA</td>
+<td>Declaración de uso previsto; registros de operación y escalamientos</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a> Asignación de responsabilidades</td>
+<td>Matriz de responsabilidad compartida; cláusulas contractuales</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a> Proveedores</td>
+<td>Procedimiento y evaluaciones de proveedores de IA</td>
+<td>Recomendado</td>
+</tr>
+<tr>
+<td><a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a> Clientes</td>
+<td>Requisitos de clientes; términos de uso; documentación entregada</td>
+<td>Recomendado</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Si solo usas IA de terceros</p>
+<p>Varios controles de recursos técnicos, de desarrollo y de datos para desarrollo suelen quedar excluidos con justificación, y entonces no generan documentos. Pero revisa con calma antes de excluir: si curas una base de conocimiento, como la de Alma en Contadores Alameda, la calidad de esos datos (<a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>) y el registro de eventos del chatbot (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) probablemente sí aplican.</p>
+</div>
+<h2 id="repositorio">Estructura sugerida de un repositorio documental<a class="headerlink" href="#repositorio" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>No necesitas una herramienta GRC para certificarte. Una carpeta compartida, un espacio de wiki o un repositorio Git funcionan si respetan cinco reglas:</p>
+<ul>
+<li><strong>Una sola fuente de verdad.</strong> Cada documento vive en un solo lugar; el resto son enlaces.</li>
+<li><strong>Una lista maestra</strong> con código, título, versión vigente, dueño, aprobador, clasificación y fecha de próxima revisión.</li>
+<li><strong>Documentos y registros separados,</strong> porque se gestionan distinto: unos se actualizan y los otros se conservan sin cambios.</li>
+<li><strong>Enlaces, no copias, a los artefactos de ingeniería.</strong> Los modelos, los conjuntos de datos y las canalizaciones viven en sus propias plataformas; el repositorio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> apunta a ellos.</li>
+<li><strong>Permisos por clasificación.</strong> Una evaluación de impacto puede describir vulnerabilidades de un grupo y una instrucción de sistema puede revelar cómo evadir un filtro.</li>
+</ul>
+<p>Esta es una estructura de partida. Haz clic en los números para ver la explicación de cada carpeta.</p>
+<div class="language-yaml annotate highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="l l-Scalar l-Scalar-Plain">sgia/</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="l l-Scalar l-Scalar-Plain">├── 00-control-documental/</span><span class="w">           </span><span class="c1"># (1)!</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── lista-maestra.xlsx</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="l l-Scalar l-Scalar-Plain">│   └── procedimiento-informacion-documentada.md</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="l l-Scalar l-Scalar-Plain">├── 01-contexto-y-alcance/</span><span class="w">           </span><span class="c1"># (2)!</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── analisis-de-contexto.md</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── partes-interesadas.xlsx</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── roles-por-sistema.xlsx</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="l l-Scalar l-Scalar-Plain">│   └── alcance-sgia.md</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="l l-Scalar l-Scalar-Plain">├── 02-liderazgo/</span><span class="w">                    </span><span class="c1"># (3)!</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── politica-de-ia.md</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── uso-aceptable-ia-generativa.md</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── raci-ia.md</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="l l-Scalar l-Scalar-Plain">│   └── canal-de-inquietudes.md</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="l l-Scalar l-Scalar-Plain">├── 03-riesgo-impacto-y-soa/</span><span class="w">         </span><span class="c1"># (4)!</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── metodologia-riesgos-ia.md</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── procedimiento-evaluacion-impacto.md</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── matriz-de-riesgos-ia.xlsx</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── declaracion-de-aplicabilidad.xlsx</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── plan-de-tratamiento.xlsx</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="l l-Scalar l-Scalar-Plain">│   └── objetivos-de-ia.xlsx</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="l l-Scalar l-Scalar-Plain">├── 04-sistemas/</span><span class="w">                     </span><span class="c1"># (5)!</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── inventario-sistemas-ia.xlsx</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="l l-Scalar l-Scalar-Plain">│   └── IA-02-alma/</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="l l-Scalar l-Scalar-Plain">│       ├── ficha-del-sistema.md</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="l l-Scalar l-Scalar-Plain">│       ├── evaluaciones-de-impacto/</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="l l-Scalar l-Scalar-Plain">│       ├── evaluaciones-de-riesgo/</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="l l-Scalar l-Scalar-Plain">│       ├── proveedor/</span><span class="w">               </span><span class="c1"># (6)!</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="l l-Scalar l-Scalar-Plain">│       └── cambios/</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="l l-Scalar l-Scalar-Plain">├── 05-procedimientos/</span><span class="w">               </span><span class="c1"># (7)!</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="l l-Scalar l-Scalar-Plain">├── 06-apoyo/</span><span class="w">                        </span><span class="c1"># (8)!</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── competencias-y-capacitacion/</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="l l-Scalar l-Scalar-Plain">│   └── comunicacion/</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="l l-Scalar l-Scalar-Plain">├── 07-registros-de-operacion/</span><span class="w">       </span><span class="c1"># (9)!</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── indicadores/</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="l l-Scalar l-Scalar-Plain">│   ├── incidentes/</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="l l-Scalar l-Scalar-Plain">│   └── reportes-externos/</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="l l-Scalar l-Scalar-Plain">├── 08-auditoria-y-revision/</span><span class="w">         </span><span class="c1"># (10)!</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="l l-Scalar l-Scalar-Plain">└── 09-mejora/</span><span class="w">                       </span><span class="c1"># (11)!</span>
+</span></code></pre></div>
+<ol>
+<li>El procedimiento de información documentada (<a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a>) y la lista maestra. Define la convención de nombres (por ejemplo, <code>SGIA-PRO-03 v2.1</code>), quién aprueba cada tipo de documento y cuánto tiempo se conserva cada tipo de registro.</li>
+<li>Todo lo de la <a href="../../clausulas/c4-contexto/">cláusula 4</a>: contexto, partes interesadas, roles por sistema y alcance. El alcance es información documentada obligatoria.</li>
+<li>Política de IA (<a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>), política de uso aceptable, matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> (<a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a>) y procedimiento del canal de inquietudes (<a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>). Guarda aquí también las actas del comité de IA.</li>
+<li>Los documentos de la <a href="../../clausulas/c6-planificacion/">cláusula 6</a>. La metodología y la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> son documentos vivos; cada corrida de la matriz de riesgos y cada plan aprobado conviene guardarlos como versión fechada que no se sobrescribe.</li>
+<li>Una subcarpeta por sistema, nombrada con el identificador del inventario. Reúne la ficha del sistema, sus evaluaciones de impacto y de riesgo (<a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>) y el historial de cambios. Si desarrollas, la ficha enlaza al registro de modelos en lugar de copiar artefactos pesados.</li>
+<li>Información de origen externo: contrato, términos de uso, documentación del proveedor y sus evaluaciones periódicas (<a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>). Anota la fecha en que descargaste cada versión.</li>
+<li>Procedimientos operativos: ciclo de vida, gestión de datos, alta de casos de uso, comunicación de incidentes, evaluación de proveedores. Solo los que tu <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> necesite.</li>
+<li>Evidencia de la <a href="../../clausulas/c7-apoyo/">cláusula 7</a>: matriz de competencias, constancias de capacitación, evaluaciones de eficacia, campañas de concientización y matriz de comunicación.</li>
+<li>Registros de la operación diaria (<a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>): tableros de indicadores con su análisis, registro de incidentes y reportes recibidos por el canal externo (<a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>).</li>
+<li>Programa, planes e informes de auditoría interna (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a>) y actas de revisión por la dirección (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a>), organizados por año.</li>
+<li>Registro de no conformidades y acciones correctivas (<a href="../../clausulas/c10-mejora/#c-10-2">10.2</a>), con la evidencia de cierre y de verificación de eficacia de cada una.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Una prueba sencilla</p>
+<p>Pídele a alguien ajeno al proyecto que encuentre, sin ayuda, la evaluación de impacto vigente de un sistema y el acta donde se aceptaron sus riesgos residuales. Si tarda más de cinco minutos, el repositorio necesita orden antes de la auditoría.</p>
+</div>
+<h2 id="control-de-versiones">Control de versiones de artefactos de IA<a class="headerlink" href="#control-de-versiones" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>En un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>, el control de versiones se ocupa sobre todo de políticas y procedimientos. En un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> hay que extenderlo a artefactos que cambian mucho más rápido: fichas de modelo (<em>model cards</em>), fichas de conjuntos de datos (<em>datasheets</em>), reportes de evaluación, instrucciones de sistema (<em>system prompts</em>), filtros de seguridad (<em>guardrails</em>) y bases de conocimiento. La razón es la trazabilidad. Tarde o temprano alguien preguntará: ¿qué versión del sistema estaba en producción en tal fecha, con qué datos se construyó, qué pruebas pasó y quién la aprobó? Puede ser un auditor, un cliente que reclama, una autoridad o tu propio equipo después de un incidente.</p>
+<p>Siete principios para responder esa pregunta:</p>
+<ol>
+<li><strong>Identificador único y estable</strong> para cada artefacto, ligado al identificador del sistema en el inventario.</li>
+<li><strong>Versiones con significado.</strong> Un esquema como mayor.menor.corrección funciona si defines qué cuenta como cambio mayor. Te recomendamos que "cambio mayor" coincida con lo que tu metodología llama cambio significativo, porque ese es el que dispara una nueva evaluación de riesgos (<a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>) y de impacto (<a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>).</li>
+<li><strong>Registros inmutables.</strong> Un reporte de validación o una evaluación de impacto aprobada no se edita; si algo cambia, se emite una versión nueva que referencia a la anterior.</li>
+<li><strong>Huella digital (<em>hash</em>)</strong> de los conjuntos de datos y de los artefactos del modelo, para demostrar que lo evaluado es lo que se desplegó.</li>
+<li><strong>Enlaces entre artefactos.</strong> La ficha del modelo apunta a la versión de los datos, al reporte de verificación y validación, a la evaluación de impacto y a la aprobación. Sin esos enlaces, tienes documentos sueltos, no trazabilidad.</li>
+<li><strong>Retención definida.</strong> Conserva los registros al menos durante la vida del sistema y lo que exijan tus obligaciones fiscales, laborales y de datos personales. Para las evaluaciones de impacto, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> pide además fijar un plazo de conservación.</li>
+<li><strong>Legibilidad a futuro.</strong> Un cuaderno de análisis que solo corre con una versión específica de una biblioteca puede volverse ilegible; guarda su entorno o un reporte exportado.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Artefacto</th>
+<th>Cuándo cambia de versión</th>
+<th>Dónde suele vivir</th>
+<th>Con qué se liga</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ficha del modelo o del sistema</td>
+<td>Reentrenamiento, cambio de umbrales, nueva limitación conocida</td>
+<td>Registro de modelos o repositorio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Datos, reporte de verificación y validación, evaluación de impacto</td>
+</tr>
+<tr>
+<td>Ficha del conjunto de datos</td>
+<td>Nueva extracción, cambio de fuente, nueva regla de limpieza</td>
+<td>Catálogo de datos, con huella digital</td>
+<td>Modelos que lo usan; base legal del tratamiento</td>
+</tr>
+<tr>
+<td>Reporte de verificación y validación</td>
+<td>Cada candidato a liberación</td>
+<td>Generado por la canalización, solo lectura</td>
+<td>Versión del modelo y de los datos de prueba</td>
+</tr>
+<tr>
+<td>Evaluación de impacto</td>
+<td>Revisión periódica o cambio significativo</td>
+<td>Carpeta del sistema en el repositorio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Versión del sistema evaluado; riesgos derivados</td>
+</tr>
+<tr>
+<td>Instrucciones de sistema y filtros de seguridad</td>
+<td>Cualquier cambio, por pequeño que sea</td>
+<td>Git con revisión obligatoria</td>
+<td>Evaluaciones de calidad y pruebas adversarias</td>
+</tr>
+<tr>
+<td>Base de conocimiento (preguntas frecuentes, <abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>)</td>
+<td>Cada actualización aprobada</td>
+<td>Repositorio con fecha y aprobador</td>
+<td>Aprobación del experto del negocio</td>
+</tr>
+<tr>
+<td>Documentación del proveedor</td>
+<td>Cuando el proveedor publica cambios</td>
+<td>Carpeta de origen externo</td>
+<td>Evaluación del proveedor; evaluación de riesgos</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Si usas IA de terceros</label><label for="__tabbed_1_2">Si desarrollas IA</label><label for="__tabbed_1_3">Si provees IA a clientes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> no tiene modelos que versionar, pero sí artefactos que cambian el comportamiento de sus sistemas. La base de conocimiento de Alma se versiona con fecha y con la firma del contador que la revisó, y se actualiza antes de cada temporada de declaraciones. La documentación y los términos de BotNorte se guardan como información de origen externo, junto con el nombre del modelo de lenguaje que BotNorte declara usar. El contrato le pide a BotNorte avisar si lo cambia, y ese aviso dispara una revisión de riesgos.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> usa su registro de modelos como eje. Cada versión de Score Monarca v3 tiene su ficha, la huella digital de los datos de entrenamiento (solicitudes, historial de buró de crédito, comportamiento transaccional y uso de la app con consentimiento), el reporte de validación por segmento (sexo, edad, entidad federativa) y el acta del Comité de Modelos que la aprobó. El modelo de asignación de línea (IA-02) declara de qué versión del <em>score</em> depende, para que un cambio en uno dispare la revisión del otro.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> versiona por separado lo que es común a la plataforma (orquestación, filtros de seguridad, versión del modelo fundacional) y lo que es de cada cliente (instrucciones de sistema, configuración de la recuperación sobre su base de conocimiento). Cada liberación lleva notas de versión para los clientes, y un cambio de modelo fundacional se trata como cambio mayor: nueva batería de evaluaciones de calidad y de inyección de instrucciones antes de desplegar.</p>
+</div>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Trazabilidad en cinco minutos: Monarca Crédito</p>
+<p>Durante la etapa 2, el auditor toma al azar una solicitud rechazada de hace cuatro meses y pregunta por qué se rechazó. El equipo muestra, en este orden:</p>
+<ol>
+<li>La bitácora de la decisión, con la versión del modelo que la emitió (v3.2) y los motivos de rechazo comunicados al solicitante.</li>
+<li>La ficha de la v3.2, con sus limitaciones conocidas y la fecha de despliegue.</li>
+<li>La huella digital del conjunto de entrenamiento y su ficha.</li>
+<li>El reporte de validación por segmento que la v3.2 pasó antes de liberarse.</li>
+<li>La evaluación de impacto vigente en esa fecha y el acta del Comité de Modelos que aprobó el despliegue y aceptó los riesgos residuales.</li>
+</ol>
+<p>Si cualquiera de esos eslabones falta, el auditor no puede confirmar que el ciclo de vida funcionó como dice el procedimiento, y es probable que levante un hallazgo.</p>
+</div>
+<h2 id="errores">Errores frecuentes con la documentación<a class="headerlink" href="#errores" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Los que más vemos</p>
+<ul>
+<li>Comprar un paquete de documentos genéricos y llenarlo con el nombre de la empresa: el auditor detecta en la primera entrevista que nadie los sigue.</li>
+<li>Tener procedimientos impecables y cero registros de que se ejecutaron.</li>
+<li>Sobrescribir evaluaciones de impacto o matrices de riesgo, en lugar de versionarlas, y perder la historia.</li>
+<li>Guardar la versión vigente de la política en tres lugares distintos, con tres fechas distintas.</li>
+<li>Documentar todo en un solo "manual del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>" de 120 páginas que nadie abre.</li>
+</ul>
+<p>Más en <a href="../errores-frecuentes/">Errores frecuentes</a>.</p>
+</div>
+<h2 id="plantillas">Plantillas relacionadas<a class="headerlink" href="#plantillas" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../../plantillas/#politica-de-ia">Política de IA</a> y <a href="../../plantillas/#uso-aceptable-ia-generativa">política de uso aceptable de IA generativa</a></li>
+<li><a href="../../plantillas/#raci-ia">Roles y responsabilidades (<abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>)</a></li>
+<li><a href="../../plantillas/#inventario-sistemas-ia">Inventario de sistemas de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-riesgos">Metodología y matriz de riesgos de IA</a></li>
+<li><a href="../../plantillas/#evaluacion-de-impacto">Evaluación de impacto del sistema de IA</a></li>
+<li><a href="../../plantillas/#declaracion-de-aplicabilidad">Declaración de Aplicabilidad</a></li>
+<li><a href="../../plantillas/#ficha-del-sistema">Ficha del sistema de IA</a></li>
+<li><a href="../../plantillas/#registro-de-incidentes">Registro de incidentes de IA</a></li>
+<li><a href="../../plantillas/#procedimiento-ciclo-de-vida">Procedimiento del ciclo de vida</a></li>
+<li><a href="../../plantillas/#checklist-auditoria-interna">Checklist de auditoría interna</a></li>
+</ul>
+<p>Para ver en qué momento del proyecto se produce cada documento, consulta la <a href="../hoja-de-ruta/">hoja de ruta</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

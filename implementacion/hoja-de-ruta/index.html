@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023, el sistema de gestión de inteligencia artificial (SGIA): qué pide la norma, por qué lo pide y cómo se ve en la práctica.">
+        <meta name="description" content="Hoja de ruta por fases para implementar ISO/IEC 42001, con objetivos, actividades, entregables, responsables y duraciones orientativas, más variantes para PyMEs, organizaciones que desarrollan IA, proveedores SaaS y empresas con ISO 27001.">
       
       
         <meta name="author" content="Carlos Adrián Guzmán">
@@ -1915,6 +1915,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1931,6 +1949,196 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vistazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La ruta de un vistazo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La ruta de un vistazo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gantt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Una implementación típica en el tiempo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 0 · Decisión y patrocinio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 1 · Diagnóstico e inventario de sistemas de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 2 · Contexto, roles y alcance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 3 · Liderazgo, política y roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 4 · Riesgo, impacto y Declaración de Aplicabilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 5 · Controles operativos y procesos de apoyo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 6 · Operación y generación de evidencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 7 · Auditoría interna y revisión por la dirección
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 8 · Acciones correctivas y preparación para la certificación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variantes según tu organización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factores que alargan o acortan el proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plantillas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plantillas para cada fase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para seguir
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2676,16 +2884,899 @@
 
 
 <h1 id="hoja-de-ruta-de-implementacion">Hoja de ruta de implementación<a class="headerlink" href="#hoja-de-ruta-de-implementacion" title="Enlace permanente a esta sección">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">En construcción</p>
-<p>Esta página forma parte de la versión en desarrollo de la guía.</p>
+<div class="dx-page-meta">
+<p><span class="dx-badge dx-badge--tipo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15a3 3 0 0 1 3 3 3 3 0 0 1-3 3 2.99 2.99 0 0 1-2.83-2H14v-2h1.17c.41-1.17 1.52-2 2.83-2m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m0-9a1.43 1.43 0 0 0 1.43-1.43 1.43 1.43 0 1 0-2.86 0A1.43 1.43 0 0 0 18 8m0-5.43a4 4 0 0 1 4 4C22 9.56 18 14 18 14s-4-4.44-4-7.43a4 4 0 0 1 4-4M8.83 17H10v2H8.83A2.99 2.99 0 0 1 6 21a3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V14h2v1.17c.85.3 1.53.98 1.83 1.83M6 17a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M6 3a3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83V10H5V8.83A2.99 2.99 0 0 1 3 6a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m5 14v-2h2v2zm-4-6H5v-2h2z"/></svg></span> Implementación</span>
+<span class="dx-badge dx-badge--rol-usa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.43-1.8 2.13-3.42Q9.07 4.1 11 4.1q.83 0 1.41.59.59.59.59 1.41v6.05l1.6-1.55L16 12l-4 4-4-4 1.4-1.4 1.6 1.55V6.1q-1.9.35-2.95 1.84T7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-1.2-.55-2.24Q15.9 7.73 15 7V4.68q1.85.87 2.93 2.58Q19 9 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20M12 11.05"/></svg></span> Usa IA de terceros</span>
+<span class="dx-badge dx-badge--rol-desarrolla"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> Desarrolla IA</span>
+<span class="dx-badge dx-badge--rol-provee"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg></span> Provee IA a clientes</span>
+<span class="dx-badge dx-badge--tiempo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 24 min de lectura</span></p>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">En una frase</p>
+<p>Implementar ISO/IEC 42001 es recorrer nueve fases, desde que la dirección decide hasta la auditoría de certificación; lo difícil no es redactar documentos, sino lograr que el sistema de gestión opere el tiempo suficiente para dejar evidencia de que funciona.</p>
+</div>
+<p>La norma no impone un orden de implementación: la secuencia en que presenta sus cláusulas no indica prioridad. Esta hoja de ruta propone una secuencia que funciona en la práctica: primero entender qué IA tienes y en qué terreno juegas, luego fijar reglas y responsables, después elegir controles con base en riesgos e impactos, implementarlos, operarlos y, al final, verificarlos.</p>
+<p>Antes de empezar, tres advertencias:</p>
+<ul>
+<li><strong>Las fases se traslapan.</strong> El inventario de sistemas sigue creciendo mientras defines el alcance, y la política se redacta en paralelo con la metodología de riesgos. El diagrama de Gantt de más abajo muestra esos traslapes.</li>
+<li><strong>Es un ciclo, no una línea.</strong> El sistema de gestión de IA (<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>) sigue el ciclo <abbr title="Planificar, Hacer, Verificar, Actuar: ciclo de mejora continua (PDCA en inglés).">PHVA</abbr>: lo que aprendas en la operación (fase 6) y en la auditoría interna (fase 7) regresa a la evaluación de riesgos (fase 4). El primer ciclo es el más pesado; los siguientes son de mantenimiento.</li>
+<li><strong>Proporcionalidad.</strong> Una <abbr title="Pequeña y mediana empresa.">PyME</abbr> de 58 personas no necesita la misma profundidad que una fintech con 350 000 clientes. Cada fase indica qué ajustar según tu tamaño y tu rol.</li>
+</ul>
+<p>Los nombres de los controles del Anexo A que aparecen en esta página son traducción libre de referencia, no el texto oficial de la norma.</p>
+<h2 id="vistazo">La ruta de un vistazo<a class="headerlink" href="#vistazo" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Pregunta que responde</th>
+<th>Cláusulas y controles</th>
+<th>Entregable estrella</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fase-0">0 · Decisión y patrocinio</a></td>
+<td>¿Vamos en serio y con qué recursos?</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-1">5.1</a>, <a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a></td>
+<td>Acta de arranque con patrocinador y presupuesto</td>
+</tr>
+<tr>
+<td><a href="#fase-1">1 · Diagnóstico e inventario</a></td>
+<td>¿Qué IA tenemos realmente?</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a></td>
+<td>Inventario de sistemas de IA</td>
+</tr>
+<tr>
+<td><a href="#fase-2">2 · Contexto, roles y alcance</a></td>
+<td>¿Dónde aplica el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> y qué papel jugamos?</td>
+<td><a href="../../clausulas/c4-contexto/">4.1 a 4.4</a></td>
+<td>Documento de alcance aprobado</td>
+</tr>
+<tr>
+<td><a href="#fase-3">3 · Liderazgo, política y roles</a></td>
+<td>¿Cuáles son las reglas y quién responde?</td>
+<td><a href="../../clausulas/c5-liderazgo/">5</a>, <a href="../../anexo-a/a2-politicas/">A.2</a>, <a href="../../anexo-a/a3-organizacion-interna/">A.3</a></td>
+<td>Política de IA aprobada y comunicada</td>
+</tr>
+<tr>
+<td><a href="#fase-4">4 · Riesgo, impacto y <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr></a></td>
+<td>¿Qué puede salir mal, a quién afecta y qué controles necesitamos?</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1">6.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a></td>
+<td>Declaración de Aplicabilidad y plan de tratamiento</td>
+</tr>
+<tr>
+<td><a href="#fase-5">5 · Controles y apoyo</a></td>
+<td>¿Cómo ponemos los controles a funcionar?</td>
+<td><a href="../../clausulas/c7-apoyo/">7</a>, A.4 y A.6 a A.10</td>
+<td>Controles con dueño, procedimiento y evidencia</td>
+</tr>
+<tr>
+<td><a href="#fase-6">6 · Operación y evidencia</a></td>
+<td>¿El sistema opera y deja huella?</td>
+<td><a href="../../clausulas/c8-operacion/">8</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a></td>
+<td>Registros e indicadores con análisis</td>
+</tr>
+<tr>
+<td><a href="#fase-7">7 · Auditoría interna y revisión</a></td>
+<td>¿Funciona, y la dirección lo sabe?</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a>, <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a></td>
+<td>Informe de auditoría y acta de revisión</td>
+</tr>
+<tr>
+<td><a href="#fase-8">8 · Correctivas y certificación</a></td>
+<td>¿Corregimos de raíz y estamos listos para el auditor externo?</td>
+<td><a href="../../clausulas/c10-mejora/">10</a>, etapas 1 y 2</td>
+<td>Registro de acciones correctivas cerradas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gantt">Una implementación típica en el tiempo<a class="headerlink" href="#gantt" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>El siguiente diagrama muestra una implementación de unos diez meses para una organización de complejidad media. Cada barra es una fase; los rombos son hitos.</p>
+<pre class="mermaid"><code>gantt
+    title Implementación típica de un SGIA (ilustrativa, unos 10 meses)
+    dateFormat YYYY-MM-DD
+    axisFormat Mes %m
+    tickInterval 1month
+    todayMarker off
+    section Arranque
+    0 · Decisión y patrocinio        :f0, 2027-01-01, 3w
+    1 · Diagnóstico e inventario     :f1, after f0, 5w
+    section Diseño
+    2 · Contexto, roles y alcance    :f2, 2027-02-08, 4w
+    3 · Liderazgo, política y roles  :f3, 2027-02-22, 6w
+    4 · Riesgo, impacto y SoA        :f4, 2027-03-15, 9w
+    section Implementación
+    5 · Controles y apoyo            :f5, 2027-04-19, 14w
+    6 · Operación y evidencia        :f6, 2027-06-14, 14w
+    section Verificación
+    7 · Auditoría interna y revisión :f7, 2027-08-16, 5w
+    8 · Correctivas y certificación  :f8, 2027-09-13, 8w
+    section Hitos
+    Política aprobada                :milestone, m1, 2027-04-02, 0d
+    SoA y plan aprobados             :milestone, m2, 2027-05-14, 0d
+    Etapa 1                          :milestone, m3, 2027-09-27, 0d
+    Etapa 2                          :milestone, m4, 2027-10-25, 0d</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Las duraciones son orientativas</p>
+<p>Los plazos de esta página son una <strong>estimación del autor</strong>, basada en su experiencia con otros sistemas de gestión y en el esfuerzo que exige cada requisito de ISO 42001. No provienen de un estudio ni de una encuesta. Como referencia, desde la decisión hasta la auditoría de certificación: <strong>de 6 a 9 meses</strong> para una <abbr title="Pequeña y mediana empresa.">PyME</abbr> que solo usa IA de terceros y <strong>de 9 a 14 meses</strong> para una organización que desarrolla sus propios modelos. Tu plazo real dependerá de los <a href="#factores">factores que alargan o acortan</a> el proyecto.</p>
+</div>
+<h2 id="fase-0">Fase 0 · Decisión y patrocinio<a class="headerlink" href="#fase-0" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Que la alta dirección tome una decisión consciente: por qué adoptar un <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, si se buscará la certificación o solo alinearse con la norma, quién lo va a encabezar y con qué recursos. Sin esta fase, el proyecto queda como iniciativa del área de TI o de cumplimiento y se apaga en la primera temporada de cierre.</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Escribir el caso de negocio a partir del detonante real.</strong> Puede ser un cuestionario de gobierno de IA que envió un banco cliente (Contadores Alameda), una ronda de inversión y alianzas con bancos (Monarca Crédito), exigencias de clientes en Europa (Conversa Labs) o un incidente. Pon en una columna lo que se gana (contratos, confianza, orden interno) y en otra lo que se evita (reclamaciones ante la Condusef, multas, daño a la reputación, fuga de datos).</li>
+<li><strong>Decidir si se certifica o solo se alinea.</strong> Las dos opciones son válidas; la diferencia está en el costo de las auditorías externas y en la disciplina que impone tener un calendario. La página <a href="../../empieza-aqui/necesito-iso42001/">¿Necesito ISO 42001?</a> te ayuda a decidir.</li>
+<li><strong>Hacer un autodiagnóstico rápido</strong> con la herramienta de <a href="../../herramientas/autodiagnostico/">autodiagnóstico</a> para dimensionar la distancia antes de comprometer fechas.</li>
+<li><strong>Nombrar a dos personas:</strong> un patrocinador en la alta dirección y un responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> con tiempo asignado por escrito y acceso directo a la dirección (<a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a>).</li>
+<li><strong>Aprobar un presupuesto preliminar:</strong> horas internas, capacitación, herramientas, consultoría si hace falta, auditoría interna y organismo de certificación.</li>
+<li><strong>Arrancar formalmente</strong> con una sesión de inicio en la que participen las áreas clave y en la que se presente el calendario.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caso de negocio (una o dos páginas)</td>
+<td>Justifica la inversión y da insumos para la política</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-1">5.1</a></td>
+</tr>
+<tr>
+<td>Acta de arranque o nombramiento</td>
+<td>Deja constancia de quién encabeza y con qué autoridad</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-1">5.1</a>, <a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a></td>
+</tr>
+<tr>
+<td>Plan de proyecto preliminar</td>
+<td>Fases, fechas meta y responsables</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Presupuesto aprobado</td>
+<td>Recursos para establecer y operar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-1">7.1</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> La alta dirección (director general, socia directora o CEO) decide; finanzas valida el presupuesto; el responsable designado del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> prepara el caso.</p>
+<p><strong>Duración orientativa.</strong> De 2 a 4 semanas.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Hay un patrocinador con nombre en la alta dirección.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> tiene un porcentaje de dedicación escrito, no "en sus ratos libres".</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Está decidido si habrá certificación y hay una fecha meta tentativa.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El presupuesto del primer año está aprobado.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Evidencia que te servirá meses después</p>
+<p>El acta de arranque firmada por la dirección, con el presupuesto y los nombramientos, es una de las primeras evidencias de liderazgo y compromiso que verá el auditor externo. Guárdala desde el primer día en el repositorio del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+</div>
+<h2 id="fase-1">Fase 1 · Diagnóstico e inventario de sistemas de IA<a class="headerlink" href="#fase-1" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Saber qué IA existe realmente en la organización, no solo la que conoce TI, y qué tan lejos estás de lo que pide la norma.</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Levantar el inventario</strong> de todos los sistemas de IA: los que desarrollas, los que compras como servicio, los que vienen integrados en software que ya usas (funciones de IA que el proveedor activó en una actualización) y las herramientas de uso libre.</li>
+<li><strong>Buscar la IA en la sombra (<em>shadow AI</em>)</strong>, es decir, el uso de herramientas de IA sin autorización ni control. Combina varias técnicas, porque ninguna basta sola:<ul>
+<li>Una encuesta breve y anónima con un mensaje claro de "amnistía": el objetivo es conocer, no castigar.</li>
+<li>Revisión de gastos: tarjetas corporativas, reembolsos y suscripciones con nombres de herramientas de IA.</li>
+<li>Registros técnicos: tráfico hacia servicios de IA en el <em>proxy</em> o el <em>firewall</em>, extensiones instaladas en los navegadores y aplicaciones conectadas a las cuentas corporativas de correo y ofimática.</li>
+<li>Revisión de contratos y notas de versión de los proveedores de software, que cada vez más agregan funciones de IA.</li>
+<li>Entrevistas por área. Atención a clientes, recursos humanos, mercadotecnia y finanzas suelen ser las que más experimentan.</li>
+</ul>
+</li>
+<li><strong>Llenar una ficha mínima por sistema:</strong> propósito previsto, rol de la organización, dueño de negocio, proveedor o equipo desarrollador, datos que usa (¿personales?, ¿fiscales?, ¿financieros?), personas afectadas, etapa del ciclo de vida y una criticidad preliminar.</li>
+<li><strong>Decidir el destino de cada hallazgo de IA en la sombra:</strong> adoptarlo formalmente, sustituirlo por una herramienta aprobada o prohibirlo.</li>
+<li><strong>Hacer el análisis de brechas (<em>gap analysis</em>)</strong> contra las cláusulas 4 a 10 y los 38 controles, e identificar lo que ya existe y se puede reutilizar: políticas de seguridad y privacidad, aviso de privacidad, evaluaciones de impacto en la protección de datos, gestión de proveedores, control documental, gestión de incidentes.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inventario de sistemas de IA, versión 0</td>
+<td>Base para el alcance, los riesgos y las evaluaciones de impacto</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>, <a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a></td>
+</tr>
+<tr>
+<td>Registro de IA en la sombra con decisión por hallazgo</td>
+<td>Evita que lo no autorizado quede fuera del radar</td>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a></td>
+</tr>
+<tr>
+<td>Informe de brechas priorizado</td>
+<td>Dimensiona el trabajo de las fases siguientes</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Mapa de documentación reutilizable</td>
+<td>Evita reinventar lo que ya existe</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> coordina; participan TI e infraestructura, seguridad de la información, privacidad, compras y los dueños de los procesos de negocio.</p>
+<p><strong>Duración orientativa.</strong> De 3 a 6 semanas, según el tamaño y la dispersión de la organización.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada sistema del inventario tiene dueño de negocio y un propósito escrito en lenguaje claro.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Buscaste IA en la sombra con al menos dos técnicas distintas, no solo preguntándole a TI.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Las brechas están priorizadas y tienen una estimación gruesa de esfuerzo.</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Contadores Alameda: lo que apareció en el inventario</p>
+<p>El despacho pensaba en dos sistemas: el asistente de IA generativa de su suite de ofimática y Alma, el chatbot de WhatsApp. El inventario obligó a contar también el módulo de captura de CFDI de su software contable, que muchos veían como "una función más del sistema" y no como IA. La encuesta anónima confirmó lo que el incidente de la nómina ya sugería: varias personas usaban chatbots gratuitos para resumir documentos de clientes. La decisión fue sustituir ese uso por el asistente con licencia empresarial y dejarlo por escrito en la política de uso aceptable.</p>
+</div>
+<h2 id="fase-2">Fase 2 · Contexto, roles y alcance<a class="headerlink" href="#fase-2" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Fijar el terreno del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>: el entorno en el que operas, lo que esperan de ti las partes interesadas, el papel que juegas frente a cada sistema de IA y las fronteras del sistema de gestión (<a href="../../clausulas/c4-contexto/">cláusula 4</a>).</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Analizar el contexto</strong> (<a href="../../clausulas/c4-contexto/#c-4-1">4.1</a>). Hacia afuera: leyes de datos personales, regulación de tu sector, criterios de autoridades (por ejemplo, la Condusef si das servicios financieros), el Reglamento de IA de la UE si tienes clientes allá, la competencia y lo que la sociedad espera. Hacia adentro: estrategia, gobierno, contratos y capacidades. La cláusula 4.1 también te pide decidir si el cambio climático es un tema pertinente para tu <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>; para quien entrena modelos grandes, el consumo energético del cómputo suele ser la puerta de entrada.</li>
+<li><strong>Determinar el propósito previsto y el rol de la organización frente a cada sistema</strong>: proveedor, productor, cliente, socio. Rara vez es uno solo. La página <a href="../../fundamentos/roles-en-la-ia/">Roles en la IA</a> explica cómo hacerlo.</li>
+<li><strong>Identificar a las partes interesadas y sus requisitos</strong> (<a href="../../clausulas/c4-contexto/#c-4-2">4.2</a>): clientes, solicitantes de crédito, usuarios finales, reguladores, inversionistas, proveedores de IA, personal. Decide cuáles de esos requisitos atenderá el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</li>
+<li><strong>Definir el alcance</strong> (<a href="../../clausulas/c4-contexto/#c-4-3">4.3</a>): sistemas, roles, procesos, ubicaciones, interfaces y dependencias con terceros, y las exclusiones con su justificación. Prepara un enunciado corto (es lo que aparece en el certificado) y un documento de alcance más completo.</li>
+<li><strong>Dibujar el mapa de procesos del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></strong> y cómo se conectan entre sí y con los procesos de negocio (<a href="../../clausulas/c4-contexto/#c-4-4">4.4</a>).</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Análisis de contexto</td>
+<td>Explica qué factores internos y externos condicionan al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a></td>
+</tr>
+<tr>
+<td>Matriz de roles por sistema</td>
+<td>Determina qué requisitos y controles pesan más en cada caso</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-1">4.1</a></td>
+</tr>
+<tr>
+<td>Registro de partes interesadas y requisitos</td>
+<td>Conecta expectativas externas con decisiones del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td><a href="../../clausulas/c4-contexto/#c-4-2">4.2</a></td>
+</tr>
+<tr>
+<td>Enunciado y documento de alcance</td>
+<td>Información documentada obligatoria; fija la frontera</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-3">4.3</a></td>
+</tr>
+<tr>
+<td>Mapa de procesos del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Muestra cómo funciona el sistema como un todo</td>
+<td><a href="../../clausulas/c4-contexto/#c-4-4">4.4</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> conduce; legal y cumplimiento, privacidad y los dueños de los sistemas aportan; la alta dirección aprueba el alcance.</p>
+<p><strong>Duración orientativa.</strong> De 2 a 4 semanas. Suele arrancar antes de que termine la fase 1.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> La alta dirección aprobó el alcance.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada sistema del inventario está dentro o fuera del alcance, con la razón escrita.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El rol de la organización está determinado sistema por sistema, no "en general".</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">No recortes el alcance para que la auditoría sea fácil</p>
+<p>Dejar fuera el sistema más delicado (el modelo de <em>scoring</em>, el chatbot que habla con clientes) hace más corta la auditoría, pero vacía de valor al certificado: tus clientes e inversionistas leerán el alcance. Si necesitas avanzar por etapas, documenta el plan de ampliación. Más en <a href="../errores-frecuentes/#estrategia">Errores frecuentes</a>.</p>
+</div>
+<h2 id="fase-3">Fase 3 · Liderazgo, política y roles<a class="headerlink" href="#fase-3" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Que la dirección fije las reglas del juego y que cada responsabilidad importante tenga nombre y apellido (<a href="../../clausulas/c5-liderazgo/">cláusula 5</a>, <a href="../../anexo-a/a2-politicas/">A.2</a> y <a href="../../anexo-a/a3-organizacion-interna/">A.3</a>).</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Redactar la política de IA</strong> (<a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>, <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a>): propósito y principios, marco para fijar objetivos de IA, compromisos de cumplir los requisitos aplicables y de mejorar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, reglas según la actividad (usar, desarrollar o proveer IA) y usos que la organización no permitirá.</li>
+<li><strong>Revisar las políticas que ya tocan a la IA</strong> (<a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a>): seguridad de la información, privacidad y aviso de privacidad, código de ética, compras, recursos humanos y gestión documental. Ajústalas o haz referencias cruzadas.</li>
+<li><strong>Emitir una política de uso aceptable de IA generativa</strong> para el personal: herramientas autorizadas, datos que nunca se ingresan, verificación humana de los resultados. Es la respuesta más rápida a la IA en la sombra que encontraste en la fase 1.</li>
+<li><strong>Definir cuándo y cómo se revisará la política</strong> (<a href="../../anexo-a/a2-politicas/#a-2-4">A.2.4</a>): una periodicidad y una lista de cambios que obligan a revisarla antes de tiempo.</li>
+<li><strong>Asignar roles y responsabilidades</strong> (<a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a>) con una matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr>. Decide si creas un comité de IA o si sus funciones se integran en un comité existente (de riesgos, de seguridad o, en el caso de Monarca Crédito, el Comité de Modelos).</li>
+<li><strong>Habilitar el canal de reporte de inquietudes</strong> (<a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a>). Si ya tienes una línea de denuncia, amplía su alcance a la IA y confirma que protege contra represalias.</li>
+<li><strong>Comunicar la política</strong> y obtener acuse de lectura del personal en el alcance.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Política de IA aprobada</td>
+<td>Marco de todo el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>; información documentada obligatoria</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>, <a href="../../anexo-a/a2-politicas/#a-2-2">A.2.2</a></td>
+</tr>
+<tr>
+<td>Política de uso aceptable de IA generativa</td>
+<td>Reglas concretas para el personal</td>
+<td><a href="../../anexo-a/a9-uso/#a-9-2">A.9.2</a>, <a href="../../clausulas/c7-apoyo/#c-7-3">7.3</a></td>
+</tr>
+<tr>
+<td>Matriz de cruce con otras políticas</td>
+<td>Muestra la coherencia del marco normativo interno</td>
+<td><a href="../../anexo-a/a2-politicas/#a-2-3">A.2.3</a></td>
+</tr>
+<tr>
+<td>Matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> y nombramientos</td>
+<td>Evita huecos y duplicidades</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-3">5.3</a>, <a href="../../anexo-a/a3-organizacion-interna/#a-3-2">A.3.2</a></td>
+</tr>
+<tr>
+<td>Acta de constitución del comité de IA</td>
+<td>Da un foro a las decisiones difíciles</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-1">5.1</a></td>
+</tr>
+<tr>
+<td>Procedimiento del canal de inquietudes</td>
+<td>Permite levantar la mano sin miedo</td>
+<td><a href="../../anexo-a/a3-organizacion-interna/#a-3-3">A.3.3</a></td>
+</tr>
+<tr>
+<td>Evidencia de comunicación</td>
+<td>Acuses, publicación en la intranet, sesiones informativas</td>
+<td><a href="../../clausulas/c5-liderazgo/#c-5-2">5.2</a>, <a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> La alta dirección aprueba; el responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> redacta; legal, recursos humanos, cumplimiento y privacidad revisan.</p>
+<p><strong>Duración orientativa.</strong> De 3 a 6 semanas. Lo que más tarda no es escribir, sino los ciclos de revisión y aprobación.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> La política está aprobada por la alta dirección, publicada y comunicada con evidencia.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Las actividades críticas (aceptar riesgos, evaluar impactos, supervisar sistemas, gestionar proveedores de IA) tienen responsable designado.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El canal de inquietudes funciona y el personal sabe que existe.</li>
+</ul>
+</div>
+<h2 id="fase-4">Fase 4 · Riesgo, impacto y Declaración de Aplicabilidad<a class="headerlink" href="#fase-4" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Diseñar los procesos de evaluación de riesgos y de evaluación de impacto, ejecutarlos por primera vez y convertir sus resultados en una selección justificada de controles (<a href="../../clausulas/c6-planificacion/#c-6-1">6.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a> y <a href="../../anexo-a/a5-evaluacion-de-impacto/">A.5</a>). Es el corazón técnico del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Fijar los criterios de riesgo de IA</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>): escalas de consecuencia que contemplen a la organización, a las personas y a la sociedad; escala de probabilidad; niveles de riesgo; qué se considera aceptable y quién puede aceptar cada nivel.</li>
+<li><strong>Documentar la metodología de evaluación de riesgos</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a>) de forma que dos personas distintas, con la misma información, lleguen a resultados parecidos.</li>
+<li><strong>Definir el proceso de evaluación de impacto del sistema de IA</strong> (<em>AI system impact assessment</em>) (<a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a>): qué la dispara, quién participa, qué profundidad corresponde según la criticidad y cómo se documentan los resultados.</li>
+<li><strong>Ejecutar las evaluaciones de impacto</strong> de los sistemas prioritarios. Considera el uso previsto, el uso indebido previsible, el contexto social y las jurisdicciones donde opera el sistema (<a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-4">A.5.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a>).</li>
+<li><strong>Ejecutar la evaluación de riesgos</strong> usando los resultados de impacto como insumo. La norma pide que la evaluación de impacto alimente a la de riesgos, así que te conviene hacerla antes o en paralelo. La página <a href="../../fundamentos/riesgo-vs-impacto/">Riesgo frente a impacto</a> explica cómo se conectan.</li>
+<li><strong>Decidir el tratamiento</strong> (<a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a>): elegir opciones, determinar los controles necesarios, compararlos con el Anexo A para no omitir ninguno, añadir controles propios si hacen falta y tomar en cuenta la guía del <a href="../../anexos-b-c-d/">Anexo B</a>.</li>
+<li><strong>Elaborar la Declaración de Aplicabilidad</strong> (<em>Statement of Applicability</em>, <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>): los 38 controles, cada uno marcado como incluido o excluido, con su justificación.</li>
+<li><strong>Formular el plan de tratamiento</strong> con responsables y fechas, y obtener la aprobación de la dirección designada, incluida la aceptación formal de los riesgos residuales.</li>
+<li><strong>Fijar objetivos de IA</strong> (<a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a>) medibles cuando sea posible, con su plan: qué se hará, con qué recursos, quién responde, para cuándo y cómo se evaluará.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criterios y metodología de riesgos de IA</td>
+<td>Hacen la evaluación repetible y comparable</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-1">6.1.1</a>, <a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a></td>
+</tr>
+<tr>
+<td>Procedimiento de evaluación de impacto</td>
+<td>Dice cuándo y cómo se mira hacia afuera</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-4">6.1.4</a>, <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-2">A.5.2</a></td>
+</tr>
+<tr>
+<td>Evaluaciones de impacto por sistema</td>
+<td>Registran consecuencias para personas, grupos y sociedad</td>
+<td><a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-3">A.5.3</a> a <a href="../../anexo-a/a5-evaluacion-de-impacto/#a-5-5">A.5.5</a></td>
+</tr>
+<tr>
+<td>Matriz de riesgos de IA</td>
+<td>Prioriza qué tratar primero</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-2">6.1.2</a></td>
+</tr>
+<tr>
+<td>Declaración de Aplicabilidad</td>
+<td>Justifica qué controles aplican y cuáles no</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a></td>
+</tr>
+<tr>
+<td>Plan de tratamiento aprobado y aceptación de residuales</td>
+<td>Convierte el análisis en compromisos con fecha</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-1-3">6.1.3</a></td>
+</tr>
+<tr>
+<td>Objetivos de IA y su plan</td>
+<td>Dan dirección medible al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-2">6.2</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> conduce. Participan los dueños de los sistemas, ciencia de datos (si existe), privacidad, legal y expertos del negocio, como contadores o analistas de crédito. La dirección designada aprueba el plan y acepta los residuales.</p>
+<p><strong>Duración orientativa.</strong> De 6 a 10 semanas. Más si desarrollas modelos y la evaluación de impacto exige análisis de sesgo con datos reales.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada sistema en el alcance tiene evaluación de impacto y evaluación de riesgos, con fecha y responsable.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Los impactos relevantes se reflejan como riesgos en la matriz, con referencia cruzada entre ambos documentos.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> La <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> cubre los 38 controles, cada uno con justificación propia y, si se incluye, ligado a riesgos o requisitos.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El plan de tratamiento y los riesgos residuales están aprobados por quien tiene autoridad para hacerlo.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">La primera <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> es la versión 1, no la definitiva</p>
+<p>No esperes la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> perfecta para avanzar a la fase 5. Lo que aprendas al implementar y operar los controles cambiará algunas decisiones; para eso existe el control de versiones.</p>
+</div>
+<h2 id="fase-5">Fase 5 · Controles operativos y procesos de apoyo<a class="headerlink" href="#fase-5" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Poner a funcionar los controles incluidos en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y los habilitadores de la <a href="../../clausulas/c7-apoyo/">cláusula 7</a>: recursos, competencia, toma de conciencia, comunicación e información documentada. Es la fase más larga y la que involucra a más áreas.</p>
+<p><strong>Actividades por frente de trabajo</strong></p>
+<table>
+<thead>
+<tr>
+<th>Frente</th>
+<th>Qué implica</th>
+<th>Para quién pesa más</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recursos (<a href="../../anexo-a/a4-recursos/">A.4</a>)</td>
+<td>Completar la ficha de cada sistema con datos, herramientas, cómputo y personas</td>
+<td>Todos; más quien desarrolla</td>
+</tr>
+<tr>
+<td>Ciclo de vida (<a href="../../anexo-a/a6-ciclo-de-vida/">A.6</a>)</td>
+<td>Procedimiento con etapas y puertas de aprobación; requisitos, diseño, verificación y validación, despliegue, operación y monitoreo, documentación técnica y registro de eventos</td>
+<td>Quien desarrolla o provee; quien usa, sobre todo en despliegue, monitoreo y bitácoras</td>
+</tr>
+<tr>
+<td>Datos (<a href="../../anexo-a/a7-datos/">A.7</a>)</td>
+<td>Requisitos de calidad, procedencia, adquisición y preparación de datos</td>
+<td>Quien desarrolla; quien usa, si alimenta bases de conocimiento</td>
+</tr>
+<tr>
+<td>Información a partes interesadas (<a href="../../anexo-a/a8-informacion-partes-interesadas/">A.8</a>)</td>
+<td>Aviso de interacción con IA, información para usuarios, canal de reporte externo, plan de comunicación de incidentes, obligaciones de reporte</td>
+<td>Todos; crítico para quien provee</td>
+</tr>
+<tr>
+<td>Uso (<a href="../../anexo-a/a9-uso/">A.9</a>)</td>
+<td>Proceso de alta de nuevos usos, objetivos de uso responsable, supervisión humana, uso conforme al previsto</td>
+<td>Quien usa IA o decide con ella</td>
+</tr>
+<tr>
+<td>Terceros (<a href="../../anexo-a/a10-terceros/">A.10</a>)</td>
+<td>Matriz de responsabilidad compartida, evaluación de proveedores de IA, cláusulas contractuales, necesidades de clientes</td>
+<td>Todos; la parte de clientes, sobre todo para quien provee</td>
+</tr>
+<tr>
+<td>Apoyo (<a href="../../clausulas/c7-apoyo/">7</a>)</td>
+<td>Competencias por rol, campaña de concientización, matriz de comunicación, control documental</td>
+<td>Todos</td>
+</tr>
+<tr>
+<td>Cambios (<a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a>)</td>
+<td>Cómo se planifican los cambios al propio <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Todos</td>
+</tr>
+</tbody>
+</table>
+<p>Para cada control incluido, define cuatro cosas: quién es el dueño, cómo se ejecuta, qué evidencia deja y cómo sabrás si funciona. Si no puedes responder la tercera pregunta, el control todavía no está listo para una auditoría. La organización del repositorio y el control de versiones de los artefactos se explican en <a href="../documentacion-requerida/#repositorio">Documentación requerida</a>.</p>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fichas de los sistemas de IA</td>
+<td>Reúnen recursos, uso previsto, límites y supervisión</td>
+<td><a href="../../anexo-a/a4-recursos/#a-4-2">A.4.2</a>, <a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-7">A.6.2.7</a></td>
+</tr>
+<tr>
+<td>Procedimiento del ciclo de vida</td>
+<td>Define etapas, puertas y criterios de liberación</td>
+<td><a href="../../anexo-a/a6-ciclo-de-vida/#a-6-1-3">A.6.1.3</a></td>
+</tr>
+<tr>
+<td>Procedimientos de gestión de datos</td>
+<td>Calidad, procedencia y preparación</td>
+<td><a href="../../anexo-a/a7-datos/#a-7-2">A.7.2</a> a <a href="../../anexo-a/a7-datos/#a-7-6">A.7.6</a></td>
+</tr>
+<tr>
+<td>Aviso de IA e información para usuarios</td>
+<td>Transparencia hacia quien interactúa con el sistema</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-2">A.8.2</a></td>
+</tr>
+<tr>
+<td>Plan de comunicación de incidentes</td>
+<td>Saber a quién avisar, cómo y cuándo</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a></td>
+</tr>
+<tr>
+<td>Evaluaciones de proveedores de IA y cláusulas contractuales</td>
+<td>Responsabilidades claras con terceros</td>
+<td><a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a></td>
+</tr>
+<tr>
+<td>Matriz de competencias y plan de capacitación</td>
+<td>Personas preparadas para su rol</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-2">7.2</a>, <a href="../../anexo-a/a4-recursos/#a-4-6">A.4.6</a></td>
+</tr>
+<tr>
+<td>Matriz de comunicación</td>
+<td>Qué se comunica, a quién, cuándo y cómo</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-4">7.4</a></td>
+</tr>
+<tr>
+<td>Procedimiento de información documentada</td>
+<td>Versiones, accesos y retención</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> Los dueños de cada control ejecutan; ciencia de datos e ingeniería, compras, legal, recursos humanos y comunicación participan según el frente; el responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> coordina y da seguimiento.</p>
+<p><strong>Duración orientativa.</strong> De 8 a 16 semanas, con varios frentes en paralelo.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada control incluido en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> tiene dueño, un procedimiento (por breve que sea) y al menos una evidencia de que ya se ejecutó.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> La capacitación inicial por rol se impartió y se midió si funcionó, más allá de la asistencia.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Los contratos o anexos con los proveedores críticos de IA ya reflejan las responsabilidades acordadas.</li>
+</ul>
+</div>
+<h2 id="fase-6">Fase 6 · Operación y generación de evidencia<a class="headerlink" href="#fase-6" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Dejar que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> opere como parte del día a día y acumule los registros que prueban que funciona (<a href="../../clausulas/c8-operacion/">cláusula 8</a> y <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>). Un auditor no certifica intenciones: certifica lo que puede comprobar con evidencia.</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Operar los procesos con los criterios definidos</strong> (<a href="../../clausulas/c8-operacion/#c-8-1">8.1</a>) y vigilar si los controles logran lo que se esperaba; si no, considerar acciones correctivas.</li>
+<li><strong>Gestionar los cambios.</strong> Los planificados (una nueva versión del modelo, una actualización de la base de conocimiento, un cambio de proveedor) se controlan antes de ejecutarse; los no previstos (un proveedor cambia el modelo de fondo sin avisar) se analizan para mitigar sus efectos.</li>
+<li><strong>Controlar a los proveedores y servicios externos</strong> que influyen en el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, con seguimiento periódico y no solo al contratar.</li>
+<li><strong>Repetir las evaluaciones</strong> de riesgos (<a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>) y de impacto (<a href="../../clausulas/c8-operacion/#c-8-4">8.4</a>) según el calendario o ante cambios significativos, ejecutar el plan de tratamiento y verificar que funcione (<a href="../../clausulas/c8-operacion/#c-8-3">8.3</a>).</li>
+<li><strong>Medir y analizar</strong> (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a>): qué se mide, con qué método, cada cuánto y quién analiza. Algunos ejemplos: porcentaje de sistemas con evaluación de impacto vigente; tasa de respuestas incorrectas de Alma en un muestreo mensual; diferencia en tasas de aprobación entre grupos en Score Monarca v3; tiempo de atención de incidentes en Conversa; porcentaje de personal capacitado.</li>
+<li><strong>Registrar incidentes, reportes de los canales internos y externos</strong> y la forma en que se atendieron.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registros de operación de los controles</td>
+<td>Prueban que los procesos se ejecutaron según lo planificado</td>
+<td><a href="../../clausulas/c8-operacion/#c-8-1">8.1</a></td>
+</tr>
+<tr>
+<td>Evaluaciones de riesgo e impacto actualizadas</td>
+<td>Muestran que el análisis sigue vivo</td>
+<td><a href="../../clausulas/c8-operacion/#c-8-2">8.2</a>, <a href="../../clausulas/c8-operacion/#c-8-4">8.4</a></td>
+</tr>
+<tr>
+<td>Registros del tratamiento y de su eficacia</td>
+<td>Muestran que el plan avanza y funciona</td>
+<td><a href="../../clausulas/c8-operacion/#c-8-3">8.3</a></td>
+</tr>
+<tr>
+<td>Tablero de indicadores con análisis</td>
+<td>Evidencia de seguimiento y medición</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-1">9.1</a></td>
+</tr>
+<tr>
+<td>Registro de incidentes y reportes externos</td>
+<td>Trazabilidad de lo que salió mal y cómo se respondió</td>
+<td><a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-3">A.8.3</a>, <a href="../../anexo-a/a8-informacion-partes-interesadas/#a-8-4">A.8.4</a></td>
+</tr>
+<tr>
+<td>Registros de cambios</td>
+<td>Prueban que los cambios se gestionan</td>
+<td><a href="../../clausulas/c6-planificacion/#c-6-3">6.3</a>, <a href="../../clausulas/c8-operacion/#c-8-1">8.1</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> Los dueños de los sistemas y de los controles generan los registros; operación y soporte los alimentan; el responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> analiza y reporta a la dirección.</p>
+<p><strong>Duración orientativa.</strong> En nuestra estimación, al menos de 2 a 3 meses de operación antes de la auditoría de certificación. Corre en paralelo con el final de la fase 5 y con la fase 7. Algunos organismos de certificación piden un periodo mínimo de operación con registros: pregúntale al tuyo desde la fase 0.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Completaste al menos un ciclo de medición con análisis y conclusiones, no solo con datos.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Hay registros fechados de varios controles a lo largo del periodo, no todos de la semana anterior a la auditoría.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Al menos un cambio pasó por el proceso definido, con su reevaluación cuando correspondía.</li>
+</ul>
+</div>
+<h2 id="fase-7">Fase 7 · Auditoría interna y revisión por la dirección<a class="headerlink" href="#fase-7" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Comprobar con independencia que el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> cumple con la norma y con tus propias reglas, y que funciona; después, que la alta dirección lo revise y decida (<a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a> y <a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a>).</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Armar el programa de auditoría interna:</strong> frecuencia, métodos, responsables y forma de reportar, dando más atención a los procesos más importantes y a lo que falló en auditorías anteriores.</li>
+<li><strong>Elegir auditores objetivos e imparciales.</strong> Nadie audita su propio trabajo. En una <abbr title="Pequeña y mediana empresa.">PyME</abbr> suele convenir un auditor externo o un intercambio con otra área; en cualquier caso, el auditor necesita entender de IA lo suficiente para hacer preguntas incómodas.</li>
+<li><strong>Auditar todo el alcance antes de la primera certificación:</strong> cláusulas 4 a 10, controles incluidos en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> y justificación de los excluidos. El <a href="../../plantillas/#checklist-auditoria-interna">checklist de auditoría interna</a> te da un punto de partida.</li>
+<li><strong>Reportar los resultados</strong> a la dirección que corresponda, con hallazgos clasificados.</li>
+<li><strong>Celebrar la revisión por la dirección</strong> con los insumos que pide la norma: estado de los acuerdos anteriores, cambios en el contexto y en las expectativas de las partes interesadas, desempeño del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> (con tendencias de no conformidades, mediciones y auditorías) y oportunidades de mejora. Te recomendamos sumar los resultados de las evaluaciones de riesgo e impacto, el avance del plan de tratamiento, los incidentes y la retroalimentación de partes interesadas: a diferencia de ISO 27001, la lista de 42001 no los nombra, pero la operación los genera y la dirección los necesita para decidir.</li>
+<li><strong>Levantar un acta con decisiones</strong> de mejora y de cambios al <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, con responsables y fechas.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Programa de auditoría interna</td>
+<td>Planifica las auditorías del ciclo</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a></td>
+</tr>
+<tr>
+<td>Plan e informe de auditoría con hallazgos</td>
+<td>Evidencia de la auditoría y sus resultados</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-2">9.2</a></td>
+</tr>
+<tr>
+<td>Acta de revisión por la dirección</td>
+<td>Evidencia de las decisiones de la dirección</td>
+<td><a href="../../clausulas/c9-evaluacion-del-desempeno/#c-9-3">9.3</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> Auditor interno (propio y capacitado, o externo); alta dirección; responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> como organizador y presentador.</p>
+<p><strong>Duración orientativa.</strong> De 3 a 5 semanas entre la auditoría (de una a tres semanas, según el tamaño) y la revisión por la dirección.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> La auditoría cubrió todo el alcance y todos los controles incluidos en la <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ningún auditor revisó su propio trabajo.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> El acta de revisión contiene decisiones concretas, no solo "se presentó el informe".</li>
+</ul>
+</div>
+<h2 id="fase-8">Fase 8 · Acciones correctivas y preparación para la certificación<a class="headerlink" href="#fase-8" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><strong>Objetivo.</strong> Corregir de raíz lo que falló y superar la auditoría externa, que se hace en dos etapas (<a href="../../clausulas/c10-mejora/">cláusula 10</a> y <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>).</p>
+<p><strong>Actividades</strong></p>
+<ol>
+<li><strong>Tratar cada no conformidad</strong> (<a href="../../clausulas/c10-mejora/#c-10-2">10.2</a>): contenerla y corregirla, atender sus consecuencias, analizar la causa, buscar casos parecidos en otros sistemas o áreas, implementar la acción, verificar después si funcionó y ajustar el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> si hace falta.</li>
+<li><strong>Elegir el organismo de certificación (<abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr>).</strong> Verifica que esté acreditado para ISO/IEC 42001, pide propuestas y pregunta por la experiencia de sus auditores en IA y en tu sector.</li>
+<li><strong>Auditoría de etapa 1.</strong> El auditor revisa la documentación, el alcance, tu comprensión del contexto y tu grado de preparación, y confirma que la auditoría interna y la revisión por la dirección ya están planificadas o realizadas. Como resultado, señala áreas de preocupación y planifica la etapa 2.</li>
+<li><strong>Atender las observaciones de la etapa 1</strong> en el intervalo entre ambas etapas, que suele ser de algunas semanas.</li>
+<li><strong>Auditoría de etapa 2.</strong> El auditor evalúa si el <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> está implementado y si es eficaz: entrevista a los dueños de los sistemas, a quienes supervisan las decisiones de la IA y al personal; muestrea registros y observa la operación.</li>
+<li><strong>Presentar el plan de acción</strong> para las no conformidades de la etapa 2. Por lo general, las mayores tienen que quedar corregidas, con evidencia, antes de la decisión de certificación; para las menores basta un plan aceptado por el <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr>.</li>
+<li><strong>Recibir la decisión de certificación</strong> y pasar al ciclo de auditorías de seguimiento. Los detalles están en <a href="../../auditoria/como-se-certifica/">Cómo se certifica</a>.</li>
+</ol>
+<p><strong>Entregables</strong></p>
+<table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registro de no conformidades y acciones correctivas</td>
+<td>Información documentada obligatoria de la mejora</td>
+<td><a href="../../clausulas/c10-mejora/#c-10-2">10.2</a></td>
+</tr>
+<tr>
+<td>Evidencias de cierre y de verificación de eficacia</td>
+<td>Prueban que la acción eliminó la causa</td>
+<td><a href="../../clausulas/c10-mejora/#c-10-2">10.2</a></td>
+</tr>
+<tr>
+<td>Carpeta de evidencias por cláusula y control</td>
+<td>Permite encontrar todo en minutos durante la auditoría</td>
+<td><a href="../../clausulas/c7-apoyo/#c-7-5">7.5</a></td>
+</tr>
+<tr>
+<td>Informes de etapas 1 y 2 y planes de acción</td>
+<td>Cierran el proceso con el <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr></td>
+<td><a href="../../auditoria/como-se-certifica/">Cómo se certifica</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables típicos.</strong> El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> coordina; los dueños de las acciones las ejecutan; la alta dirección participa en las reuniones de apertura y cierre y en su propia entrevista.</p>
+<p><strong>Duración orientativa.</strong> De 6 a 10 semanas, incluidas ambas etapas; depende mucho de la agenda del <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr>.</p>
+<div class="admonition success">
+<p class="admonition-title">Listo cuando…</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Las no conformidades de la auditoría interna tienen análisis de causa y su acción está en curso o cerrada.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Las personas clave explican su papel con sus propias palabras, sin leer un guion.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cualquier evidencia se encuentra en minutos.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Repasaste las <a href="../../auditoria/preguntas-del-auditor/">preguntas del auditor</a> y el <a href="../../auditoria/checklist-preparacion/">checklist de preparación</a>.</li>
+</ul>
+</div>
+<h2 id="variantes">Variantes según tu organización<a class="headerlink" href="#variantes" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>La ruta es la misma para todos; lo que cambia es el peso de cada fase. Estas son las cuatro variantes más comunes, con los casos de esta guía.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA de terceros</label><label for="__tabbed_1_2">Organización que desarrolla IA</label><label for="__tabbed_1_3">Proveedor SaaS de IA</label><label for="__tabbed_1_4">Con <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> ISO 27001 vigente</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Contadores Alameda</strong> (despacho contable en Querétaro, 58 personas) · <strong>6 a 9 meses</strong> en nuestra estimación.</p>
+<ul>
+<li><strong>Fases que pesan más:</strong> la 1, por la IA en la sombra; la 3, por la política de uso aceptable; y la 5 en <a href="../../anexo-a/a8-informacion-partes-interesadas/">A.8</a> (aviso de que Alma es una IA y qué hacer si se equivoca), <a href="../../anexo-a/a9-uso/">A.9</a> (uso conforme al previsto) y <a href="../../anexo-a/a10-terceros/">A.10</a> (BotNorte, el proveedor del software contable y el fabricante de la suite de ofimática).</li>
+<li><strong>Fases que se aligeran:</strong> la 4, porque son pocos sistemas y la evaluación de impacto más exigente es la de Alma; y la 5, porque varios controles de desarrollo de A.6 y A.7 suelen ser candidatos a exclusión justificada. Ojo: no todos. La base de conocimiento de Alma es un recurso de datos que el despacho cura, así que la calidad de los datos (<a href="../../anexo-a/a7-datos/#a-7-4">A.7.4</a>), el despliegue (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-5">A.6.2.5</a>), la operación y el monitoreo (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-6">A.6.2.6</a>) y el registro de eventos (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-8">A.6.2.8</a>) siguen aplicando.</li>
+<li><strong>Equipo:</strong> la Socia directora como patrocinadora; la Gerente de TI como responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, con una dedicación definida (por ejemplo, dos días por semana durante el proyecto); la Coordinadora de cumplimiento y datos personales; la Líder de atención a clientes como dueña de Alma. La auditoría interna, contratada a un externo.</li>
+<li><strong>Atajo:</strong> el cuestionario del banco cliente se puede responder con los entregables de las fases 2 a 4 mucho antes de la certificación.</li>
+</ul>
+<p>Caso completo: <a href="../../casos-practicos/pyme-usa-ia-generativa/"><abbr title="Pequeña y mediana empresa.">PyME</abbr> que usa IA generativa</a>.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Monarca Crédito</strong> (fintech de microcréditos, 210 personas) · <strong>9 a 14 meses</strong> en nuestra estimación.</p>
+<ul>
+<li><strong>Fases que pesan más:</strong> la 4, porque la evaluación de impacto de Score Monarca v3 sobre los solicitantes exige análisis de sesgo por sexo, edad y entidad federativa, revisión de variables sustitutas como el código postal y motivos de rechazo comprensibles; la 5, porque A.6 y A.7 aplican casi completos (datos de buró de crédito, transaccionales y de uso de la app con consentimiento) y conviene una validación independiente; y la 6, porque el monitoreo de deriva necesita meses de datos para ser concluyente.</li>
+<li><strong>Lo que se puede aprovechar:</strong> las prácticas de gestión de riesgo de modelos, cumplimiento y privacidad que ya existan, y el Comité de Modelos como órgano de gobierno del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>.</li>
+<li><strong>No olvidar el otro rol:</strong> Monarca también es cliente de una API de detección de fraude; ese sistema se gestiona como el de cualquier usuario de IA de terceros, con énfasis en <a href="../../anexo-a/a10-terceros/#a-10-3">A.10.3</a>.</li>
+<li><strong>Riesgo de calendario:</strong> conviene que al menos un cambio de versión del modelo pase por el nuevo proceso de ciclo de vida antes de la etapa 2. Si el siguiente reentrenamiento está programado después, considera adelantar uno menor.</li>
+</ul>
+<p>Caso completo: <a href="../../casos-practicos/fintech-scoring/">Fintech con scoring crediticio</a>.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Conversa Labs</strong> (plataforma de asistentes virtuales, 95 personas) · <strong>8 a 12 meses</strong> en nuestra estimación.</p>
+<ul>
+<li><strong>Fases que pesan más:</strong> la 2, porque el alcance combina tres roles (proveedor, productor y cliente del proveedor del modelo fundacional) y conviene que marque con precisión dónde termina su responsabilidad y empieza la de sus clientes; la 4, porque además de su propia evaluación de impacto conviene dar a los clientes insumos para las suyas; y la 5, por las evaluaciones de calidad y las pruebas adversarias de inyección de instrucciones (<a href="../../anexo-a/a6-ciclo-de-vida/#a-6-2-4">A.6.2.4</a>), los datos de clientes en la generación aumentada por recuperación (<abbr title="Generación aumentada por recuperación (retrieval-augmented generation): el modelo consulta documentos propios antes de responder.">RAG</abbr>) (<a href="../../anexo-a/a7-datos/">A.7</a>), la documentación y la comunicación de incidentes para clientes (<a href="../../anexo-a/a8-informacion-partes-interesadas/">A.8</a>) y la responsabilidad compartida (<a href="../../anexo-a/a10-terceros/#a-10-2">A.10.2</a>, <a href="../../anexo-a/a10-terceros/#a-10-4">A.10.4</a>).</li>
+<li><strong>Particularidad:</strong> su cliente en España trae obligaciones de transparencia del marco europeo; revisa <a href="../../integracion/reglamento-ia-ue/">Reglamento de IA de la UE</a>.</li>
+<li><strong>Atajo:</strong> la documentación para clientes cumple una doble función, porque es evidencia de A.8 y material para responder cuestionarios de debida diligencia de prospectos.</li>
+</ul>
+<p>Caso completo: <a href="../../casos-practicos/empresa-desarrolla-chatbot/">Empresa que desarrolla un chatbot</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>Si ya tienes un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> certificado en ISO 27001, la estructura armonizada compartida te ahorra mucho trabajo. En nuestra estimación, un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> maduro puede recortar entre una cuarta parte y un tercio del calendario.</p>
+<ul>
+<li><strong>Fases que se acortan:</strong> la 0 (el gobierno y el comité ya existen); la 3 (la política de IA se alinea con la de seguridad y la matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> se amplía); la 5 en los procesos de la cláusula 7 (control documental, competencias, comunicación) y en proveedores e incidentes, que se extienden a partir de lo que ya tienes para ISO 27001 A.5.19 a A.5.23 y ISO 27001 A.5.24 a A.5.26; y las fases 7 y 8, porque el programa de auditoría, la revisión por la dirección y las acciones correctivas pueden integrarse.</li>
+<li><strong>Fases que no se acortan:</strong> la 1 (el inventario de IA es nuevo); la 4 (la evaluación de impacto no tiene equivalente en ISO 27001, y los criterios de riesgo tienen que mirar a personas y sociedad, no solo confidencialidad, integridad y disponibilidad); los controles de A.5, A.6 y A.7; y una <abbr title="Declaración de aplicabilidad (Statement of Applicability): documento que lista los controles necesarios, si se implementan y por qué se incluyen o excluyen.">SoA</abbr> propia de 38 controles.</li>
+<li><strong>Pregunta a tu <abbr title="Organismo de certificación: entidad acreditada que audita y certifica sistemas de gestión.">OC</abbr></strong> si puede auditar ambos sistemas de forma combinada.</li>
+</ul>
+<p>Más detalle en <a href="../../integracion/con-iso27001/">Integración con ISO 27001</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="factores">Factores que alargan o acortan el proyecto<a class="headerlink" href="#factores" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="grid">
+<div class="admonition failure">
+<p class="admonition-title">Alargan</p>
+<ul>
+<li>Muchos sistemas en el alcance o sistemas con alto impacto en personas (crédito, empleo, salud, seguros).</li>
+<li>Desarrollar o ajustar modelos propios.</li>
+<li>Datos personales sensibles o de menores.</li>
+<li>Operar en varias jurisdicciones, sobre todo con clientes en la Unión Europea.</li>
+<li>Un responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> sin tiempo asignado o sin acceso a la dirección.</li>
+<li>Documentación técnica inexistente: nadie sabe con qué datos se entrenó el modelo en producción.</li>
+<li>Proveedores de IA que no comparten información sobre sus modelos.</li>
+<li>Un alcance que cambia a mitad del proyecto.</li>
+<li>Ciclos de aprobación lentos o comités que se reúnen cada trimestre.</li>
+<li>Querer documentar todo antes de operar algo.</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Acortan</p>
+<ul>
+<li>Un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr> o un sistema de gestión de calidad vigente.</li>
+<li>Un alcance acotado y estable desde la fase 2.</li>
+<li>Un inventario de sistemas o de aplicaciones que ya existía.</li>
+<li>Prácticas de <abbr title="Prácticas para desplegar, operar y monitorear modelos de aprendizaje automático de forma confiable y repetible.">MLOps</abbr> maduras: registro de modelos, versionado de datos, canalizaciones de evaluación.</li>
+<li>Una cultura de gestión de riesgos, como la de riesgo de modelos en entidades financieras.</li>
+<li>Un patrocinador que desbloquea decisiones en días, no en meses.</li>
+<li>Plantillas adaptadas en lugar de documentos desde cero.</li>
+<li>Un auditor interno o asesor con experiencia en sistemas de gestión y en IA.</li>
+<li>Decisiones de exclusión tomadas pronto y con criterio claro.</li>
+</ul>
+</div>
+</div>
+<h2 id="plantillas">Plantillas para cada fase<a class="headerlink" href="#plantillas" title="Enlace permanente a esta sección">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18.95c-3.23-.23-5-1.5-5-1.95v-2.23c1.13.55 2.5.92 4 1.1 0-.66.04-1.33.21-1.98-1.71-.22-3.24-.73-4.21-1.44V9.64c1.43.81 3.5 1.33 5.82 1.36.03-.03.05-.07.08-.1 2.2-2.19 5.6-2.49 8.1-.87V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4 .34 0 .68 0 1-.03-.38-.25-.76-.53-1.1-.87-.35-.36-.65-.74-.9-1.15M12 5c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2m8.31 12.9c.44-.69.69-1.52.69-2.4 0-2.5-2-4.5-4.5-4.5S12 13 12 15.5s2 4.5 4.5 4.5c.87 0 1.69-.25 2.38-.68L22 22.39 23.39 21zm-3.81.1a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5"/></svg></span> <strong>Inventario de sistemas de IA</strong></p>
+<hr />
+<p>Fase 1. Ficha mínima de cada sistema, con rol, datos, personas afectadas y criticidad.</p>
+<p><a href="../../plantillas/#inventario-sistemas-ia"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.7 12.9 14 18.6h-2.3v-2.3l5.7-5.7zm3.4-.8c0 .3-.3.6-.6.9L20 15.5l-.9-.9 2.6-2.6-.6-.6-.7.7-2.3-2.3 2.2-2.1c.2-.2.6-.2.9 0l1.4 1.4c.2.2.2.6 0 .9-.2.2-.4.4-.4.6s.2.4.4.6c.3.3.6.6.5.9M3 20V4h7v5h5v1.5l2-2V8l-6-6H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm8-2.9c-.2 0-.4.1-.5.1L10 15H8.5l-2.1 1.7L7 14H5.5l-1 5H6l2.9-2.6.6 2.3h1l.5-.1z"/></svg></span> <strong>Política de IA</strong></p>
+<hr />
+<p>Fase 3. Política marco aprobada por la alta dirección.</p>
+<p><a href="../../plantillas/#politica-de-ia"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.58 2 11a7.22 7.22 0 0 0 2.75 5.5c0 .6-.42 2.17-2.75 4.5 2.37-.11 4.64-1 6.47-2.5 1.14.33 2.34.5 3.53.5 5.5 0 10-3.58 10-8s-4.5-8-10-8m0 14c-4.42 0-8-2.69-8-6s3.58-6 8-6 8 2.69 8 6-3.58 6-8 6m-1-4v2h2v-2zm0-2h2V7h-2z"/></svg></span> <strong>Uso aceptable de IA generativa</strong></p>
+<hr />
+<p>Fase 3. Reglas para el personal contra la IA en la sombra.</p>
+<p><a href="../../plantillas/#uso-aceptable-ia-generativa"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 12a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 5m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 10a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 7M5.5 8A2.5 2.5 0 0 0 3 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32c.37-.21.68-.51.91-.87A5.42 5.42 0 0 1 6.5 8.5v-.28c-.3-.14-.64-.22-1-.22m13 0c-.36 0-.7.08-1 .22v.28c0 1.2-.39 2.36-1.12 3.31.12.19.25.34.4.49a2.482 2.482 0 0 0 1.72.7c.44 0 .85-.12 1.21-.32.76-.43 1.29-1.24 1.29-2.18A2.5 2.5 0 0 0 18.5 8M12 14c-2.34 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.66-3.5-7-3.5m-7.29.55C2.78 14.78 0 15.76 0 17.5V19h3v-1.93c0-1.01.69-1.85 1.71-2.52m14.58 0c1.02.67 1.71 1.51 1.71 2.52V19h3v-1.5c0-1.74-2.78-2.72-4.71-2.95M12 16c1.53 0 3.24.5 4.23 1H7.77c.99-.5 2.7-1 4.23-1"/></svg></span> <strong>Matriz <abbr title="Matriz de responsabilidades: Responsable, Aprobador (Accountable), Consultado, Informado.">RACI</abbr> de IA</strong></p>
+<hr />
+<p>Fase 3. Quién decide, quién ejecuta, quién es consultado y quién es informado.</p>
+<p><a href="../../plantillas/#raci-ia"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44 2.78.34 3.68-3.61.82-1.89 3.18L12 21l-3.4 1.47-1.89-3.18-3.61-.82.34-3.69L1 12l2.44-2.79-.34-3.68 3.61-.81L8.6 1.54 12 3l3.4-1.46 1.89 3.18 3.61.82-.34 3.68zm-2.67 0L18.5 9.89l.24-2.79L16 6.5l-1.42-2.43L12 5.18 9.42 4.07 8 6.5l-2.74.59.24 2.79L3.67 12l1.83 2.1-.24 2.8 2.74.6 1.42 2.43L12 18.81l2.58 1.11L16 17.5l2.74-.61-.24-2.79zM11 15h2v2h-2zm0-8h2v6h-2z"/></svg></span> <strong>Metodología y matriz de riesgos</strong></p>
+<hr />
+<p>Fase 4. Criterios, escalas y registro de riesgos de IA.</p>
+<p><a href="../../plantillas/#evaluacion-de-riesgos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 15-.6-.5C2.4 12.6 1 11.4 1 9.9c0-1.2 1-2.2 2.2-2.2.7 0 1.4.3 1.8.8.4-.5 1.1-.8 1.8-.8C8 7.7 9 8.6 9 9.9c0 1.5-1.4 2.7-3.4 4.6zM15 4a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 6.1A2.1 2.1 0 0 1 12.9 8 2.1 2.1 0 0 1 15 5.9a2.1 2.1 0 1 1 0 4.2m0 2.9c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m6.1 5.1H8.9V17c0-.64 3.1-2.1 6.1-2.1 2.97 0 6.1 1.46 6.1 2.1z"/></svg></span> <strong>Evaluación de impacto</strong></p>
+<hr />
+<p>Fase 4. Consecuencias para personas, grupos y sociedad.</p>
+<p><a href="../../plantillas/#evaluacion-de-impacto"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 3h14a2 2 0 0 1 2 2v7.08a6 6 0 0 0-4.32.92H12v4h1.08c-.11.68-.11 1.35 0 2H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2m0 4v4h6V7zm8 0v4h6V7zm-8 6v4h6v-4zm13.75 8L15 18l1.16-1.16 1.59 1.59 3.59-3.59 1.16 1.41z"/></svg></span> <strong>Declaración de Aplicabilidad</strong></p>
+<hr />
+<p>Fase 4. Los 38 controles con su decisión y justificación.</p>
+<p><a href="../../plantillas/#declaracion-de-aplicabilidad"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 3H2c-1.09.04-1.96.91-2 2v14c.04 1.09.91 1.96 2 2h20c1.09-.04 1.96-.91 2-2V5a2.074 2.074 0 0 0-2-2m0 16H2V5h20zm-8-2v-1.25c0-1.66-3.34-2.5-5-2.5s-5 .84-5 2.5V17zM9 7a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 9 12a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 9 7m5 0v1h6V7zm0 2v1h6V9zm0 2v1h4v-1z"/></svg></span> <strong>Ficha del sistema de IA</strong></p>
+<hr />
+<p>Fase 5. La tarjeta de identidad de cada sistema.</p>
+<p><a href="../../plantillas/#ficha-del-sistema"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> <strong>Procedimiento del ciclo de vida</strong></p>
+<hr />
+<p>Fase 5. Etapas, puertas de aprobación y cambios significativos.</p>
+<p><a href="../../plantillas/#procedimiento-ciclo-de-vida"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 6.9 3.87 4.78l1.41-1.41L7.4 5.5zM13 1v3h-2V1zm7.13 3.78L18 6.9l-1.4-1.4 2.12-2.13zM4.5 10.5v2h-3v-2zm15 0h3v2h-3zM6 20h12a2 2 0 0 1 2 2H4a2 2 0 0 1 2-2m6-15a6 6 0 0 1 6 6v8H6v-8a6 6 0 0 1 6-6m0 2a4 4 0 0 0-4 4v6h8v-6a4 4 0 0 0-4-4"/></svg></span> <strong>Registro de incidentes de IA</strong></p>
+<hr />
+<p>Fases 5 y 6. Gestión, comunicación y aprendizaje de incidentes.</p>
+<p><a href="../../plantillas/#registro-de-incidentes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-7 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M7 7h10V5h2v14H5V5h2zm.5 6.5L9 12l2 2 4.5-4.5L17 11l-6 6z"/></svg></span> <strong>Checklist de auditoría interna</strong></p>
+<hr />
+<p>Fase 7. Preguntas guía por cláusula y por control.</p>
+<p><a href="../../plantillas/#checklist-auditoria-interna"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ir a la plantilla</a></p>
+</li>
+</ul>
+</div>
+<h2 id="para-seguir">Para seguir<a class="headerlink" href="#para-seguir" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><a href="../documentacion-requerida/">Documentación requerida</a>: qué documentos y registros produce cada fase y cómo organizarlos.</li>
+<li><a href="../errores-frecuentes/">Errores frecuentes</a>: las trampas más comunes de cada fase y cómo esquivarlas.</li>
+<li><a href="../../auditoria/como-se-certifica/">Cómo se certifica</a> y <a href="../../auditoria/checklist-preparacion/">Checklist de preparación</a>: lo que viene después de la fase 8.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 
