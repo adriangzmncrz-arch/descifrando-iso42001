@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Si usas esta guía, cítala con los siguientes metadatos."
+title: "Descifrando ISO 42001: guía interpretativa abierta en español de ISO/IEC 42001:2023"
+abstract: >-
+  Guía interpretativa abierta en español para entender e implementar ISO/IEC 42001:2023,
+  la norma internacional del sistema de gestión de inteligencia artificial (SGIA).
+  Explica cláusulas 4 a 10 y los 38 controles del Anexo A con ejemplos de México y
+  Latinoamérica, casos prácticos, herramientas interactivas y plantillas.
+type: software
+authors:
+  - family-names: "Guzmán"
+    given-names: "Carlos Adrián"
+    email: "contacto@cipherwell-sec.com"
+    affiliation: "Cipherwell"
+repository-code: "https://github.com/adriangzmncrz-arch/descifrando-iso42001"
+url: "https://adriangzmncrz-arch.github.io/descifrando-iso42001/"
+license: CC-BY-SA-4.0
+version: 0.1.0
+date-released: "2026-10-09"
+keywords:
+  - ISO/IEC 42001
+  - sistema de gestión de inteligencia artificial
+  - gobernanza de IA
+  - IA responsable
+  - gestión de riesgos de IA
+  - GRC
+  - cumplimiento
+  - español
