@@ -255,7 +255,7 @@ Extracto de la SoA de Contadores Alameda: usar IA de terceros no equivale a excl
 
 | Control | ¿Se incluye? | Justificación | Estado |
 |---|---|---|---|
-| [A.6.2.2](../anexo-a/a6-ciclo-de-vida.md#a-6-2-2) Requisitos y especificación | Sí, para Alma | No desarrolla modelos, pero define la configuración de Alma (temas permitidos, tono, escalamiento a humano). Trata R-02 (respuestas erróneas sobre plazos). | Implementado |
+| [A.6.2.2](../anexo-a/a6-ciclo-de-vida.md#a-6-2-2) Requisitos y especificación | No | No especifica ni desarrolla modelos. La configuración de Alma (temas permitidos, tono, escalamiento a humano) se define y se prueba en la prueba de aceptación previa al despliegue ([A.6.2.5](../anexo-a/a6-ciclo-de-vida.md#a-6-2-5)), que trata R-02. Incluirlo con alcance acotado también sería defendible. | — |
 | [A.7.4](../anexo-a/a7-datos.md#a-7-4) Calidad de los datos | Sí, para Alma | La base de preguntas frecuentes determina las respuestas de Alma; se revisa cada mes contra el calendario fiscal. Trata R-02. | En implementación |
 | [A.7.3](../anexo-a/a7-datos.md#a-7-3) Adquisición de datos | No | No adquiere datos para entrenar modelos; los proveedores se evalúan con A.10.3. Sin riesgo ni requisito externo que lo exija. | No aplica |
 
@@ -324,7 +324,7 @@ La organización debe fijar **objetivos de IA** en las funciones y niveles perti
 
 | Caso | Objetivo débil | Objetivo SMART |
 |---|---|---|
-| Contadores Alameda | "Que Alma conteste bien." | "Mantener en 98 % o más la exactitud de Alma sobre fechas y obligaciones fiscales, medida cada mes por un contador en 200 conversaciones." |
+| Contadores Alameda | "Que Alma conteste bien." | "Mantener en 98 % o más la exactitud de Alma sobre fechas y obligaciones fiscales, medida cada mes por un contador en una muestra de unas 120 conversaciones (30 por semana)." |
 | Monarca Crédito | "Eliminar el sesgo del modelo." | "Mantener la razón entre tasas de aprobación de mujeres y hombres, y entre grupos de edad, dentro del rango interno de 0.80 a 1.25 en cada revisión trimestral de Score Monarca v3." |
 | Conversa Labs | "Que el asistente sea seguro." | "Que el éxito de ataques de inyección de instrucciones en la batería trimestral sea menor a 2 % y que no haya fugas de información entre clientes en 2027." |
 
@@ -334,7 +334,7 @@ Para cada objetivo hay que planificar qué se hará, con qué recursos, quién r
 
 | Objetivo | Qué se hará | Recursos | Responsable | Fecha | Cómo se evaluará |
 |---|---|---|---|---|---|
-| Exactitud de Alma ≥ 98 % | Calendario de actualización de preguntas frecuentes; revisión mensual de 200 conversaciones; corrección en 48 horas | 6 horas al mes de un contador; tablero del proveedor | Líder de atención a clientes | Primera medición en enero de 2027 | Porcentaje correcto en la muestra, reportado a la revisión por la dirección |
+| Exactitud de Alma ≥ 98 % | Calendario de actualización de preguntas frecuentes; revisión de 30 conversaciones por semana (unas 120 al mes); corrección en 48 horas | 6 horas al mes de un contador; tablero del proveedor | Líder de atención a clientes | Primera medición en junio de 2026 | Porcentaje correcto en la muestra, reportado a la revisión por la dirección |
 
 ### 6.3 Planificación de los cambios {#c-6-3}
 
@@ -346,7 +346,7 @@ Te recomendamos una ficha corta por cambio: propósito y posibles consecuencias,
 |---|---|---|
 | Cambiar de proveedor de modelo de lenguaje | Conversa Labs migra a otro modelo fundacional por costos | Evaluación del proveedor ([A.10.3](../anexo-a/a10-terceros.md#a-10-3)); reevaluación de riesgos e impacto; pruebas de regresión ([A.6.2.4](../anexo-a/a6-ciclo-de-vida.md#a-6-2-4)); contratos y responsabilidad compartida ([A.10.2](../anexo-a/a10-terceros.md#a-10-2)); aviso a clientes ([A.10.4](../anexo-a/a10-terceros.md#a-10-4)); SoA y documentación técnica |
 | Añadir un sistema al alcance | Monarca Crédito incorpora un modelo de cobranza preventiva | Alcance ([4.3](c4-contexto.md#c-4-3)) e inventario; evaluación de impacto completa; evaluación de riesgos; SoA; objetivos; programa de auditoría interna |
-| Fusionar el SGIA con el SGSI | Contadores Alameda integra ambos en un solo manual | Metodología de riesgos única con dimensiones de IA; comité y revisión por la dirección conjuntos; control documental unificado; transición sin perder trazabilidad; auditorías combinadas con el organismo de certificación |
+| Fusionar el SGIA con el SGSI | Conversa Labs integra ambos en un solo manual | Metodología de riesgos única con dimensiones de IA; comité y revisión por la dirección conjuntos; control documental unificado; transición sin perder trazabilidad; auditorías combinadas con el organismo de certificación |
 
 ## Cómo se aplica según tu rol
 
@@ -357,7 +357,7 @@ Te recomendamos una ficha corta por cambio: propósito y posibles consecuencias,
     - **Criterios con ejemplos ancla propios:** un "4" para individuos es que un cliente pague recargos por una fecha equivocada; un "4" para la organización, perder a un cliente corporativo o recibir una reclamación formal del banco cliente.
     - **Riesgos principales:** fuga de datos personales y fiscales en instrucciones; respuestas erróneas de Alma sobre plazos; clientes que no saben que hablan con una IA; dependencia de BotNorte; errores de extracción de CFDI.
     - **Tratamiento:** política de uso aceptable y capacitación; verificar que la licencia empresarial no use sus datos para entrenar modelos; revisión mensual de preguntas frecuentes; aviso de IA en Alma con opción de hablar con una persona; cláusulas con BotNorte; muestreo de CFDI capturados.
-    - **Evaluación de impacto:** breve para las herramientas internas; intermedia para Alma, pensando en microempresarios que confían en la fecha que les dio el chatbot.
+    - **Evaluación de impacto:** breve para las herramientas internas; completa para Alma, pensando en microempresarios que confían en la fecha que les dio el chatbot.
     - **Proveedor:** si BotNorte no entrega documentación técnica ni resultados de pruebas, ese silencio es un riesgo más.
 
 === "Si desarrollas IA"

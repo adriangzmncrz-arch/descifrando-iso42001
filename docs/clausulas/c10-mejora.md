@@ -132,6 +132,8 @@ Una acción correctiva (*corrective action*) no se cierra cuando se implementa, 
 
 #### Registro de ejemplo completo
 
+El siguiente registro es un ejemplo hipotético con Contadores Alameda, independiente de la línea de tiempo de su [caso práctico](../casos-practicos/pyme-usa-ia-generativa.md).
+
 | Campo | Contenido |
 |---|---|
 | Folio y fuente | NC-004 · queja de un cliente por WhatsApp, vinculada al incidente INC-011 |

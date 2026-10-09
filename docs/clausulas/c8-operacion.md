@@ -199,7 +199,7 @@ La diferencia entre *implementado* y *eficaz* es el corazón de esta subcláusul
 
 | Riesgo | Tratamiento implementado | Cómo se verifica la eficacia |
 |---|---|---|
-| Alma inventa plazos fiscales | Respuestas limitadas a la base de conocimiento curada, aviso de confirmar con el contador y traspaso a persona | Muestreo mensual de 50 conversaciones sobre plazos; meta de errores cercana a cero |
+| Alma inventa plazos fiscales | Respuestas limitadas a la base de conocimiento curada, aviso de confirmar con el contador y traspaso a persona | Muestreo de 30 conversaciones por semana (unas 120 al mes) sobre plazos; meta de errores cercana a cero |
 | Sesgo por código postal en Score Monarca v3 | Variable excluida y pruebas de equidad en cada validación | Métricas de equidad por entidad federativa en producción, cada mes |
 | Inyección de instrucciones a través de documentos del RAG | Filtros y separación entre instrucciones y contenido | Batería adversaria en cada versión y ejercicio de equipo rojo (*red team*) periódico |
 

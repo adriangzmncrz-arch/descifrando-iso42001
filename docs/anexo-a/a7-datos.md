@@ -86,7 +86,7 @@ Sobre esos datos, A.7.4 aplica de lleno (por eso es el único control de A.7 que
 | Control | ¿Aplica si usas IA de terceros? | Qué cubrir | Ejemplo: Contadores Alameda |
 |---|---|---|---|
 | A.7.2 | Normalmente no; parcial si ajustas el modelo o construyes una base de conocimiento | Reglas sobre qué datos puedes cargar al sistema | La FAQ de Alma solo contiene información general del despacho, nunca datos de clientes |
-| A.7.3 | Parcial | Fuentes de lo que cargas y derecho a usarlo | La FAQ se redacta a partir del calendario fiscal oficial y de criterios internos |
+| A.7.3 | Parcial, o se cubre dentro de A.7.5 | Fuentes de lo que cargas y derecho a usarlo | La FAQ se redacta a partir del calendario fiscal oficial y de criterios internos; Contadores Alameda excluyó A.7.3 porque no adquiere conjuntos de datos y registra la fuente de cada respuesta dentro de A.7.5 |
 | A.7.4 | Sí | Calidad de la base de conocimiento y de las entradas | FAQ revisada cada mes; CFDI en XML de preferencia sobre PDF escaneado |
 | A.7.5 | Parcial | Historial de versiones de lo que cargas | Cada respuesta de la FAQ tiene responsable, fuente y fecha de revisión |
 | A.7.6 | Normalmente no, si el proveedor hace la ingesta | Solo si tú transformas datos antes de cargarlos | BotNorte segmenta e indexa la FAQ; el despacho no prepara datos |

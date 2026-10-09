@@ -181,7 +181,7 @@ def inventario() -> Path:
         ["IA-03", "Captura automática de CFDI", "Extraer datos de facturas para la contabilidad",
          "Cliente o usuario de IA", "Módulo dentro de otro producto", "Proveedor del software contable", "Visión por computadora",
          "Facturas electrónicas y PDF de clientes", "Sí", "No", "No", "Clientes PyME",
-         "Medio", None, "Coordinadora de contabilidad", "En producción", "2026-01-20", None, "Revisión humana por muestreo"],
+         "Medio", None, "Gerente del área contable", "En producción", "2026-01-20", None, "Revisión humana por muestreo"],
     ]
     for f, fila in enumerate(ejemplos, 5):
         for c, valor in enumerate(fila, 1):

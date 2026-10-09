@@ -189,8 +189,8 @@ Resumen de lo que piden las cláusulas 4 a 10. Los controles del Anexo A que sel
 
     **Contadores Alameda** (despacho contable en Querétaro).
 
-    - **Recursos:** la Gerente de TI es responsable del SGIA con dedicación definida; hay presupuesto para capacitación y para un consultor que hará la primera auditoría interna. El recurso más olvidado: las horas de los contadores senior que revisan la base de conocimiento de Alma antes de cada temporada de declaraciones.
-    - **Competencia:** pesan más los perfiles de negocio que los técnicos: la Líder de atención a clientes como dueña de Alma y los curadores del contenido. A la Gerente de TI le toca, además, saber interrogar a BotNorte sobre el modelo de lenguaje que usa.
+    - **Recursos:** el Gerente de TI es responsable del SGIA con dedicación definida; hay presupuesto para capacitación y para un consultor que hará la primera auditoría interna. El recurso más olvidado: las horas de los contadores senior que revisan la base de conocimiento de Alma antes de cada temporada de declaraciones.
+    - **Competencia:** pesan más los perfiles de negocio que los técnicos: la Líder de atención a clientes como dueña de Alma y los curadores del contenido. Al Gerente de TI le toca, además, saber interrogar a BotNorte sobre el modelo de lenguaje que usa.
     - **Conciencia y comunicación:** semáforo de qué no pegar (ya hubo una nómina en un chatbot gratuito), aviso de IA en el primer mensaje de Alma y respuesta formal al cuestionario del banco cliente.
     - **Información documentada:** la documentación de BotNorte y los términos de la suite de ofimática son información de origen externo: se identifican, se guarda la versión vigente y se revisan cuando cambian.
 
@@ -259,7 +259,7 @@ Resumen de lo que piden las cláusulas 4 a 10. Los controles del Anexo A que sel
 ## Ejemplo resuelto
 
 !!! example "Caso: Contadores Alameda — programa de toma de conciencia y matriz de competencias"
-    **Situación.** Un banco cliente envió un cuestionario sobre gobierno de IA y, casi al mismo tiempo, un colaborador pegó una nómina con datos personales en un chatbot gratuito. La Socia directora pidió a la Gerente de TI (responsable del SGIA) y a la Coordinadora de cumplimiento y datos personales un plan para que no se repitiera y para responder al banco con evidencia.
+    **Situación.** Un banco cliente envió un cuestionario sobre gobierno de IA y, casi al mismo tiempo, un colaborador pegó una nómina con datos personales en un chatbot gratuito. La Socia directora pidió al Gerente de TI (responsable del SGIA) y a la Coordinadora de cumplimiento y datos personales un plan para que no se repitiera y para responder al banco con evidencia.
 
     **Paso 1. Mapear quién toca la IA.** Dirección y gerencias (7 personas) aprueban usos; 33 contadores y especialistas de nómina usan el asistente de ofimática (IA-01) y la captura de CFDI (IA-03), y tres de ellos curan la base de conocimiento de Alma (IA-02); 8 personas de atención supervisan a Alma; 3 de TI administran todo; 7 de apoyo usan IA-01 ocasionalmente.
 

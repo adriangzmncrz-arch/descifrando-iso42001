@@ -103,7 +103,7 @@ Así se ve una **matriz de consideración** sencilla con casos de esta guía:
 |---|---|---|---|
 | Score Monarca v3 · [A.7.4](anexo-a/a7-datos.md#a-7-4) | Definir requisitos de calidad para los datos de entrenamiento, prueba y producción, y vigilar el efecto del sesgo | Adopto | Umbrales de completitud y vigencia para datos de buró y de la app; revisión de equidad en cada reentrenamiento |
 | Conversa · [A.6.2.6](anexo-a/a6-ciclo-de-vida.md#a-6-2-6) | Vigilar errores y desempeño con datos reales y atender las amenazas propias de la IA | Adapto | Muestreo semanal de conversaciones, tablero de traspasos a agente humano y alertas por inyección de instrucciones |
-| Alma, de Contadores Alameda · [A.4.5](anexo-a/a4-recursos.md#a-4-5) | Documentar dónde corre el sistema y qué recursos de cómputo usa | Adapto a su rol | Solo registra tipo de servicio, región de alojamiento declarada por BotNorte y modelo de lenguaje que usa |
+| Alma, de Contadores Alameda · [A.4.2](anexo-a/a4-recursos.md#a-4-2) | Documentar los recursos que necesita cada sistema | Adapto a su rol | Registra tipo de servicio, región de alojamiento declarada por BotNorte y modelo de lenguaje que usa; excluye [A.4.5](anexo-a/a4-recursos.md#a-4-5) porque la infraestructura es del proveedor |
 
 ### Cómo usarlo para preparar una auditoría
 
