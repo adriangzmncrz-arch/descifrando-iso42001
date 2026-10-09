@@ -455,7 +455,8 @@ def soa(datos: dict) -> tuple[Path, Path]:
         "lo requiere y ningún requisito externo lo exige; escribe el porqué concreto, no frases genéricas.",
         "3. Indica el estado de implementación, los riesgos que trata (IDs del registro) y la evidencia real (ruta o enlace).",
         "4. La columna Validación revisa la consistencia: avisa si falta decisión, justificación, estado o evidencia.",
-        "5. Si agregas controles propios fuera del Anexo A, añádelos al final con el prefijo 'P-'.",
+        "5. Si agregas controles propios fuera del Anexo A, añádelos al final con el mismo identificador que usas en el "
+        "registro de riesgos (por ejemplo, C-MON-02).",
         "6. La columna 'Evidencia típica' es orientativa (interpretación del autor). La guía de cada control está en el sitio.",
         "7. Los nombres de los controles son traducciones libres de referencia del autor.",
     ])
