@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Validar contenido
-        run: python scripts/validar_contenido.py
+        run: python scripts/validar_contenido.py --estricto
 
       - name: Construir el sitio en modo estricto
         run: mkdocs build --strict
