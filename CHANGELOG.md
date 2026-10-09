@@ -7,6 +7,10 @@ Para una guía de contenido, la versión *mayor* cambia con reestructuras del si
 
 ## [Sin publicar]
 
+## [1.0.1] - 2026-10-09
+
+Correcciones con fuentes primarias, metadatos para redes sociales y publicación automática de versiones.
+
 ### Añadido
 
 - Imagen de vista previa para redes sociales (`docs/assets/img/social.png`, 1280 × 640) y metadatos Open Graph y de X/Twitter en todas las páginas, con el título y la descripción de cada una.
@@ -46,5 +50,6 @@ Primera versión completa de la guía. Los datos regulatorios y de estado de nor
 - **Datos y scripts**: fuente única de los 38 controles (`data/controles.yml`), generadores reproducibles y validación de contenido en CI.
 - Archivos de comunidad: licencias (CC BY-SA 4.0 y MIT), guía de contribución, código de conducta, plantillas de *issues* y de *pull request*, `CITATION.cff`.
 
-[Sin publicar]: https://github.com/adriangzmncrz-arch/descifrando-iso42001/compare/v1.0.0...HEAD
+[Sin publicar]: https://github.com/adriangzmncrz-arch/descifrando-iso42001/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/adriangzmncrz-arch/descifrando-iso42001/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/adriangzmncrz-arch/descifrando-iso42001/releases/tag/v1.0.0

@@ -82,7 +82,7 @@ Las infografías son SVG escritos a mano en `docs/assets/infografias/` y se inse
 Esta sección es para quien mantiene el proyecto.
 
 1. Mueve lo que esté en `[Sin publicar]` del [CHANGELOG](CHANGELOG.md) a una sección nueva `## [X.Y.Z] - AAAA-MM-DD` y agrega su enlace de comparación al final del archivo.
-2. Actualiza `version` y `date-released` en [`CITATION.cff`](CITATION.cff) y la insignia de versión del README.
+2. Actualiza `version` y `date-released` en [`CITATION.cff`](CITATION.cff), la insignia de versión del README y la cita sugerida en `docs/acerca-de.md`.
 3. Haz el commit (`chore(release): versión X.Y.Z`), crea la etiqueta `vX.Y.Z` y súbela con `git push origin main --follow-tags`.
 
 El flujo [`publicar-version.yml`](.github/workflows/publicar-version.yml) crea el *release* en GitHub con las notas de esa sección del CHANGELOG y un ZIP con las plantillas y la licencia.

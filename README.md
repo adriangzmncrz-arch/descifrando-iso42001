@@ -9,7 +9,7 @@
   <a href="LICENSE"><img alt="Licencia del contenido: CC BY-SA 4.0" src="https://img.shields.io/badge/contenido-CC%20BY--SA%204.0-312e81?style=flat-square&logo=creativecommons&logoColor=white"></a>
   <a href="LICENSE-CODE"><img alt="Licencia del código: MIT" src="https://img.shields.io/badge/c%C3%B3digo-MIT-4338ca?style=flat-square"></a>
   <img alt="Idioma: español" src="https://img.shields.io/badge/idioma-espa%C3%B1ol-16a34a?style=flat-square">
-  <a href="CHANGELOG.md"><img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-1.0.0-ea580c?style=flat-square"></a>
+  <a href="CHANGELOG.md"><img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-1.0.1-ea580c?style=flat-square"></a>
 </p>
 
 <h3 align="center">

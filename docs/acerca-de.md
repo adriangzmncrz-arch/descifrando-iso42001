@@ -38,7 +38,7 @@ description: Autor, licencia, aviso legal, cómo citar y cómo contribuir a Desc
 
 Si usas esta guía en un trabajo académico, una capacitación o un documento interno, puedes citarla así:
 
-> Guzmán, C. A. (2026). *Descifrando ISO 42001: guía interpretativa abierta en español de ISO/IEC 42001:2023* (versión 1.0.0) [Sitio web y repositorio]. https://adriangzmncrz-arch.github.io/descifrando-iso42001/
+> Guzmán, C. A. (2026). *Descifrando ISO 42001: guía interpretativa abierta en español de ISO/IEC 42001:2023* (versión 1.0.1) [Sitio web y repositorio]. https://adriangzmncrz-arch.github.io/descifrando-iso42001/
 
 El repositorio incluye un archivo `CITATION.cff`, así que GitHub te ofrece la cita en formato APA y BibTeX con el botón *Cite this repository*.
 
