@@ -201,7 +201,17 @@ nav:
       - Herramientas:
           - Autodiagnóstico: herramientas/autodiagnostico.md
           - Selector de rol: herramientas/selector-de-rol.md
-      - Plantillas: plantillas/index.md
+      - Plantillas:
+          - plantillas/index.md
+          - Política de IA: plantillas/politica-de-ia.md
+          - Uso aceptable de IA generativa: plantillas/uso-aceptable-ia-generativa.md
+          - Roles y responsabilidades (RACI): plantillas/raci-ia.md
+          - Metodología de riesgos de IA: plantillas/metodologia-evaluacion-riesgos.md
+          - Evaluación de impacto: plantillas/evaluacion-de-impacto.md
+          - Ficha del sistema de IA: plantillas/ficha-del-sistema.md
+          - Incidentes de IA: plantillas/registro-de-incidentes.md
+          - Procedimiento del ciclo de vida: plantillas/procedimiento-ciclo-de-vida.md
+          - Checklist de auditoría interna: plantillas/checklist-auditoria-interna.md
       - Glosario: glosario.md
       - Preguntas frecuentes: preguntas-frecuentes.md
       - Acerca de: acerca-de.md

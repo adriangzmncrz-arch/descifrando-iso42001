@@ -22,7 +22,7 @@ description: Plantillas descargables y editables para implementar ISO/IEC 42001 
 
 ## Cómo descargarlas
 
-- **Markdown (.md):** ábrelas en cualquier editor de texto, en Word o en Google Docs (pegando el contenido), o en herramientas como Obsidian o Notion.
+- **Markdown (.md):** ábrelas en cualquier editor de texto, en Word o en Google Docs (pegando el contenido), o en herramientas como Obsidian o Notion. Cada una tiene una vista previa en este sitio.
 - **Excel (.xlsx):** funcionan en Microsoft Excel, LibreOffice Calc y Google Sheets. Incluyen listas desplegables, fórmulas, formato condicional y una hoja de instrucciones.
 - **CSV:** la Declaración de Aplicabilidad también está en CSV para importarla en herramientas GRC.
 - **Todo junto:** descarga el repositorio completo como [archivo ZIP](https://github.com/adriangzmncrz-arch/descifrando-iso42001/archive/refs/heads/main.zip); las plantillas están en la carpeta `plantillas/`.
@@ -51,19 +51,19 @@ Las plantillas Excel y CSV se generan con el script [`scripts/generar_plantillas
 
 Política marco aprobada por la alta dirección: propósito, alcance, principios de IA responsable, compromisos de cumplimiento y mejora continua, reglas por tipo de actividad (usar, desarrollar o proveer IA), usos prohibidos, excepciones y revisión. Cubre lo que pide la cláusula [5.2](../clausulas/c5-liderazgo.md#c-5-2) y los controles [A.2.2 a A.2.4](../anexo-a/a2-politicas.md#a-2-2).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/politica-de-ia.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](politica-de-ia.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/politica-de-ia.md){ .md-button .md-button--primary }
 
 ### Política de uso aceptable de IA generativa { #uso-aceptable-ia-generativa }
 
 Reglas claras para colaboradores: herramientas autorizadas, datos que nunca se ingresan, verificación humana de resultados, propiedad intelectual, uso con clientes y cómo reportar incidentes. Es la herramienta más rápida contra la "IA en la sombra". Apoya [7.3](../clausulas/c7-apoyo.md#c-7-3) y [A.9.2](../anexo-a/a9-uso.md#a-9-2).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/politica-uso-aceptable-ia-generativa.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](uso-aceptable-ia-generativa.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/politica-uso-aceptable-ia-generativa.md){ .md-button .md-button--primary }
 
 ### Roles y responsabilidades de IA (RACI) { #raci-ia }
 
 Descripción de roles del SGIA y matriz RACI de las actividades clave: quién aprueba la política, quién evalúa el impacto, quién acepta riesgos residuales, quién supervisa a la IA. Incluye notas para PyMEs que acumulan roles. Apoya [5.3](../clausulas/c5-liderazgo.md#c-5-3), [A.3.2](../anexo-a/a3-organizacion-interna.md#a-3-2) y [A.10.2](../anexo-a/a10-terceros.md#a-10-2).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/raci-ia.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](raci-ia.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/raci-ia.md){ .md-button .md-button--primary }
 
 ## Inventario, riesgo, impacto y aplicabilidad
 
@@ -82,13 +82,13 @@ Dos piezas que van juntas:
 
 Cubre [6.1.1 a 6.1.3](../clausulas/c6-planificacion.md#c-6-1), [8.2](../clausulas/c8-operacion.md#c-8-2) y [8.3](../clausulas/c8-operacion.md#c-8-3).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/metodologia-evaluacion-riesgos-ia.md){ .md-button } [:material-microsoft-excel: Descargar matriz .xlsx](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/matriz-riesgos-ia.xlsx){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa de la metodología](metodologia-evaluacion-riesgos.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/metodologia-evaluacion-riesgos-ia.md){ .md-button } [:material-microsoft-excel: Descargar matriz .xlsx](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/matriz-riesgos-ia.xlsx){ .md-button .md-button--primary }
 
 ### Evaluación de impacto del sistema de IA { #evaluacion-de-impacto }
 
 Formulario completo para valorar las consecuencias de un sistema de IA en personas, grupos y sociedad: uso previsto y uso indebido previsible, contexto, personas afectadas y grupos vulnerables, consulta, impactos positivos y negativos, severidad, mitigación, supervisión humana, decisión y comunicación. Está alineado conceptualmente con ISO/IEC 42005, sin reproducirla. Cubre [6.1.4](../clausulas/c6-planificacion.md#c-6-1-4), [8.4](../clausulas/c8-operacion.md#c-8-4) y [A.5](../anexo-a/a5-evaluacion-de-impacto.md).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/evaluacion-de-impacto-sistema-ia.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](evaluacion-de-impacto.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/evaluacion-de-impacto-sistema-ia.md){ .md-button .md-button--primary }
 
 ### Declaración de Aplicabilidad { #declaracion-de-aplicabilidad }
 
@@ -105,25 +105,25 @@ Los 38 controles del Anexo A listos para decidir: ¿aplica?, justificación de i
 
 La "tarjeta de identidad" de un sistema de IA (*model card* o *system card*): propósito, usos fuera de alcance, componentes y modelos de terceros, datos, desempeño por segmento, limitaciones, supervisión humana, monitoreo y una versión en lenguaje claro para usuarios. Apoya [A.6.2.7](../anexo-a/a6-ciclo-de-vida.md#a-6-2-7), [A.8.2](../anexo-a/a8-informacion-partes-interesadas.md#a-8-2) y [A.4](../anexo-a/a4-recursos.md).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/ficha-del-sistema-ia.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](ficha-del-sistema.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/ficha-del-sistema-ia.md){ .md-button .md-button--primary }
 
 ### Registro de incidentes de IA { #registro-de-incidentes }
 
 Procedimiento de gestión de incidentes de IA (detección, contención, comunicación a usuarios y autoridades, causa raíz, acción correctiva, lecciones aprendidas) y un registro en Excel con clasificación por tipo y severidad, alertas de seguimiento y resumen para la revisión por la dirección. Apoya [A.8.4](../anexo-a/a8-informacion-partes-interesadas.md#a-8-4), [A.6.2.6](../anexo-a/a6-ciclo-de-vida.md#a-6-2-6) y [10.2](../clausulas/c10-mejora.md#c-10-2).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-de-incidentes-ia.md){ .md-button } [:material-microsoft-excel: Descargar registro .xlsx](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-incidentes-ia.xlsx){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa del procedimiento](registro-de-incidentes.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-de-incidentes-ia.md){ .md-button } [:material-microsoft-excel: Descargar registro .xlsx](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-incidentes-ia.xlsx){ .md-button .md-button--primary }
 
 ### Procedimiento de gestión del ciclo de vida del sistema de IA { #procedimiento-ciclo-de-vida }
 
 Etapas del ciclo de vida con entradas, salidas, responsables, puertas de aprobación y criterios de liberación; cuándo evaluar el impacto; gestión de cambios significativos; y una variante simplificada para sistemas de terceros. Apoya los controles de [A.6](../anexo-a/a6-ciclo-de-vida.md) y [A.7](../anexo-a/a7-datos.md).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/procedimiento-ciclo-de-vida-ia.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](procedimiento-ciclo-de-vida.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/procedimiento-ciclo-de-vida-ia.md){ .md-button .md-button--primary }
 
 ### Checklist de auditoría interna { #checklist-auditoria-interna }
 
 Lista de verificación por cláusula (4 a 10) y por los 38 controles del Anexo A, con pregunta guía, evidencia a revisar y resultado (conforme, no conformidad, observación o no aplica). Apoya [9.2](../clausulas/c9-evaluacion-del-desempeno.md#c-9-2) y complementa el [checklist de preparación](../auditoria/checklist-preparacion.md).
 
-[:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/checklist-auditoria-interna.md){ .md-button .md-button--primary }
+[:material-eye-outline: Vista previa](checklist-auditoria-interna.md){ .md-button } [:material-download: Descargar .md](https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/checklist-auditoria-interna.md){ .md-button .md-button--primary }
 
 ## ¿Te falta una plantilla?
 
