@@ -1,0 +1,4020 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Plantilla editable en español: Procedimiento y registro de incidentes de IA. Para un sistema de gestión de IA según ISO/IEC 42001.">
+      
+      
+        <meta name="author" content="Carlos Adrián Guzmán">
+      
+      
+        <link rel="canonical" href="https://adriangzmncrz-arch.github.io/descifrando-iso42001/plantillas/registro-de-incidentes/">
+      
+      
+        <link rel="prev" href="../ficha-del-sistema/">
+      
+      
+        <link rel="next" href="../procedimiento-ciclo-de-vida/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Incidentes de IA - Descifrando ISO 42001</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#procedimiento-y-registro-de-incidentes-de-ia" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="No mostrar esto de nuevo">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  <p class="dx-announce">
+    <strong>Guía interpretativa independiente:</strong> no reproduce ni sustituye a ISO/IEC 42001.
+    Adquiere la norma en iso.org o en tu organismo nacional de normalización.
+    <a href="../../acerca-de/#aviso-legal">Lee el aviso legal</a>
+  </p>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Descifrando ISO 42001" class="md-header__button md-logo" aria-label="Descifrando ISO 42001" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Descifrando ISO 42001
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Incidentes de IA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Usar la preferencia del sistema"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Usar la preferencia del sistema" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adriangzmncrz-arch/descifrando-iso42001" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    descifrando-iso42001
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../empieza-aqui/iso42001-en-5-minutos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Empieza aquí
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fundamentos/que-es-un-sgia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../clausulas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Cláusulas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../anexo-a/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../casos-practicos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Casos prácticos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../implementacion/hoja-de-ruta/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Implementación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../auditoria/como-se-certifica/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Auditoría
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../integracion/con-iso27001/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Integración
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../herramientas/autodiagnostico/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Descifrando ISO 42001" class="md-nav__button md-logo" aria-label="Descifrando ISO 42001" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.svg" alt="logo">
+
+    </a>
+    Descifrando ISO 42001
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adriangzmncrz-arch/descifrando-iso42001" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    descifrando-iso42001
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empieza aquí
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Empieza aquí
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empieza-aqui/iso42001-en-5-minutos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 42001 en 5 minutos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empieza-aqui/necesito-iso42001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Necesito ISO 42001?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empieza-aqui/mitos-y-realidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mitos y realidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empieza-aqui/rutas-de-lectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rutas de lectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empieza-aqui/como-usar-esta-guia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo usar esta guía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/que-es-un-sgia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Qué es un SGIA?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/ia-para-profesionales-grc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IA para profesionales de GRC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/roles-en-la-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roles en la IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/familia-de-normas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    La familia de normas de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/principios-ia-responsable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principios de IA responsable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos/riesgo-vs-impacto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Riesgo frente a impacto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../clausulas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cláusulas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cláusulas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c4-contexto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 · Contexto de la organización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c5-liderazgo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 · Liderazgo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c6-planificacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 · Planificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c7-apoyo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 · Apoyo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c8-operacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 · Operación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c9-evaluacion-del-desempeno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 · Evaluación del desempeño
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clausulas/c10-mejora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Mejora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../anexo-a/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a2-politicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.2 · Políticas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a3-organizacion-interna/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.3 · Organización interna
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a4-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.4 · Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a5-evaluacion-de-impacto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.5 · Evaluación de impactos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a6-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.6 · Ciclo de vida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a7-datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.7 · Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a8-informacion-partes-interesadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.8 · Información a partes interesadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a9-uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.9 · Uso de la IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexo-a/a10-terceros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A.10 · Terceros y clientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos-b-c-d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos B, C y D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../casos-practicos/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos prácticos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Casos prácticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../casos-practicos/pyme-usa-ia-generativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyME que usa IA generativa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../casos-practicos/fintech-scoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fintech con scoring crediticio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../casos-practicos/empresa-desarrolla-chatbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empresa que desarrolla un chatbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Implementación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementacion/hoja-de-ruta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementacion/documentacion-requerida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación requerida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementacion/errores-frecuentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errores frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Auditoría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auditoria/como-se-certifica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo se certifica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auditoria/preguntas-del-auditor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas del auditor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auditoria/hallazgos-ejemplo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hallazgos de ejemplo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auditoria/checklist-preparacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist de preparación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integración
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Integración
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integracion/con-iso27001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Con ISO 27001
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integracion/nist-ai-rmf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NIST AI RMF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integracion/reglamento-ia-ue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglamento de IA de la UE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integracion/contexto-mexico-latam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    México y Latinoamérica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Herramientas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../herramientas/autodiagnostico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autodiagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../herramientas/selector-de-rol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selector de rol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantillas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10_2" id="__nav_10_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plantillas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../politica-de-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Política de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uso-aceptable-ia-generativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uso aceptable de IA generativa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../raci-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roles y responsabilidades (RACI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologia-evaluacion-riesgos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodología de riesgos de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluacion-de-impacto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluación de impacto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ficha-del-sistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ficha del sistema de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidentes de IA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidentes de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Propósito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Alcance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Definiciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Clasificación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Clasificación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-por-tipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Por tipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-por-severidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Por severidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-por-origen-del-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Por origen del reporte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-flujo-de-gestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Flujo de gestión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Flujo de gestión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Etapas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-tiempos-objetivo-ejemplos-ajustables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Tiempos objetivo (ejemplos ajustables)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-comunicacion-de-incidentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Comunicación de incidentes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Comunicación de incidentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-a-usuarios-y-personas-afectadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 A usuarios y personas afectadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-a-clientes-que-despliegan-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 A clientes que despliegan el sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-a-autoridades-y-otras-partes-interesadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 A autoridades y otras partes interesadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-plantilla-de-aviso-inicial-a-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Plantilla de aviso inicial a usuarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-plantilla-de-aviso-de-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 Plantilla de aviso de cierre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-plantilla-de-aviso-a-clientes-que-despliegan-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 Plantilla de aviso a clientes que despliegan el sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-coordinacion-con-otros-procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Coordinación con otros procesos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ejemplo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-campos-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Campos del registro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Indicadores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historial-de-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historial de cambios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../procedimiento-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procedimiento del ciclo de vida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklist-auditoria-interna/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist de auditoría interna
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preguntas-frecuentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/adriangzmncrz-arch/descifrando-iso42001/edit/main/docs/plantillas/registro-de-incidentes.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.06 9 .94.94L5.92 19H5v-.92zm3.6-6c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29m-3.6 3.19L3 17.25V21h3.75L17.81 9.94z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="procedimiento-y-registro-de-incidentes-de-ia">Procedimiento y registro de incidentes de IA<a class="headerlink" href="#procedimiento-y-registro-de-incidentes-de-ia" title="Enlace permanente a esta sección">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Vista previa de la plantilla</p>
+<p>Esta es la vista previa de una plantilla de <a href="../#registro-de-incidentes">Descifrando ISO 42001</a>. Descárgala y adáptala a tu organización: los textos entre corchetes y en mayúsculas son los que debes personalizar. Licencia CC BY-SA 4.0; no sustituye a la norma ni es asesoría legal.</p>
+<p><a class="md-button md-button--primary" href="https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-de-incidentes-ia.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Descargar .md</a> <a class="md-button" href="https://github.com/adriangzmncrz-arch/descifrando-iso42001/blob/main/plantillas/registro-de-incidentes-ia.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span> Ver en GitHub</a> <a class="md-button" href="https://raw.githubusercontent.com/adriangzmncrz-arch/descifrando-iso42001/main/plantillas/registro-incidentes-ia.xlsx"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg></span> Descargar registro de incidentes en Excel</a></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Control del documento</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Código</td>
+<td>[<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-PRO-02]</td>
+</tr>
+<tr>
+<td>Versión</td>
+<td>[1.0]</td>
+</tr>
+<tr>
+<td>Fecha de aprobación</td>
+<td>[FECHA]</td>
+</tr>
+<tr>
+<td>Elaboró</td>
+<td>[NOMBRE] · [PUESTO]</td>
+</tr>
+<tr>
+<td>Revisó</td>
+<td>[NOMBRE] · [PUESTO]</td>
+</tr>
+<tr>
+<td>Aprobó</td>
+<td>[NOMBRE] · [PUESTO DE LA ALTA DIRECCIÓN]</td>
+</tr>
+<tr>
+<td>Clasificación</td>
+<td>[USO INTERNO]</td>
+</tr>
+</tbody>
+</table>
+<p>Plantilla de <em>Descifrando ISO 42001</em> (CC BY-SA 4.0) — adáptala a tu organización; no sustituye a la norma ni es asesoría legal.</p>
+<blockquote>
+<p><strong>Instrucciones de uso (borra este bloque antes de aprobar el documento).</strong></p>
+<ul>
+<li><strong>Qué cubre:</strong> los controles A.8.4 Comunicación de incidentes, A.6.2.6 Operación y monitoreo, A.6.2.8 Registro de eventos, A.8.3 Reporte externo y A.8.5 Información para las partes interesadas, y la cláusula 10.2 (no conformidad y acción correctiva). Los nombres de los controles son traducción libre de referencia.</li>
+<li><strong>Acompaña a</strong> <code>registro-incidentes-ia.xlsx</code>: los tipos, severidades, orígenes y estados de este documento son los mismos que las listas desplegables del archivo, y la sección 10 explica cada columna.</li>
+<li><strong>Qué personalizar:</strong> los criterios de severidad (sección 5.2) para que coincidan con tus criterios de riesgo, los tiempos objetivo (sección 6.2), los canales de reporte, las autoridades y obligaciones de notificación de tus jurisdicciones (sección 7.3) y las plantillas de aviso.</li>
+<li><strong>Qué borrar:</strong> este bloque y los ejemplos en cursiva. Los ejemplos corresponden a Conversa Labs, empresa ficticia de los casos prácticos de la guía.</li>
+<li><strong>Importante:</strong> los tiempos objetivo son ejemplos internos. Los plazos legales o contractuales de notificación prevalecen y deben confirmarse con tu área legal para cada país donde operes.</li>
+<li><strong>Si ya tienes un proceso de incidentes de seguridad de la información</strong> (por ejemplo, conforme a ISO 27001 A.5.24 a A.5.28), integra este procedimiento en él en lugar de crear uno paralelo: agrega los tipos de incidente propios de la IA, los criterios de impacto en personas y la comunicación a usuarios.</li>
+</ul>
+</blockquote>
+<h2 id="1-proposito">1. Propósito<a class="headerlink" href="#1-proposito" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Establecer cómo [NOMBRE DE LA ORGANIZACIÓN] detecta, registra, contiene, evalúa, comunica, corrige y aprende de los incidentes relacionados con sus sistemas de IA, de manera que el daño a personas y a la organización sea el menor posible y que las causas no se repitan.</p>
+<h2 id="2-alcance">2. Alcance<a class="headerlink" href="#2-alcance" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Aplica a todos los sistemas de IA del inventario, propios o de terceros, en cualquier etapa de su ciclo de vida, y a todas las personas que operan, supervisan o reciben reportes sobre ellos. Incluye los incidentes reportados por proveedores que afecten a sistemas que la organización usa o provee.</p>
+<h2 id="3-definiciones">3. Definiciones<a class="headerlink" href="#3-definiciones" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Evento:</strong> cualquier situación observada en un sistema de IA que podría ser relevante (una alerta de monitoreo, una queja, un resultado extraño).</li>
+<li><strong>Incidente de IA:</strong> evento en que un sistema de IA causó, o estuvo a punto de causar, un daño a personas, a la organización o a la sociedad; un incumplimiento legal, contractual o de política; o un resultado inaceptable según los criterios de la organización. Ejemplos: respuestas falsas con consecuencias, trato discriminatorio, exposición de datos, manipulación del sistema, uso fuera del uso previsto.</li>
+<li><strong>Casi incidente</strong> (<em>near miss</em>): evento que pudo convertirse en incidente pero se detuvo a tiempo (por ejemplo, un supervisor humano detectó y corrigió un resultado erróneo antes de que llegara al cliente). Se registra con severidad Baja porque enseña tanto como un incidente.</li>
+<li><strong>No conformidad:</strong> incumplimiento de un requisito del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>, de la norma o de un procedimiento interno. Un incidente puede revelar una no conformidad (por ejemplo, que no se hicieron las pruebas exigidas antes de liberar una versión), pero no todo incidente implica una.</li>
+<li><strong>Acción correctiva:</strong> acción para eliminar la causa de una no conformidad o de un incidente y evitar que vuelva a ocurrir.</li>
+<li><strong>Contención:</strong> medida inmediata para detener o limitar el daño mientras se analiza la causa.</li>
+</ul>
+<h2 id="4-roles">4. Roles<a class="headerlink" href="#4-roles" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Rol</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cualquier persona</td>
+<td>Reporta de inmediato todo evento que pueda ser un incidente.</td>
+</tr>
+<tr>
+<td>Responsable de incidentes de IA ([PUESTO])</td>
+<td>Registra, clasifica, coordina la respuesta y da seguimiento hasta el cierre.</td>
+</tr>
+<tr>
+<td>Dueño del sistema de IA</td>
+<td>Decide y ejecuta la contención, aporta información técnica y es responsable de las acciones correctivas de su sistema.</td>
+</tr>
+<tr>
+<td>Equipo técnico (desarrollo, datos, seguridad)</td>
+<td>Analiza la causa, implementa correcciones y conserva la evidencia.</td>
+</tr>
+<tr>
+<td>Privacidad</td>
+<td>Determina si hay una vulneración de datos personales y las obligaciones correspondientes.</td>
+</tr>
+<tr>
+<td>Legal y cumplimiento</td>
+<td>Determina las obligaciones de notificación a autoridades y clientes, y revisa los mensajes externos.</td>
+</tr>
+<tr>
+<td>Comunicación o atención a clientes</td>
+<td>Envía los avisos a usuarios y clientes aprobados.</td>
+</tr>
+<tr>
+<td>Alta dirección</td>
+<td>Aprueba la comunicación a autoridades y a medios en incidentes Altos o Críticos, y autoriza la suspensión de sistemas críticos para el negocio.</td>
+</tr>
+<tr>
+<td>Responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr></td>
+<td>Vigila el cumplimiento de este procedimiento e informa las tendencias en la revisión por la dirección.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-clasificacion">5. Clasificación<a class="headerlink" href="#5-clasificacion" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="51-por-tipo">5.1 Por tipo<a class="headerlink" href="#51-por-tipo" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desempeño o error del modelo</td>
+<td>El sistema produce resultados incorrectos o degradados respecto de sus umbrales</td>
+<td>La captura automática de facturas confunde el RFC del emisor con el del receptor</td>
+</tr>
+<tr>
+<td>Alucinación con impacto</td>
+<td>Un sistema generativo presenta información inventada como cierta y alguien actúa con base en ella</td>
+<td>El asistente afirma que una póliza cubre un procedimiento que no cubre</td>
+</tr>
+<tr>
+<td>Sesgo o trato injusto</td>
+<td>Resultados sistemáticamente distintos para personas o grupos sin justificación</td>
+<td>Tasa de rechazo mucho mayor para solicitantes de una región</td>
+</tr>
+<tr>
+<td>Seguridad propia de la IA</td>
+<td>Manipulación del sistema mediante instrucciones, datos o consultas maliciosas</td>
+<td>Inyección de instrucciones para obtener el texto interno del sistema</td>
+</tr>
+<tr>
+<td>Privacidad o datos personales</td>
+<td>Exposición, uso fuera de finalidad o tratamiento indebido de datos personales por o mediante el sistema</td>
+<td>Un colaborador pega una nómina en un chatbot no autorizado</td>
+</tr>
+<tr>
+<td>Uso indebido o fuera del uso previsto</td>
+<td>El sistema se usa para algo para lo que no fue aprobado</td>
+<td>Usar el puntaje de crédito para priorizar la cobranza</td>
+</tr>
+<tr>
+<td>Falla del proveedor</td>
+<td>Un cambio, caída o incidente del proveedor afecta al sistema</td>
+<td>El proveedor cambia la versión del modelo y aumentan los errores</td>
+</tr>
+<tr>
+<td>Otro</td>
+<td>Cualquier otro caso</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-por-severidad">5.2 Por severidad<a class="headerlink" href="#52-por-severidad" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>La severidad se asigna con la información disponible y se ajusta conforme avanza el análisis. Si hay duda entre dos niveles, se elige el más alto. Los niveles son coherentes con la escala de consecuencia de la <em>Metodología de evaluación y tratamiento de riesgos de IA</em> [<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-PRO-01].</p>
+<table>
+<thead>
+<tr>
+<th>Severidad</th>
+<th>Criterios (basta con que se cumpla uno)</th>
+<th>Equivalencia aproximada en la escala de consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Crítica</strong></td>
+<td>Daño grave o irreversible a la vida, la salud, la libertad o el patrimonio de personas; exposición masiva de datos personales sensibles; incumplimiento legal grave; suspensión de un servicio esencial para clientes</td>
+<td>5 · Severa</td>
+</tr>
+<tr>
+<td><strong>Alta</strong></td>
+<td>Daño significativo o difícil de revertir a personas; información incorrecta que llevó a decisiones con efectos económicos o jurídicos; trato discriminatorio sistemático; exposición de datos personales; afectación a un cliente clave</td>
+<td>4 · Mayor</td>
+</tr>
+<tr>
+<td><strong>Media</strong></td>
+<td>Afectación reversible a un grupo acotado de personas; error que llegó a usuarios y se corrigió sin daño material; ataque dirigido contra el sistema que revela una debilidad, aunque se haya bloqueado</td>
+<td>3 · Moderada</td>
+</tr>
+<tr>
+<td><strong>Baja</strong></td>
+<td>Sin afectación a personas externas; casi incidentes; errores detectados internamente antes de causar efectos</td>
+<td>1 · Insignificante o 2 · Menor</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-por-origen-del-reporte">5.3 Por origen del reporte<a class="headerlink" href="#53-por-origen-del-reporte" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Monitoreo automático · Reporte de usuario · Reporte de cliente · Reporte interno (canal de inquietudes) · Proveedor · Auditoría · Otro.</p>
+<h2 id="6-flujo-de-gestion">6. Flujo de gestión<a class="headerlink" href="#6-flujo-de-gestion" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="61-etapas">6.1 Etapas<a class="headerlink" href="#61-etapas" title="Enlace permanente a esta sección">&para;</a></h3>
+<ol>
+<li><strong>Detección y reporte.</strong> Cualquier persona que detecte un posible incidente lo reporta por [CANAL INTERNO]. Los usuarios externos y clientes lo hacen por [CANAL EXTERNO]. Las alertas de monitoreo llegan automáticamente a [BUZÓN O HERRAMIENTA]. Ante la duda, se reporta.</li>
+<li><strong>Registro.</strong> El responsable de incidentes asigna un identificador con el formato INC-AAAA-NNN y abre el registro en <code>registro-incidentes-ia.xlsx</code> o en [HERRAMIENTA DE TICKETS], con la fecha de detección, el sistema, el origen y una descripción de los hechos sin conclusiones anticipadas.</li>
+<li><strong>Clasificación inicial.</strong> Asigna tipo y severidad (sección 5). Si la severidad es Alta o Crítica, convoca de inmediato al dueño del sistema, a legal y, si hay datos personales, a privacidad.</li>
+<li><strong>Contención.</strong> El dueño del sistema decide la medida que detenga el daño: desactivar una función, regresar a la versión anterior, activar el traspaso a humanos, bloquear una cuenta, ajustar un filtro o suspender el sistema. Se documenta qué se hizo y cuándo. La contención no espera a conocer la causa.</li>
+<li><strong>Evaluación.</strong> Se determina el alcance real: personas afectadas, decisiones o respuestas que deben revisarse, datos involucrados, periodo, sistemas relacionados. Se conserva la evidencia (registros de eventos, capturas, versiones) sin alterarla.</li>
+<li><strong>Comunicación.</strong> Se decide si hay que avisar a usuarios, clientes o autoridades (sección 7) y se registra la decisión, incluida la de no avisar y su justificación.</li>
+<li><strong>Análisis de causa raíz.</strong> Para incidentes Medios, Altos y Críticos se identifica la causa de fondo con una técnica proporcional (cinco porqués, diagrama de causa y efecto, línea de tiempo). Se pregunta también si el mismo problema puede existir en otros sistemas.</li>
+<li><strong>Acción correctiva.</strong> Si la causa revela una falla del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> o de un control, se abre una no conformidad con su acción correctiva (cláusula 10.2) y se anota su identificador en el registro. Las acciones tienen responsable, fecha y criterio de eficacia.</li>
+<li><strong>Recuperación y cierre.</strong> Se restablece la operación normal cuando la causa está controlada. El responsable de incidentes cierra el registro cuando las acciones inmediatas están completas, la causa raíz documentada y la comunicación hecha; las acciones correctivas de largo plazo se siguen en su propio registro.</li>
+<li><strong>Lecciones aprendidas.</strong> Se documenta qué se aprendió y qué debe cambiar: pruebas, monitoreo, ficha del sistema, evaluación de riesgos, evaluación de impacto, capacitación o contratos con proveedores. Los incidentes Altos y Críticos detonan una reevaluación de riesgos del sistema.</li>
+</ol>
+<h3 id="62-tiempos-objetivo-ejemplos-ajustables">6.2 Tiempos objetivo (ejemplos ajustables)<a class="headerlink" href="#62-tiempos-objetivo-ejemplos-ajustables" title="Enlace permanente a esta sección">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Crítica</th>
+<th>Alta</th>
+<th>Media</th>
+<th>Baja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registro desde la detección</td>
+<td>1 hora</td>
+<td>4 horas</td>
+<td>1 día hábil</td>
+<td>3 días hábiles</td>
+</tr>
+<tr>
+<td>Contención</td>
+<td>4 horas</td>
+<td>24 horas</td>
+<td>3 días hábiles</td>
+<td>Según se requiera</td>
+</tr>
+<tr>
+<td>Decisión sobre comunicación a usuarios y autoridades</td>
+<td>24 horas</td>
+<td>48 horas</td>
+<td>5 días hábiles</td>
+<td>No suele requerirse</td>
+</tr>
+<tr>
+<td>Aviso inicial a usuarios o clientes afectados, si procede</td>
+<td>24 horas o el plazo legal o contractual, el que sea menor</td>
+<td>72 horas o el plazo legal o contractual, el que sea menor</td>
+<td>Según el plan de comunicación</td>
+<td>No suele requerirse</td>
+</tr>
+<tr>
+<td>Análisis de causa raíz</td>
+<td>10 días hábiles</td>
+<td>15 días hábiles</td>
+<td>30 días naturales</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>Cierre del incidente</td>
+<td>30 días naturales</td>
+<td>45 días naturales</td>
+<td>60 días naturales</td>
+<td>90 días naturales</td>
+</tr>
+</tbody>
+</table>
+<p>Los incidentes Críticos se informan a la alta dirección el mismo día de su detección.</p>
+<h2 id="7-comunicacion-de-incidentes">7. Comunicación de incidentes<a class="headerlink" href="#7-comunicacion-de-incidentes" title="Enlace permanente a esta sección">&para;</a></h2>
+<h3 id="71-a-usuarios-y-personas-afectadas">7.1 A usuarios y personas afectadas<a class="headerlink" href="#71-a-usuarios-y-personas-afectadas" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Se avisa a los usuarios y a las personas afectadas cuando el incidente pudo afectar sus derechos, sus intereses económicos, sus datos personales o las decisiones que tomaron con base en el sistema, y cuando existe algo que ellos puedan hacer para protegerse. El aviso explica, en lenguaje claro, qué pasó, a quién afecta, qué información o decisiones están involucradas, qué está haciendo la organización, qué conviene que haga la persona y cómo obtener ayuda.</p>
+<h3 id="72-a-clientes-que-despliegan-el-sistema">7.2 A clientes que despliegan el sistema<a class="headerlink" href="#72-a-clientes-que-despliegan-el-sistema" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Si la organización provee el sistema a clientes, les avisa en el plazo pactado en el contrato, con la información que necesitan para cumplir sus propias obligaciones frente a sus usuarios. El contrato define quién avisa a los usuarios finales.</p>
+<h3 id="73-a-autoridades-y-otras-partes-interesadas">7.3 A autoridades y otras partes interesadas<a class="headerlink" href="#73-a-autoridades-y-otras-partes-interesadas" title="Enlace permanente a esta sección">&para;</a></h3>
+<p>Legal y cumplimiento mantiene una tabla de obligaciones de notificación por jurisdicción y tipo de incidente. [LLENA ESTA TABLA CON TU ÁREA LEGAL].</p>
+<table>
+<thead>
+<tr>
+<th>Jurisdicción</th>
+<th>Tipo de incidente</th>
+<th>Autoridad o parte interesada</th>
+<th>Plazo</th>
+<th>Fundamento</th>
+<th>Quién notifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[PAÍS]</td>
+<td>Vulneración de datos personales</td>
+<td>[AUTORIDAD DE PROTECCIÓN DE DATOS] y titulares</td>
+<td>[PLAZO]</td>
+<td>[LEY Y ARTÍCULO]</td>
+<td>[PRIVACIDAD]</td>
+</tr>
+<tr>
+<td>[PAÍS]</td>
+<td>[INCIDENTE SECTORIAL]</td>
+<td>[REGULADOR SECTORIAL]</td>
+<td>[PLAZO]</td>
+<td>[NORMA]</td>
+<td>[CUMPLIMIENTO]</td>
+</tr>
+<tr>
+<td>[UNIÓN EUROPEA, SI APLICA]</td>
+<td>Incidente grave de un sistema de IA de alto riesgo</td>
+<td>[AUTORIDAD DE VIGILANCIA DEL MERCADO]</td>
+<td>[PLAZO]</td>
+<td>Reglamento de IA de la UE</td>
+<td>[LEGAL]</td>
+</tr>
+<tr>
+<td>—</td>
+<td>Incidente con efecto en un cliente o aliado</td>
+<td>[CLIENTE O ALIADO]</td>
+<td>[PLAZO CONTRACTUAL]</td>
+<td>Contrato</td>
+<td>[DUEÑO DEL SISTEMA]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Ejemplo: en México, la ley de protección de datos personales en posesión de particulares prevé informar de inmediato a los titulares las vulneraciones de seguridad que afecten de forma significativa sus derechos. Confirma el alcance y la forma con tu área legal.</em></p>
+<h3 id="74-plantilla-de-aviso-inicial-a-usuarios">7.4 Plantilla de aviso inicial a usuarios<a class="headerlink" href="#74-plantilla-de-aviso-inicial-a-usuarios" title="Enlace permanente a esta sección">&para;</a></h3>
+<blockquote>
+<p><strong>Asunto:</strong> Aviso sobre una falla en [NOMBRE DEL SERVICIO]</p>
+<p>Hola, [NOMBRE]:</p>
+<p>Te escribimos porque el [FECHA] detectamos que [NOMBRE DEL SISTEMA], el asistente automatizado que usamos para [PROPÓSITO], [DESCRIPCIÓN BREVE Y CLARA DE LO QUE PASÓ]. Esta situación pudo afectar [QUÉ INFORMACIÓN, RESPUESTA O DECISIÓN TE AFECTA] entre el [FECHA] y el [FECHA].</p>
+<p><strong>Qué hicimos:</strong> [MEDIDA DE CONTENCIÓN; POR EJEMPLO, DESACTIVAMOS LA FUNCIÓN Y REVISAMOS TODAS LAS RESPUESTAS DE ESE PERIODO].</p>
+<p><strong>Qué te recomendamos:</strong> [ACCIÓN CONCRETA; POR EJEMPLO, NO TOMES EN CUENTA LA INFORMACIÓN QUE RECIBISTE SOBRE X Y CONSULTA LA INFORMACIÓN CORRECTA EN Y].</p>
+<p><strong>Si necesitas ayuda:</strong> comunícate con nosotros en [CANAL] y menciona el folio [INC-AAAA-NNN]. Una persona de nuestro equipo revisará tu caso.</p>
+<p>Lamentamos las molestias. Te informaremos cuando el problema esté resuelto.</p>
+<p>[NOMBRE DE LA ORGANIZACIÓN]</p>
+</blockquote>
+<h3 id="75-plantilla-de-aviso-de-cierre">7.5 Plantilla de aviso de cierre<a class="headerlink" href="#75-plantilla-de-aviso-de-cierre" title="Enlace permanente a esta sección">&para;</a></h3>
+<blockquote>
+<p><strong>Asunto:</strong> Resolvimos la falla en [NOMBRE DEL SERVICIO]</p>
+<p>Hola, [NOMBRE]:</p>
+<p>Te confirmamos que la falla que te informamos el [FECHA] quedó resuelta. La causa fue [EXPLICACIÓN BREVE] y, para evitar que se repita, [MEDIDAS ADOPTADAS]. [SI APLICA: CORREGIMOS O REVISAMOS LA INFORMACIÓN O DECISIÓN QUE TE AFECTÓ, CON ESTE RESULTADO: ...].</p>
+<p>Si tienes dudas o crees que todavía te afecta, escríbenos a [CANAL] con el folio [INC-AAAA-NNN].</p>
+<p>[NOMBRE DE LA ORGANIZACIÓN]</p>
+</blockquote>
+<h3 id="76-plantilla-de-aviso-a-clientes-que-despliegan-el-sistema">7.6 Plantilla de aviso a clientes que despliegan el sistema<a class="headerlink" href="#76-plantilla-de-aviso-a-clientes-que-despliegan-el-sistema" title="Enlace permanente a esta sección">&para;</a></h3>
+<blockquote>
+<p><strong>Asunto:</strong> Notificación de incidente [INC-AAAA-NNN] · Severidad [NIVEL]</p>
+<p>Estimado cliente:</p>
+<p>Conforme a [CLÁUSULA DEL CONTRATO], le informamos que el [FECHA Y HORA] identificamos [DESCRIPCIÓN]. Sistemas y funciones afectados: [LISTA]. Periodo: [DESDE] a [HASTA]. Estimación de usuarios o conversaciones afectados en su servicio: [NÚMERO].</p>
+<p>Medidas de contención aplicadas: [LISTA]. Acciones que recomendamos de su parte: [LISTA; POR EJEMPLO, REVISAR LAS RESPUESTAS SOBRE X, AVISAR A SUS USUARIOS SI LO REQUIERE SU NORMATIVA].</p>
+<p>Le enviaremos una actualización a más tardar el [FECHA] y el informe de causa raíz cuando concluya el análisis. Contacto para este incidente: [NOMBRE, CORREO Y TELÉFONO].</p>
+</blockquote>
+<h2 id="8-coordinacion-con-otros-procesos">8. Coordinación con otros procesos<a class="headerlink" href="#8-coordinacion-con-otros-procesos" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li><strong>Seguridad de la información:</strong> si el incidente implica acceso no autorizado, pérdida de disponibilidad o compromiso de la infraestructura, se activa además el procedimiento de incidentes de seguridad.</li>
+<li><strong>Datos personales:</strong> si hay una vulneración de datos personales, privacidad aplica su procedimiento y sus plazos.</li>
+<li><strong>Proveedores:</strong> si la causa está en un proveedor, se le notifica, se le solicita su análisis y se registra el hecho en su evaluación de desempeño.</li>
+<li><strong>Quejas y atención a clientes:</strong> las quejas que revelen un posible incidente se canalizan a este procedimiento sin perder su folio original.</li>
+<li><strong>Continuidad del negocio:</strong> si se suspende un sistema crítico, se activa el plan de continuidad aplicable.</li>
+</ul>
+<h2 id="9-ejemplo">9. Ejemplo<a class="headerlink" href="#9-ejemplo" title="Enlace permanente a esta sección">&para;</a></h2>
+<p><em>Conversa Labs, INC-2026-014. Un cliente asegurador reporta que el asistente afirmó a 37 usuarios que su póliza cubría un procedimiento que no cubre. Clasificación: alucinación con impacto, severidad Alta, afecta a personas externas. Contención: se desactiva la intención afectada y se activa el traspaso a humano para preguntas de cobertura. Comunicación: aviso al cliente dentro del plazo contractual; el cliente avisa a sus usuarios con apoyo de Conversa. Causa raíz: un documento desactualizado en la base de conocimiento y una verificación insuficiente de fuentes. Acción correctiva AC-2026-009: prueba de regresión con preguntas de coberturas antes de cada actualización de la base. Cierre a los 21 días.</em></p>
+<h2 id="10-campos-del-registro">10. Campos del registro<a class="headerlink" href="#10-campos-del-registro" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>Cada columna de <code>registro-incidentes-ia.xlsx</code> y su uso:</p>
+<table>
+<thead>
+<tr>
+<th>Columna</th>
+<th>Qué se anota</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>Identificador único con formato INC-AAAA-NNN</td>
+<td>INC-2026-014</td>
+</tr>
+<tr>
+<td>Fecha de detección</td>
+<td>Fecha en que la organización supo del evento</td>
+<td>2026-06-03</td>
+</tr>
+<tr>
+<td>Sistema de IA</td>
+<td>Nombre e identificador del inventario</td>
+<td>Conversa · asistente de aseguradora</td>
+</tr>
+<tr>
+<td>Origen del reporte</td>
+<td>Lista de la sección 5.3</td>
+<td>Reporte de cliente</td>
+</tr>
+<tr>
+<td>Descripción</td>
+<td>Hechos observados, sin conclusiones anticipadas</td>
+<td>El asistente afirmó una cobertura inexistente</td>
+</tr>
+<tr>
+<td>Tipo</td>
+<td>Lista de la sección 5.1</td>
+<td>Alucinación con impacto</td>
+</tr>
+<tr>
+<td>Severidad</td>
+<td>Baja, Media, Alta o Crítica (sección 5.2)</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Personas afectadas (aprox.)</td>
+<td>Número estimado</td>
+<td>37</td>
+</tr>
+<tr>
+<td>¿Afecta a personas externas?</td>
+<td>Sí, No o Por determinar</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>¿Comunicar a usuarios? (A.8.4)</td>
+<td>Decisión tomada: Sí, No o Por determinar</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>¿Notificar a autoridad?</td>
+<td>Decisión tomada: Sí, No o Por determinar</td>
+<td>Por determinar</td>
+</tr>
+<tr>
+<td>Contención aplicada</td>
+<td>Medidas inmediatas y su fecha</td>
+<td>Intención desactivada; traspaso a humano</td>
+</tr>
+<tr>
+<td>Causa raíz</td>
+<td>Resultado del análisis</td>
+<td>Documento desactualizado en la base</td>
+</tr>
+<tr>
+<td>ID de no conformidad / acción correctiva</td>
+<td>Referencia al registro de acciones correctivas</td>
+<td>AC-2026-009</td>
+</tr>
+<tr>
+<td>Responsable</td>
+<td>Persona que coordina el incidente</td>
+<td>Responsable de Confianza y Seguridad</td>
+</tr>
+<tr>
+<td>Estado</td>
+<td>Abierto, En análisis, Contenido o Cerrado</td>
+<td>Cerrado</td>
+</tr>
+<tr>
+<td>Fecha de cierre</td>
+<td>Fecha de cierre según la etapa 9</td>
+<td>2026-06-24</td>
+</tr>
+<tr>
+<td>Días abiertos</td>
+<td>Se calcula solo</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Alerta</td>
+<td>Se calcula sola: avisa si falta decidir la comunicación en incidentes Altos o Críticos, o si se cerró sin causa raíz</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Lecciones aprendidas</td>
+<td>Cambios derivados del incidente</td>
+<td>Prueba de regresión antes de cada actualización</td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-indicadores">11. Indicadores<a class="headerlink" href="#11-indicadores" title="Enlace permanente a esta sección">&para;</a></h2>
+<p>El responsable del <abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr> presenta en cada revisión por la dirección, con base en la hoja Resumen del registro:</p>
+<ul>
+<li>Número de incidentes por tipo y severidad, y su tendencia.</li>
+<li>Incidentes abiertos y su antigüedad.</li>
+<li>Promedio de días para cerrar.</li>
+<li>Porcentaje de incidentes Medios o superiores con causa raíz documentada.</li>
+<li>Incidentes recurrentes (misma causa en menos de [SEIS] meses).</li>
+<li>Cumplimiento de los tiempos objetivo de la sección 6.2.</li>
+<li>Casi incidentes reportados (una cifra en cero suele indicar que no se reportan, no que no ocurren).</li>
+</ul>
+<h2 id="historial-de-cambios">Historial de cambios<a class="headerlink" href="#historial-de-cambios" title="Enlace permanente a esta sección">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Fecha</th>
+<th>Descripción del cambio</th>
+<th>Autor</th>
+<th>Aprobó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>[FECHA]</td>
+<td>Emisión inicial</td>
+<td>[NOMBRE]</td>
+<td>[NOMBRE]</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Enlace permanente a esta sección">&para;</a></h2>
+<ul>
+<li>ISO/IEC 42001:2023, cláusulas 7.4, 9.1, 9.3 y 10.2.</li>
+<li>ISO/IEC 42001:2023, Anexo A: A.3.3, A.6.2.6, A.6.2.8, A.8.3, A.8.4, A.8.5, A.10.2 y A.10.3.</li>
+<li>ISO/IEC 27001:2022, controles de gestión de incidentes (ISO 27001 A.5.24 a A.5.28), si la organización tiene un <abbr title="Sistema de gestión de seguridad de la información (ISMS), definido en ISO/IEC 27001.">SGSI</abbr>.</li>
+<li>Documentos relacionados: [<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-POL-01], [<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-POL-02], [<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-PRO-01], [<abbr title="Sistema de gestión de inteligencia artificial (AI management system, AIMS): el conjunto de políticas, procesos y controles con el que una organización gobierna la IA que usa, desarrolla o provee.">SGIA</abbr>-FOR-02], [PROCEDIMIENTO DE ACCIONES CORRECTIVAS], [PROCEDIMIENTO DE VULNERACIONES DE DATOS PERSONALES]; <code>registro-incidentes-ia.xlsx</code>.</li>
+<li>Guía <em>Descifrando ISO 42001</em>, objetivo A.8: https://adriangzmncrz-arch.github.io/descifrando-iso42001/anexo-a/a8-informacion-partes-interesadas/</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../ficha-del-sistema/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Ficha del sistema de IA">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Ficha del sistema de IA
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../procedimiento-ciclo-de-vida/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Procedimiento del ciclo de vida">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Procedimiento del ciclo de vida
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido © 2026 Carlos Adrián Guzmán · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a> · Código bajo licencia MIT · Interpretación del autor: no sustituye a la norma ISO/IEC 42001 ni es asesoría legal.
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/adriancruz-grc/" target="_blank" rel="noopener" title="Carlos Adrián Guzmán en LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/adriangzmncrz-arch" target="_blank" rel="noopener" title="Repositorios del autor en GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/adriangzmncrz-arch/iso27001-toolkit-es" target="_blank" rel="noopener" title="Proyecto hermano — ISO 27001 Toolkit en español" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m2.8-10V9.5C14.8 8.1 13.4 7 12 7S9.2 8.1 9.2 9.5V11c-.6 0-1.2.6-1.2 1.2v3.5c0 .7.6 1.3 1.2 1.3h5.5c.7 0 1.3-.6 1.3-1.2v-3.5c0-.7-.6-1.3-1.2-1.3m-1.3 0h-3V9.5c0-.8.7-1.3 1.5-1.3s1.5.5 1.5 1.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://cipherwell-sec.com" target="_blank" rel="noopener" title="Cipherwell" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/controles-data.js"></script>
+      
+        <script src="../../javascripts/matriz.js"></script>
+      
+        <script src="../../javascripts/autodiagnostico.js"></script>
+      
+        <script src="../../javascripts/selector-rol.js"></script>
+      
+    
+  </body>
+</html>
