@@ -10,6 +10,7 @@ Para una guía de contenido, la versión *mayor* cambia con reestructuras del si
 ### Añadido
 
 - Imagen de vista previa para redes sociales (`docs/assets/img/social.png`, 1280 × 640) y metadatos Open Graph y de X/Twitter en todas las páginas, con el título y la descripción de cada una.
+- Flujo `publicar-version.yml`: al subir una etiqueta `vX.Y.Z` crea el *release* con las notas del CHANGELOG y un ZIP de las plantillas; el proceso queda documentado en CONTRIBUTING.
 
 ## [1.0.0] - 2026-10-09
 

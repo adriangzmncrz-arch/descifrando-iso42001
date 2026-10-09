@@ -77,6 +77,16 @@ Cada objetivo del Anexo A tiene una clase CSS (`obj-a2` … `obj-a10`) que fija 
 
 Las infografías son SVG escritos a mano en `docs/assets/infografias/` y se insertan en línea para respetar el modo oscuro. Usan `currentColor` y las clases `ig-*` de la hoja de estilos, e incluyen `<title>`, `<desc>` y una descripción textual en la página.
 
+## Publicar una versión
+
+Esta sección es para quien mantiene el proyecto.
+
+1. Mueve lo que esté en `[Sin publicar]` del [CHANGELOG](CHANGELOG.md) a una sección nueva `## [X.Y.Z] - AAAA-MM-DD` y agrega su enlace de comparación al final del archivo.
+2. Actualiza `version` y `date-released` en [`CITATION.cff`](CITATION.cff) y la insignia de versión del README.
+3. Haz el commit (`chore(release): versión X.Y.Z`), crea la etiqueta `vX.Y.Z` y súbela con `git push origin main --follow-tags`.
+
+El flujo [`publicar-version.yml`](.github/workflows/publicar-version.yml) crea el *release* en GitHub con las notas de esa sección del CHANGELOG y un ZIP con las plantillas y la licencia.
+
 ## Código de conducta
 
 Al participar aceptas el [Código de Conducta](CODE_OF_CONDUCT.md).
