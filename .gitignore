@@ -1,0 +1,25 @@
+# Norma ISO/IEC 42001 (material con derechos de autor y licencia de usuario único): nunca se versiona
+*.pdf
+!docs/assets/**/*.pdf
+ISO_IEC_*
+
+# Sitio generado por MkDocs
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Excel / LibreOffice temporales
+~$*
+.~lock.*
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

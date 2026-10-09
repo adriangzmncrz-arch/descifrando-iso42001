@@ -1,0 +1,10 @@
+# Dependencias fijadas para construir el sitio y generar las plantillas.
+# MkDocs se mantiene en la serie 1.x: Material for MkDocs no es compatible con MkDocs 2.0.
+mkdocs==1.6.1
+mkdocs-material==9.7.7
+mkdocs-material-extensions==1.3.1
+pymdown-extensions==10.21.3
+Markdown==3.9
+Pygments==2.21.0
+PyYAML==6.0.3
+openpyxl==3.1.5
